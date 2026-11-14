@@ -1,8 +1,8 @@
 # To-do for future sessions
 
 Noted by the owner on 2026-11-14. Nothing here has been started. Items are
-recorded as requested; where the wording was open to more than one reading,
-the reading is marked as an interpretation to confirm before work begins.
+recorded as requested; the two readings that were open were confirmed by the
+owner on 2026-11-14.
 More items are expected to be added.
 
 ## 1. Enhance the HTML page
@@ -27,11 +27,10 @@ a. **More examples and fuller explanations**
    - Add examples of the kind of the barber who shaves himself, for Russell's
      paradox.
    - Explain the Turing machine a bit more.
-   - Explain the halting problem, "with the controller". (Interpretation: the
-     usual presentation with a checker program that is supposed to decide
-     whether another program halts. Confirm.)
-   - Explain the solvable versus unsolvable domains Turing proposed.
-     (Interpretation: decidable versus undecidable problems. Confirm.)
+   - Explain the halting problem in more detail, describing Turing's checker:
+     the supposed program that decides whether any other program halts, and
+     why it cannot exist.
+   - Explain the idea and the proof of decidable versus undecidable problems.
 
 c. **More of the philosophers the Tractatus analysis refers to**
    - Bring into the essay more of them: Leibniz, Ockham, Plato, and others.
