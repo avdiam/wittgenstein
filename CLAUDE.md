@@ -13,6 +13,13 @@ been verified against outside sources, and the list of open items at its end).
   is the human UI. The full analysis inside it is generated; the summaries, the
   tree-explorer data, the labs and the philosophers grid are hand-written.
 
+- `Logiki_Glossa_Michanes.md` is the source of the essay on the history of
+  logic; `Logiki_Glossa_Michanes.docx` is generated from it with
+  `python tools/build_docx.py` (`--check` must exit 0). The rules below on
+  sources, disagreements and tone apply to the essay too. It is written for
+  general readers, not for IT or mathematics people. `Istoria_Logikis_kai_AI.docx`
+  is the first version, kept unchanged.
+
 ## Workflow
 
 1. Edit the Markdown.

@@ -1,7 +1,7 @@
 # To-do for future sessions
 
-Noted by the owner on 2026-11-14. Item 1 was done on 2026-11-14 and awaits the
-owner's review; item 2 has not been started. Items are recorded as requested;
+Noted by the owner on 2026-11-14. Items 1 and 2 were done on 2026-11-14 and await
+the owner's review. Items are recorded as requested;
 the two readings that were open were confirmed by the owner on 2026-11-14.
 More items are expected to be added.
 
@@ -48,7 +48,54 @@ Left as they are, for the owner to decide:
 - Not checked on a real phone or at a real 1920px window: the narrow and wide
   layouts were checked in frames of 400px and 1800px inside a 1280px window.
 
-## 2. Review and extend the essay
+## 2. Review and extend the essay — done 2026-11-14, awaiting the owner's review
+
+The first version, `Istoria_Logikis_kai_AI.docx`, was read, checked and left
+unchanged. The new text is `Logiki_Glossa_Michanes.md` (source) and
+`Logiki_Glossa_Michanes.docx` (generated; see `README.md`). It grew from about
+3,200 to about 11,000 words (27 pages). The sources and verdicts are in
+`CROSSCHECK_PLAN.md`, section "Results — the essay".
+
+What was asked, and where it is now:
+
+- a. Examples and fuller explanations: the barber, a library catalogue and the
+  "heterological" words for Russell's paradox (section 5); the Turing machine
+  with a worked example, the universal machine, the halting checker step by
+  step, decidable and undecidable problems with examples (section 8).
+- c. Philosophers of the Tractatus analysis: Plato, Aristotle (section 1),
+  Ockham, Leibniz (2), Hume, Kant (3), Hertz, Schopenhauer (6); Spinoza is
+  only named. Moore, Whitehead and Mauthner appear briefly or not at all.
+- d. Wider history: philosophy of language from the *Cratylus* to Frege and
+  Russell; a section on epistemology (3); added De Morgan, Jevons, Peirce,
+  Cantor, Peano, Hilbert, Zermelo, Church, Post, Rosser, Davis, Strachey,
+  Matiyasevich, Wang, von Neumann, McCulloch and Pitts, Rosenblatt.
+- e. Wittgenstein: why the early work had its effect, the Vienna Circle (6);
+  influence of the later work; Marxist and Hegelian readers (10).
+- f. Title: «Λογική, γλώσσα και μηχανές: από τον Αριστοτέλη και τους Στωικούς
+  στον Wittgenstein και την τεχνητή νοημοσύνη». A working title; the owner
+  decides. The file names follow it.
+- g. Final check: 23 claims of the first version were checked; 15 were
+  corrected (some only in wording), 3 are contested and 5 stand (listed in `CROSSCHECK_PLAN.md`). Proposals
+  for further content are below.
+
+For the owner to decide:
+
+- The title and the file names.
+- Whether to delete `Istoria_Logikis_kai_AI.docx` once the new text is accepted.
+- Names are written in Latin script with the Greek form at first mention; the
+  first version used Greek forms more often.
+- Proposals for further content, within the audience limit: (1) a one-page
+  timeline; (2) a short glossary of the dozen terms the text explains;
+  (3) Spinoza, Moore and Mauthner, who are in the Tractatus analysis but
+  hardly in the essay; (4) women in this history beyond Anscombe, Robinson
+  and Masterman, for example Ada Lovelace and Susan Stebbing; (5) the Turing
+  test (1950) and Searle's Chinese room, which bear directly on whether a
+  machine that uses words understands them; (6) Arabic and Byzantine logic
+  between the Stoics and Abelard, a gap of a thousand years in the text.
+- Weakly sourced points are listed under "Open for the essay" in
+  `CROSSCHECK_PLAN.md`.
+
+The request as recorded on 2026-11-14:
 
 `Istoria_Logikis_kai_AI.docx` — not reviewed at all so far.
 
