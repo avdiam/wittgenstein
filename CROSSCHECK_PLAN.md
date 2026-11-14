@@ -228,3 +228,6 @@ been applied to the Markdown.
 - C1 (Greek terms vs Kitsopoulos) and C3 (a second Pears–McGuinness copy) need printed books.
 - The 19.8.1919 letter to Russell on *Sachverhalt* / *Tatsache*, Bolzano as a precursor of 5.15, and Carnap's own acknowledgment of the *Tractatus* on probability were not confirmed online.
 - The eye-diagram SVG in the HTML visual lab differs in shape from the original figure.
+- From tiers A and D: six bibliography entries are still unverified (Carroll, Pears, Janik & Toulmin, Mauthner, Hertz, *Principia*) along with the Stenius imprint and the years of the classics; the role of Lorentzatos in the Greek edition is unknown; several rows rest on Wikipedia or booksellers as second source (marked in the tables).
+- The page was not reopened in a browser after the last two builds (only `--check` and a script syntax check were run).
+- `Istoria_Logikis_kai_AI.docx` has not been reviewed.
