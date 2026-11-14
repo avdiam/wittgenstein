@@ -17,8 +17,10 @@ been verified against outside sources, and the list of open items at its end).
   logic; `Logiki_Glossa_Michanes.docx` is generated from it with
   `python tools/build_docx.py` (`--check` must exit 0). The rules below on
   sources, disagreements and tone apply to the essay too. It is written for
-  general readers, not for IT or mathematics people. `Istoria_Logikis_kai_AI.docx`
-  is the first version, kept unchanged.
+  general readers, not for IT or mathematics people. Names are written in
+  Latin script, with the Greek form at the first mention of the main figures.
+  The first version (`Istoria_Logikis_kai_AI.docx`) was deleted on 2026-11-14;
+  it is in git history (`git show c453fe2:Istoria_Logikis_kai_AI.docx`).
 
 ## Workflow
 

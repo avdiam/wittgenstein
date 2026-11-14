@@ -7,7 +7,6 @@ Greek-language study material on the history of logic and on Wittgenstein's
 
 | Path | Role |
 | :-- | :-- |
-| `Istoria_Logikis_kai_AI.docx` | The essay as first written (from Aristotle and the Stoics to AI). Kept unchanged for comparison. |
 | `Logiki_Glossa_Michanes.md` | **Source of truth** for the revised and extended essay. Edit this. |
 | `Logiki_Glossa_Michanes.docx` | The essay as a Word file, generated from the Markdown by `tools/build_docx.py`. Do not edit by hand. |
 | `Tractatus Logico-Philosophicus/TRACTATUS_LOGICO_PHILOSOPHICUS_ANALYSIS_1-7.md` | **Source of truth** for the analysis text. Edit this. |

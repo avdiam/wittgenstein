@@ -79,24 +79,22 @@ What was asked, and where it is now:
   corrected (some only in wording), 3 are contested and 5 stand (listed in `CROSSCHECK_PLAN.md`). Proposals
   for further content are below.
 
-For the owner to decide:
+Decided by the owner on 2026-11-14:
 
-- The title and the file names.
-- Whether to delete `Istoria_Logikis_kai_AI.docx` once the new text is accepted.
-- Whether to keep `Wittgenstein intro.md` (left uncommitted and unedited) now
-  that its content is in the essay.
-- Names are written in Latin script with the Greek form at first mention; the
-  first version used Greek forms more often.
-- Proposals for further content, within the audience limit: (1) a one-page
-  timeline; (2) a short glossary of the dozen terms the text explains;
-  (3) Spinoza, Moore and Mauthner, who are in the Tractatus analysis but
-  hardly in the essay; (4) women in this history beyond Anscombe, Robinson
-  and Masterman, for example Ada Lovelace and Susan Stebbing; (5) the Turing
-  test (1950) and Searle's Chinese room, which bear directly on whether a
-  machine that uses words understands them; (6) Arabic and Byzantine logic
-  between the Stoics and Abelard, a gap of a thousand years in the text.
-- Weakly sourced points are listed under "Open for the essay" in
-  `CROSSCHECK_PLAN.md`.
+- Title «Λογική, γλώσσα και μηχανές» with the subtitle above; file names stay.
+- `Istoria_Logikis_kai_AI.docx` deleted (recoverable from git, commit c453fe2).
+- `Wittgenstein intro.md` deleted after its content was merged.
+- Names in Latin script, Greek form at first mention of the main figures.
+- `CLAUDE.md` keeps the paragraph on the essay.
+- Add: (1) the Turing test and Searle's Chinese room; (2) a timeline and a
+  glossary; (3) the medieval gap: Arabic and Byzantine logic, Babbage and
+  Ada Lovelace; (4) Spinoza, Moore and Mauthner.
+- Re-check the weakly sourced points ("Open for the essay" in
+  `CROSSCHECK_PLAN.md`) at their sources.
+
+Status of the decided work is recorded in the next section.
+
+### 2b. Additions and re-checks — in progress 2026-11-14
 
 The request as recorded on 2026-11-14:
 
