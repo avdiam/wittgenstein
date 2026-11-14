@@ -40,10 +40,11 @@ What was done (plugin chosen by the owner: `frontend-design`):
 Left as they are, for the owner to decide:
 
 - Headings typed in capitals in the HTML and the Markdown stay in capitals.
-- The hand-written summaries still contain exclamation marks and emphatic
-  wording that the tone rule in `CLAUDE.md` excludes.
-- Tailwind is loaded from `www.gstatic.com/antigravity/web/dev/`, which looks
-  like a development address and may not stay available.
+- Done 2026-11-14 at the owner's request: the 78 exclamation marks and the
+  emphatic wording in the hand-written HTML were removed (remarks are no
+  longer called "axioms"), and Tailwind now loads from
+  `cdn.tailwindcss.com/3.4.17`. The Markdown still has a few strong phrases
+  (lines 8, 10, 14, 194, 1110) that the HTML no longer repeats.
 - Not checked on a real phone or at a real 1920px window: the narrow and wide
   layouts were checked in frames of 400px and 1800px inside a 1280px window.
 
