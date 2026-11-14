@@ -223,7 +223,7 @@ TRACTATUS LOGICO-PHILOSOPHICUS
 
 > **Προσοχή στη Μεταφραστική Παγίδα**: Ο Ogden μεταφράζει το *Sachlage* ως *"state of affairs"*, ενώ οι Pears & McGuinness χρησιμοποιούν το *"state of affairs"* για να μεταφράσουν το *Sachverhalt*. Στην παρούσα ανάλυση αποδίδουμε σταθερά το **Sachverhalt** ως **«(ατομική) κατάσταση πραγμάτων»**, το **Sachlage** ως **«περίσταση / δυνατή κατάσταση»** και το **Tatsache** ως **«γεγονός»**.
 >
-> **Ερμηνευτική σημείωση**: Το αν το *Sachverhalt* είναι ένας *δυνατός* συνδυασμός αντικειμένων, που μπορεί να υφίσταται ή να μην υφίσταται (πβ. 2.04–2.06· έτσι οι E. Stenius και M. Black, και η απόδοση «state of affairs»), ή ένα *υφιστάμενο* ατομικό γεγονός (έτσι η απόδοση «atomic fact» του Ogden, την οποία είχε δει ο Wittgenstein, και η Εισαγωγή του Russell) είναι παλαιά ερμηνευτική διαφωνία. Ο ορισμός στον πίνακα ακολουθεί την πρώτη ανάγνωση.
+> **Ερμηνευτική σημείωση**: Το αν το *Sachverhalt* είναι ένας *δυνατός* συνδυασμός αντικειμένων, που μπορεί να υφίσταται ή να μην υφίσταται (πβ. 2.04–2.06· έτσι οι E. Stenius και M. Black, και η απόδοση «state of affairs»), ή ένα *υφιστάμενο* ατομικό γεγονός (έτσι η απόδοση «atomic fact» του Ogden, την οποία είχε δει ο Wittgenstein, και η Εισαγωγή του Russell) είναι παλαιά ερμηνευτική διαφωνία. Υπέρ της δεύτερης ανάγνωσης παρατίθεται συχνά η επιστολή του Wittgenstein προς τον Russell της 19.8.1919: «*Sachverhalt* είναι αυτό που αντιστοιχεί σε μια *Elementarsatz* όταν αυτή είναι αληθής. *Tatsache* είναι αυτό που αντιστοιχεί στο λογικό γινόμενο στοιχειωδών προτάσεων όταν το γινόμενο αυτό είναι αληθές» (*Wittgenstein in Cambridge*, επιμ. B. McGuinness, 2008, σ. 98). Ο ορισμός στον πίνακα ακολουθεί την πρώτη ανάγνωση.
 
 #### Β. Αντικείμενα (*Gegenstände*) και Λογική Μορφή (2.01 – 2.0141)
 * **2.01**: *«Der Sachverhalt ist eine Verbindung von Gegenständen. (Sachen, Dingen.)»*  
@@ -724,7 +724,7 @@ TRACTATUS LOGICO-PHILOSOPHICUS
 #### Δ. Η Λογική Θεωρία των Πιθανοτήτων (*Wahrscheinlichkeit*) (5.15 – 5.156)
 Επειδή από μία στοιχειώδη πρόταση δεν απορρέει με βεβαιότητα καμία άλλη, πώς προκύπτει η **πιθανότητα**; Ο Wittgenstein θεμελιώνει μια αμιγώς **Λογική Θεωρία Πιθανοτήτων** (που επηρέασε αργότερα τον **Friedrich Waismann** και συγγενεύει με τη λογική θεωρία των πιθανοτήτων του **Rudolf Carnap**):
 
-*(Ιστορική σημείωση: η σύλληψη της πιθανότητας ως λόγου «περιθωρίων» (*Spielräume*) ανάγεται στον J. von Kries (1886), και μια λογική ερμηνεία της πιθανότητας διατύπωσε την ίδια εποχή ο J. M. Keynes (1921). Το πώς ακριβώς σχετίζονται τα 5.15–5.156 με τον Keynes, ως συγγένεια ή ως κριτική, συζητείται.)*
+*(Ιστορική σημείωση: η σύλληψη της πιθανότητας ως λόγου «περιθωρίων» (*Spielräume*) ανάγεται στον J. von Kries (1886), και μια λογική ερμηνεία της πιθανότητας διατύπωσε την ίδια εποχή ο J. M. Keynes (1921). Το πώς ακριβώς σχετίζονται τα 5.15–5.156 με τον Keynes, ως συγγένεια ή ως κριτική, συζητείται. Λογικό ορισμό της πιθανότητας, με την παραγωγιμότητα και το ασυμβίβαστο ως οριακές περιπτώσεις, είχε δώσει ήδη ο B. Bolzano (*Wissenschaftslehre*, 1837)· κατά το λήμμα «Bolzano's Logic» της *Stanford Encyclopedia of Philosophy* είναι δυνατόν ο Wittgenstein να τον παρέλαβε από εκεί, ίσως μέσω του R. Zimmermann. Ο Carnap, τέλος, έκρινε ότι ο ορισμός του 5.15 συμπίπτει με τη συνάρτηση επιβεβαίωσης $c_W$, την οποία ο ίδιος απορρίπτει, επειδή δεν αφήνει την προηγούμενη εμπειρία να επηρεάσει τις προσδοκίες μας («On Inductive Logic», 1945, υποσημ. 13).)*
 
 * **5.15 (Ο Μαθηματικός Ορισμός της Πιθανότητας)**:
   Έστω $W_r$ ο αριθμός των βάσεων αληθείας της πρότασης $r$, και έστω $W_{rs}$ ο αριθμός εκείνων των βάσεων αληθείας της πρότασης $s$ που είναι **ταυτόχρονα** και βάσεις αληθείας της $r$. Τότε λέμε ότι η πρόταση $r$ δίνει στην πρόταση $s$ την **πιθανότητα**:
@@ -1280,7 +1280,7 @@ TRACTATUS LOGICO-PHILOSOPHICUS
 
 ## ΒΙΒΛΙΟΓΡΑΦΙΑ
 
-*(Τα βιβλιογραφικά στοιχεία των ενοτήτων Β΄–Δ΄ διασταυρώθηκαν με διαδικτυακές πηγές τον Νοέμβριο του 2026 (βλ. `CROSSCHECK_PLAN.md`)· ανεπιβεβαίωτα παραμένουν τα στοιχεία των Carroll, Pears, Janik & Toulmin, Mauthner, Hertz και *Principia Mathematica*, καθώς και τα έτη έκδοσης των κλασικών έργων.)*
+*(Τα βιβλιογραφικά στοιχεία των ενοτήτων Β΄–Δ΄ διασταυρώθηκαν με διαδικτυακές πηγές τον Νοέμβριο του 2026 (βλ. `CROSSCHECK_PLAN.md`)· τα έτη έκδοσης των κλασικών έργων της ενότητας Γ΄ είναι τα καθιερωμένα και δεν ελέγχθηκαν όλα ένα προς ένα.)*
 
 ### Α΄. Οι τρεις εκδόσεις του φακέλου
 - Wittgenstein, L., *Tractatus Logico-Philosophicus*, μτφρ. C. K. Ogden (με τη συνεργασία του F. P. Ramsey), εισαγωγή B. Russell, London: Kegan Paul, Trench, Trubner & Co., 1922 — ψηφιακή έκδοση Project Gutenberg #5740 (`5740-pdf.pdf`).
@@ -1293,25 +1293,27 @@ TRACTATUS LOGICO-PHILOSOPHICUS
 - «A Lecture on Ethics» (1929), *The Philosophical Review* 74 (1965), σσ. 3–12.
 - *Philosophische Untersuchungen / Philosophical Investigations*, επιμ. G. E. M. Anscombe & R. Rhees, μτφρ. G. E. M. Anscombe, Oxford: Blackwell, 1953.
 - *Briefe an Ludwig von Ficker*, επιμ. G. H. von Wright με τη συνεργασία του W. Methlagl, Brenner-Studien 1, Salzburg: Otto Müller, 1969.
-- Ελληνική μετάφραση: *Tractatus Logico-Philosophicus*, μτφρ. Θανάσης Κιτσόπουλος, Αθήνα: Παπαζήσης (σειρά «Φιλοσοφία – Πηγές»), 1978.
+- *Wittgenstein in Cambridge: Letters and Documents 1911–1951*, επιμ. B. McGuinness, Oxford: Blackwell, 2008 (επιστολή προς τον Russell, 19.8.1919, σ. 98).
+- Ελληνική μετάφραση: *Tractatus Logico-Philosophicus*, μτφρ. Θανάσης Κιτσόπουλος, με εισαγωγικά κείμενα του Ζήσιμου Λορεντζάτου και του B. Russell, Αθήνα: Παπαζήσης (σειρά «Φιλοσοφία – Πηγές»), 1978.
 
 ### Γ΄. Πηγές με τις οποίες συνομιλεί το *Tractatus*
 - Frege, G., *Begriffsschrift* (1879)· «Über Sinn und Bedeutung», *Zeitschrift für Philosophie und philosophische Kritik* 100 (1892), σσ. 25–50· *Grundgesetze der Arithmetik* (1893/1903).
 - Russell, B., «On Denoting», *Mind* 14 (1905), σσ. 479–493· «The Philosophy of Logical Atomism», *The Monist* 28–29 (1918–1919)· *Theory of Knowledge: The 1913 Manuscript* (Collected Papers, τόμ. 7, επιμ. E. R. Eames με τη συνεργασία του K. Blackwell, London: Allen & Unwin, 1984).
 - Whitehead, A. N. & Russell, B., *Principia Mathematica*, 3 τόμοι, Cambridge University Press, 1910–1913.
-- Hertz, H., *Die Prinzipien der Mechanik in neuem Zusammenhange dargestellt*, Leipzig, 1894.
-- Mauthner, F., *Beiträge zu einer Kritik der Sprache*, 3 τόμοι, Stuttgart, 1901–1902.
+- Hertz, H., *Die Prinzipien der Mechanik in neuem Zusammenhange dargestellt*, Leipzig: J. A. Barth, 1894.
+- Mauthner, F., *Beiträge zu einer Kritik der Sprache*, 3 τόμοι, Stuttgart: Cotta, 1901–1902.
 - Sheffer, H. M., «A set of five independent postulates for Boolean algebras, with application to logical constants», *Transactions of the American Mathematical Society* 14 (1913), σσ. 481–488.
 - Carroll, L., «What the Tortoise Said to Achilles», *Mind* 4 (1895), σσ. 278–280.
 - Kant, I., *Kritik der reinen Vernunft* (1781/1787)· *Prolegomena* (1783), §13.
 - Schopenhauer, A., *Die Welt als Wille und Vorstellung* (1819/1844).
-- Leibniz, G. W., *Monadologie* (1714)· Spinoza, B., *Ethica* (1677)· Hume, D., *A Treatise of Human Nature* (1739–1740)· Bradley, F. H., *Appearance and Reality* (1893).
+- Leibniz, G. W., *Monadologie* (1714· δημοσ. 1720)· Spinoza, B., *Ethica* (1677)· Hume, D., *A Treatise of Human Nature* (1739–1740)· Bradley, F. H., *Appearance and Reality* (1893).
 - Σέξτος Εμπειρικός, *Πρὸς Λογικούς* Β΄ (= *Adversus Mathematicos* VIII), 480–481· Tolstoy, L., *Σύνοψη του Ευαγγελίου* (δεκαετία του 1880· δημοσ. δεκαετία του 1890).
 
 ### Δ΄. Δευτερογενής βιβλιογραφία
 - Ramsey, F. P., «Critical Notice: *Tractatus Logico-Philosophicus*», *Mind* 32 (1923), σσ. 465–478.
 - Anscombe, G. E. M., *An Introduction to Wittgenstein's Tractatus*, London: Hutchinson, 1959.
 - Stenius, E., *Wittgenstein's Tractatus: A Critical Exposition of its Main Lines of Thought*, Oxford: Blackwell, 1960.
+- Carnap, R., «On Inductive Logic», *Philosophy of Science* 12 (1945), σσ. 72–97 (υποσημ. 13 για το 5.15).
 - Black, M., *A Companion to Wittgenstein's 'Tractatus'*, Cambridge University Press, 1964.
 - Hacker, P. M. S., *Insight and Illusion*, Oxford: Clarendon Press, 1972 (αναθ. έκδ. 1986) — «παραδοσιακή» ανάγνωση.
 - Pears, D., *The False Prison*, τόμ. 1, Oxford: Clarendon Press, 1987.
