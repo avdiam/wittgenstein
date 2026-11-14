@@ -13,6 +13,7 @@ Greek-language study material on the history of logic and on Wittgenstein's
 | `Tractatus Logico-Philosophicus/*.pdf` | The three source editions used for grounding (Klement side-by-side, Stern tree view, Gutenberg #5740). |
 | `tools/build_html.py` | Renders the Markdown into the HTML. |
 | `CROSSCHECK_PLAN.md` | What was checked against outside sources, with verdicts, and what is still open. |
+| `TODO.md` | Work planned for future sessions (page redesign, essay review). |
 | `CLAUDE.md`, `AGENTS.md` | Instructions and conventions for agents working in this repo. |
 
 ## Workflow (for people and agents)

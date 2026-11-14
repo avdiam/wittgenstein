@@ -3,6 +3,7 @@
 Greek-language study material on Wittgenstein's *Tractatus Logico-Philosophicus*.
 Read `README.md` first (layout and workflow), then `CROSSCHECK_PLAN.md` (what has
 been verified against outside sources, and the list of open items at its end).
+`TODO.md` lists the work the owner has planned for future sessions.
 
 ## Roles of the files
 
