@@ -82,7 +82,7 @@ What was asked, and where it is now:
 Decided by the owner on 2026-11-14:
 
 - Title «Λογική, γλώσσα και μηχανές» with the subtitle above; file names stay.
-- `Istoria_Logikis_kai_AI.docx` deleted (recoverable from git, commit c453fe2).
+- `Istoria_Logikis_kai_AI.docx` deleted (recoverable from git, commit 4e50b45).
 - `Wittgenstein intro.md` deleted after its content was merged.
 - Names in Latin script, Greek form at first mention of the main figures.
 - `CLAUDE.md` keeps the paragraph on the essay.

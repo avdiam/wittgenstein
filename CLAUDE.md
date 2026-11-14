@@ -20,7 +20,7 @@ been verified against outside sources, and the list of open items at its end).
   general readers, not for IT or mathematics people. Names are written in
   Latin script, with the Greek form at the first mention of the main figures.
   The first version (`Istoria_Logikis_kai_AI.docx`) was deleted on 2026-11-14;
-  it is in git history (`git show c453fe2:Istoria_Logikis_kai_AI.docx`).
+  it is in git history (`git show 4e50b45:Istoria_Logikis_kai_AI.docx`).
 
 ## Workflow
 

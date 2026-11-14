@@ -107,7 +107,7 @@ translation entry (translator, publisher, year).
 Verdicts: **confirmed** (sources agree with the analysis), **corrected** (the
 analysis needs a change), **contested** (respectable sources disagree),
 **unverifiable** (not settled in this pass). "Line" is the line number in
-`TRACTATUS_LOGICO_PHILOSOPHICUS_ANALYSIS_1-7.md` at commit `1b600c8`.
+`TRACTATUS_LOGICO_PHILOSOPHICUS_ANALYSIS_1-7.md` at commit `7299538` (`1b600c8` before the history was rewritten on 2026-11-14).
 Source quality is uneven: where the second source is only Wikipedia or a
 bookseller's record, the row says so. The proposed actions were approved and applied on 2026-11-14 (Carnap weakened to «συγγενεύει με»; Lorentzatos left out).
 
