@@ -343,9 +343,64 @@ essay (sections 6, 8 and 10). The note itself was not edited.
 | N11 | Returned to philosophy in the 1930s | SEP `wittgenstein`; IEP | **corrected** | 1929 (the essay already had it). |
 | N12 | Comparison table of the two phases | — | two cells **corrected** | Kept as a table. "Correspondence with physical facts" became the shared logical form of proposition and possible situation; "delimiting the scientifically sayable" became clarification and the limit between saying and showing. |
 
+## Re-check of weakly sourced points (2026-11-14, second pass)
+
+| Point | Source now read | Verdict | Action in the essay |
+| :-- | :-- | :-- | :-- |
+| Russell's barber (1918) | Russell, "The Philosophy of Logical Atomism", Lecture VII, *The Monist* 29 (1919), pp. 354–355 ([archive.org](https://archive.org/details/sim_monist_1919-07_29_3)) | **corrected** | Russell calls it a form suggested to him "which was not valid"; the essay now says so. |
+| Russell's acknowledgement of Wittgenstein (1918) | *The Monist* 28 (1918), p. 495 ([archive.org](https://archive.org/details/sim_monist_1918-10_28_4)) | confirmed | none |
+| Russell, "most exciting intellectual adventures" | Russell, "Ludwig Wittgenstein", *Mind* 60 (1951), p. 298 ([scan](https://sites.ualberta.ca/~francisp/NewPhil448/RussellWittObituary1951.pdf)) | confirmed | none |
+| Strachey 1965 | [OUP record](https://academic.oup.com/comjnl/article/7/4/313/354243): *Computer Journal* 7(4), p. 313 | data confirmed; wording of the letter still second-hand | none |
+| Presburger | Stansifer's translation, Cornell TR84-639 ([PDF](https://cs.fit.edu/~ryan/papers/presburger.pdf)) | **corrected** | Warsaw 1929, proceedings 1930; integers, not naturals; he proved completeness, and decidability follows from the method. |
+| Wang 1961, Berger 1966; tilings and Turing machines | Robinson, *Inventiones math.* 12 (1971), pp. 177–178, 209 ([scan](https://gdz.sub.uni-goettingen.de/download/pdf/PPN356556735_0012/LOG_0023.pdf)) | confirmed | none |
+| Nakashima | Yamada, *IEEJ Trans. FM* 124 (2004) ([J-STAGE](https://www.jstage.jst.go.jp/article/ieejfms/124/8/124_8_720/_article)); IPSJ museum | **corrected** | Papers from 1934 (not 1935) to 1936. |
+| Shannon's thesis | Crossref: *Trans. AIEE* 57 (1938), 713–723; MIT DSpace dates the degree 1940 | 1938 confirmed; "1937, aged 21" **not supported** | Date and age removed; only the 1938 publication kept. |
+| MYCIN's rules | Buchanan & Shortliffe (1984), pp. 72, 79, 697 ([Columbia](https://people.dbmi.columbia.edu/shortliffe/Buchanan-Shortliffe-1984/)) | confirmed | none |
+| Logic Theorist, 38 of 52 | Newell, Shaw & Simon, *Psychological Review* 65 (1958), p. 155 | confirmed | Exact count added. |
+| McCulloch & Pitts and Carnap | the 1943 paper, p. 118 | confirmed | none |
+| Firth 1957 | Firth, "A Synopsis of Linguistic Theory", p. 11 ([scan](https://languagelog.ldc.upenn.edu/myl/Firth1957.pdf)) | confirmed | The adjacent sentence citing Wittgenstein restored. (The original ends with an exclamation mark; the Greek rendering does not.) |
+| Masterman | Sowa, *Computational Linguistics* 32 (2006); Léon, *HEL* 29 (2007) | confirmed; CLRU founded 1955 (Léon; Sowa: "late 1950s") | «το 1955» |
+| Turing on falling bridges (1939) | Matthíasson, *BJHP* 29 (2021); Vanrie (2024) | exchange confirmed; page in Diamond's *LFM* not seen | none |
+| Turing 1944–45 on Wittgenstein's lectures | Turing typescript AMT/C12 p. 6, as quoted by Floyd; Floyd's chapter (Elsevier 2013) exists | confirmed | Floyd's chapter added to the sources. |
+| Rosser 1936 | Crossref, *JSL* 1(3), 87–91 | confirmed | Added to the sources. |
+| Winch 1958 | Routledge page; SEP `understanding` §5.1 | confirmed | Publisher added. |
+| Geertz, "my master" | still only snippets | **still weak** | Sentence removed. |
+| Rosch & Mervis; the bird example | *Cognitive Psychology* 7 (1975), pp. 574–575 (no birds); Rosch, *JEP: General* 104 (1975) for birds | **corrected** | Bird example attributed to Rosch's other 1975 paper; robin instead of sparrow. |
+| Rossi-Landi | Routledge table of contents; Stern, *NDPR* 2003 | confirmed | none |
+| Dummett and §62 | Dummett, *Frege: Philosophy of Mathematics* (1991), p. 111, quoted in SEP `analysis` | **corrected** (source) | The paragraph of the *Grundlagen* named; both Dummett books in the sources. |
+| Floyd & Putnam 2000; Bays 2004 | PDC records; Lampert (2006); Plebani | data confirmed; Bays's argument known only from another paper | none |
+| Adorno on Tractatus 7 | *Philosophy Now* 19; a transcription citing pp. 100–102 | **still weak** (page) | Kept; reading the book would close this. |
+| Drury on Hegel | Malcolm, *LRB* 3/21 (1981) | wording confirmed; page in Rhees (ed.) not seen | none |
+| *Culture and Value*, 1931 list | German text (LWP, *Vermischte Bemerkungen*); CV (1980), p. 19 | confirmed | none |
+| Harris & Unnsteinsson | University of Iceland record: *BJHP* 26(2) (2018), 371–395 | confirmed | Full reference restored. |
+| Dennett under Ryle | *Filozofia* 79 (2024) obituary | confirmed | none |
+| Wittgenstein and the USSR, 1935 | Moran, *NLR* I/73 (1972), quoting von Wright | confirmed | none |
+
+## Additions decided by the owner (2026-11-14)
+
+| Topic | Sources | Verdict | Notes |
+| :-- | :-- | :-- | :-- |
+| Boethius | SEP `boethius` | confirmed | SEP gives c. 475–7 to 526?; the essay uses «περ. 475/477–526». |
+| al-Fārābī, Avicenna; reception in the West | SEP `arabic-islamic-language`, `ibn-sina-logic`, `arabic-islamic-influence` | confirmed | The text says the innovative parts did not reach the Latin West, as SEP does. al-Fārābī's dates are not given (not checked). |
+| Byzantine logic | SEP `byzantine-philosophy` | confirmed; sources thin | Stated as thin in the text. |
+| Babbage | MacTutor `Babbage`; Menabrea/Lovelace (1843), [fourmilab transcription](https://www.fourmilab.ch/babbage/sketch.html) | confirmed | none |
+| Lovelace: Notes, Note G, music, "no pretensions whatever to originate anything" | the 1843 text (fourmilab); MacTutor `Lovelace` | confirmed | Turing's 1950 quotation omits "whatever"; the essay follows Lovelace. |
+| Lovelace as "first programmer" | MacTutor; Oxford Mathematics; Rojas, *IEEE Annals* 43 (2021); Hollings, Martin & Rice, *CACM* 67 (2024) | **contested** | «Ερμηνευτική σημείωση». |
+| Turing 1950 | the paper (*Mind* 59) | confirmed | Prediction, objections and the "polite convention" from the text. Page range 433–460 from memory. |
+| Whether passing the test shows thinking | SEP `turing-test` (Block's "Blockhead") | **contested** | Stated as debated. |
+| Searle 1980 | the paper (BBS 3, 417–457; penultimate draft read); SEP `chinese-room` | confirmed; replies **contested** | «Ερμηνευτική σημείωση». Bender & Koller cite Searle explicitly. |
+| Spinoza and the title | Churchill (2009): Moore proposed the Latin title; the Spinoza allusion only via Wikipedia citing Monk | Moore confirmed; allusion **weak** | Worded as «θυμίζει», not as an intended allusion. |
+| Form of the Tractatus and Spinoza's *Ethics* | Churchill (2009) | confirmed (one source) | Stated without claiming influence. |
+| 6.45 *sub specie aeterni*; Notebooks 7.10.16 | LWP German texts; Spinoza, *Ethica* V | confirmed | "Probably through Schopenhauer" (Somavilla, ALWS) stated as the scholars' view. |
+| Moore: Norway 1914; 1929 doctorate; lectures 1930–33 | LWP (Notes dictated to Moore); Moore, *Mind* 63 (1954), pp. 1–2 | confirmed | The "work of genius" sentence survives only in recollections (Braithwaite and others) in different wordings: the essay says so and does not quote it. |
+| Moore and *On Certainty* | IEP `witt-epi` | confirmed | none |
+| Mauthner: ladder, 4.0031 | Mauthner, *Beiträge* I (1901), pp. 1–2 (archive.org); LWP German text of 4.0031 | confirmed | none |
+| Source of the ladder; Wittgenstein's debt to Mauthner | Gakis and Nájera (ALWS); Le Rider, *ÖZG* 23 (2012); Janik & Toulmin (1973) | **contested** | «Ερμηνευτική σημείωση». |
+| Timeline and glossary | the essay itself | — | No new claims; every date and definition is stated in the body. |
+
 ## Open for the essay
 
-- Standard life dates were not checked one by one.
-- Weakly sourced rows above (snippets, Wikipedia) should be re-read at the source: Russell's 1918 barber passage, Strachey 1965, Presburger, Wang and Berger, Nakashima, MYCIN's rule count, Firth, Masterman, Winch, Rosch & Mervis, Geertz, Rossi-Landi, Dummett.
-- Read only through other authors: Floyd & Putnam (2000), Bays (2004), Adorno's *Hegel: Three Studies*, Drury's recollections, *Culture and Value*.
+- Standard life dates were not checked one by one; al-Fārābī's are not given.
+- Still weak: the page of Turing's bridge remark in Diamond's *LFM*; the wording of Strachey's letter; Adorno's page; Drury's page; Bays's 2004 argument; Moore's examiner's report.
+- Turing's 1950 page range (433–460) and Moore's second 1954 page range are from memory.
 - The Greek renderings of Tractatus and *Investigations* sentences are the essay's own; they were not compared with the published Greek translations (see C1).

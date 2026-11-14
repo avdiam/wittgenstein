@@ -26,7 +26,7 @@ from markdown_it import MarkdownIt
 
 ROOT = Path(__file__).resolve().parent.parent
 MD_PATH = ROOT / "Logiki_Glossa_Michanes.md"
-DOCX_PATH = ROOT / "Logiki_Glossa_Michanes.docx"
+DOCX_PATH = ROOT / "docs" / "Logiki_Glossa_Michanes.docx"  # offered for download on the essay page
 
 W_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 R_NS = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
