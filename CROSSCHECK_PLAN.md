@@ -1,6 +1,6 @@
 # Cross-check plan: analysis vs. outside sources
 
-Status: **tiers A and D checked online (2026-11-14) and the approved corrections applied.** Tiers B, C and E not started. Results are at the end of this file.
+Status: **all tiers (A–E) checked online on 2026-11-14 and the corrections applied.** A few items need printed sources; they are listed at the very end. Results are at the end of this file.
 
 The quotations of the *Tractatus* in the analysis were checked against the three
 PDFs in this folder. What the PDFs cannot settle is listed here.
@@ -173,3 +173,58 @@ bookseller's record, the row says so. The proposed actions were approved and app
 - Tier A: 21 rows. 10 confirmed (three of them with small wording fixes: A2, A5, A13), 9 corrected (A4, A7, A9, A10, A11, A16, A17, A18, A19b), 2 unverifiable in this pass (A19a Carnap, A19c).
 - The four claims the PDFs could not settle: Reclam **confirmed**; 1914 donation **confirmed**; Hermine's phrase **confirmed**; Sraffa sourcing **corrected**.
 - Tier D: one wrong DOI (Stern), one unsupported date (Tolstoy), eight entries to complete, six entries plus the Stenius imprint still unverified, and the role of Lorentzatos in the Greek edition open.
+
+---
+
+# Results — tiers B, C and E (checked 2026-11-14)
+
+Same verdict vocabulary as above. For interpretive claims, "contested" means
+respectable sources disagree, and the action is an «Ερμηνευτική σημείωση» that
+names both readings rather than picking one. All actions in this section have
+been applied to the Markdown.
+
+## Tier B — interpretive claims
+
+| # | Claim | Sources | Verdict | Action taken |
+| :-- | :-- | :-- | :-- | :-- |
+| B1 | *Sachverhalt* defined as a *possible* combination of objects | [SEP, Wittgenstein's Logical Atomism](https://plato.stanford.edu/entries/wittgenstein-atomism/); [Hauptli, FIU lecture supplement](https://faculty.fiu.edu/~hauptli/Wittgenstein'sTractatus.html) (atomic-fact reading) | **contested** | Note added under the terminology table: possible combination (Stenius, Black, "state of affairs") vs existing atomic fact (Ogden's "atomic fact", Russell's introduction). The 1919 letter to Russell that is often quoted for the second reading could not be confirmed online, so it is not cited. |
+| B2 | 1.11–1.12 as a rejection of Russell's general facts | [Notre Dame course notes (Speaks)](https://www3.nd.edu/~jspeaks/courses/mcgill/370/winter2004/wittgenstein-tractatus.htm); text of 1.11–1.12 and 2.04–2.05 | contested, already flagged | none: the existing «Ερμηνευτική σημείωση» covers it. No source found that settles it. |
+| B3 | Reconstruction of the substance argument (2.0211–2.0212) | [SEP, Wittgenstein's Logical Atomism, §3.2](https://plato.stanford.edu/entries/wittgenstein-atomism/); [WAB, "Sense and Substance in Wittgenstein's Tractatus"](https://wab.uib.no/ojs/index.php/agora-alws/article/view/2501/2726) | confirmed as one standard reconstruction | Note added: the passage is compressed and other reconstructions exist; the broom example is borrowed from *Investigations* §60. |
+| B4 | Names have only *Bedeutung*, propositions only *Sinn* | [Tractatus 3.3, 3.142 (Wikisource)](https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3); [Trebaul, early Wittgenstein's criticism of Frege](https://halshs.archives-ouvertes.fr/halshs-01532039/file/The%20early%20Wittgenstein%27s%20truth-conditional%20conception%20of%20sense%20in%20the%20light%20of%20his%20criticism%20of%20Frege%20%28Dewi%20Trebaul%29.pdf) | confirmed | none |
+| B5 | The N operator yields quantified logic | [Fogelin, "Wittgenstein's Operator N" (citations)](https://philarchive.org/citations/FOGWON); [Rogers & Wehmeier, "Tractarian First-Order Logic", *Review of Symbolic Logic*](https://www.cambridge.org/core/journals/review-of-symbolic-logic/article/tractarian-firstorder-logic-identity-and-the-noperator/500C8C420D172A776C815A229A7601A6) | **contested** | Note added: the examples cover single generality only; Fogelin's objection about mixed multiple generality, the Geach and Soames replies, Rogers & Wehmeier (2012). |
+| B6 | Elimination of identity | [Hintikka, "Identity, Variables, and Impredicative Definitions", JSL 1956](https://resolve-he.cambridge.org/core/journals/journal-of-symbolic-logic/article/identity-variables-and-impredicative-definitions/F1C920A3AF94F4DD32E2AC07E6B67920); [Wehmeier, "On Ramsey's 'Silly Delusion' Regarding Tractatus 5.53"](https://api.philpapers.org/rec/WEHORS) | confirmed; scholarship missing | Note added on Hintikka's weakly / strongly exclusive readings of the variables. The translation table itself matches 5.531–5.5321. |
+| B7 | Number as exponent of an operation; "demolition" of logicism | [SEP, Wittgenstein's Philosophy of Mathematics](https://plato.stanford.edu/entries/wittgenstein-mathematics/) and its [notes](https://plato.stanford.edu/entries/wittgenstein-mathematics/notes.html) | **corrected** and contested | Corrected: the dependence on how many objects exist is Russell's problem (axiom of infinity), not Frege's; «Κατάρριψη» → «Απόρριψη», «αποδεικνύει» → «υποστηρίζει». Note added: whether the Tractatus keeps a class-free logicism (6.2, 6.234) is disputed. |
+| B8 | Logical probability (5.15) and its relatives | [Ongaro, "The Interpretation of Probability in the Tractatus"](https://dc2.philarchive.org/rec/ONGTIO-2); [Coates, "Keynes, Wittgenstein, and Probability in the Tractatus"](https://philsci-archive.pitt.edu/24159/) | confirmed as a logical interpretation; relation to Keynes contested | Historical note added: von Kries's *Spielraum* and Keynes (1921). Bolzano is **unverifiable** here (no source found) and is not mentioned. |
+| B9 | Solipsism and the metaphysical subject | [Hacker, *Insight and Illusion*, "Empirical Realism and Transcendental Solipsism"](https://core-prod.cambridgecore.org/core/books/insight-and-illusion/empirical-realism-and-transcendental-solipsism/4FF01EB81BC95E4A2547FE736BE9D548); [Heflik on transcendental solipsism](https://philarchive.org/archive/HEFSCO) | confirmed as the traditional reading; contested by resolute readers | Note added at 5.62 naming both. |
+| B10 | 6.3751 and the 1929 paper | [Some Remarks on Logical Form (LWP)](https://books.wittgensteinproject.org/pdf/english/Some%20Remarks%20on%20Logical%20Form.pdf); [Notre Dame handout on colour incompatibility](https://www3.nd.edu/~jspeaks/courses/2007-8/43904/_HANDOUTS/tractatus-color-incompatibility.pdf) | confirmed | none (the paper says outright that the mutual exclusion of unanalysable statements of degree contradicts the *Tractatus*) |
+| B11 | Traditional vs resolute readings of 6.54 | [Bronzo, "The Resolute Reading and Its Critics"](https://static.hum.uchicago.edu/philosophy/conant/Bronzo-ResoluteReadingsandItsCritics-W-S2012.pdf); [Hutchinson & Read, "An Elucidatory Interpretation of Wittgenstein's Tractatus"](https://philpapers.org/rec/HUTAEI) | both summaries fair; incomplete | Item Γ added: McGinn's and Hutto's elucidatory reading, the origin of "resolute" (Ricketts; Goldfarb 1997), and that Diamond and Conant do not call their reading "therapeutic". |
+| B12 | "Transcendental" in 6.13 and 6.421 read in a Kantian sense | [Fairhurst, "'Ethics is transcendental'", *JAPA*](https://cambridge.org/core/journals/journal-of-the-american-philosophical-association/article/ethics-is-transcendental-tractatus-logicophilosophicus-6421/F3F3289810EB161F581162FB5AEEDFFA); [Tejedor draft (Univ. of Hertfordshire)](https://uhra.herts.ac.uk/id/eprint/4583/1/TejedorWReligionDraft.pdf) | 6.421 **contested**; 6.13 not covered by the sources found | Note added at 6.421: the *Notebooks* have "transcendent", the *Tractatus* "transcendental"; some read "transcendent", others take the change as deliberate. |
+| B13 | Characterisation of Mauthner and of the Vienna Circle | [Nájera, "Wittgenstein versus Mauthner", WAB](https://wab.uib.no/ojs/index.php/agora-alws/article/view/2659/3042); [Cambridge excerpt on the positivist reading](https://assets.cambridge.org/97811087/44409/excerpt/9781108744409_excerpt.pdf) | confirmed | none |
+| A19c | 4.024 and truth-conditional semantics (carried over from tier A) | [Trebaul](https://halshs.archives-ouvertes.fr/halshs-01532039/file/The%20early%20Wittgenstein%27s%20truth-conditional%20conception%20of%20sense%20in%20the%20light%20of%20his%20criticism%20of%20Frege%20%28Dewi%20Trebaul%29.pdf) (one source) | plausible, single source | none; the sentence is already hedged and has its own note |
+
+## Tier C — translation and terminology
+
+| # | Item | Sources | Verdict | Action taken |
+| :-- | :-- | :-- | :-- | :-- |
+| C1 | Greek terms against the Kitsopoulos translation | none found online (no glossary, review or excerpt) | **unverifiable** | none. Needs a printed copy of the Papazisis edition. |
+| C2a | 4.128 *zahllos* | both local editions: Ogden "anumerical"; analysis already explains it is "without number", not "countless" | confirmed | none |
+| C2b | 5.1361 *der Aberglaube* | both local editions: "Superstition is the belief in the causal nexus" | confirmed | none |
+| C2c | 5.62 *die allein ich verstehe* | [Hintikka, "On Wittgenstein's 'Solipsism'"](https://www.taylorfrancis.com/chapters/edit/10.4324/9781315823270-13/wittgenstein-solipsism-1-jaakko-hintikka); Anscombe's report of Lewy's find, as quoted in the search result | analysis follows the now-standard reading; history missing | Translation note added (older "which only I understand" vs "the only language I understand"; Wittgenstein's own correction in a first-edition copy). |
+| C2d | 6.13 / 6.421 *transzendental* | LWP German text | **corrected** (spelling) | The original reads *transcendental*; German quotation fixed in the Markdown and in two hand-written HTML passages. See B12 for the sense. |
+| C3 | Pears–McGuinness wording of propositions 1–7 against a second copy | Klement's edition in the folder | **unverifiable** as specified | The Stern PDF in the folder carries Ogden only and the Pears–McGuinness text is not freely online, so there is no second copy to compare. The seven quotations read as in Klement where the three-column extraction allows a check. |
+
+## Tier E — figures and text integrity
+
+| # | Item | Source | Verdict | Action taken |
+| :-- | :-- | :-- | :-- | :-- |
+| E1a | Necker cube, 5.5423 | [figure in the LWP edition](https://www.wittgensteinproject.org/w/index.php/Logisch-philosophische_Abhandlung) | **corrected** | In the original the *a* corners form the lower-left face and the *b* corners the upper-right face; the ASCII figure had them the other way round. Labels swapped. |
+| E1b | Eye diagram, 5.6331 | same | **corrected** | The original is a teardrop with "Auge" at its pointed end, i.e. the eye drawn as part of the field's outline, not inside it. ASCII figure redrawn; wording fixed in the Markdown and in two hand-written HTML passages. The interactive SVG in the visual lab still shows the eye inside an oval. |
+| E1c | Line figure, 6.36111 | same | confirmed | none (o—x labelled *a*, x—o labelled *b*) |
+| E2 | German quotations | LWP German text, compared by script (87 fragments, whitespace and punctuation ignored) | confirmed, two spelling variants | All Tractatus fragments found except *transzendental* (original: *transcendental*, fixed) and *lässt* (original: *läßt*; modern spelling kept). |
+| E3 | 526 propositions; 7 / 79 / 74 / 109 / 151 / 105 / 1 | proposition anchors in the LWP edition, counted by script | confirmed | none. Wikipedia's "525" does not match either the PDFs or this count. |
+
+## Still open after this pass
+
+- C1 (Greek terms vs Kitsopoulos) and C3 (a second Pears–McGuinness copy) need printed books.
+- The 19.8.1919 letter to Russell on *Sachverhalt* / *Tatsache*, Bolzano as a precursor of 5.15, and Carnap's own acknowledgment of the *Tractatus* on probability were not confirmed online.
+- The eye-diagram SVG in the HTML visual lab differs in shape from the original figure.
