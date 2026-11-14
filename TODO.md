@@ -1,20 +1,51 @@
 # To-do for future sessions
 
-Noted by the owner on 2026-11-14. Nothing here has been started. Items are
-recorded as requested; the two readings that were open were confirmed by the
-owner on 2026-11-14.
+Noted by the owner on 2026-11-14. Item 1 was done on 2026-11-14 and awaits the
+owner's review; item 2 has not been started. Items are recorded as requested;
+the two readings that were open were confirmed by the owner on 2026-11-14.
 More items are expected to be added.
 
-## 1. Enhance the HTML page
+## 1. Enhance the HTML page — done 2026-11-14, awaiting the owner's review
 
 `Tractatus Logico-Philosophicus/TRACTATUS_LOGICO_PHILOSOPHICUS_INTERACTIVE_V2.html`
 
+As requested:
+
 - Use a plugin to improve the page: aesthetics, colours, user-friendliness.
 - Example given: the left pane should be foldable.
-- Which plugin is not decided yet.
 - The rules in `CLAUDE.md` still apply: the full analysis between the
   `FULL-ANALYSIS` markers is generated from the Markdown and must not be
   edited by hand.
+
+What was done (plugin chosen by the owner: `frontend-design`):
+
+- New stylesheet, header and contents pane; the text of the summaries, labs,
+  tree data and philosophers grid was not changed.
+- Colours: cool plaster white and anthracite, one green for whatever "is the
+  case" (active item, true cell, Wittgenstein's own text), ochre for the
+  dialogue boxes and search hits. Light and dark themes.
+- Typefaces that carry Greek: Literata (reading), Commissioner (interface),
+  JetBrains Mono (notation and ASCII figures only). The earlier faces had no
+  Greek glyphs, so Greek text was drawn in a fallback font.
+- The contents pane aligns the numbers on the decimal point and folds to a
+  rail of numerals (button in the pane, or the `[` key); the choice is kept in
+  the browser. Below 1024px it is a drawer, as before.
+- The header is one row on wide screens. The tab labels are shorter; the full
+  names are in their tooltips.
+- Forced capitals were removed: they dropped Greek accents and changed
+  notation in headings (`p` became `P`).
+- Removed from the pane: the four "open lab" buttons, which repeated the tabs.
+- The styles of the generated blocks live in `tools/build_html.py`.
+
+Left as they are, for the owner to decide:
+
+- Headings typed in capitals in the HTML and the Markdown stay in capitals.
+- The hand-written summaries still contain exclamation marks and emphatic
+  wording that the tone rule in `CLAUDE.md` excludes.
+- Tailwind is loaded from `www.gstatic.com/antigravity/web/dev/`, which looks
+  like a development address and may not stay available.
+- Not checked on a real phone or at a real 1920px window: the narrow and wide
+  layouts were checked in frames of 400px and 1800px inside a 1280px window.
 
 ## 2. Review and extend the essay
 

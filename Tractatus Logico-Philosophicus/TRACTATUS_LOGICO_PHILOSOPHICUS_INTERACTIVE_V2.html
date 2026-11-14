@@ -3,57 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ludwig Wittgenstein // Tractatus Logico-Philosophicus — Haus Wittgenstein Interactive Edition v2</title>
+  <title>Tractatus Logico-Philosophicus: ανάλυση των προτάσεων 1–7 και εργαστήρια</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400..700&family=JetBrains+Mono:wght@400;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
   <style>
     /* =========================================================================
-       HAUS WITTGENSTEIN (KUNDMANNGASSE 19, VIENNA 1926-1928) — V2 DESIGN SYSTEM
+       TRACTATUS — DESIGN SYSTEM V3
+
+       Colour: one hue (bottle green) stands for "what is the case": the active
+       item, a true cell, an existing state of affairs, Wittgenstein's own text.
+       Grey stands for what is not the case. Ochre marks commentary and search
+       hits. The ground is a cool plaster white, the ink anthracite.
+
+       Type: Literata for reading, Commissioner for the interface, JetBrains
+       Mono only for logical notation and the ASCII figures. All three carry
+       Greek, so no Greek text falls back to a system font.
        ========================================================================= */
     :root {
-      --background: #f4f3ef;
-      --content: #ffffff;
-      --card: #ffffff;
-      --sidebar: #ece9e1;
-      --border: #cbc6b8;
-      --border-soft: #e2dfd5;
-      --foreground: #171717;
-      --muted-foreground: #57544d;
-      --primary: #8f241e;
+      --background: #eff1ee;
+      --content: #fbfbf9;
+      --card: #fbfbf9;
+      --sidebar: #e8ebe7;
+      --border: #cdd3cd;
+      --border-soft: #e0e4df;
+      --foreground: #1c2022;
+      --muted-foreground: #57605d;
+      --primary: #1e5c4e;
       --primary-foreground: #ffffff;
-      --secondary: #e7e3d8;
-      --secondary-foreground: #171717;
-      --truth-fg: #166534;
-      --truth-bg: rgba(22, 101, 52, 0.11);
-      --truth-border: rgba(22, 101, 52, 0.35);
-      --false-fg: #57544d;
-      --false-bg: rgba(87, 84, 77, 0.08);
-      --header-h: 112px;
-      --font-sans: 'IBM Plex Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
-      --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      --primary-soft: rgba(30, 92, 78, 0.10);
+      --primary-hit: rgba(30, 92, 78, 0.28);
+      --secondary: #eceeea;
+      --secondary-foreground: #1c2022;
+      --mark: #91590a;
+      --mark-soft: rgba(184, 128, 30, 0.28);
+      --truth-fg: #1e5c4e;
+      --truth-bg: rgba(30, 92, 78, 0.12);
+      --truth-border: rgba(30, 92, 78, 0.45);
+      --false-fg: #57605d;
+      --false-bg: rgba(87, 96, 93, 0.07);
+      --header-h: 56px;
+      --sidebar-w: 18.5rem;
+      --rail-w: 3.5rem;
+      --radius: 4px;
+      --font-sans: 'Commissioner', 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+      --font-serif: 'Literata', 'Palatino Linotype', Georgia, 'Times New Roman', serif;
+      --font-mono: 'JetBrains Mono', Consolas, ui-monospace, SFMono-Regular, Menlo, monospace;
     }
 
     html.dark {
-      --background: #111215;
-      --content: #17191e;
-      --card: #181a20;
-      --sidebar: #14161b;
-      --border: #2e323d;
-      --border-soft: #232730;
-      --foreground: #eceef2;
-      --muted-foreground: #9ca3af;
-      --primary: #d4a853;
-      --primary-foreground: #121316;
-      --secondary: #22252e;
-      --secondary-foreground: #e5e7eb;
-      --truth-fg: #4ade80;
-      --truth-bg: rgba(74, 222, 128, 0.12);
-      --truth-border: rgba(74, 222, 128, 0.35);
-      --false-fg: #9ca3af;
-      --false-bg: rgba(156, 163, 175, 0.1);
+      --background: #131618;
+      --content: #1a1e20;
+      --card: #1a1e20;
+      --sidebar: #101315;
+      --border: #333a3d;
+      --border-soft: #262c2f;
+      --foreground: #e3e6e2;
+      --muted-foreground: #9aa4a2;
+      --primary: #86cdb5;
+      --primary-foreground: #0f1d19;
+      --primary-soft: rgba(134, 205, 181, 0.13);
+      --primary-hit: rgba(134, 205, 181, 0.30);
+      --secondary: #23282b;
+      --secondary-foreground: #e3e6e2;
+      --mark: #e2b45e;
+      --mark-soft: rgba(226, 180, 94, 0.26);
+      --truth-fg: #86cdb5;
+      --truth-bg: rgba(134, 205, 181, 0.14);
+      --truth-border: rgba(134, 205, 181, 0.42);
+      --false-fg: #9aa4a2;
+      --false-bg: rgba(154, 164, 162, 0.10);
     }
 
     * {
@@ -69,13 +89,13 @@
       font-family: var(--font-sans);
       background-color: var(--background);
       color: var(--foreground);
+      font-kerning: normal;
       transition: background-color 0.2s ease, color 0.2s ease;
     }
 
-    /* Custom subtle architectural scrollbars */
-    ::-webkit-scrollbar { width: 8px; height: 8px; }
-    ::-webkit-scrollbar-track { background: var(--background); }
-    ::-webkit-scrollbar-thumb { background: var(--border); }
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 5px; }
     ::-webkit-scrollbar-thumb:hover { background: var(--muted-foreground); }
 
     :focus-visible {
@@ -83,33 +103,53 @@
       outline-offset: 2px;
     }
 
-    /* Anchor offset so headings never hide under sticky header */
+    /* Anchor offset so headings never hide under the sticky header */
     .master-section,
     [id^="sub-"] {
       scroll-margin-top: calc(var(--header-h) + 18px);
     }
 
-    .font-mono {
+    /* -------------------------------------------------------------------------
+       Utility remaps. The markup uses Tailwind utilities; these rules give them
+       the meaning they have in this design. `body` raises the specificity above
+       the utilities, which Tailwind injects after this stylesheet.
+       ------------------------------------------------------------------------- */
+    /* Labels were set in monospace; the interface face is used instead. */
+    body .font-mono {
+      font-family: var(--font-sans) !important;
+      font-variant-numeric: tabular-nums;
+    }
+    /* Monospace is kept for notation and figures. */
+    body :is(.math-expr, .math-block, code, pre, kbd) {
       font-family: var(--font-mono) !important;
     }
-
+    /* No forced capitals: they drop Greek accents and turn p into P in formulas. */
+    body .uppercase {
+      text-transform: none;
+    }
+    body :is(.tracking-widest, .tracking-wider, .tracking-wide) {
+      letter-spacing: 0.02em;
+    }
     .font-serif-editorial {
       font-family: var(--font-serif);
     }
 
-    /* Architectural Surfaces (Reduced nested box clutter) */
-    .hw-card {
+    /* -------------------------------------------------------------------------
+       Surfaces
+       ------------------------------------------------------------------------- */
+    body .hw-card {
       background-color: var(--card);
       color: var(--foreground);
       border: 1px solid var(--border);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+      border-radius: 6px;
+      box-shadow: none;
     }
 
-    .hw-panel {
+    body .hw-panel {
       background-color: var(--background);
       color: var(--foreground);
-      border: 1px solid var(--border-soft);
-      border-top: 2px solid var(--border);
+      border: 0;
+      border-radius: var(--radius);
     }
 
     .hw-sidebar {
@@ -118,115 +158,543 @@
       border-right: 1px solid var(--border);
     }
 
-    /* Reading Measure & Editorial Rhythm inside Master Analysis */
-    #masterContentContainer .master-section p,
-    #masterContentContainer .master-section > div > ol,
-    #masterContentContainer .master-section > div > ul,
-    #masterContentContainer .hw-panel > ul,
-    #masterContentContainer .hw-panel > ol,
-    #masterContentContainer .hw-panel > p {
-      max-width: 76ch;
-      font-size: 0.94rem;
-      line-height: 1.72;
+    #appShell > [id^="view-"]:not(#view-master) {
+      max-width: 86rem;
+      margin-inline: auto;
+    }
+    .hw-card h2 {
+      font-weight: 650;
     }
 
-    #masterContentContainer .master-section h2 {
-      font-size: 1.25rem;
+    /* -------------------------------------------------------------------------
+       Site header
+       ------------------------------------------------------------------------- */
+    #siteHeader {
+      background-color: var(--content);
+      border-bottom: 1px solid var(--border);
+    }
+    .hdr {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      column-gap: 1.5rem;
+      padding: 0 1rem;
+      min-height: 3.25rem;
+    }
+    .hdr-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex: 0 0 auto;
+      padding-block: 0.45rem;
+      min-width: 0;
+    }
+    .hdr-title {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+      min-width: 0;
+    }
+    .hdr-title-main {
+      font-family: var(--font-serif);
+      font-size: 1.08rem;
+      font-weight: 600;
+      letter-spacing: -0.005em;
+      white-space: nowrap;
+    }
+    .hdr-title-sub {
+      font-size: 0.72rem;
+      color: var(--muted-foreground);
+      margin-top: 0.15rem;
+      white-space: nowrap;
+    }
+    .hdr-icon-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.1rem;
+      height: 2.1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--foreground);
+      background-color: var(--card);
+    }
+    .hdr-tabs {
+      display: flex;
+      flex: 1 1 auto;
+      align-self: stretch;
+      min-width: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .hdr-tabs::-webkit-scrollbar { display: none; }
+    .hw-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.55rem 0.8rem;
+      font-size: 0.84rem;
+      font-weight: 500;
+      white-space: nowrap;
+      color: var(--muted-foreground);
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      cursor: pointer;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .hw-tab:hover {
+      color: var(--foreground);
+      border-bottom-color: var(--border);
+    }
+    .hw-tab.hw-btn-active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+      font-weight: 600;
+    }
+    .hw-tab-code {
+      font-size: 0.7rem;
+      font-weight: 500;
+      font-variant-numeric: tabular-nums;
+      color: var(--muted-foreground);
+    }
+    .hdr-tools {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex: 0 0 auto;
+      margin-left: auto;
+      padding-block: 0.45rem;
+    }
+    .hdr-search {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    body .hdr-search input {
+      width: 19rem;
+      max-width: 100%;
+      padding: 0.42rem 2rem 0.42rem 0.7rem;
+      font-size: 0.82rem;
+      background-color: var(--background);
+      color: var(--foreground);
+      border: 1px solid var(--border);
+    }
+    body .hdr-search input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-soft);
+    }
+    .hdr-search input::placeholder {
+      color: var(--muted-foreground);
+      opacity: 0.85;
+    }
+    .hdr-kbd {
+      position: absolute;
+      right: 0.45rem;
+      padding: 0 0.35rem;
+      font-size: 0.7rem;
       line-height: 1.35;
-      letter-spacing: -0.01em;
+      color: var(--muted-foreground);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      pointer-events: none;
+    }
+    .hdr-search input:not(:placeholder-shown) ~ .hdr-kbd {
+      display: none;
+    }
+    .hdr-search-clear {
+      position: absolute;
+      right: 0.55rem;
+      font-size: 0.75rem;
+      color: var(--muted-foreground);
+    }
+    .hdr-search-clear:hover { color: var(--foreground); }
+    body .hdr-theme {
+      padding: 0.42rem 0.75rem;
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+    #searchNavBar {
+      border-top: 1px solid var(--border-soft);
+      background-color: var(--background);
     }
 
-    #masterContentContainer .master-section h3 {
+    @media (max-width: 1599px) {
+      .hdr-tabs {
+        order: 3;
+        flex-basis: 100%;
+        margin-inline: -1rem;
+        padding-inline: 0.4rem;
+        border-top: 1px solid var(--border-soft);
+      }
+    }
+    @media (max-width: 639px) {
+      .hdr-title-sub { display: none; }
+      .hdr-tools {
+        order: 2;
+        flex-basis: 100%;
+        padding-top: 0;
+      }
+      .hdr-search { flex: 1 1 auto; }
+      body .hdr-search input { width: 100%; }
+    }
+
+    /* -------------------------------------------------------------------------
+       Contents pane. The numbers are aligned on the decimal point, so the depth
+       of a remark in the numbering can be read off its position. Folded, the
+       pane keeps a rail with the numerals of the parts and the seven
+       propositions.
+       ------------------------------------------------------------------------- */
+    #desktopSidebar {
+      width: var(--sidebar-w);
+      padding: 0.9rem 0.65rem 2rem;
+      transition: width 0.18s ease;
+    }
+    .idx-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      padding: 0 0.1rem 0.55rem 0.5rem;
+    }
+    .idx-title {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--muted-foreground);
+    }
+    .idx-fold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.9rem;
+      height: 1.9rem;
+      border-radius: var(--radius);
+      color: var(--muted-foreground);
+      cursor: pointer;
+    }
+    .idx-fold:hover {
+      background-color: var(--secondary);
+      color: var(--foreground);
+    }
+    .idx-fold svg { transition: transform 0.18s ease; }
+    html.sidebar-folded .idx-fold svg { transform: rotate(180deg); }
+
+    .idx-filter {
+      padding: 0 0.3rem 0.8rem 0.5rem;
+    }
+    .idx-filter label {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--muted-foreground);
+      margin-bottom: 0.25rem;
+    }
+    body .idx-filter select {
+      width: 100%;
+      padding: 0.38rem 0.5rem;
+      font-size: 0.8rem;
+      background-color: var(--content);
+      color: var(--foreground);
+      border: 1px solid var(--border);
+    }
+
+    .idx {
+      font-size: 0.84rem;
+      line-height: 1.3;
+    }
+    .idx-row {
+      display: grid;
+      grid-template-columns: 1.15rem 2.3rem minmax(0, 1fr);
+      align-items: baseline;
+      padding: 0.36rem 0.5rem 0.36rem 0.3rem;
+      border-radius: var(--radius);
+      color: var(--foreground);
+      transition: background-color 0.12s ease, color 0.12s ease;
+    }
+    .idx-row:hover {
+      background-color: var(--secondary);
+    }
+    .idx-int,
+    .idx-frac {
+      font-family: var(--font-serif);
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    .idx-int { text-align: right; }
+    .idx-frac { text-align: left; }
+    .idx-main {
+      margin-top: 0.4rem;
+      font-weight: 600;
+    }
+    .idx-main .idx-int {
+      font-size: 0.98rem;
+      font-weight: 600;
+    }
+    .idx-part .idx-int {
+      font-weight: 400;
+      color: var(--muted-foreground);
+    }
+    .idx-sub {
+      padding-block: 0.22rem;
+      font-size: 0.8rem;
+      color: var(--muted-foreground);
+    }
+    .idx-sub:hover { color: var(--foreground); }
+    .hw-nav-link.hw-nav-active {
+      background-color: var(--primary-soft);
+      color: var(--primary);
+    }
+    .hw-nav-link.hw-nav-active .idx-int {
+      color: var(--primary);
+    }
+    .idx-tip {
+      margin: 1.2rem 0.3rem 0 0.5rem;
+      padding-top: 0.8rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.76rem;
+      line-height: 1.5;
+      color: var(--muted-foreground);
+    }
+
+    html.sidebar-folded #desktopSidebar {
+      width: var(--rail-w);
+      padding-inline: 0.3rem;
+      overflow-x: hidden;
+    }
+    html.sidebar-folded #desktopSidebar .idx-bar {
+      justify-content: center;
+      padding-inline: 0;
+    }
+    html.sidebar-folded #desktopSidebar :is(.idx-title, .idx-filter, .idx-tip, .idx-sub) {
+      display: none;
+    }
+    html.sidebar-folded #desktopSidebar .idx-row {
+      grid-template-columns: 1fr;
+      padding: 0.5rem 0;
+    }
+    html.sidebar-folded #desktopSidebar .idx-int {
+      text-align: center;
+      font-size: 1.08rem;
+    }
+    html.sidebar-folded #desktopSidebar :is(.idx-frac, .idx-label) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+
+    /* -------------------------------------------------------------------------
+       Reading column (the analysis view)
+       ------------------------------------------------------------------------- */
+    #masterContentContainer {
+      background-color: var(--content);
+      min-width: 0;
+    }
+    #masterContentContainer > * {
+      max-width: 58rem;
+      margin-inline: auto;
+    }
+    #masterContentContainer > .master-section {
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      font-family: var(--font-serif);
+      font-size: 1.0625rem;
+      line-height: 1.7;
+    }
+    #masterContentContainer > .master-section ~ .master-section {
+      margin-top: 4.5rem;
+      padding-top: 4rem;
+      border-top: 1px solid var(--border);
+    }
+
+    #masterContentContainer .master-section :is(p, li) {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      max-width: 68ch;
+    }
+    #masterContentContainer .master-section :is(.hw-panel:not(.full-analysis), .hw-dialogue) {
       font-size: 0.95rem;
-      letter-spacing: 0.03em;
+      line-height: 1.62;
+    }
+    #masterContentContainer .master-section :is(.hw-panel:not(.full-analysis), .hw-dialogue) :is(p, li) {
+      font-size: 0.95rem;
+      line-height: 1.62;
+    }
+    #masterContentContainer .master-section strong {
+      font-weight: 600;
     }
 
-    .hw-btn {
+    /* Section title block */
+    #masterContentContainer .master-section > div:first-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+    #masterContentContainer .master-section h2 {
+      font-family: var(--font-sans);
+      font-size: 1.22rem;
+      font-weight: 650;
+      line-height: 1.35;
+      letter-spacing: 0.03em;
+      max-width: 46ch;
+      text-wrap: balance;
+    }
+    #masterContentContainer .master-section h3:not([class*="fa-h"]) {
+      font-family: var(--font-sans) !important;
+      font-size: 0.86rem;
+      font-weight: 650;
+      line-height: 1.4;
+      letter-spacing: 0.045em;
+    }
+
+    /* The proposition that opens a section is its headline. */
+    #masterContentContainer .master-section > .hw-quote > .font-mono:first-child,
+    #sec-prop7 > .text-center > .font-mono:first-child {
+      font-family: var(--font-serif) !important;
+      font-size: clamp(1.4rem, 1.05rem + 1.1vw, 1.9rem);
+      font-weight: 500;
+      line-height: 1.28;
+      letter-spacing: -0.005em;
+      text-wrap: balance;
+      max-width: 34ch;
+    }
+    #masterContentContainer .master-section > .hw-quote {
+      padding-block: 0.4rem;
+    }
+    #masterContentContainer .master-section > .hw-quote > .grid {
+      margin-top: 0.9rem;
+      font-size: 0.82rem;
+      line-height: 1.5;
+    }
+    /* Proposition 7 has no sub-propositions: it stands alone, with room around it. */
+    #sec-prop7 > .text-center {
+      background: transparent;
+      border: 0;
+      padding: 3.5rem 0 3rem;
+    }
+    #sec-prop7 > .text-center > .font-mono:first-child {
+      margin-inline: auto;
+    }
+
+    /* -------------------------------------------------------------------------
+       Components
+       ------------------------------------------------------------------------- */
+    body .hw-btn {
+      font-family: var(--font-sans) !important;
+      font-weight: 500;
       background-color: var(--card);
       color: var(--foreground);
       border: 1px solid var(--border);
+      border-radius: var(--radius);
       transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
       cursor: pointer;
     }
-    .hw-btn:hover {
+    body .hw-btn:hover {
       background-color: var(--secondary);
       color: var(--secondary-foreground);
       border-color: var(--muted-foreground);
     }
-    .hw-btn:active {
+    body .hw-btn:active {
       transform: translateY(1px);
     }
-    .hw-btn-active {
+    body .hw-btn.hw-btn-active {
       background-color: var(--primary) !important;
       color: var(--primary-foreground) !important;
       border-color: var(--primary) !important;
     }
 
-    .hw-badge {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 0.06em;
-      padding: 2px 8px;
-      border: 1px solid var(--border);
+    body :is(input[type="text"], select) {
+      font-family: var(--font-sans) !important;
+      border-radius: var(--radius);
+    }
+    input[type="range"] {
+      accent-color: var(--primary);
+    }
+
+    body .hw-badge {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      line-height: 1.5;
+      padding: 0.1rem 0.5rem;
+      border: 0;
+      border-radius: 3px;
       background-color: var(--secondary);
-      color: var(--secondary-foreground);
+      color: var(--muted-foreground);
       display: inline-block;
     }
 
-    .hw-prop-num {
-      font-family: var(--font-mono);
-      font-weight: 700;
-      letter-spacing: 0.02em;
+    body .hw-prop-num {
+      font-family: var(--font-serif);
+      font-variant-numeric: lining-nums tabular-nums;
+      font-weight: 600;
+      letter-spacing: 0;
       color: var(--primary);
     }
-
-    .hw-prop-clickable {
+    body .hw-prop-clickable {
       cursor: pointer;
-      border-bottom: 1px dashed var(--primary);
-      padding: 0 2px;
+      border-bottom: 0;
+      padding: 0 1px;
+      border-radius: 2px;
+      text-decoration: underline dotted;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
       transition: background-color 0.15s ease;
     }
-    .hw-prop-clickable:hover {
-      background-color: var(--secondary);
+    body .hw-prop-clickable:hover {
+      background-color: var(--primary-soft);
     }
 
-    .hw-quote {
-      border-left: 3px solid var(--primary);
-      padding: 0.85rem 1.1rem;
-      margin: 0.85rem 0;
-      background-color: var(--secondary);
+    /* Green rule: Wittgenstein's text. */
+    body .hw-quote {
+      border-left: 2px solid var(--primary);
+      padding: 0.2rem 0 0.2rem 1.15rem;
+      margin: 1rem 0;
+      background: transparent;
       font-family: var(--font-serif);
-      font-size: 1rem;
-      line-height: 1.65;
+      font-size: 1.02rem;
+      line-height: 1.62;
     }
 
-    .hw-dialogue {
-      border: 1px solid var(--border);
-      border-left: 4px solid var(--primary);
-      background-color: var(--card);
+    /* Ochre rule: the dialogue with other philosophers. */
+    body .hw-dialogue {
+      border: 0;
+      border-left: 2px solid var(--mark);
+      border-radius: 0;
+      background: transparent;
+      padding: 0.3rem 0 0.3rem 1.25rem;
+    }
+    body .hw-dialogue > .font-mono:first-child {
+      color: var(--mark);
     }
 
-    .hw-table {
+    body .hw-table {
       width: 100%;
       border-collapse: collapse;
     }
-    .hw-table th, .hw-table td {
-      border: 1px solid var(--border);
-      padding: 0.65rem 0.85rem;
+    body .hw-table th,
+    body .hw-table td {
+      border: 0;
+      border-bottom: 1px solid var(--border-soft);
+      padding: 0.6rem 0.8rem;
       text-align: left;
       vertical-align: top;
-      font-size: 0.875rem;
+      font-size: 0.9rem;
       line-height: 1.55;
     }
-    .hw-table th {
-      background-color: var(--secondary);
-      color: var(--secondary-foreground);
-      font-family: var(--font-mono);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-size: 0.72rem;
+    body .hw-table th {
+      background: transparent;
+      color: var(--foreground);
+      border-bottom: 1px solid var(--foreground);
+      font-family: var(--font-sans);
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0.01em;
+      font-size: 0.78rem;
     }
-    .hw-table tbody tr:hover {
+    body .hw-table tbody tr:hover {
       background-color: var(--background);
     }
 
@@ -234,22 +702,22 @@
       text-decoration: overline;
     }
 
-    .math-expr {
-      font-family: var(--font-mono);
+    body .math-expr {
       background-color: var(--secondary);
       color: var(--secondary-foreground);
-      padding: 0.1rem 0.35rem;
-      border: 1px solid var(--border);
-      font-size: 0.85em;
+      padding: 0.08em 0.32em;
+      border: 0;
+      border-radius: 3px;
+      font-size: 0.82em;
       white-space: nowrap;
     }
 
-    .math-block {
-      font-family: var(--font-mono);
+    body .math-block {
       background-color: var(--secondary);
       color: var(--secondary-foreground);
       padding: 0.95rem 1.25rem;
-      border: 1px solid var(--border);
+      border: 0;
+      border-radius: var(--radius);
       margin: 0.85rem 0;
       overflow-x: auto;
       font-size: 0.85rem;
@@ -262,35 +730,15 @@
     }
 
     mark.search-hit {
-      background-color: rgba(143, 36, 30, 0.22);
+      background-color: var(--mark-soft);
       color: var(--foreground);
-      border-bottom: 2px solid var(--primary);
+      border-bottom: 2px solid var(--mark);
       padding: 0 2px;
     }
-    html.dark mark.search-hit {
-      background-color: rgba(212, 168, 83, 0.28);
-    }
     mark.search-hit.search-hit-active {
-      background-color: var(--primary);
-      color: var(--primary-foreground);
-      outline: 2px solid var(--primary);
-    }
-
-    .hw-nav-link {
-      display: block;
-      padding: 0.38rem 0.65rem;
-      border-left: 2px solid transparent;
-      transition: all 0.15s ease;
-    }
-    .hw-nav-link:hover {
-      background-color: var(--secondary);
-      border-left-color: var(--muted-foreground);
-    }
-    .hw-nav-link.hw-nav-active {
-      background-color: var(--secondary);
-      border-left-color: var(--primary);
-      color: var(--primary);
-      font-weight: 700;
+      background-color: var(--mark);
+      color: var(--content);
+      outline: 2px solid var(--mark);
     }
 
     .tt-btn-w {
@@ -304,11 +752,19 @@
     }
 
     @keyframes hwFadeIn {
-      from { opacity: 0; transform: translateY(4px); }
-      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
     .view-animate {
-      animation: hwFadeIn 0.18s ease-out;
+      animation: hwFadeIn 0.16s ease-out;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
     }
 
     /* Clean Print Stylesheet */
@@ -316,7 +772,7 @@
       header, aside, footer, #mobileNavDrawer, #propPeekDrawer, #backToTopBtn, #searchNavBar, button {
         display: none !important;
       }
-      body, .hw-card, .hw-panel {
+      body, .hw-card, .hw-panel, #masterContentContainer {
         background: #ffffff !important;
         color: #000000 !important;
         border-color: #cccccc !important;
@@ -335,115 +791,113 @@
 <!-- FULL-ANALYSIS:BEGIN head (generated by tools/build_html.py — do not edit) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
 <style>
-  .full-analysis { margin-top: 1.5rem; }
+  /* The full analysis is the long reading text: it sits on the page itself,
+     between two rules, and is not boxed. */
+  .full-analysis { margin-top: 2rem; }
+  body .full-analysis.hw-panel { background: transparent; border-radius: 0;
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .full-analysis > summary {
-    cursor: pointer; padding: 0.7rem 1rem; font-family: var(--font-mono);
-    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em;
-    text-transform: uppercase; color: var(--primary); user-select: none;
+    display: flex; align-items: center; gap: 0.6rem; list-style: none;
+    cursor: pointer; padding: 0.85rem 0.25rem; font-family: var(--font-sans);
+    font-size: 0.9rem; font-weight: 600; color: var(--primary); user-select: none;
   }
-  .full-analysis > summary:hover { background-color: var(--secondary); }
-  .fa-body { padding: 0.5rem 1.1rem 1.25rem; font-size: 0.92rem; line-height: 1.7; overflow-wrap: anywhere; }
-  .fa-body p { margin: 0.6rem 0; }
+  .full-analysis > summary::-webkit-details-marker { display: none; }
+  .full-analysis > summary::before {
+    content: ""; flex: none; width: 0.45rem; height: 0.45rem; margin-left: 0.15rem;
+    border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+    transform: rotate(-45deg); transition: transform 0.15s ease;
+  }
+  .full-analysis[open] > summary::before { transform: rotate(45deg); }
+  .full-analysis > summary:hover { background-color: var(--primary-soft); }
+  .fa-body { padding: 0.25rem 0 1.5rem; overflow-wrap: anywhere; }
+  .fa-body p { margin: 0.75rem 0; }
   .fa-body [id] { scroll-margin-top: 8rem; }
-  .fa-body ul { list-style: disc; padding-left: 1.35rem; margin: 0.45rem 0; }
-  .fa-body ol { list-style: decimal; padding-left: 1.5rem; margin: 0.45rem 0; }
+  .fa-body ul { list-style: disc; padding-left: 1.35rem; margin: 0.5rem 0; }
+  .fa-body ol { list-style: decimal; padding-left: 1.5rem; margin: 0.5rem 0; }
   .fa-body ul ul { list-style: circle; }
-  .fa-body li { margin: 0.3rem 0; }
-  .fa-body strong { font-weight: 700; }
-  .fa-body hr { border: 0; border-top: 1px solid var(--border); margin: 1.4rem 0; }
-  .fa-body .fa-h2 { font-size: 1.05rem; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.02em; margin: 1.6rem 0 0.6rem; padding-bottom: 0.35rem;
-    border-bottom: 1px solid var(--border); }
-  .fa-body .fa-h3 { font-size: 0.98rem; font-weight: 700; margin: 1.4rem 0 0.5rem; color: var(--primary); }
-  .fa-body .fa-h4 { font-size: 0.9rem; font-weight: 700; margin: 1.1rem 0 0.4rem; }
-  .fa-body code { font-family: var(--font-mono); font-size: 0.85em;
-    background-color: var(--secondary); padding: 0.05rem 0.3rem; border: 1px solid var(--border-soft); }
-  .fa-body .fa-pre { overflow-x: auto; padding: 0.85rem 1rem; margin: 0.8rem 0;
-    background-color: var(--secondary); border: 1px solid var(--border);
-    font-size: 0.72rem; line-height: 1.35; }
-  .fa-body .fa-pre code { background: none; border: 0; padding: 0; font-size: inherit; }
-  .fa-body .fa-table-wrap { overflow-x: auto; margin: 0.9rem 0; }
-  .fa-body .hw-table { font-size: 0.82rem; }
+  .fa-body li { margin: 0.35rem 0; }
+  .fa-body hr { border: 0; border-top: 1px solid var(--border); margin: 2.2rem 0; }
+  .fa-body :is(.fa-h2, .fa-h3, .fa-h4) { font-family: var(--font-sans); line-height: 1.4;
+    max-width: 52ch; text-wrap: balance; }
+  .fa-body .fa-h2 { font-size: 1.05rem; font-weight: 650; letter-spacing: 0.03em;
+    margin: 2.4rem 0 0.9rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--foreground); }
+  .fa-body .fa-h3 { font-size: 1rem; font-weight: 650; margin: 2rem 0 0.6rem; }
+  .fa-body .fa-h4 { font-size: 0.9rem; font-weight: 600; margin: 1.4rem 0 0.4rem;
+    color: var(--muted-foreground); }
+  .fa-body code { font-size: 0.84em; background-color: var(--secondary);
+    padding: 0.08em 0.32em; border-radius: 3px; }
+  .fa-body .fa-pre { overflow-x: auto; padding: 0.9rem 1rem; margin: 1rem 0;
+    background-color: var(--secondary); border-radius: var(--radius);
+    font-size: 0.76rem; line-height: 1.35; }
+  .fa-body .fa-pre code { background: none; padding: 0; font-size: inherit; }
+  .fa-body .fa-table-wrap { overflow-x: auto; margin: 1.1rem 0; }
   .fa-body .hw-quote p { margin: 0.3rem 0; }
-  .fa-body .tex-display { display: block; overflow-x: auto; overflow-y: hidden; margin: 0.7rem 0; text-align: center; }
+  .fa-body .tex-display { display: block; overflow-x: auto; overflow-y: hidden; margin: 0.9rem 0; text-align: center; }
   .fa-body .tex:not(.tex-done) { font-family: var(--font-mono); font-size: 0.85em; }
-  .fa-body .katex { font-size: 1.02em; }
+  .fa-body .katex { font-size: 1.04em; }
   .fa-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem;
-    font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted-foreground); }
+    font-size: 0.78rem; color: var(--muted-foreground); }
 </style>
 <!-- FULL-ANALYSIS:END head -->
 </head>
 <body class="antialiased selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
 
-  <!-- TOP ARCHITECTURAL HEADER (HAUS WITTGENSTEIN V2) -->
-  <header id="siteHeader" class="sticky top-0 z-40 bg-[var(--card)] border-b border-[var(--border)]">
-    <div class="max-w-[1600px] mx-auto px-4 py-2.5 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2.5">
-      <!-- Title & Bauhaus/Kundmanngasse Coordinate Stamp -->
-      <div class="flex items-center justify-between gap-3">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 shrink-0 border-2 border-[var(--foreground)] flex flex-col items-center justify-center font-mono font-bold text-xs leading-none select-none">
-            <span>TLP</span>
-            <span class="text-[10px] opacity-75">1—7</span>
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
-              <span class="font-mono text-[11px] uppercase tracking-widest text-[var(--muted-foreground)]">
-                KUNDMANNGASSE ARCHITEKTUR // EDITION V2 (1921/1922)
-              </span>
-            </div>
-            <h1 class="text-sm sm:text-base font-bold tracking-tight">
-              Ludwig Wittgenstein: Tractatus Logico-Philosophicus — Πλήρης Ανάλυση &amp; Εργαστήρια
-            </h1>
-          </div>
-        </div>
+  <!-- SITE HEADER: title, view tabs, search, theme -->
+  <header id="siteHeader" class="sticky top-0 z-40">
+    <div class="hdr">
+      <div class="hdr-brand">
+        <!-- Contents drawer trigger (below the lg breakpoint the contents pane is a drawer) -->
+        <button type="button" onclick="openMobileNav()" class="hdr-icon-btn lg:hidden" aria-label="Άνοιγμα περιεχομένων">
+          <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <h1 class="hdr-title">
+          <span class="hdr-title-main">Tractatus Logico-Philosophicus</span>
+          <span class="hdr-title-sub">Ludwig Wittgenstein: πλήρης ανάλυση και εργαστήρια</span>
+        </h1>
+      </div>
 
-        <!-- Mobile TOC drawer trigger -->
-        <button onclick="openMobileNav()" class="lg:hidden hw-btn px-2.5 py-1.5 text-xs font-mono shrink-0" aria-label="Άνοιγμα πλοήγησης">
-          ☰ Ενότητες
+      <!-- View tabs. The two-digit codes are the ones the labs are referred to by in the text. -->
+      <div class="hdr-tabs" role="tablist" aria-label="Κύριες ενότητες της σελίδας">
+        <button onclick="switchMainTab('master')" id="tab-btn-master" role="tab" aria-selected="true" class="hw-tab hw-btn-active" title="Ανάλυση των προτάσεων 1–7 (πλήκτρο 1)">
+          <span class="hw-tab-code">00</span>Ανάλυση 1–7
+        </button>
+        <button onclick="switchMainTab('tree')" id="tab-btn-tree" role="tab" aria-selected="false" class="hw-tab" title="Δέντρο των προτάσεων σε τέσσερις γλώσσες (πλήκτρο 2)">
+          <span class="hw-tab-code">01</span>Δέντρο 4 γλωσσών
+        </button>
+        <button onclick="switchMainTab('logic')" id="tab-btn-logic" role="tab" aria-selected="false" class="hw-tab" title="Εργαστήριο λογικής (πλήκτρο 3)">
+          <span class="hw-tab-code">02</span>Εργαστήριο λογικής
+        </button>
+        <button onclick="switchMainTab('visual')" id="tab-btn-visual" role="tab" aria-selected="false" class="hw-tab" title="Οπτικά μοντέλα και γραμμόφωνο (πλήκτρο 4)">
+          <span class="hw-tab-code">03</span>Οπτικά μοντέλα
+        </button>
+        <button onclick="switchMainTab('science')" id="tab-btn-science" role="tab" aria-selected="false" class="hw-tab" title="Επιστήμη, γάντι τεσσάρων διαστάσεων και σκάλα (πλήκτρο 5)">
+          <span class="hw-tab-code">04</span>Επιστήμη και σκάλα
+        </button>
+        <button onclick="switchMainTab('philosophers')" id="tab-btn-philosophers" role="tab" aria-selected="false" class="hw-tab" title="Οι δώδεκα φιλόσοφοι (πλήκτρο 6)">
+          <span class="hw-tab-code">05</span>Φιλόσοφοι
         </button>
       </div>
 
-      <!-- Global Controls: Unified Search + Match Stepper + Theme Switcher -->
-      <div class="flex flex-wrap items-center gap-2">
-        <div class="relative flex items-center flex-1 sm:flex-initial">
+      <!-- Search and theme -->
+      <div class="hdr-tools">
+        <div class="hdr-search">
           <input id="globalSearchInput" type="text"
-            placeholder="Αναζήτηση (π.χ. 4.0312, Sachverhalt, Frege) [ / ]"
-            oninput="handleGlobalSearch(this.value)"
-            class="w-full sm:w-72 md:w-80 pl-3 pr-7 py-1.5 text-xs bg-[var(--background)] text-[var(--foreground)] border border-[var(--border)] focus:outline-none focus:border-[var(--primary)] font-mono" />
-          <button onclick="clearGlobalSearch()" id="clearSearchBtn" class="hidden absolute right-2 text-xs font-mono text-[var(--muted-foreground)] hover:text-[var(--foreground)]" title="Καθαρισμός (Esc)">✕</button>
+            placeholder="Αναζήτηση: 4.0312, Sachverhalt, Frege"
+            aria-label="Αναζήτηση στην ανάλυση"
+            oninput="handleGlobalSearch(this.value)" />
+          <kbd class="hdr-kbd" aria-hidden="true">/</kbd>
+          <button onclick="clearGlobalSearch()" id="clearSearchBtn" class="hidden hdr-search-clear" title="Καθαρισμός (Esc)" aria-label="Καθαρισμός αναζήτησης">✕</button>
         </div>
 
-        <button onclick="toggleArchitecturalTheme()" id="themeToggleBtn" class="hw-btn px-3 py-1.5 text-xs font-mono tracking-wider" title="Εναλλαγή Αρχιτεκτονικής Παλέτας (Plaster Light / Obsidian Dark)">
-          ◐ Σκοτεινό Θέμα
+        <button onclick="toggleArchitecturalTheme()" id="themeToggleBtn" class="hw-btn hdr-theme" title="Εναλλαγή φωτεινού και σκοτεινού θέματος">
+          Σκοτεινό θέμα
         </button>
       </div>
-    </div>
-
-    <!-- MAIN ARCHITECTURAL MODE TABS (Compact & Keyboard-accessible) -->
-    <div class="max-w-[1600px] mx-auto px-4 border-t border-[var(--border)] bg-[var(--secondary)] flex overflow-x-auto" role="tablist" aria-label="Κύριες Ενότητες Εφαρμογής">
-      <button onclick="switchMainTab('master')" id="tab-btn-master" role="tab" aria-selected="true" class="hw-btn hw-btn-active px-3.5 py-2 text-xs font-mono whitespace-nowrap border-y-0 border-l-0">
-        [00] Ανάλυση 1–7
-      </button>
-      <button onclick="switchMainTab('tree')" id="tab-btn-tree" role="tab" aria-selected="false" class="hw-btn px-3.5 py-2 text-xs font-mono whitespace-nowrap border-y-0 border-l-0">
-        [01] Δέντρο 4 Γλωσσών
-      </button>
-      <button onclick="switchMainTab('logic')" id="tab-btn-logic" role="tab" aria-selected="false" class="hw-btn px-3.5 py-2 text-xs font-mono whitespace-nowrap border-y-0 border-l-0">
-        [02] Εργαστήριο Λογικής
-      </button>
-      <button onclick="switchMainTab('visual')" id="tab-btn-visual" role="tab" aria-selected="false" class="hw-btn px-3.5 py-2 text-xs font-mono whitespace-nowrap border-y-0 border-l-0">
-        [03] Οπτικά Μοντέλα &amp; Γραμμόφωνο
-      </button>
-      <button onclick="switchMainTab('science')" id="tab-btn-science" role="tab" aria-selected="false" class="hw-btn px-3.5 py-2 text-xs font-mono whitespace-nowrap border-y-0 border-l-0">
-        [04] Επιστήμη, 4D Γάντι &amp; Σκάλα
-      </button>
-      <button onclick="switchMainTab('philosophers')" id="tab-btn-philosophers" role="tab" aria-selected="false" class="hw-btn px-3.5 py-2 text-xs font-mono whitespace-nowrap border-y-0 border-l-0">
-        [05] Φιλόσοφοι (12)
-      </button>
     </div>
 
     <!-- SEARCH NAVIGATION BAR (Appears when search query is active) -->
-    <div id="searchNavBar" class="hidden border-t border-[var(--border)] bg-[var(--background)]">
-      <div class="max-w-[1600px] mx-auto px-4 py-1.5 flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+    <div id="searchNavBar" class="hidden">
+      <div class="px-4 py-1.5 flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
         <div class="flex flex-wrap items-center gap-2">
           <span id="searchCountBadge" class="hw-badge">0 ευρήματα</span>
           <div id="searchHitControls" class="hidden flex items-center gap-1">
@@ -463,118 +917,130 @@
   </header>
 
   <!-- MAIN CONTAINER -->
-  <div class="max-w-[1600px] mx-auto">
+  <div id="appShell">
 
     <!-- =====================================================================
          VIEW [00]: MASTER ANALYSIS + INTEGRATED INTERACTIVE WORKSHOPS
          ===================================================================== -->
     <div id="view-master" class="flex flex-col lg:flex-row">
 
-      <!-- LEFT ARCHITECTURAL SIDEBAR NAVIGATION (Desktop Sticky; hidden on mobile in favor of Drawer) -->
-      <aside id="desktopSidebar" class="hidden lg:block lg:w-72 shrink-0 hw-sidebar lg:sticky overflow-y-auto p-4" style="top: var(--header-h); height: calc(100vh - var(--header-h));">
+      <!-- CONTENTS PANE (desktop: sticky and foldable; below lg its content is shown in the drawer) -->
+      <aside id="desktopSidebar" class="hidden lg:block shrink-0 hw-sidebar lg:sticky overflow-y-auto" style="top: var(--header-h); height: calc(100vh - var(--header-h));">
+        <div class="idx-bar">
+          <span class="idx-title">Περιεχόμενα</span>
+          <button type="button" id="sidebarFoldBtn" class="idx-fold" onclick="toggleSidebarFold()" aria-expanded="true" aria-controls="sidebarInnerContent" aria-label="Σύμπτυξη περιεχομένων" title="Σύμπτυξη περιεχομένων (πλήκτρο [)">
+            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
         <div id="sidebarInnerContent">
-          <div class="font-mono text-xs uppercase tracking-widest text-[var(--muted-foreground)] mb-3 pb-2 border-b border-[var(--border)]">
-            Πίνακας Πλοήγησης
-          </div>
-
-          <!-- Filter by Proposition -->
-          <div class="mb-4">
-            <label for="sectionFilterSelect" class="block font-mono text-[11px] text-[var(--muted-foreground)] mb-1">ΠΡΟΒΟΛΗ ΕΝΟΤΗΤΩΝ:</label>
-            <select id="sectionFilterSelect" onchange="filterMasterSections(this.value)" class="w-full px-2.5 py-1.5 text-xs font-mono bg-[var(--background)] text-[var(--foreground)] border border-[var(--border)]">
-              <option value="all">Όλες οι Ενότητες (Πλήρης Ροή)</option>
-              <option value="sec-intro">Εισαγωγή &amp; Προκαταρκτικά (Πρόλογος / Russell)</option>
-              <option value="sec-decimal">Μέρος Β΄: Το Δεκαδικό Σύστημα &amp; Δέντρο</option>
-              <option value="sec-prop1">Πρόταση 1: Η Μακρο-Οντολογία του Κόσμου</option>
-              <option value="sec-prop2">Πρόταση 2: Μικρο-Οντολογία &amp; Εικονιστική Θεωρία</option>
-              <option value="sec-prop3">Πρόταση 3: Η Λογική Εικόνα &amp; Η Σκέψη</option>
-              <option value="sec-prop4">Πρόταση 4: Πρόταση με Νόημα, Λέγειν/Δεικνύναι, W/F</option>
-              <option value="sec-prop5">Πρόταση 5: Συναρτήσεις Αληθείας, N(ξ̄) &amp; Σολιψισμός</option>
-              <option value="sec-prop6">Πρόταση 6: Γενική Μορφή, Μαθηματικά, Επιστήμη, Ηθική</option>
-              <option value="sec-prop7">Πρόταση 7: Η Σιωπή</option>
-              <option value="sec-epilogue">Μέρος Γ΄: Συνθετικοί Πίνακες &amp; Ιστορικό Επίμετρο</option>
+          <!-- Show one section or all of them -->
+          <div class="idx-filter">
+            <label for="sectionFilterSelect">Εμφάνιση</label>
+            <select id="sectionFilterSelect" onchange="filterMasterSections(this.value)">
+              <option value="all">Όλες οι ενότητες</option>
+              <option value="sec-intro">Α΄ Εισαγωγή, πρόλογος, Russell</option>
+              <option value="sec-decimal">Β΄ Το δεκαδικό σύστημα</option>
+              <option value="sec-prop1">1 Ο κόσμος και τα γεγονότα</option>
+              <option value="sec-prop2">2 Καταστάσεις πραγμάτων και εικόνα</option>
+              <option value="sec-prop3">3 Η λογική εικόνα και η σκέψη</option>
+              <option value="sec-prop4">4 Η πρόταση με νόημα</option>
+              <option value="sec-prop5">5 Συναρτήσεις αληθείας και εγώ</option>
+              <option value="sec-prop6">6 Γενική μορφή, επιστήμη, ηθική</option>
+              <option value="sec-prop7">7 Η σιωπή</option>
+              <option value="sec-epilogue">Γ΄ Συνθετικοί πίνακες και επίμετρο</option>
             </select>
           </div>
 
-          <nav id="masterNavList" class="space-y-0.5 font-mono text-xs">
-            <a href="#sec-intro" data-section="sec-intro" onclick="navigateMasterAnchor('sec-intro')" class="hw-nav-link">
-              00. Εισαγωγή, Πρόλογος &amp; Russell
+          <!-- Each row: integer part, decimal part, label. The first two columns align the numbers on the decimal point. -->
+          <nav id="masterNavList" class="idx" aria-label="Περιεχόμενα της ανάλυσης">
+            <a href="#sec-intro" data-section="sec-intro" onclick="navigateMasterAnchor('sec-intro')" class="hw-nav-link idx-row idx-main idx-part" title="Μέρος Α΄: εισαγωγή, πρόλογος και η εισαγωγή του Russell">
+              <span class="idx-int">Α</span><span class="idx-frac"></span><span class="idx-label">Εισαγωγή, πρόλογος, Russell</span>
             </a>
-            <a href="#sec-decimal" data-section="sec-decimal" onclick="navigateMasterAnchor('sec-decimal')" class="hw-nav-link">
-              00*. Δεκαδικό Σύστημα &amp; Αρχιτεκτονική
+            <a href="#sec-decimal" data-section="sec-decimal" onclick="navigateMasterAnchor('sec-decimal')" class="hw-nav-link idx-row idx-main idx-part" title="Μέρος Β΄: το δεκαδικό σύστημα και η αρχιτεκτονική του έργου">
+              <span class="idx-int">Β</span><span class="idx-frac"></span><span class="idx-label">Το δεκαδικό σύστημα</span>
             </a>
-            <a href="#sec-prop1" data-section="sec-prop1" onclick="navigateMasterAnchor('sec-prop1')" class="hw-nav-link font-bold">
-              1. Ο Κόσμος &amp; τα Γεγονότα (1–1.21)
+            <a href="#sec-prop1" data-section="sec-prop1" onclick="navigateMasterAnchor('sec-prop1')" class="hw-nav-link idx-row idx-main" title="Προτάσεις 1–1.21">
+              <span class="idx-int">1</span><span class="idx-frac"></span><span class="idx-label">Ο κόσμος και τα γεγονότα</span>
             </a>
-            <a href="#sec-prop2" data-section="sec-prop2" onclick="navigateMasterAnchor('sec-prop2')" class="hw-nav-link font-bold">
-              2. Καταστάσεις &amp; Εικόνα (2–2.225)
+            <a href="#sec-prop2" data-section="sec-prop2" onclick="navigateMasterAnchor('sec-prop2')" class="hw-nav-link idx-row idx-main" title="Προτάσεις 2–2.225">
+              <span class="idx-int">2</span><span class="idx-frac"></span><span class="idx-label">Καταστάσεις πραγμάτων και εικόνα</span>
             </a>
-            <div class="pl-3 space-y-0.5 text-[var(--muted-foreground)]">
-              <a href="#sub-2-01" onclick="navigateMasterAnchor('sec-prop2')" class="block py-0.5 hover:text-[var(--foreground)]">├─ 2.01–2.063: Ουσία &amp; Αλυσίδα</a>
-              <a href="#sub-2-1" onclick="navigateMasterAnchor('sec-prop2')" class="block py-0.5 hover:text-[var(--foreground)]">├─ 2.1–2.19: Bildtheorie &amp; Κεραίες</a>
-              <a href="#sub-2-2" onclick="navigateMasterAnchor('sec-prop2')" class="block py-0.5 hover:text-[var(--foreground)]">└─ 2.2–2.225: Νόημα &amp; Αλήθεια</a>
-            </div>
-            <a href="#sec-prop3" data-section="sec-prop3" onclick="navigateMasterAnchor('sec-prop3')" class="hw-nav-link font-bold">
-              3. Η Λογική Εικόνα &amp; Σκέψη (3–3.5)
+            <a href="#sub-2-01" onclick="navigateMasterAnchor('sec-prop2')" class="idx-row idx-sub" title="Προτάσεις 2.01–2.063">
+              <span class="idx-int">2</span><span class="idx-frac">.01</span><span class="idx-label">Ουσία και αλυσίδα</span>
             </a>
-            <div class="pl-3 space-y-0.5 text-[var(--muted-foreground)]">
-              <a href="#sub-3-1" onclick="navigateMasterAnchor('sec-prop3')" class="block py-0.5 hover:text-[var(--foreground)]">├─ 3.1: Προτασιακό Σημείο &amp; Sinn</a>
-              <a href="#sub-3-2" onclick="navigateMasterAnchor('sec-prop3')" class="block py-0.5 hover:text-[var(--foreground)]">├─ 3.2: Απλά Ονόματα (Urzeichen)</a>
-              <a href="#sub-3-3" onclick="navigateMasterAnchor('sec-prop3')" class="block py-0.5 hover:text-[var(--foreground)]">└─ 3.3: Σύμβολο &amp; Παράδοξο Russell</a>
-            </div>
-            <a href="#sec-prop4" data-section="sec-prop4" onclick="navigateMasterAnchor('sec-prop4')" class="hw-nav-link font-bold">
-              4. Η Πρόταση με Νόημα (4–4.53)
+            <a href="#sub-2-1" onclick="navigateMasterAnchor('sec-prop2')" class="idx-row idx-sub" title="Προτάσεις 2.1–2.19">
+              <span class="idx-int">2</span><span class="idx-frac">.1</span><span class="idx-label">Bildtheorie και κεραίες</span>
             </a>
-            <div class="pl-3 space-y-0.5 text-[var(--muted-foreground)]">
-              <a href="#sub-4-01" onclick="navigateMasterAnchor('sec-prop4')" class="block py-0.5 hover:text-[var(--foreground)]">├─ 4.014 &amp; 4.0312: Grundgedanke</a>
-              <a href="#sub-4-1" onclick="navigateMasterAnchor('sec-prop4')" class="block py-0.5 hover:text-[var(--foreground)]">├─ 4.1: Λέγειν vs. Δεικνύναι</a>
-              <a href="#sub-4-3" onclick="navigateMasterAnchor('sec-prop4')" class="block py-0.5 hover:text-[var(--foreground)]">└─ 4.3–4.46: Πίνακες W/F &amp; Ταυτολογίες</a>
-            </div>
-            <a href="#sec-prop5" data-section="sec-prop5" onclick="navigateMasterAnchor('sec-prop5')" class="hw-nav-link font-bold">
-              5. Συναρτήσεις Αληθείας &amp; Εγώ (5–5.641)
+            <a href="#sub-2-2" onclick="navigateMasterAnchor('sec-prop2')" class="idx-row idx-sub" title="Προτάσεις 2.2–2.225">
+              <span class="idx-int">2</span><span class="idx-frac">.2</span><span class="idx-label">Νόημα και αλήθεια</span>
             </a>
-            <div class="pl-3 space-y-0.5 text-[var(--muted-foreground)]">
-              <a href="#sub-5-1" onclick="navigateMasterAnchor('sec-prop5')" class="block py-0.5 hover:text-[var(--foreground)]">├─ 5.1: 16 Συναρτήσεις &amp; Πιθανότητα</a>
-              <a href="#sub-5-5" onclick="navigateMasterAnchor('sec-prop5')" class="block py-0.5 hover:text-[var(--foreground)]">├─ 5.5: Τελεστής N(ξ̄), '=', Necker</a>
-              <a href="#sub-5-6" onclick="navigateMasterAnchor('sec-prop5')" class="block py-0.5 hover:text-[var(--foreground)]">└─ 5.6: Σολιψισμός &amp; Το Μάτι (5.6331)</a>
-            </div>
-            <a href="#sec-prop6" data-section="sec-prop6" onclick="navigateMasterAnchor('sec-prop6')" class="hw-nav-link font-bold">
-              6. [p̄, ξ̄, N(ξ̄)], Επιστήμη &amp; Ηθική (6–6.54)
+            <a href="#sec-prop3" data-section="sec-prop3" onclick="navigateMasterAnchor('sec-prop3')" class="hw-nav-link idx-row idx-main" title="Προτάσεις 3–3.5">
+              <span class="idx-int">3</span><span class="idx-frac"></span><span class="idx-label">Η λογική εικόνα και η σκέψη</span>
             </a>
-            <div class="pl-3 space-y-0.5 text-[var(--muted-foreground)]">
-              <a href="#sub-6-01" onclick="navigateMasterAnchor('sec-prop6')" class="block py-0.5 hover:text-[var(--foreground)]">├─ 6.02: Ο Αριθμός ως Εκθέτης Ω^ν'x</a>
-              <a href="#sub-6-1" onclick="navigateMasterAnchor('sec-prop6')" class="block py-0.5 hover:text-[var(--foreground)]">├─ 6.1–6.2: Ταυτολογίες &amp; 2×2=4</a>
-              <a href="#sub-6-3" onclick="navigateMasterAnchor('sec-prop6')" class="block py-0.5 hover:text-[var(--foreground)]">├─ 6.3: Δίχτυ, 4D Γάντι, Χρώματα</a>
-              <a href="#sub-6-4" onclick="navigateMasterAnchor('sec-prop6')" class="block py-0.5 hover:text-[var(--foreground)]">└─ 6.4–6.54: Ηθική, Μυστικιστικό, Σκάλα</a>
-            </div>
-            <a href="#sec-prop7" data-section="sec-prop7" onclick="navigateMasterAnchor('sec-prop7')" class="hw-nav-link font-bold">
-              7. Η Σιωπή (7)
+            <a href="#sub-3-1" onclick="navigateMasterAnchor('sec-prop3')" class="idx-row idx-sub" title="Πρόταση 3.1 και κλάδος">
+              <span class="idx-int">3</span><span class="idx-frac">.1</span><span class="idx-label">Προτασιακό σημείο και Sinn</span>
             </a>
-            <a href="#sec-epilogue" data-section="sec-epilogue" onclick="navigateMasterAnchor('sec-epilogue')" class="hw-nav-link">
-              08. Συνθετικοί Πίνακες &amp; Επίμετρο
+            <a href="#sub-3-2" onclick="navigateMasterAnchor('sec-prop3')" class="idx-row idx-sub" title="Πρόταση 3.2 και κλάδος">
+              <span class="idx-int">3</span><span class="idx-frac">.2</span><span class="idx-label">Απλά ονόματα (Urzeichen)</span>
+            </a>
+            <a href="#sub-3-3" onclick="navigateMasterAnchor('sec-prop3')" class="idx-row idx-sub" title="Πρόταση 3.3 και κλάδος">
+              <span class="idx-int">3</span><span class="idx-frac">.3</span><span class="idx-label">Σύμβολο και παράδοξο του Russell</span>
+            </a>
+            <a href="#sec-prop4" data-section="sec-prop4" onclick="navigateMasterAnchor('sec-prop4')" class="hw-nav-link idx-row idx-main" title="Προτάσεις 4–4.53">
+              <span class="idx-int">4</span><span class="idx-frac"></span><span class="idx-label">Η πρόταση με νόημα</span>
+            </a>
+            <a href="#sub-4-01" onclick="navigateMasterAnchor('sec-prop4')" class="idx-row idx-sub" title="Προτάσεις 4.001–4.0312">
+              <span class="idx-int">4</span><span class="idx-frac">.001</span><span class="idx-label">Καθημερινή γλώσσα, Grundgedanke</span>
+            </a>
+            <a href="#sub-4-1" onclick="navigateMasterAnchor('sec-prop4')" class="idx-row idx-sub" title="Πρόταση 4.1 και κλάδος">
+              <span class="idx-int">4</span><span class="idx-frac">.1</span><span class="idx-label">Λέγειν και δεικνύναι</span>
+            </a>
+            <a href="#sub-4-3" onclick="navigateMasterAnchor('sec-prop4')" class="idx-row idx-sub" title="Προτάσεις 4.3–4.46">
+              <span class="idx-int">4</span><span class="idx-frac">.3</span><span class="idx-label">Πίνακες W/F και ταυτολογίες</span>
+            </a>
+            <a href="#sec-prop5" data-section="sec-prop5" onclick="navigateMasterAnchor('sec-prop5')" class="hw-nav-link idx-row idx-main" title="Προτάσεις 5–5.641">
+              <span class="idx-int">5</span><span class="idx-frac"></span><span class="idx-label">Συναρτήσεις αληθείας και εγώ</span>
+            </a>
+            <a href="#sub-5-1" onclick="navigateMasterAnchor('sec-prop5')" class="idx-row idx-sub" title="Πρόταση 5.1 και κλάδος">
+              <span class="idx-int">5</span><span class="idx-frac">.1</span><span class="idx-label">16 συναρτήσεις και πιθανότητα</span>
+            </a>
+            <a href="#sub-5-5" onclick="navigateMasterAnchor('sec-prop5')" class="idx-row idx-sub" title="Πρόταση 5.5 και κλάδος">
+              <span class="idx-int">5</span><span class="idx-frac">.5</span><span class="idx-label">Τελεστής N(ξ̄), «=», Necker</span>
+            </a>
+            <a href="#sub-5-6" onclick="navigateMasterAnchor('sec-prop5')" class="idx-row idx-sub" title="Πρόταση 5.6 και κλάδος, με το μάτι της 5.6331">
+              <span class="idx-int">5</span><span class="idx-frac">.6</span><span class="idx-label">Σολιψισμός και το μάτι</span>
+            </a>
+            <a href="#sec-prop6" data-section="sec-prop6" onclick="navigateMasterAnchor('sec-prop6')" class="hw-nav-link idx-row idx-main" title="Προτάσεις 6–6.54">
+              <span class="idx-int">6</span><span class="idx-frac"></span><span class="idx-label">[p̄, ξ̄, N(ξ̄)], επιστήμη, ηθική</span>
+            </a>
+            <a href="#sub-6-01" onclick="navigateMasterAnchor('sec-prop6')" class="idx-row idx-sub" title="Πρόταση 6.02: ο αριθμός ως εκθέτης πράξης">
+              <span class="idx-int">6</span><span class="idx-frac">.02</span><span class="idx-label">Ο αριθμός ως εκθέτης</span>
+            </a>
+            <a href="#sub-6-1" onclick="navigateMasterAnchor('sec-prop6')" class="idx-row idx-sub" title="Προτάσεις 6.1–6.2">
+              <span class="idx-int">6</span><span class="idx-frac">.1</span><span class="idx-label">Ταυτολογίες και 2×2=4</span>
+            </a>
+            <a href="#sub-6-3" onclick="navigateMasterAnchor('sec-prop6')" class="idx-row idx-sub" title="Πρόταση 6.3 και κλάδος">
+              <span class="idx-int">6</span><span class="idx-frac">.3</span><span class="idx-label">Δίχτυ, γάντι 4D, χρώματα</span>
+            </a>
+            <a href="#sub-6-4" onclick="navigateMasterAnchor('sec-prop6')" class="idx-row idx-sub" title="Προτάσεις 6.4–6.54">
+              <span class="idx-int">6</span><span class="idx-frac">.4</span><span class="idx-label">Ηθική, μυστικιστικό, σκάλα</span>
+            </a>
+            <a href="#sec-prop7" data-section="sec-prop7" onclick="navigateMasterAnchor('sec-prop7')" class="hw-nav-link idx-row idx-main" title="Πρόταση 7">
+              <span class="idx-int">7</span><span class="idx-frac"></span><span class="idx-label">Η σιωπή</span>
+            </a>
+            <a href="#sec-epilogue" data-section="sec-epilogue" onclick="navigateMasterAnchor('sec-epilogue')" class="hw-nav-link idx-row idx-main idx-part" title="Μέρος Γ΄: συνθετικοί πίνακες, ιστορικό επίμετρο, βιβλιογραφία">
+              <span class="idx-int">Γ</span><span class="idx-frac"></span><span class="idx-label">Συνθετικοί πίνακες και επίμετρο</span>
             </a>
           </nav>
 
-          <!-- Quick Launch Buttons for Interactive Labs -->
-          <div class="mt-6 pt-4 border-t border-[var(--border)]">
-            <div class="font-mono text-[11px] uppercase tracking-widest text-[var(--muted-foreground)] mb-2">
-              Άμεσο Άνοιγμα Εργαστηρίων
-            </div>
-            <div class="grid grid-cols-1 gap-1.5">
-              <button onclick="switchMainTab('tree')" class="hw-btn px-2.5 py-1.5 text-xs font-mono text-left">▸ [01] Δέντρο 4 Γλωσσών</button>
-              <button onclick="switchMainTab('logic')" class="hw-btn px-2.5 py-1.5 text-xs font-mono text-left">▸ [02] Πίνακες W/F &amp; Τελεστής N(ξ̄)</button>
-              <button onclick="switchMainTab('visual')" class="hw-btn px-2.5 py-1.5 text-xs font-mono text-left">▸ [03] Παρίσι, Γραμμόφωνο, Necker</button>
-              <button onclick="switchMainTab('science')" class="hw-btn px-2.5 py-1.5 text-xs font-mono text-left">▸ [04] Δίχτυ, 4D Γάντι &amp; Σκάλα</button>
-            </div>
-          </div>
-
-          <div class="mt-4 pt-3 border-t border-[var(--border)] text-[11px] font-mono text-[var(--muted-foreground)] leading-relaxed">
-            Συμβουλή: Κάντε κλικ σε επισημασμένους αριθμούς προτάσεων (π.χ. <span class="hw-prop-num">4.0312</span>) για άμεση τετράγλωσση προβολή!
-          </div>
+          <p class="idx-tip">
+            Κάντε κλικ σε έναν αριθμό πρότασης μέσα στο κείμενο, π.χ. <span class="hw-prop-num">4.0312</span>, για να τη δείτε σε τέσσερις γλώσσες.
+          </p>
         </div>
       </aside>
 
       <!-- MAIN READING & INTERACTIVE COLUMN -->
-      <main id="masterContentContainer" class="flex-1 p-4 sm:p-8 space-y-10 overflow-x-hidden">
+      <main id="masterContentContainer" class="flex-1 px-4 py-6 sm:px-10 sm:py-10 space-y-10 overflow-x-hidden">
 <!-- FULL-ANALYSIS:BEGIN toolbar (generated by tools/build_html.py — do not edit) -->
 <div class="fa-toolbar">
   <button type="button" class="hw-btn px-2.5 py-1" onclick="faSetAll(true)">Ανάπτυξη όλων των πλήρων αναλύσεων</button>
@@ -714,7 +1180,7 @@
           </div>
 <!-- FULL-ANALYSIS:BEGIN sec-intro (generated by tools/build_html.py — do not edit) -->
 <details class="full-analysis hw-panel" id="full-sec-intro" data-source-sha="c39cf109c516">
-<summary>▸ Πλήρης Ανάλυση — το πλήρες κείμενο της ενότητας</summary>
+<summary>Πλήρης ανάλυση: το πλήρες κείμενο της ενότητας</summary>
 <div class="fa-body">
 <h3 class="fa-h2" id="fa-intro-1-h1">ΕΙΣΑΓΩΓΗ &amp; ΟΙ ΤΡΕΙΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΕΡΓΟΥ ΣΤΟΝ ΦΑΚΕΛΟ ΜΕΛΕΤΗΣ</h3>
 <p>Το παρόν έγγραφο αποτελεί μια εκτενή φιλοσοφική, λογική και δομική ανάλυση του μνημειώδους έργου του <strong>Ludwig Wittgenstein</strong>, <em>Tractatus Logico-Philosophicus</em> (πρωτότυπος γερμανικός τίτλος: <em>Logisch-philosophische Abhandlung</em>, 1921 / αγγλική δίγλωσση έκδοση 1922, τίτλος εμπνευσμένος από τον <em>Tractatus Theologico-Politicus</em> του Spinoza κατόπιν πρότασης του G. E. Moore).</p>
@@ -904,7 +1370,7 @@
           </div>
 <!-- FULL-ANALYSIS:BEGIN sec-decimal (generated by tools/build_html.py — do not edit) -->
 <details class="full-analysis hw-panel" id="full-sec-decimal" data-source-sha="c39cf109c516">
-<summary>▸ Πλήρης Ανάλυση — το πλήρες κείμενο της ενότητας</summary>
+<summary>Πλήρης ανάλυση: το πλήρες κείμενο της ενότητας</summary>
 <div class="fa-body">
 <h3 class="fa-h2" id="fa-decimal-1-h1">ΜΕΡΟΣ Β΄: Η ΑΡΧΙΤΕΚΤΟΝΙΚΗ ΤΟΥ ΔΕΚΑΔΙΚΟΥ ΣΥΣΤΗΜΑΤΟΣ &amp; Η ΥΠΟΣΗΜΕΙΩΣΗ 1*</h3>
 <p>Στην Πρόταση 1 υπάρχει η μοναδική υποσημείωση του συγγραφέα με αστερίσκο (<code>*</code>), η οποία ορίζει το κλειδί ανάγνωσης ολόκληρου του έργου:</p>
@@ -1079,7 +1545,7 @@
           </div>
 <!-- FULL-ANALYSIS:BEGIN sec-prop1 (generated by tools/build_html.py — do not edit) -->
 <details class="full-analysis hw-panel" id="full-sec-prop1" data-source-sha="c39cf109c516">
-<summary>▸ Πλήρης Ανάλυση — το πλήρες κείμενο της ενότητας</summary>
+<summary>Πλήρης ανάλυση: το πλήρες κείμενο της ενότητας</summary>
 <div class="fa-body">
 <h3 class="fa-h2" id="fa-prop1-1-h1">ΠΡΟΤΑΣΗ 1: Η ΜΑΚΡΟ-ΟΝΤΟΛΟΓΙΑ ΤΟΥ ΚΟΣΜΟΥ (1 – 1.21)</h3>
 <h4 class="fa-h3" id="fa-prop1-1-h2">1. Το Πλήρες Κείμενο &amp; η Δομική Ομαδοποίηση</h4>
@@ -1316,7 +1782,7 @@
           </div>
 <!-- FULL-ANALYSIS:BEGIN sec-prop2 (generated by tools/build_html.py — do not edit) -->
 <details class="full-analysis hw-panel" id="full-sec-prop2" data-source-sha="c39cf109c516">
-<summary>▸ Πλήρης Ανάλυση — το πλήρες κείμενο της ενότητας</summary>
+<summary>Πλήρης ανάλυση: το πλήρες κείμενο της ενότητας</summary>
 <div class="fa-body">
 <h3 class="fa-h2" id="fa-prop2-1-h1">ΠΡΟΤΑΣΗ 2: Η ΜΙΚΡΟ-ΟΝΤΟΛΟΓΙΑ ΤΩΝ ΓΕΓΟΝΟΤΩΝ &amp; Η ΕΙΚΟΝΙΣΤΙΚΗ ΘΕΩΡΙΑ (2 – 2.225)</h3>
 <h4 class="fa-h3" id="fa-prop2-1-h2">1. Το Κείμενο &amp; η Δομική Ομαδοποίηση</h4>
@@ -1654,7 +2120,7 @@
           </div>
 <!-- FULL-ANALYSIS:BEGIN sec-prop3 (generated by tools/build_html.py — do not edit) -->
 <details class="full-analysis hw-panel" id="full-sec-prop3" data-source-sha="c39cf109c516">
-<summary>▸ Πλήρης Ανάλυση — το πλήρες κείμενο της ενότητας</summary>
+<summary>Πλήρης ανάλυση: το πλήρες κείμενο της ενότητας</summary>
 <div class="fa-body">
 <h3 class="fa-h2" id="fa-prop3-1-h1">ΠΡΟΤΑΣΗ 3: Η ΛΟΓΙΚΗ ΕΙΚΟΝΑ, Η ΣΚΕΨΗ &amp; ΤΟ ΠΡΟΤΑΣΙΑΚΟ ΣΗΜΕΙΟ (3 – 3.5)</h3>
 <h4 class="fa-h3" id="fa-prop3-1-h2">1. Το Κείμενο της Κύριας Πρότασης</h4>
@@ -1990,7 +2456,7 @@
           </div>
 <!-- FULL-ANALYSIS:BEGIN sec-prop4 (generated by tools/build_html.py — do not edit) -->
 <details class="full-analysis hw-panel" id="full-sec-prop4" data-source-sha="c39cf109c516">
-<summary>▸ Πλήρης Ανάλυση — το πλήρες κείμενο της ενότητας</summary>
+<summary>Πλήρης ανάλυση: το πλήρες κείμενο της ενότητας</summary>
 <div class="fa-body">
 <h3 class="fa-h2" id="fa-prop4-1-h1">ΠΡΟΤΑΣΗ 4: Η ΠΡΟΤΑΣΗ ΜΕ ΝΟΗΜΑ, Η ΚΡΙΤΙΚΗ ΤΗΣ ΓΛΩΣΣΑΣ, «ΛΕΓΕΙΝ vs. ΔΕΙΚΝΥΝΑΙ» &amp; ΟΙ ΠΙΝΑΚΕΣ ΑΛΗΘΕΙΑΣ (4 – 4.53)</h3>
 <h4 class="fa-h3" id="fa-prop4-1-h2">1. Το Κείμενο της Κύριας Πρότασης</h4>
@@ -2473,7 +2939,7 @@
           </div>
 <!-- FULL-ANALYSIS:BEGIN sec-prop5 (generated by tools/build_html.py — do not edit) -->
 <details class="full-analysis hw-panel" id="full-sec-prop5" data-source-sha="c39cf109c516">
-<summary>▸ Πλήρης Ανάλυση — το πλήρες κείμενο της ενότητας</summary>
+<summary>Πλήρης ανάλυση: το πλήρες κείμενο της ενότητας</summary>
 <div class="fa-body">
 <h3 class="fa-h2" id="fa-prop5-1-h1">ΠΡΟΤΑΣΗ 5: ΣΥΝΑΡΤΗΣΕΙΣ ΑΛΗΘΕΙΑΣ, Η ΑΠΟΡΡΙΨΗ ΤΗΣ ΑΙΤΙΟΤΗΤΑΣ, Ο ΤΕΛΕΣΤΗΣ <span class="tex">N(\bar{\xi})</span>, ΤΟ ΥΠΟΚΕΙΜΕΝΟ &amp; Ο ΣΟΛΙΨΙΣΜΟΣ (5 – 5.641)</h3>
 <h4 class="fa-h3" id="fa-prop5-1-h2">1. Το Κείμενο της Κύριας Πρότασης</h4>
@@ -3133,7 +3599,7 @@ Auge ── ο           Οπτικό πεδίο           │
           </div>
 <!-- FULL-ANALYSIS:BEGIN sec-prop6 (generated by tools/build_html.py — do not edit) -->
 <details class="full-analysis hw-panel" id="full-sec-prop6" data-source-sha="c39cf109c516">
-<summary>▸ Πλήρης Ανάλυση — το πλήρες κείμενο της ενότητας</summary>
+<summary>Πλήρης ανάλυση: το πλήρες κείμενο της ενότητας</summary>
 <div class="fa-body">
 <h3 class="fa-h2" id="fa-prop6-1-h1">ΠΡΟΤΑΣΗ 6: Η ΓΕΝΙΚΗ ΜΟΡΦΗ ΤΗΣ ΠΡΟΤΑΣΗΣ, Η ΦΥΣΗ ΤΗΣ ΛΟΓΙΚΗΣ &amp; ΤΩΝ ΜΑΘΗΜΑΤΙΚΩΝ, Η ΦΙΛΟΣΟΦΙΑ ΤΗΣ ΕΠΙΣΤΗΜΗΣ, Η ΗΘΙΚΗ &amp; ΤΟ ΜΥΣΤΙΚΙΣΤΙΚΟ (6 – 6.54)</h3>
 <h4 class="fa-h3" id="fa-prop6-1-h2">1. Το Κείμενο της Κύριας Πρότασης &amp; Η Αποκωδικοποίηση της Φόρμουλας <span class="tex">[\bar{p}, \bar{\xi}, N(\bar{\xi})]</span></h4>
@@ -3578,7 +4044,7 @@ Er muss diese Sätze überwinden, dann sieht er die Welt richtig.»</em></p>
           </div>
 <!-- FULL-ANALYSIS:BEGIN sec-prop7 (generated by tools/build_html.py — do not edit) -->
 <details class="full-analysis hw-panel" id="full-sec-prop7" data-source-sha="c39cf109c516">
-<summary>▸ Πλήρης Ανάλυση — το πλήρες κείμενο της ενότητας</summary>
+<summary>Πλήρης ανάλυση: το πλήρες κείμενο της ενότητας</summary>
 <div class="fa-body">
 <h3 class="fa-h2" id="fa-prop7-1-h1">ΠΡΟΤΑΣΗ 7: Η ΣΙΩΠΗ (7)</h3>
 <h4 class="fa-h3" id="fa-prop7-1-h2">1. Το Κείμενο στις Τρεις Εκδόσεις</h4>
@@ -3695,7 +4161,7 @@ Er muss diese Sätze überwinden, dann sieht er die Welt richtig.»</em></p>
           </div>
 <!-- FULL-ANALYSIS:BEGIN sec-epilogue (generated by tools/build_html.py — do not edit) -->
 <details class="full-analysis hw-panel" id="full-sec-epilogue" data-source-sha="c39cf109c516">
-<summary>▸ Πλήρης Ανάλυση — το πλήρες κείμενο της ενότητας</summary>
+<summary>Πλήρης ανάλυση: το πλήρες κείμενο της ενότητας</summary>
 <div class="fa-body">
 <h3 class="fa-h2" id="fa-epilogue-1-h1">ΜΕΡΟΣ Γ΄: ΣΥΝΘΕΤΙΚΟΙ ΠΙΝΑΚΕΣ ΑΝΑΦΟΡΑΣ &amp; ΙΣΤΟΡΙΚΟ ΕΠΙΜΕΤΡΟ</h3>
 <h4 class="fa-h3" id="fa-epilogue-1-h2">1. Το Τριμερές Σχήμα του Νοήματος στο <em>Tractatus</em> (<em>Sinnvoll</em> vs. <em>Sinnlos</em> vs. <em>Unsinnig</em>)</h4>
@@ -4418,7 +4884,7 @@ Er muss diese Sätze überwinden, dann sieht er die Welt richtig.»</em></p>
     <div class="fixed inset-0 bg-black/50" onclick="closeMobileNav()"></div>
     <div class="relative w-80 max-w-[85vw] h-full bg-[var(--sidebar)] border-r border-[var(--border)] p-4 overflow-y-auto shadow-xl">
       <div class="flex items-center justify-between pb-3 mb-3 border-b border-[var(--border)]">
-        <span class="font-mono text-xs font-bold uppercase tracking-wider">Πίνακας Πλοήγησης</span>
+        <span class="text-sm font-semibold">Περιεχόμενα</span>
         <button onclick="closeMobileNav()" class="hw-btn px-2 py-1 text-xs font-mono">✕ Κλείσιμο</button>
       </div>
       <div id="mobileNavMount"></div>
@@ -4451,9 +4917,9 @@ Er muss diese Sätze überwinden, dann sieht er die Welt richtig.»</em></p>
   </button>
 
   <!-- FOOTER -->
-  <footer class="max-w-[1600px] mx-auto px-6 py-6 border-t border-[var(--border)] bg-[var(--card)] font-mono text-xs text-[var(--muted-foreground)] flex flex-wrap items-center justify-between gap-2">
-    <div>LUDWIG WITTGENSTEIN // TRACTATUS LOGICO-PHILOSOPHICUS (1921/1922) — HAUS WITTGENSTEIN EDITION V2</div>
-    <div>ΠΛΗΡΗΣ ΑΝΑΛΥΣΗ 1–7 // OGDEN (1922) · PEARS/MCGUINNESS (1961) · STERN TREE VIEW</div>
+  <footer class="px-6 py-6 border-t border-[var(--border)] bg-[var(--content)] text-xs text-[var(--muted-foreground)] flex flex-wrap items-center justify-between gap-2">
+    <div>Ludwig Wittgenstein, <em>Tractatus Logico-Philosophicus</em> (1921/1922): ανάλυση των προτάσεων 1–7.</div>
+    <div>Κείμενα: Ogden (1922), Pears &amp; McGuinness (1961), δενδροειδής έκδοση του Stern.</div>
   </footer>
 
   <!-- =======================================================================
@@ -4484,7 +4950,7 @@ Er muss diese Sätze überwinden, dann sieht er die Welt richtig.»</em></p>
       }
       const tBtn = document.getElementById('themeToggleBtn');
       if (tBtn) {
-        tBtn.textContent = mode === 'dark' ? '☀ Φωτεινό Θέμα' : '◐ Σκοτεινό Θέμα';
+        tBtn.textContent = mode === 'dark' ? 'Φωτεινό θέμα' : 'Σκοτεινό θέμα';
       }
       if (persist) {
         try { localStorage.setItem('hw-tlp-theme', mode); } catch (e) {}
@@ -4505,6 +4971,32 @@ Er muss diese Sätze überwinden, dann sieht er die Welt richtig.»</em></p>
 
     function toggleArchitecturalTheme() {
       applyArchPalette(currentArchTheme === 'light' ? 'dark' : 'light', true);
+    }
+
+    // Foldable contents pane (desktop). Folded, it keeps a rail with the numerals
+    // of the sections; the choice is remembered in this browser.
+    function applySidebarFold(folded, persist = true) {
+      document.documentElement.classList.toggle('sidebar-folded', folded);
+      const btn = document.getElementById('sidebarFoldBtn');
+      if (btn) {
+        const label = folded ? 'Ανάπτυξη περιεχομένων' : 'Σύμπτυξη περιεχομένων';
+        btn.setAttribute('aria-expanded', folded ? 'false' : 'true');
+        btn.setAttribute('aria-label', label);
+        btn.title = label + ' (πλήκτρο [)';
+      }
+      if (persist) {
+        try { localStorage.setItem('hw-tlp-sidebar', folded ? 'folded' : 'open'); } catch (e) {}
+      }
+    }
+
+    function toggleSidebarFold() {
+      applySidebarFold(!document.documentElement.classList.contains('sidebar-folded'), true);
+    }
+
+    function initSidebarFold() {
+      let saved = null;
+      try { saved = localStorage.getItem('hw-tlp-sidebar'); } catch (e) {}
+      applySidebarFold(saved === 'folded', false);
     }
 
     // -----------------------------------------------------------------------
@@ -5622,10 +6114,13 @@ Er muss diese Sätze überwinden, dann sieht er die Welt richtig.»</em></p>
       const h = canvas.height;
       const isDark = currentArchTheme === 'dark';
 
-      const bgColor = isDark ? '#181a20' : '#ffffff';
-      const spotColor = isDark ? '#e5e7eb' : '#18181b';
-      const gridColor = isDark ? '#d4a853' : '#8f241e';
-      const hitFill = isDark ? 'rgba(212, 168, 83, 0.30)' : 'rgba(143, 36, 30, 0.28)';
+      // The canvas takes its colours from the design tokens of the active theme.
+      const tokens = getComputedStyle(document.documentElement);
+      const token = (name) => tokens.getPropertyValue(name).trim();
+      const bgColor = token('--card');
+      const spotColor = token('--foreground');
+      const gridColor = token('--primary');
+      const hitFill = token('--primary-hit');
 
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, w, h);
@@ -6017,6 +6512,7 @@ Er muss diese Sätze überwinden, dann sieht er die Welt richtig.»</em></p>
 
     window.addEventListener('DOMContentLoaded', () => {
       initThemeIfNeeded();
+      initSidebarFold();
       updateHeaderHeightVar();
       if ('ResizeObserver' in window) {
         const ro = new ResizeObserver(updateHeaderHeightVar);
@@ -6077,6 +6573,8 @@ Er muss diese Sätze überwinden, dann sieht er die Welt richtig.»</em></p>
         e.preventDefault();
         const inp = document.getElementById('globalSearchInput');
         if (inp) { inp.focus(); inp.select(); }
+      } else if (e.key === '[') {
+        if (currentMainTab === 'master') toggleSidebarFold();
       } else if (e.key >= '1' && e.key <= '6') {
         const idx = parseInt(e.key, 10) - 1;
         if (MAIN_TABS[idx]) switchMainTab(MAIN_TABS[idx]);

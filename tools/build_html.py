@@ -141,41 +141,52 @@ def render_section(heading, body, prefix):
 # --------------------------------------------------------------------------
 HEAD_BLOCK = f"""<link rel="stylesheet" href="{KATEX}/katex.min.css">
 <style>
-  .full-analysis {{ margin-top: 1.5rem; }}
+  /* The full analysis is the long reading text: it sits on the page itself,
+     between two rules, and is not boxed. */
+  .full-analysis {{ margin-top: 2rem; }}
+  body .full-analysis.hw-panel {{ background: transparent; border-radius: 0;
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }}
   .full-analysis > summary {{
-    cursor: pointer; padding: 0.7rem 1rem; font-family: var(--font-mono);
-    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em;
-    text-transform: uppercase; color: var(--primary); user-select: none;
+    display: flex; align-items: center; gap: 0.6rem; list-style: none;
+    cursor: pointer; padding: 0.85rem 0.25rem; font-family: var(--font-sans);
+    font-size: 0.9rem; font-weight: 600; color: var(--primary); user-select: none;
   }}
-  .full-analysis > summary:hover {{ background-color: var(--secondary); }}
-  .fa-body {{ padding: 0.5rem 1.1rem 1.25rem; font-size: 0.92rem; line-height: 1.7; overflow-wrap: anywhere; }}
-  .fa-body p {{ margin: 0.6rem 0; }}
+  .full-analysis > summary::-webkit-details-marker {{ display: none; }}
+  .full-analysis > summary::before {{
+    content: ""; flex: none; width: 0.45rem; height: 0.45rem; margin-left: 0.15rem;
+    border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+    transform: rotate(-45deg); transition: transform 0.15s ease;
+  }}
+  .full-analysis[open] > summary::before {{ transform: rotate(45deg); }}
+  .full-analysis > summary:hover {{ background-color: var(--primary-soft); }}
+  .fa-body {{ padding: 0.25rem 0 1.5rem; overflow-wrap: anywhere; }}
+  .fa-body p {{ margin: 0.75rem 0; }}
   .fa-body [id] {{ scroll-margin-top: 8rem; }}
-  .fa-body ul {{ list-style: disc; padding-left: 1.35rem; margin: 0.45rem 0; }}
-  .fa-body ol {{ list-style: decimal; padding-left: 1.5rem; margin: 0.45rem 0; }}
+  .fa-body ul {{ list-style: disc; padding-left: 1.35rem; margin: 0.5rem 0; }}
+  .fa-body ol {{ list-style: decimal; padding-left: 1.5rem; margin: 0.5rem 0; }}
   .fa-body ul ul {{ list-style: circle; }}
-  .fa-body li {{ margin: 0.3rem 0; }}
-  .fa-body strong {{ font-weight: 700; }}
-  .fa-body hr {{ border: 0; border-top: 1px solid var(--border); margin: 1.4rem 0; }}
-  .fa-body .fa-h2 {{ font-size: 1.05rem; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.02em; margin: 1.6rem 0 0.6rem; padding-bottom: 0.35rem;
-    border-bottom: 1px solid var(--border); }}
-  .fa-body .fa-h3 {{ font-size: 0.98rem; font-weight: 700; margin: 1.4rem 0 0.5rem; color: var(--primary); }}
-  .fa-body .fa-h4 {{ font-size: 0.9rem; font-weight: 700; margin: 1.1rem 0 0.4rem; }}
-  .fa-body code {{ font-family: var(--font-mono); font-size: 0.85em;
-    background-color: var(--secondary); padding: 0.05rem 0.3rem; border: 1px solid var(--border-soft); }}
-  .fa-body .fa-pre {{ overflow-x: auto; padding: 0.85rem 1rem; margin: 0.8rem 0;
-    background-color: var(--secondary); border: 1px solid var(--border);
-    font-size: 0.72rem; line-height: 1.35; }}
-  .fa-body .fa-pre code {{ background: none; border: 0; padding: 0; font-size: inherit; }}
-  .fa-body .fa-table-wrap {{ overflow-x: auto; margin: 0.9rem 0; }}
-  .fa-body .hw-table {{ font-size: 0.82rem; }}
+  .fa-body li {{ margin: 0.35rem 0; }}
+  .fa-body hr {{ border: 0; border-top: 1px solid var(--border); margin: 2.2rem 0; }}
+  .fa-body :is(.fa-h2, .fa-h3, .fa-h4) {{ font-family: var(--font-sans); line-height: 1.4;
+    max-width: 52ch; text-wrap: balance; }}
+  .fa-body .fa-h2 {{ font-size: 1.05rem; font-weight: 650; letter-spacing: 0.03em;
+    margin: 2.4rem 0 0.9rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--foreground); }}
+  .fa-body .fa-h3 {{ font-size: 1rem; font-weight: 650; margin: 2rem 0 0.6rem; }}
+  .fa-body .fa-h4 {{ font-size: 0.9rem; font-weight: 600; margin: 1.4rem 0 0.4rem;
+    color: var(--muted-foreground); }}
+  .fa-body code {{ font-size: 0.84em; background-color: var(--secondary);
+    padding: 0.08em 0.32em; border-radius: 3px; }}
+  .fa-body .fa-pre {{ overflow-x: auto; padding: 0.9rem 1rem; margin: 1rem 0;
+    background-color: var(--secondary); border-radius: var(--radius);
+    font-size: 0.76rem; line-height: 1.35; }}
+  .fa-body .fa-pre code {{ background: none; padding: 0; font-size: inherit; }}
+  .fa-body .fa-table-wrap {{ overflow-x: auto; margin: 1.1rem 0; }}
   .fa-body .hw-quote p {{ margin: 0.3rem 0; }}
-  .fa-body .tex-display {{ display: block; overflow-x: auto; overflow-y: hidden; margin: 0.7rem 0; text-align: center; }}
+  .fa-body .tex-display {{ display: block; overflow-x: auto; overflow-y: hidden; margin: 0.9rem 0; text-align: center; }}
   .fa-body .tex:not(.tex-done) {{ font-family: var(--font-mono); font-size: 0.85em; }}
-  .fa-body .katex {{ font-size: 1.02em; }}
+  .fa-body .katex {{ font-size: 1.04em; }}
   .fa-toolbar {{ display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem;
-    font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted-foreground); }}
+    font-size: 0.78rem; color: var(--muted-foreground); }}
 </style>"""
 
 TOOLBAR_BLOCK = """<div class="fa-toolbar">
@@ -265,7 +276,7 @@ def build():
             raise SystemExit(f"build_html: HTML has no <section id=\"{target}\">")
         inner = "\n<hr>\n".join(chunks).rstrip()
         content = (f'<details class="full-analysis hw-panel" id="full-{target}" data-source-sha="{digest}">\n'
-                   f"<summary>▸ Πλήρης Ανάλυση — το πλήρες κείμενο της ενότητας</summary>\n"
+                   f"<summary>Πλήρης ανάλυση: το πλήρες κείμενο της ενότητας</summary>\n"
                    f'<div class="fa-body">\n{inner}\n</div>\n</details>')
         # <pre> content must not be re-indented, so the block is emitted flush left
         page = insert_before(page, "</section>", block(target, content), start)

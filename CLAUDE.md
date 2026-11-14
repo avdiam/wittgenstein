@@ -49,6 +49,10 @@ been verified against outside sources, and the list of open items at its end).
   matters for the argument (for example *transcendental*).
 - In the HTML, text is often split by tags such as `<strong>`, so search the raw
   markup before assuming a phrase is absent.
+- The page's design tokens, and what each colour and typeface is for, are
+  described at the top of the first `<style>` block in the HTML. The styles of
+  the generated blocks are in `HEAD_BLOCK` in `tools/build_html.py`. Use the
+  tokens (`var(--primary)` and so on) and do not hard-code colours.
 
 ## Verification tools
 
