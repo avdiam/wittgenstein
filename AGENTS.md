@@ -6,8 +6,11 @@ then `README.md` and `CROSSCHECK_PLAN.md`.
 
 In short:
 
-- Edit the analysis only in the Markdown file; the HTML is rebuilt from it with
-  `python tools/build_html.py` and verified with `python tools/build_html.py --check`.
-- Never edit between the `FULL-ANALYSIS` markers in the HTML.
+- Edit text only in the Markdown sources (the analysis and the essay). The
+  pages in `docs/` and the Word file are rebuilt with `python tools/build_all.py`
+  and verified with `python tools/build_all.py --check`.
+- Never edit `docs/essay.html`, nor between the `FULL-ANALYSIS` markers in
+  `docs/tractatus.html`.
+- The repository is public and `docs/` is published by GitHub Pages.
 - Content in Greek, conversation in English.
-- The HTML uses CRLF line endings, the Markdown LF.
+- `docs/tractatus.html` uses CRLF line endings; everything else LF.

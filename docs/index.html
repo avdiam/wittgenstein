@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- Cover page of the site. Hand-written; the two pages it links to are generated
+     (tractatus.html in part, essay.html entirely). Same design tokens as both. -->
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wittgenstein: φάκελος μελέτης</title>
+<meta name="description" content="Ελληνικό υλικό μελέτης: ανάλυση του Tractatus Logico-Philosophicus του Wittgenstein και δοκίμιο για την ιστορία της λογικής, της γλώσσας και των υπολογιστών.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400..700&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    var mode = null;
+    try { mode = localStorage.getItem('hw-tlp-theme'); } catch (e) {}
+    if (mode !== 'dark' && mode !== 'light') {
+      mode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    if (mode === 'dark') document.documentElement.classList.add('dark');
+  })();
+</script>
+<style>
+  :root {
+    --background: #eff1ee; --content: #fbfbf9; --border: #cdd3cd; --border-soft: #e0e4df;
+    --foreground: #1c2022; --muted-foreground: #57605d;
+    --primary: #1e5c4e; --primary-soft: rgba(30, 92, 78, 0.10); --secondary: #eceeea;
+    --radius: 6px;
+    --font-sans: 'Commissioner', 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+    --font-serif: 'Literata', 'Palatino Linotype', Georgia, 'Times New Roman', serif;
+  }
+  html.dark {
+    --background: #131618; --content: #1a1e20; --border: #333a3d; --border-soft: #262c2f;
+    --foreground: #e3e6e2; --muted-foreground: #9aa4a2;
+    --primary: #86cdb5; --primary-soft: rgba(134, 205, 181, 0.13); --secondary: #23282b;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-sans); }
+  a { color: var(--primary); }
+  :focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+  .wrap { max-width: 62rem; margin: 0 auto; padding: 0 1rem; }
+  .top { display: flex; justify-content: flex-end; padding: 1rem 0 0; }
+  .theme { font: inherit; font-size: .82rem; color: var(--muted-foreground); background: none; border: 1px solid var(--border-soft); border-radius: 4px; padding: .35rem .6rem; cursor: pointer; }
+  .theme:hover { color: var(--foreground); border-color: var(--border); }
+  header.cover { padding: 3rem 0 2rem; }
+  .kicker { font-size: .85rem; color: var(--muted-foreground); margin: 0 0 .6rem; }
+  h1 { font-family: var(--font-serif); font-weight: 600; font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.1; margin: 0; }
+  .intro { font-family: var(--font-serif); font-size: 1.12rem; line-height: 1.7; max-width: 42rem; margin: 1.25rem 0 0; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 1.25rem; margin: 1rem 0 3rem; }
+  .card { display: flex; flex-direction: column; background: var(--content); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; text-decoration: none; color: var(--foreground); transition: border-color .15s ease, background .15s ease; }
+  .card:hover { border-color: var(--primary); background: var(--primary-soft); }
+  .card-label { font-size: .8rem; color: var(--primary); font-weight: 600; margin: 0 0 .5rem; }
+  .card h2 { font-family: var(--font-serif); font-weight: 600; font-size: 1.45rem; line-height: 1.25; margin: 0 0 .75rem; }
+  .card p { font-family: var(--font-serif); line-height: 1.6; margin: 0 0 1rem; }
+  .card ul { margin: 0 0 1.25rem; padding-left: 1.1rem; font-size: .9rem; line-height: 1.6; color: var(--muted-foreground); }
+  .card .go { margin-top: auto; font-size: .9rem; font-weight: 600; color: var(--primary); }
+  .about { border-top: 1px solid var(--border); padding: 1.5rem 0 3rem; color: var(--muted-foreground); font-size: .88rem; line-height: 1.6; }
+  .about p { margin: .4rem 0; max-width: 46rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><button type="button" class="theme" id="themeBtn" onclick="toggleTheme()">Σκοτεινό θέμα</button></div>
+
+  <header class="cover">
+    <p class="kicker">Φάκελος μελέτης στα ελληνικά</p>
+    <h1>Ludwig Wittgenstein</h1>
+    <p class="intro">Δύο κείμενα που διαβάζονται χωριστά και συμπληρώνουν το ένα το άλλο: μια αναλυτική μελέτη του <em>Tractatus Logico-Philosophicus</em>, πρόταση προς πρόταση, και ένα δοκίμιο για γενικούς αναγνώστες που τοποθετεί το έργο του Wittgenstein στην ιστορία της λογικής, της φιλοσοφίας της γλώσσας και των υπολογιστών.</p>
+  </header>
+
+  <main class="cards">
+    <a class="card" href="tractatus.html">
+      <p class="card-label">Ανάλυση</p>
+      <h2>Tractatus Logico-Philosophicus</h2>
+      <p>Οι 526 προτάσεις του βιβλίου, οργανωμένες κατά το δέντρο της αρίθμησής τους, με σχόλια, παραδείγματα και τον διάλογο του Wittgenstein με τους προγενέστερους φιλοσόφους.</p>
+      <ul>
+        <li>Ανάλυση των προτάσεων 1 έως 7</li>
+        <li>Δέντρο των προτάσεων σε τέσσερις γλώσσες</li>
+        <li>Εργαστήρια λογικής και οπτικά μοντέλα</li>
+      </ul>
+      <span class="go">Άνοιγμα της ανάλυσης →</span>
+    </a>
+    <a class="card" href="essay.html">
+      <p class="card-label">Δοκίμιο</p>
+      <h2>Λογική, γλώσσα και μηχανές</h2>
+      <p>Από τον Αριστοτέλη και τους Στωικούς στον Wittgenstein και την τεχνητή νοημοσύνη. Γραμμένο για αναγνώστες χωρίς ειδικές γνώσεις μαθηματικών ή πληροφορικής.</p>
+      <ul>
+        <li>Δώδεκα ενότητες, από τον Πλάτωνα ως τα γλωσσικά μοντέλα</li>
+        <li>Χρονολόγιο και γλωσσάρι</li>
+        <li>Διαθέσιμο και ως αρχείο Word</li>
+      </ul>
+      <span class="go">Άνοιγμα του δοκιμίου →</span>
+    </a>
+  </main>
+
+  <footer class="about">
+    <p>Οι παραθέσεις του <em>Tractatus</em> ελέγχθηκαν με το γερμανικό πρωτότυπο και τις αγγλικές μεταφράσεις. Οι ισχυρισμοί που προέρχονται από τη δευτερογενή βιβλιογραφία καταγράφονται, με την πηγή και την ετυμηγορία για τον καθένα, στο <a href="https://github.com/avdiam/wittgenstein/blob/main/CROSSCHECK_PLAN.md">CROSSCHECK_PLAN.md</a>. Όπου οι μελετητές διαφωνούν, τα κείμενα αναφέρουν και τις δύο αναγνώσεις.</p>
+    <p>Τα κείμενα διατίθενται με την άδεια <a href="https://creativecommons.org/licenses/by/4.0/deed.el">CC BY 4.0</a>. Πηγαίος κώδικας και ιστορικό αλλαγών: <a href="https://github.com/avdiam/wittgenstein">github.com/avdiam/wittgenstein</a>.</p>
+  </footer>
+</div>
+<script>
+  function setThemeLabel() {
+    var dark = document.documentElement.classList.contains('dark');
+    document.getElementById('themeBtn').textContent = dark ? 'Φωτεινό θέμα' : 'Σκοτεινό θέμα';
+  }
+  function toggleTheme() {
+    var dark = document.documentElement.classList.toggle('dark');
+    try { localStorage.setItem('hw-tlp-theme', dark ? 'dark' : 'light'); } catch (e) {}
+    setThemeLabel();
+  }
+  setThemeLabel();
+</script>
+</body>
+</html>

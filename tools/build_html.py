@@ -23,7 +23,7 @@ from markdown_it import MarkdownIt
 ROOT = Path(__file__).resolve().parent.parent
 DOC_DIR = ROOT / "Tractatus Logico-Philosophicus"
 MD_PATH = DOC_DIR / "TRACTATUS_LOGICO_PHILOSOPHICUS_ANALYSIS_1-7.md"
-HTML_PATH = DOC_DIR / "TRACTATUS_LOGICO_PHILOSOPHICUS_INTERACTIVE_V2.html"
+HTML_PATH = ROOT / "docs" / "tractatus.html"  # published by GitHub Pages
 
 KATEX = "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist"
 

@@ -1,0 +1,49 @@
+This repository contains texts and code under two different licences.
+
+1. Texts: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+   The Greek analysis of the Tractatus, the essay «Λογική, γλώσσα και μηχανές»,
+   the hand-written parts of the web pages and the notes in this repository
+   are licensed under CC BY 4.0. You may share and adapt them for any purpose,
+   provided you give appropriate credit, link to the licence, and indicate if
+   changes were made.
+
+   Summary: https://creativecommons.org/licenses/by/4.0/
+   Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+   Copyright (c) 2026 Avraam Diamantopoulos
+
+2. Code: MIT License (the scripts in tools/ and the page scripts in docs/)
+
+   Copyright (c) 2026 Avraam Diamantopoulos
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to deal
+   in the Software without restriction, including without limitation the rights
+   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in all
+   copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+3. Material that is not ours
+
+   - The quotations of Wittgenstein's works in German and in the Ogden/Ramsey
+     translation (1922) are in the public domain in the European Union and the
+     United States.
+   - Tractatus Logico-Philosophicus/5740-pdf.pdf is the Project Gutenberg
+     eBook #5740 and carries the Project Gutenberg License stated inside it.
+   - The tree-view PDF of the Ludwig Wittgenstein Project states that its text
+     and translation are in the public domain; see the notice inside it.
+   - Klement's side-by-side edition is not included, because it contains the
+     Pears/McGuinness translation, which is still under copyright. It is
+     available from its editor at http://people.umass.edu/klement/tlp/.
