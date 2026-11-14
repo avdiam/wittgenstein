@@ -5415,14 +5415,14 @@ Er muss diese Sätze überwinden, dann sieht er die Welt richtig.»</em></p>
       if (mode === 'flawed') {
         svgBox.innerHTML = `
           <svg viewBox="0 0 420 200" class="w-full max-w-[420px] h-auto font-mono">
-            <path d="M 70 100 C 70 30, 360 20, 360 100 C 360 180, 70 170, 70 100 Z" fill="var(--card)" stroke="currentColor" stroke-width="2.5"/>
-            <circle cx="115" cy="100" r="18" fill="none" stroke="var(--primary)" stroke-width="2"/>
-            <circle cx="122" cy="100" r="6" fill="var(--primary)"/>
-            <text x="115" y="135" text-anchor="middle" fill="var(--primary)" font-size="12" font-weight="bold">Μάτι (Εντός!)</text>
-            <text x="245" y="104" text-anchor="middle" fill="currentColor" font-size="14" font-weight="bold">ΟΠΤΙΚΟ ΠΕΔΙΟ (5.6331)</text>
+            <path d="M 100 100 C 170 45, 380 15, 380 100 C 380 185, 170 155, 100 100 Z" fill="var(--card)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            <line x1="62" y1="100" x2="96" y2="100" stroke="var(--primary)" stroke-width="2"/>
+            <text x="56" y="105" text-anchor="end" fill="var(--primary)" font-size="14" font-weight="bold">Auge</text>
+            <text x="56" y="122" text-anchor="end" fill="var(--primary)" font-size="11">(Μάτι)</text>
+            <text x="262" y="104" text-anchor="middle" fill="currentColor" font-size="14" font-weight="bold">ΟΠΤΙΚΟ ΠΕΔΙΟ (5.6331)</text>
           </svg>
         `;
-        cap.innerHTML = '<strong>✕ Το Εσφαλμένο Διάγραμμα του 5.6331:</strong> Ο Wittgenstein σχεδιάζει αυτό το σχήμα για να δείξει πώς <strong>ΔΕΝ</strong> είναι το οπτικό πεδίο! Το μάτι δεν βρίσκεται ποτέ μέσα στο οπτικό πεδίο ως ένα αντικείμενο δίπλα στα άλλα.';
+        cap.innerHTML = '<strong>✕ Το Εσφαλμένο Διάγραμμα του 5.6331:</strong> Ο Wittgenstein σχεδιάζει αυτό το σχήμα για να δείξει ποια μορφή <strong>ΔΕΝ</strong> έχει το οπτικό πεδίο. Το μάτι σχεδιάζεται στην αιχμή του σχήματος, σαν να ήταν μέρος του περιγράμματος του πεδίου. Όμως το μάτι δεν το βλέπεις, και τίποτα μέσα στο οπτικό πεδίο δεν επιτρέπει να συμπεράνεις ότι το βλέπει ένα μάτι (5.633).';
       } else {
         svgBox.innerHTML = `
           <svg viewBox="0 0 420 200" class="w-full max-w-[420px] h-auto font-mono">

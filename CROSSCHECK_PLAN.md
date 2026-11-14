@@ -218,7 +218,7 @@ been applied to the Markdown.
 | # | Item | Source | Verdict | Action taken |
 | :-- | :-- | :-- | :-- | :-- |
 | E1a | Necker cube, 5.5423 | [figure in the LWP edition](https://www.wittgensteinproject.org/w/index.php/Logisch-philosophische_Abhandlung) | **corrected** | In the original the *a* corners form the lower-left face and the *b* corners the upper-right face; the ASCII figure had them the other way round. Labels swapped. |
-| E1b | Eye diagram, 5.6331 | same | **corrected** | The original is a teardrop with "Auge" at its pointed end, i.e. the eye drawn as part of the field's outline, not inside it. ASCII figure redrawn; wording fixed in the Markdown and in two hand-written HTML passages. The interactive SVG in the visual lab still shows the eye inside an oval. |
+| E1b | Eye diagram, 5.6331 | same | **corrected** | The original is a teardrop with "Auge" at its pointed end, i.e. the eye drawn as part of the field's outline, not inside it. ASCII figure redrawn; wording fixed in the Markdown and in two hand-written HTML passages. The interactive SVG in the visual lab was redrawn the same way afterwards (teardrop, "Auge" at the tip), and its caption reworded to match 5.633. |
 | E1c | Line figure, 6.36111 | same | confirmed | none (o—x labelled *a*, x—o labelled *b*) |
 | E2 | German quotations | LWP German text, compared by script (87 fragments, whitespace and punctuation ignored) | confirmed, two spelling variants | All Tractatus fragments found except *transzendental* (original: *transcendental*, fixed) and *lässt* (original: *läßt*; modern spelling kept). |
 | E3 | 526 propositions; 7 / 79 / 74 / 109 / 151 / 105 / 1 | proposition anchors in the LWP edition, counted by script | confirmed | none. Wikipedia's "525" does not match either the PDFs or this count. |
@@ -227,7 +227,6 @@ been applied to the Markdown.
 
 - C1 (Greek terms vs Kitsopoulos) and C3 (a second Pears–McGuinness copy) need printed books.
 - The 19.8.1919 letter to Russell on *Sachverhalt* / *Tatsache*, Bolzano as a precursor of 5.15, and Carnap's own acknowledgment of the *Tractatus* on probability were not confirmed online.
-- The eye-diagram SVG in the HTML visual lab differs in shape from the original figure.
 - From tiers A and D: six bibliography entries are still unverified (Carroll, Pears, Janik & Toulmin, Mauthner, Hertz, *Principia*) along with the Stenius imprint and the years of the classics; the role of Lorentzatos in the Greek edition is unknown; several rows rest on Wikipedia or booksellers as second source (marked in the tables).
 - The page was not reopened in a browser after the last two builds (only `--check` and a script syntax check were run).
 - `Istoria_Logikis_kai_AI.docx` has not been reviewed.
