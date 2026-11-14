@@ -323,6 +323,26 @@ was opened.
 | Hegelian reception: Bradley, the remark to Drury, Sellars, Brandom, McDowell, Taylor | SEP `hegel`; Malcolm, *LRB* 3/21 (quoting Drury) | confirmed; Drury's own text not seen |
 | *On Certainty* | SEP `wittgenstein` §5; IEP, Wittgenstein | confirmed |
 
+## The owner's note `Wittgenstein intro.md` (checked 2026-11-14)
+
+The note was read, its claims checked, and what held up was merged into the
+essay (sections 6, 8 and 10). The note itself was not edited.
+
+| # | Claim in the note | Sources | Verdict | Action in the essay |
+| :-- | :-- | :-- | :-- | :-- |
+| N1 | The *Tractatus* is the only book he published in his lifetime | [IEP, Wittgenstein](https://iep.utm.edu/wittgens/) ("the only philosophy book"); SEP `wittgenstein` (cites the 1929 paper); [Austria-Forum](https://austria-forum.org/af/AEIOU/Wittgenstein%2C_Ludwig/Wittgenstein%2C_Ludwig_english) (dictionary 1926) | **corrected** | «το μόνο φιλοσοφικό βιβλίο»; the 1926 school dictionary and the 1929 article named. |
+| N2 | Russell was deeply influenced by his pupil | SEP `russell`, `wittgenstein-atomism`, `principia-mathematica`, `logical-atomism`; Russell's 1918 acknowledgement as quoted by SEP and by Landini (CUP) | confirmed, with a dissent | Added to section 6, with Landini's view that Russell "embellished matters" for his friend's sake. The 1918 text itself was not opened. |
+| N3 | Picture theory: a proposition has sense only if testable, or if a tautology | SEP `wittgenstein`; Tractatus 4.003, 4.461, 4.4611 (LWP German text) | **corrected** | The note mixes the *Tractatus* with the Vienna Circle's verificationism, which the essay keeps apart. Tautologies are *sinnlos* but not *unsinnig*; added to section 6, using the analysis's terms («χωρίς νόημα» / «ανόητες»). The essay's rendering of 6.54 and the resolute-reading note were aligned with this. |
+| N4 | Influenced philosophy of mind: Dennett, Fodor | [Dennett, *TIME* 100 (1999)](https://time.com/archive/6735017/ludwig-wittgenstein-philosopher/); [Dennett, autobiography, *Philosophy Now* 68](https://philosophynow.org/issues/68/Daniel_Dennett_Autobiography_Part_1); SEP `private-language` (Fodor 1975, pp. 68–73) | Dennett confirmed; Fodor **corrected** (a critic) | Both added, Fodor as a critic. Dennett's two sources are his own words but not peer-reviewed. |
+| N5 | Turing attended the 1939 lectures and argued with Wittgenstein | SEP `turing` (Diamond 1976); [Matthíasson, *BJHP* 29 (2021)](https://research-portal.st-andrews.ac.uk/en/publications/contradictions-and-falling-bridges-what-was-wittgensteins-reply-t/) (abstract); [Floyd, BU slides (2012)](https://www.bu.edu/cphs/files/2013/08/Floyd.pdf) | confirmed; influence ran both ways | New subsection at the end of section 8: the falling-bridge exchange; Turing's 1944–45 acknowledgement; RPP I §1096 ("These machines are humans who calculate"). Diamond's edition and Turing's typescript were not opened; Floyd's are slides, not a paper. |
+| N6 | He "proved" that a private language is impossible | SEP `private-language`; *Investigations* §§243, 258, 293 (LWP German text) | **contested**; "proved" too strong | Added to section 10 with the diary and beetle examples and an «Ερμηνευτική σημείωση». |
+| N7 | The fly and the fly-bottle | *Investigations* §309 (LWP German text) | confirmed | Added to the passage on therapy. The toolbox (§11), also checked, added to meaning as use. |
+| N8 | He showed Austin that language does things | SEP `austin-jl`; [Harris & Unnsteinsson, *BJHP* 2018](https://opinvisindi.is/handle/20.500.11815/1981) (abstract); [Austin, *How to Do Things with Words* (1962), p. 5](https://web.english.upenn.edu/~cavitch/pdf-library/Austin_How_To_Do_Things_with_Words.pdf) | **contested** | Austin's performatives added with his own examples (ship, bet; not "I do", which Austin's editor flags as a slip); «Ερμηνευτική σημείωση» on the dispute over influence. |
+| N9 | "Forms of life" gave the social sciences a non-judging tool (Winch) | SEP `relativism` | confirmed; charge of relativism live | Winch's 1964 Azande article and Lukes's reply added. "Western positivist standards" is the note's own framing and was not kept. Winch's own reply to the charge was not read. |
+| N10 | The only 20th-century thinker who set off two revolutions | SEP `wittgenstein`; IEP | **unverifiable** as worded | Not used. SEP's "two commonly recognized stages" and its remark that the division "has been questioned" are reflected in the new comparison table's caption. |
+| N11 | Returned to philosophy in the 1930s | SEP `wittgenstein`; IEP | **corrected** | 1929 (the essay already had it). |
+| N12 | Comparison table of the two phases | — | two cells **corrected** | Kept as a table. "Correspondence with physical facts" became the shared logical form of proposition and possible situation; "delimiting the scientifically sayable" became clarification and the limit between saying and showing. |
+
 ## Open for the essay
 
 - Standard life dates were not checked one by one.

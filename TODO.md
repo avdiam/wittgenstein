@@ -53,7 +53,8 @@ Left as they are, for the owner to decide:
 The first version, `Istoria_Logikis_kai_AI.docx`, was read, checked and left
 unchanged. The new text is `Logiki_Glossa_Michanes.md` (source) and
 `Logiki_Glossa_Michanes.docx` (generated; see `README.md`). It grew from about
-3,200 to about 11,000 words (27 pages). The sources and verdicts are in
+3,200 to about 12,500 words (30 pages). The owner's note `Wittgenstein intro.md`
+was checked and merged in on the same day (see `CROSSCHECK_PLAN.md`, rows N1–N12). The sources and verdicts are in
 `CROSSCHECK_PLAN.md`, section "Results — the essay".
 
 What was asked, and where it is now:
@@ -82,6 +83,8 @@ For the owner to decide:
 
 - The title and the file names.
 - Whether to delete `Istoria_Logikis_kai_AI.docx` once the new text is accepted.
+- Whether to keep `Wittgenstein intro.md` (left uncommitted and unedited) now
+  that its content is in the essay.
 - Names are written in Latin script with the Greek form at first mention; the
   first version used Greek forms more often.
 - Proposals for further content, within the audience limit: (1) a one-page
