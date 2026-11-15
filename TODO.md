@@ -14,7 +14,9 @@ More items are expected to be added.
 - Pushed on 2026-11-15; the live site matches `main`.
 - Checked by the owner: the Word file contains the figures and photos;
   Greek words are hyphenated in the justified text on their Android phone.
-- Not yet checked: the new figures in print (PDF); the essay page at
+- Print checked on 2026-11-15 (headless Chrome, live site, 58 pages): the
+  five new figures (pp. 3, 13, 19, 31, 36) are whole, in light colours,
+  with their captions on the same page. Not yet seen: the essay page at
   1280 px with the new figures in place.
 
 **Status at the end of the first session of 2026-11-15:**
