@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 310" role="img" aria-label="Το τρίγωνο της σημασίας στους Στωικούς και στον Frege">
+  <defs>
+    <marker id="arr-sf" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="var(--primary, #1e5c4e)"/>
+    </marker>
+    <marker id="arr-muted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="var(--muted-foreground, #57605d)"/>
+    </marker>
+  </defs>
+
+  <!-- Connecting lines -->
+  <line x1="205" y1="185" x2="305" y2="100" stroke="var(--primary, #1e5c4e)" stroke-width="2" marker-end="url(#arr-sf)"/>
+  <line x1="455" y1="100" x2="555" y2="185" stroke="var(--primary, #1e5c4e)" stroke-width="2" marker-end="url(#arr-sf)"/>
+  <line x1="255" y1="232" x2="497" y2="232" stroke="var(--muted-foreground, #57605d)" stroke-width="1.6" stroke-dasharray="6,5" marker-end="url(#arr-muted)"/>
+  <text x="380" y="254" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="12" fill="var(--muted-foreground, #57605d)">έμμεση αναφορά (μέσω του νοήματος)</text>
+
+  <!-- Top Box: Sinn / Lekton -->
+  <rect x="235" y="16" width="290" height="84" rx="5" fill="var(--mark-soft, rgba(184, 128, 30, 0.12))" stroke="var(--mark, #91590a)" stroke-width="1.5"/>
+  <text x="380" y="40" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--mark, #91590a)">ΣΗΜΑΙΝΟΜΕΝΟΝ (λεκτόν) · ΝΟΗΜΑ (Sinn)</text>
+  <text x="380" y="62" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="13" fill="var(--foreground, #1c2022)">1. «το τελευταίο άστρο της αυγής»</text>
+  <text x="380" y="82" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="13" fill="var(--foreground, #1c2022)">2. «το πρώτο άστρο του δειλινού»</text>
+
+  <!-- Bottom Left Box: Sign / Expression -->
+  <rect x="25" y="185" width="230" height="92" rx="5" fill="var(--secondary, #eceeea)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+  <text x="140" y="209" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--foreground, #1c2022)">ΣΗΜΑΙΝΟΝ · ΕΚΦΡΑΣΗ</text>
+  <text x="140" y="229" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11.5" fill="var(--muted-foreground, #57605d)">(ο ήχος ή τα γράμματα)</text>
+  <text x="140" y="254" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="13.5" font-style="italic" fill="var(--foreground, #1c2022)">«Αυγερινός» / «Αποσπερίτης»</text>
+
+  <!-- Bottom Right Box: Referent / Object -->
+  <rect x="497" y="185" width="248" height="92" rx="5" fill="var(--primary-soft, rgba(30, 92, 78, 0.10))" stroke="var(--primary, #1e5c4e)" stroke-width="1.5"/>
+  <text x="621" y="209" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--primary, #1e5c4e)">ΤΥΓΧΑΝΟΝ · ΑΝΑΦΟΡΑ (Bedeutung)</text>
+  <text x="621" y="229" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11.5" fill="var(--muted-foreground, #57605d)">(το αντικείμενο στον κόσμο)</text>
+  <circle cx="547" cy="251" r="8" fill="var(--primary, #1e5c4e)"/>
+  <text x="637" y="256" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="13.5" font-weight="600" fill="var(--foreground, #1c2022)">ο πλανήτης Αφροδίτη</text>
+</svg>

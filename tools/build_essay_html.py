@@ -121,8 +121,23 @@ def prepare(tokens, sec_id, glossary=False):
             # "**Term.** definition": drop the full stop after the term when displayed
             # (markdown-it may put an empty text token before the bold term)
             kids = [c for c in t.children if not (c.type == "text" and c.content == "")]
-            if len(kids) > 1 and kids[0].type == "strong_open" and kids[1].type == "text" and kids[1].content.endswith("."):
-                kids[1].content = kids[1].content[:-1]
+            if kids and kids[0].type == "strong_open":
+                depth = 0
+                end = -1
+                for idx, c in enumerate(kids):
+                    if c.type == "strong_open":
+                        depth += 1
+                    elif c.type == "strong_close":
+                        depth -= 1
+                        if depth == 0:
+                            end = idx
+                            break
+                if end > 1:
+                    for c in reversed(kids[1:end]):
+                        if c.type == "text" and c.content:
+                            if c.content.endswith("."):
+                                c.content = c.content[:-1]
+                            break
         elif t.type == "bullet_list_open" and glossary and t.level == 0:
             t.attrSet("class", "glossary")
             t.attrSet("id", "glossaryList")
@@ -155,8 +170,28 @@ def link_sections(fragment, valid):
     return "".join(parts)
 
 
+FIG_RE = re.compile(r'<p><img src="([^"]+)" alt="([^"]*)"(?: title="([^"]*)")?\s*/?></p>')
+
+
+def render_figure(m):
+    src, alt, title = m.group(1), m.group(2), m.group(3) or m.group(2)
+    caption = f"<figcaption>{title}</figcaption>" if title else ""
+    if src.endswith(".svg"):
+        svg_path = HTML_PATH.parent / src
+        if not svg_path.exists():
+            raise SystemExit(f"build_essay_html: missing SVG file '{svg_path}'")
+        svg_body = svg_path.read_text(encoding="utf-8").strip()
+        return (f'<figure class="essay-figure essay-diagram"><div class="figure-svg" role="button" tabindex="0" '
+                f'aria-label="Μεγέθυνση διαγράμματος: {alt}" title="Μεγέθυνση">{svg_body}</div>{caption}</figure>')
+    img_path = HTML_PATH.parent / src
+    if not img_path.exists():
+        raise SystemExit(f"build_essay_html: missing image file '{img_path}'")
+    return f'<figure class="essay-figure essay-photo"><img src="{src}" alt="{alt}" loading="lazy">{caption}</figure>'
+
+
 def polish(fragment):
     """Small presentational touches on rendered HTML."""
+    fragment = FIG_RE.sub(render_figure, fragment)
     fragment = fragment.replace("<table", '<div class="table-wrap"><table').replace("</table>", "</table></div>")
     # truth-table cells: true / false
     fragment = fragment.replace('<td style="text-align:center">Α</td>', '<td style="text-align:center" class="t">Α</td>')
@@ -321,6 +356,10 @@ TEMPLATE = """<!DOCTYPE html>
   </div>
 </header>
 <div id="drawerBackdrop" class="backdrop" hidden onclick="closeDrawer()"></div>
+<dialog id="figZoom" class="fig-zoom" aria-label="Μεγεθυμένο διάγραμμα">
+  <div class="fig-zoom-bar"><span class="fig-zoom-hint">Σύρετε για να δείτε όλο το σχήμα</span><button type="button" class="hdr-link" id="figZoomClose">Κλείσιμο</button></div>
+  <div class="fig-zoom-body"></div>
+</dialog>
 <div class="page-head">
   <h1>{title_html}</h1>
   <p class="subtitle">{subtitle_html}</p>
@@ -359,6 +398,8 @@ CSS = r"""
   --font-serif: 'Literata', 'Palatino Linotype', Georgia, 'Times New Roman', serif;
   --font-mono: 'JetBrains Mono', Consolas, ui-monospace, SFMono-Regular, Menlo, monospace;
 }
+/* Dark tokens apply on screen only: print always uses the light tokens. */
+@media screen {
 html.dark {
   --background: #131618; --content: #1a1e20; --sidebar: #101315;
   --border: #333a3d; --border-soft: #262c2f;
@@ -368,6 +409,7 @@ html.dark {
   --mark: #e2b45e; --mark-soft: rgba(226, 180, 94, 0.10);
   --truth-fg: #86cdb5; --truth-bg: rgba(134, 205, 181, 0.14);
   --false-fg: #9aa4a2; --false-bg: rgba(154, 164, 162, 0.10);
+}
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -435,6 +477,7 @@ body.toc-folded .toc-num { min-width: 0; margin: 0 auto; }
 .reading p { margin: 0 0 1rem; }
 .reading ul, .reading ol { padding-left: 1.4rem; margin: 0 0 1rem; }
 .reading li { margin: .3rem 0; }
+#panel-text .reading p, #panel-text .reading li, ul.glossary li { text-align: justify; -webkit-hyphens: auto; hyphens: auto; }
 .reading code { font-family: var(--font-mono); font-size: .88em; background: var(--secondary); padding: .05em .3em; border-radius: 3px; }
 .lede { font-size: 1.1rem; color: var(--foreground); margin-bottom: 2.5rem; }
 .xref { text-decoration: none; border-bottom: 1px dotted var(--primary); }
@@ -442,6 +485,21 @@ blockquote { margin: 1.25rem 0; padding: .75rem 1rem; border-left: 3px solid var
 blockquote p:last-child { margin-bottom: 0; }
 blockquote.note { border-left-color: var(--mark); background: var(--mark-soft); font-size: .98rem; }
 blockquote.note strong:first-child { color: var(--mark); font-family: var(--font-sans); font-size: .9rem; }
+
+/* Figures and schematic diagrams */
+.essay-figure { margin: 1.6rem 0; padding: .9rem 1rem .75rem; background: var(--content); border: 1px solid var(--border); border-radius: 6px; break-inside: avoid; }
+.essay-figure img { display: block; max-width: 100%; max-height: 360px; width: auto; height: auto; margin: 0 auto; border-radius: 3px; }
+.essay-figure .figure-svg svg { display: block; width: 100%; height: auto; max-height: 330px; margin: 0 auto; }
+.essay-figure .figure-svg { cursor: zoom-in; border-radius: var(--radius); }
+/* Enlarged diagram: a native dialog; on phones the diagram keeps its design
+   width (760) and the body scrolls sideways. */
+.fig-zoom { width: min(1100px, 96vw); max-width: none; max-height: 94dvh; padding: 0; border: 1px solid var(--border); border-radius: 6px; background: var(--content); color: var(--foreground); }
+.fig-zoom::backdrop { background: rgba(0, 0, 0, .55); }
+.fig-zoom-bar { display: flex; align-items: center; justify-content: space-between; gap: .5rem; padding: .45rem .6rem .45rem .9rem; border-bottom: 1px solid var(--border); font-family: var(--font-sans); font-size: .8rem; color: var(--muted-foreground); }
+.fig-zoom-hint { visibility: hidden; }
+.fig-zoom-body { overflow: auto; max-height: calc(94dvh - 3rem); padding: 1rem; }
+.fig-zoom-body svg { display: block; width: 100%; min-width: 760px; height: auto; }
+.essay-figure figcaption { margin-top: .65rem; padding-top: .5rem; border-top: 1px solid var(--border-soft); font-family: var(--font-sans); font-size: .85rem; line-height: 1.45; color: var(--muted-foreground); text-align: center; }
 
 /* Tables */
 .table-wrap { overflow-x: auto; margin: 1.25rem 0; }
@@ -482,12 +540,20 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
   .tab { padding: .35rem .45rem; font-size: .8rem; }
   .page-head { padding-top: 1.25rem; }
   .reading { font-size: 1rem; }
+  #panel-text .reading p, #panel-text .reading li, ul.glossary li { text-align: left; -webkit-hyphens: manual; hyphens: manual; }
   table.timeline td:first-child { width: auto; white-space: normal; }
 }
 @media (max-width: 520px) {
   .hdr { flex-wrap: wrap; height: auto; padding: .4rem .6rem; }
   .tabs { order: 3; width: 100%; margin: 0; overflow-x: auto; }
   :root { --header-h: 92px; }
+}
+
+/* Phones: say that a diagram can be enlarged. Screen only: an A4 page is
+   about 718 CSS px wide and would match the width query too. */
+@media screen and (max-width: 720px) {
+  .essay-diagram .figure-svg::after { content: 'Πατήστε για μεγέθυνση'; display: block; margin-top: .4rem; text-align: center; font-family: var(--font-sans); font-size: .78rem; color: var(--primary); }
+  .fig-zoom-hint { visibility: visible; }
 }
 
 /* Print: the whole essay, no interface */
@@ -576,6 +642,32 @@ document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') closeDrawer();
 });
 
+/* Diagrams: tap (or Enter / Space) to enlarge in a dialog */
+function openFigZoom(box) {
+  var dlg = document.getElementById('figZoom');
+  if (!dlg || typeof dlg.showModal !== 'function') return;
+  var body = dlg.querySelector('.fig-zoom-body');
+  body.innerHTML = '';
+  body.appendChild(box.querySelector('svg').cloneNode(true));
+  dlg.showModal();
+  body.scrollLeft = 0;
+}
+function initFigZoom() {
+  var dlg = document.getElementById('figZoom');
+  if (!dlg) return;
+  document.querySelectorAll('.essay-diagram .figure-svg').forEach(function (box) {
+    box.addEventListener('click', function () { openFigZoom(box); });
+    box.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openFigZoom(box); }
+    });
+  });
+  document.getElementById('figZoomClose').addEventListener('click', function () { dlg.close(); });
+  /* A click on the backdrop lands on the dialog element itself. */
+  dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+  /* The copy carries the diagram's marker ids: remove it on close. */
+  dlg.addEventListener('close', function () { dlg.querySelector('.fig-zoom-body').innerHTML = ''; });
+}
+
 /* Highlight the section being read */
 function watchSections() {
   if (!('IntersectionObserver' in window)) return;
@@ -604,6 +696,7 @@ function filterGlossary(q) {
   try { saved = localStorage.getItem('hw-essay-toc'); } catch (e) {}
   setToc(saved === 'folded', false);
   watchSections();
+  initFigZoom();
   openFromHashWhenSettled();
   window.addEventListener('hashchange', openFromHash);
 })();

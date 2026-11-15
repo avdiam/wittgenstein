@@ -74,6 +74,9 @@ def runs(inline):
             italic -= 1
         elif kind in ("link_open", "link_close"):
             pass  # the link text is kept; addresses are written out in the text
+        elif kind == "image":
+            caption = child.attrGet("title") or child.content
+            out.append(run(f"[Εικόνα: {caption}]", italic=True))
         else:
             raise SystemExit(f"build_docx: unsupported inline element '{kind}'")
     return "".join(out)

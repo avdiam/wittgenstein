@@ -381,9 +381,10 @@ essay (sections 6, 8 and 10). The note itself was not edited.
 | Topic | Sources | Verdict | Notes |
 | :-- | :-- | :-- | :-- |
 | Boethius | SEP `boethius` | confirmed | SEP gives c. 475–7 to 526?; the essay uses «περ. 475/477–526». |
-| al-Fārābī, Avicenna; reception in the West | SEP `arabic-islamic-language`, `ibn-sina-logic`, `arabic-islamic-influence` | confirmed | The text says the innovative parts did not reach the Latin West, as SEP does. al-Fārābī's dates are not given (not checked). |
+| al-Khwārizmī (algebra, algorithm) | MacTutor `Al-Khwarizmi` | confirmed | c. 780–850; *al-jabr* (c. 830) and *Algoritmi*. |
+| al-Fārābī, Avicenna; reception in the West | SEP `al-farabi`, `arabic-islamic-language`, `ibn-sina-logic`, `arabic-islamic-influence` | confirmed | The text says the innovative parts did not reach the Latin West, as SEP does. al-Fārābī dated c. 870–950 per SEP `al-farabi`. |
 | Byzantine logic | SEP `byzantine-philosophy` | confirmed; sources thin | Stated as thin in the text. |
-| Babbage | MacTutor `Babbage`; Menabrea/Lovelace (1843), [fourmilab transcription](https://www.fourmilab.ch/babbage/sketch.html) | confirmed | none |
+| Jacquard loom (1801) and Babbage | SEP `computing-history`; MacTutor `Babbage`; Menabrea/Lovelace (1843), [fourmilab transcription](https://www.fourmilab.ch/babbage/sketch.html) | confirmed | Punched cards controlling hooks/threads; Babbage's conditional branching of cards. |
 | Lovelace: Notes, Note G, music, "no pretensions whatever to originate anything" | the 1843 text (fourmilab); MacTutor `Lovelace` | confirmed | Turing's 1950 quotation omits "whatever"; the essay follows Lovelace. |
 | Lovelace as "first programmer" | MacTutor; Oxford Mathematics; Rojas, *IEEE Annals* 43 (2021); Hollings, Martin & Rice, *CACM* 67 (2024) | **contested** | «Ερμηνευτική σημείωση». |
 | Turing 1950 | the paper (*Mind* 59) | confirmed | Prediction, objections and the "polite convention" from the text. Page range 433–460 from memory. |
@@ -396,11 +397,19 @@ essay (sections 6, 8 and 10). The note itself was not edited.
 | Moore and *On Certainty* | IEP `witt-epi` | confirmed | none |
 | Mauthner: ladder, 4.0031 | Mauthner, *Beiträge* I (1901), pp. 1–2 (archive.org); LWP German text of 4.0031 | confirmed | none |
 | Source of the ladder; Wittgenstein's debt to Mauthner | Gakis and Nájera (ALWS); Le Rider, *ÖZG* 23 (2012); Janik & Toulmin (1973) | **contested** | «Ερμηνευτική σημείωση». |
+| Turing at Bletchley Park (Enigma, *Bombes*) and ACE (1945) | SEP `turing`; MacTutor `Turing` | confirmed | Polish precursor noted. |
+| Cook (1971), Levin (1973) and P vs NP | SEP `computational-complexity` | confirmed | SAT (propositional truth tables) as the starting point (Cook–Levin theorem). |
+| Ryle, *The Concept of Mind* (1949), "ghost in the machine" | SEP `ryle` | confirmed | Added to section 10. |
+| 19th–20th c. epistemology in section 3 (Hegel, Comte, Mill 1843, Peirce & James pragmatism, Nietzsche perspectivism, Husserl phenomenology, Foucault power/knowledge, Gettier 1963) | SEP `hegel`, `comte`, `mill`, `pragmatism`, `nietzsche`, `husserl`, `foucault`, `knowledge-analysis` | confirmed | Added to section 3. |
+| Popper, *Logik der Forschung* (1934/1935), falsifiability | SEP `popper` | confirmed | Added to section 6 (after Vienna Circle). |
+| Quine, "Two Dogmas" (1951), "Epistemology Naturalized" (1969) | SEP `quine`, `epistemology-naturalized` | confirmed | Added to section 10. |
+| Dewey (pragmatism), Piaget (genetic epistemology), Vygotsky (*Thought and Language*, 1934), Bruner & 1950s cognitive revolution | SEP `dewey`, `cognitive-science` | confirmed | Added to sections 3, 10 and 11. |
+| AlphaGo (2016), Transformer / attention (Vaswani et al. 2017), AlphaFold (2020, Nobel 2024), AlphaGeometry & AlphaProof / Lean (2024–2025), IMO 2025 gold & 2025–2026 research problems (Erdős, fluid dynamics, particle physics) | Silver et al., *Nature* 529 (2016); Vaswani et al., *NeurIPS* 30 (2017); Jumper et al., *Nature* 596 (2021); Trinh et al., *Nature* 625 (2024); Hubert et al., *Nature* (2025) | confirmed | Added to sections 11.4 and 11.6. |
 | Timeline and glossary | the essay itself | — | No new claims; every date and definition is stated in the body. |
 
 ## Open for the essay
 
-- Standard life dates were not checked one by one; al-Fārābī's are not given.
+- Standard life dates were not checked one by one.
 - Still weak: the page of Turing's bridge remark in Diamond's *LFM*; the wording of Strachey's letter; Adorno's page; Drury's page; Bays's 2004 argument; Moore's examiner's report.
 - Turing's 1950 page range (433–460) and Moore's second 1954 page range are from memory.
 - The Greek renderings of Tractatus and *Investigations* sentences are the essay's own; they were not compared with the published Greek translations (see C1).

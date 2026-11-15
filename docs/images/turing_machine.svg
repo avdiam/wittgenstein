@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" role="img" aria-label="Σχήμα της Μηχανής Turing (1936)">
+  <!-- Tape Label -->
+  <text x="380" y="24" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--foreground, #1c2022)">ΤΑΙΝΙΑ ΜΝΗΜΗΣ (χωρισμένη σε τετράγωνα, όσο μακριά χρειαστεί)</text>
+
+  <!-- Tape Cells -->
+  <g transform="translate(55, 36)">
+    <rect x="0"   y="0" width="55" height="48" fill="var(--secondary, #eceeea)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+    <rect x="55"  y="0" width="55" height="48" fill="var(--secondary, #eceeea)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+    <rect x="110" y="0" width="55" height="48" fill="var(--secondary, #eceeea)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+    <rect x="165" y="0" width="55" height="48" fill="var(--secondary, #eceeea)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+    <rect x="220" y="0" width="55" height="48" fill="var(--secondary, #eceeea)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+    <!-- Active cell -->
+    <rect x="275" y="0" width="55" height="48" fill="var(--mark-soft, rgba(184, 128, 30, 0.12))" stroke="var(--mark, #91590a)" stroke-width="2.5"/>
+    <rect x="330" y="0" width="55" height="48" fill="var(--secondary, #eceeea)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+    <rect x="385" y="0" width="55" height="48" fill="var(--secondary, #eceeea)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+    <rect x="440" y="0" width="55" height="48" fill="var(--secondary, #eceeea)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+    <rect x="495" y="0" width="55" height="48" fill="var(--secondary, #eceeea)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+    <rect x="550" y="0" width="55" height="48" fill="var(--secondary, #eceeea)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+    <rect x="605" y="0" width="45" height="48" fill="var(--secondary, #eceeea)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+
+    <text x="27"  y="30" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="18" fill="var(--muted-foreground, #57605d)">…</text>
+    <text x="82"  y="30" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="18" fill="var(--foreground, #1c2022)">0</text>
+    <text x="137" y="30" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="18" fill="var(--foreground, #1c2022)">1</text>
+    <text x="192" y="30" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="18" fill="var(--foreground, #1c2022)">1</text>
+    <text x="247" y="30" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="18" fill="var(--foreground, #1c2022)">0</text>
+    <text x="302" y="31" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="20" font-weight="700" fill="var(--mark, #91590a)">1</text>
+    <text x="357" y="30" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="18" fill="var(--foreground, #1c2022)">0</text>
+    <text x="412" y="30" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="18" fill="var(--foreground, #1c2022)">1</text>
+    <text x="467" y="29" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" fill="var(--muted-foreground, #57605d)">κενό</text>
+    <text x="522" y="29" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" fill="var(--muted-foreground, #57605d)">κενό</text>
+    <text x="577" y="30" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="18" fill="var(--muted-foreground, #57605d)">…</text>
+  </g>
+
+  <!-- Read/Write Head pointer -->
+  <polygon points="357,88 345,108 369,108" fill="var(--mark, #91590a)"/>
+  <line x1="357" y1="108" x2="357" y2="128" stroke="var(--mark, #91590a)" stroke-width="2.5"/>
+
+  <!-- Left / Right movement arrows -->
+  <text x="275" y="108" text-anchor="end" font-family="var(--font-sans, sans-serif)" font-size="12" font-weight="600" fill="var(--primary, #1e5c4e)">← Αριστερά</text>
+  <text x="440" y="108" text-anchor="start" font-family="var(--font-sans, sans-serif)" font-size="12" font-weight="600" fill="var(--primary, #1e5c4e)">Δεξιά →</text>
+
+  <!-- Control Box / Instruction Table -->
+  <rect x="40" y="128" width="680" height="106" rx="5" fill="var(--secondary, #eceeea)" stroke="var(--primary, #1e5c4e)" stroke-width="1.8"/>
+  <text x="380" y="152" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--primary, #1e5c4e)">ΚΕΦΑΛΗ ΑΝΑΓΝΩΣΗΣ / ΕΓΓΡΑΦΗΣ &amp; ΠΙΝΑΚΑΣ ΟΔΗΓΙΩΝ (ΑΛΓΟΡΙΘΜΟΣ)</text>
+  <text x="380" y="177" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="13.5" fill="var(--foreground, #1c2022)">(Κατάσταση q₁, Σύμβολο «1») ⟶ Γράψε «0», Κινήσου Δεξιά, Πήγαινε στην q₂</text>
+  <text x="380" y="203" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="12.5" font-style="italic" fill="var(--muted-foreground, #57605d)">Στην καθολική μηχανή (υπολογιστής), ο ίδιος ο πίνακας οδηγιών γράφεται ως αριθμός πάνω στην ταινία</text>
+</svg>

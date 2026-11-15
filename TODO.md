@@ -107,6 +107,49 @@ Status of the decided work is recorded in the next section.
   `CROSSCHECK_PLAN.md`.
 - The essay is now about 15,800 words.
 
+### 2c. Paragraph-by-paragraph review, modern AI, figures and typography — done 2026-11-14, awaiting the owner's review
+
+Reviewed `Logiki_Glossa_Michanes.md` section by section with the owner and added:
+
+- **Intro & Section 1 (Ancient Logic):** Clarified decimal numbering vs. `§` references to *Philosophical Investigations*; linked Plato's *Cratylus* to *Tractatus* 3.342; named the Eleatic Stranger in the *Sophist*; added the letters-and-syllables analogy in the *Theaetetus*; added Aristotle's *Organon*, synthesis/division examples, general-term syllogism, letter-variables (Α, Β, Γ) in *Prior Analytics*, precursor to predicate logic, and the original Greek of the principle of non-contradiction; named propositional logic for the Stoics, added Diodorus Cronus & Callimachus's epigram, ordinal variables, and the Stoic semiotic triangle (*σημαίνον / σημαινόμενον–λεκτόν / τυγχάνον*).
+- **Section 2 (Middle Ages to Leibniz):** Added Porphyry's *Isagoge* question on universals; added **al-Khwārizmī** (c. 780–850, origin of *algebra* and *algorithm*); dated al-Fārābī (c. 870–950); added Avicenna example and Byzantine *Posterior Analytics* commentaries; clarified realism vs. nominalism and Abelard's *sermones*; linked Ockham's mental language to 20th-century philosophy of mind and added the `=` example for *Tractatus* 3.328; added Leibniz's 1679 prime-number encoding of concepts (`2 × 3 = 6`).
+- **Section 3 (Epistemology):** Added *tabula rasa*, Frege's critique of Locke's mentalism, Hume's problem of induction (*Tractatus* 5.1361 and link to statistical ML in section 11), Kant's forms of sensibility (*Tractatus* 6.36111), and two new paragraphs on 19th- and 20th-century epistemology (**Hegel**, **Comte**, **Mill** 1843, **Peirce, James & Dewey** on pragmatism, **Nietzsche** on perspectivism, **Husserl** on phenomenology, **Foucault** on power/knowledge, **Russell & Moore**, and **Gettier** 1963).
+- **Section 4 (Babbage, Lovelace, Boole):** Explained **Jacquard's** 1801 punched-card loom and Babbage's conditional branching; named Luigi Menabrea; added everyday De Morgan example; noted Boole's propositional interpretation; corrected Shannon's publication year from 1937 to 1938.
+- **Section 5 (Frege, Russell):** Explained Frege's replacement of subject/predicate with function/argument; added quantifier scope readings («Όλοι αγαπούν κάποιον»); contrasted Frege with Kant on arithmetic; added a 3-row visual walk-through of Cantor's diagonal argument; noted Frege's anti-psychologism on *Sinn*; added `p → q` alongside `p ⊃ q`; added non-cat set example and a clearer formulation of the Grelling–Nelson autological/heterological paradox; noted the axiom of infinity in *Principia* and Meinong in Russell's theory of descriptions.
+- **Section 6 (Early Wittgenstein):** Added Manchester aeronautical engineering, explanation of the decimal tree structure, propositions 1 and 1.1, the 1914 Paris courtroom notebook entry and 4.014 musical score/gramophone analogy, contradiction and the `0` in arithmetic analogy (4.4611), the mold/slot analogy for `F(F)` in 3.333, musical notes & visual field (5.633) examples for showing vs. saying, the third («διαφωτιστική», McGinn/Hutto) reading of 6.54, Wittgenstein's disagreement with Russell's introduction, Ramsey's age, Gödel's attendance at the Vienna Circle, and **Karl Popper** (*Logik der Forschung* 1934/1935, falsifiability).
+- **Sections 7–9 (Gödel, Turing, Shannon):** Added chess analogy for Hilbert's formalism and link to Leibniz's prime encoding; added `(αλγόριθμος)` glosses, Church's lambda calculus, encoding of instruction tables as numbers, **Bletchley Park / Enigma (*Bombes*)** and **ACE (1945)**, why truth tables do not decide quantification over infinite domains, **P vs. NP** (Cook 1971, Levin 1973, SAT / truth tables), and Wittgenstein's reply to Turing on the falling bridge; added Shannon's 1948 information theory, *bit*, and logic gates.
+- **Section 10 (Later Wittgenstein):** Added the builders' language-game (§2) and a paragraph on **rule-following** (§§185, 199–202); added **Gilbert Ryle** (*The Concept of Mind* 1949, «το δόγμα του φαντάσματος μέσα στη μηχανή»); added **Lev Vygotsky** (*Thought and Language* 1934, social constructivism) and **Jean Piaget** (genetic epistemology); added **W. V. O. Quine** («Two Dogmas» 1951, «Epistemology Naturalized» 1969); linked Fodor to Ockham; cited *Tractatus* 5.6–5.64 on solipsism and `(§124)` for Marcuse.
+- **Section 11 (AI):** Added Wittgensteinian parallel to the imitation game, `(Ned Block, 1981)`, **Cognitivism / Jerome Bruner / Miller / Chomsky** in the 1950s cognitive revolution, Logic Theorist's shorter proof in *Principia*, **Moravec's paradox**, word embeddings as points in multidimensional space, **AlphaGo (2016)**, **AlphaFold (2020, Nobel Prize in Chemistry 2024)**, **Transformer & attention mechanism (Vaswani et al. 2017)**, 3-stage training of LLMs, and **2024–2026 breakthroughs in mathematics and physics** (**AlphaGeometry**, **AlphaProof** with formal verification in **Lean**, IMO 2024 silver & IMO 2025 gold, open **Erdős** problems and fluid dynamics / particle physics with Terence Tao et al.).
+- **Figures (`docs/images/`) and Typography (`docs/essay.html`):**
+  - Added 11 figures to `Logiki_Glossa_Michanes.md` and `docs/images/`: 4 public-domain/CC historical images from Wikimedia Commons (`leibniz_reckoner.jpg`, `jacquard_cards.jpg`, `babbage_analytical.jpg`, `lovelace_note_g.jpg`) and 7 custom Greek SVG schematic diagrams (`frege_begriffsschrift.svg`, `cantor_diagonal.svg`, `stoic_frege_triangle.svg`, `tractatus_picture.svg`, `turing_machine.svg`, `shannon_switches.svg`, `attention_neurosymbolic.svg`).
+  - Updated `tools/build_essay_html.py` to inline `.svg` diagrams into `<figure>` (inheriting fonts and light/dark CSS tokens) and wrap raster photos in `<figure>`, and enabled full justification with automatic Greek hyphenation (`text-align: justify; hyphens: auto`) on screens wider than `720px`.
+  - Updated `tools/build_docx.py` to output italic `[Εικόνα: ...]` caption lines for figures.
+  - Updated Timeline (57 entries), Glossary (36 terms), Sources, and `CROSSCHECK_PLAN.md`.
+
+**Visual check — done 2026-11-15** (headless Chrome, light and dark, 1280 px and
+390 px frames, print to PDF):
+
+- The 4 photos and the Cantor diagram were fine.
+- Fixed: text overflowing its boxes, or overlapping other text, in 6 of the 7 SVG
+  diagrams (Frege, Stoic triangle, Tractatus, Turing, Shannon, attention). The
+  SVGs take the page's fonts when inlined, and those are wider than the ones the
+  boxes were sized for. The Tractatus nodes got opaque underlays so the lines no
+  longer show through the labels.
+- Fixed: with the dark theme on, figures printed as dark boxes. The dark tokens
+  now apply on screen only (`@media screen`), so print always uses the light ones.
+- Added at the owner's request: on phones the diagrams were too small to read
+  (text about 4–5 px). A tap (or Enter / Space) now opens the diagram in a dialog
+  at its design width, scrolling sideways; a «Πατήστε για μεγέθυνση» hint shows
+  under each diagram on screens up to 720 px, never in print.
+- Restored the CRLF line endings of `tools/build_essay_html.py` (they had been
+  converted to LF, which inflated its diff to every line).
+
+**What needs checking next:**
+1. Try the diagram dialog on a real phone (touch scrolling inside the dialog).
+2. Check the justified Greek typography (`text-align: justify; hyphens: auto`) across browsers for any loose lines around long foreign names or inline formulas. Seen in Chrome only, where it looked even.
+3. Decide whether `tools/build_docx.py` should keep the italic `[Εικόνα: ...]` caption placeholders or embed raster images directly into `docs/Logiki_Glossa_Michanes.docx`.
+4. Check the remaining print-only items under "Open for the essay" in `CROSSCHECK_PLAN.md`.
+
 The request as recorded on 2026-11-14:
 
 `Istoria_Logikis_kai_AI.docx` — not reviewed at all so far.

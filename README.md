@@ -23,6 +23,7 @@ is, and scripts in `tools/` regenerate it from the sources.
 | `docs/index.html` | Cover page. Hand-written. |
 | `docs/tractatus.html` | Tractatus page. The full analysis inside it is generated; the summaries, tree data, labs and philosophers grid are hand-written. |
 | `docs/essay.html` | Essay page. **Entirely generated**; never edit by hand. |
+| `docs/images/` | Public-domain/CC historical images and Greek SVG diagrams used by `docs/essay.html`. |
 | `docs/Logiki_Glossa_Michanes.docx` | The essay as a Word file. Generated. |
 | `tools/build_html.py` | Injects the analysis into `docs/tractatus.html`. |
 | `tools/build_essay_html.py` | Builds `docs/essay.html`; each `##` section goes to a tab, mapped in `tab_for()`. |

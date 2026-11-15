@@ -19,7 +19,14 @@ been verified against outside sources, and the list of open items at its end).
   logic. `docs/essay.html` (built by `tools/build_essay_html.py`) and
   `docs/Logiki_Glossa_Michanes.docx` (built by `tools/build_docx.py`) are
   generated from it in full: never edit them by hand. Each `##` section of the
-  essay goes to a tab of the page, as mapped in `tab_for()`. The rules below on
+  essay goes to a tab of the page, as mapped in `tab_for()`. Figures written in
+  Markdown as `![alt](images/file.ext "caption")` are stored in `docs/images/`:
+  `build_essay_html.py` inlines `.svg` diagrams into `<figure>` (so they share
+  the page's fonts and light/dark CSS tokens) and wraps raster photos in
+  `<figure>`, while `build_docx.py` outputs an italic `[Εικόνα: ...]` caption
+  line. `docs/essay.html` does not load KaTeX, so write mathematical and
+  logical notation in plain Unicode (`2 × 3 = 6`, `x² = x`, `¬`, `∧`, `∨`,
+  `⊃`, `→`, `∀`, `∃`), never `$...$` LaTeX. The rules below on
   sources, disagreements and tone apply to the essay too. It is written for
   general readers, not for IT or mathematics people. Names are written in
   Latin script, with the Greek form at the first mention of the main figures.

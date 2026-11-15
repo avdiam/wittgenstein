@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" role="img" aria-label="Η δισδιάστατη γραφή της Begriffsschrift του Frege (1879)">
+  <!-- Left Card: Frege's 2D Tree -->
+  <rect x="20" y="16" width="355" height="218" rx="5" fill="var(--secondary, #eceeea)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+  <text x="197" y="42" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--foreground, #1c2022)">Γραφή του Frege (Begriffsschrift, 1879)</text>
+
+  <!-- Judgement stroke (vertical) -->
+  <line x1="62" y1="82" x2="62" y2="118" stroke="var(--foreground, #1c2022)" stroke-width="3.2"/>
+  <!-- Content stroke leading to concavity -->
+  <line x1="62" y1="100" x2="115" y2="100" stroke="var(--foreground, #1c2022)" stroke-width="2.2"/>
+  <!-- Universal quantifier concavity -->
+  <path d="M 115 100 Q 132 118 149 100" fill="none" stroke="var(--foreground, #1c2022)" stroke-width="2.2"/>
+  <text x="132" y="95" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15" font-style="italic" font-weight="700" fill="var(--primary, #1e5c4e)">a</text>
+  <!-- Horizontal main line to G(a) -->
+  <line x1="149" y1="100" x2="275" y2="100" stroke="var(--foreground, #1c2022)" stroke-width="2.2"/>
+  <text x="285" y="105" font-family="var(--font-mono, monospace)" font-size="16" font-weight="600" fill="var(--foreground, #1c2022)">G(a)</text>
+
+  <!-- Conditional vertical branch down to F(a) -->
+  <line x1="205" y1="100" x2="205" y2="162" stroke="var(--foreground, #1c2022)" stroke-width="2.2"/>
+  <line x1="205" y1="162" x2="275" y2="162" stroke="var(--foreground, #1c2022)" stroke-width="2.2"/>
+  <text x="285" y="167" font-family="var(--font-mono, monospace)" font-size="16" font-weight="600" fill="var(--foreground, #1c2022)">F(a)</text>
+
+  <!-- Labels inside Left Card -->
+  <text x="62" y="138" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11" fill="var(--muted-foreground, #57605d)">κρίση (⊢)</text>
+  <text x="132" y="132" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11" fill="var(--primary, #1e5c4e)">«για κάθε a»</text>
+  <text x="195" y="152" text-anchor="end" font-family="var(--font-sans, sans-serif)" font-size="11" fill="var(--muted-foreground, #57605d)">αν ισχύει κάτω →</text>
+  <text x="197" y="212" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="12.5" font-style="italic" fill="var(--muted-foreground, #57605d)">«Για κάθε a, αν το a είναι F, τότε το a είναι G»</text>
+
+  <!-- Right Card: Modern Linear Notation -->
+  <rect x="395" y="16" width="345" height="218" rx="5" fill="var(--secondary, #eceeea)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+  <text x="567" y="42" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--foreground, #1c2022)">Σύγχρονη γραμμική γραφή</text>
+
+  <rect x="440" y="72" width="255" height="48" rx="5" fill="var(--primary-soft, rgba(30, 92, 78, 0.10))" stroke="var(--primary, #1e5c4e)" stroke-width="1.4"/>
+  <text x="567" y="103" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="20" font-weight="600" fill="var(--primary, #1e5c4e)">∀a (F(a) → G(a))</text>
+
+  <text x="418" y="148" font-family="var(--font-sans, sans-serif)" font-size="12.5" fill="var(--foreground, #1c2022)">• Κοιλότητα με <tspan font-family="var(--font-mono, monospace)" font-weight="600">a</tspan>  ⟶  ποσοδείκτης <tspan font-family="var(--font-mono, monospace)" font-weight="600">∀a</tspan> («για κάθε a»)</text>
+  <text x="418" y="174" font-family="var(--font-sans, sans-serif)" font-size="12.5" fill="var(--foreground, #1c2022)">• Κάθετος κλάδος  ⟶  συνεπαγωγή <tspan font-family="var(--font-mono, monospace)" font-weight="600">F(a) → G(a)</tspan></text>
+  <text x="418" y="200" font-family="var(--font-sans, sans-serif)" font-size="12.5" fill="var(--foreground, #1c2022)">• Πλήρης ανάλυση σχέσεων και εμβέλειας ποσοδεικτών</text>
+</svg>
