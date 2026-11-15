@@ -391,8 +391,8 @@ essay (sections 6, 8 and 10). The note itself was not edited.
 | Whether passing the test shows thinking | SEP `turing-test` (Block's "Blockhead") | **contested** | Stated as debated. |
 | Searle 1980 | the paper (BBS 3, 417–457; penultimate draft read); SEP `chinese-room` | confirmed; replies **contested** | «Ερμηνευτική σημείωση». Bender & Koller cite Searle explicitly. |
 | Spinoza and the title | Churchill (2009): Moore proposed the Latin title; the Spinoza allusion only via Wikipedia citing Monk | Moore confirmed; allusion **weak** | Worded as «θυμίζει», not as an intended allusion. |
-| Form of the Tractatus and Spinoza's *Ethics* | Churchill (2009) | confirmed (one source) | Stated without claiming influence. |
-| 6.45 *sub specie aeterni*; Notebooks 7.10.16 | LWP German texts; Spinoza, *Ethica* V | confirmed | "Probably through Schopenhauer" (Somavilla, ALWS) stated as the scholars' view. |
+| Form of the Tractatus and Spinoza's *Ethics* | Churchill (2009) | confirmed (one source) | Stated without claiming influence. Cut on 2026-11-15 (review for length); no longer in the essay. |
+| 6.45 *sub specie aeterni*; Notebooks 7.10.16 | LWP German texts; Spinoza, *Ethica* V | confirmed | "Probably through Schopenhauer" (Somavilla, ALWS) stated as the scholars' view. The Notebooks entry was cut on 2026-11-15 (review for length); 6.45 and the Schopenhauer remark stay. |
 | Moore: Norway 1914; 1929 doctorate; lectures 1930–33 | LWP (Notes dictated to Moore); Moore, *Mind* 63 (1954), pp. 1–2 | confirmed | The "work of genius" sentence survives only in recollections (Braithwaite and others) in different wordings: the essay says so and does not quote it. |
 | Moore and *On Certainty* | IEP `witt-epi` | confirmed | none |
 | Mauthner: ladder, 4.0031 | Mauthner, *Beiträge* I (1901), pp. 1–2 (archive.org); LWP German text of 4.0031 | confirmed | none |
