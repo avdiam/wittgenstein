@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 350" role="img" aria-label="Η απόδειξη για το πρόβλημα του τερματισμού: ο Αντίθετος κάνει το ανάποδο από ό,τι προβλέπει ο Ελεγκτής για τον ίδιο">
+  <defs>
+    <marker id="ho-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--foreground, #1c2022)"/>
+    </marker>
+    <marker id="ho-arr-mark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--mark, #91590a)"/>
+    </marker>
+  </defs>
+
+  <!-- Input -->
+  <text x="82" y="98" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="12.5" font-weight="700" fill="var(--foreground, #1c2022)">Είσοδος:</text>
+  <text x="82" y="116" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="12.5" fill="var(--foreground, #1c2022)">το κείμενο</text>
+  <text x="82" y="133" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="12.5" fill="var(--foreground, #1c2022)">του Αντίθετου</text>
+
+  <!-- Opposite (outer box) -->
+  <rect x="160" y="34" width="306" height="252" rx="6" fill="var(--secondary, #eceeea)" stroke="var(--foreground, #1c2022)" stroke-width="1.8"/>
+  <text x="313" y="58" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="14" font-weight="700" fill="var(--foreground, #1c2022)">Αντίθετος</text>
+
+  <line x1="140" y1="112" x2="196" y2="112" stroke="var(--foreground, #1c2022)" stroke-width="1.8" marker-end="url(#ho-arr)"/>
+
+  <!-- Checker (inner box) -->
+  <rect x="200" y="76" width="226" height="72" rx="5" fill="var(--primary-soft, rgba(30, 92, 78, 0.10))" stroke="var(--primary, #1e5c4e)" stroke-width="1.8"/>
+  <text x="313" y="99" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--primary, #1e5c4e)">Ελεγκτής</text>
+  <text x="313" y="118" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="12" fill="var(--foreground, #1c2022)">«αν αυτό το πρόγραμμα πάρει το</text>
+  <text x="313" y="135" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="12" fill="var(--foreground, #1c2022)">δικό του κείμενο, τελειώνει;»</text>
+  <line x1="313" y1="148" x2="313" y2="166" stroke="var(--foreground, #1c2022)" stroke-width="1.8" marker-end="url(#ho-arr)"/>
+
+  <!-- The two answers and what the Opposite does -->
+  <rect x="184" y="170" width="258" height="46" rx="4" fill="var(--background, #eff1ee)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+  <text x="196" y="189" font-family="var(--font-sans, sans-serif)" font-size="12" font-weight="700" fill="var(--foreground, #1c2022)">Απάντηση «τελειώνει»</text>
+  <text x="196" y="207" font-family="var(--font-serif, serif)" font-size="12" fill="var(--foreground, #1c2022)">→ μπαίνει σε κύκλο χωρίς τέλος</text>
+
+  <rect x="184" y="226" width="258" height="46" rx="4" fill="var(--background, #eff1ee)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+  <text x="196" y="245" font-family="var(--font-sans, sans-serif)" font-size="12" font-weight="700" fill="var(--foreground, #1c2022)">Απάντηση «δεν τελειώνει»</text>
+  <text x="196" y="263" font-family="var(--font-serif, serif)" font-size="12" fill="var(--foreground, #1c2022)">→ σταματά αμέσως</text>
+
+  <!-- Results -->
+  <text x="618" y="58" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--foreground, #1c2022)">Τι συμβαίνει τελικά</text>
+  <line x1="442" y1="193" x2="494" y2="193" stroke="var(--mark, #91590a)" stroke-width="1.8" marker-end="url(#ho-arr-mark)"/>
+  <rect x="498" y="170" width="242" height="46" rx="4" fill="var(--mark-soft, rgba(184, 128, 30, 0.12))" stroke="var(--mark, #91590a)" stroke-width="1.5"/>
+  <text x="510" y="189" font-family="var(--font-serif, serif)" font-size="12" fill="var(--foreground, #1c2022)">Ο Αντίθετος δεν τελειώνει:</text>
+  <text x="510" y="207" font-family="var(--font-serif, serif)" font-size="12" font-weight="700" fill="var(--mark, #91590a)">ο Ελεγκτής έκανε λάθος.</text>
+
+  <line x1="442" y1="249" x2="494" y2="249" stroke="var(--mark, #91590a)" stroke-width="1.8" marker-end="url(#ho-arr-mark)"/>
+  <rect x="498" y="226" width="242" height="46" rx="4" fill="var(--mark-soft, rgba(184, 128, 30, 0.12))" stroke="var(--mark, #91590a)" stroke-width="1.5"/>
+  <text x="510" y="245" font-family="var(--font-serif, serif)" font-size="12" fill="var(--foreground, #1c2022)">Ο Αντίθετος τελειώνει:</text>
+  <text x="510" y="263" font-family="var(--font-serif, serif)" font-size="12" font-weight="700" fill="var(--mark, #91590a)">ο Ελεγκτής έκανε λάθος.</text>
+
+  <text x="618" y="104" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="12.5" fill="var(--muted-foreground, #57605d)">Ό,τι κι αν απαντήσει,</text>
+  <text x="618" y="122" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="12.5" fill="var(--muted-foreground, #57605d)">ο Ελεγκτής κάνει λάθος·</text>
+  <text x="618" y="140" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="12.5" font-weight="700" fill="var(--foreground, #1c2022)">άρα δεν μπορεί να υπάρχει.</text>
+
+  <!-- Feedback: the Opposite is given its own text -->
+  <path d="M313,286 L313,316 L82,316 L82,146" fill="none" stroke="var(--primary, #1e5c4e)" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#ho-arr)"/>
+  <text x="330" y="338" font-family="var(--font-serif, serif)" font-size="12" font-style="italic" fill="var(--muted-foreground, #57605d)">δίνουμε στον Αντίθετο το δικό του κείμενο</text>
+</svg>

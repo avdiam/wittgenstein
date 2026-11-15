@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" role="img" aria-label="Ο συλλογισμός με κύκλους του Euler: Έλληνες μέσα στους ανθρώπους, άνθρωποι μέσα στους θνητούς">
+  <!-- Nested circles: Α = θνητοί, Β = άνθρωποι, Γ = Έλληνες -->
+  <circle cx="210" cy="150" r="136" fill="var(--primary-soft, rgba(30, 92, 78, 0.10))" stroke="var(--primary, #1e5c4e)" stroke-width="2"/>
+  <circle cx="210" cy="174" r="94" fill="var(--secondary, #eceeea)" stroke="var(--foreground, #1c2022)" stroke-width="1.8"/>
+  <circle cx="210" cy="205" r="48" fill="var(--mark-soft, rgba(184, 128, 30, 0.12))" stroke="var(--mark, #91590a)" stroke-width="2"/>
+
+  <text x="210" y="42" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="14" font-weight="700" fill="var(--primary, #1e5c4e)">θνητοί <tspan font-family="var(--font-mono, monospace)">(Α)</tspan></text>
+  <text x="210" y="112" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="14" font-weight="700" fill="var(--foreground, #1c2022)">άνθρωποι <tspan font-family="var(--font-mono, monospace)">(Β)</tspan></text>
+  <text x="210" y="201" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="14" font-weight="700" fill="var(--mark, #91590a)">Έλληνες</text>
+  <text x="210" y="221" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="13" font-weight="700" fill="var(--mark, #91590a)">(Γ)</text>
+
+  <!-- The syllogism in words and in letters -->
+  <text x="390" y="62" font-family="var(--font-serif, serif)" font-size="14" fill="var(--foreground, #1c2022)">Όλοι οι άνθρωποι είναι θνητοί.</text>
+  <text x="390" y="82" font-family="var(--font-mono, monospace)" font-size="12" fill="var(--muted-foreground, #57605d)">το Α για κάθε Β</text>
+  <text x="390" y="116" font-family="var(--font-serif, serif)" font-size="14" fill="var(--foreground, #1c2022)">Όλοι οι Έλληνες είναι άνθρωποι.</text>
+  <text x="390" y="136" font-family="var(--font-mono, monospace)" font-size="12" fill="var(--muted-foreground, #57605d)">το Β για κάθε Γ</text>
+  <line x1="390" y1="152" x2="690" y2="152" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+  <text x="390" y="176" font-family="var(--font-serif, serif)" font-size="14" font-weight="700" fill="var(--foreground, #1c2022)">Άρα όλοι οι Έλληνες είναι θνητοί.</text>
+  <text x="390" y="196" font-family="var(--font-mono, monospace)" font-size="12" fill="var(--muted-foreground, #57605d)">άρα το Α για κάθε Γ</text>
+
+  <text x="390" y="240" font-family="var(--font-serif, serif)" font-size="12.5" fill="var(--muted-foreground, #57605d)">Ό,τι κι αν σημαίνουν τα Α, Β, Γ, ο μικρός κύκλος</text>
+  <text x="390" y="259" font-family="var(--font-serif, serif)" font-size="12.5" fill="var(--muted-foreground, #57605d)">βρίσκεται μέσα στον μεγάλο: το συμπέρασμα</text>
+  <text x="390" y="278" font-family="var(--font-serif, serif)" font-size="12.5" fill="var(--muted-foreground, #57605d)">εξαρτάται μόνο από τη μορφή.</text>
+</svg>

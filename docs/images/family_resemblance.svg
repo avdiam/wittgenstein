@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" role="img" aria-label="Οικογενειακές ομοιότητες: τέσσερα παιχνίδια και πέντε γνωρίσματα· κανένα γνώρισμα δεν είναι κοινό σε όλα">
+  <!-- Column headers -->
+  <g font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--foreground, #1c2022)" text-anchor="middle">
+    <text x="245" y="44">με άλλους</text>
+    <text x="350" y="44">νικητής</text>
+    <text x="455" y="44">ομάδες</text>
+    <text x="560" y="44">τύχη</text>
+    <text x="665" y="44">τρέξιμο</text>
+  </g>
+  <line x1="30" y1="58" x2="730" y2="58" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+
+  <!-- Row labels -->
+  <g font-family="var(--font-serif, serif)" font-size="14" fill="var(--foreground, #1c2022)">
+    <text x="40" y="90">σκάκι</text>
+    <text x="40" y="132">ποδόσφαιρο</text>
+    <text x="40" y="174">πασιέντζα</text>
+    <text x="40" y="216">κρυφτό</text>
+  </g>
+  <g stroke="var(--border, #cdd3cd)" stroke-width="1">
+    <line x1="30" y1="103" x2="730" y2="103"/>
+    <line x1="30" y1="145" x2="730" y2="145"/>
+    <line x1="30" y1="187" x2="730" y2="187"/>
+    <line x1="30" y1="229" x2="730" y2="229"/>
+  </g>
+
+  <!-- Has the feature: filled dot; lacks it: short dash -->
+  <g fill="var(--primary, #1e5c4e)">
+    <!-- σκάκι: με άλλους, νικητής -->
+    <circle cx="245" cy="85" r="8"/><circle cx="350" cy="85" r="8"/>
+    <!-- ποδόσφαιρο: με άλλους, νικητής, ομάδες, τρέξιμο -->
+    <circle cx="245" cy="127" r="8"/><circle cx="350" cy="127" r="8"/><circle cx="455" cy="127" r="8"/><circle cx="665" cy="127" r="8"/>
+    <!-- πασιέντζα: νικητής, τύχη -->
+    <circle cx="350" cy="169" r="8"/><circle cx="560" cy="169" r="8"/>
+    <!-- κρυφτό: με άλλους, τρέξιμο -->
+    <circle cx="245" cy="211" r="8"/><circle cx="665" cy="211" r="8"/>
+  </g>
+  <g stroke="var(--muted-foreground, #57605d)" stroke-width="2" stroke-linecap="round" opacity="0.55">
+    <line x1="449" y1="85" x2="461" y2="85"/><line x1="554" y1="85" x2="566" y2="85"/><line x1="659" y1="85" x2="671" y2="85"/>
+    <line x1="554" y1="127" x2="566" y2="127"/>
+    <line x1="239" y1="169" x2="251" y2="169"/><line x1="449" y1="169" x2="461" y2="169"/><line x1="659" y1="169" x2="671" y2="169"/>
+    <line x1="344" y1="211" x2="356" y2="211"/><line x1="449" y1="211" x2="461" y2="211"/><line x1="554" y1="211" x2="566" y2="211"/>
+  </g>
+
+  <text x="380" y="262" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="12.5" fill="var(--muted-foreground, #57605d)">Καμία στήλη δεν είναι γεμάτη: κανένα γνώρισμα δεν είναι κοινό σε όλα τα παιχνίδια.</text>
+  <text x="380" y="282" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="12.5" fill="var(--muted-foreground, #57605d)">Κάθε παιχνίδι όμως μοιράζεται κάποιο γνώρισμα με κάποιο άλλο, όπως τα μέλη μιας οικογένειας.</text>
+</svg>

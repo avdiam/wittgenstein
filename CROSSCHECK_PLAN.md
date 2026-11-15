@@ -420,6 +420,8 @@ proportions; our copies of the Leibniz and Lovelace files are scaled down).
 | Jacquard loom (new photo, Sliven) | [Hand-driven-jacquard-loom.jpg](https://commons.wikimedia.org/wiki/File:Hand-driven-jacquard-loom.jpg): Edal Anton Lefterov, CC BY-SA 3.0; Austrian hand-driven loom, end of the 19th century, National Museum of the Textile Industry, Sliven | confirmed | The 960 px copy served by Commons is used (the original is 3.9 MB). |
 | Babbage's Analytical Engine (mill) | [Babbages Analytical Engine, 1834-1871. (9660574685).jpg](https://commons.wikimedia.org/wiki/File:Babbages_Analytical_Engine,_1834-1871._(9660574685).jpg): Science Museum, London collection, CC BY-SA 2.0 | **corrected** (licence was given as CC BY 4.0) | Caption corrected. |
 | Lovelace, Note G diagram | [Diagram for the computation of Bernoulli numbers.jpg](https://commons.wikimedia.org/wiki/File:Diagram_for_the_computation_of_Bernoulli_numbers.jpg): public domain | confirmed | none |
+| Portrait of Wittgenstein, 1930 (added 2026-11-15) | [Ludwig Wittgenstein.jpg](https://commons.wikimedia.org/wiki/File:Ludwig_Wittgenstein.jpg): Moritz Nähr (1859–1945), Austrian National Library, Pf 42.805 : C (1); `PD-old-auto-expired` (author died 1945) | confirmed (wikitext read) | Commons' 960 px copy used; caption names photographer, holder and licence. |
+| Four diagrams added 2026-11-15 (Euler circles, Venn/Boole, halting proof, family resemblances) | drawn for the essay | — | Euler circles dated to Euler (1768), Venn's diagrams to 1880; the family-resemblance grid is marked as a simplified example after *PI* §§66–67. |
 
 ## Review for length and clarity (2026-11-15)
 
