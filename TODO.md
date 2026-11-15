@@ -6,9 +6,11 @@ item is finished, move it to `DONE.md` with the date.
 
 ## Status
 
-- The live site matches `main` as of commit `c34e46c` (2026-11-15). Later
-  commits change only the notes (`TODO.md`, `DONE.md`, the cross-check files)
-  until the next push.
+- The live site matches `main` as of commit `c34e46c` (2026-11-15). Not yet
+  pushed: the notes split (`6458ed2`), which also repoints the pages' links
+  for "the source of every claim" to `CROSSCHECK_DONE.md`. Until the push,
+  the live links go to the old, complete `CROSSCHECK_PLAN.md`, so nothing
+  is broken in the meantime.
 
 ## For the owner to decide
 
