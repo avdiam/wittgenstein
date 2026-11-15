@@ -421,6 +421,17 @@ proportions; our copies of the Leibniz and Lovelace files are scaled down).
 | Babbage's Analytical Engine (mill) | [Babbages Analytical Engine, 1834-1871. (9660574685).jpg](https://commons.wikimedia.org/wiki/File:Babbages_Analytical_Engine,_1834-1871._(9660574685).jpg): Science Museum, London collection, CC BY-SA 2.0 | **corrected** (licence was given as CC BY 4.0) | Caption corrected. |
 | Lovelace, Note G diagram | [Diagram for the computation of Bernoulli numbers.jpg](https://commons.wikimedia.org/wiki/File:Diagram_for_the_computation_of_Bernoulli_numbers.jpg): public domain | confirmed | none |
 
+## Review for length and clarity (2026-11-15)
+
+Corrections made during the section-by-section review (TODO item 4.3).
+
+| Claim | Source | Verdict | Action |
+| :-- | :-- | :-- | :-- |
+| The stopped clock given as Gettier's example (section 3) | Russell, *Human Knowledge: Its Scope and Limits* (1948), pp. 170–171, as cited in [Wikipedia, "Gettier problem"](https://en.wikipedia.org/wiki/Gettier_problem) and [OpenStax, *Introduction to Philosophy* 7.2](https://openstax.org/books/introduction-philosophy/pages/7-2-knowledge); Gettier's own cases are Smith/Jones (ten coins) and Ford/Barcelona | **corrected** | The clock is now credited to Russell (1948) as an earlier example of the same point. |
+| «γνωστικισμός» for cognitivism (section 11) | Greek usage: «γνωστικισμός» is Gnosticism | **corrected** | «γνωσιακή ψυχολογία». |
+| Lean as «άμεσο απόγονο» of Frege, the *Principia* and Hilbert's programme (section 11) | Lean is based on dependent type theory (calculus of inductive constructions), which descends from Russell's type theory through Church and Martin-Löf; not searched separately | **weakened** | «απόγονο της παράδοσης που ξεκινά από την Εννοιογραφία του Frege και τη θεωρία των τύπων των *Principia*». |
+| Kant: causality listed with space and time as «η μορφή» (section 3) | Kant, *KrV*: space and time are forms of intuition, causality a category of the understanding | **corrected** | «τις μορφές (τον χώρο και τον χρόνο) και τις βασικές έννοιες (όπως η αιτιότητα)». |
+
 ## Open for the essay
 
 - Standard life dates were not checked one by one.
