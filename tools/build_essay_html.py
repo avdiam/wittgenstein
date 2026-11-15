@@ -367,7 +367,7 @@ TEMPLATE = """<!DOCTYPE html>
 <footer class="site-footer">
   <p>Το κείμενο διατίθεται με την άδεια <a href="https://creativecommons.org/licenses/by/4.0/deed.el">CC BY 4.0</a>.
   Η σελίδα παράγεται αυτόματα από το αρχείο <a href="{repo}/blob/main/Logiki_Glossa_Michanes.md">Logiki_Glossa_Michanes.md</a>·
-  οι πηγές κάθε ισχυρισμού καταγράφονται στο <a href="{repo}/blob/main/CROSSCHECK_PLAN.md">CROSSCHECK_PLAN.md</a>.</p>
+  οι πηγές κάθε ισχυρισμού καταγράφονται στο <a href="{repo}/blob/main/CROSSCHECK_DONE.md">CROSSCHECK_DONE.md</a>.</p>
   <p><a href="index.html">Αρχική</a> · <a href="tractatus.html">Tractatus Logico-Philosophicus</a> · <a href="{repo}">Αποθετήριο στο GitHub</a></p>
 </footer>
 <script>

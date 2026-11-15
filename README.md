@@ -32,8 +32,10 @@ is, and scripts in `tools/` regenerate it from the sources.
 | `tools/render_figures.py` | Renders the SVG diagrams to PNG with headless Chrome. Run it after changing an SVG; `build_docx.py` stops if a copy is out of date. Not part of `build_all.py`. |
 | `tools/build_all.py` | Runs the three scripts. |
 | `Tractatus Logico-Philosophicus/*.pdf` | Source editions used to check quotations (Gutenberg #5740; Stern's tree view). Klement's edition is used too but is not in the repository: see `LICENSE`. |
-| `CROSSCHECK_PLAN.md` | Every claim checked against outside sources, with its source and verdict, and what is still open. |
-| `TODO.md` | Work planned and decided by the owner. |
+| `TODO.md` | Pending work: decisions for the owner and tasks not yet done. |
+| `DONE.md` | Finished work, with dates and details. |
+| `CROSSCHECK_PLAN.md` | Open source checks: what is still unchecked or weakly sourced, and the method. |
+| `CROSSCHECK_DONE.md` | The ledger: every claim checked against outside sources, with its source and verdict. |
 | `CLAUDE.md`, `AGENTS.md` | Instructions and conventions for agents. |
 
 ## Workflow
@@ -55,7 +57,7 @@ Rules:
   for the analysis, in `tab_for()` (`tools/build_essay_html.py`) for the essay.
   The builds stop on an unmapped heading.
 - Quotations of the *Tractatus* are checked against the source editions. Claims
-  from secondary literature are recorded in `CROSSCHECK_PLAN.md` with a verdict.
+  from secondary literature are recorded in `CROSSCHECK_DONE.md` with a verdict.
 - The essay is for general readers: keep technical terms to a minimum and
   explain each one where it first appears.
 

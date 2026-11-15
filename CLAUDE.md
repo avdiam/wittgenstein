@@ -1,9 +1,13 @@
 # Wittgenstein study folder — instructions for agents
 
 Greek-language study material on Wittgenstein's *Tractatus Logico-Philosophicus*.
-Read `README.md` first (layout and workflow), then `CROSSCHECK_PLAN.md` (what has
-been verified against outside sources, and the list of open items at its end).
-`TODO.md` lists the work the owner has planned for future sessions.
+At the start of a session read `README.md` (layout and workflow), `TODO.md`
+(pending work) and `CROSSCHECK_PLAN.md` (open source checks). Finished work is
+in `DONE.md`, and every claim already checked, with its source and verdict, is
+in `CROSSCHECK_DONE.md`: open those two only to recheck or ground something.
+When an item is finished, move it from `TODO.md` to `DONE.md` with the date;
+when an open check is settled, record its row in `CROSSCHECK_DONE.md` and
+remove it from `CROSSCHECK_PLAN.md`.
 
 ## Roles of the files
 
@@ -59,7 +63,7 @@ been verified against outside sources, and the list of open items at its end).
   this repository's git config.
 - Quotations of the *Tractatus* are checked against the three PDFs in the folder.
   A claim taken from secondary literature needs a source: record it in
-  `CROSSCHECK_PLAN.md` with a verdict.
+  `CROSSCHECK_DONE.md` with a verdict.
 - Where respectable sources disagree, do not pick a winner. Add an
   «Ερμηνευτική σημείωση» that names both readings.
 - Keep the tone sober: no exclamation marks, no superlatives, and the numbered
