@@ -11,8 +11,11 @@ More items are expected to be added.
   applied one at a time with the owner's approval (details under item 4).
   The commits from `500b5ed` to `19e149a` are **local only, not pushed**:
   the live site does not show them until the owner asks for a push.
-- Not yet checked: the new figures in print (PDF) and in the Word file
-  opened in Word; the essay page at 1280 px with the new figures in place.
+- Pushed on 2026-11-15; the live site matches `main`.
+- Checked by the owner: the Word file contains the figures and photos;
+  Greek words are hyphenated in the justified text on their Android phone.
+- Not yet checked: the new figures in print (PDF); the essay page at
+  1280 px with the new figures in place.
 
 **Status at the end of the first session of 2026-11-15:**
 
@@ -25,9 +28,7 @@ More items are expected to be added.
 - The owner checked the site on a phone and in Firefox and found it in order.
 - **Next session:** item 4.3, making the essay shorter and clearer, section
   by section with the owner's approval before each change.
-- Waiting on the owner: whether Greek words are hyphenated in the justified
-  text on their phone (if not, some lines show wide gaps; other settings
-  can be tried).
+- Answered on 2026-11-15: Greek words are hyphenated on the owner's phone.
 - Still open: the print-only items in `CROSSCHECK_PLAN.md` ("Open for the
   essay", and C1/C3 under "Carried over from the cross-check" below).
 
