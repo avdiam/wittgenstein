@@ -144,11 +144,19 @@ Reviewed `Logiki_Glossa_Michanes.md` section by section with the owner and added
 - Restored the CRLF line endings of `tools/build_essay_html.py` (they had been
   converted to LF, which inflated its diff to every line).
 
+**Figures in the Word file — decided by the owner and done 2026-11-15:** the
+`.docx` contains the 11 figures with their captions (centred, the picture kept
+on the page of its caption). Photos are embedded as they are; the diagrams as
+PNG copies made by `tools/render_figures.py` (headless Chrome, light theme,
+the page's typefaces, 1520 px wide). Opened in Word and LibreOffice: all 11
+pictures shown. The file grew from 71 KB to 2.3 MB, mostly the photos. The
+Jacquard photo is 249 × 333 px and prints soft (about 92 ppi); a larger scan
+from Wikimedia Commons would fix that.
+
 **What needs checking next:**
 1. Try the diagram dialog on a real phone (touch scrolling inside the dialog).
 2. Check the justified Greek typography (`text-align: justify; hyphens: auto`) across browsers for any loose lines around long foreign names or inline formulas. Seen in Chrome only, where it looked even.
-3. Decide whether `tools/build_docx.py` should keep the italic `[Εικόνα: ...]` caption placeholders or embed raster images directly into `docs/Logiki_Glossa_Michanes.docx`.
-4. Check the remaining print-only items under "Open for the essay" in `CROSSCHECK_PLAN.md`.
+3. Check the remaining print-only items under "Open for the essay" in `CROSSCHECK_PLAN.md`.
 
 The request as recorded on 2026-11-14:
 

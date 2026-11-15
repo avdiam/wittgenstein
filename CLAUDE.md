@@ -23,8 +23,10 @@ been verified against outside sources, and the list of open items at its end).
   Markdown as `![alt](images/file.ext "caption")` are stored in `docs/images/`:
   `build_essay_html.py` inlines `.svg` diagrams into `<figure>` (so they share
   the page's fonts and light/dark CSS tokens) and wraps raster photos in
-  `<figure>`, while `build_docx.py` outputs an italic `[Εικόνα: ...]` caption
-  line. `docs/essay.html` does not load KaTeX, so write mathematical and
+  `<figure>`. `build_docx.py` embeds the photos and, for each diagram, the PNG
+  copy in `docs/images/png/`: after changing an SVG, run
+  `python tools/render_figures.py` (needs Chrome), or the build stops.
+  `docs/essay.html` does not load KaTeX, so write mathematical and
   logical notation in plain Unicode (`2 × 3 = 6`, `x² = x`, `¬`, `∧`, `∨`,
   `⊃`, `→`, `∀`, `∃`), never `$...$` LaTeX. The rules below on
   sources, disagreements and tone apply to the essay too. It is written for
