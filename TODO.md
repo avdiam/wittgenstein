@@ -5,9 +5,18 @@ the owner's review. Items are recorded as requested;
 the two readings that were open were confirmed by the owner on 2026-11-14.
 More items are expected to be added.
 
-**Where to resume (status at the end of the session of 2026-11-15):**
+**Where to resume (status after the second session of 2026-11-15):**
 
-- Everything is committed and pushed; the live site matches `main` (last
+- Item 4.3 done: the essay was scanned as a whole and ten proposals were
+  applied one at a time with the owner's approval (details under item 4).
+  The commits from `500b5ed` to `19e149a` are **local only, not pushed**:
+  the live site does not show them until the owner asks for a push.
+- Not yet checked: the new figures in print (PDF) and in the Word file
+  opened in Word; the essay page at 1280 px with the new figures in place.
+
+**Status at the end of the first session of 2026-11-15:**
+
+- Everything was committed and pushed; the live site matched `main` (last
   commit `42c338d`).
 - Done on 2026-11-15: the visual check of the essay's figures and its fixes,
   figures in the Word file, the new Jacquard photo with corrected photo
@@ -279,14 +288,36 @@ Done on 2026-11-15:
   gaps between words.
 - 4: the essay card comes first: left on wide screens, on top on phones.
 
-Open:
+Done on 2026-11-15 (second session), item 3: at the owner's request the
+whole essay was scanned first, then ten proposals were presented one at a
+time and applied after approval. Each change is recorded in
+`CROSSCHECK_PLAN.md` ("Review for length and clarity").
 
-- 3 (next session). Suggested way of working, for the owner to confirm: go
-  section by section, propose the cuts and rewordings for each with the
-  reason, and apply them only after the owner agrees. The rules in
-  `CLAUDE.md` still apply (general readers, sources, interpretive notes,
-  sober tone), and a cut must not remove a sourced claim without updating
-  `CROSSCHECK_PLAN.md`.
+1. Corrections: «γνωστικισμός» (Gnosticism) → «γνωσιακή ψυχολογία»; the
+   stopped clock credited to Russell (1948), not Gettier; Lean no longer a
+   "direct descendant" of Hilbert's programme; Kant's causality as a category.
+2. §3: 19th–20th c. epistemology shortened (Hegel, Comte, Nietzsche,
+   Foucault cut; Hegel's dates moved to §10).
+3. §10: influence list rewritten (Piaget and Quine 1969 cut; Vygotsky as a
+   parallel idea; five shorter bullets).
+4. §6: items A–J (Moore, Spinoza's *Ethics*, Paris court model, truth-table
+   history, F(F(x)), 1916 notebook, Russell–Ramsey, linguistic turn,
+   Vienna Circle, Popper).
+5. §5: non-cat set reworded; heterological paradox shortened.
+6. §11: cognitivism, Deep Blue/AlphaGo/AlphaFold and mathematics shortened;
+   added at the owner's request, with sources: the Lean proof of Fermat's
+   Last Theorem (Sep 2026), the Fable 5.2 30-hour run and two physics
+   results as reported by Anthropic, the Aaronson–Ambainis proof (Nov 2026).
+   Claims without a primary source (a train-timetabling result) left out.
+7. §8, §10: Turing's war work, Moore's report, Sraffa anecdote shorter.
+8. §2, §4: two long paragraphs split.
+9. Four new diagrams: Euler circles (§1), Venn for Boole (§4), the halting
+   proof (§8), family resemblances (§10).
+10. Portrait of Wittgenstein by Moritz Nähr, 1930 (§6).
+
+Not proposed: splitting a section (would renumber §9–§12 and every
+cross-reference). The essay body is now about 17,600 words (was 17,900;
+the cuts removed about 900, the 2026 results and figure captions added some).
 
 ## Carried over from the cross-check
 
