@@ -5,6 +5,23 @@ the owner's review. Items are recorded as requested;
 the two readings that were open were confirmed by the owner on 2026-11-14.
 More items are expected to be added.
 
+**Where to resume (status at the end of the session of 2026-11-15):**
+
+- Everything is committed and pushed; the live site matches `main` (last
+  commit `42c338d`).
+- Done on 2026-11-15: the visual check of the essay's figures and its fixes,
+  figures in the Word file, the new Jacquard photo with corrected photo
+  licences, the light theme by default, justified essay text on phones, and
+  the essay card first on the cover page (details under items 2c and 4).
+- The owner checked the site on a phone and in Firefox and found it in order.
+- **Next session:** item 4.3, making the essay shorter and clearer, section
+  by section with the owner's approval before each change.
+- Waiting on the owner: whether Greek words are hyphenated in the justified
+  text on their phone (if not, some lines show wide gaps; other settings
+  can be tried).
+- Still open: the print-only items in `CROSSCHECK_PLAN.md` ("Open for the
+  essay", and C1/C3 under "Carried over from the cross-check" below).
+
 ## 1. Enhance the HTML page — done 2026-11-14, awaiting the owner's review
 
 `docs/tractatus.html` (moved there from `Tractatus Logico-Philosophicus/` on
