@@ -150,8 +150,11 @@ on the page of its caption). Photos are embedded as they are; the diagrams as
 PNG copies made by `tools/render_figures.py` (headless Chrome, light theme,
 the page's typefaces, 1520 px wide). Opened in Word and LibreOffice: all 11
 pictures shown. The file grew from 71 KB to 2.3 MB, mostly the photos. The
-Jacquard photo is 249 × 333 px and prints soft (about 92 ppi); a larger scan
-from Wikimedia Commons would fix that.
+Jacquard photo (249 × 333 px, soft in print) was replaced at the owner's
+request by a 960 × 1280 photo of a hand-driven Jacquard loom (Sliven,
+Edal Anton Lefterov, CC BY-SA 3.0). Checking the photo credits found two
+wrong licences, now corrected (see "Figure credits of the essay" in
+`CROSSCHECK_PLAN.md`).
 
 **What needs checking next:**
 1. Try the diagram dialog on a real phone (touch scrolling inside the dialog).

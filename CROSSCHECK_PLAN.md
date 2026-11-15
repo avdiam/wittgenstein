@@ -407,6 +407,20 @@ essay (sections 6, 8 and 10). The note itself was not edited.
 | AlphaGo (2016), Transformer / attention (Vaswani et al. 2017), AlphaFold (2020, Nobel 2024), AlphaGeometry & AlphaProof / Lean (2024–2025), IMO 2025 gold & 2025–2026 research problems (Erdős, fluid dynamics, particle physics) | Silver et al., *Nature* 529 (2016); Vaswani et al., *NeurIPS* 30 (2017); Jumper et al., *Nature* 596 (2021); Trinh et al., *Nature* 625 (2024); Hubert et al., *Nature* (2025) | confirmed | Added to sections 11.4 and 11.6. |
 | Timeline and glossary | the essay itself | — | No new claims; every date and definition is stated in the body. |
 
+## Figure credits of the essay (2026-11-15)
+
+Each photo's author and licence checked against its Wikimedia Commons page
+(by SHA-1 where our copy is the original file, otherwise by subject and
+proportions; our copies of the Leibniz and Lovelace files are scaled down).
+
+| Figure | Commons file | Verdict | Action |
+| :-- | :-- | :-- | :-- |
+| Leibniz's calculating machine | [Leibnitzrechenmaschine.jpg](https://commons.wikimedia.org/wiki/File:Leibnitzrechenmaschine.jpg): Kolossos, CC BY-SA 3.0 | confirmed | none |
+| Jacquard punched cards (old photo, Manchester) | [Jacquard.loom.cards.jpg](https://commons.wikimedia.org/wiki/File:Jacquard.loom.cards.jpg): George H. Williams (en.wikipedia user Ghw), public domain; 249 × 333 px, no larger version | **corrected** (licence was given as CC BY-SA 3.0) | Photo replaced: too small for print. |
+| Jacquard loom (new photo, Sliven) | [Hand-driven-jacquard-loom.jpg](https://commons.wikimedia.org/wiki/File:Hand-driven-jacquard-loom.jpg): Edal Anton Lefterov, CC BY-SA 3.0; Austrian hand-driven loom, end of the 19th century, National Museum of the Textile Industry, Sliven | confirmed | The 960 px copy served by Commons is used (the original is 3.9 MB). |
+| Babbage's Analytical Engine (mill) | [Babbages Analytical Engine, 1834-1871. (9660574685).jpg](https://commons.wikimedia.org/wiki/File:Babbages_Analytical_Engine,_1834-1871._(9660574685).jpg): Science Museum, London collection, CC BY-SA 2.0 | **corrected** (licence was given as CC BY 4.0) | Caption corrected. |
+| Lovelace, Note G diagram | [Diagram for the computation of Bernoulli numbers.jpg](https://commons.wikimedia.org/wiki/File:Diagram_for_the_computation_of_Bernoulli_numbers.jpg): public domain | confirmed | none |
+
 ## Open for the essay
 
 - Standard life dates were not checked one by one.
