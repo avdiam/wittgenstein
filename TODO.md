@@ -156,10 +156,10 @@ Edal Anton Lefterov, CC BY-SA 3.0). Checking the photo credits found two
 wrong licences, now corrected (see "Figure credits of the essay" in
 `CROSSCHECK_PLAN.md`).
 
+**Checked by the owner on 2026-11-15:** the site on a phone and in Firefox.
+
 **What needs checking next:**
-1. Try the diagram dialog on a real phone (touch scrolling inside the dialog).
-2. Check the justified Greek typography (`text-align: justify; hyphens: auto`) across browsers for any loose lines around long foreign names or inline formulas. Seen in Chrome only, where it looked even.
-3. Check the remaining print-only items under "Open for the essay" in `CROSSCHECK_PLAN.md`.
+1. Check the remaining print-only items under "Open for the essay" in `CROSSCHECK_PLAN.md`.
 
 The request as recorded on 2026-11-14:
 
@@ -237,6 +237,39 @@ Done:
 Possible next steps, for the owner to decide: split long passages (the
 halting proof, the decidability examples) into folding blocks; a search box
 on the essay page like the Tractatus one; a custom domain.
+
+## 4. Owner's requests of 2026-11-15
+
+As requested:
+
+1. Light theme by default, not dark.
+2. On phones the essay should be justified («πλήρης στοίχηση»), as it is in
+   Chrome and Firefox on a computer.
+3. In a next session: check the content of the essay and see whether any
+   chapter or paragraph should be made shorter and clearer («πιο σύντομη και
+   περιεκτική»).
+4. On the cover page, the essay on the left and the Tractatus on the right.
+
+Done on 2026-11-15:
+
+- 1: all three pages open in the light theme unless the reader has chosen
+  dark with the theme button (the choice is still kept in `hw-tlp-theme`).
+  The system's dark setting is no longer followed.
+- 2: the essay is justified at every width, with automatic hyphenation and
+  at least 3 letters on each side of a break (`hyphenate-limit-chars`).
+  Whether Greek words are hyphenated depends on the browser's dictionaries
+  (Firefox has Greek). Where they are not, narrow columns can show wider
+  gaps between words.
+- 4: the essay card comes first: left on wide screens, on top on phones.
+
+Open:
+
+- 3 (next session). Suggested way of working, for the owner to confirm: go
+  section by section, propose the cuts and rewordings for each with the
+  reason, and apply them only after the owner agrees. The rules in
+  `CLAUDE.md` still apply (general readers, sources, interpretive notes,
+  sober tone), and a cut must not remove a sourced claim without updating
+  `CROSSCHECK_PLAN.md`.
 
 ## Carried over from the cross-check
 

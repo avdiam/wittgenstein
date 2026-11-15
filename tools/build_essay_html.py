@@ -326,9 +326,6 @@ TEMPLATE = """<!DOCTYPE html>
   (function () {{
     var mode = null;
     try {{ mode = localStorage.getItem('hw-tlp-theme'); }} catch (e) {{}}
-    if (mode !== 'dark' && mode !== 'light') {{
-      mode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }}
     if (mode === 'dark') document.documentElement.classList.add('dark');
   }})();
 </script>
@@ -477,7 +474,9 @@ body.toc-folded .toc-num { min-width: 0; margin: 0 auto; }
 .reading p { margin: 0 0 1rem; }
 .reading ul, .reading ol { padding-left: 1.4rem; margin: 0 0 1rem; }
 .reading li { margin: .3rem 0; }
-#panel-text .reading p, #panel-text .reading li, ul.glossary li { text-align: justify; -webkit-hyphens: auto; hyphens: auto; }
+/* Justified with automatic Greek hyphenation at every width; the limit keeps
+   at least 3 letters on each side of a break, which matters in narrow columns. */
+#panel-text .reading p, #panel-text .reading li, ul.glossary li { text-align: justify; -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 6 3 3; }
 .reading code { font-family: var(--font-mono); font-size: .88em; background: var(--secondary); padding: .05em .3em; border-radius: 3px; }
 .lede { font-size: 1.1rem; color: var(--foreground); margin-bottom: 2.5rem; }
 .xref { text-decoration: none; border-bottom: 1px dotted var(--primary); }
@@ -540,7 +539,6 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
   .tab { padding: .35rem .45rem; font-size: .8rem; }
   .page-head { padding-top: 1.25rem; }
   .reading { font-size: 1rem; }
-  #panel-text .reading p, #panel-text .reading li, ul.glossary li { text-align: left; -webkit-hyphens: manual; hyphens: manual; }
   table.timeline td:first-child { width: auto; white-space: normal; }
 }
 @media (max-width: 520px) {

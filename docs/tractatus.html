@@ -4964,12 +4964,8 @@ Er muss diese Sätze überwinden, dann sieht er die Welt richtig.»</em></p>
     function initThemeIfNeeded() {
       let saved = null;
       try { saved = localStorage.getItem('hw-tlp-theme'); } catch (e) {}
-      if (saved === 'dark' || saved === 'light') {
-        applyArchPalette(saved, false);
-      } else {
-        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        applyArchPalette(prefersDark ? 'dark' : 'light', false);
-      }
+      // Light unless the reader chose dark with the theme button.
+      applyArchPalette(saved === 'dark' ? 'dark' : 'light', false);
     }
 
     function toggleArchitecturalTheme() {
