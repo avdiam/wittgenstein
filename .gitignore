@@ -3,3 +3,5 @@
 # Klement's edition includes the Pears-McGuinness translation (copyright): keep local only
 Tractatus Logico-Philosophicus/tlp.pdf
 __pycache__/
+# Essay review notes: kept local until discussed with the owner
+ESSAY_REVIEW.md

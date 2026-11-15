@@ -6,11 +6,15 @@ item is finished, move it to `DONE.md` with the date.
 
 ## Status
 
-- The live site matches `main` as of commit `ad9e94a` (2026-11-15), which
-  includes the notes split and the pages' links to `CROSSCHECK_DONE.md`.
+- The live site matches `main` as of commit `a1b59c6` (2026-11-15).
 
 ## For the owner to decide
 
+0. **Next session, first:** discuss and address the seven points of the
+   essay review in `ESSAY_REVIEW.md` (local only, git-ignored) (thesis and reading
+   map in the introduction, the place of §3, uneven density, the 2026
+   paragraph in §11, motivation in the voice, the epilogue's pattern, the
+   Greek renderings). One point at a time, each with the owner's approval.
 1. Headings typed in capitals in the Tractatus HTML and the analysis Markdown:
    keep them in capitals or change them to normal case.
 2. Possible next steps for the essay page: split long passages (the halting

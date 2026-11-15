@@ -34,6 +34,7 @@ is, and scripts in `tools/` regenerate it from the sources.
 | `Tractatus Logico-Philosophicus/*.pdf` | Source editions used to check quotations (Gutenberg #5740; Stern's tree view). Klement's edition is used too but is not in the repository: see `LICENSE`. |
 | `TODO.md` | Pending work: decisions for the owner and tasks not yet done. |
 | `DONE.md` | Finished work, with dates and details. |
+| `ESSAY_REVIEW.md` | Points from the review of the essay, to be discussed with the owner. Local only (git-ignored). |
 | `CROSSCHECK_PLAN.md` | Open source checks: what is still unchecked or weakly sourced, and the method. |
 | `CROSSCHECK_DONE.md` | The ledger: every claim checked against outside sources, with its source and verdict. |
 | `CLAUDE.md`, `AGENTS.md` | Instructions and conventions for agents. |
