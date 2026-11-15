@@ -316,6 +316,8 @@ time and applied after approval. Each change is recorded in
    proof (§8), family resemblances (§10).
 10. Portrait of Wittgenstein by Moritz Nähr, 1930 (§6).
 
+Then, on the owner's questions (same day): «Δοκίμιο» kept as the genre word, and the subtitle changed to «Από τον Πλάτωνα στον Wittgenstein και την τεχνητή νοημοσύνη» (section 1 opens with Plato); Augustine (sections 2 and 10, with *PI* §1), Averroes and Aquinas (section 2) added; the closing sentence of the epilogue now names both phases (logical form, use).
+
 Not proposed: splitting a section (would renumber §9–§12 and every
 cross-reference). The essay body is now about 17,600 words (was 17,900;
 the cuts removed about 900, the 2026 results and figure captions added some).
