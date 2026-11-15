@@ -6,11 +6,8 @@ item is finished, move it to `DONE.md` with the date.
 
 ## Status
 
-- The live site matches `main` as of commit `c34e46c` (2026-11-15). Not yet
-  pushed: the notes split (`6458ed2`), which also repoints the pages' links
-  for "the source of every claim" to `CROSSCHECK_DONE.md`. Until the push,
-  the live links go to the old, complete `CROSSCHECK_PLAN.md`, so nothing
-  is broken in the meantime.
+- The live site matches `main` as of commit `ad9e94a` (2026-11-15), which
+  includes the notes split and the pages' links to `CROSSCHECK_DONE.md`.
 
 ## For the owner to decide
 
