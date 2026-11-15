@@ -1,7 +1,7 @@
 # To-do for future sessions
 
-Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and await
-the owner's review. Items are recorded as requested;
+Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
+reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word). Items are recorded as requested;
 the two readings that were open were confirmed by the owner on 2026-11-14.
 More items are expected to be added.
 
@@ -16,8 +16,8 @@ More items are expected to be added.
   Greek words are hyphenated in the justified text on their Android phone.
 - Print checked on 2026-11-15 (headless Chrome, live site, 58 pages): the
   five new figures (pp. 3, 13, 19, 31, 36) are whole, in light colours,
-  with their captions on the same page. Not yet seen: the essay page at
-  1280 px with the new figures in place.
+  with their captions on the same page. Also checked at 1280 px in the
+  page layout, next to the contents pane.
 
 **Status at the end of the first session of 2026-11-15:**
 
@@ -34,7 +34,7 @@ More items are expected to be added.
 - Still open: the print-only items in `CROSSCHECK_PLAN.md` ("Open for the
   essay", and C1/C3 under "Carried over from the cross-check" below).
 
-## 1. Enhance the HTML page — done 2026-11-14, awaiting the owner's review
+## 1. Enhance the HTML page — done 2026-11-14, reviewed by the owner 2026-11-15
 
 `docs/tractatus.html` (moved there from `Tractatus Logico-Philosophicus/` on
 2026-11-14; see item 3)
@@ -78,7 +78,7 @@ Left as they are, for the owner to decide:
 - Not checked on a real phone or at a real 1920px window: the narrow and wide
   layouts were checked in frames of 400px and 1800px inside a 1280px window.
 
-## 2. Review and extend the essay — done 2026-11-14, awaiting the owner's review
+## 2. Review and extend the essay — done 2026-11-14, reviewed by the owner 2026-11-15
 
 The first version, `Istoria_Logikis_kai_AI.docx`, was read, checked and left
 unchanged. The new text is `Logiki_Glossa_Michanes.md` (source) and
@@ -136,7 +136,7 @@ Status of the decided work is recorded in the next section.
   `CROSSCHECK_PLAN.md`.
 - The essay is now about 15,800 words.
 
-### 2c. Paragraph-by-paragraph review, modern AI, figures and typography — done 2026-11-14, awaiting the owner's review
+### 2c. Paragraph-by-paragraph review, modern AI, figures and typography — done 2026-11-14, reviewed by the owner 2026-11-15
 
 Reviewed `Logiki_Glossa_Michanes.md` section by section with the owner and added:
 
@@ -231,7 +231,7 @@ g. **Final check and proposals**
 
 (The list as given had no item "b"; the letters are kept as given.)
 
-## 3. Web pages and public repository — done 2026-11-14, awaiting the owner's review
+## 3. Web pages and public repository — done 2026-11-14, reviewed by the owner 2026-11-15
 
 As requested: the essay gets the same mechanism as the Tractatus (Markdown as
 the back office, an HTML page as the presentation layer, with tabs); a cover

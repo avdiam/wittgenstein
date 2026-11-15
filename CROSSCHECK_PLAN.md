@@ -447,6 +447,6 @@ Corrections made during the section-by-section review (TODO item 4.3).
 ## Open for the essay
 
 - Standard life dates were not checked one by one.
-- Still weak: the page of Turing's bridge remark in Diamond's *LFM*; the wording of Strachey's letter; Adorno's page; Drury's page; Bays's 2004 argument; Moore's examiner's report.
+- Still weak: the page of Turing's bridge remark in Diamond's *LFM*; the wording of Strachey's letter; Adorno's page; Drury's page; Bays's 2004 argument. (Moore's examiner's report is no longer quoted: cut on 2026-11-15.)
 - Turing's 1950 page range (433–460) and Moore's second 1954 page range are from memory.
 - The Greek renderings of Tractatus and *Investigations* sentences are the essay's own; they were not compared with the published Greek translations (see C1).
