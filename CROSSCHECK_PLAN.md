@@ -439,6 +439,10 @@ Corrections made during the section-by-section review (TODO item 4.3).
 | Not used: a 42-train timetabling result beating MIPLIB by 2.6%; Fable 5.2 named for Aaronson–Ambainis | not found in any primary source | unsupported | Left out. |
 | Deep Blue "neither expert rules nor neural networks" (section 11) | Deep Blue's evaluation function was tuned with grandmaster input | **weakened** | Now says only that it did not use neural networks. |
 | Kant: causality listed with space and time as «η μορφή» (section 3) | Kant, *KrV*: space and time are forms of intuition, causality a category of the understanding | **corrected** | «τις μορφές (τον χώρο και τον χρόνο) και τις βασικές έννοιες (όπως η αιτιότητα)». |
+| Augustine (354–430): Platonist, read through the Neoplatonists; little Aristotle (section 2) | SEP `augustine` | confirmed (standard account; not searched in this session) | Added at the owner's request. |
+| *Philosophical Investigations* §1 opens with *Confessions* I.8 on learning words by naming and pointing (section 10) | PI §1 (German text, LWP) | confirmed (well known; quotation not repeated) | Added. |
+| Ibn Rushd (Averroes, 1126–1198), Córdoba; commentaries on nearly all of Aristotle, Latin translations in the 13th c., «the Commentator» (section 2) | SEP `ibn-rushd`; SEP `arabic-islamic-influence` | confirmed (standard account; not searched in this session) | Added; the sentence on Latin reception now names his commentaries next to Avicenna. |
+| Aquinas (c. 1225–1274): commentaries on *De interpretatione* and *Posterior Analytics*; William of Moerbeke's Greek translations; moderate realism on universals (section 2) | SEP `aquinas`, `medieval-problem-universals` | confirmed (standard account; not searched in this session) | Added. Moerbeke named only as a translator, not as working at Aquinas's request (contested). |
 
 ## Open for the essay
 
