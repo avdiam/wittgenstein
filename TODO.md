@@ -10,9 +10,19 @@ item is finished, move it to `DONE.md` with the date.
 
 ## For the owner to decide
 
-0. **Next session, first:** look at the rendered essay page and the Word
-   file (neither was viewed after the review's changes, only built and
-   checked), make any further changes the owner wants, then push.
+0. **Next:** make any further changes the owner wants to the essay, then
+   push. The rendered page and the Word file were viewed on 2026-11-16
+   after the review's changes (details in `DONE.md`). Two small points
+   came out of that viewing, for the owner:
+   - In the page's serif typeface (Literata) the accent of a capital
+     (Ά, Έ, Ό) hangs to the left of the letter, so after a full stop, a
+     bracket or «, the gap almost closes («αναγκαστικά. Ένα», «(Όχι»).
+     Seen in headless Chrome; to be confirmed in a normal browser before
+     deciding whether to do anything about it.
+   - The glossary has an entry «Γνωστικισμός (*cognitivism*)», but the
+     text of section 11 uses only «γνωσιακή επανάσταση». Either rename
+     the entry or use the term once in the text.
+
    The essay review is finished (2026-11-16; details in `DONE.md`). Two
    things remain from it: a reader outside Anthropic for the two 2026
    paragraphs of §11, and one passage (§38) not yet compared with the

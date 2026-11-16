@@ -8,6 +8,19 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-16 (second), visual check after the review:**
+
+- The rendered essay page was read in full in headless Chrome at 1100 px
+  (the twelve sections, the timeline, the glossary, the sources), and nine
+  pages of the Word file as a LibreOffice PDF (57 pages, 16 figures). The
+  review's changes render as intended; no stray Markdown, all 16 figures
+  and the tables in place.
+- Two leftovers of the review's point 2 were fixed in the Markdown: the
+  glossary entry «Πραγματισμός» pointed to section 3 (the pragmatists are
+  now in section 10), and the list of Stanford Encyclopedia entries under
+  «Έργα αναφοράς» still named Comte, Nietzsche, Husserl and Foucault, whom
+  the essay no longer mentions.
+
 **Session of 2026-11-16, essay review (`ESSAY_REVIEW.md`), one point at a
 time with the owner's approval:**
 
