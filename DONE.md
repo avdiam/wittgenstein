@@ -40,6 +40,9 @@ time with the owner's approval:**
   a crisis (section 5, Frege's appendix and the fact that a contradiction
   proves everything), and what was at stake in the decision problem
   (section 8, Hardy 1929). Verdicts in `CROSSCHECK_DONE.md`.
+- Point 6 done: the epilogue now says that the recurring pattern is a way
+  of reading the history, not a law that governs it. The introduction was
+  left as it is.
 
 **Status after the second session of 2026-11-15:**
 
