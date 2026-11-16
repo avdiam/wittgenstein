@@ -20,13 +20,6 @@ item is finished, move it to `DONE.md` with the date.
    proof, the decidability examples) into folding blocks; a search box like
    the Tractatus one; a custom domain.
 
-3. The analysis uses its own Greek terms, which differ in wording from the
-   Kitsopoulos translation for about a dozen German terms (list in
-   `CROSSCHECK_DONE.md`, section C1; for example *Sachlage* «περίσταση» /
-   «κατάσταση», *Urzeichen* «πρωταρχικό σημείο» / «πρωτοσημείο», *Komplex*
-   «σύμπλεγμα» / «πλέγμα»). To decide: leave it so, or add a short note to
-   the analysis that names the published terms next to its own, for readers
-   who use that translation.
 
 ## Can be done without a decision
 

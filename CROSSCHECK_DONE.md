@@ -479,7 +479,7 @@ Source: the Papazisis 1978 printing, read through its OCR text (`ocr_local/tract
 | *Umgangssprache* | καθημερινή γλώσσα | κοινή γλώσσα | different wording |
 | 3.328 *Devise Occams* | (was «αξίωμα») | αρχή | **corrected** earlier on 2026-11-16 (row under "Essay review, point 7") |
 
-Outcome: no term of the analysis is wrong against the published translation. The differences are choices of wording and are left as they are. Whether the analysis should name Kitsopoulos's terms next to its own is a question for the owner (`TODO.md`).
+Outcome: no term of the analysis is wrong against the published translation. The differences are choices of wording and are left as they are. By the owner's decision of the same day, a note in section 2 of the analysis («Οι όροι στην ελληνική μετάφραση») names ten of his terms next to the analysis's own.
 
 ## Essay review, point 7: Greek renderings against the published translations (2026-11-16)
 

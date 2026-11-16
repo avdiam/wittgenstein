@@ -57,7 +57,10 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   Kitsopoulos translation (Papazisis 1978) through the edition's own index
   of terms. Thirty-four terms are the same; about a dozen differ in
   wording only; nothing was wrong, so nothing was changed. Table in
-  `CROSSCHECK_DONE.md`. A question for the owner is in `TODO.md`.
+  `CROSSCHECK_DONE.md`. By the owner's decision a note was then added to
+  section 2 of the analysis, after the «Μεταφραστική Παγίδα» note: «Οι όροι
+  στην ελληνική μετάφραση», naming ten of Kitsopoulos's terms next to the
+  analysis's own.
 - *Investigations* §38 located in the published translation (p. 44, page
   image read): «έχει σκόλη», where the essay has «κάνει αργία». Same
   sense; the essay keeps its own rendering. The translator of that
