@@ -21,16 +21,19 @@ item is finished, move it to `DONE.md` with the date.
    owner asks for a push.
 1. Headings typed in capitals in the Tractatus HTML and the analysis Markdown:
    keep them in capitals or change them to normal case.
-2. Possible next steps for the essay page: split long passages (the halting
+2. The Tractatus page quotes the Pears–McGuinness translation (1961, still
+   under copyright) for 65 propositions, about 1,200 words, in the tree
+   explorer's data (`pm:` fields) and in the three-way comparisons. The
+   quotations are short and serve a comparison, but `LICENSE` section 3
+   does not mention them. To decide: keep them and say so in `LICENSE`,
+   reduce them, or remove them.
+3. Possible next steps for the essay page: split long passages (the halting
    proof, the decidability examples) into folding blocks; a search box like
    the Tractatus one; a custom domain.
 
 ## Can be done without a decision
 
-1. The analysis Markdown still has a few strong phrases (noted on 2026-11-14
-   at lines 8, 10, 14, 194, 1110; the lines may have moved) that the HTML no
-   longer repeats. The tone rule in `CLAUDE.md` applies.
-2. The Tractatus page has not been checked at a real 1920 px window (only in
+1. The Tractatus page has not been checked at a real 1920 px window (only in
    frames of 400 px and 1800 px inside a 1280 px window).
 
 ## Needs printed books or library access

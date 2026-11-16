@@ -28,6 +28,18 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
 - `ESSAY_REVIEW.md` (local review notes) was deleted with the owner's
   approval: all seven points are recorded below, and its two open items
   are in `TODO.md` and `CROSSCHECK_PLAN.md`.
+- Tone of the analysis Markdown: fourteen strong phrases were reworded
+  (the five noted on 2026-11-14 and nine of the same kind found by a
+  search of the whole file), among them «μνημειώδους», «συντρίβει»,
+  «γκρέμισε», «ωρολογιακή βόμβα» and «αλλάζει δραματικά τόνο». Words that
+  belong to quotations of Wittgenstein were left («μεγαλειώδη έργα του
+  Frege», «τα βαθύτερα προβλήματα»), and so were «περίφημο» / «διάσημο»
+  and the emphatic «δεν λέει απολύτως τίποτα». Hume's "axiom" is now a
+  "position" («θέση»), also in the hand-written summary of the page.
+- Proposition 3.328 in the analysis and in the page (summary and tree
+  data): «του αξιώματος του Occam» is now «της αρχής του Occam», as in
+  the essay; the German has *Devise*. The first clause keeps «δεν
+  χρησιμοποιείται». Row in `CROSSCHECK_DONE.md`.
 - The tight gap before accented capitals seen in the headless captures is
   not a page problem: the owner saw a normal gap in a normal browser.
 

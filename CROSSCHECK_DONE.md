@@ -471,6 +471,7 @@ Compared with the Kitsopoulos *Tractatus* (journal printing and Papazisis 1978) 
 | 3.328 | The essay had «δεν χρειάζεται» and «του ξυραφιού του Occam». German: *Wird ein Zeichen nicht gebraucht … Das ist der Sinn der Devise Occams*. Ogden (Gutenberg text): "not necessary", "Occam's razor"; Kitsopoulos 1978 (page image read): «δε χρησιμοποιείται», «της αρχής του Occam». | **corrected**; translators differ on *gebraucht* | Quotation reworded by the owner («δεν είναι αναγκαίο», «της αρχής του Occam»); a sentence names both readings. |
 | 5.44, 5.633; *Investigations* §2, §109, §185, §243 | Located by keyword on a second pass; paraphrases with the same sense (§2 «πλίνθος» for «τούβλο»; §109 «μάγευση» for «γοητεία», German *Verhexung*) | confirmed | none |
 | *Investigations* §38 («κάνει αργία») | Not located in the OCR text | not checked | Listed in `CROSSCHECK_PLAN.md`. |
+| 3.328 in the analysis Markdown and in the Tractatus page (summary and tree data), checked on 2026-11-16 after the essay's rewording | First clause «δεν χρησιμοποιείται», the reading Kitsopoulos has. Second sentence had «του αξιώματος του Occam»; German *Devise Occams*, Kitsopoulos 1978 «της αρχής του Occam» (row above) | **corrected** | «της αρχής του Occam» in the three places. The first clause is left as it is; the essay names both readings of *gebraucht*. |
 
 ## Open for the essay
 
