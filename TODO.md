@@ -12,8 +12,8 @@ item is finished, move it to `DONE.md` with the date.
 
 0. The essay review is finished (2026-11-16; details in `DONE.md`). Two
    things remain from it: a reader outside Anthropic for the two 2026
-   paragraphs of §11, and the eight passages not yet compared with the
-   published translations (`CROSSCHECK_PLAN.md`). The commits since
+   paragraphs of §11, and one passage (§38) not yet compared with the
+   published translation (`CROSSCHECK_PLAN.md`). The commits since
    `a1b59c6` are local only: the live site does not show them until the
    owner asks for a push.
 1. Headings typed in capitals in the Tractatus HTML and the analysis Markdown:

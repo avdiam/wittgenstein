@@ -17,7 +17,7 @@ remove it here.
 - Standard life dates were not checked one by one.
 - Still weak: the page of Turing's bridge remark in Diamond's *LFM*; the wording of Strachey's letter; Adorno's page; Drury's page; Bays's 2004 argument. (Moore's examiner's report is no longer quoted: cut on 2026-11-15.)
 - Turing's 1950 page range (433–460) and Moore's second 1954 page range are from memory.
-- The Greek renderings were compared with the published translations on 2026-11-16 (ledger, "Essay review, point 7"). Still to locate and compare: 3.328, 5.44, 5.633; *Investigations* §2, §38, §109, §185, §243. The translator of the 1977 *Investigations* is to be confirmed from its title page.
+- The Greek renderings were compared with the published translations on 2026-11-16 (ledger, "Essay review, point 7"). Still to locate and compare: *Investigations* §38 («κάνει αργία»). Proposition 3.328 was reworded in the essay; the analysis Markdown should be checked for the same wording under C1. The translator of the 1977 *Investigations* is to be confirmed from its title page.
 
 ## Method
 

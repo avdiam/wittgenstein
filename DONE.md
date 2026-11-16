@@ -47,8 +47,9 @@ time with the owner's approval:**
   with the Kitsopoulos *Tractatus* and the Papazisis *Investigations*. The
   terms agree. Three corrections (4.014, 5.4611, §309) and proposition 7
   now in the published wording, with credit. Tesseract was installed by
-  the owner; `tools/ocr_pdf.py` makes the OCR text (git-ignored). Eight
-  passages not yet located are listed in `CROSSCHECK_PLAN.md`.
+  the owner; `tools/ocr_pdf.py` makes the OCR text (git-ignored). On a
+  second pass 3.328 was reworded (the owner's wording) with a sentence on
+  the two readings of *gebraucht*; only §38 is still to be located.
 
 **Status after the second session of 2026-11-15:**
 

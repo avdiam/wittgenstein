@@ -468,7 +468,9 @@ Compared with the Kitsopoulos *Tractatus* (journal printing and Papazisis 1978) 
 | *Investigations* §309 | The answer was in the second person («Να δείξεις»); published and German are first person / infinitive. Page image read (p. 136). | **corrected** | «Να δείξω». |
 | 7 | Essay's own wording differed slightly from Kitsopoulos. Page image read (1978, p. 132 of the PDF). | adopted | Published wording used, translator named in the sentence and in the sources. |
 | *unsinnig* («ανόητες»; Kitsopoulos «μη νοητές» at 4.4611, «στερημένες από νόημα» at 6.54); 6.54 «σκάλα» / «ανεμόσκαλα»; 4.0312; 4.112 (journal «θεωρία», 1978 «διδασκαλία»); 4.0031; 1.1; 6.36311; 4.1212; 6.421; §124; §255 | Differences of wording, same sense | left as the essay's own renderings | none |
-| 3.328, 5.44, 5.633; *Investigations* §2, §38, §109, §185, §243 | Not located in the OCR text (misread numbers) | not checked | Listed in `CROSSCHECK_PLAN.md`. |
+| 3.328 | The essay had «δεν χρειάζεται» and «του ξυραφιού του Occam». German: *Wird ein Zeichen nicht gebraucht … Das ist der Sinn der Devise Occams*. Ogden (Gutenberg text): "not necessary", "Occam's razor"; Kitsopoulos 1978 (page image read): «δε χρησιμοποιείται», «της αρχής του Occam». | **corrected**; translators differ on *gebraucht* | Quotation reworded by the owner («δεν είναι αναγκαίο», «της αρχής του Occam»); a sentence names both readings. |
+| 5.44, 5.633; *Investigations* §2, §109, §185, §243 | Located by keyword on a second pass; paraphrases with the same sense (§2 «πλίνθος» for «τούβλο»; §109 «μάγευση» for «γοητεία», German *Verhexung*) | confirmed | none |
+| *Investigations* §38 («κάνει αργία») | Not located in the OCR text | not checked | Listed in `CROSSCHECK_PLAN.md`. |
 
 ## Open for the essay
 
