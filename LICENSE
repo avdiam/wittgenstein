@@ -40,6 +40,15 @@ This repository contains texts and code under two different licences.
    - The quotations of Wittgenstein's works in German and in the Ogden/Ramsey
      translation (1922) are in the public domain in the European Union and the
      United States.
+   - The Tractatus page (docs/tractatus.html) quotes the translation of
+     D. F. Pears and B. F. McGuinness (Routledge & Kegan Paul, 1961) for 65
+     propositions, about 1,200 words in all, next to the German text and
+     the Ogden/Ramsey translation, in order to compare the translations.
+     The essay quotes proposition 7 in the Greek translation of Thanasis
+     Kitsopoulos (Papazisis, 1978). Both translations are still under
+     copyright, which remains with their owners. They are quoted with
+     credit, for comparison and commentary; the CC BY 4.0 licence of
+     section 1 does not cover them.
    - Tractatus Logico-Philosophicus/5740-pdf.pdf is the Project Gutenberg
      eBook #5740 and carries the Project Gutenberg License stated inside it.
    - The tree-view PDF of the Ludwig Wittgenstein Project states that its text

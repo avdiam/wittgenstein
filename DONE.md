@@ -40,6 +40,11 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   data): «του αξιώματος του Occam» is now «της αρχής του Occam», as in
   the essay; the German has *Devise*. The first clause keeps «δεν
   χρησιμοποιείται». Row in `CROSSCHECK_DONE.md`.
+- Pears–McGuinness on the Tractatus page (65 propositions, about 1,200
+  words, in the tree data and the three-way comparisons): the owner
+  decided to keep the quotations. `LICENSE` section 3 now states them,
+  with the Kitsopoulos wording of proposition 7 in the essay: quoted with
+  credit for comparison, copyright with the owners, not under CC BY.
 - The tight gap before accented capitals seen in the headless captures is
   not a page problem: the owner saw a normal gap in a normal browser.
 
