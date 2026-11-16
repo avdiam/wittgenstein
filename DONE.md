@@ -28,6 +28,13 @@ time with the owner's approval:**
   and two sentences on what became of Hilbert's programme at the end of
   «Το δεύτερο θεώρημα» in section 7. The lists of names in sections 10
   and 11 were left as they are.
+- Point 4 done: the 2026 paragraph of section 11 is dated («τη χρονιά που
+  γράφεται αυτό το κείμενο (Νοέμβριος)»). By the owner's rule (only what is
+  grounded, the same standard for both companies) the thirty-hour repeat
+  and the black-hole problems were cut, and a paragraph was added on the
+  OpenAI model's disproof of Erdős's unit distance conjecture (May 2026).
+  Timeline row and sources updated. Still advisable: a reader outside
+  Anthropic to check these two paragraphs for fairness.
 
 **Status after the second session of 2026-11-15:**
 

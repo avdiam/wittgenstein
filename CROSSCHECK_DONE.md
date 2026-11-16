@@ -435,6 +435,16 @@ Section 3 now ends at Kant; its later material moved to the sections that use it
 | The private-language argument challenges the picture of words as standing for ideas in the speaker's mind, usually attributed to Locke (section 10) | SEP `private-language` §2 (the idea is "often attributed to John Locke"; the argument targets the motivation for a family of theories, not one theory) | confirmed with qualification | Clause added with «αποδίδεται συνήθως στον Locke»; the existing note on the argument follows it. |
 | Pragmatism (Peirce, James, Dewey); Gettier 1963 and Russell's stopped clock | rows above ("19th–20th c. epistemology in section 3", "The stopped clock") | unchanged | Moved: pragmatists to the Rorty sentence in section 10, Gettier to a paragraph after *On Certainty*. Husserl cut from the body. |
 
+## Essay review, point 4: the 2026 paragraph (2026-11-16)
+
+The owner's rule: keep only what is grounded, and hold both companies to the same standard.
+
+| Claim | Sources | Verdict | Action |
+| :-- | :-- | :-- | :-- |
+| An internal OpenAI model disproved Erdős's unit distance conjecture (1946), May 2026 (section 11) | [Alon et al., arXiv 2605.20695](https://arxiv.org/abs/2605.20695), abstract ("a short, digested, human-verified version of the recent OpenAI-generated counterexample"; 9 authors; submitted 20 May 2026); [Huang, *PNAS* 123(44), 2026](https://pmc.ncbi.nlm.nih.gov/articles/PMC13732072) (peer-reviewed; 8 of 8 trials with GPT-5.5 Pro); [Erdős unit distance exponent](https://teorth.github.io/optimizationproblems/constants/84a.html). OpenAI's own post refused the fetch. | confirmed | Added as a new paragraph. The nine authors are named, not called "outside the company" (affiliations not on the pages). Abstract pages read, not the PDFs. |
+| OpenAI's bulk release of 722 manuscripts (October 2026); Navier–Stokes; Exponential Time Hypothesis; Kakeya; Yang–Mills existence | [The Conversation, 9 Oct 2026](https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837); [Wikipedia](https://en.wikipedia.org/wiki/OpenAI_bulk_release_of_mathematical_papers); [Scientific American, 27 Oct 2026](https://www.scientificamerican.com/article/dueling-proofs-from-openai-and-anthropic-astound-scientists/); [CASRAI editorial](https://casrai.org/news/ai-rivals-physics-mathematical-challenge-2026). *Science* article not readable. | journalism only; disputed or under review | Left out. |
+| Fable 5.2: 1,000 agents re-formalized FLT in 30 hours; two open problems on black holes | rows above (company only; not peer-reviewed) | below the standard applied to OpenAI | Cut from section 11 on 2026-11-16; the announcement removed from the sources. |
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.
