@@ -35,6 +35,11 @@ time with the owner's approval:**
   OpenAI model's disproof of Erdős's unit distance conjecture (May 2026).
   Timeline row and sources updated. Still advisable: a reader outside
   Anthropic to check these two paragraphs for fairness.
+- Point 5 done: three passages of motivation were added: why Babbage wanted
+  a machine (section 4, the hand-computed tables), why one contradiction was
+  a crisis (section 5, Frege's appendix and the fact that a contradiction
+  proves everything), and what was at stake in the decision problem
+  (section 8, Hardy 1929). Verdicts in `CROSSCHECK_DONE.md`.
 
 **Status after the second session of 2026-11-15:**
 

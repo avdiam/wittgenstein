@@ -445,6 +445,17 @@ The owner's rule: keep only what is grounded, and hold both companies to the sam
 | OpenAI's bulk release of 722 manuscripts (October 2026); Navier–Stokes; Exponential Time Hypothesis; Kakeya; Yang–Mills existence | [The Conversation, 9 Oct 2026](https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837); [Wikipedia](https://en.wikipedia.org/wiki/OpenAI_bulk_release_of_mathematical_papers); [Scientific American, 27 Oct 2026](https://www.scientificamerican.com/article/dueling-proofs-from-openai-and-anthropic-astound-scientists/); [CASRAI editorial](https://casrai.org/news/ai-rivals-physics-mathematical-challenge-2026). *Science* article not readable. | journalism only; disputed or under review | Left out. |
 | Fable 5.2: 1,000 agents re-formalized FLT in 30 hours; two open problems on black holes | rows above (company only; not peer-reviewed) | below the standard applied to OpenAI | Cut from section 11 on 2026-11-16; the announcement removed from the sources. |
 
+## Essay review, point 5: motivation (2026-11-16)
+
+| Claim | Sources | Verdict | Action |
+| :-- | :-- | :-- | :-- |
+| Printed tables for navigators and astronomers were calculated, copied and typeset by hand, with errors (section 4) | [Computer History Museum, "The Age of Machinery"](https://www.computerhistory.org/babbage/history/); Wikipedia, "Charles Babbage" (background on mathematical tables) | confirmed | Added. |
+| Babbage, checking tables with John Herschel in 1821, wished the calculations "had been executed by steam" (section 4) | Computer History Museum, same page ("I wish to God these calculations had been executed by steam"); Wikipedia dates the episode "1821 or 1822" and does not give the exclamation | one source | Added as «κατά μια γνωστή αφήγηση», «γύρω στο 1821», in indirect speech. |
+| Frege, appendix to *Grundgesetze* II: hardly anything more unfortunate can befall a scientific writer than to have a foundation of his edifice shaken (section 5) | Wikipedia, "Russell's paradox", note 23, quoting Beaney, *The Frege Reader*, p. 279; the appendix itself in SEP `russell-paradox` §2.4 and IEP `par-russ` | confirmed (wording from one source, in English translation) | Added in indirect speech, only the part read. Frege's reply of 22 June 1902 ("consternation") was not found and is not used. |
+| In classical logic any proposition follows from a contradiction (section 5) | SEP `russell-paradox` §4; Wikipedia, "Russell's paradox" | confirmed | Added. |
+| Mathematics regarded until then as the most secure part of knowledge; the following years called the crisis of foundations (section 5) | not searched (standard account; the term is in the section title) | not checked | Added; accepted by the owner as standard. |
+| Hardy (1929) stated the decision problem and said such a system of rules "is not to be expected" (section 8) | SEP `church-turing` §2.6, citing Hardy 1929: 16; bibliographic details of *Mind* 38 from the entry's bibliography (seen in summary only) | one source | Added. The remark that mathematicians' activities "would come to an end" was not found and is not used. |
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.
