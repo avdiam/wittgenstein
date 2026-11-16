@@ -456,6 +456,31 @@ The owner's rule: keep only what is grounded, and hold both companies to the sam
 | Mathematics regarded until then as the most secure part of knowledge; the following years called the crisis of foundations (section 5) | not searched (standard account; the term is in the section title) | not checked | Added; accepted by the owner as standard. |
 | Hardy (1929) stated the decision problem and said such a system of rules "is not to be expected" (section 8) | SEP `church-turing` §2.6, citing Hardy 1929: 16; bibliographic details of *Mind* 38 from the entry's bibliography (seen in summary only) | one source | Added. The remark that mathematicians' activities "would come to an end" was not found and is not used. |
 
+## C1: Greek terms of the analysis against Kitsopoulos (2026-11-16)
+
+Source: the Papazisis 1978 printing, read through its OCR text (`ocr_local/tractatus_papazisis/`): the edition's own Greek–German index of terms («Πίνακας όρων») and the running text of the propositions named. Only single terms are copied. The OCR reads β as θ in this typeface («θάση» is «βάση»). The analysis states its own choices for *Sachverhalt* / *Sachlage* / *Tatsache* in section 2 (the note «Προσοχή στη Μεταφραστική Παγίδα»).
+
+| German | Analysis | Kitsopoulos 1978 | Verdict |
+| :-- | :-- | :-- | :-- |
+| *Tatsache*, *Sachverhalt*, *Gegenstand*, *Ding*, *Substanz*, *Struktur*, *Bild*, *Form der Abbildung*, *abbildende Beziehung*, *Fühler* (2.1515), *logischer Raum*, *logischer Ort*, *Gedanke*, *Satz*, *Satzzeichen*, *Name*, *Zeichen*, *Symbol*, *Ausdruck*, *Sinn*, *Elementarsatz*, *Operation*, *Wahrheitsoperation*, *Wahrheitsgründe*, *Wahrheitsargumente*, *Wahrheitsbedingungen*, *Tautologie*, *formaler Begriff*, *Variable*, *zeigen*, *Grenze*, *Wille*, *Aberglaube* (5.1361), *Rätsel* (6.5) | γεγονός, κατάσταση πραγμάτων, αντικείμενο, πράγμα, ουσία, δομή, εικόνα, μορφή της απεικόνισης, απεικονιστική σχέση, κεραίες, λογικός χώρος, λογικός τόπος, σκέψη, πρόταση, προτασιακό σημείο, όνομα, σημείο, σύμβολο, έκφραση, νόημα, στοιχειώδης πρόταση, πράξη, πράξη αληθείας, βάσεις αληθείας, ορίσματα αληθείας, συνθήκες αληθείας, ταυτολογία, τυπική έννοια, μεταβλητή, δείχνω, όριο, βούληση, δεισιδαιμονία, αίνιγμα | the same (he writes «αλήθειας») | confirmed |
+| *Bedeutung* | σημασία / αναφορά | σημασία | same first term; the analysis adds «αναφορά» for Frege's sense of the word |
+| *Sachlage* | περίσταση / δυνατή κατάσταση | κατάσταση | different word, by the analysis's stated choice |
+| *Urzeichen* | πρωταρχικό σημείο | πρωτοσημείο | different wording |
+| *Urbild* | πρωτότυπο | πρωτοεικόνα | different wording |
+| *Komplex* | σύμπλεγμα | πλέγμα | different wording |
+| *Konfiguration* | διαμόρφωση | συσχηματισμός | different wording |
+| *Zusammenhang*, *Verkettung* (4.22) | συνάφεια, αλυσίδα | συσχετισμός, αλύσωμα | different wording |
+| *vertreten* (3.22, 4.0312) | εκπροσωπώ | υποκαθιστώ | different wording |
+| *Erläuterungen* (4.112, 6.54) | διασαφηνίσεις | διευκρινίσεις | different wording |
+| *sinnlos* (4.461) | χωρίς νόημα | δίχως νόημα | same sense |
+| *unsinnig*, *Unsinn* | ανόητος / ασυνάρτητος, ανοησία / ασυναρτησία | α-νόητος, α-νοησία (with a hyphen; «μη νοητές» at 4.4611) | same root; he marks with the hyphen that the everyday sense "foolish" is not meant |
+| *Scheinsatz*, *Scheinbegriff* | ψευδο-πρόταση, ψευδο-έννοια | ψευτοπρόταση, ψευτοέννοια | same sense |
+| *das Mystische* (6.44, 6.522) | το Μυστικιστικό | το μυστικό στοιχείο | different wording |
+| *Umgangssprache* | καθημερινή γλώσσα | κοινή γλώσσα | different wording |
+| 3.328 *Devise Occams* | (was «αξίωμα») | αρχή | **corrected** earlier on 2026-11-16 (row under "Essay review, point 7") |
+
+Outcome: no term of the analysis is wrong against the published translation. The differences are choices of wording and are left as they are. Whether the analysis should name Kitsopoulos's terms next to its own is a question for the owner (`TODO.md`).
+
 ## Essay review, point 7: Greek renderings against the published translations (2026-11-16)
 
 Compared with the Kitsopoulos *Tractatus* (journal printing and Papazisis 1978) and the Papazisis 1977 *Investigations*, located through OCR text (`tools/ocr_pdf.py`, output in the git-ignored `ocr_local/`). Published wording is not copied here beyond single terms and proposition 7.
@@ -470,7 +495,8 @@ Compared with the Kitsopoulos *Tractatus* (journal printing and Papazisis 1978) 
 | *unsinnig* («ανόητες»; Kitsopoulos «μη νοητές» at 4.4611, «στερημένες από νόημα» at 6.54); 6.54 «σκάλα» / «ανεμόσκαλα»; 4.0312; 4.112 (journal «θεωρία», 1978 «διδασκαλία»); 4.0031; 1.1; 6.36311; 4.1212; 6.421; §124; §255 | Differences of wording, same sense | left as the essay's own renderings | none |
 | 3.328 | The essay had «δεν χρειάζεται» and «του ξυραφιού του Occam». German: *Wird ein Zeichen nicht gebraucht … Das ist der Sinn der Devise Occams*. Ogden (Gutenberg text): "not necessary", "Occam's razor"; Kitsopoulos 1978 (page image read): «δε χρησιμοποιείται», «της αρχής του Occam». | **corrected**; translators differ on *gebraucht* | Quotation reworded by the owner («δεν είναι αναγκαίο», «της αρχής του Occam»); a sentence names both readings. |
 | 5.44, 5.633; *Investigations* §2, §109, §185, §243 | Located by keyword on a second pass; paraphrases with the same sense (§2 «πλίνθος» for «τούβλο»; §109 «μάγευση» for «γοητεία», German *Verhexung*) | confirmed | none |
-| *Investigations* §38 («κάνει αργία») | Not located in the OCR text | not checked | Listed in `CROSSCHECK_PLAN.md`. |
+| *Investigations* §38 («κάνει αργία») | Located on a later pass (2026-11-16): p. 44 of the Papazisis edition, page image read. The published wording is «έχει σκόλη» (German *feiert*). | difference of wording, same sense | Left as the essay's own rendering. |
+| Translator of the Papazisis *Investigations* | Cover and title page of the scan: «εισαγωγή – μετάφραση – σχόλια Παύλος Χριστοδουλίδης», series «Φιλοσοφία – Πηγές». The year 1977 does not appear in the OCR text. | translator confirmed; year not checked | none: the essay does not name this edition. |
 | 3.328 in the analysis Markdown and in the Tractatus page (summary and tree data), checked on 2026-11-16 after the essay's rewording | First clause «δεν χρησιμοποιείται», the reading Kitsopoulos has. Second sentence had «του αξιώματος του Occam»; German *Devise Occams*, Kitsopoulos 1978 «της αρχής του Occam» (row above) | **corrected** | «της αρχής του Occam» in the three places. The first clause is left as it is; the essay names both readings of *gebraucht*. |
 
 ## Open for the essay

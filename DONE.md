@@ -48,6 +48,20 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
 - Pushed at the owner's request on 2026-11-16 (`a1b59c6..f35d6a4`, twenty
   commits). The live essay page shows the new glossary entry and the live
   Tractatus page the new wording of 3.328.
+- The Tractatus page was checked at 1920 px (headless Chrome, window
+  1920 × 1080 and 1920 × 2160): all six views lay out correctly, with the
+  contents pane, the reading column and the two- and three-column grids
+  of the labs in place. Seen and left: in lab 03-A the label «Κεραίες
+  (Fühler 2.1515)» sits on the dashed line it names.
+- C1 done: the Greek terms of the analysis were compared with the
+  Kitsopoulos translation (Papazisis 1978) through the edition's own index
+  of terms. Thirty-four terms are the same; about a dozen differ in
+  wording only; nothing was wrong, so nothing was changed. Table in
+  `CROSSCHECK_DONE.md`. A question for the owner is in `TODO.md`.
+- *Investigations* §38 located in the published translation (p. 44, page
+  image read): «έχει σκόλη», where the essay has «κάνει αργία». Same
+  sense; the essay keeps its own rendering. The translator of that
+  edition is Παύλος Χριστοδουλίδης (cover of the scan).
 - The tight gap before accented capitals seen in the headless captures is
   not a page problem: the owner saw a normal gap in a normal browser.
 
