@@ -8,6 +8,15 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-16, essay review (`ESSAY_REVIEW.md`), one point at a
+time with the owner's approval:**
+
+- Point 1 done: the introduction now states the thesis (each attempt at a
+  complete system of rules gave a tool and exact knowledge of its limits;
+  self-reference behind the limits of Russell, Gödel and Turing) in a new
+  second paragraph, and ends with a reading map (sections 7 and 8 are the
+  most technical). The epilogue is unchanged.
+
 **Status after the second session of 2026-11-15:**
 
 - Item 4.3 done: the essay was scanned as a whole and ten proposals were
