@@ -10,7 +10,10 @@ item is finished, move it to `DONE.md` with the date.
 
 ## For the owner to decide
 
-0. The essay review is finished (2026-11-16; details in `DONE.md`). Two
+0. **Next session, first:** look at the rendered essay page and the Word
+   file (neither was viewed after the review's changes, only built and
+   checked), make any further changes the owner wants, then push.
+   The essay review is finished (2026-11-16; details in `DONE.md`). Two
    things remain from it: a reader outside Anthropic for the two 2026
    paragraphs of §11, and one passage (§38) not yet compared with the
    published translation (`CROSSCHECK_PLAN.md`). The commits since
