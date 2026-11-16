@@ -11,8 +11,8 @@ item is finished, move it to `DONE.md` with the date.
 ## For the owner to decide
 
 0. **In progress:** the essay review in `ESSAY_REVIEW.md` (local only,
-   git-ignored). Points 1 to 4 were done on 2026-11-16; three points remain (motivation in the voice, the epilogue's pattern, the
-   Greek renderings). One point at a time, each with the owner's approval.
+   git-ignored). Points 1 to 5 were done on 2026-11-16; two points remain (the
+   epilogue's pattern, the Greek renderings). One point at a time, each with the owner's approval.
 1. Headings typed in capitals in the Tractatus HTML and the analysis Markdown:
    keep them in capitals or change them to normal case.
 2. Possible next steps for the essay page: split long passages (the halting
