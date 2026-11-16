@@ -12,3 +12,5 @@ Tractatus Logico-Philosophicus/Κιντή_Σκάλα_Tractatus.pdf
 second phase/
 # OCR text of the copyrighted editions (made by tools/ocr_pdf.py): local only
 ocr_local/
+# Claude Code settings for this machine: local only
+.claude/
