@@ -12,13 +12,8 @@ item is finished, move it to `DONE.md` with the date.
 
 0. **Next:** make any further changes the owner wants to the essay, then
    push. The rendered page and the Word file were viewed on 2026-11-16
-   after the review's changes (details in `DONE.md`). Two small points
+   after the review's changes (details in `DONE.md`). One small point
    came out of that viewing, for the owner:
-   - In the page's serif typeface (Literata) the accent of a capital
-     (Ά, Έ, Ό) hangs to the left of the letter, so after a full stop, a
-     bracket or «, the gap almost closes («αναγκαστικά. Ένα», «(Όχι»).
-     Seen in headless Chrome; to be confirmed in a normal browser before
-     deciding whether to do anything about it.
    - The glossary has an entry «Γνωστικισμός (*cognitivism*)», but the
      text of section 11 uses only «γνωσιακή επανάσταση». Either rename
      the entry or use the term once in the text.
