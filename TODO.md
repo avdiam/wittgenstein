@@ -12,12 +12,7 @@ item is finished, move it to `DONE.md` with the date.
 
 0. **Next:** make any further changes the owner wants to the essay, then
    push. The rendered page and the Word file were viewed on 2026-11-16
-   after the review's changes (details in `DONE.md`). One small point
-   came out of that viewing, for the owner:
-   - The glossary has an entry «Γνωστικισμός (*cognitivism*)», but the
-     text of section 11 uses only «γνωσιακή επανάσταση». Either rename
-     the entry or use the term once in the text.
-
+   after the review's changes (details in `DONE.md`).
    The essay review is finished (2026-11-16; details in `DONE.md`). Two
    things remain from it: a reader outside Anthropic for the two 2026
    paragraphs of §11, and one passage (§38) not yet compared with the

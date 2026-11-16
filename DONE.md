@@ -20,6 +20,13 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   now in section 10), and the list of Stanford Encyclopedia entries under
   «Έργα αναφοράς» still named Comte, Nietzsche, Husserl and Foucault, whom
   the essay no longer mentions.
+- The glossary entry «Γνωστικισμός (*cognitivism*)» was renamed
+  «Γνωσιακή επανάσταση», the term section 11 uses, with *cognitivism*
+  kept as the English name inside the definition. Decided by the owner:
+  no Greek «-ισμός» form, because «γνωστικισμός» is also the name of the
+  religious movement (Gnosticism).
+- The tight gap before accented capitals seen in the headless captures is
+  not a page problem: the owner saw a normal gap in a normal browser.
 
 **Session of 2026-11-16, essay review (`ESSAY_REVIEW.md`), one point at a
 time with the owner's approval:**
