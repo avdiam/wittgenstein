@@ -16,6 +16,13 @@ time with the owner's approval:**
   self-reference behind the limits of Russell, Gödel and Turing) in a new
   second paragraph, and ends with a reading map (sections 7 and 8 are the
   most technical). The epilogue is unchanged.
+- Point 2 done, after a full reading of the essay: section 3 stays in place
+  and now ends at Kant and the *Tractatus*. Mill moved to section 5 (Frege's
+  logicism), Gettier to section 10 (after *On Certainty*), the pragmatists
+  to the Rorty sentence in section 10; Husserl was cut. Two forward
+  references of section 3 that no later section picked up are now kept:
+  a Locke clause in section 10 (private language) and a Hume paragraph in
+  section 11 («Τα όρια»). Verdicts in `CROSSCHECK_DONE.md`.
 
 **Status after the second session of 2026-11-15:**
 

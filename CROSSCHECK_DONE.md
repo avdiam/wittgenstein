@@ -424,6 +424,17 @@ Corrections made during the section-by-section review (TODO item 4.3).
 | Ibn Rushd (Averroes, 1126–1198), Córdoba; commentaries on nearly all of Aristotle, Latin translations in the 13th c., «the Commentator» (section 2) | SEP `ibn-rushd`; SEP `arabic-islamic-influence` | confirmed (standard account; not searched in this session) | Added; the sentence on Latin reception now names his commentaries next to Avicenna. |
 | Aquinas (c. 1225–1274): commentaries on *De interpretatione* and *Posterior Analytics*; William of Moerbeke's Greek translations; moderate realism on universals (section 2) | SEP `aquinas`, `medieval-problem-universals` | confirmed (standard account; not searched in this session) | Added. Moerbeke named only as a translator, not as working at Aquinas's request (contested). |
 
+## Essay review, point 2 (2026-11-16)
+
+Section 3 now ends at Kant; its later material moved to the sections that use it.
+
+| Claim | Sources | Verdict | Action |
+| :-- | :-- | :-- | :-- |
+| Frege criticised Mill's view that arithmetical truths are generalisations from experience, in the *Grundlagen* (1884) (section 5) | [IEP, "Frege"](https://iep.utm.edu/frege/) §3; [Wikipedia, *The Foundations of Arithmetic*](https://en.wikipedia.org/wiki/The_Foundations_of_Arithmetic), "Criticisms of predecessors: Mill", quoting Frege 1960 pp. 9–12. SEP `frege` and `mill` do not mention it in the parts read. | confirmed (second source is Wikipedia; *Grundlagen* section numbers not checked) | Sentence moved from section 3 to section 5, with the work and year added. |
+| Learning from examples is induction in Hume's sense and rests on an unproven assumption (section 11) | SEP `induction-problem` §3.4 (machine learning needs "inductive bias"; no-free-lunch theorems read as versions of Hume's first fork) | confirmed (one source) | New paragraph in «Τα όρια»; it does not say induction causes the «παραισθήσεις». |
+| The private-language argument challenges the picture of words as standing for ideas in the speaker's mind, usually attributed to Locke (section 10) | SEP `private-language` §2 (the idea is "often attributed to John Locke"; the argument targets the motivation for a family of theories, not one theory) | confirmed with qualification | Clause added with «αποδίδεται συνήθως στον Locke»; the existing note on the argument follows it. |
+| Pragmatism (Peirce, James, Dewey); Gettier 1963 and Russell's stopped clock | rows above ("19th–20th c. epistemology in section 3", "The stopped clock") | unchanged | Moved: pragmatists to the Rorty sentence in section 10, Gettier to a paragraph after *On Certainty*. Husserl cut from the body. |
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.
