@@ -23,6 +23,11 @@ time with the owner's approval:**
   references of section 3 that no later section picked up are now kept:
   a Locke clause in section 10 (private language) and a Hume paragraph in
   section 11 («Τα όρια»). Verdicts in `CROSSCHECK_DONE.md`.
+- Point 3 done: closing paragraphs that say what to keep were added at the
+  end of section 5 and of section 8 (the latter in the owner's wording),
+  and two sentences on what became of Hilbert's programme at the end of
+  «Το δεύτερο θεώρημα» in section 7. The lists of names in sections 10
+  and 11 were left as they are.
 
 **Status after the second session of 2026-11-15:**
 
