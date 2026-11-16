@@ -31,6 +31,7 @@ is, and scripts in `tools/` regenerate it from the sources.
 | `tools/build_docx.py` | Builds the Word file, with the figures. |
 | `tools/render_figures.py` | Renders the SVG diagrams to PNG with headless Chrome. Run it after changing an SVG; `build_docx.py` stops if a copy is out of date. Not part of `build_all.py`. |
 | `tools/build_all.py` | Runs the three scripts. |
+| `tools/ocr_pdf.py` | Makes searchable text from a scanned PDF with Tesseract (Greek data), for locating passages in the published translations. Output goes to the git-ignored `ocr_local/`. |
 | `Tractatus Logico-Philosophicus/*.pdf` | Source editions used to check quotations (Gutenberg #5740; Stern's tree view). Klement's edition is used too but is not in the repository: see `LICENSE`. |
 | `TODO.md` | Pending work: decisions for the owner and tasks not yet done. |
 | `DONE.md` | Finished work, with dates and details. |

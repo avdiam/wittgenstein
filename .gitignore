@@ -5,3 +5,10 @@ Tractatus Logico-Philosophicus/tlp.pdf
 __pycache__/
 # Essay review notes: kept local until discussed with the owner
 ESSAY_REVIEW.md
+# Published Greek translations and other editions under copyright: keep local only
+Tractatus Logico-Philosophicus/Tractatus logico-philosophicus _ Wittgenstein _ greek*.pdf
+Tractatus Logico-Philosophicus/Wittgenstein-Tractatus.pdf
+Tractatus Logico-Philosophicus/Κιντή_Σκάλα_Tractatus.pdf
+second phase/
+# OCR text of the copyrighted editions (made by tools/ocr_pdf.py): local only
+ocr_local/
