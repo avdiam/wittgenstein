@@ -45,6 +45,9 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   decided to keep the quotations. `LICENSE` section 3 now states them,
   with the Kitsopoulos wording of proposition 7 in the essay: quoted with
   credit for comparison, copyright with the owners, not under CC BY.
+- Pushed at the owner's request on 2026-11-16 (`a1b59c6..f35d6a4`, twenty
+  commits). The live essay page shows the new glossary entry and the live
+  Tractatus page the new wording of 3.328.
 - The tight gap before accented capitals seen in the headless captures is
   not a page problem: the owner saw a normal gap in a normal browser.
 

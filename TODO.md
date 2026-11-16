@@ -6,19 +6,15 @@ item is finished, move it to `DONE.md` with the date.
 
 ## Status
 
-- The live site matches commit `a1b59c6` (2026-11-15); `main` is ahead of it.
+- Pushed on 2026-11-16 (`f35d6a4`, then this note); the live site matches
+  `main` and was checked after the push.
 
 ## For the owner to decide
 
-0. **Next:** make any further changes the owner wants to the essay, then
-   push. The rendered page and the Word file were viewed on 2026-11-16
-   after the review's changes (details in `DONE.md`).
-   The essay review is finished (2026-11-16; details in `DONE.md`). Two
-   things remain from it: a reader outside Anthropic for the two 2026
-   paragraphs of §11, and one passage (§38) not yet compared with the
-   published translation (`CROSSCHECK_PLAN.md`). The commits since
-   `a1b59c6` are local only: the live site does not show them until the
-   owner asks for a push.
+0. The essay review is finished and published (2026-11-16; details in
+   `DONE.md`). Two things remain from it: a reader outside Anthropic for
+   the two 2026 paragraphs of §11, and one passage (§38) not yet compared
+   with the published translation (`CROSSCHECK_PLAN.md`).
 1. Headings typed in capitals in the Tractatus HTML and the analysis Markdown:
    keep them in capitals or change them to normal case.
 2. Possible next steps for the essay page: split long passages (the halting
