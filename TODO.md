@@ -6,13 +6,16 @@ item is finished, move it to `DONE.md` with the date.
 
 ## Status
 
-- The live site matches `main` as of commit `a1b59c6` (2026-11-15).
+- The live site matches commit `a1b59c6` (2026-11-15); `main` is ahead of it.
 
 ## For the owner to decide
 
-0. **In progress:** the essay review in `ESSAY_REVIEW.md` (local only,
-   git-ignored). Points 1 to 6 were done on 2026-11-16; one point remains (the
-   Greek renderings, point 7). One point at a time, each with the owner's approval.
+0. The essay review is finished (2026-11-16; details in `DONE.md`). Two
+   things remain from it: a reader outside Anthropic for the two 2026
+   paragraphs of §11, and the eight passages not yet compared with the
+   published translations (`CROSSCHECK_PLAN.md`). The commits since
+   `a1b59c6` are local only: the live site does not show them until the
+   owner asks for a push.
 1. Headings typed in capitals in the Tractatus HTML and the analysis Markdown:
    keep them in capitals or change them to normal case.
 2. Possible next steps for the essay page: split long passages (the halting

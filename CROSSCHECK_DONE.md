@@ -456,6 +456,20 @@ The owner's rule: keep only what is grounded, and hold both companies to the sam
 | Mathematics regarded until then as the most secure part of knowledge; the following years called the crisis of foundations (section 5) | not searched (standard account; the term is in the section title) | not checked | Added; accepted by the owner as standard. |
 | Hardy (1929) stated the decision problem and said such a system of rules "is not to be expected" (section 8) | SEP `church-turing` §2.6, citing Hardy 1929: 16; bibliographic details of *Mind* 38 from the entry's bibliography (seen in summary only) | one source | Added. The remark that mathematicians' activities "would come to an end" was not found and is not used. |
 
+## Essay review, point 7: Greek renderings against the published translations (2026-11-16)
+
+Compared with the Kitsopoulos *Tractatus* (journal printing and Papazisis 1978) and the Papazisis 1977 *Investigations*, located through OCR text (`tools/ocr_pdf.py`, output in the git-ignored `ocr_local/`). Published wording is not copied here beyond single terms and proposition 7.
+
+| Passage | Finding | Verdict | Action |
+| :-- | :-- | :-- | :-- |
+| Terms: *Sinn* / *Bedeutung*, *Sprachspiel*, *Lebensform*, *Familienähnlichkeiten*; 5.6; 5.1361; main clause of §43 | Same as the published translations | confirmed | none |
+| 4.014 | The essay quoted «λογική μορφή»; the proposition has *der logische Bau* (Gutenberg text), «λογική κατασκευή» in Kitsopoulos | **corrected** | Both terms now given, by the owner's decision. |
+| 5.4611 | The essay said the logical signs "resemble" punctuation; the text says they are (*sind Interpunktionen*) | **corrected** | Reworded. |
+| *Investigations* §309 | The answer was in the second person («Να δείξεις»); published and German are first person / infinitive. Page image read (p. 136). | **corrected** | «Να δείξω». |
+| 7 | Essay's own wording differed slightly from Kitsopoulos. Page image read (1978, p. 132 of the PDF). | adopted | Published wording used, translator named in the sentence and in the sources. |
+| *unsinnig* («ανόητες»; Kitsopoulos «μη νοητές» at 4.4611, «στερημένες από νόημα» at 6.54); 6.54 «σκάλα» / «ανεμόσκαλα»; 4.0312; 4.112 (journal «θεωρία», 1978 «διδασκαλία»); 4.0031; 1.1; 6.36311; 4.1212; 6.421; §124; §255 | Differences of wording, same sense | left as the essay's own renderings | none |
+| 3.328, 5.44, 5.633; *Investigations* §2, §38, §109, §185, §243 | Not located in the OCR text (misread numbers) | not checked | Listed in `CROSSCHECK_PLAN.md`. |
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.

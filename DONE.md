@@ -43,6 +43,12 @@ time with the owner's approval:**
 - Point 6 done: the epilogue now says that the recurring pattern is a way
   of reading the history, not a law that governs it. The introduction was
   left as it is.
+- Point 7 done in its main part: the essay's Greek renderings were compared
+  with the Kitsopoulos *Tractatus* and the Papazisis *Investigations*. The
+  terms agree. Three corrections (4.014, 5.4611, §309) and proposition 7
+  now in the published wording, with credit. Tesseract was installed by
+  the owner; `tools/ocr_pdf.py` makes the OCR text (git-ignored). Eight
+  passages not yet located are listed in `CROSSCHECK_PLAN.md`.
 
 **Status after the second session of 2026-11-15:**
 

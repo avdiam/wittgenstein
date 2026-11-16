@@ -8,7 +8,7 @@ remove it here.
 
 ## Open for the analysis
 
-- C1 (Greek terms vs Kitsopoulos) and C3 (a second Pears–McGuinness copy) need printed books.
+- C1 (Greek terms of the analysis vs Kitsopoulos) can now be done: both printings of the translation are in the folder (git-ignored), with OCR text in `ocr_local/`. C3 (a second Pears–McGuinness copy) needs a printed book.
 - From tiers A and D: the years of most classics in section Γ΄ were not searched one by one; *Logical Foundations of Probability* and the 1919 letter were read only through other authors' quotations; several rows rest on Wikipedia, catalogues or booksellers as their only or second source (marked in the tables).
 - A scan of the Kitsopoulos translation is catalogued at the University of Macedonia ([record](https://dspace.lib.uom.gr/handle/2159/20652?mode=full)), but the file asks for authorisation. With access to it, C1 could be done without a printed copy.
 
@@ -17,7 +17,7 @@ remove it here.
 - Standard life dates were not checked one by one.
 - Still weak: the page of Turing's bridge remark in Diamond's *LFM*; the wording of Strachey's letter; Adorno's page; Drury's page; Bays's 2004 argument. (Moore's examiner's report is no longer quoted: cut on 2026-11-15.)
 - Turing's 1950 page range (433–460) and Moore's second 1954 page range are from memory.
-- The Greek renderings of Tractatus and *Investigations* sentences are the essay's own; they were not compared with the published Greek translations (see C1).
+- The Greek renderings were compared with the published translations on 2026-11-16 (ledger, "Essay review, point 7"). Still to locate and compare: 3.328, 5.44, 5.633; *Investigations* §2, §38, §109, §185, §243. The translator of the 1977 *Investigations* is to be confirmed from its title page.
 
 ## Method
 
