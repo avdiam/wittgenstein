@@ -25,6 +25,9 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   kept as the English name inside the definition. Decided by the owner:
   no Greek «-ισμός» form, because «γνωστικισμός» is also the name of the
   religious movement (Gnosticism).
+- `ESSAY_REVIEW.md` (local review notes) was deleted with the owner's
+  approval: all seven points are recorded below, and its two open items
+  are in `TODO.md` and `CROSSCHECK_PLAN.md`.
 - The tight gap before accented capitals seen in the headless captures is
   not a page problem: the owner saw a normal gap in a normal browser.
 
