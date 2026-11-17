@@ -11,7 +11,10 @@ item is finished, move it to `DONE.md` with the date.
 
 ## For the owner to decide
 
-1. Possible next steps for the essay page: split long passages (the halting
+1. Search on the Tractatus page opens every full analysis, so a term found
+   in both a summary and its full analysis is counted and stepped through
+   twice. Leave it, or let the search skip one of the two layers.
+2. Possible next steps for the essay page: split long passages (the halting
    proof, the decidability examples) into folding blocks; a search box like
    the Tractatus one; a custom domain.
 

@@ -120,8 +120,9 @@ def render_section(heading, body, prefix):
     out = out.replace("<blockquote>", '<blockquote class="hw-quote">')
     out = out.replace("<pre>", '<pre class="fa-pre">')
     # leading proposition numbers become clickable like the rest of the page
+    # (a bare number alone in a table cell is a row number, not a proposition)
     out = re.sub(
-        r"<strong>([1-7](?:\.\d+)?)(?=[\s:<(–,])",
+        r"<strong>([1-7](?:\.\d+)?)(?=[\s:<(–,])(?!</strong></td>)",
         r'<strong><span class="hw-prop-num">\1</span>',
         out,
     )

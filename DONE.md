@@ -60,6 +60,25 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   with a word count rounded to the hundred. Seen in headless Chrome at
   1300 px, light theme; the click, narrow widths and the dark theme were
   not exercised.
+- From Gemini 4 Argon's review of the Tractatus analysis and page
+  (`gemini-argon-tractatus-review.md`, local and untracked), each point
+  checked in the files first:
+  - build: the row numbers 1–7 of the 5.101 table were turned into
+    proposition links; a bare number alone in a table cell is now left
+    alone (`render_section`);
+  - hand-written summary: «τις σκέψεων μου» corrected; stray asterisk
+    in the 3.144 quotation removed (and the closing marks put in order
+    in the Markdown);
+  - Markdown: full stops inside two parentheses removed (table of
+    section 3.7; 4.124); the `<--` of the 6.341 diagram is now «←──»;
+  - tone at 6.3751, in both files: «Γκρέμισε / Έμελλε να Γκρεμίσει»
+    became «Οδήγησε στην Αναθεώρηση του Tractatus»;
+  - tree explorer badge: «επιλεγμένοι κόμβοι» (65 of the 526);
+  - lab 04-D has a third reading of 6.54, «Διασαφητική (McGinn /
+    Hutto)», worded from the Markdown's note Γ.
+  Left open: search hits are counted in both the summary and the full
+  analysis (see `TODO.md`). The lab button was not clicked in a browser;
+  the page's inline scripts parse.
 
 **Session of 2026-11-16 (second), visual check after the review:**
 
