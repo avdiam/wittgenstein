@@ -8,7 +8,10 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
-**Session of 2026-11-17, the two 2026 paragraphs of section 11 closed:**
+**Session of 2026-11-17: the 2026 paragraphs of section 11, the heading
+case, the full-analysis block, the two outside reviews. Pushed at the end
+of the session; the owner tried the third button of lab 04-D on the live
+site.**
 
 - The outside reading asked for in point 4 of the essay review was done
   by Gemini 4 Argon (2026-11-16; `gemini-argon-essay-review.md`, a local
