@@ -43,9 +43,11 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   their capital (Εικονιστική Θεωρία, Λέγειν, Δεικνύναι, το Μυστικιστικό);
   German nouns are capitalised, adjectives are not. Left in capitals: the
   badges above the titles, the buttons, the labels inside the labs and
-  the diagrams. Not touched: the `###` and `####` headings of the
-  Markdown, which capitalise each main word. The introduction was read
-  in headless Chrome at 1300 px.
+  the diagrams. The introduction was read in headless Chrome at 1300 px.
+- At the owner's request the 72 `###` and `####` headings of the
+  Markdown that capitalised each main word were retyped in sentence
+  case too (the four of the bibliography already were). «αλήθειας» in
+  the new titles became «αληθείας», the form the body text uses.
 
 **Session of 2026-11-16 (second), visual check after the review:**
 
