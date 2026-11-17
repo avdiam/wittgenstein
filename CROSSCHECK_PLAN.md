@@ -21,6 +21,17 @@ remove it here.
   *Über Gewissheit* (1969) longer, so quote key sentences only.
 - *Über Gewissheit* §115, §122, §§96–99 (*Flußbett*), §§341–343
   (*Angeln*): not yet checked against the German.
+- The *Blue and Brown Books*, for arc 1 (facts so far from memory):
+  the Blue Book dictated to the Cambridge class in 1933–34, the Brown
+  Book to Francis Skinner and Alice Ambrose in 1934–35; the builders
+  already in the Brown Book; the German revision of 1936 abandoned
+  before the early version of the *Investigations*; published 1958 with
+  Rhees's preface and the subtitle *Preliminary Studies for the
+  "Philosophical Investigations"* (whose subtitle it is). Also: the
+  Greek translation in `second phase/` (translator, publisher, year,
+  from the scan's title pages), and the copyright of the English text
+  (dictated by Wittgenstein: PD in the EU since 2022; in the US to the
+  end of 2053 if the 95-year rule applies).
 - The year 1977 of the Christodoulidis translation is in library
   catalogues (ledger) but not in the OCR of the scan; read the copyright
   page image when the table of terms is made.

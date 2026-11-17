@@ -39,8 +39,10 @@ deleted).
   with Kitsopoulos; English only for standard terms ("language-game").
   No whole remarks.
 
-Arcs (from the proposal, kept): 1. introduction, the 1945 preface, how to
-read the book, table of terms; 2. §§1–38 Augustine, builders, language-
+Arcs (from the proposal, kept): 1. introduction: the bridge from the
+*Tractatus* (the *Blue and Brown Books*, 1933–35, as the most readable of
+the middle-period texts, not the only one; owner, 2026-11-17), the 1945
+preface, how to read the book, table of terms; 2. §§1–38 Augustine, builders, language-
 games; 3. §§39–64 names, simples, meaning as use; 4. §§65–88 family
 resemblances, vagueness; 5. §§89–133 philosophy, *übersichtliche
 Darstellung*, therapy; 6. §§138–242 understanding and rule-following
@@ -51,8 +53,9 @@ language; 8. §§316–693 and Part II xi, thinking, intention, seeing-as;
 Stages, one commit each:
 
 0. Done 2026-11-17: decisions, ledger rows, open checks, `LICENSE` §3.
-1. Skeleton of the Markdown, arc 1 and the table of terms against
-   Christodoulidis (OCR in `ocr_local/investigations/`, page images).
+1. Skeleton of the Markdown, arc 1 (with the *Blue and Brown Books*)
+   and the table of terms against Christodoulidis (OCR in
+   `ocr_local/investigations/`, page images).
 2. Arcs 2–3. 3. Arcs 4–5. 4. Arcs 6–7. 5. Arc 8 and the epilogue
    (needs the German source of Part II and *Über Gewissheit*: see
    `CROSSCHECK_PLAN.md`).
@@ -68,9 +71,6 @@ local, or pushed with the page not yet linked from the cover.
 
 1. A custom domain name for the site: to be discussed once the
    *Investigations* part is finished (owner, 2026-11-17).
-2. Whether the *Blue and Brown Books* (Greek scan in `second phase/`)
-   get a place in arc 1 as the bridge texts of 1933–35. The proposal
-   does not mention them.
 
 ## Needs printed books or library access
 
