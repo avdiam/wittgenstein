@@ -30,9 +30,12 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   εξετάσει» (Aaronson says so, and four of them wrote an exposition).
   Also corrected against the announcement: «σχεδόν αυτόνομα» became
   «σε μεγάλο βαθμό αυτόνομα» ("largely autonomously").
-- Part III of the review (the opening of section 4, the Gettier
-  paragraph, the four names closing section 10) is outside this topic
-  and was not acted on.
+- Part III of the review, decided by the owner later the same day: the
+  opening of section 4 no longer names Boole before he is introduced
+  («Στο πρώτο μισό του 19ου αιώνα»); «ξεκινώντας από τον Wilfrid
+  Sellars» was cut from the sentence closing section 10 (his only
+  mention, and the clause seemed to cover Taylor too); the Gettier
+  paragraph stays after *On Certainty*.
 
 - Headings typed in capitals (the owner's decision: normal case for
   titles, capitals kept for short labels). Retyped in sentence case, with
