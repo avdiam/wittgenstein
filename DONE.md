@@ -33,6 +33,15 @@ the open items; a search box for the essay page.**
 - The committed Word file failed `--check` although its contents matched
   a fresh build part for part: only the compressed bytes differed (zlib on
   this machine, Python 3.13.5 / zlib 1.3.1). Rebuilt.
+- The weakly sourced points of the essay were searched (ledger, "The
+  weakly sourced points of the essay, closed"). Changed in the essay:
+  section 7 no longer calls its halting proof Strachey's (his 1965 letter
+  credits programmers' folklore and a verbal proof by Turing, and its
+  program takes no input); the Gödel note says that Rodych and Bays
+  contest different things; Avicenna «περ. 980–1037»; Moore's second
+  range «289–316»; Rodych (2003) and Bays (2004) added to the sources.
+  Confirmed without change: Wiles 1995, Turing 1950 pages, Drury's and the
+  bridge remark's pages, the 1977 Papazisis *Investigations*.
 
 **Session of 2026-11-17: the 2026 paragraphs of section 11, the heading
 case, the full-analysis block, the two outside reviews. Pushed at the end
