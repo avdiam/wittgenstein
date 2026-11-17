@@ -146,11 +146,30 @@ HEAD_BLOCK = f"""<link rel="stylesheet" href="{KATEX}/katex.min.css">
   .full-analysis {{ margin-top: 2rem; }}
   body .full-analysis.hw-panel {{ background: transparent; border-radius: 0;
     border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }}
+  /* Closed, it is a tinted band with an action, so that it is not passed over. */
+  body .full-analysis.hw-panel:not([open]) {{ background: var(--primary-soft);
+    border: 1px solid var(--primary); border-radius: var(--radius); }}
+  .full-analysis {{ scroll-margin-top: 8rem; }}
   .full-analysis > summary {{
-    display: flex; align-items: center; gap: 0.6rem; list-style: none;
-    cursor: pointer; padding: 0.85rem 0.25rem; font-family: var(--font-sans);
-    font-size: 0.9rem; font-weight: 600; color: var(--primary); user-select: none;
+    display: flex; align-items: center; gap: 0.75rem; list-style: none;
+    cursor: pointer; padding: 0.9rem 0.25rem; font-family: var(--font-sans);
+    color: var(--primary); user-select: none;
   }}
+  .full-analysis:not([open]) > summary {{ padding: 0.95rem 1rem; }}
+  .fa-sum-text {{ flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.15rem; }}
+  .fa-sum-title {{ font-size: 1rem; font-weight: 650; line-height: 1.35; }}
+  .fa-sum-desc {{ font-size: 0.8rem; font-weight: 400; line-height: 1.45;
+    color: var(--muted-foreground); }}
+  .fa-sum-action {{ flex: none; font-size: 0.78rem; font-weight: 600; padding: 0.35rem 0.75rem;
+    border: 1px solid var(--primary); border-radius: var(--radius);
+    background-color: var(--card); color: var(--primary); }}
+  .full-analysis:not([open]) .fa-when-open,
+  .full-analysis[open] .fa-when-closed {{ display: none; }}
+  /* The line under a section title that says the full text exists. */
+  .fa-pointer {{ margin-top: 0.6rem; font-family: var(--font-sans); font-size: 0.82rem;
+    line-height: 1.5; color: var(--muted-foreground); }}
+  .fa-pointer a {{ color: var(--primary); font-weight: 600; text-decoration: underline;
+    text-underline-offset: 3px; }}
   .full-analysis > summary::-webkit-details-marker {{ display: none; }}
   .full-analysis > summary::before {{
     content: ""; flex: none; width: 0.45rem; height: 0.45rem; margin-left: 0.15rem;
@@ -208,6 +227,13 @@ TAIL_BLOCK = f"""<script defer src="{KATEX}/katex.min.js"></script>
       el.classList.add('tex-done');
     }});
   }}
+  function faOpen(id) {{
+    var d = document.getElementById(id);
+    if (!d) return true;
+    d.open = true;
+    d.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+    return false;
+  }}
   function faSetAll(open) {{
     document.querySelectorAll('details.full-analysis').forEach(function (d) {{ d.open = open; }});
   }}
@@ -233,6 +259,47 @@ TAIL_BLOCK = f"""<script defer src="{KATEX}/katex.min.js"></script>
 # --------------------------------------------------------------------------
 # 4. Injection
 # --------------------------------------------------------------------------
+# What the summary line of each full-analysis block says: (title, contents).
+# For the seven propositions the range is read from the Markdown heading.
+FA_LABELS = {
+    "sec-intro": ("Πλήρης ανάλυση της εισαγωγής",
+                  "Οι τρεις εκδόσεις, η αφιέρωση, το μότο, ο πρόλογος και η εισαγωγή του Russell"),
+    "sec-decimal": ("Πλήρης ανάλυση του δεκαδικού συστήματος",
+                    "Η αρίθμηση, η υποσημείωση 1* και ο χάρτης των 526 προτάσεων"),
+    "sec-epilogue": ("Πλήρης ανάλυση: πίνακες αναφοράς, ιστορικό επίμετρο και βιβλιογραφία",
+                     "Το τριμερές σχήμα του νοήματος, η σύνοψη των 7 προτάσεων, "
+                     "η πορεία προς τις «Φιλοσοφικές Έρευνες» και οι πηγές"),
+}
+
+
+def fa_label(target, heading):
+    """(title, contents) for the summary line of a section's full analysis."""
+    if target in FA_LABELS:
+        return FA_LABELS[target]
+    n = target[-1]
+    m = re.search(r"\((\d[\d.]* – \d[\d.]*)\)\s*$", heading)
+    if m:
+        return (f"Πλήρης ανάλυση της πρότασης {n}",
+                f"Οι προτάσεις {m.group(1)} κλάδο προς κλάδο, με σχολιασμό, παραδείγματα και πίνακες")
+    return (f"Πλήρης ανάλυση της πρότασης {n}",
+            f"Η πρόταση {n} στις τρεις εκδόσεις, με σχολιασμό")
+
+
+def word_count(rendered):
+    """Words of the rendered text, to the nearest hundred, as «≈ 5.400 λέξεις»."""
+    n = len(re.sub(r"<[^>]+>", " ", rendered).split())
+    n = max(100, int(round(n / 100.0)) * 100)
+    return "≈ " + f"{n:,}".replace(",", ".") + " λέξεις"
+
+
+def insert_after_line(page, needle, text, start=0):
+    i = page.find(needle, start)
+    if i < 0:
+        raise SystemExit(f"build_html: could not find {needle!r} in the HTML")
+    line_end = page.find("\n", i) + 1
+    return page[:line_end] + text + page[line_end:]
+
+
 def strip_generated(page):
     return re.sub(r"[ \t]*<!-- FULL-ANALYSIS:BEGIN [^>]*-->.*?<!-- FULL-ANALYSIS:END [^>]*-->\n?",
                   "", page, flags=re.S)
@@ -259,12 +326,13 @@ def build():
     page = strip_generated(raw.replace("\r\n", "\n"))
     digest = hashlib.sha256(md.encode("utf8")).hexdigest()[:12]
 
-    grouped, warnings = {}, []
+    grouped, warnings, first_heading = {}, [], {}
     for heading, body in split_sections(md):
         target = target_for(heading)
         if target is None:
             continue
         chunks = grouped.setdefault(target, [])
+        first_heading.setdefault(target, heading)
         rendered, leftovers = render_section(heading, body, f"fa-{target[4:]}-{len(chunks) + 1}")
         chunks.append(rendered)
         if leftovers:
@@ -275,11 +343,21 @@ def build():
         if start < 0:
             raise SystemExit(f"build_html: HTML has no <section id=\"{target}\">")
         inner = "\n<hr>\n".join(chunks).rstrip()
+        title, contents = fa_label(target, first_heading[target])
+        words = word_count(inner)
         content = (f'<details class="full-analysis hw-panel" id="full-{target}" data-source-sha="{digest}">\n'
-                   f"<summary>Πλήρης ανάλυση: το πλήρες κείμενο της ενότητας</summary>\n"
+                   f'<summary><span class="fa-sum-text"><span class="fa-sum-title">{title}</span>'
+                   f'<span class="fa-sum-desc">{contents} · {words}</span></span>'
+                   f'<span class="fa-sum-action" aria-hidden="true"><span class="fa-when-closed">Άνοιγμα</span>'
+                   f'<span class="fa-when-open">Κλείσιμο</span></span></summary>\n'
                    f'<div class="fa-body">\n{inner}\n</div>\n</details>')
         # <pre> content must not be re-indented, so the block is emitted flush left
         page = insert_before(page, "</section>", block(target, content), start)
+        # under the section title: say that the full text exists, and lead to it
+        pointer = (f'<p class="fa-pointer">Παρακάτω η σύνοψη. '
+                   f'<a href="#full-{target}" onclick="return faOpen(\'full-{target}\')">'
+                   f'Πλήρης ανάλυση στο τέλος της ενότητας ({words}) ↓</a></p>')
+        page = insert_after_line(page, "</h2>", block(f"{target}-pointer", pointer), start)
 
     page = insert_before(page, "</head>", block("head", HEAD_BLOCK))
     main_open = page.find('<main id="masterContentContainer"')
