@@ -8,6 +8,32 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Second session of 2026-11-17: the owner's decisions on
+the open items; a search box for the essay page.**
+
+- Decided by the owner: search on the Tractatus page stays as it is (a
+  term found in a summary and in its full analysis is counted twice); the
+  long passages of the essay are not split into folding blocks; a custom
+  domain waits until the *Investigations* part is finished.
+- The essay page has a search box like the Tractatus one
+  (`tools/build_essay_html.py`): matches in all four tabs are marked in
+  place; Enter / Shift+Enter step through them and open the right tab; a
+  bar under the header gives the count per tab; `/` focuses the box, Esc
+  clears it. Unlike the Tractatus search it ignores accents and final
+  sigma (`λογικη` finds `λογική`), needs two characters, and leaves the
+  inline SVG diagrams alone. Below 1180 px the box takes a row of its own;
+  the header's real height is now measured into `--header-h`. Checked in
+  headless Chrome at 390, 700, 1000, 1170 and 1300 px, light and dark
+  (counts, tab switching, clearing restores the text, no marks in SVG).
+  Headless Chrome under `--virtual-time-budget` does not run smooth
+  scrolling, so the scroll to a hit was checked with instant scrolling.
+- The pointer and band of the full analysis on the Tractatus page were
+  checked at 390 px (and about 300 px), light and dark, closed and open:
+  no problems.
+- The committed Word file failed `--check` although its contents matched
+  a fresh build part for part: only the compressed bytes differed (zlib on
+  this machine, Python 3.13.5 / zlib 1.3.1). Rebuilt.
+
 **Session of 2026-11-17: the 2026 paragraphs of section 11, the heading
 case, the full-analysis block, the two outside reviews. Pushed at the end
 of the session; the owner tried the third button of lab 04-D on the live

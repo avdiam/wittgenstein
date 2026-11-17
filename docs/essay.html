@@ -60,7 +60,7 @@ a { color: var(--primary); }
 
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 40; background: var(--content); border-bottom: 1px solid var(--border); }
-.hdr { height: var(--header-h); display: flex; align-items: center; gap: 1rem; padding: 0 1rem; max-width: 1600px; margin: 0 auto; }
+.hdr { min-height: 56px; display: flex; align-items: center; gap: 1rem; padding: 0 1rem; max-width: 1600px; margin: 0 auto; }
 .brand { display: flex; flex-direction: column; line-height: 1.15; text-decoration: none; color: var(--foreground); min-width: 0; }
 .brand-main { font-weight: 650; font-size: .98rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .brand-sub { font-size: .75rem; color: var(--muted-foreground); }
@@ -74,6 +74,26 @@ a { color: var(--primary); }
 .icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; background: none; border: 1px solid var(--border-soft); border-radius: var(--radius); color: var(--muted-foreground); cursor: pointer; }
 .icon-btn:hover { color: var(--foreground); border-color: var(--border); }
 .only-narrow { display: none; }
+
+/* Search: the same behaviour as on the Tractatus page (inline marks, Enter /
+   Shift+Enter to step, / to focus, Esc to clear); accents and case ignored. */
+.hdr-search { position: relative; display: flex; align-items: center; }
+.hdr-search input { font: inherit; font-size: .82rem; width: 15rem; max-width: 100%; padding: .38rem 2rem .38rem .65rem; background: var(--background); color: var(--foreground); border: 1px solid var(--border); border-radius: var(--radius); -webkit-appearance: none; appearance: none; }
+.hdr-search input::-webkit-search-cancel-button { display: none; }
+.hdr-search input::placeholder { color: var(--muted-foreground); opacity: .85; }
+.hdr-search input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-soft); }
+.hdr-kbd { position: absolute; right: .45rem; padding: 0 .35rem; font-family: var(--font-mono); font-size: .7rem; line-height: 1.35; color: var(--muted-foreground); border: 1px solid var(--border); border-radius: 3px; pointer-events: none; }
+.hdr-search input:not(:placeholder-shown) ~ .hdr-kbd { display: none; }
+.search-clear { position: absolute; right: .3rem; background: none; border: 0; padding: .2rem .35rem; font-size: .75rem; color: var(--muted-foreground); cursor: pointer; }
+.search-clear:hover { color: var(--foreground); }
+.search-bar { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .9rem; max-width: 1600px; margin: 0 auto; padding: .35rem 1rem; border-top: 1px solid var(--border-soft); font-size: .8rem; color: var(--muted-foreground); }
+.search-count { font-weight: 600; color: var(--foreground); }
+.search-step, .search-tabs { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .3rem; }
+.search-step .hdr-link, .search-tabs .hdr-link { font-size: .78rem; padding: .15rem .5rem; }
+.search-pos { min-width: 4.2rem; text-align: center; font-variant-numeric: tabular-nums; }
+.search-tabs .hdr-link.here { color: var(--primary); border-color: var(--border); background: var(--primary-soft); }
+mark.search-hit { background: var(--mark-soft); color: inherit; border-bottom: 2px solid var(--mark); padding: 0 1px; border-radius: 2px; }
+mark.search-hit.active { background: var(--mark); color: var(--content); outline: 2px solid var(--mark); }
 
 /* Title block */
 .page-head { max-width: 1600px; margin: 0 auto; padding: 2rem 1rem 0; }
@@ -174,8 +194,16 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
   #tocFold { display: none; }
   .reading { max-width: none; }
 }
+/* Below this width the search field takes a row of its own; the header's
+   height is measured by the script and kept in --header-h. */
+@media (max-width: 1180px) {
+  .hdr { flex-wrap: wrap; row-gap: .4rem; padding-top: .4rem; padding-bottom: .5rem; }
+  .hdr-search { order: 4; flex-basis: 100%; }
+  .hdr-search input { width: 100%; }
+}
 @media (max-width: 720px) {
-  .hdr { gap: .5rem; padding: 0 .6rem; }
+  .hdr { gap: .5rem; padding-left: .6rem; padding-right: .6rem; }
+  .search-bar { padding: .35rem .6rem; }
   .brand-sub, .hdr-actions .hdr-link:not(#themeBtn) { display: none; }
   .tab { padding: .35rem .45rem; font-size: .8rem; }
   .page-head { padding-top: 1.25rem; }
@@ -183,9 +211,7 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
   table.timeline td:first-child { width: auto; white-space: normal; }
 }
 @media (max-width: 520px) {
-  .hdr { flex-wrap: wrap; height: auto; padding: .4rem .6rem; }
   .tabs { order: 3; width: 100%; margin: 0; overflow-x: auto; }
-  :root { --header-h: 92px; }
 }
 
 /* Phones: say that a diagram can be enlarged. Screen only: an A4 page is
@@ -202,6 +228,7 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
   .text-layout { display: block; }
   body { background: #fff; color: #000; }
   .reading { max-width: none; font-size: 11pt; }
+  mark.search-hit, mark.search-hit.active { background: none; color: inherit; border: 0; outline: 0; padding: 0; }
 }
 
 </style>
@@ -218,11 +245,26 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
       <span class="brand-sub">Δοκίμιο</span>
     </a>
     <div class="tabs" role="tablist" aria-label="Μέρη της σελίδας"><button type="button" role="tab" id="tab-btn-text" aria-controls="panel-text" aria-selected="true" class="tab active" title="Το δοκίμιο, σε δώδεκα ενότητες" onclick="showTab('text', true)">Κείμενο</button><button type="button" role="tab" id="tab-btn-timeline" aria-controls="panel-timeline" aria-selected="false" class="tab" title="Τα κύρια σημεία της ιστορίας, με τη σειρά" onclick="showTab('timeline', true)">Χρονολόγιο</button><button type="button" role="tab" id="tab-btn-glossary" aria-controls="panel-glossary" aria-selected="false" class="tab" title="Οι όροι που εξηγεί το κείμενο" onclick="showTab('glossary', true)">Γλωσσάρι</button><button type="button" role="tab" id="tab-btn-sources" aria-controls="panel-sources" aria-selected="false" class="tab" title="Πηγές και περαιτέρω ανάγνωση" onclick="showTab('sources', true)">Πηγές</button></div>
+    <div class="hdr-search" role="search">
+      <input id="searchInput" type="search" placeholder="Αναζήτηση: Frege, αλγόριθμος, 1936"
+        aria-label="Αναζήτηση στο δοκίμιο" autocomplete="off" spellcheck="false">
+      <kbd class="hdr-kbd" aria-hidden="true">/</kbd>
+      <button type="button" id="searchClear" class="search-clear" hidden onclick="clearSearch(true)" title="Καθαρισμός (Esc)" aria-label="Καθαρισμός αναζήτησης">✕</button>
+    </div>
     <div class="hdr-actions">
       <a class="hdr-link" href="tractatus.html" title="Η ανάλυση του Tractatus">Tractatus</a>
       <a class="hdr-link" href="Logiki_Glossa_Michanes.docx" download title="Το δοκίμιο ως αρχείο Word">.docx</a>
       <button type="button" id="themeBtn" class="hdr-link" onclick="toggleTheme()">Σκοτεινό θέμα</button>
     </div>
+  </div>
+  <div id="searchBar" class="search-bar" hidden>
+    <span id="searchCount" class="search-count" aria-live="polite"></span>
+    <span id="searchStep" class="search-step" hidden>
+      <button type="button" class="hdr-link" onclick="stepSearch(-1)" title="Προηγούμενο εύρημα (Shift+Enter)">‹ Προηγ.</button>
+      <span id="searchPos" class="search-pos"></span>
+      <button type="button" class="hdr-link" onclick="stepSearch(1)" title="Επόμενο εύρημα (Enter)">Επόμ. ›</button>
+    </span>
+    <span id="searchTabs" class="search-tabs"></span>
   </div>
 </header>
 <div id="drawerBackdrop" class="backdrop" hidden onclick="closeDrawer()"></div>
@@ -1675,11 +1717,159 @@ function toggleToc() { setToc(!document.body.classList.contains('toc-folded'), t
 function openDrawer() { showTab('text', false); document.body.classList.add('drawer-open'); document.getElementById('drawerBackdrop').hidden = false; }
 function closeDrawer() { document.body.classList.remove('drawer-open'); document.getElementById('drawerBackdrop').hidden = true; }
 document.addEventListener('keydown', function (e) {
+  if (e.target.id === 'searchInput') {
+    if (e.key === 'Enter') { e.preventDefault(); runSearchNow(); stepSearch(e.shiftKey ? -1 : 1); }
+    else if (e.key === 'Escape') { e.preventDefault(); clearSearch(false); e.target.blur(); }
+    return;
+  }
   var tag = (e.target.tagName || '').toLowerCase();
   if (tag === 'input' || tag === 'textarea') return;
+  if (e.key === '/') { e.preventDefault(); var inp = document.getElementById('searchInput'); inp.focus(); inp.select(); }
   if (e.key === '[') toggleToc();
   if (e.key === 'Escape') closeDrawer();
 });
+
+/* The header grows a row for the search field (and one for the results bar):
+   keep its real height in --header-h, used by the contents pane and anchors. */
+function setHeaderHeight() {
+  var h = document.querySelector('.site-header').offsetHeight;
+  document.documentElement.style.setProperty('--header-h', h + 'px');
+}
+
+/* Search across the four tabs, as on the Tractatus page: every match is marked
+   in place; Enter and Shift+Enter step through them, opening the right tab.
+   Accents, case and final sigma are ignored. Diagrams (inline SVG) are left
+   alone, since a <mark> inside SVG text would break them. */
+var searchHits = [], searchIdx = -1, searchShown = false, searchTimer = null;
+var TAB_LABELS = { text: 'Κείμενο', timeline: 'Χρονολόγιο', glossary: 'Γλωσσάρι', sources: 'Πηγές' };
+function foldChar(c) { return c.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/ς/g, 'σ'); }
+function foldQuery(s) { return Array.from(s).map(foldChar).join(''); }
+function clearMarks() {
+  var parents = [];
+  document.querySelectorAll('mark.search-hit').forEach(function (m) {
+    var p = m.parentNode;
+    p.replaceChild(document.createTextNode(m.textContent), m);
+    if (parents.indexOf(p) < 0) parents.push(p);
+  });
+  parents.forEach(function (p) { p.normalize(); });
+  searchHits = []; searchIdx = -1; searchShown = false;
+}
+function markIn(root, q) {
+  var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode: function (n) {
+      if (!n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+      var p = n.parentNode;
+      if (!p || p.closest('svg, script, style, mark')) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+  var nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(function (node) {
+    /* Fold the text one character at a time, remembering where each folded
+       character came from, so a match maps back to the original letters. */
+    var val = node.nodeValue, folded = '', from = [], to = [], i = 0;
+    Array.from(val).forEach(function (ch) {
+      var f = foldChar(ch);
+      for (var k = 0; k < f.length; k++) { from.push(i); to.push(i + ch.length); }
+      folded += f; i += ch.length;
+    });
+    var at = folded.indexOf(q);
+    if (at < 0) return;
+    var frag = document.createDocumentFragment(), last = 0;
+    while (at >= 0) {
+      var s = from[at], e = to[at + q.length - 1];
+      if (s > last) frag.appendChild(document.createTextNode(val.slice(last, s)));
+      var m = document.createElement('mark');
+      m.className = 'search-hit';
+      m.textContent = val.slice(s, e);
+      frag.appendChild(m);
+      searchHits.push(m);
+      last = e;
+      at = folded.indexOf(q, at + q.length);
+    }
+    if (last < val.length) frag.appendChild(document.createTextNode(val.slice(last)));
+    node.parentNode.replaceChild(frag, node);
+  });
+}
+function hitTab(m) { return m.closest('.panel').id.replace('panel-', ''); }
+function currentTab() { var t = TABS.filter(function (t) { return !document.getElementById('panel-' + t).hidden; }); return t[0]; }
+function setActiveHit(idx, scroll) {
+  if (searchHits[searchIdx]) searchHits[searchIdx].classList.remove('active');
+  searchIdx = idx;
+  var m = searchHits[idx];
+  m.classList.add('active');
+  document.getElementById('searchPos').textContent = (idx + 1) + ' / ' + searchHits.length;
+  if (scroll) {
+    var tab = hitTab(m);
+    if (tab !== currentTab()) showTab(tab, false);
+    searchShown = true;
+    m.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  markTabPills();
+}
+function markTabPills() {
+  var tab = searchHits[searchIdx] ? hitTab(searchHits[searchIdx]) : currentTab();
+  document.querySelectorAll('#searchTabs .hdr-link').forEach(function (b) { b.classList.toggle('here', b.dataset.tab === tab); });
+}
+function runSearch() {
+  var input = document.getElementById('searchInput');
+  var raw = input.value.trim(), q = foldQuery(raw);
+  var bar = document.getElementById('searchBar');
+  clearMarks();
+  document.getElementById('searchClear').hidden = !input.value;
+  if (q.length < 2) {
+    bar.hidden = !raw;
+    document.getElementById('searchCount').textContent = raw ? 'Γράψτε τουλάχιστον δύο χαρακτήρες' : '';
+    document.getElementById('searchStep').hidden = true;
+    document.getElementById('searchTabs').innerHTML = '';
+    setHeaderHeight();
+    return;
+  }
+  /* A glossary filter would hide some of the matches: clear it first. */
+  var gf = document.getElementById('glossaryFilter');
+  if (gf && gf.value) { gf.value = ''; filterGlossary(''); }
+  document.querySelectorAll('.panel .reading').forEach(function (r) { markIn(r, q); });
+  var n = searchHits.length, counts = {};
+  searchHits.forEach(function (m) { var t = hitTab(m); counts[t] = (counts[t] || 0) + 1; });
+  bar.hidden = false;
+  document.getElementById('searchCount').textContent = n === 0 ? 'Κανένα εύρημα' : n === 1 ? '1 εύρημα' : n + ' ευρήματα';
+  document.getElementById('searchStep').hidden = n === 0;
+  document.getElementById('searchTabs').innerHTML = TABS.filter(function (t) { return counts[t]; }).map(function (t) {
+    return '<button type="button" class="hdr-link" data-tab="' + t + '" onclick="jumpToTabHits(\'' + t + '\')">' + TAB_LABELS[t] + ' ' + counts[t] + '</button>';
+  }).join('');
+  if (n) {
+    /* Start in the tab being read; the page moves only on Enter or a click. */
+    var here = currentTab(), first = 0;
+    for (var k = 0; k < n; k++) { if (hitTab(searchHits[k]) === here) { first = k; break; } }
+    setActiveHit(first, false);
+  }
+  setHeaderHeight();
+}
+function runSearchNow() { if (searchTimer) { clearTimeout(searchTimer); searchTimer = null; runSearch(); } }
+function stepSearch(delta) {
+  var n = searchHits.length;
+  if (!n) return;
+  /* The first step shows the hit already selected, then moves on. */
+  setActiveHit(searchShown ? (searchIdx + delta + n) % n : searchIdx, true);
+}
+function jumpToTabHits(tab) {
+  for (var k = 0; k < searchHits.length; k++) { if (hitTab(searchHits[k]) === tab) { setActiveHit(k, true); return; } }
+}
+function clearSearch(refocus) {
+  var input = document.getElementById('searchInput');
+  input.value = '';
+  runSearch();
+  if (refocus) input.focus();
+}
+function initSearch() {
+  var input = document.getElementById('searchInput');
+  input.addEventListener('input', function () {
+    if (searchTimer) clearTimeout(searchTimer);
+    searchTimer = setTimeout(function () { searchTimer = null; runSearch(); }, 160);
+  });
+  if (input.value) runSearch();
+}
 
 /* Diagrams: tap (or Enter / Space) to enlarge in a dialog */
 function openFigZoom(box) {
@@ -1734,6 +1924,10 @@ function filterGlossary(q) {
   var saved = null;
   try { saved = localStorage.getItem('hw-essay-toc'); } catch (e) {}
   setToc(saved === 'folded', false);
+  setHeaderHeight();
+  window.addEventListener('resize', setHeaderHeight);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(setHeaderHeight);
+  initSearch();
   watchSections();
   initFigZoom();
   openFromHashWhenSettled();
