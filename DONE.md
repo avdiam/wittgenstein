@@ -11,8 +11,8 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
 **Session of 2026-11-17, the two 2026 paragraphs of section 11 closed:**
 
 - The outside reading asked for in point 4 of the essay review was done
-  by Gemini 4 Argon (2026-11-16; `gemini-argon-essay-review.md`, kept
-  local and untracked). Its part II was checked against the two primary
+  by Gemini 4 Argon (2026-11-16; `gemini-argon-essay-review.md`, a local
+  file never committed, deleted on 2026-11-17 once every point was settled). Its part II was checked against the two primary
   sources, read again on 2026-11-17 (ledger, "Essay review, point 4:
   the outside reading"), and the two paragraphs were revised:
   - order by date: May (OpenAI, Erdős) first, then September and
@@ -61,7 +61,8 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   1300 px, light theme; the click, narrow widths and the dark theme were
   not exercised.
 - From Gemini 4 Argon's review of the Tractatus analysis and page
-  (`gemini-argon-tractatus-review.md`, local and untracked), each point
+  (`gemini-argon-tractatus-review.md`, a local file never committed,
+  deleted on 2026-11-17 once every point was settled), each point
   checked in the files first:
   - build: the row numbers 1–7 of the 5.101 table were turned into
     proposition links; a bare number alone in a table cell is now left
