@@ -8,6 +8,32 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-17, the two 2026 paragraphs of section 11 closed:**
+
+- The outside reading asked for in point 4 of the essay review was done
+  by Gemini 4 Argon (2026-11-16; `gemini-argon-essay-review.md`, kept
+  local and untracked). Its part II was checked against the two primary
+  sources, read again on 2026-11-17 (ledger, "Essay review, point 4:
+  the outside reading"), and the two paragraphs were revised:
+  - order by date: May (OpenAI, Erdős) first, then September and
+    November (Lean, Claude models);
+  - the Fermat result is stated as what it is: Wiles's known proof
+    (1995), in a simplified version, written out in Lean; no new proof;
+  - the caveat on recency now closes the block and covers all three
+    results, not only OpenAI's;
+  - the Aaronson–Ambainis conjecture is described as a limit on quantum
+    advantage, and dated 2009;
+  - «(Έρντος)» and «(Φερμά)» added; timeline row reworded.
+- Not taken from the review: the year 2008 for the conjecture (Aaronson
+  writes 2009); «χωρίς αναπόδεικτα κενά» (the announcement speaks of
+  axioms, not of gaps); the cut of «άλλοι ειδικοί την έχουν ήδη
+  εξετάσει» (Aaronson says so, and four of them wrote an exposition).
+  Also corrected against the announcement: «σχεδόν αυτόνομα» became
+  «σε μεγάλο βαθμό αυτόνομα» ("largely autonomously").
+- Part III of the review (the opening of section 4, the Gettier
+  paragraph, the four names closing section 10) is outside this topic
+  and was not acted on.
+
 **Session of 2026-11-16 (second), visual check after the review:**
 
 - The rendered essay page was read in full in headless Chrome at 1100 px

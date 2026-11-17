@@ -445,6 +445,19 @@ The owner's rule: keep only what is grounded, and hold both companies to the sam
 | OpenAI's bulk release of 722 manuscripts (October 2026); Navier–Stokes; Exponential Time Hypothesis; Kakeya; Yang–Mills existence | [The Conversation, 9 Oct 2026](https://theconversation.com/is-this-the-mathocalypse-why-openais-latest-results-dump-has-left-mathematicians-in-shock-293837); [Wikipedia](https://en.wikipedia.org/wiki/OpenAI_bulk_release_of_mathematical_papers); [Scientific American, 27 Oct 2026](https://www.scientificamerican.com/article/dueling-proofs-from-openai-and-anthropic-astound-scientists/); [CASRAI editorial](https://casrai.org/news/ai-rivals-physics-mathematical-challenge-2026). *Science* article not readable. | journalism only; disputed or under review | Left out. |
 | Fable 5.2: 1,000 agents re-formalized FLT in 30 hours; two open problems on black holes | rows above (company only; not peer-reviewed) | below the standard applied to OpenAI | Cut from section 11 on 2026-11-16; the announcement removed from the sources. |
 
+## Essay review, point 4: the outside reading of the 2026 paragraphs (2026-11-17)
+
+Proposals of Gemini 4 Argon's review (2026-11-16), checked against the two primary sources, read again on 2026-11-17.
+
+| Claim | Sources | Verdict | Action |
+| :-- | :-- | :-- | :-- |
+| The Fermat result is a formalization of the known proof, not a new proof | [Anthropic, 4 Sep 2026](https://www.anthropic.com/research/formalizing-fermats-last-theorem): "follows a simplified version of Wiles's proof from Darmon, Diamond, and Taylor"; adapts pieces of Buzzard's Imperial College FLT project; Mathlib is the library "this theorem builds on". Wiles's proof: *Annals of Mathematics* 141 (1995) (standard; not searched) | confirmed | Section 11 now says so, naming Wiles (1995). |
+| «χωρίς αναπόδεικτα κενά» (proposed) | Same page: "uses just Lean's three standard axioms"; gaps (`sorry`) are not mentioned | not in the source as worded | Not used; the essay keeps «χωρίς άλλες παραδοχές πέρα από τα βασικά αξιώματα του Lean». |
+| «σχεδόν αυτόνομα» (essay, before) | Same page: "In 11 days, working largely autonomously", with "occasional high-level instructions" | **corrected** | «σε μεγάλο βαθμό αυτόνομα». |
+| The conjecture was posed in 2008 (proposed) | [Aaronson, 8 Nov 2026](https://scottaaronson.blog/?p=10295): "posed back in 2009", linking arXiv 0911.0996 | **corrected** | «το 2009» (replaces «πριν από σχεδόν δύο δεκαετίες»). |
+| The conjecture concerns a limit on quantum advantage; it was open | Same post: it "implies that there's no superpolynomial advantage of quantum query complexity over classical" for decision problems on most inputs; "rule[s] out a potential class of quantum speedups"; "a big open problem" | confirmed | «θέτει όριο στο πόσο μπορούν οι κβαντικοί υπολογιστές να ξεπεράσουν τους κλασικούς σε μια ευρεία κατηγορία προβλημάτων»; «ανοιχτή εικασία». |
+| Cut «άλλοι ειδικοί την έχουν ήδη εξετάσει» (proposed) | Same post: "human experts ... have already gone over it and understood it"; exposition by Blanc, Docter, Strassle and Tan, [arXiv 2611.11626](https://arxiv.org/abs/2611.11626) (abstract page; not meant for journal publication) | the sentence is grounded | Kept. The caveat on recency moved to the end of the block, to cover all three results. |
+
 ## Essay review, point 5: motivation (2026-11-16)
 
 | Claim | Sources | Verdict | Action |

@@ -11,9 +11,6 @@ item is finished, move it to `DONE.md` with the date.
 
 ## For the owner to decide
 
-0. The essay review is finished and published (2026-11-16; details in
-   `DONE.md`). One thing remains from it: a reader outside Anthropic for
-   the two 2026 paragraphs of §11.
 1. Headings typed in capitals in the Tractatus HTML and the analysis Markdown:
    keep them in capitals or change them to normal case.
 2. Possible next steps for the essay page: split long passages (the halting
