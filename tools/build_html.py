@@ -35,14 +35,14 @@ def target_for(heading):
     """Which HTML <section id> a `##` heading of the Markdown belongs to."""
     if heading.startswith("Πλήρης"):
         return None  # subtitle line, no body
-    if heading.startswith(("ΕΙΣΑΓΩΓΗ", "ΜΕΡΟΣ Α")):
+    if heading.startswith(("Εισαγωγή", "Μέρος Α")):
         return "sec-intro"
-    if heading.startswith("ΜΕΡΟΣ Β"):
+    if heading.startswith("Μέρος Β"):
         return "sec-decimal"
-    m = re.match(r"ΠΡΟΤΑΣΗ ([1-7])\b", heading)
+    m = re.match(r"Πρόταση ([1-7])\b", heading)
     if m:
         return "sec-prop" + m.group(1)
-    if heading.startswith(("ΜΕΡΟΣ Γ", "ΙΣΤΟΡΙΚΟ ΕΠΙΜΕΤΡΟ", "ΒΙΒΛΙΟΓΡΑΦΙΑ")):
+    if heading.startswith(("Μέρος Γ", "Ιστορικό επίμετρο", "Βιβλιογραφία")):
         return "sec-epilogue"
     raise SystemExit(
         f"build_html: no HTML section mapped for Markdown heading '## {heading}'. "

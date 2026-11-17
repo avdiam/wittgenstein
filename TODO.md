@@ -11,9 +11,7 @@ item is finished, move it to `DONE.md` with the date.
 
 ## For the owner to decide
 
-1. Headings typed in capitals in the Tractatus HTML and the analysis Markdown:
-   keep them in capitals or change them to normal case.
-2. Possible next steps for the essay page: split long passages (the halting
+1. Possible next steps for the essay page: split long passages (the halting
    proof, the decidability examples) into folding blocks; a search box like
    the Tractatus one; a custom domain.
 

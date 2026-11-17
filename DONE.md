@@ -34,6 +34,19 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   paragraph, the four names closing section 10) is outside this topic
   and was not acted on.
 
+- Headings typed in capitals (the owner's decision: normal case for
+  titles, capitals kept for short labels). Retyped in sentence case, with
+  accents: the 13 `##` titles of the analysis Markdown (`target_for()` in
+  `tools/build_html.py` follows them) and 58 hand-written headings of
+  `docs/tractatus.html` (the 10 section titles and the headings and box
+  headers inside the summaries). Terms the body text capitalises keep
+  their capital (Εικονιστική Θεωρία, Λέγειν, Δεικνύναι, το Μυστικιστικό);
+  German nouns are capitalised, adjectives are not. Left in capitals: the
+  badges above the titles, the buttons, the labels inside the labs and
+  the diagrams. Not touched: the `###` and `####` headings of the
+  Markdown, which capitalise each main word. The introduction was read
+  in headless Chrome at 1300 px.
+
 **Session of 2026-11-16 (second), visual check after the review:**
 
 - The rendered essay page was read in full in headless Chrome at 1100 px
