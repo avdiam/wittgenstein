@@ -13,6 +13,17 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
 - Pushed `efd6b93..5ffd254` to `main` at the owner's request; the Pages
   deploy succeeded, and the live `index.html`, `essay.html`,
   `tractatus.html` and Word file are byte-identical to the local copies.
+- The owner tried the essay search in a real browser: fine.
+- The Gemini 4 Argon proposal for an *Investigations* part was read in
+  full and checked against the LWP German text (ledger, "The Gemini
+  proposal for the *Investigations*, checked"): seven errors about the
+  text, one contested point stated as fact (Kripke), and a `LICENSE`
+  clause that would have become wrong. The owner decided scope, page
+  build, quotation policy and the fate of the file; the staged plan is in
+  `TODO.md`. `LICENSE` §3 rewritten: German quotations of works first
+  published after 1951 (the analysis already quotes PU §43) are not in
+  the US public domain. The proposal file was deleted; it never entered
+  git.
 
 **Second session of 2026-11-17: the owner's decisions on
 the open items; a search box for the essay page.**

@@ -529,6 +529,32 @@ Searched by a research agent; the Strachey letter and Bays's paper were then rea
 | Papazisis *Φιλοσοφικές Έρευνες*, 1977 | [University of the Aegean catalogue, 155856](https://vufind2.lib.aegean.gr/Record/155856); Kozani library and University of Macedonia records (search snippets) | confirmed | none: the essay does not name this edition |
 | Life dates | SEP `ibn-sina` (ca. 970–1037) and IEP (c. 980–1037); SEP `plato` (429?–347); SEP `boethius`; MacTutor `Al-Khwarizmi`; SEP `al-farabi`, `ockham`; IEP `chrysipp`; obituaries of Searle, Gettier, Kripke | Avicenna **corrected**; the rest confirmed | «περ. 980–1037» in section 2 and the timeline. Plato «περ. 428–348» kept (within the range the sources give). The other modern dates were not fetched one by one. |
 
+## The Gemini proposal for the *Investigations*, checked (2026-11-17)
+
+The design proposal by Gemini 4 Argon (local file, deleted after this
+check) was read in full; its claims about the text were checked against the
+German of the Ludwig Wittgenstein Project
+([Philosophische_Untersuchungen](https://www.wittgensteinproject.org/w/index.php/Philosophische_Untersuchungen),
+§§1–446 and §§600–693 read verbatim). Nothing from the proposal is in the
+published texts yet; the corrections are for the coming analysis.
+
+| Claim in the proposal | Source | Verdict | Action |
+| :-- | :-- | :-- | :-- |
+| Source of the LWP text | LWP page: *Werkausgabe* Band 1, Suhrkamp 1999, pp. 231–485 (ed. Anscombe, Rhees, von Wright); "gemeinfrei" notice | noted | The LWP text has §§1–693 only: no Part II. Its *Über Gewissheit* page returns 404. Open check in `CROSSCHECK_PLAN.md`. |
+| §243 contrasts the private language with a cipher diary "like Pepys's" | §243 (LWP) | **corrected**: Pepys and any cipher are absent | The diary is in §258 (*Tagebuch*). Pepys is a commentators' example, not Wittgenstein's. |
+| §79: a critique of "rigid" Russellian descriptions | §79 (LWP): «Nach Russell können wir sagen: der Name »Moses« kann durch verschiedene Beschreibungen definiert werden» | **corrected**: "rigid" is not in §79 | §79 is about descriptions for the name "Moses". "Rigid" is Kripke's later term. |
+| §246: "Only I can know whether I am really in pain" is grammatical nonsense | §246 (LWP): «Das ist in einer Weise falsch, in einer andern unsinnig» | **corrected** | False in one sense, nonsense in another. |
+| "Super-rigid machine" (*überstarre Maschine*), §§193–194 | §194 «die ideal starren Maschine»; §197 «über-starre Verbindung» (LWP) | **corrected** | Cite §194 and §197 with their own wording. |
+| *Kristallreinheit*, §97 and §107 | §97 «vom reinsten Kristall»; §107 «Die Kristallreinheit der Logik»; §108 «Das *Vorurteil* der Kristallreinheit» (LWP) | **corrected** (§97) | The word is in §107–108; §97 has "of the purest crystal". |
+| §339: thinking is not an incorporeal process | §339 (LWP): «Denken ist kein unkörperlicher Vorgang» | confirmed | none |
+| The 1945 preface as Wittgenstein's "instruction" to read the books together | Vorwort (LWP): «Da schien es mir plötzlich, daß ich jene alten Gedanken und die neuen zusammen veröffentlichen sollte» | **corrected**: a wish he once had, not an instruction | Describe it as what seemed right to him at one time. |
+| §39 "Excalibur" | §39 (LWP): *Nothung* | **corrected** | "Excalibur" is Anscombe's rendering; use *Nothung*. |
+| Kripke "stops at the first paragraph of §201", stated as fact | Baker & Hacker (1984), McGinn (1984), McDowell (1984) argue it; Kripke (1982) presents his reading as "Wittgenstein's argument as it struck Kripke" | contested; the proposal picks a winner | An «Ερμηνευτική σημείωση» that names both readings (arc 6). Sources to be read then. |
+| Part II / *PPF* xi: duck-rabbit, «halb Seherlebnis, halb ein Denken» | not in the LWP text (no Part II) | unverifiable for now | Needs another German source. |
+| *Über Gewissheit* §115, §122, §§96–99, §§341–343 | LWP page missing | unverifiable for now | Open check. |
+| Copyright: German PD in the EU since 2022; 1953 edition under US copyright to 2049 (95 years); Anscombe, Hacker–Schulte and Christodoulidis translations under copyright | Wittgenstein died 29 April 1951 (life + 70); US term for works of 1953 is 95 years from publication | confirmed in outline | `LICENSE` §3 rewritten: German quotations of the *Investigations* are not PD in the US. Quote key sentences only, not 60–80 whole remarks as proposed. |
+| Labels for every remark: "interlocutor" or "therapeutic" voice | — | contested in itself: who speaks is an interpretive question | Not adopted as labels; voice discussed in arc 1 with a note. |
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.

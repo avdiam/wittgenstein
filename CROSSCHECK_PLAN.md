@@ -11,6 +11,20 @@ remove it here.
 - C3 (a second Pears–McGuinness copy) needs a printed book. (C1 was done on 2026-11-16: ledger, "C1: Greek terms of the analysis against Kitsopoulos".)
 - From tiers A and D: the years of most classics in section Γ΄ were not searched one by one; *Logical Foundations of Probability* and the 1919 letter were read only through other authors' quotations; several rows rest on Wikipedia, catalogues or booksellers as their only or second source (marked in the tables).
 
+## Open for the *Investigations* part
+
+- A German source for Part II (section xi, the duck-rabbit) and for
+  *Über Gewissheit*. The Ludwig Wittgenstein Project has §§1–693 only
+  (based on *Werkausgabe* 1, Suhrkamp 1999); its *Über Gewissheit* page
+  does not exist (checked 2026-11-17). Both are public domain in the EU;
+  in the US the 1953 text is under copyright to the end of 2048 and
+  *Über Gewissheit* (1969) longer, so quote key sentences only.
+- *Über Gewissheit* §115, §122, §§96–99 (*Flußbett*), §§341–343
+  (*Angeln*): not yet checked against the German.
+- The year 1977 of the Christodoulidis translation is in library
+  catalogues (ledger) but not in the OCR of the scan; read the copyright
+  page image when the table of terms is made.
+
 ## Open for the essay
 
 - Life dates: the ancient and medieval ones, Avicenna, Searle, Gettier and Kripke were checked on 2026-11-17 (ledger, "The weakly sourced points of the essay, closed"). The other modern dates (Leibniz to Bruner) were not fetched one by one.

@@ -37,9 +37,16 @@ This repository contains texts and code under two different licences.
 
 3. Material that is not ours
 
-   - The quotations of Wittgenstein's works in German and in the Ogden/Ramsey
-     translation (1922) are in the public domain in the European Union and the
-     United States.
+   - The quotations of the Tractatus in German and in the Ogden/Ramsey
+     translation (1922) are in the public domain in the European Union and
+     the United States.
+   - Wittgenstein's works first published after his death in 1951, such as
+     the Philosophische Untersuchungen (1953), are in the public domain in
+     the European Union since 2022. In the United States they remain under
+     copyright for 95 years from first publication (the Untersuchungen to
+     the end of 2048). Short passages are quoted, in German or in our own
+     Greek translation, with credit, for commentary; the CC BY 4.0 licence
+     of section 1 does not cover them.
    - The Tractatus page (docs/tractatus.html) quotes the translation of
      D. F. Pears and B. F. McGuinness (Routledge & Kegan Paul, 1961) for 65
      propositions, about 1,200 words in all, next to the German text and

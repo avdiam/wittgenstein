@@ -15,14 +15,62 @@ item is finished, move it to `DONE.md` with the date.
    the smooth scroll to each hit (headless Chrome cannot show it), Enter /
    Shift+Enter across tabs, the header on a phone with results shown.
 
+## Third part: the *Philosophical Investigations*
+
+Decided by the owner on 2026-11-17, after reading the Gemini 4 Argon
+proposal (assessed in this session; its errors are in the ledger, "The
+Gemini proposal for the *Investigations*, checked"; the file was then
+deleted).
+
+- **Scope: a focused companion**, not a twin of the Tractatus page.
+  Commentary on about 50–60 central remarks, grouped in thematic arcs;
+  Part II as one section, with a note that its status is debated
+  (Hacker–Schulte print it as *Philosophy of Psychology – A Fragment*);
+  *Über Gewissheit* as a short epilogue; two or three labs at the end.
+  Essay §10 and the Tractatus epilogue link to it and are not repeated.
+- **Page: generated, like `essay.html`.** One Markdown source,
+  `Philosophical Investigations/PHILOSOPHICAL_INVESTIGATIONS_ANALYSIS.md`
+  (LF), and a new `tools/build_investigations_html.py` that reuses the
+  essay builder's tokens, tabs and search; added to `build_all.py` and
+  `--check`. Nothing on the page is hand-written.
+- **Quotations: key sentences only.** For each remark, the one or two
+  sentences that matter in German (LWP text, §§1–693), with our own Greek
+  translation. Christodoulidis (Papazisis 1977) for single terms only, as
+  with Kitsopoulos; English only for standard terms ("language-game").
+  No whole remarks.
+
+Arcs (from the proposal, kept): 1. introduction, the 1945 preface, how to
+read the book, table of terms; 2. §§1–38 Augustine, builders, language-
+games; 3. §§39–64 names, simples, meaning as use; 4. §§65–88 family
+resemblances, vagueness; 5. §§89–133 philosophy, *übersichtliche
+Darstellung*, therapy; 6. §§138–242 understanding and rule-following
+(«Ερμηνευτική σημείωση» on Kripke and his critics); 7. §§243–315 private
+language; 8. §§316–693 and Part II xi, thinking, intention, seeing-as;
+9. epilogue on *Über Gewissheit*, comparison table, bibliography.
+
+Stages, one commit each:
+
+0. Done 2026-11-17: decisions, ledger rows, open checks, `LICENSE` §3.
+1. Skeleton of the Markdown, arc 1 and the table of terms against
+   Christodoulidis (OCR in `ocr_local/investigations/`, page images).
+2. Arcs 2–3. 3. Arcs 4–5. 4. Arcs 6–7. 5. Arc 8 and the epilogue
+   (needs the German source of Part II and *Über Gewissheit*: see
+   `CROSSCHECK_PLAN.md`).
+6. Build script, cover card on `docs/index.html`, links from essay §10,
+   the Tractatus epilogue and the page headers; `README.md`, `CLAUDE.md`.
+7. Labs, two or three, chosen then (candidates: the rule-following
+   sequence of §185, the beetle box of §293, the duck-rabbit).
+
+Not published until the owner says so: stages may be committed and kept
+local, or pushed with the page not yet linked from the cover.
+
 ## For the owner to decide
 
-1. A third part on the *Philosophical Investigations*: a design plan by
-   Gemini 4 Argon is in `gemini-argon-investigations-proposal.md` (local,
-   untracked; not yet read in full or assessed). The owner will look at it
-   later. Its copyright section needs checking before anything is published.
-2. A custom domain name for the site: to be discussed once the
+1. A custom domain name for the site: to be discussed once the
    *Investigations* part is finished (owner, 2026-11-17).
+2. Whether the *Blue and Brown Books* (Greek scan in `second phase/`)
+   get a place in arc 1 as the bridge texts of 1933–35. The proposal
+   does not mention them.
 
 ## Needs printed books or library access
 
