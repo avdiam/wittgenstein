@@ -8,6 +8,12 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Third session of 2026-11-17: pushed.**
+
+- Pushed `efd6b93..5ffd254` to `main` at the owner's request; the Pages
+  deploy succeeded, and the live `index.html`, `essay.html`,
+  `tractatus.html` and Word file are byte-identical to the local copies.
+
 **Second session of 2026-11-17: the owner's decisions on
 the open items; a search box for the essay page.**
 

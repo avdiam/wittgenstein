@@ -6,15 +6,12 @@ item is finished, move it to `DONE.md` with the date.
 
 ## Status
 
-- Second session of 2026-11-17 (details in `DONE.md`): the essay page has a
-  search box; the weakly sourced points of the essay were searched and two
-  corrected. Committed, **not pushed**: the owner will push in the next
-  session.
+- Third session of 2026-11-17: the work of the second session (essay
+  search box, Strachey and Bays corrections) is pushed and live.
 
 ## Next session
 
-1. Push to `main` (owner's request), then check the live site.
-2. The owner tries the essay search in a real browser and on a phone:
+1. The owner tries the essay search in a real browser and on a phone:
    the smooth scroll to each hit (headless Chrome cannot show it), Enter /
    Shift+Enter across tabs, the header on a phone with results shown.
 
