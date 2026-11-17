@@ -24,6 +24,11 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   published after 1951 (the analysis already quotes PU §43) are not in
   the US public domain. The proposal file was deleted; it never entered
   git.
+- The owner added the *Blue and Brown Books* to arc 1 as the bridge from
+  the *Tractatus*, and asked for research on the *Big Typescript* and the
+  *Philosophical Grammar* as well. Decided: no writing of the third part
+  until the sources are searched and discussed (plan in `TODO.md`, open
+  checks in `CROSSCHECK_PLAN.md`).
 
 **Second session of 2026-11-17: the owner's decisions on
 the open items; a search box for the essay page.**

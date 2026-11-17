@@ -6,14 +6,30 @@ item is finished, move it to `DONE.md` with the date.
 
 ## Status
 
-- Third session of 2026-11-17: the work of the second session (essay
-  search box, Strachey and Bays corrections) is pushed and live.
+- Third session of 2026-11-17 (details in `DONE.md`): the second
+  session's work is pushed and live; the owner found the essay search
+  fine. The *Investigations* part is planned (below). Four commits after
+  the push are local, **not pushed** (notes and `LICENSE` only; the site
+  is unchanged).
 
 ## Next session
 
-1. The owner tries the essay search in a real browser and on a phone:
-   the smooth scroll to each hit (headless Chrome cannot show it), Enter /
-   Shift+Enter across tabs, the header on a phone with results shown.
+**No writing of the third part yet** (owner, 2026-11-17). First:
+
+1. Research and notes on the middle period, as the way from the first
+   to the second phase: the *Big Typescript* (TS 213) and the
+   *Philosophical Grammar*, next to the *Blue and Brown Books* (and the
+   *Philosophical Remarks*, if they belong in the same account). For
+   each: when and how it was written, how it was edited and published,
+   what it keeps from the *Tractatus* and what it anticipates in the
+   *Investigations*, and where the scholars disagree. Notes go in a
+   working file first (not in the published texts); sources in
+   `CROSSCHECK_PLAN.md`.
+2. A source search for the whole third part: editions (German text of
+   Part II and *Über Gewissheit*, the Bergen Nachlass Edition for the
+   typescripts), the Greek translations we have, and the secondary
+   literature for each arc, before a line is written.
+3. Discuss the results with the owner, and only then settle stage 1.
 
 ## Third part: the *Philosophical Investigations*
 
@@ -53,9 +69,11 @@ language; 8. §§316–693 and Part II xi, thinking, intention, seeing-as;
 Stages, one commit each:
 
 0. Done 2026-11-17: decisions, ledger rows, open checks, `LICENSE` §3.
-1. Skeleton of the Markdown, arc 1 (with the *Blue and Brown Books*)
-   and the table of terms against Christodoulidis (OCR in
-   `ocr_local/investigations/`, page images).
+1. After the research and the discussion above: skeleton of the
+   Markdown, arc 1 (the middle period: *Blue and Brown Books*, and the
+   *Big Typescript* and *Philosophical Grammar* as the owner decides
+   after the research) and the table of terms against Christodoulidis
+   (OCR in `ocr_local/investigations/`, page images).
 2. Arcs 2–3. 3. Arcs 4–5. 4. Arcs 6–7. 5. Arc 8 and the epilogue
    (needs the German source of Part II and *Über Gewissheit*: see
    `CROSSCHECK_PLAN.md`).

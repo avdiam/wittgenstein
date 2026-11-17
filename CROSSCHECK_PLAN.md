@@ -32,6 +32,14 @@ remove it here.
   from the scan's title pages), and the copyright of the English text
   (dictated by Wittgenstein: PD in the EU since 2022; in the US to the
   end of 2053 if the 95-year rule applies).
+- The middle period, for arc 1 (owner, 2026-11-17: research before
+  writing): the *Big Typescript* (TS 213) and the *Philosophical
+  Grammar*, and whether the *Philosophical Remarks* belong in the same
+  account. Nothing checked yet: dates of composition, the editions
+  (who edited them, when, from which typescripts), the relation between
+  them, and the scholarly readings of the period. Start from the
+  Wittgenstein Archives at Bergen (Bergen Nachlass Edition), the SEP
+  entries, and the editors' prefaces.
 - The year 1977 of the Christodoulidis translation is in library
   catalogues (ledger) but not in the OCR of the scan; read the copyright
   page image when the table of terms is made.
