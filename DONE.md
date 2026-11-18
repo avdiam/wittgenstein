@@ -30,6 +30,13 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
 - Found: the LWP now has *Über Gewißheit* (Suhrkamp 1970 text);
   «Flußbett» is in §97, not §96. No free online text of the published
   Part II; MS 144 is the manuscript witness.
+- The owner answered questions 1–4 of the research notes (recorded in
+  `TODO.md` and in §6 of the notes).
+- `build_all.py --check` failed on the Word file although its contents
+  were current: Python 3.14 compresses with zlib-ng, so the zip bytes
+  differ. Owner's choice (option A): `build_docx.py` now compares the
+  unpacked parts of the zip, and a normal build does not rewrite the file
+  when they are the same. Tested: an added paragraph is still reported.
 
 **Third session of 2026-11-17: pushed.**
 

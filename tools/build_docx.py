@@ -495,12 +495,27 @@ def build():
     return buffer.getvalue()
 
 
+def same_contents(path, data):
+    """True if the .docx at path has the same parts, in the same order and
+    with the same unpacked bytes, as data. The zip bytes themselves are not
+    compared: they depend on the zlib build of the Python that wrote them."""
+    if not path.exists():
+        return False
+    with zipfile.ZipFile(path) as old, zipfile.ZipFile(BytesIO(data)) as new:
+        names = old.namelist()
+        return names == new.namelist() and all(old.read(n) == new.read(n) for n in names)
+
+
 def main():
     data = build()
+    current = same_contents(DOCX_PATH, data)
     if "--check" in sys.argv:
-        if not DOCX_PATH.exists() or DOCX_PATH.read_bytes() != data:
+        if not current:
             print(f"OUT OF DATE: {DOCX_PATH.name} does not match {MD_PATH.name}")
             sys.exit(1)
+        print(f"up to date: {DOCX_PATH.name}")
+        return
+    if current:  # do not rewrite: a different zlib would only change the packing
         print(f"up to date: {DOCX_PATH.name}")
         return
     DOCX_PATH.write_bytes(data)

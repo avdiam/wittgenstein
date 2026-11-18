@@ -416,6 +416,12 @@ Sources: SEP §4; Pichler 2004, pp. 12–14. [R]
 
 ## 6. For the discussion with the owner
 
+Owner's answers, 2026-11-18: 1 agreed; 2 agreed; 3 each note in the arc
+where it belongs (the editing note and the dating of the turn in arc 1,
+Sraffa where his influence is discussed, *übersichtliche Darstellung* in
+arc 5); 4 deferred until more sources are searched. Points 5 and 6 not
+yet discussed.
+
 1. **What arc 1 covers.** Proposal: the *Blue and Brown Books* at the
    centre (readable, published, free in English on the LWP, in Greek
    since 1984), with a short account of the route before them:

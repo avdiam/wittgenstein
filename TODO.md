@@ -16,10 +16,15 @@ item is finished, move it to `DONE.md` with the date.
 
 **No writing of the third part yet** (owner, 2026-11-17).
 
-1. Discuss the research notes with the owner: the six questions in
-   §6 of `RESEARCH_NOTES.md` (what arc 1 covers, which texts to quote,
-   the interpretive notes, Part II, *Über Gewißheit*, library access).
-2. Only then settle stage 1.
+1. Questions 1–4 of §6 in `RESEARCH_NOTES.md` answered by the owner on
+   2026-11-18: arc 1 with the *Blue and Brown Books* at the centre and a
+   short account of the route from 1929 (the *Philosophical Grammar*
+   named as Rhees's edition); key sentences quoted from the manuscripts
+   with page and date, naming the published book; each interpretive
+   note in the arc where it belongs; Part II deferred until more sources
+   are searched. Still to discuss: points 5 (*Über Gewißheit*) and 6
+   (library access).
+2. Then settle stage 1.
 
 ## Third part: the *Philosophical Investigations*
 
