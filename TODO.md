@@ -18,10 +18,16 @@ item is finished, move it to `DONE.md` with the date.
 
 **Start with the essay, not with the third part** (owner, 2026-11-18).
 
-1. The owner wants to discuss two more things about the essay. Ask
-   what they are first. Until that discussion is over, do not read or
-   start anything for the *Investigations* part (`Philosophical
-   Investigations/`, `RESEARCH_NOTES.md`, the OCR files).
+1. The owner's essay points of 2026-11-19: the title layout is done and
+   pushed. The second, a subsection «Το "μαύρο κουτί"» in section 11
+   (where a network stores what it knows, black boxes,
+   interpretability, the Goodfire essay and logical form), is drafted
+   in `drafts/Mavro_Kouti_draft.md` and **not applied** (owner,
+   2026-11-19). Next: check Π1–Π7 and the Cammarata wording, ask the
+   open question at the end of the draft, then write it into the
+   Markdown. Until this is settled, do not read or start anything for
+   the *Investigations* part (`Philosophical Investigations/`,
+   `RESEARCH_NOTES.md`, the OCR files).
 2. Align 3.328 in the Tractatus analysis (Markdown, and the summary and
    tree data of the page) with the essay's wording: «Αν ένα σημείο δεν
    είναι αναγκαίο, τότε δεν έχει σημασία». The analysis has «δεν
