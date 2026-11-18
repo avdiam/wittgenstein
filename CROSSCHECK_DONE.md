@@ -603,6 +603,23 @@ each proposal in turn.
 | Word vectors as a map; the capital-and-country example (section 11) | Mikolov, Yih & Zweig, NAACL 2013, and [Linzen 2016](https://arxiv.org/pdf/1606.07736), both through search summaries only | the example holds only roughly; not adopted | The owner chose a figure instead: `docs/images/word_space.svg`, eight words on three axes with invented numbers, as the caption says. No text change. |
 | The pupil of §185, Hume and machine learning (section 11) | the essay's section 10 (Kripke's reading marked as disputed) | link adopted as a reminder; the critique's causal sentence on model failures **unverifiable**, not adopted | One sentence added to «Τα όρια»: a model's examples fit more than one way of going on. |
 
+## Whole read of the essay (2026-11-19)
+
+The essay was read in full for coherence; the owner decided each point.
+Style changes with no new claim (Aristotle sentence split, «λίγο πιο
+κάτω», heading of the subsection in section 10, «αντιστέκονται», the
+«γλώσσα» example, the two traditions named in section 11, the figure
+moved, the 4.0031 quotations kept) are not listed.
+
+| Location | Claim | Source | Verdict | Action |
+| :-- | :-- | :-- | :-- | :-- |
+| Section 8, P vs NP paragraph | "with a hundred propositions the rows exceed the number of atoms in the observable universe" | arithmetic: 2¹⁰⁰ ≈ 1.3 × 10³⁰; the usual estimate of atoms is about 10⁸⁰, passed at 2²⁶⁶ | **corrected** | «με τριακόσιες» (2³⁰⁰ ≈ 2 × 10⁹⁰) |
+| Section 5, descriptions | 4.0031, the sentence on Russell's merit | Gutenberg PDF (German, Ogden), Pears–McGuinness in Klement | confirmed | none (owner: keep all three 4.0031 quotations) |
+| Sources | Post 1921; Church 1936 (both papers); Rosenblatt 1958; Lucas 1961 | Crossref (DOIs 10.2307/2370324, 10.2307/2371045, 10.2307/2269326, 10.1037/h0042519, 10.1017/S0031819100057983) | confirmed | entries added |
+| Sources | Matiyasevich 1970 | [Mathnet](https://mathnet.ru/eng/dan35274) (*DAN SSSR* 191, 279–282); JSL review on Cambridge Core (*Soviet Math. Dokl.* 11, 354–357) | confirmed | entry added |
+| Sources | Hilbert–Ackermann 1928 (Springer, Berlin); Haugeland 1985 (MIT Press) | library citations found by search (Cambridge Core reference lists, PhilArchive) | confirmed | entries added |
+| Glossary | five new entries | the essay's own text | no new claim | added |
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.

@@ -8,6 +8,22 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-19: whole read of the essay.**
+
+- The essay read in full for coherence; twelve points proposed, the
+  owner decided each (ledger, "Whole read of the essay").
+- Corrected: 2¹⁰⁰ rows do not exceed the atoms of the universe; now
+  «με τριακόσιες».
+- Changed: the Aristotle sentence split; «λίγο πιο κάτω» (barber);
+  heading «Οι *Φιλοσοφικές Έρευνες* – Ύστερος Wittgenstein»;
+  «αντιστέκονται» (Moravec); the attention example is «γλώσσα»; the two
+  traditions named at the end of section 11 and the attention/Lean
+  figure moved after the Lean paragraph.
+- Added: seven source entries (Post, Hilbert–Ackermann, Church,
+  Rosenblatt, Lucas, Matiyasevich, Haugeland) and five glossary entries.
+- Left as they were (owner): the summary of section 8, the Masterman
+  sentence, the three quotations of 4.0031.
+
 **Session of 2026-11-18, later: an outside critique of the essay.**
 
 - A critique with eleven proposals (a Word file the owner added, not in
