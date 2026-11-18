@@ -8,9 +8,9 @@ item is finished, move it to `DONE.md` with the date.
 
 - Session of 2026-11-18 (details in `DONE.md`): the research on the
   middle period and the source search are done; notes in
-  `Philosophical Investigations/RESEARCH_NOTES.md`. The commits since
-  the last push are local, **not pushed** (notes, ledger and `LICENSE`
-  only; the site is unchanged).
+  `Philosophical Investigations/RESEARCH_NOTES.md`. Everything is
+  pushed (`5ffd254..b20f236`); the only visible change on the site is
+  the centred title of the essay page.
 
 ## Next session
 

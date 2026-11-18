@@ -37,6 +37,12 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   differ. Owner's choice (option A): `build_docx.py` now compares the
   unpacked parts of the zip, and a normal build does not rewrite the file
   when they are the same. Tested: an added paragraph is still reported.
+- Essay page: title and subtitle centred (`.page-head` in the builder's
+  CSS), checked at 1280 px and at 390 px in an iframe.
+- Pushed `5ffd254..b20f236` at the owner's request, after checking that
+  the Greek scans, OCR text and downloaded sources (`second phase/`,
+  `ocr_local/`, `sources_local/`) are git-ignored and that every commit
+  uses the noreply address.
 
 **Third session of 2026-11-17: pushed.**
 
