@@ -559,6 +559,7 @@ published texts yet; the corrections are for the coming analysis.
 
 | Location | Claim | Source | Verdict | Action |
 | :-- | :-- | :-- | :-- | :-- |
+| Section 5, Zermelo | The axiom of separation (*Aussonderung*) avoids Russell's paradox; the relativised argument shows that the new set is not a member of the given set, so there is no universal set; existence of sets such as an infinite one needs separate axioms; ZF the usual foundation of mathematics | [SEP, Zermelo's Axiomatization of Set Theory, §1](https://plato.stanford.edu/entries/zermelo-set-theory/); [SEP, Set Theory, §1, §2.1](https://plato.stanford.edu/entries/set-theory/); [SEP, Russell's Paradox](https://plato.stanford.edu/entries/russell-paradox/) | confirmed | Added at the owner's request. Nuances not in the text: Zermelo restricted separation to "definite" properties; the standard system is usually named ZFC (with choice, already among Zermelo's 1908 axioms). |
 | Section 4, Lovelace | Ada Lovelace was the daughter of Lord Byron | [Britannica, Ada Lovelace](https://www.britannica.com/biography/Ada-Lovelace); [Bodleian, About Ada Lovelace](https://blogs.bodleian.ox.ac.uk/adalovelace/about-ada-lovelace/) | confirmed (his only legitimate child) | Added at the owner's request. |
 
 ## Research for the *Investigations* part (2026-11-18)
