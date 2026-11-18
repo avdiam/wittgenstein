@@ -447,3 +447,81 @@ yet discussed.
    a short note.
 6. **Library access** would settle: Rhees's English preface (1958), the
    PPF numbers and wording, Kenny 1976, Kienzler 1997, Stern 1991.
+
+## 7. Local copies and further addresses
+
+Downloaded on 2026-11-18 and kept in `sources_local/investigations/`
+(git-ignored: several are under copyright or "all rights reserved"; for
+reading and checking only, never for the repository).
+
+| File | What it is | Where it came from |
+| :-- | :-- | :-- |
+| `Erbacher_2015_PhilInv38-3_Editorial_approaches.pdf` | Erbacher 2015 (open access) | mediacoop.uni-siegen.de (URL in the source list above) |
+| `Erbacher_Jung_Seibel_2017_NWR6_Rhees_PB.pdf` | Rhees's editing of PB; loss of TS 209 | nordicwittgensteinreview.com, article 3442 |
+| `Schulte_2021_NWR10_MSS105-122.pdf` | Text-genetic notes on MSS 105–122 | nordicwittgensteinreview.com, article 3603 |
+| `Pichler_1994_WAB-WP8_Untersuchungen_Nachlass.pdf` | TS 208/209; Russell's typescript | <https://wab.uib.no/ojs/index.php/agora-wab/article/download/2951/3622> |
+| `Pichler_2004_PU_Vom_Buch_zum_Album.pdf` | Pichler 2004 (periodisation, the 1936 caesura) | <https://wab.uib.no/alois/pichler-rodopi2004.pdf> |
+| `Cripps_Duplicate_pages_TS210_211_213.pdf` | Duplicate pages in TS 210, 211, 213 | wab.uib.no (WAB Working Papers) |
+| `Kenny_2006_Brief_history_of_Wittgenstein_editing.pdf` | Kenny 2006 | <https://wab.uib.no/ojs/index.php/agora-ontos/article/view/2238> |
+| `Keicher_Werkausgabe_und_Quellen_im_Nachlass.pdf` | Sources of each *Werkausgabe* volume, concordances for PB and PG | <https://wab.uib.no/ojs/index.php/agora-alws/article/download/2420/2563> |
+| `Keicher_Helsinki-Edition_der_PU.pdf` | Stages of the PI (Helsinki edition, KGE 2001) | <https://wab.uib.no/ojs/index.php/agora-alws/article/download/2646/3015> |
+| `Paul_2007_Wittgensteins_Progress_text.txt` | Paul 2007, text only | <https://wab.uib.no/agora-wab/article/viewFile/3239/3938> |
+| `Conant_2006_Later_criticism_of_the_Tractatus.pdf` | Conant, in Pichler & Säätelä 2006, 172–204 | <https://wab.uib.no/agora-ontos/article/view/2230> |
+| `Martin_2016_NWR5_perspicuous_representation.pdf` | Hacker, Baker, Sluga on *übersichtliche Darstellung* | <https://nordicwittgensteinreview.com/article/download/3365/4095> |
+| `Potter_2021_phenomenological_phase_handout.pdf` | Potter's handout (MS 107 passage) | <https://wittgenstein2021.univie.ac.at/fileadmin/user_upload/k_wittgenstein2021/Vortragsunterlagen/20210611_Wittgenstein_s_phenomenological_phase__handout__Potter.pdf> |
+| `Reichenberger_Kippfiguren_ALWS_cites_WA1_p520.pdf` | Cites *Werkausgabe* 1 (1984), p. 520, for PPF xi | <https://wab.uib.no/agora-alws/article/download/2525/2773> |
+| `Trinity_AddMS_a407_Skinner_papers.pdf` | Skinner's papers (Brown Book dictation) | <https://www.m-a.org.uk/resources/Skinner.pdf> |
+| `Hacker_2025_On_Certainty_front_matter.pdf` | Front matter of Hacker's 2025 OC: concordance, MS 176 passage | Wiley (publisher's sample) |
+| `Theodosiou_2018_Peri_vevaiotitos_eisagogi.pdf` | Translator's introduction to the Greek OC (ΠΕΚ) | ΠΕΚ sample |
+| `Kovaios_2006_Paratiriseis_themeliosi_mathimatikon_PEK_extract.pdf` | Extract of the Greek RFM (ΠΕΚ e-book) | ΠΕΚ sample |
+| `LWP_Blue_Book.pdf`, `LWP_Brown_Book.pdf` | English text, normalised from TS 309 / TS 310 | <https://books.wittgensteinproject.org/pdf/english/Brown%20Book.pdf> (and Blue Book) |
+| `LWP_Ueber_Gewissheit.pdf` | German OC (Suhrkamp 1970) | <https://books.wittgensteinproject.org/pdf/german/%C3%9Cber%20Gewi%C3%9Fheit.pdf> |
+| `LWP_Philosophische_Untersuchungen.md` | German PI §§1–693 | <https://github.com/wittgenstein-project/wittgenstein-published-works> |
+| `bne/Ms-144.txt`, `bne/Ms-172.txt` … `Ms-175.txt` | BNE normalised transcriptions (all rights reserved) | `http://www.wittgensteinsource.org/BTE/Ms-144_n` etc. |
+
+Not saved, read in the browser only: MS 107, MS 110 and MS 115 (passages
+and pages in "Checked in the manuscripts" above; fetch again by the ids
+given there).
+
+Further addresses from the research, not listed above:
+
+- Bergen item records (Europeana), e.g. TS 213:
+  <https://www.europeana.eu/en/item/2048610/data_item_uib_wab_Ts_213>;
+  Trinity's list of the papers:
+  <https://archives.trin.cam.ac.uk/downloads/reports/papers-of-ludwig-wittgenstein-itemList.html>;
+  Trinity on MS 115: <https://archives.trin.cam.ac.uk/index.php/notebook-xi-philosophische-bemerkungen>.
+- Luckhardt & Aue, *The Big Typescript*, Blackwell 2005, ISBN
+  978-1-4051-0699-3: <https://www.wiley-vch.de/en/areas-interest/humanities-social-sciences/the-big-typescript-978-1-4051-0699-3>.
+  *Wiener Ausgabe* 11, Springer 2000, ISBN 978-3-211-82569-3 [S].
+- Kenny, "From the Big Typescript to the Philosophical Grammar", *Acta
+  Philosophica Fennica* 28 (1976) 41–53; Hintikka, "An Impatient Man and
+  his Papers", *Synthese* 87 (1991) 183–201; Erbacher, "'Good'
+  Philosophical Reasons for 'Bad' Editorial Philology?", *Phil. Inv.*
+  42(2), 2019, 111–145.
+- Hacker, *Insight and Illusion*, ch. V:
+  <https://www.cambridge.org/core/books/insight-and-illusion/disintegration-and-reconstruction/21447F415A2949DADDF56D23A4504288>;
+  Stern (ed.), *Wittgenstein in the 1930s*, CUP 2018, reviewed by Matar:
+  <https://ndpr.nd.edu/news/wittgenstein-in-the-1930s-between-the-tractatus-and-the-investigations/>;
+  Stern, "How Many Wittgensteins?": <https://wab.uib.no/w-konferanse/summ-stern.htm>;
+  Stern, "The 'Middle Wittgenstein'", *Synthese* 87(2), 1991, 203–226;
+  Engelmann, *Wittgenstein's Philosophical Development*, Palgrave 2013;
+  Kienzler, *Wittgensteins Wende zu seiner Spätphilosophie 1930–1932*,
+  Suhrkamp 1997.
+- Munz on the phenomenological phase (ALWS 2004):
+  <https://wab.uib.no/ojs/index.php/agora-alws/article/view/2515>;
+  Unterhuber on Sraffa (ALWS 2007):
+  <https://wab.uib.no/ojs/index.php/agora-alws/article/view/2647/3018>;
+  Venturinha, Sraffa's notes on the Blue Book, *NWR* 1 (2012):
+  <https://www.nordicwittgensteinreview.com/article/download/NWR-1_2012-Venturinha/html>
+  (dates to check before citing).
+- BNE: "About BNE" (rights): `http://wittgensteinsource.org/static_by_id/en/13`;
+  MS 144 full text: `http://www.wittgensteinsource.org/agora_show_full_book_transcription/74?collectionId=1`.
+  Moore's lecture notes (MWN collection) are on the same site.
+- Greek: University of the Aegean records
+  <https://vufind2.lib.aegean.gr/Record/155856> (PI) and
+  <https://vufind2.lib.aegean.gr/Record/184202> (BBB); LiFO on the Greek
+  OC: <https://www.lifo.gr/node/518621>.
+- SEP entries used: `wittgenstein`, `wittgenstein-atomism`,
+  `wittgenstein-mathematics`, `vienna-circle`, `private-language`,
+  `rule-following`, `wittgenstein-aesthetics`; IEP `wittgens`,
+  `kripkes-wittgenstein`.

@@ -12,3 +12,5 @@ second phase/
 ocr_local/
 # Claude Code settings for this machine: local only
 .claude/
+# Sources downloaded for research (papers, LWP texts, BNE transcriptions): local only
+sources_local/
