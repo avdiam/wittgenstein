@@ -333,7 +333,7 @@ TEMPLATE = """<!DOCTYPE html>
 {css}
 </style>
 </head>
-<body>
+<body data-tab="text">
 <a class="skip" href="#panel-text">Μετάβαση στο κείμενο</a>
 <header class="site-header">
   <div class="hdr">
@@ -373,8 +373,10 @@ TEMPLATE = """<!DOCTYPE html>
   <div class="fig-zoom-body"></div>
 </dialog>
 <div class="page-head">
-  <h1>{title_html}</h1>
-  <p class="subtitle">{subtitle_html}</p>
+  <div class="page-head-inner">
+    <h1>{title_html}</h1>
+    <p class="subtitle">{subtitle_html}</p>
+  </div>
 </div>
 <main id="main">
 {panels}
@@ -480,6 +482,15 @@ main { max-width: 1600px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
 body.toc-folded .text-layout { grid-template-columns: var(--rail-w) minmax(0, 1fr); }
 .reading { max-width: 44rem; font-family: var(--font-serif); font-size: 1.06rem; line-height: 1.72; }
 .reading-wide { max-width: 60rem; margin: 0 auto; }
+/* On the text tab the title block uses the grid of the text below it, so
+   the title stays centred over the text column whether the contents pane is
+   open or folded; folded, the text column is centred in the space it gains. */
+@media (min-width: 1024px) {
+  body[data-tab="text"] .page-head { display: grid; grid-template-columns: var(--toc-w) minmax(0, 1fr); column-gap: 2.5rem; }
+  body.toc-folded[data-tab="text"] .page-head { grid-template-columns: var(--rail-w) minmax(0, 1fr); }
+  body[data-tab="text"] .page-head-inner { grid-column: 2; max-width: 44rem; }
+  body.toc-folded[data-tab="text"] .page-head-inner, body.toc-folded .text-layout .reading { margin-inline: auto; width: 100%; }
+}
 
 /* Contents pane */
 .toc-pane { position: sticky; top: calc(var(--header-h) + 1rem); max-height: calc(100vh - var(--header-h) - 2rem); overflow-y: auto; background: var(--sidebar); border: 1px solid var(--border-soft); border-radius: 6px; padding: .75rem; font-size: .86rem; }
@@ -610,6 +621,7 @@ JS = r"""
 var TABS = ['text', 'timeline', 'glossary', 'sources'];
 
 function showTab(id, updateHash) {
+  document.body.dataset.tab = id;
   TABS.forEach(function (t) {
     var on = t === id;
     document.getElementById('panel-' + t).hidden = !on;

@@ -23,6 +23,12 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   Rosenblatt, Lucas, Matiyasevich, Haugeland) and five glossary entries.
 - Left as they were (owner): the summary of section 8, the Masterman
   sentence, the three quotations of 4.0031.
+- Essay page (owner): on the text tab the title block now uses the
+  grid of the text, so the title stays centred over the text column;
+  with the contents pane folded, the text column is centred too
+  (`body[data-tab]`, set by `showTab`; screens of 1024 px and wider).
+  Checked with headless Chrome at 1440 and 1100 px, open and folded,
+  and on the timeline tab.
 
 **Session of 2026-11-18, later: an outside critique of the essay.**
 
