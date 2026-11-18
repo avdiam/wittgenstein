@@ -523,5 +523,5 @@ Further addresses from the research, not listed above:
   OC: <https://www.lifo.gr/node/518621>.
 - SEP entries used: `wittgenstein`, `wittgenstein-atomism`,
   `wittgenstein-mathematics`, `vienna-circle`, `private-language`,
-  `rule-following`, `wittgenstein-aesthetics`; IEP `wittgens`,
-  `kripkes-wittgenstein`.
+  `wittgenstein-aesthetics`, and "Rule-Following and Intentionality"
+  (address not recorded); IEP `wittgens`, `kripkes-wittgenstein`.
