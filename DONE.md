@@ -8,6 +8,29 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-18: research for the *Investigations* part.**
+
+- Research on the middle period (*Philosophical Remarks*, *Big
+  Typescript*, *Philosophical Grammar*, *Blue and Brown Books*, the
+  1936 revision and the early versions of the PI) and a source search
+  for the whole third part, as the owner asked before any writing.
+  Notes, with sources and verification marks, in
+  `Philosophical Investigations/RESEARCH_NOTES.md`; settled checks in the
+  ledger ("Research for the *Investigations* part"); what is still open
+  in `CROSSCHECK_PLAN.md`.
+- Read in the local scans: the Greek *Blue and Brown Books* (Κωβαίος,
+  Καρδαμίτσα 1984, with Rhees's preface) and the year and Part II of the
+  Christodoulidis *Investigations* (1977).
+- Read in the manuscripts on Wittgenstein Source (in Chrome, at the
+  owner's suggestion; plain `http://` works): MS 107, p. 205 (the
+  phenomenological language given up, 25 November 1929, not October);
+  MS 110, p. 214 (*Eine philosophische Betrachtung*, 24 June 1931);
+  MS 115, pp. 118 and 292 (the 1936 revision, its heading and its
+  closing sentence).
+- Found: the LWP now has *Über Gewißheit* (Suhrkamp 1970 text);
+  «Flußbett» is in §97, not §96. No free online text of the published
+  Part II; MS 144 is the manuscript witness.
+
 **Third session of 2026-11-17: pushed.**
 
 - Pushed `efd6b93..5ffd254` to `main` at the owner's request; the Pages

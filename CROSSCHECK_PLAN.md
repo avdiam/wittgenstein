@@ -13,36 +13,31 @@ remove it here.
 
 ## Open for the *Investigations* part
 
-- A German source for Part II (section xi, the duck-rabbit) and for
-  *Über Gewissheit*. The Ludwig Wittgenstein Project has §§1–693 only
-  (based on *Werkausgabe* 1, Suhrkamp 1999); its *Über Gewissheit* page
-  does not exist (checked 2026-11-17). Both are public domain in the EU;
-  in the US the 1953 text is under copyright to the end of 2048 and
-  *Über Gewissheit* (1969) longer, so quote key sentences only.
-- *Über Gewissheit* §115, §122, §§96–99 (*Flußbett*), §§341–343
-  (*Angeln*): not yet checked against the German.
-- The *Blue and Brown Books*, for arc 1 (facts so far from memory):
-  the Blue Book dictated to the Cambridge class in 1933–34, the Brown
-  Book to Francis Skinner and Alice Ambrose in 1934–35; the builders
-  already in the Brown Book; the German revision of 1936 abandoned
-  before the early version of the *Investigations*; published 1958 with
-  Rhees's preface and the subtitle *Preliminary Studies for the
-  "Philosophical Investigations"* (whose subtitle it is). Also: the
-  Greek translation in `second phase/` (translator, publisher, year,
-  from the scan's title pages), and the copyright of the English text
-  (dictated by Wittgenstein: PD in the EU since 2022; in the US to the
-  end of 2053 if the 95-year rule applies).
-- The middle period, for arc 1 (owner, 2026-11-17: research before
-  writing): the *Big Typescript* (TS 213) and the *Philosophical
-  Grammar*, and whether the *Philosophical Remarks* belong in the same
-  account. Nothing checked yet: dates of composition, the editions
-  (who edited them, when, from which typescripts), the relation between
-  them, and the scholarly readings of the period. Start from the
-  Wittgenstein Archives at Bergen (Bergen Nachlass Edition), the SEP
-  entries, and the editors' prefaces.
-- The year 1977 of the Christodoulidis translation is in library
-  catalogues (ledger) but not in the OCR of the scan; read the copyright
-  page image when the table of terms is made.
+The research of 2026-11-18 settled most of the earlier items (ledger,
+"Research for the *Investigations* part"); its notes and sources are in
+`Philosophical Investigations/RESEARCH_NOTES.md`. Still open:
+
+- Part II (*PPF*) section xi: the printed German wording of «halb
+  Seherlebnis, halb ein Denken» and the PPF numbers (about §118 and
+  §140) need a printed copy (1953, *Werkausgabe* 1, or Hacker–Schulte
+  2009). No free online text of the published Part II exists; MS 144 on
+  the BNE is the manuscript witness.
+- Rhees's English preface to the *Blue and Brown Books* (1958): read it
+  before quoting the closing sentence of the 1936 revision (the Greek
+  translation of the preface has «vom (Anfang)», the manuscript «von
+  Seite 118»).
+- Dates the sources give differently: MS 140, MS 141, TS 220, TS 239;
+  *Philosophische Grammatik* 1969 or 1970; *Philosophische Bemerkungen*
+  1964 or 1965 (Kenny); second edition of the *Blue and Brown Books*
+  1960 or 1969. Settle only those that the text will state.
+- Read only through other authors so far: Kenny 1976, Kienzler 1997,
+  Stern 1991, Hintikka 1986 and 1991, Engelmann 2013, Erbacher 2019.
+- PI §2 vocabulary (*Würfel, Säule, Platte, Balken*) against the Brown
+  Book's "cube, brick, slab, column": check on the LWP when arc 2 is
+  written.
+- Copyright of the English *Blue and Brown Books*: PD in the EU since
+  2022; in the US probably to the end of 2053 (95 years from 1958). Not
+  yet checked against a source.
 
 ## Open for the essay
 

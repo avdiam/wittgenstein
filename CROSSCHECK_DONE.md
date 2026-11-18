@@ -555,6 +555,26 @@ published texts yet; the corrections are for the coming analysis.
 | Copyright: German PD in the EU since 2022; 1953 edition under US copyright to 2049 (95 years); Anscombe, Hacker–Schulte and Christodoulidis translations under copyright | Wittgenstein died 29 April 1951 (life + 70); US term for works of 1953 is 95 years from publication | confirmed in outline | `LICENSE` §3 rewritten: German quotations of the *Investigations* are not PD in the US. Quote key sentences only, not 60–80 whole remarks as proposed. |
 | Labels for every remark: "interlocutor" or "therapeutic" voice | — | contested in itself: who speaks is an interpretive question | Not adopted as labels; voice discussed in arc 1 with a note. |
 
+## Research for the *Investigations* part (2026-11-18)
+
+Research before writing (owner, 2026-11-17). The full notes, with every
+source and the points still open, are in
+`Philosophical Investigations/RESEARCH_NOTES.md`; this table records only
+the open checks that were settled. Nothing is in the published texts yet.
+
+| Claim or check | Source | Verdict | Action |
+| :-- | :-- | :-- | :-- |
+| Year 1977 of the Christodoulidis *Investigations* | Title page of the scan (p. 5): «Εκδόσεις Παπαζήση 1977»; University of the Aegean catalogue, record 155856 | confirmed | Part II is included («ΜΕΡΟΣ ΔΕΥΤΕΡΟ»). |
+| Greek *Blue and Brown Books* | Title and copyright pages of the scan (pp. 4–5); Aegean catalogue, record 184202 | confirmed | Κωστής Κωβαίος, Καρδαμίτσα, Αθήνα 1984, «Αθηναϊκή Φιλοσοφική Βιβλιοθήκη»; includes Rhees's preface. |
+| Blue Book dictated to the class 1933–34; Brown Book to Skinner and Ambrose 1934–35 | Rhees's preface (Greek tr., scan p. 13); Bergen record for TS 310; Erbacher, *Phil. Inv.* 38(3) 2015 | confirmed | Paul (2007) has the Blue Book dictated to Ambrose and Skinner: note the difference if it matters. |
+| Builders already in the Brown Book | LWP English text of TS 310; Greek tr. p. 103 | confirmed | Language-game 1: "cube", "brick", "slab", "column"; PI §2 vocabulary still to compare. |
+| German revision of 1936 abandoned before the early PI | MS 115, pp. 118 and 292 (BNE transcription); Schulte, *NWR* 10 (2021) | confirmed; detail **corrected** | Headed «Ende August 36 Philosophische Untersuchungen. Versuch einer Umarbeitung.»; it opens with Augustine; ends «… von Seite 118 bis hierher ist nichts wert». *Eine philosophische Betrachtung* is Rhees's title for the 1970 edition, from MS 110, p. 214 (24 June 1931). |
+| Published 1958 with the subtitle *Preliminary Studies …* | Erbacher 2015 (Rhees's letters); Bergen record for TS 310 | confirmed; the title is the executors', not Wittgenstein's | none yet |
+| Phenomenological language given up "in October 1929" (Hintikka & Hintikka 1986) | MS 107, p. 205 (BNE): entry of 25 [Nov. 1929], between «2.11.» and «10.1.30» | **corrected** | 25 November 1929 (Potter 2021 has 29 November). |
+| German source for *Über Gewißheit* | LWP page and PDF (Suhrkamp 1970, §§1–676) | found; the 404 of 2026-11-17 is out of date | Quote from the LWP. |
+| *Über Gewißheit* §§96–99, §115, §122, §§341–343 | LWP text | confirmed; one detail **corrected** | «Flußbett» is in §97, not §96; §341 «Angeln», §343 «die Angeln feststehen». |
+| German source for Part II, section xi | LWP (no Part II); BNE MS 144, 24v–27v | not found in print form; manuscript only | MS 144 has «H.-E.-Kopf» (never «Hasen-Enten-Kopf») and «halb Seherlebnis, halb ein Denken»; printed wording and PPF numbers need a printed copy. |
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.

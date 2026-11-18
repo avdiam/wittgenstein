@@ -6,30 +6,20 @@ item is finished, move it to `DONE.md` with the date.
 
 ## Status
 
-- Third session of 2026-11-17 (details in `DONE.md`): the second
-  session's work is pushed and live; the owner found the essay search
-  fine. The *Investigations* part is planned (below). Four commits after
-  the push are local, **not pushed** (notes and `LICENSE` only; the site
-  is unchanged).
+- Session of 2026-11-18 (details in `DONE.md`): the research on the
+  middle period and the source search are done; notes in
+  `Philosophical Investigations/RESEARCH_NOTES.md`. The commits since
+  the last push are local, **not pushed** (notes, ledger and `LICENSE`
+  only; the site is unchanged).
 
 ## Next session
 
-**No writing of the third part yet** (owner, 2026-11-17). First:
+**No writing of the third part yet** (owner, 2026-11-17).
 
-1. Research and notes on the middle period, as the way from the first
-   to the second phase: the *Big Typescript* (TS 213) and the
-   *Philosophical Grammar*, next to the *Blue and Brown Books* (and the
-   *Philosophical Remarks*, if they belong in the same account). For
-   each: when and how it was written, how it was edited and published,
-   what it keeps from the *Tractatus* and what it anticipates in the
-   *Investigations*, and where the scholars disagree. Notes go in a
-   working file first (not in the published texts); sources in
-   `CROSSCHECK_PLAN.md`.
-2. A source search for the whole third part: editions (German text of
-   Part II and *Über Gewissheit*, the Bergen Nachlass Edition for the
-   typescripts), the Greek translations we have, and the secondary
-   literature for each arc, before a line is written.
-3. Discuss the results with the owner, and only then settle stage 1.
+1. Discuss the research notes with the owner: the six questions in
+   §6 of `RESEARCH_NOTES.md` (what arc 1 covers, which texts to quote,
+   the interpretive notes, Part II, *Über Gewißheit*, library access).
+2. Only then settle stage 1.
 
 ## Third part: the *Philosophical Investigations*
 
@@ -75,8 +65,8 @@ Stages, one commit each:
    after the research) and the table of terms against Christodoulidis
    (OCR in `ocr_local/investigations/`, page images).
 2. Arcs 2–3. 3. Arcs 4–5. 4. Arcs 6–7. 5. Arc 8 and the epilogue
-   (needs the German source of Part II and *Über Gewissheit*: see
-   `CROSSCHECK_PLAN.md`).
+   (*Über Gewißheit*: LWP text; Part II: printed wording and PPF
+   numbers still needed, see `CROSSCHECK_PLAN.md`).
 6. Build script, cover card on `docs/index.html`, links from essay §10,
    the Tractatus epilogue and the page headers; `README.md`, `CLAUDE.md`.
 7. Labs, two or three, chosen then (candidates: the rule-following
