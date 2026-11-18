@@ -6,17 +6,29 @@ item is finished, move it to `DONE.md` with the date.
 
 ## Status
 
-- Session of 2026-11-18 (details in `DONE.md`): the research on the
-  middle period and the source search are done; notes in
-  `Philosophical Investigations/RESEARCH_NOTES.md`. Everything is
-  pushed (`5ffd254..b20f236`); the only visible change on the site is
-  the centred title of the essay page.
+- Session of 2026-11-18, later (details in `DONE.md`): an outside
+  critique of the essay checked proposal by proposal with the owner;
+  the essay changes are pushed (`14ca169..bbdbe37`). The critique file
+  was then deleted; it was never committed.
 
 ## Next session
 
-**No writing of the third part yet** (owner, 2026-11-17).
+**Start with the essay, not with the third part** (owner, 2026-11-18).
 
-1. Questions 1–4 of §6 in `RESEARCH_NOTES.md` answered by the owner on
+1. The owner wants to discuss two more things about the essay. Ask
+   what they are first. Until that discussion is over, do not read or
+   start anything for the *Investigations* part (`Philosophical
+   Investigations/`, `RESEARCH_NOTES.md`, the OCR files).
+2. Align 3.328 in the Tractatus analysis (Markdown, and the summary and
+   tree data of the page) with the essay's wording: «Αν ένα σημείο δεν
+   είναι αναγκαίο, τότε δεν έχει σημασία». The analysis has «δεν
+   χρησιμοποιείται»; the essay no longer explains the two readings of
+   *gebraucht* (owner, 2026-11-18).
+
+Then, for the *Investigations* part (no writing of the third part yet;
+owner, 2026-11-17):
+
+3. Questions 1–4 of §6 in `RESEARCH_NOTES.md` answered by the owner on
    2026-11-18: arc 1 with the *Blue and Brown Books* at the centre and a
    short account of the route from 1929 (the *Philosophical Grammar*
    named as Rhees's edition); key sentences quoted from the manuscripts
@@ -24,12 +36,7 @@ item is finished, move it to `DONE.md` with the date.
    note in the arc where it belongs; Part II deferred until more sources
    are searched. Still to discuss: points 5 (*Über Gewißheit*) and 6
    (library access).
-2. Then settle stage 1.
-3. Align 3.328 in the Tractatus analysis (Markdown, and the summary and
-   tree data of the page) with the essay's wording: «Αν ένα σημείο δεν
-   είναι αναγκαίο, τότε δεν έχει σημασία». The analysis has «δεν
-   χρησιμοποιείται»; the essay no longer explains the two readings of
-   *gebraucht* (owner, 2026-11-18).
+4. Then settle stage 1.
 
 ## Third part: the *Philosophical Investigations*
 

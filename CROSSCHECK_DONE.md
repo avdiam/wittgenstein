@@ -585,8 +585,8 @@ the open checks that were settled. Nothing is in the published texts yet.
 ## The critique of the essay, checked (2026-11-18)
 
 An outside critique with eleven proposals and ready-made Greek text
-(`Kritiki_kai_Protaseis_Veltiosis_Logiki_Glossa_Michanes.docx`, not in the
-repository) was compared with the essay and with sources. The owner decided
+(`Kritiki_kai_Protaseis_Veltiosis_Logiki_Glossa_Michanes.docx`, never in the
+repository; deleted on 2026-11-18) was compared with the essay and with sources. The owner decided
 each proposal in turn.
 
 | Proposal | Source | Verdict | Action |

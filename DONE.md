@@ -24,6 +24,8 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   two sentences after 3.328 in section 2.
 - Declined: the two compressions (Byzantium, the reception), the move
   of Gettier, the extra sentence in the halting proof.
+- Pushed (`14ca169..bbdbe37`). The critique file was deleted afterwards
+  at the owner's request; it was never committed.
 
 **Session of 2026-11-18: research for the *Investigations* part.**
 
