@@ -11,7 +11,8 @@ item is finished, move it to `DONE.md` with the date.
   the essay changes are pushed (`14ca169..bbdbe37`). The critique file
   was then deleted; it was never committed.
 - Session of 2026-11-19: the whole essay read for coherence and the
-  owner's decisions applied (details in `DONE.md`); not pushed.
+  owner's decisions applied, and the essay title centred over the
+  text column (details in `DONE.md`); pushed (`bbdbe37..3c6e496`).
 
 ## Next session
 
