@@ -23,9 +23,10 @@ item is finished, move it to `DONE.md` with the date.
    (where a network stores what it knows, black boxes,
    interpretability, the Goodfire essay and logical form), is drafted
    in `drafts/Mavro_Kouti_draft.md` and **not applied** (owner,
-   2026-11-19). Next: check Π1–Π7 and the Cammarata wording, ask the
-   open question at the end of the draft, then write it into the
-   Markdown. Until this is settled, do not read or start anything for
+   2026-11-19). Π1–Π7 and the Cammarata wording were checked on
+   2026-11-19 and the draft corrected (ledger, «The draft "μαύρο
+   κουτί", checked»). Next: the owner's answer to the open question at
+   the end of the draft, then write it into the Markdown. Until this is settled, do not read or start anything for
    the *Investigations* part (`Philosophical Investigations/`,
    `RESEARCH_NOTES.md`, the OCR files).
 2. Align 3.328 in the Tractatus analysis (Markdown, and the summary and
