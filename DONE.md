@@ -39,6 +39,15 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   when they are the same. Tested: an added paragraph is still reported.
 - Essay page: title and subtitle centred (`.page-head` in the builder's
   CSS), checked at 1280 px and at 390 px in an iframe.
+- The owner's wording changes to the essay, pushed (`b8abc9e..0540327`):
+  §1 «Πριν η λογική υπάρξει…», Aristotle as founder of systematic logic
+  (the *Organon* title as a view, «θεωρήθηκε»), the definition of the
+  syllogism and «κατηγορικού» (not the glossary's predicate logic); §2
+  Abelard in plain words with an example; §4 Lovelace as Byron's
+  daughter, the titles of Boole's two books, Boole's 0 as a class with
+  no members; §5 one contradiction proves everything, and two new
+  paragraphs on Zermelo's axiom of separation; §10 PI §185 explained.
+  New facts in the ledger ("The owner's edits of the essay").
 - Pushed `5ffd254..b20f236` at the owner's request, after checking that
   the Greek scans, OCR text and downloaded sources (`second phase/`,
   `ocr_local/`, `sources_local/`) are git-ignored and that every commit
