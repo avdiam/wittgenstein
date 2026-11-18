@@ -13,6 +13,10 @@ item is finished, move it to `DONE.md` with the date.
 - Session of 2026-11-19: the whole essay read for coherence and the
   owner's decisions applied, and the essay title centred over the
   text column (details in `DONE.md`); pushed (`bbdbe37..3c6e496`).
+- Session of 2026-11-19, later: the «μαύρο κουτί» draft checked
+  against its sources and corrected (`c074e42`, local, not pushed).
+  The owner will discuss the findings and the open question in the
+  next session.
 
 ## Next session
 
