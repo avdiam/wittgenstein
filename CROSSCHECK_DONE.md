@@ -555,6 +555,12 @@ published texts yet; the corrections are for the coming analysis.
 | Copyright: German PD in the EU since 2022; 1953 edition under US copyright to 2049 (95 years); Anscombe, Hacker–Schulte and Christodoulidis translations under copyright | Wittgenstein died 29 April 1951 (life + 70); US term for works of 1953 is 95 years from publication | confirmed in outline | `LICENSE` §3 rewritten: German quotations of the *Investigations* are not PD in the US. Quote key sentences only, not 60–80 whole remarks as proposed. |
 | Labels for every remark: "interlocutor" or "therapeutic" voice | — | contested in itself: who speaks is an interpretive question | Not adopted as labels; voice discussed in arc 1 with a note. |
 
+## The owner's edits of the essay (2026-11-18)
+
+| Location | Claim | Source | Verdict | Action |
+| :-- | :-- | :-- | :-- | :-- |
+| Section 4, Lovelace | Ada Lovelace was the daughter of Lord Byron | [Britannica, Ada Lovelace](https://www.britannica.com/biography/Ada-Lovelace); [Bodleian, About Ada Lovelace](https://blogs.bodleian.ox.ac.uk/adalovelace/about-ada-lovelace/) | confirmed (his only legitimate child) | Added at the owner's request. |
+
 ## Research for the *Investigations* part (2026-11-18)
 
 Research before writing (owner, 2026-11-17). The full notes, with every
