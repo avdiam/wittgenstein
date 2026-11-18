@@ -25,6 +25,11 @@ item is finished, move it to `DONE.md` with the date.
    are searched. Still to discuss: points 5 (*Über Gewißheit*) and 6
    (library access).
 2. Then settle stage 1.
+3. Align 3.328 in the Tractatus analysis (Markdown, and the summary and
+   tree data of the page) with the essay's wording: «Αν ένα σημείο δεν
+   είναι αναγκαίο, τότε δεν έχει σημασία». The analysis has «δεν
+   χρησιμοποιείται»; the essay no longer explains the two readings of
+   *gebraucht* (owner, 2026-11-18).
 
 ## Third part: the *Philosophical Investigations*
 

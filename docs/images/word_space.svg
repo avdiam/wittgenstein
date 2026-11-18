@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" role="img" aria-label="Οκτώ λέξεις ως σημεία σε έναν χώρο τριών διαστάσεων: τα ζώα, οι πόλεις και τα τρόφιμα σχηματίζουν τρεις ομάδες">
+  <defs>
+    <marker id="ws-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10z" fill="var(--muted-foreground, #57605d)"/>
+    </marker>
+  </defs>
+
+  <!-- Floor of the space (oblique projection): x to the right, depth up-right, height up -->
+  <polygon points="60,250 360,250 510,180 210,180" fill="var(--primary-soft, #dfeae5)" opacity="0.45" stroke="var(--border, #cdd3cd)" stroke-width="1"/>
+
+  <!-- The three axes -->
+  <g stroke="var(--muted-foreground, #57605d)" stroke-width="1.6">
+    <line x1="60" y1="250" x2="384" y2="250" marker-end="url(#ws-arr)"/>
+    <line x1="60" y1="250" x2="228" y2="171.6" marker-end="url(#ws-arr)"/>
+    <line x1="60" y1="250" x2="60" y2="84" marker-end="url(#ws-arr)"/>
+  </g>
+  <g font-family="var(--font-sans, sans-serif)" font-size="12" fill="var(--muted-foreground, #57605d)">
+    <text x="392" y="254">1ος</text>
+    <text x="222" y="160" text-anchor="end">2ος</text>
+    <text x="60" y="74" text-anchor="middle">3ος</text>
+  </g>
+
+  <!-- Drop lines from each point to the floor -->
+  <g stroke="var(--muted-foreground, #57605d)" stroke-width="1" stroke-dasharray="3 3" opacity="0.7">
+    <line x1="150" y1="102" x2="150" y2="222"/>
+    <line x1="165" y1="79" x2="165" y2="229"/>
+    <line x1="240" y1="103" x2="240" y2="208"/>
+    <line x1="345" y1="169" x2="345" y2="229"/>
+    <line x1="375" y1="154" x2="375" y2="229"/>
+    <line x1="390" y1="133" x2="390" y2="208"/>
+    <line x1="225" y1="213" x2="225" y2="243"/>
+    <line x1="270" y1="206" x2="270" y2="236"/>
+  </g>
+  <g fill="var(--muted-foreground, #57605d)" opacity="0.7">
+    <ellipse cx="150" cy="222" rx="4" ry="1.8"/><ellipse cx="165" cy="229" rx="4" ry="1.8"/><ellipse cx="240" cy="208" rx="4" ry="1.8"/>
+    <ellipse cx="345" cy="229" rx="4" ry="1.8"/><ellipse cx="375" cy="229" rx="4" ry="1.8"/><ellipse cx="390" cy="208" rx="4" ry="1.8"/>
+    <ellipse cx="225" cy="243" rx="4" ry="1.8"/><ellipse cx="270" cy="236" rx="4" ry="1.8"/>
+  </g>
+
+  <!-- The words as points -->
+  <g fill="var(--primary, #1e5c4e)">
+    <circle cx="150" cy="102" r="5.5"/><circle cx="165" cy="79" r="5.5"/><circle cx="240" cy="103" r="5.5"/>
+    <circle cx="345" cy="169" r="5.5"/><circle cx="375" cy="154" r="5.5"/><circle cx="390" cy="133" r="5.5"/>
+    <circle cx="225" cy="213" r="5.5"/><circle cx="270" cy="206" r="5.5"/>
+  </g>
+  <g font-family="var(--font-serif, serif)" font-size="14" fill="var(--foreground, #1c2022)">
+    <text x="140" y="107" text-anchor="end">γάτα</text>
+    <text x="175" y="84">σκύλος</text>
+    <text x="250" y="108">άλογο</text>
+    <text x="335" y="174" text-anchor="end">Αθήνα</text>
+    <text x="385" y="159">Ρώμη</text>
+    <text x="400" y="138">Παρίσι</text>
+    <text x="215" y="218" text-anchor="end">ψωμί</text>
+    <text x="280" y="211">τυρί</text>
+  </g>
+
+  <!-- The same words as rows of numbers -->
+  <text x="548" y="62" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--foreground, #1c2022)">Κάθε λέξη, τρεις αριθμοί</text>
+  <g font-family="var(--font-sans, sans-serif)" font-size="11.5" fill="var(--muted-foreground, #57605d)" text-anchor="middle">
+    <text x="640" y="84">1ος</text><text x="680" y="84">2ος</text><text x="720" y="84">3ος</text>
+  </g>
+  <line x1="548" y1="91" x2="740" y2="91" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+  <g font-family="var(--font-serif, serif)" font-size="14" fill="var(--foreground, #1c2022)">
+    <text x="548" y="111">γάτα</text>
+    <text x="548" y="132">σκύλος</text>
+    <text x="548" y="153">άλογο</text>
+    <text x="548" y="180">Αθήνα</text>
+    <text x="548" y="201">Ρώμη</text>
+    <text x="548" y="222">Παρίσι</text>
+    <text x="548" y="249">ψωμί</text>
+    <text x="548" y="270">τυρί</text>
+  </g>
+  <g font-family="var(--font-mono, monospace)" font-size="12.5" fill="var(--foreground, #1c2022)" text-anchor="middle">
+    <text x="640" y="111">0,1</text><text x="680" y="111">0,4</text><text x="720" y="111">0,8</text>
+    <text x="640" y="132">0,2</text><text x="680" y="132">0,3</text><text x="720" y="132">1,0</text>
+    <text x="640" y="153">0,3</text><text x="680" y="153">0,6</text><text x="720" y="153">0,7</text>
+    <text x="640" y="180">0,8</text><text x="680" y="180">0,3</text><text x="720" y="180">0,4</text>
+    <text x="640" y="201">0,9</text><text x="680" y="201">0,3</text><text x="720" y="201">0,5</text>
+    <text x="640" y="222">0,8</text><text x="680" y="222">0,6</text><text x="720" y="222">0,5</text>
+    <text x="640" y="249">0,5</text><text x="680" y="249">0,1</text><text x="720" y="249">0,2</text>
+    <text x="640" y="270">0,6</text><text x="680" y="270">0,2</text><text x="720" y="270">0,2</text>
+  </g>
+  <g stroke="var(--border, #cdd3cd)" stroke-width="1">
+    <line x1="548" y1="162" x2="740" y2="162"/>
+    <line x1="548" y1="231" x2="740" y2="231"/>
+  </g>
+
+  <text x="380" y="312" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="12.5" fill="var(--muted-foreground, #57605d)">Οι τρεις αριθμοί κάθε λέξης ορίζουν ένα σημείο· λέξεις με παρόμοια συμφραζόμενα πέφτουν κοντά.</text>
+</svg>

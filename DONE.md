@@ -8,6 +8,23 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-18, later: an outside critique of the essay.**
+
+- A critique with eleven proposals (a Word file the owner added, not in
+  the repository) was compared with the whole essay and with sources;
+  the owner decided each proposal in turn. Verdicts in the ledger ("The
+  critique of the essay, checked").
+- Added to the essay: how Gödel's G refers to itself; a subsection on
+  Tarski (with timeline, glossary and source entries); 6.3751 in the
+  paragraph on colour exclusion; a paragraph on Chomsky 1957 and
+  Pereira's reply (timeline and sources); a figure of words as points
+  (`docs/images/word_space.svg`); two one-line links in «Τα όρια» (to
+  Gettier and to §185).
+- Removed by the owner: the clause on Aristotle and Augustine, and the
+  two sentences after 3.328 in section 2.
+- Declined: the two compressions (Byzantium, the reception), the move
+  of Gettier, the extra sentence in the halting proof.
+
 **Session of 2026-11-18: research for the *Investigations* part.**
 
 - Research on the middle period (*Philosophical Remarks*, *Big
