@@ -26,6 +26,9 @@ item is finished, move it to `DONE.md` with the date.
   (`df56d9b..fab5fb6`). The `gemini/` folder and
   `drafts/Mavro_Kouti_draft.md` deleted (owner); the draft stays in git
   history (`git show 9eeb189:drafts/Mavro_Kouti_draft.md`).
+- Session of 2026-11-19, night: a postscript on self-improvement added to
+  section 12 at the owner's request (details in `DONE.md`); committed,
+  not pushed.
 
 ## Next session
 

@@ -680,6 +680,31 @@ autonomous Erdős disproof and «ταχύτατα».
 | Γ10 | G. E. Moore 1873–1958 | SEP, Moore | confirmed | Dates moved to his first mention (section 6). |
 | Γ11 | Wang tiles are placed without rotation; each row of a tiling can copy one step of a program (section 8, sentence and figure) | Robinson 1971 (row "Wang 1961, Berger 1966; tilings and Turing machines" above) | confirmed | Sentence added («Η ιδέα είναι…»); figure `wang_tiles.svg`. |
 
+## The postscript on self-improvement, checked (2026-11-19)
+
+The owner asked for a short postscript at the end of section 12 on
+recursive self-improvement and on direct editing of network weights by a
+language model, ending on the question of who checks such a system. Two
+research passes by a subagent (news from September 2026; weight-space
+editing) were followed by reading the primary sources below; the
+owner's draft was then corrected against them.
+
+| # | Claim | Source | Verdict | Action |
+| :-: | :-- | :-- | :-- | :-- |
+| Υ1 | Turing, c. 1951: once machines think they will soon outstrip our "feeble powers" | Turing, «Intelligent Machinery, A Heretical Theory», in Copeland (ed.), *The Essential Turing* (2004), ch. 12: "once the machine thinking method had started, it would not take long to outstrip our feeble powers"; next: "we should have to expect the machines to take control". Copeland's introduction: a talk on the BBC radio programme *The '51 Society*, Manchester; Quote Investigator: a lecture draft, Manchester 1951 | confirmed | «γύρω στο 1951, σε μια ραδιοφωνική ομιλία του». |
+| Υ2 | Good 1965: a machine far surpassing any man could design better machines; the last invention, provided it is docile enough to tell us how to keep it under control | Good, «Speculations Concerning the First Ultraintelligent Machine», *Advances in Computers* 6 (1965), p. 33, read in the scanned paper | confirmed | The control proviso quoted in Greek. |
+| Υ3 | Good worked with Turing at Bletchley Park | [MacTutor, Good](https://mathshistory.st-andrews.ac.uk/Biographies/Good/): "At first Good worked in Hut 8 headed by Alan Turing" (from May 1941) | confirmed | «συνεργάτης του στο Bletchley Park». |
+| Υ4 | Over 80% of the code is written by the model | [Anthropic, «When AI builds itself»](https://www.anthropic.com/institute/recursive-self-improvement) (update 18 Sept. 2026): "As of May 2026, more than 80% of the code we merge into Anthropic's codebase was authored by Claude"; no other company's figure on the page | confirmed for Anthropic only; the draft **corrected** | «Σύμφωνα με τις ίδιες τις εταιρείες … του κώδικα με τον οποίο εκπαιδεύονται οι διάδοχοί τους» → «Σύμφωνα με την Anthropic … του κώδικα που ενσωματώνει η εταιρεία». The page also: "We are not there yet, and recursive self-improvement is not inevitable." |
+| Υ5 | Anthropic is approaching its threshold for «δραματικά επιταχυνόμενη πρόοδο» | S-1/A Amendment No. 1 as quoted by [TechCrunch, 2 Nov. 2026](https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/): "internal estimates and our expectations regarding future models, rather than our current models, indicate that we may imminently meet our Responsible Scaling Policy's definition of 'dramatically accelerated progress attributable to AI'" | confirmed through the quotation; the filing itself **not read** | «πλησιάζει … με βάση όσα περιμένει από τα επόμενα μοντέλα της». The draft's «αν δεν έχει ήδη φτάσει» (Amendment No. 2) removed: EDGAR refuses requests from undeclared automated tools, and the owner's address was not used. |
+| Υ6 | METR: about twice the earlier rate on well-specified tasks, mostly due to AI | [METR, 5 Nov. 2026](https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/): "at around twice the rate they did between March 2024 and October 2025", 1.9× (95% CI 1.5–2.8×); "perhaps ≈80%" due to AI, an "overall subjective estimate"; "Anthropic redacted a majority of the evidence we found most informative"; no sampling access to non-public models; compute verification cancelled | confirmed | «κυρίως, κατά την εκτίμησή της». |
+| Υ7 | MIT researchers: a large language model read and directly edited the weights of a smaller one, without training | [Takehi, Teoh, Zhang, Khattab (MIT CSAIL), 2 Nov. 2026](https://rikiyat.github.io/blog/weight-space-programming/): GPT-6 Astra edited Qwen3.5-0.8B "with no training", 131,072 weights; MATH-500 7.9% → 48.1%; "could not add an ability the model lacked"; "not a method"; a blog post, no arXiv version. [Willison, 3 Nov.](https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/) repeated the read-only test only | confirmed; not reviewed | «με αποτελέσματα που δεν έχουν ακόμη κριθεί από άλλους». |
+
+Left out: the Gladstone report (anonymous insiders, via TIME), OpenAI's
+"research intern" page (403; secondary reports only), Anthropic's
+Amendment No. 2 (not read). The facts of the paragraph rest twice on
+Anthropic's own statements and once on METR's assessment of Anthropic;
+noted to the owner.
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.

@@ -8,6 +8,26 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-19, night: the postscript on self-improvement.**
+
+- At the owner's request, a subagent searched the news on recursive
+  self-improvement from September 2026, then direct editing of network
+  weights by language models; the whole essay was reread for the
+  discussion.
+- The owner chose one short postscript at the end of section 12, as
+  `### Υστερόγραφο` (no change to `tab_for()`): the idea from Turing
+  (c. 1951) and Good (1965) with Good's control proviso; Anthropic's
+  statements, METR's assessment and the MIT weight-editing post; then
+  the question of who checks a machine that judges machines like itself,
+  with Gödel's second theorem (analogy with its limits stated) and the
+  difference between finding and checking from section 8 (Lean).
+- Wording by the owner, corrected against the sources (ledger, «The
+  postscript on self-improvement, checked», Υ1–Υ7): the code share is
+  Anthropic's only; «αν δεν έχει ήδη φτάσει» dropped (Amendment No. 2
+  not read); the MIT result marked as not yet reviewed.
+- Chronology rows 1951 (Turing), 1965 (Good) and the 2026 row extended;
+  six source entries. No glossary entry.
+
 **Session of 2026-11-19, evening: the Gemini review of the essay.**
 
 - A Gemini review of the essay (PDF of the conversation and a revised
