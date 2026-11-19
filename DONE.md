@@ -24,6 +24,8 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
 - Kept (owner): Boole's sentence (it follows his Rule of 0 and 1), the
   Cammarata note (decided earlier the same day).
 - Figures checked: PNG copies, and the page in dark mode.
+- Then (owner) the long paragraph of section 11 split at «Μόνο αργότερα…»:
+  the limits of the early networks, then the way to deep learning.
 
 **Session of 2026-11-19, night: the Word file justified.**
 
