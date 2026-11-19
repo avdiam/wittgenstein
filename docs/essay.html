@@ -144,9 +144,15 @@ body.toc-folded .toc-num { min-width: 0; margin: 0 auto; }
 .reading p { margin: 0 0 1rem; }
 .reading ul, .reading ol { padding-left: 1.4rem; margin: 0 0 1rem; }
 .reading li { margin: .3rem 0; }
-/* Justified with automatic Greek hyphenation at every width; the limit keeps
-   at least 3 letters on each side of a break, which matters in narrow columns. */
-#panel-text .reading p, #panel-text .reading li, ul.glossary li { text-align: justify; -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 6 3 3; }
+/* Justified with automatic Greek hyphenation at every width, in every tab, as in
+   the Word file; the limit keeps at least 3 letters on each side of a break, which
+   matters in narrow columns. Table cells stay left-aligned, captions centred.
+   In the sources, long web addresses may break anywhere rather than overflow; on
+   phones the sources are left-aligned, since addresses and German titles, which
+   Greek hyphenation cannot split, would leave lines with wide gaps. */
+.reading p, .reading li { text-align: justify; -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 6 3 3; }
+#panel-sources .reading p, #panel-sources .reading li { overflow-wrap: anywhere; }
+@media (max-width: 720px) { #panel-sources .reading p, #panel-sources .reading li { text-align: left; } }
 .reading code { font-family: var(--font-mono); font-size: .88em; background: var(--secondary); padding: .05em .3em; border-radius: 3px; }
 .lede { font-size: 1.1rem; color: var(--foreground); margin-bottom: 2.5rem; }
 .xref { text-decoration: none; border-bottom: 1px dotted var(--primary); }

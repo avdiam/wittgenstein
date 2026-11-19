@@ -20,6 +20,14 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   language; capitalised words not hyphenated). Checked in the same
   rendering. Pushed with this entry, together with the postscript's
   bookkeeping (`3f88d4c`).
+- Then the page: `essay.html` was already justified with Greek hyphenation
+  in the main text tab; the rule now covers every tab (the opening
+  paragraphs of the chronology, glossary and sources, and the source
+  list), as in the Word file. Table cells stay left-aligned, captions
+  centred. On phones (up to 720 px) the sources are left-aligned: web
+  addresses and German titles, which Greek hyphenation cannot split, left
+  lines of two or three words. Checked with headless Chrome at 1280 and
+  390 px (headless Chrome has no hyphenation dictionaries).
 
 **Session of 2026-11-19, night: the postscript on self-improvement.**
 
