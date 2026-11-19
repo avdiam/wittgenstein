@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 316" role="img" aria-label="Πλακίδια Wang: αριστερά τέσσερα είδη τετράγωνων πλακιδίων με ένα χρώμα και ένα γράμμα σε κάθε πλευρά· δεξιά ένα κομμάτι στρώσης τρία επί τρία, όπου οι πλευρές που ακουμπούν έχουν πάντοτε το ίδιο χρώμα">
+  <g font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--foreground, #1c2022)" text-anchor="middle"><text x="190" y="30">(α) Τέσσερα είδη πλακιδίων</text><text x="565" y="30">(β) Ένα κομμάτι της στρώσης</text></g>
+  <line x1="380" y1="16" x2="380" y2="300" stroke="var(--border, #cdd3cd)" stroke-width="1" stroke-dasharray="4 4"/>
+  <polygon points="95,55 165,55 130.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="95,55 165,55 130.0,90.0" fill="var(--muted-foreground, #57605d)" fill-opacity="0.30" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="165,55 165,125 130.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="165,55 165,125 130.0,90.0" fill="var(--mark, #91590a)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="95,125 165,125 130.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="95,125 165,125 130.0,90.0" fill="var(--secondary, #eceeea)" fill-opacity="1" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="95,55 95,125 130.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="95,55 95,125 130.0,90.0" fill="var(--primary, #1e5c4e)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <rect x="95" y="55" width="70" height="70" fill="none" stroke="var(--foreground, #1c2022)" stroke-width="1.4"/>
+  <text x="130.0" y="77.4" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">γ</text>
+  <text x="147.5" y="94.9" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">β</text>
+  <text x="130.0" y="112.4" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">δ</text>
+  <text x="112.5" y="94.9" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">α</text>
+  <text x="130.0" y="145" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="12.5" fill="var(--muted-foreground, #57605d)">πλακίδιο 1</text>
+  <polygon points="215,55 285,55 250.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="215,55 285,55 250.0,90.0" fill="var(--muted-foreground, #57605d)" fill-opacity="0.30" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="285,55 285,125 250.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="285,55 285,125 250.0,90.0" fill="var(--primary, #1e5c4e)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="215,125 285,125 250.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="215,125 285,125 250.0,90.0" fill="var(--secondary, #eceeea)" fill-opacity="1" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="215,55 215,125 250.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="215,55 215,125 250.0,90.0" fill="var(--mark, #91590a)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <rect x="215" y="55" width="70" height="70" fill="none" stroke="var(--foreground, #1c2022)" stroke-width="1.4"/>
+  <text x="250.0" y="77.4" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">γ</text>
+  <text x="267.5" y="94.9" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">α</text>
+  <text x="250.0" y="112.4" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">δ</text>
+  <text x="232.5" y="94.9" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">β</text>
+  <text x="250.0" y="145" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="12.5" fill="var(--muted-foreground, #57605d)">πλακίδιο 2</text>
+  <polygon points="95,175 165,175 130.0,210.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="95,175 165,175 130.0,210.0" fill="var(--secondary, #eceeea)" fill-opacity="1" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="165,175 165,245 130.0,210.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="165,175 165,245 130.0,210.0" fill="var(--mark, #91590a)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="95,245 165,245 130.0,210.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="95,245 165,245 130.0,210.0" fill="var(--muted-foreground, #57605d)" fill-opacity="0.30" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="95,175 95,245 130.0,210.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="95,175 95,245 130.0,210.0" fill="var(--primary, #1e5c4e)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <rect x="95" y="175" width="70" height="70" fill="none" stroke="var(--foreground, #1c2022)" stroke-width="1.4"/>
+  <text x="130.0" y="197.4" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">δ</text>
+  <text x="147.5" y="214.9" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">β</text>
+  <text x="130.0" y="232.4" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">γ</text>
+  <text x="112.5" y="214.9" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">α</text>
+  <text x="130.0" y="265" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="12.5" fill="var(--muted-foreground, #57605d)">πλακίδιο 3</text>
+  <polygon points="215,175 285,175 250.0,210.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="215,175 285,175 250.0,210.0" fill="var(--secondary, #eceeea)" fill-opacity="1" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="285,175 285,245 250.0,210.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="285,175 285,245 250.0,210.0" fill="var(--primary, #1e5c4e)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="215,245 285,245 250.0,210.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="215,245 285,245 250.0,210.0" fill="var(--muted-foreground, #57605d)" fill-opacity="0.30" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="215,175 215,245 250.0,210.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="215,175 215,245 250.0,210.0" fill="var(--mark, #91590a)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <rect x="215" y="175" width="70" height="70" fill="none" stroke="var(--foreground, #1c2022)" stroke-width="1.4"/>
+  <text x="250.0" y="197.4" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">δ</text>
+  <text x="267.5" y="214.9" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">α</text>
+  <text x="250.0" y="232.4" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">γ</text>
+  <text x="232.5" y="214.9" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="14.0" fill="var(--foreground, #1c2022)">β</text>
+  <text x="250.0" y="265" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="12.5" fill="var(--muted-foreground, #57605d)">πλακίδιο 4</text>
+  <polygon points="451,52 527,52 489.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="451,52 527,52 489.0,90.0" fill="var(--muted-foreground, #57605d)" fill-opacity="0.30" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="527,52 527,128 489.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="527,52 527,128 489.0,90.0" fill="var(--mark, #91590a)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="451,128 527,128 489.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="451,128 527,128 489.0,90.0" fill="var(--secondary, #eceeea)" fill-opacity="1" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="451,52 451,128 489.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="451,52 451,128 489.0,90.0" fill="var(--primary, #1e5c4e)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <rect x="451" y="52" width="76" height="76" fill="none" stroke="var(--foreground, #1c2022)" stroke-width="1.4"/>
+  <text x="489.0" y="76.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">γ</text>
+  <text x="508.0" y="95.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">β</text>
+  <text x="489.0" y="114.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">δ</text>
+  <text x="470.0" y="95.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">α</text>
+  <polygon points="527,52 603,52 565.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="527,52 603,52 565.0,90.0" fill="var(--muted-foreground, #57605d)" fill-opacity="0.30" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="603,52 603,128 565.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="603,52 603,128 565.0,90.0" fill="var(--primary, #1e5c4e)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="527,128 603,128 565.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="527,128 603,128 565.0,90.0" fill="var(--secondary, #eceeea)" fill-opacity="1" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="527,52 527,128 565.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="527,52 527,128 565.0,90.0" fill="var(--mark, #91590a)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <rect x="527" y="52" width="76" height="76" fill="none" stroke="var(--foreground, #1c2022)" stroke-width="1.4"/>
+  <text x="565.0" y="76.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">γ</text>
+  <text x="584.0" y="95.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">α</text>
+  <text x="565.0" y="114.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">δ</text>
+  <text x="546.0" y="95.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">β</text>
+  <polygon points="603,52 679,52 641.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="603,52 679,52 641.0,90.0" fill="var(--muted-foreground, #57605d)" fill-opacity="0.30" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="679,52 679,128 641.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="679,52 679,128 641.0,90.0" fill="var(--mark, #91590a)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="603,128 679,128 641.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="603,128 679,128 641.0,90.0" fill="var(--secondary, #eceeea)" fill-opacity="1" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="603,52 603,128 641.0,90.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="603,52 603,128 641.0,90.0" fill="var(--primary, #1e5c4e)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <rect x="603" y="52" width="76" height="76" fill="none" stroke="var(--foreground, #1c2022)" stroke-width="1.4"/>
+  <text x="641.0" y="76.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">γ</text>
+  <text x="660.0" y="95.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">β</text>
+  <text x="641.0" y="114.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">δ</text>
+  <text x="622.0" y="95.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">α</text>
+  <polygon points="451,128 527,128 489.0,166.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="451,128 527,128 489.0,166.0" fill="var(--secondary, #eceeea)" fill-opacity="1" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="527,128 527,204 489.0,166.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="527,128 527,204 489.0,166.0" fill="var(--mark, #91590a)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="451,204 527,204 489.0,166.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="451,204 527,204 489.0,166.0" fill="var(--muted-foreground, #57605d)" fill-opacity="0.30" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="451,128 451,204 489.0,166.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="451,128 451,204 489.0,166.0" fill="var(--primary, #1e5c4e)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <rect x="451" y="128" width="76" height="76" fill="none" stroke="var(--foreground, #1c2022)" stroke-width="1.4"/>
+  <text x="489.0" y="152.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">δ</text>
+  <text x="508.0" y="171.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">β</text>
+  <text x="489.0" y="190.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">γ</text>
+  <text x="470.0" y="171.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">α</text>
+  <polygon points="527,128 603,128 565.0,166.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="527,128 603,128 565.0,166.0" fill="var(--secondary, #eceeea)" fill-opacity="1" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="603,128 603,204 565.0,166.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="603,128 603,204 565.0,166.0" fill="var(--primary, #1e5c4e)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="527,204 603,204 565.0,166.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="527,204 603,204 565.0,166.0" fill="var(--muted-foreground, #57605d)" fill-opacity="0.30" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="527,128 527,204 565.0,166.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="527,128 527,204 565.0,166.0" fill="var(--mark, #91590a)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <rect x="527" y="128" width="76" height="76" fill="none" stroke="var(--foreground, #1c2022)" stroke-width="1.4"/>
+  <text x="565.0" y="152.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">δ</text>
+  <text x="584.0" y="171.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">α</text>
+  <text x="565.0" y="190.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">γ</text>
+  <text x="546.0" y="171.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">β</text>
+  <polygon points="603,128 679,128 641.0,166.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="603,128 679,128 641.0,166.0" fill="var(--secondary, #eceeea)" fill-opacity="1" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="679,128 679,204 641.0,166.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="679,128 679,204 641.0,166.0" fill="var(--mark, #91590a)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="603,204 679,204 641.0,166.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="603,204 679,204 641.0,166.0" fill="var(--muted-foreground, #57605d)" fill-opacity="0.30" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="603,128 603,204 641.0,166.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="603,128 603,204 641.0,166.0" fill="var(--primary, #1e5c4e)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <rect x="603" y="128" width="76" height="76" fill="none" stroke="var(--foreground, #1c2022)" stroke-width="1.4"/>
+  <text x="641.0" y="152.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">δ</text>
+  <text x="660.0" y="171.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">β</text>
+  <text x="641.0" y="190.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">γ</text>
+  <text x="622.0" y="171.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">α</text>
+  <polygon points="451,204 527,204 489.0,242.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="451,204 527,204 489.0,242.0" fill="var(--muted-foreground, #57605d)" fill-opacity="0.30" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="527,204 527,280 489.0,242.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="527,204 527,280 489.0,242.0" fill="var(--mark, #91590a)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="451,280 527,280 489.0,242.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="451,280 527,280 489.0,242.0" fill="var(--secondary, #eceeea)" fill-opacity="1" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="451,204 451,280 489.0,242.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="451,204 451,280 489.0,242.0" fill="var(--primary, #1e5c4e)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <rect x="451" y="204" width="76" height="76" fill="none" stroke="var(--foreground, #1c2022)" stroke-width="1.4"/>
+  <text x="489.0" y="228.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">γ</text>
+  <text x="508.0" y="247.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">β</text>
+  <text x="489.0" y="266.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">δ</text>
+  <text x="470.0" y="247.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">α</text>
+  <polygon points="527,204 603,204 565.0,242.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="527,204 603,204 565.0,242.0" fill="var(--muted-foreground, #57605d)" fill-opacity="0.30" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="603,204 603,280 565.0,242.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="603,204 603,280 565.0,242.0" fill="var(--primary, #1e5c4e)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="527,280 603,280 565.0,242.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="527,280 603,280 565.0,242.0" fill="var(--secondary, #eceeea)" fill-opacity="1" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="527,204 527,280 565.0,242.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="527,204 527,280 565.0,242.0" fill="var(--mark, #91590a)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <rect x="527" y="204" width="76" height="76" fill="none" stroke="var(--foreground, #1c2022)" stroke-width="1.4"/>
+  <text x="565.0" y="228.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">γ</text>
+  <text x="584.0" y="247.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">α</text>
+  <text x="565.0" y="266.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">δ</text>
+  <text x="546.0" y="247.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">β</text>
+  <polygon points="603,204 679,204 641.0,242.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="603,204 679,204 641.0,242.0" fill="var(--muted-foreground, #57605d)" fill-opacity="0.30" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="679,204 679,280 641.0,242.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="679,204 679,280 641.0,242.0" fill="var(--mark, #91590a)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="603,280 679,280 641.0,242.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="603,280 679,280 641.0,242.0" fill="var(--secondary, #eceeea)" fill-opacity="1" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <polygon points="603,204 603,280 641.0,242.0" fill="var(--content, #fbfbf9)"/>
+  <polygon points="603,204 603,280 641.0,242.0" fill="var(--primary, #1e5c4e)" fill-opacity="0.55" stroke="var(--foreground, #1c2022)" stroke-width="0.8" stroke-opacity="0.45"/>
+  <rect x="603" y="204" width="76" height="76" fill="none" stroke="var(--foreground, #1c2022)" stroke-width="1.4"/>
+  <text x="641.0" y="228.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">γ</text>
+  <text x="660.0" y="247.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">β</text>
+  <text x="641.0" y="266.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">δ</text>
+  <text x="622.0" y="247.3" text-anchor="middle" font-family="var(--font-serif, serif)" font-size="15.2" fill="var(--foreground, #1c2022)">α</text>
+  <text x="565" y="300" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="12.5" fill="var(--muted-foreground, #57605d)">όπου ακουμπούν δύο πλευρές, έχουν το ίδιο χρώμα</text>
+</svg>

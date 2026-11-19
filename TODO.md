@@ -21,7 +21,8 @@ item is finished, move it to `DONE.md` with the date.
   sections 5, 8 and 12 are in the essay (details in `DONE.md`);
   pushed with this status line.
 - Session of 2026-11-19, evening: 3.328 in the analysis aligned with
-  the essay's wording (details in `DONE.md`); committed, not pushed.
+  the essay's wording, and the Gemini review of the essay taken through
+  proposal by proposal (details in `DONE.md`); committed, not pushed.
 
 ## Next session
 
@@ -33,8 +34,9 @@ item is finished, move it to `DONE.md` with the date.
    stays in git history). Until the essay checks are finished, do not
    read or start anything for the *Investigations* part
    (`Philosophical Investigations/`, `RESEARCH_NOTES.md`, the OCR files).
-   An untracked `gemini/` folder (2026-11-19: a Gemini review of the
-   essay as PDF and a revised `.docx`) has not been read yet.
+   The Gemini review in the untracked `gemini/` folder was taken
+   through on 2026-11-19 (`DONE.md`); ask whether the folder can be
+   deleted (it was never committed).
 
 Then, for the *Investigations* part (no writing of the third part yet;
 owner, 2026-11-17):

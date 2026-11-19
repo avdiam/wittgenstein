@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 336" role="img" aria-label="Η αρχιτεκτονική von Neumann: η κεντρική μονάδα επεξεργασίας, με τη μονάδα ελέγχου και την αριθμητική και λογική μονάδα, παίρνει από την ίδια μνήμη και τις εντολές του προγράμματος και τα δεδομένα· αριστερά η είσοδος, δεξιά η έξοδος">
+  <defs><marker id="vn-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="var(--foreground, #1c2022)"/></marker></defs>
+  <rect x="200" y="20" width="360" height="150" rx="6" fill="var(--secondary, #eceeea)" stroke="var(--foreground, #1c2022)" stroke-width="1.8"/>
+  <text x="380" y="44" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13.5" font-weight="700" fill="var(--foreground, #1c2022)">Κεντρική μονάδα επεξεργασίας</text>
+  <rect x="222" y="62" width="150" height="88" rx="6" fill="var(--content, #fbfbf9)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+  <text x="297" y="98" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--foreground, #1c2022)">Μονάδα ελέγχου</text>
+  <text x="297" y="118" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11.5" fill="var(--muted-foreground, #57605d)">διαβάζει τις εντολές</text>
+  <text x="297" y="134" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11.5" fill="var(--muted-foreground, #57605d)">μία μία, με τη σειρά</text>
+  <rect x="388" y="62" width="150" height="88" rx="6" fill="var(--content, #fbfbf9)" stroke="var(--border, #cdd3cd)" stroke-width="1.5"/>
+  <text x="463" y="92" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--foreground, #1c2022)">Αριθμητική και</text>
+  <text x="463" y="108" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--foreground, #1c2022)">λογική μονάδα</text>
+  <text x="463" y="128" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11.5" fill="var(--muted-foreground, #57605d)">πράξεις με</text>
+  <text x="463" y="143" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11.5" fill="var(--muted-foreground, #57605d)">λογικές πύλες</text>
+  <rect x="30" y="70" width="120" height="50" rx="6" fill="var(--content, #fbfbf9)" stroke="var(--foreground, #1c2022)" stroke-width="1.5"/>
+  <text x="90" y="100" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--foreground, #1c2022)">Είσοδος</text>
+  <rect x="610" y="70" width="120" height="50" rx="6" fill="var(--content, #fbfbf9)" stroke="var(--foreground, #1c2022)" stroke-width="1.5"/>
+  <text x="670" y="100" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13" font-weight="700" fill="var(--foreground, #1c2022)">Έξοδος</text>
+  <line x1="150" y1="95" x2="196" y2="95" stroke="var(--foreground, #1c2022)" stroke-width="1.8" marker-end="url(#vn-arr)"/>
+  <line x1="560" y1="95" x2="606" y2="95" stroke="var(--foreground, #1c2022)" stroke-width="1.8" marker-end="url(#vn-arr)"/>
+  <line x1="330" y1="174" x2="330" y2="222" stroke="var(--primary, #1e5c4e)" stroke-width="2" marker-end="url(#vn-arr)" marker-start="url(#vn-arr)"/>
+  <line x1="430" y1="174" x2="430" y2="222" stroke="var(--mark, #91590a)" stroke-width="2" marker-end="url(#vn-arr)" marker-start="url(#vn-arr)"/>
+  <text x="320" y="202" text-anchor="end" font-family="var(--font-sans, sans-serif)" font-size="12" font-weight="600" fill="var(--primary, #1e5c4e)">εντολές</text>
+  <text x="440" y="202" text-anchor="start" font-family="var(--font-sans, sans-serif)" font-size="12" font-weight="600" fill="var(--mark, #91590a)">δεδομένα</text>
+  <rect x="110" y="226" width="540" height="96" rx="6" fill="var(--secondary, #eceeea)" stroke="var(--foreground, #1c2022)" stroke-width="1.8"/>
+  <text x="380" y="248" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="13.5" font-weight="700" fill="var(--foreground, #1c2022)">Μνήμη: πρόγραμμα και δεδομένα μαζί, στην ίδια μορφή</text>
+  <rect x="126" y="262" width="60" height="44" rx="3" fill="var(--content, #fbfbf9)" stroke="var(--primary, #1e5c4e)" stroke-width="1.8"/>
+  <text x="156.0" y="281" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11" font-weight="600" fill="var(--primary, #1e5c4e)">εντολή</text>
+  <text x="156.0" y="298" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="10.5" fill="var(--muted-foreground, #57605d)">00</text>
+  <rect x="190" y="262" width="60" height="44" rx="3" fill="var(--content, #fbfbf9)" stroke="var(--primary, #1e5c4e)" stroke-width="1.8"/>
+  <text x="220.0" y="281" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11" font-weight="600" fill="var(--primary, #1e5c4e)">εντολή</text>
+  <text x="220.0" y="298" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="10.5" fill="var(--muted-foreground, #57605d)">01</text>
+  <rect x="254" y="262" width="60" height="44" rx="3" fill="var(--content, #fbfbf9)" stroke="var(--primary, #1e5c4e)" stroke-width="1.8"/>
+  <text x="284.0" y="281" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11" font-weight="600" fill="var(--primary, #1e5c4e)">εντολή</text>
+  <text x="284.0" y="298" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="10.5" fill="var(--muted-foreground, #57605d)">02</text>
+  <rect x="318" y="262" width="60" height="44" rx="3" fill="var(--content, #fbfbf9)" stroke="var(--primary, #1e5c4e)" stroke-width="1.8"/>
+  <text x="348.0" y="281" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11" font-weight="600" fill="var(--primary, #1e5c4e)">εντολή</text>
+  <text x="348.0" y="298" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="10.5" fill="var(--muted-foreground, #57605d)">03</text>
+  <rect x="382" y="262" width="60" height="44" rx="3" fill="var(--content, #fbfbf9)" stroke="var(--mark, #91590a)" stroke-width="1.8"/>
+  <text x="412.0" y="281" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11" font-weight="600" fill="var(--mark, #91590a)">αριθμός</text>
+  <text x="412.0" y="298" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="10.5" fill="var(--muted-foreground, #57605d)">04</text>
+  <rect x="446" y="262" width="60" height="44" rx="3" fill="var(--content, #fbfbf9)" stroke="var(--mark, #91590a)" stroke-width="1.8"/>
+  <text x="476.0" y="281" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11" font-weight="600" fill="var(--mark, #91590a)">αριθμός</text>
+  <text x="476.0" y="298" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="10.5" fill="var(--muted-foreground, #57605d)">05</text>
+  <rect x="510" y="262" width="60" height="44" rx="3" fill="var(--content, #fbfbf9)" stroke="var(--primary, #1e5c4e)" stroke-width="1.8"/>
+  <text x="540.0" y="281" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11" font-weight="600" fill="var(--primary, #1e5c4e)">εντολή</text>
+  <text x="540.0" y="298" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="10.5" fill="var(--muted-foreground, #57605d)">06</text>
+  <rect x="574" y="262" width="60" height="44" rx="3" fill="var(--content, #fbfbf9)" stroke="var(--mark, #91590a)" stroke-width="1.8"/>
+  <text x="604.0" y="281" text-anchor="middle" font-family="var(--font-sans, sans-serif)" font-size="11" font-weight="600" fill="var(--mark, #91590a)">αριθμός</text>
+  <text x="604.0" y="298" text-anchor="middle" font-family="var(--font-mono, monospace)" font-size="10.5" fill="var(--muted-foreground, #57605d)">07</text>
+</svg>

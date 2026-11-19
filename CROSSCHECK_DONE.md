@@ -648,6 +648,38 @@ MYCIN chapter is a scan, read through Tesseract OCR.
 | Φ3 | The Mark I was Rosenblatt's machine | [Wikipedia, «Mark I Perceptron»](https://en.wikipedia.org/wiki/Mark_I_Perceptron), citing Rosenblatt 1957 (Cornell Aeronautical Laboratory report) and 1960 (*Proc. IRE* 48); the essay's own Rosenblatt 1958 | confirmed, weakly (Wikipedia and the citations it gives) | Kept. Not used: 400 photocells, motor-driven potentiometers as weights, 512 units, Buffalo and the Navy contract; the 1960 operators' manual (DTIC AD0236965) refused the fetch (HTTP 403) and was not read |
 | Φ4 | `neural_network.svg`: weighted sum and threshold; graded values in today's networks | The essay's own text (perceptron paragraph; «παίρνει μεγάλη ή μικρή τιμή» in «Το "μαύρο κουτί"»); McCulloch and Pitts 1943 and Rosenblatt 1958 in the sources | illustration, numbers invented and said so in the caption | — |
 
+## The Gemini review of the essay, checked (2026-11-19)
+
+A review of the essay by Google Gemini (a PDF of the conversation and a
+revised `.docx`, in the untracked folder `gemini/`) was read in full; the
+`.docx` was diffed paragraph by paragraph against the current Word file
+(27 change blocks, none beyond what Gemini announced). Fourteen proposals
+were taken one by one with the owner (decisions in `DONE.md`).
+
+Gemini's replacement texts, not adopted, contained these errors: the
+Byzantine paragraph «με σχολιαστές όπως τον Μιχαήλ Ψελλό» (case) and the
+loss of «στα *Αναλυτικά Ύστερα*»; in its §10 condensation the two Rosch
+papers of 1975 merged, Brandom's «δίνουν και ζητούν λόγους» attributed to
+Eagleton too, the Austin «Ερμηνευτική σημείωση» reduced to a parenthesis,
+and the table cell «οι κοινωνικοί επιστήμονες» left without Winch; in the
+Cammarata paragraph «κάτω από τους νευρώνες» (superposition spreads
+features across neurons); in the 2026 paragraph «συνέβαλαν» for the
+autonomous Erdős disproof and «ταχύτατα».
+
+| # | Claim | Source | Verdict | Action |
+| :-: | :-- | :-- | :-- | :-- |
+| Γ1 | Descartes 1596–1650; Spinoza 1632–1677 (section 3) | [MacTutor, Descartes](https://mathshistory.st-andrews.ac.uk/Biographies/Descartes/) (31 March 1596 – 11 February 1650); [SEP, Spinoza](https://plato.stanford.edu/entries/spinoza/) (born 1632, died 1677) | confirmed | Added. |
+| Γ2 | Jacquard 1752–1834 (section 4) | [IEEE Computer Society, Jacquard](https://history.computer.org/pioneers/jacquard.html) (7 July 1752 – 7 August 1834); Britannica, same dates (search snippet only) | confirmed | Added. |
+| Γ3 | Chomsky born 1928 (section 11) | Britannica (born 7 Dec. 1928; search snippet); IEP «Noam Chomsky (1928– )» | confirmed | «γενν. 1928». |
+| Γ4 | Erdős 1913–1996 (section 11) | [MacTutor, Erdős](https://mathshistory.st-andrews.ac.uk/Biographies/Erdos/) (26 March 1913 – 20 September 1996) | confirmed | Added. |
+| Γ5 | Fermat's year of birth (section 11) | [MacTutor, Fermat](https://mathshistory.st-andrews.ac.uk/Biographies/Fermat/): 17 August 1601, died 12 January 1665, "There is some dispute … about the date of Pierre's birth"; [Barner, EMS Newsletter, Dec. 2001](https://mathshistory.st-andrews.ac.uk/Biographies/Fermat/barner.pdf): "probably born in 1607, or in the first days of January 1608" | **contested** | «1601 ή 1607–1665»; no winner picked. |
+| Γ6 | Shannon 1948: meaning irrelevant to the engineering problem; series of approximations to English, each symbol chosen with probabilities depending on the preceding ones, resemblance increasing at each step; the *bit*, a word suggested by Tukey (section 9) | Shannon, «A Mathematical Theory of Communication» (reprint with corrections, [Harvard copy](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)): "These semantic aspects of communication are irrelevant to the engineering problem"; "Each letter is chosen with probabilities which depend on the preceding two letters"; "The resemblance to ordinary English text increases quite noticeably at each of the above steps"; "binary digits, or more briefly bits, a word suggested by J. W. Tukey" | confirmed | Paragraph added. The examples 0, 1, 3 and about 6,6 bits are log₂(1/p), the standard exposition (Shannon defines the average, the entropy); the text says «το μέτρο του Shannon στηρίζεται σε μια ιδέα», not that he defined it so. |
+| Γ7 | Chomsky's statistical model was of Shannon's kind (section 11) | *Syntactic Structures* (1957), §2.4 ("in any statistical model for grammaticalness") and ch. 3, which cites Shannon and Weaver (1949) for the finite-state Markov model and rejects it "for the purposes of grammar"; [Pereira 2000](https://people.cs.umass.edu/~brenocon/anlp2018/papers/Pereira2000.pdf), abstract: "formal linguistics in the Chomsky tradition, and information theory in the Shannon tradition" | confirmed | «ένα στατιστικό μοντέλο, όπως εκείνα του Shannon (ενότητα 9)». Pereira's objection is already the next sentence of the essay, so no new note. |
+| Γ8 | Von Neumann, *First Draft of a Report on the EDVAC*, 30 June 1945: central arithmetic and control parts, one memory for numbers and orders; circulated under his name alone; the name «αρχιτεκτονική von Neumann» disputed (section 9) | The typescript (Moore School, «June 30, 1945»; §§2.2–2.5, 12.2 «Numbers and orders»); [SEP, «The Modern History of Computing»](https://plato.stanford.edu/entries/computing-history/): the draft set out "the ENIAC group's ideas", "von Neumann machines" "historically inappropriate"; Computer History Museum, «The Neverending Quest for Firsts»: credit not shared with Eckert and Mauchly | confirmed | Paragraph, glossary entry, chronology row, source entry. SEP dates the composition May 1945; the document's date is kept. |
+| Γ9 | Around 1900 Russell and Moore turned against the idealism of Bradley and others, which drew on Hegel and dominated British philosophy (section 6) | [SEP, Russell](https://plato.stanford.edu/entries/russell/): "towards the end of 1898 … Moore and I rebelled against both Kant and Hegel"; [IEP, Analytic Philosophy](https://iep.utm.edu/analytic-philosophy/): the break with "Absolute Idealism", "the dominant school"; [SEP, Bradley](https://plato.stanford.edu/entries/bradley/): "Neo-Hegelian" a label with "significant degree of distortion"; [SEP, Moore](https://plato.stanford.edu/entries/moore/): Cambridge "one of" the centres | confirmed; the first wording **corrected** | «που αντλούσε από τον Hegel» kept (not «εγελιανοί»). «από αυτή την αντίδραση γεννήθηκε η αναλυτική φιλοσοφία» became «Η αντίδραση αυτή, μαζί με το έργο του Frege, θεωρείται η αφετηρία της αναλυτικής φιλοσοφίας», in line with Dummett's Frege in section 6. |
+| Γ10 | G. E. Moore 1873–1958 | SEP, Moore | confirmed | Dates moved to his first mention (section 6). |
+| Γ11 | Wang tiles are placed without rotation; each row of a tiling can copy one step of a program (section 8, sentence and figure) | Robinson 1971 (row "Wang 1961, Berger 1966; tilings and Turing machines" above) | confirmed | Sentence added («Η ιδέα είναι…»); figure `wang_tiles.svg`. |
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.

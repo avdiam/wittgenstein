@@ -8,6 +8,51 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-19, evening: the Gemini review of the essay.**
+
+- A Gemini review of the essay (PDF of the conversation and a revised
+  `.docx`, untracked in `gemini/`) read in full, the `.docx` diffed
+  against the current Word file, and its fourteen proposals taken one by
+  one with the owner; checked claims in the ledger, «The Gemini review of
+  the essay, checked» (Γ1–Γ11).
+- Adopted or adapted (owner):
+  - Section 3 retitled «Τι μπορούμε να γνωρίζουμε: Locke, Hume, Kant»;
+    Descartes and Spinoza dated.
+  - Dates for every name with a Greek pronunciation: Jacquard, Chomsky
+    («γενν. 1928»), Erdős, Fermat («1601 ή 1607–1665», contested).
+  - Section 6: «Η ανάλυση του *Tractatus*» is a link to `tractatus.html`.
+  - Section 7: a closing summary of three results, in the owner's
+    wording, after the note on Wittgenstein's reaction.
+  - Section 8: the summary moved to the end, after «Ο Turing στις
+    παραδόσεις του Wittgenstein» (option B; the subsection stays in 8);
+    the tiles kept, with a sentence on how a tiling copies a program and
+    the figure `wang_tiles.svg`.
+  - Section 9 retitled «Κυκλώματα και πληροφορία: Shannon, von Neumann»:
+    a paragraph on the von Neumann architecture with the figure
+    `von_neumann.svg`, a paragraph on information as improbability (0, 1,
+    3 and about 6,6 bits), and a paragraph on Shannon's statistics of
+    English; «Δέκα χρόνια αργότερα, το 1948» → «Το 1948»; glossary
+    «Θεωρία της πληροφορίας», «Αρχιτεκτονική von Neumann»; chronology
+    1945; source entry for the EDVAC report.
+  - Section 10: subsection heading back to «Οι *Φιλοσοφικές Έρευνες*»;
+    the owner's trim (Strawson → «κ.ά.», Vygotsky, Cornforth, Adorno cut;
+    Rosch–Mervis and Fodor kept); the Hegel paragraph split, its
+    Bradley sentences moved to section 6 (with Moore's dates at his new
+    first mention); source entries for Vygotsky, Cornforth, Adorno
+    removed.
+  - Section 11: «ένα στατιστικό μοντέλο, όπως εκείνα του Shannon
+    (ενότητα 9)».
+  - Sources: the ledger is named as public, with the repository and site
+    addresses written as links.
+- Kept as they were (owner): the Byzantine paragraph, the Cammarata note
+  and the 4.0031 paragraph, the two 2026 paragraphs (no sentence in the
+  introduction), the chronology row for 2026.
+- After the source check, the Bradley sentence of section 6 was
+  corrected (Γ9): the reaction against idealism «μαζί με το έργο του
+  Frege» is the starting point of analytic philosophy.
+- Figures checked with headless Chrome: PNG copies (light) and the page
+  in dark mode.
+
 **Session of 2026-11-19, evening: 3.328 aligned with the essay.**
 
 - The quotation of 3.328 now reads «Αν ένα σημείο δεν είναι αναγκαίο,
