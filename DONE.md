@@ -8,6 +8,14 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-19, night: the Word file justified.**
+
+- At the owner's request, the body text of `docs/Logiki_Glossa_Michanes.docx`
+  is justified (Word: Justify, Ctrl+J), set once on the Normal style in
+  `tools/build_docx.py`; titles, headings and table cells stay left-aligned,
+  figures and captions centred. Checked in a LibreOffice PDF rendering.
+  The page `essay.html` is unchanged.
+
 **Session of 2026-11-19, night: the postscript on self-improvement.**
 
 - At the owner's request, a subagent searched the news on recursive
