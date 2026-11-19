@@ -43,6 +43,13 @@ item is finished, move it to `DONE.md` with the date.
    are finished, do not read or start anything for the *Investigations*
    part (`Philosophical Investigations/`, `RESEARCH_NOTES.md`, the OCR
    files).
+   At the end of the session of 2026-11-19 the owner left this choice
+   for the next session: (A) Claude does the open essay checks that can
+   be done online (`CROSSCHECK_PLAN.md`: modern life dates, Tarski and the
+   diagonal lemma, Boole's wording); (B) the owner continues the passage
+   checks; (C) the essay checks are declared finished and the
+   *Investigations* part starts (points 5–6 of §6 in `RESEARCH_NOTES.md`,
+   then stage 1).
 
 Then, for the *Investigations* part (no writing of the third part yet;
 owner, 2026-11-17):

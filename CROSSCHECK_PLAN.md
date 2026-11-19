@@ -44,6 +44,7 @@ The research of 2026-11-18 settled most of the earlier items (ledger,
 - Life dates: the ancient and medieval ones, Avicenna, Searle, Gettier and Kripke were checked on 2026-11-17 (ledger, "The weakly sourced points of the essay, closed"). The other modern dates (Leibniz to Bruner) were not fetched one by one.
 - From the critique of 2026-11-18 (ledger, "The critique of the essay, checked"): Tarski's life dates and the diagonal lemma were not fetched. (*Syntactic Structures* §2.4 and ch. 3 were read on 2026-11-19: ledger, Γ7.)
 - Needs the books: the lecture number (XXI or XXII) of Turing's bridge remark in Diamond's *LFM* (page 211 is settled).
+- Section 4 (ledger, Δ2): Boole's Rule of 0 and 1 read only through the SEP's quotation (*Laws of Thought*, pp. 37–38); Project Gutenberg returned 503. Retry #15114.
 - Section 11 (ledger, Δ6): Minsky and Papert's *Perceptrons* (1969, 1988 edition) and Olazaran's full article (1996) were not read; the claims rest on Olazaran's abstract and secondary summaries.
 - The postscript (ledger, Υ5): Anthropic's S-1/A filings were read only through TechCrunch's quotation; EDGAR refuses undeclared automated requests. Amendment No. 2 ("met this threshold") was left out of the essay unread.
 
