@@ -1,4 +1,7 @@
-# Draft: «Το "μαύρο κουτί"» (essay, section 11) — not applied
+# Draft: «Το "μαύρο κουτί"» (essay, section 11) — applied 2026-11-19
+
+Written into `Logiki_Glossa_Michanes.md` on 2026-11-19, with the [Π]
+markers removed. The essay is now the source; this file is a record only.
 
 Proposed on 2026-11-19 at the owner's request; saved, not applied (owner,
 2026-11-19). Nothing here is in `Logiki_Glossa_Michanes.md` yet. Π1–Π7 and

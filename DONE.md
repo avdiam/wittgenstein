@@ -8,6 +8,24 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-19, later: «Το "μαύρο κουτί"» written into the essay.**
+
+- Drafted at the owner's request (`drafts/Mavro_Kouti_draft.md`),
+  checked against its sources (ledger, «The draft "μαύρο κουτί",
+  checked», Π1–Π8 and Cammarata) and corrected.
+- Owner's decisions: wording edits of the draft kept; the closing
+  paragraph on 4.0031 and meaning as use kept (A); the Cammarata
+  paragraph stays an Ερμηνευτική σημείωση; superposition «που την
+  ονόμασαν»; the owner's vision-first sentence narrowed to the
+  neuron-by-neuron branch (Π8, Saphra & Wiegreffe 2024).
+- Written into section 11 as a new `###` between «Τα νευρωνικά
+  δίκτυα και τα γλωσσικά μοντέλα» and «Τα όρια». Added: eight source
+  entries (Olah et al. 2020, Elhage et al. 2022, Bricken et al. 2023,
+  Templeton et al. 2024 with the Golden Gate post, Saphra & Wiegreffe
+  2024, Lindsey et al. 2025, Cammarata 2026); glossary «Ερμηνευσιμότητα»,
+  «Μαύρο κουτί», «Υπέρθεση»; timeline 2020 (added to the AlphaFold row),
+  2022, 2024, 2025.
+
 **Session of 2026-11-19: whole read of the essay.**
 
 - The essay read in full for coherence; twelve points proposed, the
