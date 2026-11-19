@@ -14,9 +14,10 @@ item is finished, move it to `DONE.md` with the date.
   owner's decisions applied, and the essay title centred over the
   text column (details in `DONE.md`); pushed (`bbdbe37..3c6e496`).
 - Session of 2026-11-19, later: the «μαύρο κουτί» draft checked
-  against its sources and corrected (`c074e42`, local, not pushed).
-  The owner will discuss the findings and the open question in the
-  next session.
+  against its sources and corrected (`c074e42`). The owner then
+  answered the open question (A: keep the closing paragraph) and
+  decided points 1–5 (`92a1c7b`); pushed together with this status line.
+  The draft is still not in the essay.
 
 ## Next session
 
@@ -29,8 +30,10 @@ item is finished, move it to `DONE.md` with the date.
    in `drafts/Mavro_Kouti_draft.md` and **not applied** (owner,
    2026-11-19). Π1–Π7 and the Cammarata wording were checked on
    2026-11-19 and the draft corrected (ledger, «The draft "μαύρο
-   κουτί", checked»). Next: the owner's answer to the open question at
-   the end of the draft, then write it into the Markdown. Until this is settled, do not read or start anything for
+   κουτί", checked»). The owner's decisions of 2026-11-19 are applied
+   in the draft, and the new claim Π8 checked (ledger). Next: the owner's
+   approval of the Π8 wording, then write the subsection into the
+   Markdown with its bibliography, glossary and timeline entries. Until this is settled, do not read or start anything for
    the *Investigations* part (`Philosophical Investigations/`,
    `RESEARCH_NOTES.md`, the OCR files).
 2. Align 3.328 in the Tractatus analysis (Markdown, and the summary and
