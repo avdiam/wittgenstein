@@ -8,6 +8,17 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-19, evening: 3.328 aligned with the essay.**
+
+- The quotation of 3.328 now reads «Αν ένα σημείο δεν είναι αναγκαίο,
+  τότε δεν έχει σημασία [bedeutungslos]» in the three places: the
+  analysis Markdown (hence the generated block of the page), the
+  hand-written summary of section 3 and the tree-explorer data (`el`).
+  It was «δεν χρησιμοποιείται, τότε είναι χωρίς σημασία», Kitsopoulos's
+  reading; the essay's wording follows Ogden's "not necessary" (owner,
+  2026-11-18; ledger, the rows on 3.328). The tree data still shows the
+  German, Ogden and Pears–McGuinness side by side.
+
 **Session of 2026-11-19, later: «Το "μαύρο κουτί"» written into the essay.**
 
 - Drafted at the owner's request (`drafts/Mavro_Kouti_draft.md`),

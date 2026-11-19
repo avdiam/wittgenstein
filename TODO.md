@@ -20,6 +20,8 @@ item is finished, move it to `DONE.md` with the date.
   diagram, the Mark I Perceptron photo, and the owner's checks of
   sections 5, 8 and 12 are in the essay (details in `DONE.md`);
   pushed with this status line.
+- Session of 2026-11-19, evening: 3.328 in the analysis aligned with
+  the essay's wording (details in `DONE.md`); committed, not pushed.
 
 ## Next session
 
@@ -31,16 +33,13 @@ item is finished, move it to `DONE.md` with the date.
    stays in git history). Until the essay checks are finished, do not
    read or start anything for the *Investigations* part
    (`Philosophical Investigations/`, `RESEARCH_NOTES.md`, the OCR files).
-2. Align 3.328 in the Tractatus analysis (Markdown, and the summary and
-   tree data of the page) with the essay's wording: «Αν ένα σημείο δεν
-   είναι αναγκαίο, τότε δεν έχει σημασία». The analysis has «δεν
-   χρησιμοποιείται»; the essay no longer explains the two readings of
-   *gebraucht* (owner, 2026-11-18).
+   An untracked `gemini/` folder (2026-11-19: a Gemini review of the
+   essay as PDF and a revised `.docx`) has not been read yet.
 
 Then, for the *Investigations* part (no writing of the third part yet;
 owner, 2026-11-17):
 
-3. Questions 1–4 of §6 in `RESEARCH_NOTES.md` answered by the owner on
+2. Questions 1–4 of §6 in `RESEARCH_NOTES.md` answered by the owner on
    2026-11-18: arc 1 with the *Blue and Brown Books* at the centre and a
    short account of the route from 1929 (the *Philosophical Grammar*
    named as Rhees's edition); key sentences quoted from the manuscripts
@@ -48,7 +47,7 @@ owner, 2026-11-17):
    note in the arc where it belongs; Part II deferred until more sources
    are searched. Still to discuss: points 5 (*Über Gewißheit*) and 6
    (library access).
-4. Then settle stage 1.
+3. Then settle stage 1.
 
 ## Third part: the *Philosophical Investigations*
 
