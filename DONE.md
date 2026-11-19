@@ -30,6 +30,24 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   of «Το "μαύρο κουτί"», with its PNG; the 1960 U.S. Navy photo of
   the Mark I Perceptron (`mark1_perceptron.jpg`, public domain) after
   the perceptron paragraph. Ledger Φ1–Φ4.
+- Owner's checks of the essay:
+  - Section 5: «το σύνολο όλων των πραγμάτων που δεν είναι γάτες»
+    without «απευθείας» (in ZF it does not exist at all), and «όπως
+    θα δούμε αμέσως παρακάτω» (the proof is the next paragraph).
+  - Section 5: the price of ZF explained: separation only carves
+    sets out of sets already given, so separate axioms must assert
+    that some exist, among them an infinite set; like the axiom of
+    infinity of the *Principia*, hardly pure logic.
+  - Section 8: «Ο Turing στις παραδόσεις του Wittgenstein» moved to
+    the end, so the question, the machine, the universal machine, the
+    halting proof and decidability run unbroken; «πίσω στο Cambridge»
+    → «στο Cambridge» (Princeton is not mentioned).
+  - Section 12: a closing paragraph of questions (language and the
+    world, truth and proof, knowledge, the role of philosophy, what
+    logic, the sciences and machines can answer), in the owner's
+    wording, corrected: «η αλήθεια και η απόδειξη» (not «επαλήθευση»);
+    Gettier and *Περί βεβαιότητας* as two separate clauses.
+- Pushed at the end of the session.
 
 **Session of 2026-11-19: whole read of the essay.**
 

@@ -16,20 +16,21 @@ item is finished, move it to `DONE.md` with the date.
 - Session of 2026-11-19, later: the «μαύρο κουτί» draft checked
   against its sources and corrected (`c074e42`). The owner then
   answered the open question (A: keep the closing paragraph) and
-  decided points 1–5 (`92a1c7b`), pushed. The subsection is now
-  written into the essay (details in `DONE.md`); local, not pushed.
+  decided points 1–5 (`92a1c7b`). The subsection, a neural-network
+  diagram, the Mark I Perceptron photo, and the owner's checks of
+  sections 5, 8 and 12 are in the essay (details in `DONE.md`);
+  pushed with this status line.
 
 ## Next session
 
 **Start with the essay, not with the third part** (owner, 2026-11-18).
 
-1. The «μαύρο κουτί» subsection is in the essay (2026-11-19, `DONE.md`).
-   The diagram and the Mark I photo are added too.
-   Left: the owner reads it on the page and says whether to push, and
-   whether `drafts/Mavro_Kouti_draft.md` can be deleted (it stays in
-   git history). Until this is settled, do not read or start anything
-   for the *Investigations* part (`Philosophical Investigations/`,
-   `RESEARCH_NOTES.md`, the OCR files).
+1. The owner is checking the essay passage by passage (2026-11-19:
+   sections 5, 8, 12 done; `DONE.md`). Continue if the owner has more.
+   Also ask whether `drafts/Mavro_Kouti_draft.md` can be deleted (it
+   stays in git history). Until the essay checks are finished, do not
+   read or start anything for the *Investigations* part
+   (`Philosophical Investigations/`, `RESEARCH_NOTES.md`, the OCR files).
 2. Align 3.328 in the Tractatus analysis (Markdown, and the summary and
    tree data of the page) with the essay's wording: «Αν ένα σημείο δεν
    είναι αναγκαίο, τότε δεν έχει σημασία». The analysis has «δεν
