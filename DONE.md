@@ -8,6 +8,23 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-19, night: the second Gemini review of the essay.**
+
+- Nine proposals checked and taken one by one with the owner (ledger,
+  «The second Gemini review of the essay, checked», Δ1–Δ10).
+- Adopted or adapted (owner): 3.342 in section 1 corrected, with an
+  example of double negation; section 6, the *Tractatus* calls
+  mathematical propositions equations (6.2, 6.21); section 7, the Rosser
+  parenthesis (a variant of G); section 10 ends with a bridge to section
+  11; section 11, Minsky and Papert 1969 with Olazaran's dissent,
+  backpropagation (1986) and, at the owner's request, AlexNet (2012); the
+  attention figure redrawn with «γλώσσα» and moved next to its paragraph,
+  the Lean figure on its own; a new source subsection «Επισκοπήσεις και
+  εγχειρίδια».
+- Kept (owner): Boole's sentence (it follows his Rule of 0 and 1), the
+  Cammarata note (decided earlier the same day).
+- Figures checked: PNG copies, and the page in dark mode.
+
 **Session of 2026-11-19, night: the Word file justified.**
 
 - At the owner's request, the body text of `docs/Logiki_Glossa_Michanes.docx`

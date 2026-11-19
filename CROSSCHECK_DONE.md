@@ -705,6 +705,26 @@ Amendment No. 2 (not read). The facts of the paragraph rest twice on
 Anthropic's own statements and once on METR's assessment of Anthropic;
 noted to the owner.
 
+## The second Gemini review of the essay, checked (2026-11-19)
+
+Nine proposals by Google Gemini on the current version (pasted in the
+conversation, no file) were checked against the sources and against
+earlier decisions in `DONE.md`, then taken one by one with the owner.
+The owner also asked for a sentence on AlexNet (Δ7).
+
+| # | Claim | Source | Verdict | Action |
+| :-: | :-- | :-- | :-- | :-- |
+| Δ1 | 3.342 is about notation: what follows from an arbitrary choice is not arbitrary; the essay's «το τι εκφράζει την ουσία του πράγματος» misreads it (section 1) | Ogden, 3.342: "In our notations there is indeed something arbitrary, but this is not arbitrary, namely that if we have determined anything arbitrarily, then something else must be the case. (This results from the essence of the notation.)" | Gemini right; essay **corrected** | Owner's wording A+, with the example of double negation in words (the symbols «¬», p come only in section 5). |
+| Δ2 | Boole's algebra of 0 and 1 overstated (section 4) | [SEP, Boole](https://plato.stanford.edu/entries/boole/) (sections 4–6 read only as a summary): the Rule of 0 and 1, "the symbols x, y, z, &c. admit indifferently of the values 0 and 1, and of these values alone" (*Laws of Thought*, pp. 37–38), restricted the variables, not the values of terms; uninterpretable intermediate steps allowed. Project Gutenberg returned 503 | essay accurate | Kept (owner). |
+| Δ3 | The *Tractatus* calls mathematical propositions equations, not tautologies (section 6) | 6.2 "Gleichungen, und daher Scheinsätze"; 6.21 "Mathematical propositions express no thoughts"; 6.22 (the three PDFs; the analysis) | confirmed | Clause added to the Vienna Circle sentence. |
+| Δ4 | Gödel needed ω-consistency only to rule out a proof of not-G; Rosser (1936) needs only consistency (section 7) | Row S13 above (SEP, Gödel's incompleteness theorems) | confirmed; Gemini's «και για τα δύο» **corrected** | Rosser's result is for a variant of G, not G itself: «με μια παραλλαγή της G». |
+| Δ5 | Bridge from the Hegelian readers to section 11 | No factual claim; section 11, the note on Bender and Koller | — | Adopted, reworded: no «ευθύνη» (Brandom's commitments not explained in the essay), «θα ξαναβρεθεί η ιδέα» rather than a return of Brandom. |
+| Δ6 | Minsky and Papert (1969): limits of the one-layer perceptron, among them exclusive or; the book turned research back to symbolic AI; backpropagation (section 11) | Olazaran, *Social Studies of Science* 26 (1996), 611–659: the standard account an "official history", built with the rise of symbolic AI and rewritten after the late 1980s (abstract and secondary summaries only; Sage returned 403); Minsky and Papert (1988 edition) said research had slowed before the book (secondary); [SEP, Connectionism](https://plato.stanford.edu/entries/connectionism/) does not mention the book; Rumelhart, Hinton, Williams, *Nature* 323 (1986), 533–536 (Crossref); precursors Linnainmaa 1970, Werbos 1974 (not fetched) | causal story **contested**; the rest confirmed at secondary level | Both readings named, no winner; «έγινε γνωστή το 1986» for backpropagation. Chronology 1969 and 1986; three source entries. The book and Olazaran's full text: `CROSSCHECK_PLAN.md`. |
+| Δ7 | AlexNet (2012) | Krizhevsky, Sutskever, Hinton, NeurIPS 25 (2012): ILSVRC-2012 top-5 test error 15.3% against 26.2% for the second entry; two GTX 580 GPUs, about six days (paper text through search) | confirmed | Sentence without percentages; chronology 2012; source entry. |
+| Δ8 | Shorten the Cammarata note | Owner's decision earlier the same day (first Gemini review) | — | Kept (owner). |
+| Δ9 | The attention example in the text («γλώσσα») and in the figure («τράπεζα») differ; the figure is three subsections away | `attention_neurosymbolic.svg` | confirmed | Split: `attention.svg` redrawn with «γλώσσα» after the attention paragraph; `neurosymbolic.svg` in place, with sentence-case titles, «απορρίπτει κάθε λογικό κενό» and «της Εννοιογραφίας του Frege και των Principia» as in the text. Old figure and PNG removed. |
+| Δ10 | Four entries under «Πρωτότυπες εργασίες που αναφέρονται» are not cited | Search of the text: Saphra–Wiegreffe, Ji et al., Garcez–Lamb, Jurafsky–Martin | confirmed | New subsection «Επισκοπήσεις και εγχειρίδια». |
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.
