@@ -22,21 +22,21 @@ item is finished, move it to `DONE.md` with the date.
   pushed with this status line.
 - Session of 2026-11-19, evening: 3.328 in the analysis aligned with
   the essay's wording, and the Gemini review of the essay taken through
-  proposal by proposal (details in `DONE.md`); committed, not pushed.
+  proposal by proposal (details in `DONE.md`); pushed
+  (`df56d9b..fab5fb6`). The `gemini/` folder and
+  `drafts/Mavro_Kouti_draft.md` deleted (owner); the draft stays in git
+  history (`git show 9eeb189:drafts/Mavro_Kouti_draft.md`).
 
 ## Next session
 
 **Start with the essay, not with the third part** (owner, 2026-11-18).
 
 1. The owner is checking the essay passage by passage (2026-11-19:
-   sections 5, 8, 12 done; `DONE.md`). Continue if the owner has more.
-   Also ask whether `drafts/Mavro_Kouti_draft.md` can be deleted (it
-   stays in git history). Until the essay checks are finished, do not
-   read or start anything for the *Investigations* part
-   (`Philosophical Investigations/`, `RESEARCH_NOTES.md`, the OCR files).
-   The Gemini review in the untracked `gemini/` folder was taken
-   through on 2026-11-19 (`DONE.md`); ask whether the folder can be
-   deleted (it was never committed).
+   sections 5, 8, 12 done, and the Gemini review taken through;
+   `DONE.md`). Continue if the owner has more. Until the essay checks
+   are finished, do not read or start anything for the *Investigations*
+   part (`Philosophical Investigations/`, `RESEARCH_NOTES.md`, the OCR
+   files).
 
 Then, for the *Investigations* part (no writing of the third part yet;
 owner, 2026-11-17):

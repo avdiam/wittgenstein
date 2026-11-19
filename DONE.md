@@ -52,6 +52,9 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   Frege» is the starting point of analytic philosophy.
 - Figures checked with headless Chrome: PNG copies (light) and the page
   in dark mode.
+- Pushed (`df56d9b..fab5fb6`). Afterwards, at the owner's decision, the
+  untracked `gemini/` folder was deleted, and `drafts/Mavro_Kouti_draft.md`
+  removed from the repository (`git show 9eeb189:drafts/Mavro_Kouti_draft.md`).
 
 **Session of 2026-11-19, evening: 3.328 aligned with the essay.**
 
