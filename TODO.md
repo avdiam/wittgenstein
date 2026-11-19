@@ -24,6 +24,7 @@ item is finished, move it to `DONE.md` with the date.
 **Start with the essay, not with the third part** (owner, 2026-11-18).
 
 1. The «μαύρο κουτί» subsection is in the essay (2026-11-19, `DONE.md`).
+   The diagram and the Mark I photo are added too.
    Left: the owner reads it on the page and says whether to push, and
    whether `drafts/Mavro_Kouti_draft.md` can be deleted (it stays in
    git history). Until this is settled, do not read or start anything

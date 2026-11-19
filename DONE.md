@@ -25,6 +25,11 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   2024, Lindsey et al. 2025, Cammarata 2026); glossary «Ερμηνευσιμότητα»,
   «Μαύρο κουτί», «Υπέρθεση»; timeline 2020 (added to the AlphaFold row),
   2022, 2024, 2025.
+- Figures (owner): `neural_network.svg` (a neuron with weights and a
+  threshold; a small network in three layers) after the first paragraph
+  of «Το "μαύρο κουτί"», with its PNG; the 1960 U.S. Navy photo of
+  the Mark I Perceptron (`mark1_perceptron.jpg`, public domain) after
+  the perceptron paragraph. Ledger Φ1–Φ4.
 
 **Session of 2026-11-19: whole read of the essay.**
 
