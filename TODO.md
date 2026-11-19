@@ -31,7 +31,7 @@ item is finished, move it to `DONE.md` with the date.
   (`fab5fb6..5e9a3a3`).
 - Session of 2026-11-19, night: the Word file and the page justified with
   hyphenation (pushed), and a second Gemini review taken through
-  (details in `DONE.md`); committed, not pushed.
+  (details in `DONE.md`); pushed (`661db40..a3512af`).
 
 ## Next session
 
