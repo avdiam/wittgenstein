@@ -18,6 +18,9 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   reading; the essay's wording follows Ogden's "not necessary" (owner,
   2026-11-18; ledger, the rows on 3.328). The tree data still shows the
   German, Ogden and Pears–McGuinness side by side.
+- No «Ερμηνευτική σημείωση» on the two readings of *gebraucht*: a
+  difference between translators, already visible in the tree data
+  (owner, 2026-11-19).
 
 **Session of 2026-11-19, later: «Το "μαύρο κουτί"» written into the essay.**
 
