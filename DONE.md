@@ -26,7 +26,8 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   Anthropic's only; «αν δεν έχει ήδη φτάσει» dropped (Amendment No. 2
   not read); the MIT result marked as not yet reviewed.
 - Chronology rows 1951 (Turing), 1965 (Good) and the 2026 row extended;
-  six source entries. No glossary entry.
+  six source entries. No glossary entry (owner). Pushed
+  (`fab5fb6..5e9a3a3`).
 
 **Session of 2026-11-19, evening: the Gemini review of the essay.**
 
