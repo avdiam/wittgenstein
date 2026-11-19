@@ -15,6 +15,11 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
   `tools/build_docx.py`; titles, headings and table cells stay left-aligned,
   figures and captions centred. Checked in a LibreOffice PDF rendering.
   The page `essay.html` is unchanged.
+- Then, also at the owner's request, automatic hyphenation: a
+  `word/settings.xml` with `autoHyphenation` (Greek, from the document
+  language; capitalised words not hyphenated). Checked in the same
+  rendering. Pushed with this entry, together with the postscript's
+  bookkeeping (`3f88d4c`).
 
 **Session of 2026-11-19, night: the postscript on self-improvement.**
 

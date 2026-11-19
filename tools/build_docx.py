@@ -321,6 +321,7 @@ CONTENT_TYPES = (
     '<Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/>'
     '<Override PartName="/word/numbering.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml"/>'
     '<Override PartName="/word/footer1.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml"/>'
+    '<Override PartName="/word/settings.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml"/>'
     "</Types>"
 )
 
@@ -341,8 +342,16 @@ def document_rels(media):
         f'<Relationship Id="rId1" Type="{R_NS}/styles" Target="styles.xml"/>'
         f'<Relationship Id="rId2" Type="{R_NS}/numbering" Target="numbering.xml"/>'
         f'<Relationship Id="rId3" Type="{R_NS}/footer" Target="footer1.xml"/>'
+        f'<Relationship Id="rIdSettings" Type="{R_NS}/settings" Target="settings.xml"/>'
         f"{images}</Relationships>"
     )
+
+# Automatic hyphenation (Greek, from the document language) keeps the justified
+# body text free of wide gaps between words; capitalised words are not hyphenated.
+SETTINGS = (
+    '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+    f'<w:settings xmlns:w="{W_NS}"><w:autoHyphenation/><w:doNotHyphenateCaps/></w:settings>'
+)
 
 FOOTER = (
     '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
@@ -487,6 +496,7 @@ def build():
         ("word/styles.xml", styles_xml()),
         ("word/numbering.xml", numbering_xml(ordered_count)),
         ("word/footer1.xml", FOOTER),
+        ("word/settings.xml", SETTINGS),
     ]
     files = [(name, text.encode("utf-8")) for name, text in files]
     files += [(f"word/{part}", data) for _, part, data in media.items]
