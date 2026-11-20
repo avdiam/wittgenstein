@@ -763,6 +763,21 @@ The mathematics of the N operator, of the proof of 2 × 2 = 4 and of the
 three figures at 6.36111 is our own exposition of the text and has no
 outside source.
 
+The cards and the rest of the restored commentary, same day. Method: the
+German of each card split at its […] marks and compared, as a sequence
+of words of four letters or more, with the LWP German text of the same
+proposition (`Template:Individual-TLP-paragraph-de-N`, fetched through
+the wiki's API); the number of marks and the length of the Greek
+compared with the German.
+
+| # | Claim / location | Source | Verdict | Action |
+| :-- | :-- | :-- | :-- | :-- |
+| Τ1 | No card stops before its proposition ends without a […] | LWP German text, 150 cards | **corrected** in two: 4.442 lacked its last sentence («Die Anzahl der Stellen…»), 5.501 its last («In diesem Falle…») | 4.442 completed in the three languages (Ogden from `5740-pdf.pdf`); 5.501 marked […]. Five remaining flags are not errors: *irgend einer* / *irgendeiner* (4.5), the spaced *zahl*los (4.128), and the figures of 5.5423, 5.6331, 6.36111. |
+| Τ2 | The Greek of a card covers what the German under it quotes | Same comparison; each flagged card read against the German | **corrected** in ten: 4.1272, 4.431, 4.5, 5.3, 5.4733 left sentences out; 5.101, 5.501, 6.1203, 6.124, 6.341 summarised across an omission without a mark | Missing sentences translated; the five summaries replaced by a translation with […] where the German has it. This is not the full check of the translations (`CROSSCHECK_PLAN.md`). |
+| Τ3 | 5.552: logic is "vor dem Wie, nicht vor dem Was" | LWP German text: «…nicht die, dass sich etwas so und so verhält, sondern, dass etwas *ist*… Sie ist vor dem Wie, nicht vor dem Was» | **corrected**: the rewrite glossed *Was* as «ότι» | Paraphrase rewritten from the German. |
+| Τ4 | Frege's sign `⊢`: content stroke and judgement stroke (*Begriffsschrift*, 1879, §2); adopted by Russell in *Principia Mathematica* as the assertion sign (4.442) | Text of the analysis before the redesign (`9375bb0`); not read again in a source today | unverified today | Restored with the section number; listed in `CROSSCHECK_PLAN.md`. |
+| Τ5 | Without the Axiom of Infinity, in a world of n individuals no class has n + 1 members and the numbers after n coincide (6.031) | The old text said «n + 1 = n», which is not what follows (the classes of n + 1 and of n + 2 members are both empty, so n + 1 = n + 2); not checked in a source today | **corrected** from the old wording; unverified in a source | Reworded; listed in `CROSSCHECK_PLAN.md`. |
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.

@@ -8,6 +8,45 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-21, later: commentary restored, cards completed.**
+
+- Follow-up 1 of the review (commentary). The six passages named by the
+  owner restored and extended: the guide to the N operator in three
+  steps with a truth-table (5.5–5.52); the net analogy read term by term
+  and the three points of 6.342–6.35; the proof of 2 × 2 = 4 with the
+  definition of multiplication explained; least action with Maupertuis,
+  Euler, Lagrange, Hamilton and Hertz (6.321–6.34); *transzendental* and
+  *transzendent* in Kant's own definitions (6.13); a figure and three
+  steps for Kant's hands, and his two uses of the example (6.36111).
+  Sources: ledger, «Commentary restored after the redesign», Σ1–Σ8.
+- The rest of the shortened commentary: the old text (`9375bb0`) and the
+  new compared passage by passage for Propositions 4, 5 and 6–7 (52
+  items found). Restored: 17 of 20 in Proposition 4, 13 of 16 in
+  Proposition 5, 14 of 16 in Propositions 6–7; left out: emphasis and
+  remarks without a source (Mauthner's «εξελικτικό», «πλατωνικός
+  ουρανός» at 4.0312, «παρανοούνται συχνά», the «μαγεία» comparison at
+  5.1361, 5.4541, 5.5151, Lichtenberg as a favourite author). The
+  largest pieces: the black-spot simile in steps (4.063–4.0641), the
+  glosses on 4.1272, Frege's sign `⊢` and the table of p ⊃ q at 4.442,
+  the urn in steps (5.154), 'p' says p (5.542), the composite soul
+  (5.5421), the examples of 6.1201, the bracket method (6.1203), proof
+  and the equal rank of tautologies (6.126–6.1271), the resolute
+  reading (6.54).
+- Errors of the rewrite found on the way and fixed: 6.34's list of laws
+  attributed to 6.35; *Was* glossed as «ότι» at 5.552; «ένα αντικείμενο
+  ⟷ ένα όνομα» cited as 5.531–5.5321 instead of 5.53; a German word left
+  in the Greek at 5.2522; «Πιθανότητες αληθείας» for
+  *Wahrheitsmöglichkeiten* in a heading.
+- Follow-up 3 of the review (cards cut short). The German of the 150
+  cards compared by script with the LWP German text of each proposition
+  (fetched through the wiki's API; kept out of the repository). Two
+  cards stopped before the end without a mark (4.442, 5.501) and ten had
+  Greek shorter than the German under it (4.1272, 4.431, 4.5, 5.101,
+  5.3, 5.4733, 5.501, 6.1203, 6.124, 6.341): all now give the whole
+  proposition or carry a […] in each language. Ledger, Τ1–Τ3.
+- Four local commits (`9a694b3`, `1d418b2`, `d29ae54` and the one with
+  this entry), not pushed.
+
 **Session of 2026-11-21: the redesign of the Tractatus page, reviewed.**
 
 - Reviewed the eleven unpushed commits of 2026-11-20 before publishing
