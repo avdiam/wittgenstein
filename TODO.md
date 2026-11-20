@@ -62,6 +62,12 @@ unpushed until the owner says otherwise.
    between *transzendental* and *transzendent* at 6.13; the diagram of
    Kant's hands (6.36111). The old text is at
    `git show 9375bb0:"Tractatus Logico-Philosophicus/TRACTATUS_LOGICO_PHILOSOPHICUS_ANALYSIS_1-7.md"`.
+   For 6.4–6.522, read Wittgenstein's own «Διάλεξη για την Ηθική» (1929)
+   first, in the Greek translation on the Ludwig Wittgenstein Project
+   (link saved by the owner in `Tractatus Logico-Philosophicus/`,
+   untracked) beside the English text already used (ledger, A12). It is
+   a primary source for the commentary, not a reading to compare with
+   ours (owner, 2026-11-21); it will serve the route from 1929 later.
 2. **Greek translations in the 150 quote cards**: check each against the
    German. 4.442 was a paraphrase, so others may be.
 3. **Quotations cut short**: check that no card ends before its
@@ -74,13 +80,12 @@ unpushed until the owner says otherwise.
 6. **Builder**: extend `tools/build_html.py` to check content too (the
    coverage check is in; candidates: quotations against the Gutenberg
    text, an omission mark where a card is shorter than its proposition).
-7. **Outside readings to compare with ours** (links saved by the owner in
+7. **Outside readings to compare with ours** (four links saved by the owner in
    `Tractatus Logico-Philosophicus/`, untracked):
    <https://wittgenstein.be/en/books/tractatus-logico-philosophicus/>,
    <https://www.sparknotes.com/philosophy/tractatus/>,
-   <https://readtractatus.com/>, <https://iep.utm.edu/wittgens/#H2>, and
-   the Greek «Μια διάλεξη για την Ηθική» on the Ludwig Wittgenstein
-   Project. Differences go to the ledger with a verdict; where good
+   <https://readtractatus.com/>, <https://iep.utm.edu/wittgens/#H2>.
+   Differences go to the ledger with a verdict; where good
    sources disagree, an «Ερμηνευτική σημείωση».
 8. **`Κιντή_Σκάλα_Tractatus.pdf`** (local, git-ignored): read it and see
    what it gives for the analysis, the ladder (6.54) above all.
