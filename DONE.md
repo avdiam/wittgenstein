@@ -46,10 +46,22 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
 - Dropped `[0x]` tab prefixes, renamed «Δέντρο 4 γλωσσών» → «Δενδροειδής μορφή»
   (also updated on `docs/index.html`), and populated the tree view mechanically
   from the Markdown with all 239 nodes (150 single propositions + 89 grouped
-  syntheses), each linking directly back to its anchor in «Ανάλυση 1–7».
+  syntheses), each linking directly back to its anchor in «Ανάλυση 1–7», with
+  sticky filters and full KaTeX rendering in both Tree View and Quick-Peek
+  (plus a double-render guard for concurrent KaTeX calls).
+- Extended the Quick-Peek drawer to philosopher pills (`openPhilPeek`, with
+  `Ctrl+click` / "Open in new tab" support) and added `tools/tractatus/concepts.json`
+  (`openConceptPeek`) for the 7 technical concepts summarized in Part A
+  (Russell's Introduction).
+- Expanded the reading column (`min(74rem, 100%)`) when the left sidebar is
+  folded on both `docs/tractatus.html` and `docs/essay.html`, aligned the essay
+  contents pane flush to the upper-left corner below the header (matching
+  `tractatus.html`), and compacted **Εργαστήριο λογικής** and **Οπτικά μοντέλα**
+  (side-by-side Paris Courtroom layout, scaled SVGs) so each interactive example
+  fits cleanly within a `1366×650` viewport at 100% zoom.
 - Updated `docs/index.html`, `README.md`, `CLAUDE.md`, `AGENTS.md`, and
-  verified light/dark desktop, tablet (920 px), mobile (390 px), all six tabs,
-  Quick-Peek drawer, search, and `python tools/build_all.py --check` with
+  verified light/dark desktop, tablet (920 px), mobile (390 px), all tabs,
+  Quick-Peek drawers, search, and `python tools/build_all.py --check` with
   headless Chrome.
 
 **Session of 2026-11-19, night: the second Gemini review of the essay.**

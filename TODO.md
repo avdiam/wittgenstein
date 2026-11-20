@@ -36,9 +36,11 @@ item is finished, move it to `DONE.md` with the date.
   `tools/build_html.py`, and the analysis Markdown so the Tractatus page
   is 100% mechanically generated without Tailwind CDN, with a single
   analytical view, all 25 main branches, Greek-first presentation, auto-linked
-  German key terms with Quick-Peek drawer, and a rebuilt «Δενδροειδής μορφή»
-  tree view (details in `DONE.md`; committed on branch `tractatus_html_builder`,
-  not yet pushed).
+  German key terms, philosopher & Part A concept Quick-Peek drawers, a rebuilt
+  «Δενδροειδής μορφή» tree view with sticky filters and KaTeX rendering,
+  compact logic/visual labs, and matching flush upper-left collapsible sidebar
+  + expanded folded reading width on both `tractatus.html` and `essay.html`
+  (details in `DONE.md`; merged into `main`, not yet pushed).
 
 ## Next session
 
