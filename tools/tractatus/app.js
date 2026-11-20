@@ -260,8 +260,9 @@
       if (drawer) drawer.hidden = true;
     }
 
-    // Intercept internal cross-tab links (#lab-*, #phil-*, #prop-*, #branch-*, #term-*)
+    // Intercept internal cross-tab links (#lab-*, #phil-*, #concept-*, #prop-*, #branch-*, #term-*)
     document.addEventListener('click', (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
       const a = e.target.closest('a[href^="#"]');
       if (!a) return;
       const href = a.getAttribute('href') || '';
@@ -271,7 +272,10 @@
         jumpToLab(id);
       } else if (id.startsWith('phil-')) {
         e.preventDefault();
-        jumpToPhilosopher(id);
+        openPhilPeek(id.slice(5));
+      } else if (id.startsWith('concept-')) {
+        e.preventDefault();
+        openConceptPeek(id.slice(8));
       } else if (id === 'tab=tree') {
         e.preventDefault();
         switchMainTab('tree');
@@ -543,6 +547,8 @@
         jumpToLab(id, true);
       } else if (id.startsWith('phil-')) {
         jumpToPhilosopher(id, true);
+      } else if (id.startsWith('concept-')) {
+        openConceptPeek(id.slice(8));
       } else if (document.getElementById(id)) {
         jumpToAnalysisAnchor(id, true);
       }

@@ -56,6 +56,12 @@
     const TERMS_BY_ID = {};
     TLP_TERMS_DATA.forEach(term => { TERMS_BY_ID[term.id] = term; });
 
+    const PHILS_BY_ID = {};
+    PHILOSOPHERS_DATA.forEach(p => { PHILS_BY_ID[p.id] = p; });
+
+    const CONCEPTS_BY_ID = {};
+    (typeof TLP_CONCEPTS_DATA !== 'undefined' ? TLP_CONCEPTS_DATA : []).forEach(c => { CONCEPTS_BY_ID[c.id] = c; });
+
     function quickFilterTreeRoot(rootVal) {
       const sel = document.getElementById('treeRootFilter');
       if (sel) sel.value = rootVal;
@@ -367,6 +373,106 @@
         btn1.hidden = true;
       }
       btn2.hidden = true;
+      drawer.hidden = false;
+    }
+
+    function openPhilPeek(slug) {
+      const p = PHILS_BY_ID[slug];
+      if (!p) return;
+      const drawer = document.getElementById('peekDrawer');
+      const titleBadge = document.getElementById('peekTitleBadge');
+      const subBadge = document.getElementById('peekSubBadge');
+      const body = document.getElementById('peekBody');
+      const btn1 = document.getElementById('peekActionPrimary');
+      const btn2 = document.getElementById('peekActionSecondary');
+      if (!drawer || !body) return;
+
+      titleBadge.textContent = p.name.replace(/^\d+\.\s*/, '');
+      titleBadge.className = 'peek-badge-main peek-badge-phil';
+      subBadge.textContent = p.ref || 'Φιλόσοφος';
+
+      body.innerHTML = `
+        <div class="peek-card">
+          <div class="peek-label">Παραδοσιακή θέση</div>
+          <div class="peek-prose">${renderMathText(p.oldView)}</div>
+        </div>
+        <div class="peek-card peek-card-primary">
+          <div class="peek-label">Η ανατροπή / σύνθεση στο Tractatus</div>
+          <div class="peek-prose">${renderMathText(p.wittView)}</div>
+        </div>
+      `;
+      if (typeof renderMathIn === 'function') renderMathIn(body);
+
+      btn1.hidden = false;
+      btn1.textContent = 'Στη σελίδα «Φιλόσοφοι» →';
+      btn1.onclick = () => {
+        closePeek();
+        jumpToPhilosopher(p.id);
+      };
+
+      btn2.hidden = false;
+      btn2.textContent = 'Άνοιγμα σε νέα καρτέλα ↗';
+      btn2.onclick = () => {
+        const base = window.location.href.split('#')[0];
+        window.open(base + '#phil-' + p.id, '_blank', 'noopener');
+      };
+
+      drawer.hidden = false;
+    }
+
+    function openConceptPeek(conceptId) {
+      const c = CONCEPTS_BY_ID[conceptId];
+      if (!c) return;
+      const drawer = document.getElementById('peekDrawer');
+      const titleBadge = document.getElementById('peekTitleBadge');
+      const subBadge = document.getElementById('peekSubBadge');
+      const body = document.getElementById('peekBody');
+      const btn1 = document.getElementById('peekActionPrimary');
+      const btn2 = document.getElementById('peekActionSecondary');
+      if (!drawer || !body) return;
+
+      titleBadge.textContent = c.title;
+      titleBadge.className = 'peek-badge-main peek-badge-concept';
+      subBadge.textContent = c.refs || 'Βασική έννοια';
+
+      const rows = [
+        `<div class="peek-card peek-card-primary">
+          <div class="peek-label">Σύντομη εξήγηση</div>
+          <div class="peek-prose">${renderMathText(c.summary)}</div>
+        </div>`
+      ];
+      if (c.detail) {
+        rows.push(`
+          <div class="peek-note peek-note-prose">
+            <strong>Στο πλαίσιο του έργου:</strong> ${renderMathText(c.detail)}
+          </div>
+        `);
+      }
+      body.innerHTML = rows.join('');
+      if (typeof renderMathIn === 'function') renderMathIn(body);
+
+      if (c.target) {
+        btn1.hidden = false;
+        btn1.textContent = (c.targetLabel || 'Μετάβαση στην ανάλυση') + ' →';
+        btn1.onclick = () => {
+          closePeek();
+          jumpToAnalysisAnchor(c.target);
+        };
+      } else {
+        btn1.hidden = true;
+      }
+
+      if (c.labTarget) {
+        btn2.hidden = false;
+        btn2.textContent = (c.labLabel || 'Άνοιγμα εργαστηρίου') + ' →';
+        btn2.onclick = () => {
+          closePeek();
+          jumpToLab(c.labTarget);
+        };
+      } else {
+        btn2.hidden = true;
+      }
+
       drawer.hidden = false;
     }
 

@@ -463,7 +463,7 @@ def wrap_dialogue_sections(html_body):
     return html_body[:m.start()] + wrapped + html_body[end_idx:]
 
 
-def render_markdown_chunk(heading, body, sec_id, seen_anchors, extracted_nodes, branches_out, widget_html, valid_phil_ids):
+def render_markdown_chunk(heading, body, sec_id, seen_anchors, extracted_nodes, branches_out, widget_html, valid_phil_ids, valid_concept_ids):
     """Render one `##` section of the Markdown into semantic HTML."""
     store = []
     # Strip trailing horizontal rules between top-level sections
@@ -563,7 +563,7 @@ def render_markdown_chunk(heading, body, sec_id, seen_anchors, extracted_nodes, 
 
     rendered = re.sub(r"<table>.*?</table>", handle_table, rendered, flags=re.S)
 
-    # Style targeted lab & philosopher links (#lab-*, #phil-*, #tab=tree) and validate targets
+    # Style targeted lab, philosopher & concept links (#lab-*, #phil-*, #concept-*, #tab=tree) and validate targets
     def style_link(m):
         href, label = m.group(1), m.group(2)
         if href.startswith("#lab-"):
@@ -577,7 +577,12 @@ def render_markdown_chunk(heading, body, sec_id, seen_anchors, extracted_nodes, 
             slug = href[6:]
             if slug not in valid_phil_ids:
                 raise SystemExit(f"build_html: unknown philosopher anchor '{href}' in {sec_id}")
-            return f'<a class="phil-pill" href="{href}">{label}</a>'
+            return f'<a class="phil-pill" href="{href}" title="Γρήγορη προβολή φιλοσόφου (Ctrl+κλικ για νέα καρτέλα)">{label}</a>'
+        if href.startswith("#concept-"):
+            cid = href[9:]
+            if cid not in valid_concept_ids:
+                raise SystemExit(f"build_html: unknown concept anchor '{href}' in {sec_id}")
+            return f'<a class="concept-ref" href="{href}" data-concept="{cid}" title="Γρήγορη προβολή έννοιας">{label}</a>'
         return m.group(0)
 
     rendered = re.sub(r'<a href="(#[^"]+)">(.*?)</a>', style_link, rendered, flags=re.S)
@@ -764,6 +769,7 @@ def safe_json_for_script(obj):
 def build(strict_branches=False):
     md = MD_PATH.read_text(encoding="utf8").replace("\r\n", "\n")
     terms = json.loads((ASSETS_DIR / "terms.json").read_text(encoding="utf8"))
+    concepts = json.loads((ASSETS_DIR / "concepts.json").read_text(encoding="utf8"))
     pm_quotes = json.loads((ASSETS_DIR / "pm_quotes.json").read_text(encoding="utf8"))
     philosophers = json.loads((ASSETS_DIR / "philosophers.json").read_text(encoding="utf8"))
     widget_html = (ASSETS_DIR / "widget_logical_space.html").read_text(encoding="utf8").strip()
@@ -773,6 +779,7 @@ def build(strict_branches=False):
     app_js = (ASSETS_DIR / "app.js").read_text(encoding="utf8").rstrip()
 
     valid_phil_ids = {p["id"] for p in philosophers}
+    valid_concept_ids = {c["id"] for c in concepts}
 
     grouped_md = {}
     for heading, body in split_sections(md):
@@ -794,7 +801,7 @@ def build(strict_branches=False):
         html_parts = []
         for idx, (heading, body) in enumerate(chunks_md):
             chunk_html, leftovers = render_markdown_chunk(
-                heading, body, sec_id, seen_anchors, extracted_nodes, branches_list, widget_html, valid_phil_ids
+                heading, body, sec_id, seen_anchors, extracted_nodes, branches_list, widget_html, valid_phil_ids, valid_concept_ids
             )
             if leftovers:
                 warnings.append(f"{heading[:42]}: unrendered markup {sorted(set(leftovers))[:4]}")
@@ -826,6 +833,20 @@ def build(strict_branches=False):
     ]
     if bad_tree:
         raise SystemExit(f"build_html: unresolved tree anchors: {bad_tree}")
+    bad_concepts = [
+        (c["id"], c["target"])
+        for c in concepts
+        if c["target"].lstrip("#") not in all_anchors
+    ]
+    if bad_concepts:
+        raise SystemExit(f"build_html: unresolved concept targets in concepts.json: {bad_concepts}")
+    bad_concept_labs = [
+        (c["id"], c["labTarget"])
+        for c in concepts
+        if c.get("labTarget") and c["labTarget"].lstrip("#") not in VALID_LAB_IDS
+    ]
+    if bad_concept_labs:
+        raise SystemExit(f"build_html: unknown labTarget in concepts.json: {bad_concept_labs}")
 
     # Auto-link German terms & inline proposition numbers across rendered sections
     sections_html = []
@@ -872,6 +893,7 @@ def build(strict_branches=False):
         repo=REPO_URL,
         tree_json=safe_json_for_script(tree_data),
         terms_json=safe_json_for_script(terms),
+        concepts_json=safe_json_for_script(concepts),
         phils_json=safe_json_for_script(philosophers),
         labs_js=labs_js,
         app_js=app_js,
@@ -991,7 +1013,7 @@ TEMPLATE = """<!DOCTYPE html>
             {sidebar_nav}
           </nav>
           <p class="idx-tip">
-            Κάντε κλικ σε έναν αριθμό πρότασης (π.χ. <strong>4.0312</strong>) ή σε έναν γερμανικό όρο (π.χ. <em>Sachverhalt</em>) για γρήγορη προβολή χωρίς να χάσετε τη θέση σας.
+            Κάντε κλικ σε αριθμούς προτάσεων (π.χ. <strong>4.0312</strong>), γερμανικούς όρους (<em>Sachverhalt</em>), βασικές έννοιες ή ονόματα φιλοσόφων για γρήγορη προβολή χωρίς να χάσετε τη θέση σας.
           </p>
         </div>
       </aside>
@@ -1012,6 +1034,7 @@ TEMPLATE = """<!DOCTYPE html>
   <script>
     const TLP_TREE_DATA = {tree_json};
     const TLP_TERMS_DATA = {terms_json};
+    const TLP_CONCEPTS_DATA = {concepts_json};
     const PHILOSOPHERS_DATA = {phils_json};
 
 {labs_js}

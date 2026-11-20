@@ -933,6 +933,17 @@ a.phil-pill:hover { background: var(--mark); color: var(--content); }
 }
 .term-ref:hover { background-color: var(--mark-soft); color: var(--mark); }
 
+a.concept-ref {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--primary);
+  padding: 0 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.14s ease, color 0.14s ease;
+}
+a.concept-ref:hover { background-color: var(--primary-soft); color: var(--primary); }
+
 /* ----------------------------------------------------------------------------
    Tabs: Tree View, Labs & Philosophers
    ---------------------------------------------------------------------------- */
@@ -1339,6 +1350,8 @@ html.dark .tree-sticky-bar {
   color: var(--primary-foreground);
 }
 .peek-badge-term { background: var(--mark); color: var(--content); font-style: italic; }
+.peek-badge-phil { background: var(--mark); color: var(--content); }
+.peek-badge-concept { background: var(--primary); color: var(--primary-foreground); }
 .peek-body { display: flex; flex-direction: column; gap: 0.75rem; }
 .peek-card {
   background: var(--background);
@@ -1349,6 +1362,7 @@ html.dark .tree-sticky-bar {
 .peek-card-primary { border-left: 3px solid var(--primary); }
 .peek-label { font-size: 0.72rem; font-weight: 650; color: var(--muted-foreground); margin-bottom: 0.25rem; }
 .peek-text-main { font-family: var(--font-serif); font-size: 1.02rem; font-weight: 550; line-height: 1.55; }
+.peek-prose { font-family: var(--font-serif); font-size: 0.96rem; line-height: 1.64; }
 .peek-text { font-size: 0.88rem; line-height: 1.55; }
 .peek-de { font-family: var(--font-serif); font-style: italic; font-size: 0.95rem; }
 .peek-note {
