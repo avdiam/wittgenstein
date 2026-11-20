@@ -779,6 +779,17 @@ compared with the German.
 | Τ5 | Without the Axiom of Infinity, in a world of n individuals no class has n + 1 members and the numbers after n coincide (6.031) | The old text said «n + 1 = n», which is not what follows (the classes of n + 1 and of n + 2 members are both empty, so n + 1 = n + 2); not checked in a source today | **corrected** from the old wording; unverified in a source | Reworded; listed in `CROSSCHECK_PLAN.md`. |
 | Τ6 | Propositions 1–3, the introduction and Parts Α–Β: nothing of the commentary before the redesign (`9375bb0`) is missing | Old and new text read side by side, 2026-11-21 (Part Γ, the epilogue and the bibliography are identical by `diff`); the restored paraphrases read against the German of `5740-pdf.pdf` (2.0123, 2.0131, 2.026, 3.262) | **corrected** in four: the second sentence of 2.0123, the German terms of 2.0131, the gloss on 3.263 (use in propositions), «σκαλωσιά» beside «ικρίωμα» at 3.42. Proposition 1 and Parts Α–Β lost only emphasis | Restored. The gloss on 3.263 now rests on 3.262 and 3.3, not on an unsourced reading. Also: 2.026, named in a group heading but not stated, added; «μονοπρότατη» (not a Greek word) at 3.5 reworded. |
 
+The Greek of the 150 cards, read sentence by sentence against the German
+printed under each (2026-11-21; the German itself was checked earlier,
+Τ1). The method of Τ2 compared lengths and could not see a missing
+clause in a long card.
+
+| # | Claim / location | Source | Verdict | Action |
+| :-- | :-- | :-- | :-- | :-- |
+| Τ7 | The Greek of a card leaves nothing of its German out | The German of each card | **corrected** in three: 5.154 lacked «wie aus den obigen Erklärungen leicht zu entnehmen ist»; 6.02 the fourth term of the series and the sentence «Also schreibe ich statt „[x, ξ, Ω′ξ]“…»; 6.3751 the third «das heisst» (particles in different places at one time cannot be identical) | Translated and added. |
+| Τ8 | The Greek of a card says what its German says | The German of each card; Ogden beside it | **corrected** in eleven: *überhaupt* given as «γενικά» where it means "at all" (2.18, 4.003, 6.5) and as «ως όλον» (6.43); «mit ihm» as «με μια άλλη» (4.211); «wenn sie nämlich … könnte» as «σαν να μπορούσε» (5.61); *koordinierte* as «συντονίζεται» (5.64); *denken* as «φανταζόμαστε» (4.01); «καν» added in 4.003; *Sachlagen* as «καταστάσεις», against the terms table (3.144); Greek grammar at 3.4 and 4.002 | Reworded: «καν» / «καθόλου», «εξ ολοκλήρου», «με αυτήν», «αν δηλαδή μπορούσε», «συντεταγμένη με αυτό», «σκεφτόμαστε», «περιστάσεις» (also in the commentary under 3.144), «την εγγυάται η ύπαρξη», «εξαιρετικά περίπλοκες». The other 136 cards agree with their German. 3.328 keeps «δεν είναι αναγκαίο» (owner, 2026-11-18). |
+| Τ9 | Four points of wording put to the owner (2026-11-21) | The German of each card | decided by the owner | *Ereignis* is «συμβάν» (5.1361, 5.154, 6.4311), «γεγονός» being kept for *Tatsache*. Words of ours inside a card go in square brackets, as in 1.21 (4.1272, 4.461, 6.031, 6.36111); «(σύμμορφα)» for *kongruent* removed there and in the commentary (the figures are equal, not conformal). 5.631: «που σκέφτεται, που παριστάνει» for *denkende, vorstellende*. 4.04: «την ίδια λογική (μαθηματική) πολλαπλότητα», without «βαθμό». 2.01 keeps one word for *Sachen, Dingen*. |
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.

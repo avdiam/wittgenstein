@@ -8,6 +8,23 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-21, night: the Greek of the cards checked against the German.**
+
+- Follow-up 2 of the review. The Greek of each of the 150 cards read
+  sentence by sentence against the German under it. 136 agree. Three
+  had left a clause or sentence out (5.154, 6.02, 6.3751); eleven said
+  something else than the German, four of them through *überhaupt*
+  given as «γενικά» (2.18, 3.144, 3.4, 4.002, 4.003, 4.01, 4.211,
+  5.61, 5.64, 6.43, 6.5). Ledger, Τ7–Τ8.
+- Decided by the owner: *Ereignis* is «συμβάν» (5.1361, 5.154, 6.4311);
+  our own words inside a card go in square brackets (4.1272, 4.461,
+  6.031, 6.36111), and «σύμμορφα» for *kongruent* is removed; 5.631
+  «που σκέφτεται, που παριστάνει»; 4.04 without «βαθμό»; 2.01
+  unchanged. Ledger, Τ9.
+- The unused `el` field of `tools/tractatus/pm_quotes.json` changed to
+  match in 3.144, 5.1361 and 6.4311.
+- Not covered: the paraphrases inside the group paragraphs.
+
 **Session of 2026-11-21, night: Propositions 1–3 compared with the old text.**
 
 - The rest of follow-up 1 (commentary). The introduction, Parts Α–Β and

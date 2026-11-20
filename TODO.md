@@ -51,7 +51,10 @@ item is finished, move it to `DONE.md` with the date.
   pushed).
 - Session of 2026-11-21, night: Propositions 1–3, the introduction and
   Parts Α–Β compared with the old text; four small pieces restored
-  (details in `DONE.md`; committed, not pushed).
+  (details in `DONE.md`; committed, not pushed). Then the Greek of
+  the 150 cards read against the German: fourteen cards corrected
+  and four points of wording decided by the owner (details in
+  `DONE.md`; committed, not pushed).
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
@@ -72,8 +75,9 @@ unpushed until the owner says otherwise.
    untracked) beside the English text already used (ledger, A12). It is
    a primary source for the commentary, not a reading to compare with
    ours (owner, 2026-11-21); it will serve the route from 1929 later.
-2. **Greek translations in the 150 quote cards**: check each against the
-   German. 4.442 was a paraphrase, so others may be.
+2. **Greek translations in the 150 quote cards**: done on 2026-11-21
+   (`DONE.md`; ledger, Τ7–Τ9). Not covered: the paraphrases in the
+   group paragraphs.
 3. **Quotations cut short**: done on 2026-11-21 (`DONE.md`; ledger,
    Τ1–Τ3). The check script is not in the repository; see point 6.
 4. **Ledger**: check that the corrections recorded in
