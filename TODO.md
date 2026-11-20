@@ -32,6 +32,13 @@ item is finished, move it to `DONE.md` with the date.
 - Session of 2026-11-19, night: the Word file and the page justified with
   hyphenation (pushed), and a second Gemini review taken through
   (details in `DONE.md`); pushed (`661db40..a3512af`).
+- Session of 2026-11-20: full redesign of `docs/tractatus.html`,
+  `tools/build_html.py`, and the analysis Markdown so the Tractatus page
+  is 100% mechanically generated without Tailwind CDN, with a single
+  analytical view, all 25 main branches, Greek-first presentation, auto-linked
+  German key terms with Quick-Peek drawer, and a rebuilt «Δενδροειδής μορφή»
+  tree view (details in `DONE.md`; committed on branch `tractatus_html_builder`,
+  not yet pushed).
 
 ## Next session
 

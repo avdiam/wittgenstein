@@ -187,7 +187,7 @@
       closeMobileNav();
     }
 
-    function jumpToAnalysisAnchor(anchor) {
+    function jumpToAnalysisAnchor(anchor, instant = false) {
       const id = String(anchor || '').replace(/^#/, '');
       if (!id) return;
       if (currentMainTab !== 'master') {
@@ -198,11 +198,11 @@
       const sec = target.closest('.master-section');
       if (sec) ensureSectionVisible(sec.id);
       try { history.replaceState(null, '', '#' + id); } catch (e) {}
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      target.scrollIntoView({ behavior: instant ? 'instant' : 'smooth', block: 'start' });
       pulseHighlight(target);
     }
 
-    function jumpToLab(labId) {
+    function jumpToLab(labId, instant = false) {
       const id = String(labId || '').replace(/^#/, '');
       const tab = LAB_TO_TAB[id];
       if (!tab) return false;
@@ -211,14 +211,14 @@
       setTimeout(() => {
         const el = document.getElementById(id);
         if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          el.scrollIntoView({ behavior: instant ? 'instant' : 'smooth', block: 'start' });
           pulseHighlight(el);
         }
-      }, 40);
+      }, instant ? 0 : 40);
       return true;
     }
 
-    function jumpToPhilosopher(philId) {
+    function jumpToPhilosopher(philId, instant = false) {
       const slug = String(philId || '').replace(/^#?phil-/, '');
       if (!slug) return false;
       const inp = document.getElementById('philSearchInput');
@@ -231,10 +231,10 @@
       setTimeout(() => {
         const el = document.getElementById('phil-' + slug);
         if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          el.scrollIntoView({ behavior: instant ? 'instant' : 'smooth', block: 'center' });
           pulseHighlight(el);
         }
-      }, 40);
+      }, instant ? 0 : 40);
       return true;
     }
 
@@ -522,11 +522,11 @@
       }
       const id = hash.slice(1);
       if (LAB_TO_TAB[id]) {
-        jumpToLab(id);
+        jumpToLab(id, true);
       } else if (id.startsWith('phil-')) {
-        jumpToPhilosopher(id);
+        jumpToPhilosopher(id, true);
       } else if (document.getElementById(id)) {
-        jumpToAnalysisAnchor(id);
+        jumpToAnalysisAnchor(id, true);
       }
     }
 

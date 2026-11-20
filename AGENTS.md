@@ -11,8 +11,8 @@ In short:
 - Edit text only in the Markdown sources (the analysis and the essay). The
   pages in `docs/` and the Word file are rebuilt with `python tools/build_all.py`
   and verified with `python tools/build_all.py --check`.
-- Never edit `docs/essay.html`, nor between the `FULL-ANALYSIS` markers in
-  `docs/tractatus.html`.
+- Never edit `docs/tractatus.html`, `docs/essay.html`, or
+  `docs/Logiki_Glossa_Michanes.docx` by hand; all three are generated in full.
 - The repository is public and `docs/` is published by GitHub Pages.
 - Content in Greek, conversation in English.
-- `docs/tractatus.html` uses CRLF line endings; everything else LF.
+- All Markdown and HTML files use LF line endings.

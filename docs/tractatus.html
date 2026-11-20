@@ -335,8 +335,9 @@ a { color: var(--primary); }
 @media (max-width: 680px) {
   .hdr-title-sub { display: none; }
   .hdr-tools { order: 2; flex-basis: 100%; padding-top: 0; }
-  .hdr-search { flex: 1 1 auto; }
-  .hdr-search input { width: 100%; }
+  .hdr-search { flex: 1 1 auto; min-width: 7rem; }
+  .hdr-search input { width: 100%; padding-right: 1.6rem; }
+  .hdr-kbd { display: none; }
 }
 
 /* ----------------------------------------------------------------------------
@@ -1408,7 +1409,7 @@ a.phil-pill:hover { background: var(--mark); color: var(--content); }
       <div class="hdr-tools">
         <div class="hdr-search" role="search">
           <input id="globalSearchInput" type="search"
-            placeholder="Αναζήτηση: 4.0312, Sachverhalt, Frege"
+            placeholder="Αναζήτηση: 4.0312, Sachverhalt"
             aria-label="Αναζήτηση στην ανάλυση" autocomplete="off" spellcheck="false"
             oninput="handleGlobalSearch(this.value)" />
           <kbd class="hdr-kbd" aria-hidden="true">/</kbd>
@@ -1528,7 +1529,7 @@ a.phil-pill:hover { background: var(--mark); color: var(--content); }
 <aside class="callout-reader">
 <p><strong>Σημείωση για τον αναγνώστη — τι είναι κείμενο του έργου και τι δική μας ανάλυση</strong>:</p>
 <ul>
-<li><strong>Πλαίσιο με πράσινη γραμμή αριστερά</strong>: αυτούσιο κείμενο του <em>Tractatus</em>, ελεγμένο στο γερμανικό πρωτότυπο (1921) και την αγγλική μετάφραση Ogden/Ramsey (1922) — καθώς και Pears/McGuinness (1961) στις 7 κύριες προτάσεις και σε επιλεγμένα σημεία σύγκρισης. Παρουσιάζονται αυτούσιες οι <strong><span class="prop-ref" data-prop="7">7</span> κύριες προτάσεις</strong>, όλοι οι <strong>25 κύριοι κλάδοι</strong> (<code>1.1–6.5</code>) και οι <strong>κεντρικές προκαταρκτικές (<code>n.0x</code>) και υπο-προτάσεις</strong> που εισάγουν βασικούς όρους, επιχειρήματα ή εργαστήρια.</li>
+<li><strong>Πλαίσιο με πράσινη γραμμή αριστερά</strong>: αυτούσιο κείμενο του <em>Tractatus</em>, ελεγμένο στο γερμανικό πρωτότυπο (1921) και την αγγλική μετάφραση Ogden/Ramsey (1922) — καθώς και Pears/McGuinness (1961) στις 7 κύριες προτάσεις και σε επιλεγμένα σημεία σύγκρισης. Παρουσιάζονται αυτούσιες οι <strong>7 κύριες προτάσεις</strong>, όλοι οι <strong>25 κύριοι κλάδοι</strong> (<code>1.1–6.5</code>) και οι <strong>κεντρικές προκαταρκτικές (<code>n.0x</code>) και υπο-προτάσεις</strong> που εισάγουν βασικούς όρους, επιχειρήματα ή εργαστήρια.</li>
 <li><strong>Πλαίσιο με ουδέτερη γκρι γραμμή (ομάδες προτάσεων, π.χ. <code>2.022 – 2.023</code>)</strong>: δική μας συνοπτική σύνθεση διαδοχικών προτάσεων που αναπτύσσουν πορίσματα ή τεχνικά βήματα του ίδιου επιχειρήματος.</li>
 <li><strong>Κανονικό κείμενο και γκρι πλαίσια «Παράδειγμα»</strong>: δικές μας εισαγωγικές παρατηρήσεις, φιλοσοφική ανάλυση και παραδείγματα.</li>
 <li><strong>Πλαίσιο με γραμμή ώχρας</strong>: <em>«Ερμηνευτική σημείωση»</em> (όπου η σύγχρονη βιβλιογραφία διαφωνεί), <em>«Μεταφραστική σημείωση»</em> και <em>«Φιλοσοφικός διάλογος»</em>.</li>
@@ -1695,7 +1696,7 @@ a.phil-pill:hover { background: var(--mark); color: var(--content); }
             <h2>Πρόταση 1: Η μακρο-οντολογία του κόσμου</h2>
           </div>
           <div class="analysis-body">
-<p>Το <em>Tractatus</em> ανοίγει με τη μακρο-οντολογία του: αντί να ξεκινήσει από τη θεωρία της γνώσης ή από τα μεμονωμένα πράγματα, ορίζει τον κόσμο ως ένα πλέγμα γεγονότων στον λογικό χώρο. Οι επτά προτάσεις αυτού του κορμού παρατίθενται όλες αυτούσιες, μοιρασμένες στους δύο κύριους κλάδους <span class="prop-ref" data-prop="1.1">1.1</span> και 1.2.</p>
+<p>Το <em>Tractatus</em> ανοίγει με τη μακρο-οντολογία του: αντί να ξεκινήσει από τη θεωρία της γνώσης ή από τα μεμονωμένα πράγματα, ορίζει τον κόσμο ως ένα πλέγμα γεγονότων στον λογικό χώρο. Οι επτά προτάσεις αυτού του κορμού παρατίθενται όλες αυτούσιες, μοιρασμένες στους δύο κύριους κλάδους <span class="prop-ref" data-prop="1.1">1.1</span> και <span class="prop-ref" data-prop="1.2">1.2</span>.</p>
 <div class="prop-hero" id="prop-1">
   <p class="prop-hero-el"><span class="prop-hero-num prop-ref" data-prop="1">1.</span> Ο κόσμος είναι καθετί που συμβαίνει (ό,τι είναι η περίπτωση).</p>
   <div class="prop-hero-versions">
@@ -2362,7 +2363,7 @@ a.phil-pill:hover { background: var(--mark); color: var(--content); }
   <p>Για να εξηγήσει την έννοια της αλήθειας και να επικρίνει τον <a class="phil-pill" href="#phil-frege">Gottlob Frege</a>, ο Wittgenstein φέρνει την παρομοίωση μιας μαύρης κηλίδας πάνω σε λευκό χαρτί (4.063): μπορούμε να περιγράψουμε το σχήμα της λέγοντας για κάθε σημείο αν είναι «μαύρο» (θετικό γεγονός) ή «λευκό» (αρνητικό γεγονός). Το να υποδείξουμε ένα σημείο αντιστοιχεί στην <em>υπόθεση</em> (<em>Annahme</em>) προς κρίση· αλλά για να πούμε ότι ένα σημείο είναι μαύρο ή λευκό πρέπει ήδη να ξέρουμε πότε λέγεται έτσι — και αντίστοιχα για να πούμε «το '<span class="tex">p</span>' είναι αληθές» πρέπει ήδη να έχουμε καθορίσει το <strong>νόημα (<em><span class="term-ref" data-term="sinn">Sinn</span></em>)</strong> της πρότασης. Εκεί όπου χαλάει η παρομοίωση είναι ότι σε μια πρόταση χωρίς νόημα δεν αντιστοιχεί απολύτως τίποτα, διότι η πρόταση δεν δηλώνει κανένα πράγμα («τιμή αληθείας») του οποίου οι ιδιότητες θα λέγονταν «αληθές» ή «ψευδές»· το ρήμα μιας πρότασης δεν είναι «είναι αληθές», αλλά καθετί που «είναι αληθές» πρέπει ήδη να περιέχει το ρήμα. Κάθε πρόταση πρέπει ήδη να έχει νόημα· η κατάφαση (<em>Bejahung</em>) ή η άρνηση (<em>Verneinung</em>) δεν μπορούν να της το δώσουν (4.064–4.0641).</p>
 </div><hr />
 <h3 class="branch-heading" id="branch-4-1">Κλάδος 4.1: Επιστήμη vs. φιλοσοφία, «Λέγειν vs. Δεικνύναι» &amp; οι τυπικές έννοιες ως ψευδο-έννοιες</h3>
-<p>Ο κλάδος <span class="prop-ref" data-prop="4.1">4.1</span> αποτελεί τον φιλοσοφικό άξονα του <em>Tractatus</em>. Χωρίζεται στους υπο-κλάδους <strong><span class="prop-ref" data-prop="4.11">4.11</span></strong> (οριοθέτηση της επιστήμης και της φιλοσοφίας ως δραστηριότητας διασάφησης) και <strong><span class="prop-ref" data-prop="4.12">4.12</span></strong> (η διάκριση ανάμεσα σε ό,τι <em>λέγεται</em> και σε ό,τι <em>δείχνεται</em>, και η κατάρριψη των τυπικών εννοιών ως ψευδο-εννοιών).</p>
+<p>Ο κλάδος <span class="prop-ref" data-prop="4.1">4.1</span> αποτελεί τον φιλοσοφικό άξονα του <em>Tractatus</em>. Χωρίζεται στους υπο-κλάδους <strong><span class="prop-ref" data-prop="4.11">4.11</span></strong> (οριοθέτηση της επιστήμης και της φιλοσοφίας ως δραστηριότητας διασάφησης) και <strong>4.12</strong> (η διάκριση ανάμεσα σε ό,τι <em>λέγεται</em> και σε ό,τι <em>δείχνεται</em>, και η κατάρριψη των τυπικών εννοιών ως ψευδο-εννοιών).</p>
 <div class="prop-quote" id="prop-4-1">
   <p class="prop-quote-el"><span class="prop-ref" data-prop="4.1">4.1</span> Η πρόταση παριστάνει την ύπαρξη και μη-ύπαρξη των καταστάσεων πραγμάτων.</p>
   <p class="prop-quote-meta"><span class="prop-de"><span class="prop-ref" data-prop="4.1">4.1</span>: «Der <span class="term-ref" data-term="satz">Satz</span> stellt das Bestehen und Nichtbestehen der <span class="term-ref" data-term="sachverhalt">Sachverhalte</span> dar.»</span> <span class="prop-en">(A proposition presents the existence and non-existence of atomic facts.)</span></p>
@@ -2867,7 +2868,7 @@ a.phil-pill:hover { background: var(--mark); color: var(--content); }
   </div>
 </details>
 </div>
-<p>Σε αυτή τη θέση του <span class="prop-ref" data-prop="5.4733">5.4733</span> —ότι η ανοησία προκύπτει από έλλειψη σημασίας σε κάποιο σημείο και όχι από «παράνομο συνδυασμό» σημασιών— στηρίζεται κυρίως η «αποφασιστική» ανάγνωση του 6.54.</p>
+<p>Σε αυτή τη θέση του <span class="prop-ref" data-prop="5.4733">5.4733</span> —ότι η ανοησία προκύπτει από έλλειψη σημασίας σε κάποιο σημείο και όχι από «παράνομο συνδυασμό» σημασιών— στηρίζεται κυρίως η «αποφασιστική» ανάγνωση του <span class="prop-ref" data-prop="6.54">6.54</span>.</p>
 <hr />
 <h3 class="branch-heading" id="branch-5-5">Κλάδος 5.5: Ο τελεστής <span class="tex">N(\bar{\xi})</span>, η εξάλειψη της ταυτότητας (<code>=</code>), οι προτασιακές στάσεις &amp; ο κύβος του Necker</h3>
 <p>Ο κλάδος <span class="prop-ref" data-prop="5.5">5.5</span> (55 προτάσεις) ενοποιεί όλη τη λογική σε έναν μόνο τελεστή — την κοινή άρνηση <span class="tex">N(\bar{\xi})</span> (<span class="prop-ref" data-prop="5.5">5.5</span>–5.526) —, καταργεί το σύμβολο της ταυτότητας <code>=</code> (<span class="prop-ref" data-prop="5.53">5.53</span>–5.535), απαντά στην ένσταση των προτασιακών στάσεων με το σχήμα του κύβου του Necker (5.54–<span class="prop-ref" data-prop="5.5423">5.5423</span>) και αποκαθιστά την καθημερινή γλώσσα (5.55–5.5571).</p>
@@ -4667,7 +4668,7 @@ x &amp;= \Omega^0\text{&#x27;}x \quad &amp;\text{Def.} \quad &amp;(\text{Μηδ�
       'WWWF': { idx: 5, sym: 'p ∨ q (Διάζευξη)', short: 'p∨q', verbal: '«p ή q.»', nForm: 'N(N(p, q))', status: 'Πρόταση με νόημα (sinnvoll)', comment: 'Αληθής αν τουλάχιστον μία από τις p, q είναι αληθής. Είναι η άρνηση της κοινής άρνησης N(p, q).' },
       'FFWW': { idx: 6, sym: '¬q', short: '¬q', verbal: '«Όχι q.» (~q)', nForm: 'N(q)', status: 'Πρόταση με νόημα (sinnvoll)', comment: 'Άρνηση της στοιχειώδους πρότασης q (Wᵣ = 2).' },
       'FWFW': { idx: 7, sym: '¬p', short: '¬p', verbal: '«Όχι p.» (~p)', nForm: 'N(p)', status: 'Πρόταση με νόημα (sinnvoll)', comment: 'Άρνηση της στοιχειώδους πρότασης p (Wᵣ = 2).' },
-      'FWWF': { idx: 8, sym: 'p ≢ q (XOR)', short: 'p≢q', verbal: '«p ή q, αλλά όχι και τα δύο.»', nForm: 'N(N(p, q), N(N(p), N(q)))', status: 'Πρόταση με νόημα (sinnvoll)', comment: 'Αληθής όταν οι p και q έχουν αντίθετες τιμές αληθείας (Wᵣ = 2).' },
+      'FWWF': { idx: 8, sym: 'p ≢ q (XOR)', short: 'p⊕q', verbal: '«p ή q, αλλά όχι και τα δύο.»', nForm: 'N(N(p, q), N(N(p), N(q)))', status: 'Πρόταση με νόημα (sinnvoll)', comment: 'Αληθής όταν οι p και q έχουν αντίθετες τιμές αληθείας (Wᵣ = 2).' },
       'WFFW': { idx: 9, sym: 'p ≡ q (Ισοδυναμία)', short: 'p≡q', verbal: '«Αν p, τότε q· και αν q, τότε p.»', nForm: 'N(N(N(p, q), N(N(p), N(q))))', status: 'Πρόταση με νόημα (sinnvoll)', comment: 'Αληθής όταν οι p και q έχουν την ίδια τιμή αληθείας (Wᵣ = 2).' },
       'WFWF': { idx: 10, sym: 'p', short: 'p', verbal: '«p» (Κατάφαση της p)', nForm: 'N(N(p)) = p', status: 'Στοιχειώδης πρόταση (sinnvoll)', comment: 'Η στοιχειώδης πρόταση p ως συνάρτηση αληθείας του εαυτού της (Πρόταση 5).' },
       'WWFF': { idx: 11, sym: 'q', short: 'q', verbal: '«q» (Κατάφαση της q)', nForm: 'N(N(q)) = q', status: 'Στοιχειώδης πρόταση (sinnvoll)', comment: 'Η στοιχειώδης πρόταση q ως συνάρτηση αληθείας του εαυτού της (Πρόταση 5).' },
@@ -4924,30 +4925,30 @@ x &amp;= \Omega^0\text{&#x27;}x \quad &amp;\text{Def.} \quad &amp;(\text{Μηδ�
       const feelerColor = isMatch ? 'var(--primary)' : 'var(--muted-foreground)';
 
       svgContainer.innerHTML = `
-        <svg viewBox="0 0 680 215" class="lab-svg" style="max-width:680px">
-          <rect x="15" y="20" width="270" height="175" fill="var(--card)" stroke="currentColor" stroke-width="2"/>
-          <text x="150" y="40" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">ΤΡΑΠΕΖΙ ΔΙΚΑΣΤΗΡΙΟΥ (ΕΙΚΟΝΑ)</text>
-          <text x="150" y="54" text-anchor="middle" fill="var(--muted-foreground)" font-size="10">(Κλικ στο a' για αλλαγή θέσης)</text>
-          <g transform="translate(${mp.x}, ${mp.y}) rotate(${mp.ang})" onclick="cycleParisModel()" style="cursor:pointer;">
+        <svg viewBox="0 0 680 238" class="lab-svg" style="max-width:680px">
+          <text x="340" y="18" text-anchor="middle" fill="var(--primary)" font-size="11.5" font-weight="bold">Κεραίες (Fühler 2.1515): a' ⟷ a</text>
+          <rect x="15" y="34" width="270" height="172" fill="var(--card)" stroke="currentColor" stroke-width="2"/>
+          <text x="150" y="54" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">ΤΡΑΠΕΖΙ ΔΙΚΑΣΤΗΡΙΟΥ (ΕΙΚΟΝΑ)</text>
+          <text x="150" y="68" text-anchor="middle" fill="var(--muted-foreground)" font-size="10">(Κλικ στο a' για αλλαγή θέσης)</text>
+          <g transform="translate(${mp.x}, ${mp.y + 14}) rotate(${mp.ang})" onclick="cycleParisModel()" style="cursor:pointer;">
             <rect x="-28" y="-14" width="56" height="28" fill="var(--primary)" fill-opacity="0.22" stroke="var(--primary)" stroke-width="2.2"/>
             <text x="0" y="4" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">a' (Αυτ.)</text>
           </g>
-          <rect x="155" y="115" width="60" height="28" fill="none" stroke="currentColor" stroke-width="2"/>
-          <text x="185" y="133" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">b' (Καρ.)</text>
+          <rect x="155" y="129" width="60" height="28" fill="none" stroke="currentColor" stroke-width="2"/>
+          <text x="185" y="147" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">b' (Καρ.)</text>
 
-          <rect x="395" y="20" width="270" height="175" fill="var(--card)" stroke="currentColor" stroke-width="2"/>
-          <text x="530" y="40" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">ΔΡΟΜΟΣ ΠΑΡΙΣΙΟΥ (ΠΡΑΓΜΑΤΙΚΟΤΗΤΑ)</text>
-          <g transform="translate(${380 + rp.x}, ${rp.y}) rotate(${rp.ang})">
+          <rect x="395" y="34" width="270" height="172" fill="var(--card)" stroke="currentColor" stroke-width="2"/>
+          <text x="530" y="54" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">ΔΡΟΜΟΣ ΠΑΡΙΣΙΟΥ (ΠΡΑΓΜΑΤΙΚΟΤΗΤΑ)</text>
+          <g transform="translate(${380 + rp.x}, ${rp.y + 14}) rotate(${rp.ang})">
             <rect x="-28" y="-14" width="56" height="28" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-width="2"/>
             <text x="0" y="4" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">a (Αυτ.)</text>
           </g>
-          <rect x="535" y="115" width="60" height="28" fill="none" stroke="currentColor" stroke-width="2"/>
-          <text x="565" y="133" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">b (Καρ.)</text>
+          <rect x="535" y="129" width="60" height="28" fill="none" stroke="currentColor" stroke-width="2"/>
+          <text x="565" y="147" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">b (Καρ.)</text>
 
-          <path d="M ${mp.x + 26} ${mp.y} C 240 48, 350 48, ${380 + rp.x - 26} ${rp.y}" fill="none" stroke="${feelerColor}" stroke-width="1.8" stroke-dasharray="5,4"/>
-          <path d="M 215 130 C 310 178, 430 178, 535 130" fill="none" stroke="${feelerColor}" stroke-width="1.8" stroke-dasharray="5,4"/>
-          <text x="340" y="64" text-anchor="middle" fill="var(--primary)" font-size="11.5" font-weight="bold">Κεραίες (Fühler 2.1515): a' ⟷ a</text>
-          <text x="340" y="186" text-anchor="middle" fill="var(--primary)" font-size="11.5" font-weight="bold">Bedeutung (3.203): b' ⟷ b</text>
+          <path d="M ${mp.x + 26} ${mp.y + 14} C 240 24, 440 24, ${380 + rp.x - 26} ${rp.y + 14}" fill="none" stroke="${feelerColor}" stroke-width="1.8" stroke-dasharray="5,4"/>
+          <path d="M 215 143 C 310 212, 430 212, 535 143" fill="none" stroke="${feelerColor}" stroke-width="1.8" stroke-dasharray="5,4"/>
+          <text x="340" y="228" text-anchor="middle" fill="var(--primary)" font-size="11.5" font-weight="bold">Bedeutung (3.203): b' ⟷ b</text>
         </svg>
       `;
 
@@ -5706,7 +5707,7 @@ x &amp;= \Omega^0\text{&#x27;}x \quad &amp;\text{Def.} \quad &amp;(\text{Μηδ�
       closeMobileNav();
     }
 
-    function jumpToAnalysisAnchor(anchor) {
+    function jumpToAnalysisAnchor(anchor, instant = false) {
       const id = String(anchor || '').replace(/^#/, '');
       if (!id) return;
       if (currentMainTab !== 'master') {
@@ -5717,11 +5718,11 @@ x &amp;= \Omega^0\text{&#x27;}x \quad &amp;\text{Def.} \quad &amp;(\text{Μηδ�
       const sec = target.closest('.master-section');
       if (sec) ensureSectionVisible(sec.id);
       try { history.replaceState(null, '', '#' + id); } catch (e) {}
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      target.scrollIntoView({ behavior: instant ? 'instant' : 'smooth', block: 'start' });
       pulseHighlight(target);
     }
 
-    function jumpToLab(labId) {
+    function jumpToLab(labId, instant = false) {
       const id = String(labId || '').replace(/^#/, '');
       const tab = LAB_TO_TAB[id];
       if (!tab) return false;
@@ -5730,14 +5731,14 @@ x &amp;= \Omega^0\text{&#x27;}x \quad &amp;\text{Def.} \quad &amp;(\text{Μηδ�
       setTimeout(() => {
         const el = document.getElementById(id);
         if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          el.scrollIntoView({ behavior: instant ? 'instant' : 'smooth', block: 'start' });
           pulseHighlight(el);
         }
-      }, 40);
+      }, instant ? 0 : 40);
       return true;
     }
 
-    function jumpToPhilosopher(philId) {
+    function jumpToPhilosopher(philId, instant = false) {
       const slug = String(philId || '').replace(/^#?phil-/, '');
       if (!slug) return false;
       const inp = document.getElementById('philSearchInput');
@@ -5750,10 +5751,10 @@ x &amp;= \Omega^0\text{&#x27;}x \quad &amp;\text{Def.} \quad &amp;(\text{Μηδ�
       setTimeout(() => {
         const el = document.getElementById('phil-' + slug);
         if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          el.scrollIntoView({ behavior: instant ? 'instant' : 'smooth', block: 'center' });
           pulseHighlight(el);
         }
-      }, 40);
+      }, instant ? 0 : 40);
       return true;
     }
 
@@ -6041,11 +6042,11 @@ x &amp;= \Omega^0\text{&#x27;}x \quad &amp;\text{Def.} \quad &amp;(\text{Μηδ�
       }
       const id = hash.slice(1);
       if (LAB_TO_TAB[id]) {
-        jumpToLab(id);
+        jumpToLab(id, true);
       } else if (id.startsWith('phil-')) {
-        jumpToPhilosopher(id);
+        jumpToPhilosopher(id, true);
       } else if (document.getElementById(id)) {
-        jumpToAnalysisAnchor(id);
+        jumpToAnalysisAnchor(id, true);
       }
     }
 

@@ -8,6 +8,50 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-20: Tractatus page, builder and Markdown redesign.**
+
+- Redesigned `tools/build_html.py` into a 100% mechanical generator for
+  `docs/tractatus.html` (LF line endings, zero Tailwind Play CDN, semantic CSS
+  in `tools/tractatus/styles.css` aligned with `docs/essay.html` and
+  `docs/index.html`, justified + hyphenated Greek prose, accent-insensitive
+  search skipping KaTeX MathML, pre-paint dark theme via `hw-tlp-theme`).
+- Modularized non-prose assets under `tools/tractatus/`: `styles.css`, `app.js`,
+  `labs.html`, `labs.js`, `widget_logical_space.html`, `philosophers.json`
+  (12 philosophers with stable slugs), `pm_quotes.json` (the 65 existing
+  Pears–McGuinness comparison entries), and `terms.json` (33 curated German
+  key terms).
+- Restructured `Tractatus Logico-Philosophicus/TRACTATUS_LOGICO_PHILOSOPHICUS_ANALYSIS_1-7.md`
+  across Propositions 1–7 to follow a single unified analytical view (removing
+  the duplicate hand-written summaries and `<details class="full-analysis">`
+  accordions):
+  - All 7 main propositions (`1`–`7`) and all 25 main branches (`1.1–6.5`,
+    splitting previously merged `1.1/1.2`, `3.4/3.5`, and `5.2/5.3/5.4`) appear
+    in the foldable left sidebar and main body (enforced by `strict_branches=True`).
+  - Four-tier quotation scheme: 7 main hero cards (Greek → Ogden & Ramsey 1922
+    & Pears & McGuinness 1961 → German 1921), 25 main branches + 118 key `n.0x`
+    and milestone sub-propositions quoted verbatim (Greek → German «…» +
+    Ogden 1922 in parentheses, verified against `5740-pdf.pdf`, with automatic
+    `<details class="prop-orig">` inline toggle for long propositions), and 89
+    grouped neutral syntheses (`.prop-group`).
+  - Clear visual grammar distinguishing Wittgenstein's text (bottle-green bar),
+    our analysis and grouped syntheses (neutral), examples (secondary surface),
+    and interpretive notes / philosophical dialogues (ochre), explained in the
+    opening «Σημείωση για τον αναγνώστη».
+  - Auto-linked 33 German key terms (521 occurrences) and inline proposition
+    numbers opening a unified Quick-Peek slide-over drawer with a direct jump
+    link to the full analysis (all anchors verified at build time).
+  - Targeted `#lab-*` and `#phil-*` deep-link pills woven into the analysis
+    branches, plus the inline Prop 1 Logical Space simulator via
+    `<!-- widget: logical-space -->`.
+- Dropped `[0x]` tab prefixes, renamed «Δέντρο 4 γλωσσών» → «Δενδροειδής μορφή»
+  (also updated on `docs/index.html`), and populated the tree view mechanically
+  from the Markdown with all 239 nodes (150 single propositions + 89 grouped
+  syntheses), each linking directly back to its anchor in «Ανάλυση 1–7».
+- Updated `docs/index.html`, `README.md`, `CLAUDE.md`, `AGENTS.md`, and
+  verified light/dark desktop, tablet (920 px), mobile (390 px), all six tabs,
+  Quick-Peek drawer, search, and `python tools/build_all.py --check` with
+  headless Chrome.
+
 **Session of 2026-11-19, night: the second Gemini review of the essay.**
 
 - Nine proposals checked and taken one by one with the owner (ledger,

@@ -313,8 +313,9 @@ a { color: var(--primary); }
 @media (max-width: 680px) {
   .hdr-title-sub { display: none; }
   .hdr-tools { order: 2; flex-basis: 100%; padding-top: 0; }
-  .hdr-search { flex: 1 1 auto; }
-  .hdr-search input { width: 100%; }
+  .hdr-search { flex: 1 1 auto; min-width: 7rem; }
+  .hdr-search input { width: 100%; padding-right: 1.6rem; }
+  .hdr-kbd { display: none; }
 }
 
 /* ----------------------------------------------------------------------------

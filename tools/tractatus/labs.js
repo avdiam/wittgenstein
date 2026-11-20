@@ -401,7 +401,7 @@
       'WWWF': { idx: 5, sym: 'p ∨ q (Διάζευξη)', short: 'p∨q', verbal: '«p ή q.»', nForm: 'N(N(p, q))', status: 'Πρόταση με νόημα (sinnvoll)', comment: 'Αληθής αν τουλάχιστον μία από τις p, q είναι αληθής. Είναι η άρνηση της κοινής άρνησης N(p, q).' },
       'FFWW': { idx: 6, sym: '¬q', short: '¬q', verbal: '«Όχι q.» (~q)', nForm: 'N(q)', status: 'Πρόταση με νόημα (sinnvoll)', comment: 'Άρνηση της στοιχειώδους πρότασης q (Wᵣ = 2).' },
       'FWFW': { idx: 7, sym: '¬p', short: '¬p', verbal: '«Όχι p.» (~p)', nForm: 'N(p)', status: 'Πρόταση με νόημα (sinnvoll)', comment: 'Άρνηση της στοιχειώδους πρότασης p (Wᵣ = 2).' },
-      'FWWF': { idx: 8, sym: 'p ≢ q (XOR)', short: 'p≢q', verbal: '«p ή q, αλλά όχι και τα δύο.»', nForm: 'N(N(p, q), N(N(p), N(q)))', status: 'Πρόταση με νόημα (sinnvoll)', comment: 'Αληθής όταν οι p και q έχουν αντίθετες τιμές αληθείας (Wᵣ = 2).' },
+      'FWWF': { idx: 8, sym: 'p ≢ q (XOR)', short: 'p⊕q', verbal: '«p ή q, αλλά όχι και τα δύο.»', nForm: 'N(N(p, q), N(N(p), N(q)))', status: 'Πρόταση με νόημα (sinnvoll)', comment: 'Αληθής όταν οι p και q έχουν αντίθετες τιμές αληθείας (Wᵣ = 2).' },
       'WFFW': { idx: 9, sym: 'p ≡ q (Ισοδυναμία)', short: 'p≡q', verbal: '«Αν p, τότε q· και αν q, τότε p.»', nForm: 'N(N(N(p, q), N(N(p), N(q))))', status: 'Πρόταση με νόημα (sinnvoll)', comment: 'Αληθής όταν οι p και q έχουν την ίδια τιμή αληθείας (Wᵣ = 2).' },
       'WFWF': { idx: 10, sym: 'p', short: 'p', verbal: '«p» (Κατάφαση της p)', nForm: 'N(N(p)) = p', status: 'Στοιχειώδης πρόταση (sinnvoll)', comment: 'Η στοιχειώδης πρόταση p ως συνάρτηση αληθείας του εαυτού της (Πρόταση 5).' },
       'WWFF': { idx: 11, sym: 'q', short: 'q', verbal: '«q» (Κατάφαση της q)', nForm: 'N(N(q)) = q', status: 'Στοιχειώδης πρόταση (sinnvoll)', comment: 'Η στοιχειώδης πρόταση q ως συνάρτηση αληθείας του εαυτού της (Πρόταση 5).' },
@@ -658,30 +658,30 @@
       const feelerColor = isMatch ? 'var(--primary)' : 'var(--muted-foreground)';
 
       svgContainer.innerHTML = `
-        <svg viewBox="0 0 680 215" class="lab-svg" style="max-width:680px">
-          <rect x="15" y="20" width="270" height="175" fill="var(--card)" stroke="currentColor" stroke-width="2"/>
-          <text x="150" y="40" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">ΤΡΑΠΕΖΙ ΔΙΚΑΣΤΗΡΙΟΥ (ΕΙΚΟΝΑ)</text>
-          <text x="150" y="54" text-anchor="middle" fill="var(--muted-foreground)" font-size="10">(Κλικ στο a' για αλλαγή θέσης)</text>
-          <g transform="translate(${mp.x}, ${mp.y}) rotate(${mp.ang})" onclick="cycleParisModel()" style="cursor:pointer;">
+        <svg viewBox="0 0 680 238" class="lab-svg" style="max-width:680px">
+          <text x="340" y="18" text-anchor="middle" fill="var(--primary)" font-size="11.5" font-weight="bold">Κεραίες (Fühler 2.1515): a' ⟷ a</text>
+          <rect x="15" y="34" width="270" height="172" fill="var(--card)" stroke="currentColor" stroke-width="2"/>
+          <text x="150" y="54" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">ΤΡΑΠΕΖΙ ΔΙΚΑΣΤΗΡΙΟΥ (ΕΙΚΟΝΑ)</text>
+          <text x="150" y="68" text-anchor="middle" fill="var(--muted-foreground)" font-size="10">(Κλικ στο a' για αλλαγή θέσης)</text>
+          <g transform="translate(${mp.x}, ${mp.y + 14}) rotate(${mp.ang})" onclick="cycleParisModel()" style="cursor:pointer;">
             <rect x="-28" y="-14" width="56" height="28" fill="var(--primary)" fill-opacity="0.22" stroke="var(--primary)" stroke-width="2.2"/>
             <text x="0" y="4" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">a' (Αυτ.)</text>
           </g>
-          <rect x="155" y="115" width="60" height="28" fill="none" stroke="currentColor" stroke-width="2"/>
-          <text x="185" y="133" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">b' (Καρ.)</text>
+          <rect x="155" y="129" width="60" height="28" fill="none" stroke="currentColor" stroke-width="2"/>
+          <text x="185" y="147" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">b' (Καρ.)</text>
 
-          <rect x="395" y="20" width="270" height="175" fill="var(--card)" stroke="currentColor" stroke-width="2"/>
-          <text x="530" y="40" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">ΔΡΟΜΟΣ ΠΑΡΙΣΙΟΥ (ΠΡΑΓΜΑΤΙΚΟΤΗΤΑ)</text>
-          <g transform="translate(${380 + rp.x}, ${rp.y}) rotate(${rp.ang})">
+          <rect x="395" y="34" width="270" height="172" fill="var(--card)" stroke="currentColor" stroke-width="2"/>
+          <text x="530" y="54" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">ΔΡΟΜΟΣ ΠΑΡΙΣΙΟΥ (ΠΡΑΓΜΑΤΙΚΟΤΗΤΑ)</text>
+          <g transform="translate(${380 + rp.x}, ${rp.y + 14}) rotate(${rp.ang})">
             <rect x="-28" y="-14" width="56" height="28" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-width="2"/>
             <text x="0" y="4" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">a (Αυτ.)</text>
           </g>
-          <rect x="535" y="115" width="60" height="28" fill="none" stroke="currentColor" stroke-width="2"/>
-          <text x="565" y="133" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">b (Καρ.)</text>
+          <rect x="535" y="129" width="60" height="28" fill="none" stroke="currentColor" stroke-width="2"/>
+          <text x="565" y="147" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">b (Καρ.)</text>
 
-          <path d="M ${mp.x + 26} ${mp.y} C 240 48, 350 48, ${380 + rp.x - 26} ${rp.y}" fill="none" stroke="${feelerColor}" stroke-width="1.8" stroke-dasharray="5,4"/>
-          <path d="M 215 130 C 310 178, 430 178, 535 130" fill="none" stroke="${feelerColor}" stroke-width="1.8" stroke-dasharray="5,4"/>
-          <text x="340" y="64" text-anchor="middle" fill="var(--primary)" font-size="11.5" font-weight="bold">Κεραίες (Fühler 2.1515): a' ⟷ a</text>
-          <text x="340" y="186" text-anchor="middle" fill="var(--primary)" font-size="11.5" font-weight="bold">Bedeutung (3.203): b' ⟷ b</text>
+          <path d="M ${mp.x + 26} ${mp.y + 14} C 240 24, 440 24, ${380 + rp.x - 26} ${rp.y + 14}" fill="none" stroke="${feelerColor}" stroke-width="1.8" stroke-dasharray="5,4"/>
+          <path d="M 215 143 C 310 212, 430 212, 535 143" fill="none" stroke="${feelerColor}" stroke-width="1.8" stroke-dasharray="5,4"/>
+          <text x="340" y="228" text-anchor="middle" fill="var(--primary)" font-size="11.5" font-weight="bold">Bedeutung (3.203): b' ⟷ b</text>
         </svg>
       `;
 

@@ -527,13 +527,6 @@ def render_markdown_chunk(heading, body, sec_id, seen_anchors, extracted_nodes, 
 
     rendered = re.sub(r'<a href="(#[^"]+)">(.*?)</a>', style_link, rendered, flags=re.S)
 
-    # Legacy inline proposition bullets: turn leading <strong>N.M</strong> into clickable .prop-ref
-    rendered = re.sub(
-        r"<strong>([1-7](?:\.\d+)?)(?=[\s:<(–,])(?!</strong></td>)",
-        r'<strong><span class="prop-ref" data-prop="\1">\1</span>',
-        rendered,
-    )
-
     # Check for unrendered Markdown artifacts outside <pre>
     leftovers = re.findall(r"\*\*|@@M\d+@@", re.sub(r"<pre.*?</pre>", "", rendered, flags=re.S))
     return rendered, leftovers
@@ -553,8 +546,8 @@ def autolink_terms_and_props(fragment, terms, valid_prop_nums):
     term_re = re.compile(
         r"(?<![A-Za-zÄÖÜäöüß])(" + "|".join(re.escape(f) for f in forms_sorted) + r")(?![A-Za-zÄÖÜäöüß])"
     )
-    # Inline proposition numbers in parentheses or after βλ./πβ./πρόταση (only decimals >= 1.1 to avoid matching "1" or "2")
-    prop_re = re.compile(r"(?<![0-9A-Za-z.,])([1-7]\.\d{1,5})(?![0-9A-Za-z.])")
+    # Inline proposition numbers (decimals >= 1.1; allow trailing sentence-ending period, block .digit like 1.2.3)
+    prop_re = re.compile(r"(?<![0-9A-Za-z.,])([1-7]\.\d{1,5})(?![0-9A-Za-z]|\.\d)")
 
     skip_tags = {"pre", "code", "script", "style", "a", "h1", "h2", "h3", "h4", "summary"}
     skip_classes = ("tex", "prop-en", "term-ref", "prop-ref", "prop-ver-label", "prop-range-badge", "inline-widget")
@@ -890,7 +883,7 @@ TEMPLATE = """<!DOCTYPE html>
       <div class="hdr-tools">
         <div class="hdr-search" role="search">
           <input id="globalSearchInput" type="search"
-            placeholder="Αναζήτηση: 4.0312, Sachverhalt, Frege"
+            placeholder="Αναζήτηση: 4.0312, Sachverhalt"
             aria-label="Αναζήτηση στην ανάλυση" autocomplete="off" spellcheck="false"
             oninput="handleGlobalSearch(this.value)" />
           <kbd class="hdr-kbd" aria-hidden="true">/</kbd>

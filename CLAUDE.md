@@ -13,9 +13,10 @@ remove it from `CROSSCHECK_PLAN.md`.
 
 - `Tractatus Logico-Philosophicus/TRACTATUS_LOGICO_PHILOSOPHICUS_ANALYSIS_1-7.md`
   is the single source of truth. Change the analysis there and nowhere else.
-- `docs/tractatus.html` is the human UI. The full analysis inside it is
-  generated; the summaries, the tree-explorer data, the labs and the
-  philosophers grid are hand-written.
+- `docs/tractatus.html` is the human UI, generated in full by
+  `tools/build_html.py` from the Markdown source and the modular assets in
+  `tools/tractatus/` (styles, labs, philosophers, German terms glossary,
+  Pears–McGuinness comparison quotes, scripts): never edit it by hand.
 - `docs/` is published as is by GitHub Pages at https://avdiam.github.io/wittgenstein/.
   `docs/index.html` (the cover page) is hand-written.
 
@@ -44,16 +45,16 @@ remove it from `CROSSCHECK_PLAN.md`.
 1. Edit the Markdown.
 2. `python tools/build_all.py` (needs `markdown-it-py`); it runs the three builds.
 3. `python tools/build_all.py --check` must exit 0.
-4. Check whether a hand-written HTML passage repeats the fact you changed.
+4. Check whether any structured asset in `tools/tractatus/` (labs,
+   philosophers, German terms) or `docs/index.html` repeats the fact you changed.
 5. Commit the Markdown and the generated files together, one commit per stage
    of work. Pushing to `main` publishes the site: push only when the owner asks.
 
 ## Rules
 
-- Never edit between `<!-- FULL-ANALYSIS:BEGIN … -->` and
-  `<!-- FULL-ANALYSIS:END … -->` in the HTML; the build overwrites it.
-- Leave the hand-written HTML parts hand-written. Change them only where they
-  contradict the Markdown or are philosophically inaccurate.
+- Never edit `docs/tractatus.html`, `docs/essay.html`, or
+  `docs/Logiki_Glossa_Michanes.docx` by hand; the builds overwrite them.
+  Change the Markdown sources or the modular assets in `tools/tractatus/` instead.
 - Every `##` heading must be mapped: in `target_for()` (`tools/build_html.py`)
   for the analysis, in `tab_for()` (`tools/build_essay_html.py`) for the essay.
   The builds stop on an unmapped heading.
@@ -75,16 +76,15 @@ remove it from `CROSSCHECK_PLAN.md`.
 - Edit the Greek Markdown through a Python script saved to a file, using
   replacements that must match exactly once and abort otherwise. Shell heredocs
   mangle backslashes and quotation marks in this text.
-- Line endings: `docs/tractatus.html` is CRLF; the Markdown, `docs/essay.html`
-  and `docs/index.html` are LF. Read and write bytes, or preserve the endings
-  explicitly. `.gitattributes` disables conversion.
+- Line endings: all Markdown and HTML files (`docs/tractatus.html`,
+  `docs/essay.html`, `docs/index.html`) use LF. Read and write UTF-8 with LF
+  endings explicitly. `.gitattributes` disables conversion.
 - German quotations keep the original spelling of the 1921/1922 text where it
   matters for the argument (for example *transcendental*).
 - In the HTML, text is often split by tags such as `<strong>`, so search the raw
   markup before assuming a phrase is absent.
 - The page's design tokens, and what each colour and typeface is for, are
-  described at the top of the first `<style>` block in the HTML. The styles of
-  the generated blocks are in `HEAD_BLOCK` in `tools/build_html.py`. The essay
+  defined in `tools/tractatus/styles.css` (without Tailwind CDN). The essay
   page (`CSS` in `tools/build_essay_html.py`) and the cover page repeat the
   same tokens and share the theme setting (`hw-tlp-theme`). Use the tokens
   (`var(--primary)` and so on) and do not hard-code colours.
