@@ -10,7 +10,7 @@ remove it here.
 
 - C3 (a second Pears–McGuinness copy) needs a printed book. (C1 was done on 2026-11-16: ledger, "C1: Greek terms of the analysis against Kitsopoulos".)
 - From tiers A and D: the years of most classics in section Γ΄ were not searched one by one; *Logical Foundations of Probability* and the 1919 letter were read only through other authors' quotations; several rows rest on Wikipedia, catalogues or booksellers as their only or second source (marked in the tables).
-- After the redesign of 2026-11-20 (ledger, «The redesign of the Tractatus page, reviewed»): the corrections recorded in the ledger for the analysis are not yet rechecked against the rewritten text. (The Greek of the 150 quote cards was read against the German on 2026-11-21: ledger, Τ7–Τ9. The paraphrases in the group paragraphs were not.)
+- After the redesign of 2026-11-20 (ledger, «The redesign of the Tractatus page, reviewed»): the paraphrases in the group paragraphs are not yet read against the German (the 150 quote cards were, on 2026-11-21: ledger, Τ7–Τ9; the earlier corrections of the ledger were rechecked the same day: Τ10).
 - From the commentary restored on 2026-11-21 (ledger, Σ and Τ rows): Frege's `⊢` in *Begriffsschrift* §2 and Russell's use of it (Τ4) and the consequence of dropping the Axiom of Infinity (Τ5) were not read in a source; Stenius (1960, ch. XI) and Glock's *Dictionary* on «transcendental» at 6.13 could not be reached (Σ6); the A/B page numbers of the Kant passages (Σ5); Maupertuis's memoirs read only in the Wikisource translations (Σ1); Euler's and Lagrange's part rests on Wikipedia and MacTutor (Σ2).
 
 ## Open for the *Investigations* part

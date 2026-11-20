@@ -54,7 +54,8 @@ item is finished, move it to `DONE.md` with the date.
   (details in `DONE.md`; committed, not pushed). Then the Greek of
   the 150 cards read against the German: fourteen cards corrected
   and four points of wording decided by the owner (details in
-  `DONE.md`; committed, not pushed).
+  `DONE.md`; committed, not pushed). Then the ledger's corrections
+  rechecked against the rewritten text: all stand.
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
@@ -80,8 +81,8 @@ unpushed until the owner says otherwise.
    group paragraphs.
 3. **Quotations cut short**: done on 2026-11-21 (`DONE.md`; ledger,
    Τ1–Τ3). The check script is not in the repository; see point 6.
-4. **Ledger**: check that the corrections recorded in
-   `CROSSCHECK_DONE.md` for the analysis survived the rewrite.
+4. **Ledger**: done on 2026-11-21; all corrections stand (`DONE.md`;
+   ledger, Τ10).
 5. **Visual check**: phone and tablet widths, the dark theme and the
    Quick-Peek drawers (only desktop light was captured on 2026-11-21).
 6. **Builder**: extend `tools/build_html.py` to check content too (the

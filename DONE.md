@@ -8,6 +8,14 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-21, night: the ledger's corrections rechecked.**
+
+- Follow-up 4 of the review. Every correction the ledger records for
+  the analysis was searched in the rewritten Markdown, and so were the
+  wordings each had replaced: all corrections stand and none of the
+  old wordings is back. The assets in `tools/tractatus/` were searched
+  too. Nothing to change. Ledger, Τ10.
+
 **Session of 2026-11-21, night: the Greek of the cards checked against the German.**
 
 - Follow-up 2 of the review. The Greek of each of the 150 cards read
