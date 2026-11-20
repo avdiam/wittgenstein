@@ -8,6 +8,29 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-21, night: visual check of the Tractatus page.**
+
+- Follow-up 5 of the review, in headless Chrome through a temporary
+  page of iframes (deleted afterwards). Seen at 390 px: the analysis
+  (top, 3.333, 4.461, 5.5423, 5.6331, 6.02, 6.341, 6.36111), the other
+  five tabs, the contents drawer and the four Quick-Peek drawers
+  (term, proposition, philosopher, concept); at 820 px the analysis
+  and the tree view; at 1300 px the analysis with its sidebar. Light
+  and dark themes were both used across these. Nothing overflows the
+  page: long formulas and figures scroll inside their own box.
+- Fixed: the three figures drawn with box-drawing characters (Necker
+  cube, eye, the net of 6.341) did not align. The JetBrains Mono web
+  font has no box-drawing subset, so letters and lines came from two
+  fonts of different width. `pre` now uses a new token,
+  `--font-figure` (system fonts only), and `pre code` inherits it
+  (`tools/tractatus/styles.css`).
+- Not verifiable this way: hyphenation (headless Chrome has no
+  dictionaries, so justified lines look looser than on a phone), a
+  real Android phone (it has none of the fonts named in
+  `--font-figure`), and the labs after interaction.
+- Seen and left: on a phone the one-line figure inside the card of
+  6.36111 breaks across two lines.
+
 **Session of 2026-11-21, night: the ledger's corrections rechecked.**
 
 - Follow-up 4 of the review. Every correction the ledger records for

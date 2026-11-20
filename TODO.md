@@ -55,7 +55,9 @@ item is finished, move it to `DONE.md` with the date.
   the 150 cards read against the German: fourteen cards corrected
   and four points of wording decided by the owner (details in
   `DONE.md`; committed, not pushed). Then the ledger's corrections
-  rechecked against the rewritten text: all stand.
+  rechecked against the rewritten text: all stand. Then the visual
+  check: the page holds at phone and tablet widths in both themes,
+  and the alignment of the three text figures was fixed.
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
@@ -83,8 +85,10 @@ unpushed until the owner says otherwise.
    Τ1–Τ3). The check script is not in the repository; see point 6.
 4. **Ledger**: done on 2026-11-21; all corrections stand (`DONE.md`;
    ledger, Τ10).
-5. **Visual check**: phone and tablet widths, the dark theme and the
-   Quick-Peek drawers (only desktop light was captured on 2026-11-21).
+5. **Visual check**: done on 2026-11-21 in headless Chrome (`DONE.md`).
+   For the owner, on a real phone: hyphenation of the justified text,
+   and whether the three text figures (5.5423, 5.6331, 6.341) align
+   on Android.
 6. **Builder**: extend `tools/build_html.py` to check content too (the
    coverage check is in; candidates: quotations against the Gutenberg
    text, an omission mark where a card is shorter than its proposition).
@@ -93,9 +97,8 @@ unpushed until the owner says otherwise.
    through `api.php`); the Gutenberg extract is too scrambled for it.
    For the owner: whether a copy of that text may be kept in the
    repository for the build (the LWP's licence to be read first).
-   Also seen: the ASCII figure of the net at 6.341 loses its alignment
-   on the page (box-drawing characters are not all one width in the
-   page's monospace font).
+   (The alignment of the figure at 6.341 was fixed on 2026-11-21:
+   `DONE.md`.)
 7. **Outside readings to compare with ours** (four links saved by the owner in
    `Tractatus Logico-Philosophicus/`, untracked):
    <https://wittgenstein.be/en/books/tractatus-logico-philosophicus/>,
