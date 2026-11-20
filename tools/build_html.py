@@ -144,7 +144,7 @@ def restore_math(fragment, store):
 
 
 def strip_tags(fragment):
-    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", fragment)).strip()
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", fragment))).strip()
 
 
 def prop_anchor_id(num_str):
