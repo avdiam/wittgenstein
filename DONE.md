@@ -8,6 +8,21 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-21, night: Propositions 1–3 compared with the old text.**
+
+- The rest of follow-up 1 (commentary). The introduction, Parts Α–Β and
+  Propositions 1–3 read side by side with the text before the redesign
+  (`9375bb0`). The rewrite had kept almost all of it: Proposition 1
+  and Parts Α–Β lost only emphasis. Restored in Propositions 2–3: the
+  second sentence of 2.0123 (no new possibility is found afterwards),
+  the German terms of 2.0131 (*Farbenraum* and the others), a
+  paragraph on how the elucidations of 3.263 can work (from 3.262 and
+  3.3), «σκαλωσιά» beside «ικρίωμα» at 3.42. Left out, as before:
+  emphasis («επαναστατική», «μεγάλο», «έντονα», «απόλυτος»).
+- Found on the way and fixed: 2.026 was named in a group heading but
+  not stated in the text; «μονοπρότατη» at 3.5 is not a Greek word.
+  Ledger, Τ6.
+
 **Session of 2026-11-21, later: commentary restored, cards completed.**
 
 - Follow-up 1 of the review (commentary). The six passages named by the

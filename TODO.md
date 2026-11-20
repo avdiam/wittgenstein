@@ -49,18 +49,24 @@ item is finished, move it to `DONE.md` with the date.
   (the six passages and 44 smaller ones), and the cards that were cut
   short or abridged completed (details in `DONE.md`; four commits, not
   pushed).
+- Session of 2026-11-21, night: Propositions 1–3, the introduction and
+  Parts Α–Β compared with the old text; four small pieces restored
+  (details in `DONE.md`; committed, not pushed).
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
 Set by the owner on 2026-11-21 for the next session. The redesign stays
 unpushed until the owner says otherwise.
 
-1. **Commentary.** Done on 2026-11-21 for Propositions 4–7 (`DONE.md`):
-   the six passages and what the rewrite had dropped. Still to do:
-   Propositions 1–3 were not compared with the old text
-   (`git show 9375bb0:"Tractatus Logico-Philosophicus/TRACTATUS_LOGICO_PHILOSOPHICUS_ANALYSIS_1-7.md"`),
-   and commentary beyond what the old text had was added only for the
-   six passages. For 6.4–6.522, read Wittgenstein's own «Διάλεξη για την Ηθική» (1929)
+1. **Commentary.** Done on 2026-11-21 for the whole text (`DONE.md`):
+   the six passages and what the rewrite had dropped, compared with
+   the old text
+   (`git show 9375bb0:"Tractatus Logico-Philosophicus/TRACTATUS_LOGICO_PHILOSOPHICUS_ANALYSIS_1-7.md"`).
+   Still to do: commentary beyond what the old text had was added only
+   for the six passages; the owner to say where more is wanted. Seen
+   while reading Propositions 2–3: some group paragraphs do not state
+   every proposition in their heading (3.312–3.318 and 3.34–3.3442
+   above all; 2.031 and 3.322 too). For 6.4–6.522, read Wittgenstein's own «Διάλεξη για την Ηθική» (1929)
    first, in the Greek translation on the Ludwig Wittgenstein Project
    (link saved by the owner in `Tractatus Logico-Philosophicus/`,
    untracked) beside the English text already used (ledger, A12). It is
