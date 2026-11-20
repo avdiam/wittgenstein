@@ -743,6 +743,26 @@ Not checked in this review: the Greek of the cards, cards that end before
 their proposition, and whether earlier corrections of this ledger
 survived the rewrite (`TODO.md`).
 
+## Commentary restored after the redesign (2026-11-21)
+
+Six passages of commentary shortened by the rewrite of 2026-11-20 were
+restored and extended. Rows for the claims that rest on outside sources:
+
+| # | Claim / location | Source | Verdict | Action |
+| :-- | :-- | :-- | :-- | :-- |
+| Σ1 | Maupertuis stated the principle of least action in memoirs of 1744 and 1746, defined action as mass × speed × distance, and gave it a theological justification (6.321–6.3211) | The two memoirs in English on Wikisource ("Accord between different laws of Nature…", 1744; "Derivation of the laws of motion and equilibrium from a metaphysical principle", 1746: "The quantity of action is the product of the mass of the bodies times their speed and the distance they travel"; "so wise and so worthy of the supreme Being"); [MacTutor, Maupertuis](https://mathshistory.st-andrews.ac.uk/Biographies/Maupertuis/); [Britannica, Maupertuis](https://www.britannica.com/biography/Pierre-Louis-Moreau-de-Maupertuis) | confirmed; the reference works date the first statement differently (Britannica 1744, MacTutor 1746) | The text says «σε δύο υπομνήματα, του 1744 και του 1746» and picks no first date. The French originals were not read. |
+| Σ2 | Euler (1744) and Lagrange gave the principle mathematical form | [Wikipedia, History of variational principles in physics](https://en.wikipedia.org/wiki/History_of_variational_principles_in_physics); [MacTutor, Lagrange](https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/) | confirmed, weak sources (MacTutor's Euler page dates the *Methodus inveniendi* 1740) | One sentence, no detail. |
+| Σ3 | Hamilton, "On a General Method in Dynamics" (1834, 1835); the time integral of kinetic minus potential energy is stationary, not always a minimum | [MacTutor, Hamilton](https://mathshistory.st-andrews.ac.uk/Biographies/Hamilton/); Hertz, *Principles of Mechanics* (1899 translation, archive.org), Introduction and §359: "will no longer necessarily be a minimum, but its variation, nevertheless, always vanishes"; [Feynman Lectures II, ch. 19](https://www.feynmanlectures.caltech.edu/II_19.html) | confirmed | «στάσιμο (συνήθως, αλλά όχι πάντα, ελάχιστο)». |
+| Σ4 | Hertz discusses Maupertuis's and Hamilton's principles and derives them as theorems from his own fundamental law | Hertz, *Principles of Mechanics* (1899 translation), §309 (fundamental law), §355 ("contains Maupertuis' Principle of Least Action"), §360 ("corresponds to Hamilton's Principle"), §356 (holonomic systems only) | confirmed (translation read as archive.org OCR; the German of 1894 not consulted) | Stated without the restriction to holonomic systems. |
+| Σ5 | Kant distinguishes *transzendental* from *transzendent* (6.13) | *Kritik der reinen Vernunft*, Akademie-Ausgabe III, 43 (B25: «Ich nenne alle Erkenntniß transscendental, die sich nicht sowohl mit Gegenständen, sondern mit unserer Erkenntnißart von Gegenständen, so fern diese a priori möglich sein soll, überhaupt beschäftigt») and 235–236 («Daher sind transscendental und transscendent nicht einerlei»; immanent and transcendent principles), on korpora.org | confirmed; the A/B numbers A296/B352–353 are the usual citation and were not checked against a paginated edition | Paragraph at 6.13 rewritten around Kant's two definitions. |
+| Σ6 | "Transcendental" at 6.13 as "condition of the possibility" | De Mesel, "Ethics in the Tractatus: A Condition of the Possibility of Meaning?", in Stokhof and Tang (eds.), *Wittgenstein's Tractatus at 100* (2023): "for something to be transcendental is for it to be a condition of the possibility of something" | confirmed by one source; Stenius (1960, ch. XI) and Glock's *Dictionary* could not be read; no author disputing it for 6.13 was found (for 6.421 see B12) | The text no longer says «με την αυστηρή καντιανή έννοια»; it gives Kant's distinction and what follows from it. Row B12 stays open for 6.13. |
+| Σ7 | Kant used the incongruent counterparts twice: in 1768 for absolute space against the relational view, in *Prolegomena* §13 for space as the form of outer intuition (6.36111) | «Von dem ersten Grunde des Unterschiedes der Gegenden im Raume», AA II, 383 («…die sich lediglich auf den absoluten und ursprünglichen Raum beziehen»); *Prolegomena* §13, AA IV, 285–286 («durch keinen einzigen Begriff verständlich machen, sondern nur durch das Verhältniß zur rechten und linken Hand, welches unmittelbar auf Anschauung geht»; «der Raum die Form der äußern Anschauung»), on korpora.org | confirmed | Both uses named; the rewrite had kept only the second. |
+| Σ8 | 6.34 lists the laws (sufficient reason, continuity, least expenditure); 6.35 says laws "treat of the network" | `5740-pdf.pdf` and the LWP German text | **corrected**: the list was attributed to 6.35 | List moved to the group of 6.34; 6.35 paraphrased from its own text. |
+
+The mathematics of the N operator, of the proof of 2 × 2 = 4 and of the
+three figures at 6.36111 is our own exposition of the text and has no
+outside source.
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.
