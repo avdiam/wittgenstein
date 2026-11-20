@@ -100,3 +100,6 @@ remove it from `CROSSCHECK_PLAN.md`.
 - The Ludwig Wittgenstein Project hosts the German text and the original
   figures: https://www.wittgensteinproject.org/w/index.php/Logisch-philosophische_Abhandlung
 - Expected counts: 526 propositions; per section 7 / 79 / 74 / 109 / 151 / 105 / 1.
+  `tools/build_html.py` stops unless each number in
+  `tools/tractatus/proposition_numbers.json` is covered exactly once, by a
+  quoted card or by one group heading (`#### 2.013 – 2.0141, 2.0201 · …`).

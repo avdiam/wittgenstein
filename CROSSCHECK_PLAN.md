@@ -10,6 +10,7 @@ remove it here.
 
 - C3 (a second Pears–McGuinness copy) needs a printed book. (C1 was done on 2026-11-16: ledger, "C1: Greek terms of the analysis against Kitsopoulos".)
 - From tiers A and D: the years of most classics in section Γ΄ were not searched one by one; *Logical Foundations of Probability* and the 1919 letter were read only through other authors' quotations; several rows rest on Wikipedia, catalogues or booksellers as their only or second source (marked in the tables).
+- After the redesign of 2026-11-20 (ledger, «The redesign of the Tractatus page, reviewed»): the Greek translations of the 150 quote cards are not yet checked against the German; cards that end before their proposition without a […] are not yet looked for; the corrections recorded in the ledger for the analysis are not yet rechecked against the rewritten text.
 
 ## Open for the *Investigations* part
 

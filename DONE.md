@@ -8,6 +8,29 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-21: the redesign of the Tractatus page, reviewed.**
+
+- Reviewed the eleven unpushed commits of 2026-11-20 before publishing
+  (ledger, «The redesign of the Tractatus page, reviewed»). The 150
+  German and 150 Ogden quotations were checked phrase by phrase against
+  `5740-pdf.pdf`; anchors, ids, line endings and the build were checked.
+- 4.442: the card printed «ein Wahrheitsschema» / "a truth-table" inside
+  the quotation marks where the original has the truth-table figure, and
+  its Greek line was a paraphrase. Now «Es ist z. B.: […] ein
+  Satzzeichen», the Greek line a translation, and a sentence saying that
+  the figure stands at the […].
+- 4.12721 and 5.1363, which appeared nowhere on the page (nor in the
+  text before the redesign), added as grouped syntheses: the tree view
+  now has 240 nodes (150 quoted, 90 groups).
+- Six group labels no longer include a proposition quoted on its own
+  (2.0251, 4.431, 5.4733, 5.5563, 6.1203, 6.36111).
+- `tools/build_html.py` now stops unless each of the 526 numbers in
+  `tools/tractatus/proposition_numbers.json` (taken from the Stern tree
+  PDF) is covered exactly once by a card or a group.
+- Found and left for the next session (`TODO.md`): the commentary the
+  rewrite shortened, the Greek of the cards, cards cut short, the ledger
+  corrections, the visual checks.
+
 **Session of 2026-11-20: Tractatus page, builder and Markdown redesign.**
 
 - Redesigned `tools/build_html.py` into a 100% mechanical generator for

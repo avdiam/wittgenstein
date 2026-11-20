@@ -41,10 +41,55 @@ item is finished, move it to `DONE.md` with the date.
   compact logic/visual labs, and matching flush upper-left collapsible sidebar
   + expanded folded reading width on both `tractatus.html` and `essay.html`
   (details in `DONE.md`; merged into `main`, not yet pushed).
+- Session of 2026-11-21: the redesign reviewed before publishing. 4.442
+  corrected, 4.12721 and 5.1363 added, six group labels made exact, and a
+  coverage check added to the build (details in `DONE.md`; committed,
+  not pushed). The rest of the review is listed below.
+
+## Tractatus page: follow-ups to the review of 2026-11-21
+
+Set by the owner on 2026-11-21 for the next session. The redesign stays
+unpushed until the owner says otherwise.
+
+1. **Commentary.** The rewrite of 2026-11-20 shortened the commentary
+   (Greek words outside the quote cards: Proposition 4 about −38%, 5
+   about −37%, 6 about −46%; part of this is old inline translations
+   that moved into the cards). Add whatever commentary is needed to make
+   the *Tractatus* readable, and restore or extend these six: the
+   step-by-step guide to the N operator (5.5–5.52); the net analogy walk-
+   through (6.341–6.342); the explanation of the 2 × 2 = 4 proof (6.241);
+   Maupertuis and Hamilton on least action (6.321–6.3211); the difference
+   between *transzendental* and *transzendent* at 6.13; the diagram of
+   Kant's hands (6.36111). The old text is at
+   `git show 9375bb0:"Tractatus Logico-Philosophicus/TRACTATUS_LOGICO_PHILOSOPHICUS_ANALYSIS_1-7.md"`.
+2. **Greek translations in the 150 quote cards**: check each against the
+   German. 4.442 was a paraphrase, so others may be.
+3. **Quotations cut short**: check that no card ends before its
+   proposition does without a […]. (Omissions in the middle were covered
+   by the phrase check of 2026-11-21.)
+4. **Ledger**: check that the corrections recorded in
+   `CROSSCHECK_DONE.md` for the analysis survived the rewrite.
+5. **Visual check**: phone and tablet widths, the dark theme and the
+   Quick-Peek drawers (only desktop light was captured on 2026-11-21).
+6. **Builder**: extend `tools/build_html.py` to check content too (the
+   coverage check is in; candidates: quotations against the Gutenberg
+   text, an omission mark where a card is shorter than its proposition).
+7. **Outside readings to compare with ours** (links saved by the owner in
+   `Tractatus Logico-Philosophicus/`, untracked):
+   <https://wittgenstein.be/en/books/tractatus-logico-philosophicus/>,
+   <https://www.sparknotes.com/philosophy/tractatus/>,
+   <https://readtractatus.com/>, <https://iep.utm.edu/wittgens/#H2>, and
+   the Greek «Μια διάλεξη για την Ηθική» on the Ludwig Wittgenstein
+   Project. Differences go to the ledger with a verdict; where good
+   sources disagree, an «Ερμηνευτική σημείωση».
+8. **`Κιντή_Σκάλα_Tractatus.pdf`** (local, git-ignored): read it and see
+   what it gives for the analysis, the ladder (6.54) above all.
 
 ## Next session
 
 **Start with the essay, not with the third part** (owner, 2026-11-18).
+On 2026-11-21 the owner put the Tractatus follow-ups above on the next
+session; the choice below is still open.
 
 1. The owner is checking the essay passage by passage (2026-11-19:
    sections 5, 8, 12 done, and the Gemini review taken through;

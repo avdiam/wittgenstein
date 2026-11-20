@@ -283,7 +283,7 @@ TRACTATUS LOGICO-PHILOSOPHICUS
 > **2.0251**: Ο χώρος, ο χρόνος και το χρώμα (η χρωματικότητα) είναι μορφές των αντικειμένων.
 > — «Raum, Zeit und Farbe (Färbigkeit) sind Formen der Gegenstände.» (Space, time and colour (colouredness) are forms of objects.)
 
-#### 2.024 – 2.0272 · Ουσία, το σταθερό και η διαμόρφωση (*Konfiguration*)
+#### 2.024 – 2.025, 2.026 – 2.0272 · Ουσία, το σταθερό και η διαμόρφωση (*Konfiguration*)
 
 Η ουσία είναι ό,τι υφίσταται ανεξάρτητα από το τι συμβαίνει· είναι μορφή και περιεχόμενο (2.024–2.025). Το σταθερό (*das Feste*), το υπάρχον (*das Bestehende*) και το αντικείμενο είναι ένα. Το αντικείμενο είναι το αμετάβλητο· η **διαμόρφωση** (*Konfiguration*) των αντικειμένων είναι το ευμετάβλητο, το ασταθές, αυτό που σχηματίζει την κατάσταση πραγμάτων (2.027–2.0272).
 
@@ -765,7 +765,9 @@ TRACTATUS LOGICO-PHILOSOPHICUS
 > **4.1272**: Έτσι το μεταβλητό όνομα «$x$» είναι το γνήσιο σημείο της ψευδο-έννοιας αντικείμενο. Όπου η λέξη «αντικείμενο» («πράγμα», κ.λπ.) χρησιμοποιείται σωστά, εκφράζεται στην εννοιογραφία μέσω του μεταβλητού ονόματος — π.χ. στην πρόταση «υπάρχουν 2 αντικείμενα τα οποία…» μέσω του «$(\exists x, y)\dots$». Όπου όμως χρησιμοποιείται αλλιώς, δηλαδή ως γνήσια εννοιολογική λέξη (κατηγόρημα), γεννιούνται ανόητες ψευδο-προτάσεις (*unsinnige Scheinsätze*). Δεν μπορεί λοιπόν να πει κανείς π.χ. «Υπάρχουν αντικείμενα» όπως λέει «Υπάρχουν βιβλία»· ούτε «Υπάρχουν 100 αντικείμενα» ή «Υπάρχουν $\aleph_0$ αντικείμενα». Το ίδιο ισχύει για τις λέξεις «σύμπλεγμα», «γεγονός», «συνάρτηση», «αριθμός» κ.λπ. Εκφράσεις όπως «Το 1 είναι αριθμός», «Υπάρχει μόνο ένα μηδέν» και όλες οι παρόμοιες είναι ανόητες.
 > — «So ist der variable Name „x“ das eigentliche Zeichen des Scheinbegriffes Gegenstand. Wo immer das Wort „Gegenstand“ („Ding“, „Sache“, etc.) richtig gebraucht wird, wird es in der Begriffsschrift durch den variablen Namen ausgedrückt. Zum Beispiel in dem Satz „es gibt 2 Gegenstände, welche . . .“ durch „(∃x, y) . . .“. Wo immer es anders, also als eigentliches Begriffswort gebraucht wird, entstehen unsinnige Scheinsätze. So kann man z. B. nicht sagen „Es gibt Gegenstände“, wie man etwa sagt „Es gibt Bücher“. Und ebenso wenig „Es gibt 100 Gegenstände“, oder „Es gibt ℵ0 Gegenstände“. Und es ist unsinnig, von der Anzahl aller Gegenstände zu sprechen. Dasselbe gilt von den Worten „Komplex“, „Tatsache“, „Funktion“, „Zahl“, etc. Sie alle bezeichnen formale Begriffe und werden in der Begriffsschrift durch Variable, nicht durch Funktionen oder Klassen dargestellt. (Wie Frege und Russell glaubten.) Ausdrücke wie „1 ist eine Zahl“, „es gibt nur Eine Null“ und alle ähnlichen sind unsinnig. (Es ist ebenso unsinnig zu sagen „es gibt nur eine 1“, als es unsinnig wäre, zu sagen: 2 + 2 ist um 3 Uhr gleich 4.)» (So the variable name "x" is the proper sign of the pseudo-concept object. Wherever the word "object" ("thing", "entity", etc.) is rightly used, it is expressed in logical symbolism by the variable name. For example in the proposition "there are two objects which . . .", by "(∃x, y) . . .". Wherever it is used otherwise, i.e. as a proper concept word, there arise senseless pseudo-propositions. So one cannot, e.g. say "There are objects" as one says "There are books". Nor "There are 100 objects" or "There are ℵ0 objects". And it is senseless to speak of the number of all objects. The same holds of the words "Complex", "Fact", "Function", "Number", etc. They all signify formal concepts and are presented in logical symbolism by variables, not by functions or classes (as Frege and Russell thought). Expressions like "1 is a number", "there is only one number nought", and all like them are senseless. (It is as senseless to say, "there is only one 1" as it would be to say: 2 + 2 is at 3 o'clock equal to 4.))
 
-#### 4.1273 – 4.1274 · Γενικός όρος τυπικής σειράς (*Formenreihe*)
+#### 4.12721 – 4.1274 · Τυπική έννοια και γενικός όρος τυπικής σειράς (*Formenreihe*)
+
+Η τυπική έννοια είναι ήδη δεδομένη μαζί με ένα αντικείμενο που εμπίπτει σε αυτήν. Δεν μπορεί λοιπόν κανείς να εισαγάγει ως θεμελιώδεις έννοιες (*Grundbegriffe*) και τα αντικείμενα μιας τυπικής έννοιας και την ίδια την τυπική έννοια: για παράδειγμα, όχι (όπως ο Russell) και την έννοια της συνάρτησης και ειδικές συναρτήσεις, ούτε την έννοια του αριθμού και ορισμένους αριθμούς (4.12721).
 
 Για να εκφράσουμε στη λογική τη γενική πρόταση «το $b$ είναι διάδοχος του $a$», χρειαζόμαστε έκφραση για τον **γενικό όρο μιας τυπικής σειράς** (*Formenreihe*). Ο Frege και ο Russell προσπάθησαν να τον ορίσουν με ψευδο-προτάσεις (προκαλώντας φαύλο κύκλο / *circulus vitiosus*), ενώ ο Wittgenstein δείχνει ότι μια τυπική σειρά ορίζεται καθαρά μέσω του πρώτου όρου της και της επαναληπτικής πράξης που παράγει κάθε επόμενο όρο (4.1273). Η ερώτηση για την ύπαρξη μιας τυπικής έννοιας είναι ανόητη (4.1274).
 
@@ -835,15 +837,17 @@ TRACTATUS LOGICO-PHILOSOPHICUS
 > **4.4**: Η πρόταση είναι η έκφραση της συμφωνίας και ασυμφωνίας με τις δυνατότητες αληθείας των στοιχειωδών προτάσεων.
 > — «Der Satz ist der Ausdruck der Übereinstimmung und Nichtübereinstimmung mit den Wahrheitsmöglichkeiten der Elementarsätze.» (A proposition is the expression of agreement and disagreement with the truth-possibilities of the elementary propositions.)
 
-#### 4.41 – 4.441 · Πιθανότητες αληθείας, συνθήκες αληθείας & ανυπαρξία λογικών αντικειμένων
+#### 4.41 – 4.43, 4.44 – 4.441 · Πιθανότητες αληθείας, συνθήκες αληθείας & ανυπαρξία λογικών αντικειμένων
 
 Οι δυνατότητες αληθείας των στοιχειωδών προτάσεων είναι οι συνθήκες της αλήθειας και του ψεύδους των προτάσεων (4.41). Για $n$ στοιχειώδεις προτάσεις υπάρχουν $2^{2^n}$ τρόποι συμφωνίας και ασυμφωνίας (4.42). Το σημείο που προκύπτει από τη συσχέτιση του σημείου «$W$» με τις δυνατότητες αληθείας είναι ένα προτασιακό σημείο· δεν υπάρχουν «λογικά αντικείμενα» (4.43–4.441).
 
 > **4.431**: Η έκφραση της συμφωνίας και ασυμφωνίας με τις δυνατότητες αληθείας των στοιχειωδών προτάσεων εκφράζει τις συνθήκες αληθείας της πρότασης. Η πρόταση είναι η έκφραση των συνθηκών αληθείας της.
 > — «Der Ausdruck der Übereinstimmung und Nichtübereinstimmung mit den Wahrheitsmöglichkeiten der Elementarsätze drückt die Wahrheitsbedingungen des Satzes aus. Der Satz ist der Ausdruck seiner Wahrheitsbedingungen. (Frege hat sie daher ganz richtig als Erklärung der Zeichen seiner Begriffsschrift vorausgeschickt. Nur ist die Erklärung des Wahrheitsbegriffes bei Frege falsch: Wären „das Wahre“ und „das Falsche“ wirklich Gegenstände und die Argumente in ∼p etc. dann wäre nach Frege's Bestimmung der Sinn von „∼p“ keineswegs bestimmt.)» (The expression of the agreement and disagreement with the truth-possibilities of the elementary propositions expresses the truth-conditions of the proposition. The proposition is the expression of its truth-conditions. (Frege has therefore quite rightly put them at the beginning, as explaining the signs of his logical symbolism. Only Frege's explanation of the truth-concept is false: if "the true" and "the false" were real objects and the arguments in ∼p, etc., then the sense of ∼p would by no means be determined by Frege's determination.))
 
-> **4.442**: Ένας πίνακας αληθείας (όπως για το $p \supset q$) είναι από μόνος του ένα προτασιακό σημείο. Η «γραμμή κρίσης» `⊢` του Frege είναι λογικά εντελώς χωρίς σημασία· δείχνει μόνο στους Frege (και Russell) ότι αυτοί οι συγγραφείς θεωρούν αληθείς τις προτάσεις που σημαδεύονται έτσι. Το `⊢` ανήκει επομένως εξίσου λίγο στην πρόταση όσο π.χ. η αρίθμηση των προτάσεων. Είναι αδύνατο μια πρόταση να μπορεί να δηλώσει για τον εαυτό της ότι είναι αληθής. Αν η σειρά των δυνατοτήτων αληθείας καθοριστεί μια για πάντα, τότε η τελευταία στήλη από μόνη της —γραμμένη ως `(WWFW)(p, q)`— εκφράζει τις συνθήκες αληθείας.
-> — «Es ist z. B. ein Wahrheitsschema ein Satzzeichen. (Frege's „Urteilsstrich“ „⊢“ ist logisch ganz bedeutungslos; er zeigt bei Frege (und Russell) nur an, dass diese Autoren die so bezeichneten Sätze für wahr halten. „⊢“ gehört daher ebenso wenig zum Satzgefüge, wie etwa die Nummer des Satzes. Ein Satz kann unmöglich von sich selbst aussagen, dass er wahr ist.) Ist die Reihenfolge der Wahrheitsmöglichkeiten im Schema durch eine Kombinationsregel ein für allemal festgesetzt, dann ist die letzte Kolonne allein schon ein Ausdruck der Wahrheitsbedingungen. Schreiben wir diese Kolonne als Reihe hin, so wird das Satzzeichen zu: „(WW-W)(p, q)“ oder deutlicher „(WWFW)(p, q)“.» (Thus e.g. a truth-table is a propositional sign. (Frege's assertion sign "⊢" is logically altogether meaningless; in Frege (and Russell) it only shows that these authors hold as true the propositions marked in this way. "⊢" belongs therefore to the propositions no more than does the number of the proposition. A proposition cannot possibly assert of itself that it is true.) If the sequence of the truth-possibilities in the schema is once for all determined by a rule of combination, then the last column is by itself an expression of the truth-conditions. If we write this column as a row the propositional sign becomes: "(TT-T)(p, q)", or more plainly: "(TTFT)(p, q)".)
+> **4.442**: Έτσι, π.χ., το […] είναι ένα προτασιακό σημείο. (Η «γραμμή κρίσης» `⊢` του Frege είναι λογικά εντελώς χωρίς σημασία· στον Frege (και στον Russell) δείχνει μόνο ότι αυτοί οι συγγραφείς θεωρούν αληθείς τις προτάσεις που σημειώνονται έτσι. Το `⊢` ανήκει επομένως στη δομή της πρότασης τόσο λίγο όσο, λόγου χάρη, ο αριθμός της πρότασης. Μια πρόταση είναι αδύνατο να δηλώνει για τον εαυτό της ότι είναι αληθής.) Αν η σειρά των δυνατοτήτων αληθείας στο σχήμα έχει καθοριστεί μια για πάντα με έναν κανόνα συνδυασμού, τότε η τελευταία στήλη είναι από μόνη της ήδη έκφραση των συνθηκών αληθείας. Αν γράψουμε αυτή τη στήλη ως σειρά, το προτασιακό σημείο γίνεται: `(WW-W)(p, q)` ή σαφέστερα `(WWFW)(p, q)`.
+> — «Es ist z. B.: […] ein Satzzeichen. (Frege's „Urteilsstrich“ „⊢“ ist logisch ganz bedeutungslos; er zeigt bei Frege (und Russell) nur an, dass diese Autoren die so bezeichneten Sätze für wahr halten. „⊢“ gehört daher ebenso wenig zum Satzgefüge, wie etwa die Nummer des Satzes. Ein Satz kann unmöglich von sich selbst aussagen, dass er wahr ist.) Ist die Reihenfolge der Wahrheitsmöglichkeiten im Schema durch eine Kombinationsregel ein für allemal festgesetzt, dann ist die letzte Kolonne allein schon ein Ausdruck der Wahrheitsbedingungen. Schreiben wir diese Kolonne als Reihe hin, so wird das Satzzeichen zu: „(WW-W)(p, q)“ oder deutlicher „(WWFW)(p, q)“.» (Thus e.g. […] is a propositional sign. (Frege's assertion sign "⊢" is logically altogether meaningless; in Frege (and Russell) it only shows that these authors hold as true the propositions marked in this way. "⊢" belongs therefore to the propositions no more than does the number of the proposition. A proposition cannot possibly assert of itself that it is true.) If the sequence of the truth-possibilities in the schema is once for all determined by a rule of combination, then the last column is by itself an expression of the truth-conditions. If we write this column as a row the propositional sign becomes: "(TT-T)(p, q)", or more plainly: "(TTFT)(p, q)".)
+
+Στη θέση του […] το πρωτότυπο τυπώνει τον ίδιο τον πίνακα αληθείας (το «σχήμα»), που αναπαράγεται εδώ:
 
 $$\begin{array}{cc|c} p & q & \\ \hline W & W & W \\ F & W & W \\ W & F & F \\ F & F & W \end{array} \quad \text{ή συντομότερα:} \quad \mathbf{(WWFW)(p, q)}$$
 
@@ -977,6 +981,10 @@ $$\begin{array}{cc|c} p & q & \\ \hline W & W & W \\ F & W & W \\ W & F & F \\ F
 > **5.1362**: Η ελευθερία της βούλησης συνίσταται στο ότι οι μελλοντικές πράξεις δεν μπορούν τώρα να είναι γνωστές. Θα μπορούσαμε να τις γνωρίζουμε μόνο αν η αιτιότητα ήταν μια εσωτερική αναγκαιότητα, όπως εκείνη του λογικού συμπερασμού. Η συνάφεια της γνώσης και του γνωστού είναι εκείνη της λογικής αναγκαιότητας. («Ο Α γνωρίζει ότι συμβαίνει $p$» είναι χωρίς νόημα, αν το $p$ είναι ταυτολογία.)
 > — «Die Willensfreiheit besteht darin, dass zukünftige Handlungen jetzt nicht gewusst werden können. Nur dann könnten wir sie wissen, wenn die Kausalität eine innere Notwendigkeit wäre, wie die des logischen Schlusses. — Der Zusammenhang von Wissen und Gewusstem, ist der der logischen Notwendigkeit. („A weiss, dass p der Fall ist“ ist sinnlos, wenn p eine Tautologie ist.)» (The freedom of the will consists in the fact that future actions cannot be known now. We could only know them if causality were an inner necessity, like that of logical deduction. The connexion of knowledge and what is known is that of logical necessity. ("A knows that p is the case" is senseless if p is a tautology.))
 
+#### 5.1363 · Το προφανές δεν δικαιολογεί την πίστη
+
+Αν από το ότι μια πρόταση μας είναι προφανής (*einleuchtet*) δεν *έπεται* ότι είναι αληθής, τότε το προφανές δεν δικαιολογεί ούτε την πίστη μας στην αλήθειά της (5.1363). Το ίδιο θέμα επανέρχεται δύο φορές: στο 5.4731, για το «αυταπόδεικτο» (*Einleuchten*) για το οποίο μίλησε τόσο πολύ ο Russell, και στο 6.1271, για τον βαθμό του αυταπόδεικτου που επικαλείται ο Frege ως κριτήριο του λογικού νόμου.
+
 #### Δ. Η λογική θεωρία των πιθανοτήτων (*Wahrscheinlichkeit*, 5.15 – 5.156)
 
 Επειδή από μία στοιχειώδη πρόταση δεν απορρέει με βεβαιότητα καμία άλλη, ο Wittgenstein ορίζει την πιθανότητα καθαρά λογικά ως λόγο βάσεων αληθείας (μια σύλληψη που επηρέασε τον Friedrich Waismann και συγγενεύει με τη λογική θεωρία των πιθανοτήτων του Rudolf Carnap).
@@ -1051,7 +1059,7 @@ $$P(s \mid r) = \frac{W_{rs}}{W_r}$$
 
 Τα σημεία των λογικών πράξεων, σε αντίθεση με τα σημεία γνήσιων σχέσεων, χρειάζονται παρενθέσεις — ένδειξη ότι δεν είναι πρωταρχικά σημεία. *«Τα σημεία των λογικών πράξεων είναι σημεία στίξης [Interpunktionen]»* (5.4611).
 
-#### 5.47 – 5.476 · Η λογική φροντίζει τον εαυτό της (*Die Logik muss für sich selber sorgen*)
+#### 5.47 – 5.47321, 5.474 – 5.476 · Η λογική φροντίζει τον εαυτό της (*Die Logik muss für sich selber sorgen*)
 
 Όπου υπάρχει συνθετότητα, υπάρχουν ήδη όλες οι λογικές σταθερές· το να δώσεις την ουσία της πρότασης σημαίνει να δώσεις την ουσία κάθε περιγραφής, άρα την ουσία του κόσμου (5.47–5.4711). **«Η λογική πρέπει να φροντίζει τον εαυτό της»** (5.473): το «αυτονόητο» (*das Einleuchten*), για το οποίο μίλησε ο Russell, είναι περιττό επειδή η ίδια η γλώσσα εμποδίζει κάθε λογικό σφάλμα· το ότι η λογική είναι *a priori* συνίσταται στο ότι δεν μπορεί να σκεφτεί κανείς μη-λογικά (5.4731).
 
@@ -1163,7 +1171,7 @@ $$P(s \mid r) = \frac{W_{rs}}{W_r}$$
 
 #### Δ. Η εφαρμογή της λογικής & η καθημερινή γλώσσα (5.55 – 5.5571)
 
-#### 5.55 – 5.5571 · Εφαρμογή της λογικής (*Anwendung der Logik*)
+#### 5.55 – 5.5562, 5.557 – 5.5571 · Εφαρμογή της λογικής (*Anwendung der Logik*)
 
 Δεν μπορούμε να πούμε *a priori* ποιες είναι οι μορφές των στοιχειωδών προτάσεων (π.χ. αν υπάρχουν σχέσεις 27 όρων)· αυτό το αποφασίζει μόνο η **εφαρμογή της λογικής** (*die Anwendung der Logik*, 5.557). Η «εμπειρία» που χρειαζόμαστε για να κατανοήσουμε τη λογική δεν είναι το *πώς* (*Wie*) είναι ο κόσμος, αλλά το *ότι* (*Was*) κάτι υπάρχει — κι όμως αυτό δεν είναι εμπειρία: η λογική είναι *πριν* από το πώς, όχι πριν από το τι (5.552).
 
@@ -1314,7 +1322,7 @@ x &= \Omega^0\text{'}x \quad &\text{Def.} \quad &(\text{Μηδέν φορές ε
 
 [Εργαστήριο λογικής: Το οπτικό διάγραμμα αγκυλών «W — p — F» (6.1203) →](#lab-wpf)
 
-#### 6.12 – 6.1224 · Η «μηδενική μέθοδος» (*Nullmethode*)
+#### 6.12 – 6.1202, 6.121 – 6.1224 · Η «μηδενική μέθοδος» (*Nullmethode*)
 
 Το ότι οι προτάσεις $p, q, r$, συνδεδεμένες με συγκεκριμένο τρόπο, δίνουν ταυτολογία, **δείχνει** ότι κατέχουν ορισμένες εσωτερικές δομικές ιδιότητες (6.12–6.1201). Οι προτάσεις της λογικής καταδεικνύουν αυτές τις ιδιότητες συνδέοντάς τες σε προτάσεις που δεν λένε τίποτα — μια **«μηδενική μέθοδο» (*Nullmethode*, 6.121)**, όπως δύο ίσα βάρη σε μια ζυγαριά που φέρνουν τον δείκτη στο 0 και έτσι φανερώνουν τη σχέση τους. Γι' αυτό σε μια κατάλληλη σημειογραφία μπορούμε να τα βγάλουμε πέρα ακόμη και χωρίς λογικές προτάσεις (6.122–6.1224).
 
@@ -1403,7 +1411,7 @@ x &= \Omega^0\text{'}x \quad &\text{Def.} \quad &(\text{Μηδέν φορές ε
 
 [Επιστήμη και σκάλα: Διαδραστική αναλογία του διχτυού (6.341) →](#lab-mesh)
 
-#### 6.342 – 6.362 · Τι ανήκει στο δίχτυ, τι στον κόσμο · αιτιότητα & χρόνος
+#### 6.342 – 6.3611, 6.362 · Τι ανήκει στο δίχτυ, τι στον κόσμο · αιτιότητα & χρόνος
 
 Το ότι η επιφάνεια *μπορεί* να περιγραφεί από ένα τετραγωνικό δίχτυ δεν λέει τίποτα για την επιφάνεια· αυτό που χαρακτηρίζει τον κόσμο είναι ποιες οπές είναι μαύρες ή λευκές, και το ότι η περιγραφή γίνεται πλήρης ή απλούστερη με ένα συγκεκριμένο δίχτυ (6.342). Οι γενικές αρχές της επιστήμης (Αρχή του Αποχρώντος Λόγου, Συνέχειας, Ελάχιστης Δράσης) δεν είναι γνώσεις για τα πράγματα του κόσμου, αλλά *a priori* γνώσεις για τις ιδιότητες του διχτυού μας (6.35). «Αν υπήρχε νόμος της αιτιότητας, θα μπορούσε να διατυπωθεί: "Υπάρχουν φυσικοί νόμοι"· αλλά αυτό δεν μπορεί να ειπωθεί: δείχνεται» (6.36). Με την ορολογία του [Hertz](#phil-hertz), μόνο νομοτελειακές συνάφειες είναι νοητές (6.361). Δεν μπορούμε να συγκρίνουμε καμία διεργασία με τη «ροή του χρόνου» —τέτοιο πράγμα δεν υπάρχει— αλλά μόνο με μια άλλη διεργασία, π.χ. την κίνηση του χρονομέτρου (6.3611). Ό,τι μπορεί να περιγραφεί μπορεί και να συμβεί (6.362).
 

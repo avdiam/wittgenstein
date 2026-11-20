@@ -725,6 +725,24 @@ The owner also asked for a sentence on AlexNet (Δ7).
 | Δ9 | The attention example in the text («γλώσσα») and in the figure («τράπεζα») differ; the figure is three subsections away | `attention_neurosymbolic.svg` | confirmed | Split: `attention.svg` redrawn with «γλώσσα» after the attention paragraph; `neurosymbolic.svg` in place, with sentence-case titles, «απορρίπτει κάθε λογικό κενό» and «της Εννοιογραφίας του Frege και των Principia» as in the text. Old figure and PNG removed. |
 | Δ10 | Four entries under «Πρωτότυπες εργασίες που αναφέρονται» are not cited | Search of the text: Saphra–Wiegreffe, Ji et al., Garcez–Lamb, Jurafsky–Martin | confirmed | New subsection «Επισκοπήσεις και εγχειρίδια». |
 
+## The redesign of the Tractatus page, reviewed (2026-11-21)
+
+Method: text of `5740-pdf.pdf` and of the Stern tree PDF extracted with
+`pdftotext`; every three-word phrase of each quotation searched in the
+extract (the extract moves italic words and breaks ligatures, so whole
+sentences cannot be matched); each flagged phrase read against the PDF.
+
+| # | Claim / location | Source | Verdict | Action |
+| :-- | :-- | :-- | :-- | :-- |
+| Ρ1 | The 150 German and 150 Ogden quotations of the cards | `5740-pdf.pdf` | confirmed, except Ρ2; the other flags were page breaks, moved italics, formulas and marked omissions | — |
+| Ρ2 | 4.442 «Es ist z. B. ein Wahrheitsschema ein Satzzeichen» / "a truth-table is a propositional sign" | `5740-pdf.pdf`: «Es ist z. B.: [figure] ein Satzzeichen» / "Thus e.g. [figure] is a propositional sign" | **corrected** | […] for the figure; Greek line retranslated. |
+| Ρ3 | The page covers the 526 propositions | Numbers of the Stern tree PDF (526; 7 / 79 / 74 / 109 / 151 / 105 / 1) against the cards and groups | **corrected**: 4.12721 and 5.1363 were missing | Both added; the build now checks coverage. |
+| Ρ4 | 5.1363 and the remarks on self-evidence | 5.4731 (Russell) and 6.1271 (Frege), `5740-pdf.pdf` | confirmed | Named in the new group. |
+
+Not checked in this review: the Greek of the cards, cards that end before
+their proposition, and whether earlier corrections of this ledger
+survived the rewrite (`TODO.md`).
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.

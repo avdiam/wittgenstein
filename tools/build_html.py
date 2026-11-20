@@ -762,6 +762,46 @@ def merge_tree_data(extracted_nodes, pm_quotes):
 # --------------------------------------------------------------------------
 # 6. Full Page Assembly
 # --------------------------------------------------------------------------
+def check_proposition_coverage(tree_data):
+    """Stop the build unless each of the 526 numbered propositions is covered exactly once,
+    either by a quoted card or by one grouped synthesis (ranges such as "2.013 – 2.0141, 2.0201")."""
+    canon = json.loads((ASSETS_DIR / "proposition_numbers.json").read_text(encoding="utf8"))
+    if len(canon) != 526 or len(set(canon)) != 526:
+        raise SystemExit("build_html: proposition_numbers.json must list the 526 distinct numbers")
+    known = set(canon)
+    seen = {}
+    problems = []
+    for item in tree_data:
+        label = item["num"]
+        if item["kind"] == "single":
+            covered = [label]
+        else:
+            covered = []
+            for part in label.split(","):
+                ends = [x.strip() for x in part.replace("-", "–").split("–")]
+                if len(ends) > 2 or not all(ends):
+                    problems.append(f"unreadable range '{label}'")
+                    continue
+                unknown = [x for x in ends if x not in known]
+                if unknown:
+                    problems.append(f"'{label}' names {unknown}, not a proposition number")
+                    continue
+                # the decimal numbering sorts as plain strings (2.01 < 2.011 < 2.02)
+                covered += [n for n in canon if ends[0] <= n <= ends[-1]]
+        for n in covered:
+            if n not in known:
+                problems.append(f"'{n}' is not a proposition number")
+            elif n in seen:
+                problems.append(f"{n} is covered twice: '{seen[n]}' and '{label}'")
+            else:
+                seen[n] = label
+    missing = [n for n in canon if n not in seen]
+    if missing:
+        problems.append(f"not covered by any card or group: {missing}")
+    if problems:
+        raise SystemExit("build_html: proposition coverage:\n  " + "\n  ".join(problems))
+
+
 def safe_json_for_script(obj):
     return json.dumps(obj, ensure_ascii=False).replace("</", "<\\/")
 
@@ -815,6 +855,7 @@ def build(strict_branches=False):
         rendered_sections[sec_id] = "\n<hr>\n".join(html_parts)
 
     tree_data = merge_tree_data(extracted_nodes, pm_quotes)
+    check_proposition_coverage(tree_data)
     valid_prop_nums = {item["num"] for item in tree_data if item["kind"] == "single"}
 
     # Validate that all terms.json targets and tree_data anchors resolve in the generated page
