@@ -868,6 +868,13 @@ a.phil-pill:hover { background: var(--mark); color: var(--content); }
   padding-bottom: 0.4rem;
   color: var(--mark);
 }
+.callout-dialogue .callout-note {
+  background: var(--content);
+  border-top: 1px solid var(--border-soft);
+  border-right: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
+  margin-bottom: 0;
+}
 
 /* Generic blockquote fallback (e.g. motto, preface quote) */
 .hw-quote {

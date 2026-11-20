@@ -447,9 +447,17 @@ def render_markdown_chunk(heading, body, sec_id, seen_anchors, extracted_nodes, 
 
         if re.search(r"Προκαταρκτικ", plain):
             pid = f"prelim-{sec_id}-{h3_counter[0]}"
+            while pid in seen_anchors:
+                h3_counter[0] += 1
+                pid = f"prelim-{sec_id}-{h3_counter[0]}"
+            seen_anchors.add(pid)
             return f'<h3 class="prelim-heading" id="{pid}">{inner}</h3>'
 
         hid = f"{sec_id}-h{h3_counter[0]}"
+        while hid in seen_anchors:
+            h3_counter[0] += 1
+            hid = f"{sec_id}-h{h3_counter[0]}"
+        seen_anchors.add(hid)
         return f'<h3 id="{hid}">{inner}</h3>'
 
     rendered = re.sub(r"<h3>(.*?)</h3>", handle_h3, rendered, flags=re.S)
@@ -619,7 +627,11 @@ def shorten_branch_label(label):
     """Keep sidebar branch labels concise (strip parentheticals and truncate cleanly)."""
     s = re.sub(r"\s*\([^)]*\)", "", label).strip()
     if len(s) > 42:
-        s = s[:42].rsplit(" ", 1)[0].rstrip(",·:;& ") + "…"
+        s = s[:42].rsplit(" ", 1)[0].rstrip(",·:;& ")
+        # Avoid leaving an unclosed opening quote « at the truncation edge
+        if s.count("«") > s.count("»"):
+            s = s.rsplit("«", 1)[0].rstrip(",·:;& ")
+        s += "…"
     return s
 
 
@@ -742,12 +754,30 @@ def build(strict_branches=False):
             # emit the sub-part heading cleanly for the 2nd+ chunk.
             if idx > 0:
                 sub_id = f"{sec_id}-part-{idx + 1}"
+                seen_anchors.add(sub_id)
                 chunk_html = f'<h3 id="{sub_id}">{html.escape(heading)}</h3>\n' + chunk_html
             html_parts.append(chunk_html)
         rendered_sections[sec_id] = "\n<hr>\n".join(html_parts)
 
     tree_data = merge_tree_data(extracted_nodes, pm_quotes)
     valid_prop_nums = {item["num"] for item in tree_data if item["kind"] == "single"}
+
+    # Validate that all terms.json targets and tree_data anchors resolve in the generated page
+    all_anchors = seen_anchors | set(SECTION_ORDER)
+    bad_terms = [
+        (t["id"], t["target"])
+        for t in terms
+        if t["target"].lstrip("#") not in all_anchors
+    ]
+    if bad_terms:
+        raise SystemExit(f"build_html: unresolved term targets in terms.json: {bad_terms}")
+    bad_tree = [
+        (item["num"], item["anchor"])
+        for item in tree_data
+        if item["anchor"].lstrip("#") not in all_anchors
+    ]
+    if bad_tree:
+        raise SystemExit(f"build_html: unresolved tree anchors: {bad_tree}")
 
     # Auto-link German terms & inline proposition numbers across rendered sections
     sections_html = []
@@ -946,7 +976,7 @@ TEMPLATE = """<!DOCTYPE html>
 
 
 def main():
-    page, stats, warnings = build(strict_branches=False)
+    page, stats, warnings = build(strict_branches=True)
     for w in warnings:
         print("warning:", w)
     if "--check" in sys.argv:
