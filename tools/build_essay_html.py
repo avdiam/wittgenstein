@@ -270,6 +270,12 @@ def assemble(title_html, subtitle_html, title_plain, toc, panels):
         f'title="{html.escape(tip)}" onclick="showTab(\'{tid}\', true)">{label}</button>'
         for k, (tid, label, tip) in enumerate(TABS)
     )
+    title_block = (
+        f'<div class="page-head">\n'
+        f'  <h1>{title_html}</h1>\n'
+        f'  <p class="subtitle">{subtitle_html}</p>\n'
+        f'</div>\n'
+    )
     panel_html = []
     for k, (tid, label, _) in enumerate(TABS):
         hidden = "" if k == 0 else " hidden"
@@ -285,10 +291,10 @@ def assemble(title_html, subtitle_html, title_plain, toc, panels):
                 'fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
                 '</button></div>\n'
                 f'<nav id="tocBody">{toc_html(toc)}</nav>\n</aside>\n'
-                f'<article class="reading">\n{inner}\n</article>\n</div>'
+                f'<div class="reading-canvas">\n<article class="reading">\n{title_block}{inner}\n</article>\n</div>\n</div>'
             )
         else:
-            inner = f'<article class="reading reading-wide">\n{inner}\n</article>'
+            inner = f'<div class="wide-canvas">\n{title_block}<article class="reading reading-wide">\n{inner}\n</article>\n</div>'
         panel_html.append(
             f'<div role="tabpanel" id="panel-{tid}" aria-labelledby="tab-btn-{tid}" class="panel"{hidden}>\n{inner}\n</div>'
         )
@@ -346,7 +352,7 @@ TEMPLATE = """<!DOCTYPE html>
     </a>
     <div class="tabs" role="tablist" aria-label="Μέρη της σελίδας">{tab_buttons}</div>
     <div class="hdr-search" role="search">
-      <input id="searchInput" type="search" placeholder="Αναζήτηση: Frege, αλγόριθμος, 1936"
+      <input id="searchInput" type="search" placeholder="Αναζήτηση: Frege, αλγόριθμος"
         aria-label="Αναζήτηση στο δοκίμιο" autocomplete="off" spellcheck="false">
       <kbd class="hdr-kbd" aria-hidden="true">/</kbd>
       <button type="button" id="searchClear" class="search-clear" hidden onclick="clearSearch(true)" title="Καθαρισμός (Esc)" aria-label="Καθαρισμός αναζήτησης">✕</button>
@@ -372,12 +378,6 @@ TEMPLATE = """<!DOCTYPE html>
   <div class="fig-zoom-bar"><span class="fig-zoom-hint">Σύρετε για να δείτε όλο το σχήμα</span><button type="button" class="hdr-link" id="figZoomClose">Κλείσιμο</button></div>
   <div class="fig-zoom-body"></div>
 </dialog>
-<div class="page-head">
-  <div class="page-head-inner">
-    <h1>{title_html}</h1>
-    <p class="subtitle">{subtitle_html}</p>
-  </div>
-</div>
 <main id="main">
 {panels}
 </main>
@@ -436,7 +436,7 @@ a { color: var(--primary); }
 
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 40; background: var(--content); border-bottom: 1px solid var(--border); }
-.hdr { min-height: 56px; display: flex; align-items: center; gap: 1rem; padding: 0 1rem; max-width: 1600px; margin: 0 auto; }
+.hdr { min-height: 56px; display: flex; align-items: center; gap: 1rem; padding: 0 1rem; max-width: 1760px; margin: 0 auto; }
 .brand { display: flex; flex-direction: column; line-height: 1.15; text-decoration: none; color: var(--foreground); min-width: 0; }
 .brand-main { font-weight: 650; font-size: .98rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .brand-sub { font-size: .75rem; color: var(--muted-foreground); }
@@ -471,29 +471,23 @@ a { color: var(--primary); }
 mark.search-hit { background: var(--mark-soft); color: inherit; border-bottom: 2px solid var(--mark); padding: 0 1px; border-radius: 2px; }
 mark.search-hit.active { background: var(--mark); color: var(--content); outline: 2px solid var(--mark); }
 
-/* Title block */
-.page-head { max-width: 1600px; margin: 0 auto; padding: 2rem 1rem 0; text-align: center; }
+/* Title block (sits inside the reading column so the left pane starts flush at the upper-left) */
+.page-head { margin: 0 0 2rem; padding: 0; text-align: center; }
 .page-head h1 { font-family: var(--font-serif); font-weight: 600; font-size: clamp(1.7rem, 3vw, 2.4rem); margin: 0; }
-.page-head .subtitle { font-family: var(--font-serif); font-style: italic; color: var(--muted-foreground); margin: .4rem 0 0; font-size: 1.1rem; }
+.page-head .subtitle, .reading .page-head .subtitle { font-family: var(--font-serif); font-style: italic; color: var(--muted-foreground); margin: .4rem 0 0; font-size: 1.1rem; text-align: center; -webkit-hyphens: none; hyphens: none; }
 
-/* Layout */
-main { max-width: 1600px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
-.text-layout { display: grid; grid-template-columns: var(--toc-w) minmax(0, 1fr); gap: 2.5rem; align-items: start; }
-body.toc-folded .text-layout { grid-template-columns: var(--rail-w) minmax(0, 1fr); }
-.reading { max-width: 44rem; font-family: var(--font-serif); font-size: 1.06rem; line-height: 1.72; }
+/* Layout: full-bleed sidebar + reading canvas, matching tractatus.html */
+main { margin: 0; padding: 0; }
+.text-layout { display: flex; align-items: stretch; min-height: calc(100vh - var(--header-h)); }
+.reading-canvas { flex: 1 1 auto; min-width: 0; background: var(--content); padding: 2rem clamp(1.1rem, 4vw, 3.25rem) 3.5rem; }
+.wide-canvas { max-width: 64rem; margin: 0 auto; padding: 2rem clamp(1.1rem, 3vw, 2rem) 3.5rem; }
+.reading { max-width: 50rem; margin: 0 auto; font-family: var(--font-serif); font-size: 1.06rem; line-height: 1.72; transition: max-width .18s ease; }
 .reading-wide { max-width: 60rem; margin: 0 auto; }
-/* On the text tab the title block uses the grid of the text below it, so
-   the title stays centred over the text column whether the contents pane is
-   open or folded; folded, the text column is centred in the space it gains. */
-@media (min-width: 1024px) {
-  body[data-tab="text"] .page-head { display: grid; grid-template-columns: var(--toc-w) minmax(0, 1fr); column-gap: 2.5rem; }
-  body.toc-folded[data-tab="text"] .page-head { grid-template-columns: var(--rail-w) minmax(0, 1fr); }
-  body[data-tab="text"] .page-head-inner { grid-column: 2; max-width: 44rem; }
-  body.toc-folded[data-tab="text"] .page-head-inner, body.toc-folded .text-layout .reading { margin-inline: auto; width: 100%; }
-}
+body.toc-folded .reading-canvas { padding-inline: clamp(1.25rem, 3vw, 2.5rem); }
+body.toc-folded .text-layout .reading { max-width: min(74rem, 100%); }
 
-/* Contents pane */
-.toc-pane { position: sticky; top: calc(var(--header-h) + 1rem); max-height: calc(100vh - var(--header-h) - 2rem); overflow-y: auto; background: var(--sidebar); border: 1px solid var(--border-soft); border-radius: 6px; padding: .75rem; font-size: .86rem; }
+/* Contents pane: flush at upper-left corner right under .site-header */
+.toc-pane { position: sticky; top: var(--header-h); align-self: flex-start; height: calc(100vh - var(--header-h)); width: var(--toc-w); flex: 0 0 auto; overflow-y: auto; background: var(--sidebar); border-right: 1px solid var(--border); border-radius: 0; padding: .9rem .7rem 1.75rem; font-size: .86rem; transition: width .18s ease, padding .18s ease; }
 .toc-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: .5rem; }
 .toc-label { font-weight: 600; color: var(--muted-foreground); font-size: .78rem; }
 .toc, .toc-sub { list-style: none; margin: 0; padding: 0; }
@@ -506,7 +500,7 @@ body.toc-folded .text-layout { grid-template-columns: var(--rail-w) minmax(0, 1f
 .toc-sub { margin: 0 0 .3rem 1.9rem; }
 .toc-sub a { font-size: .8rem; color: var(--muted-foreground); padding: .18rem .4rem; }
 body.toc-folded .toc-label, body.toc-folded .toc-text, body.toc-folded .toc-sub { display: none; }
-body.toc-folded .toc-pane { padding: .5rem .25rem; }
+body.toc-folded .toc-pane { width: var(--rail-w); padding: .75rem .25rem 1.5rem; overflow-x: hidden; }
 body.toc-folded .toc-head { justify-content: center; }
 body.toc-folded #tocFold svg { transform: rotate(180deg); }
 body.toc-folded .toc-num { min-width: 0; margin: 0 auto; }
@@ -571,19 +565,19 @@ ul.glossary li { padding: .7rem 0; border-bottom: 1px solid var(--border-soft); 
 ul.glossary li strong:first-child { display: block; font-family: var(--font-sans); color: var(--primary); }
 
 /* Footer */
-.site-footer { border-top: 1px solid var(--border); color: var(--muted-foreground); font-size: .82rem; padding: 1.5rem 1rem 2.5rem; max-width: 1600px; margin: 0 auto; }
+.site-footer { border-top: 1px solid var(--border); background: var(--content); color: var(--muted-foreground); font-size: .82rem; padding: 1.5rem 1.5rem 2.25rem; }
 .site-footer p { margin: .3rem 0; }
 
 /* Narrow screens: the contents pane becomes a drawer */
 .backdrop { position: fixed; inset: 0; background: rgba(0, 0, 0, .35); z-index: 45; }
 @media (max-width: 1023px) {
   .only-narrow { display: inline-flex; }
-  .text-layout, body.toc-folded .text-layout { grid-template-columns: minmax(0, 1fr); }
-  .toc-pane { position: fixed; top: 0; left: 0; bottom: 0; width: min(20rem, 85vw); max-height: none; z-index: 50; border-radius: 0; transform: translateX(-105%); transition: transform .2s ease; }
+  .text-layout { display: block; }
+  .toc-pane, body.toc-folded .toc-pane { position: fixed; top: 0; left: 0; bottom: 0; height: auto; width: min(20rem, 85vw); max-height: none; z-index: 50; border-radius: 0; padding: .9rem .75rem; transform: translateX(-105%); transition: transform .2s ease; }
   body.drawer-open .toc-pane { transform: none; }
   body.toc-folded .toc-label, body.toc-folded .toc-text, body.toc-folded .toc-sub { display: revert; }
   #tocFold { display: none; }
-  .reading { max-width: none; }
+  .reading, body.toc-folded .text-layout .reading { max-width: none; }
 }
 /* Below this width the search field takes a row of its own; the header's
    height is measured by the script and kept in --header-h. */
@@ -614,11 +608,12 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
 
 /* Print: the whole essay, no interface */
 @media print {
-  .site-header, .toc-pane, .filter, .site-footer, .skip { display: none !important; }
+  .site-header, .toc-pane, .filter, .site-footer, .skip, .wide-canvas .page-head { display: none !important; }
   .panel[hidden] { display: block !important; }
   .text-layout { display: block; }
+  .reading-canvas, .wide-canvas { padding: 0; background: #fff; max-width: none; }
   body { background: #fff; color: #000; }
-  .reading { max-width: none; font-size: 11pt; }
+  .reading, body.toc-folded .text-layout .reading { max-width: none; font-size: 11pt; }
   mark.search-hit, mark.search-hit.active { background: none; color: inherit; border: 0; outline: 0; padding: 0; }
 }
 """

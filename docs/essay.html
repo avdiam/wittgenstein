@@ -60,7 +60,7 @@ a { color: var(--primary); }
 
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 40; background: var(--content); border-bottom: 1px solid var(--border); }
-.hdr { min-height: 56px; display: flex; align-items: center; gap: 1rem; padding: 0 1rem; max-width: 1600px; margin: 0 auto; }
+.hdr { min-height: 56px; display: flex; align-items: center; gap: 1rem; padding: 0 1rem; max-width: 1760px; margin: 0 auto; }
 .brand { display: flex; flex-direction: column; line-height: 1.15; text-decoration: none; color: var(--foreground); min-width: 0; }
 .brand-main { font-weight: 650; font-size: .98rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .brand-sub { font-size: .75rem; color: var(--muted-foreground); }
@@ -95,29 +95,23 @@ a { color: var(--primary); }
 mark.search-hit { background: var(--mark-soft); color: inherit; border-bottom: 2px solid var(--mark); padding: 0 1px; border-radius: 2px; }
 mark.search-hit.active { background: var(--mark); color: var(--content); outline: 2px solid var(--mark); }
 
-/* Title block */
-.page-head { max-width: 1600px; margin: 0 auto; padding: 2rem 1rem 0; text-align: center; }
+/* Title block (sits inside the reading column so the left pane starts flush at the upper-left) */
+.page-head { margin: 0 0 2rem; padding: 0; text-align: center; }
 .page-head h1 { font-family: var(--font-serif); font-weight: 600; font-size: clamp(1.7rem, 3vw, 2.4rem); margin: 0; }
-.page-head .subtitle { font-family: var(--font-serif); font-style: italic; color: var(--muted-foreground); margin: .4rem 0 0; font-size: 1.1rem; }
+.page-head .subtitle, .reading .page-head .subtitle { font-family: var(--font-serif); font-style: italic; color: var(--muted-foreground); margin: .4rem 0 0; font-size: 1.1rem; text-align: center; -webkit-hyphens: none; hyphens: none; }
 
-/* Layout */
-main { max-width: 1600px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
-.text-layout { display: grid; grid-template-columns: var(--toc-w) minmax(0, 1fr); gap: 2.5rem; align-items: start; }
-body.toc-folded .text-layout { grid-template-columns: var(--rail-w) minmax(0, 1fr); }
-.reading { max-width: 44rem; font-family: var(--font-serif); font-size: 1.06rem; line-height: 1.72; }
+/* Layout: full-bleed sidebar + reading canvas, matching tractatus.html */
+main { margin: 0; padding: 0; }
+.text-layout { display: flex; align-items: stretch; min-height: calc(100vh - var(--header-h)); }
+.reading-canvas { flex: 1 1 auto; min-width: 0; background: var(--content); padding: 2rem clamp(1.1rem, 4vw, 3.25rem) 3.5rem; }
+.wide-canvas { max-width: 64rem; margin: 0 auto; padding: 2rem clamp(1.1rem, 3vw, 2rem) 3.5rem; }
+.reading { max-width: 50rem; margin: 0 auto; font-family: var(--font-serif); font-size: 1.06rem; line-height: 1.72; transition: max-width .18s ease; }
 .reading-wide { max-width: 60rem; margin: 0 auto; }
-/* On the text tab the title block uses the grid of the text below it, so
-   the title stays centred over the text column whether the contents pane is
-   open or folded; folded, the text column is centred in the space it gains. */
-@media (min-width: 1024px) {
-  body[data-tab="text"] .page-head { display: grid; grid-template-columns: var(--toc-w) minmax(0, 1fr); column-gap: 2.5rem; }
-  body.toc-folded[data-tab="text"] .page-head { grid-template-columns: var(--rail-w) minmax(0, 1fr); }
-  body[data-tab="text"] .page-head-inner { grid-column: 2; max-width: 44rem; }
-  body.toc-folded[data-tab="text"] .page-head-inner, body.toc-folded .text-layout .reading { margin-inline: auto; width: 100%; }
-}
+body.toc-folded .reading-canvas { padding-inline: clamp(1.25rem, 3vw, 2.5rem); }
+body.toc-folded .text-layout .reading { max-width: min(74rem, 100%); }
 
-/* Contents pane */
-.toc-pane { position: sticky; top: calc(var(--header-h) + 1rem); max-height: calc(100vh - var(--header-h) - 2rem); overflow-y: auto; background: var(--sidebar); border: 1px solid var(--border-soft); border-radius: 6px; padding: .75rem; font-size: .86rem; }
+/* Contents pane: flush at upper-left corner right under .site-header */
+.toc-pane { position: sticky; top: var(--header-h); align-self: flex-start; height: calc(100vh - var(--header-h)); width: var(--toc-w); flex: 0 0 auto; overflow-y: auto; background: var(--sidebar); border-right: 1px solid var(--border); border-radius: 0; padding: .9rem .7rem 1.75rem; font-size: .86rem; transition: width .18s ease, padding .18s ease; }
 .toc-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: .5rem; }
 .toc-label { font-weight: 600; color: var(--muted-foreground); font-size: .78rem; }
 .toc, .toc-sub { list-style: none; margin: 0; padding: 0; }
@@ -130,7 +124,7 @@ body.toc-folded .text-layout { grid-template-columns: var(--rail-w) minmax(0, 1f
 .toc-sub { margin: 0 0 .3rem 1.9rem; }
 .toc-sub a { font-size: .8rem; color: var(--muted-foreground); padding: .18rem .4rem; }
 body.toc-folded .toc-label, body.toc-folded .toc-text, body.toc-folded .toc-sub { display: none; }
-body.toc-folded .toc-pane { padding: .5rem .25rem; }
+body.toc-folded .toc-pane { width: var(--rail-w); padding: .75rem .25rem 1.5rem; overflow-x: hidden; }
 body.toc-folded .toc-head { justify-content: center; }
 body.toc-folded #tocFold svg { transform: rotate(180deg); }
 body.toc-folded .toc-num { min-width: 0; margin: 0 auto; }
@@ -195,19 +189,19 @@ ul.glossary li { padding: .7rem 0; border-bottom: 1px solid var(--border-soft); 
 ul.glossary li strong:first-child { display: block; font-family: var(--font-sans); color: var(--primary); }
 
 /* Footer */
-.site-footer { border-top: 1px solid var(--border); color: var(--muted-foreground); font-size: .82rem; padding: 1.5rem 1rem 2.5rem; max-width: 1600px; margin: 0 auto; }
+.site-footer { border-top: 1px solid var(--border); background: var(--content); color: var(--muted-foreground); font-size: .82rem; padding: 1.5rem 1.5rem 2.25rem; }
 .site-footer p { margin: .3rem 0; }
 
 /* Narrow screens: the contents pane becomes a drawer */
 .backdrop { position: fixed; inset: 0; background: rgba(0, 0, 0, .35); z-index: 45; }
 @media (max-width: 1023px) {
   .only-narrow { display: inline-flex; }
-  .text-layout, body.toc-folded .text-layout { grid-template-columns: minmax(0, 1fr); }
-  .toc-pane { position: fixed; top: 0; left: 0; bottom: 0; width: min(20rem, 85vw); max-height: none; z-index: 50; border-radius: 0; transform: translateX(-105%); transition: transform .2s ease; }
+  .text-layout { display: block; }
+  .toc-pane, body.toc-folded .toc-pane { position: fixed; top: 0; left: 0; bottom: 0; height: auto; width: min(20rem, 85vw); max-height: none; z-index: 50; border-radius: 0; padding: .9rem .75rem; transform: translateX(-105%); transition: transform .2s ease; }
   body.drawer-open .toc-pane { transform: none; }
   body.toc-folded .toc-label, body.toc-folded .toc-text, body.toc-folded .toc-sub { display: revert; }
   #tocFold { display: none; }
-  .reading { max-width: none; }
+  .reading, body.toc-folded .text-layout .reading { max-width: none; }
 }
 /* Below this width the search field takes a row of its own; the header's
    height is measured by the script and kept in --header-h. */
@@ -238,11 +232,12 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
 
 /* Print: the whole essay, no interface */
 @media print {
-  .site-header, .toc-pane, .filter, .site-footer, .skip { display: none !important; }
+  .site-header, .toc-pane, .filter, .site-footer, .skip, .wide-canvas .page-head { display: none !important; }
   .panel[hidden] { display: block !important; }
   .text-layout { display: block; }
+  .reading-canvas, .wide-canvas { padding: 0; background: #fff; max-width: none; }
   body { background: #fff; color: #000; }
-  .reading { max-width: none; font-size: 11pt; }
+  .reading, body.toc-folded .text-layout .reading { max-width: none; font-size: 11pt; }
   mark.search-hit, mark.search-hit.active { background: none; color: inherit; border: 0; outline: 0; padding: 0; }
 }
 
@@ -261,7 +256,7 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
     </a>
     <div class="tabs" role="tablist" aria-label="Μέρη της σελίδας"><button type="button" role="tab" id="tab-btn-text" aria-controls="panel-text" aria-selected="true" class="tab active" title="Το δοκίμιο, σε δώδεκα ενότητες" onclick="showTab('text', true)">Κείμενο</button><button type="button" role="tab" id="tab-btn-timeline" aria-controls="panel-timeline" aria-selected="false" class="tab" title="Τα κύρια σημεία της ιστορίας, με τη σειρά" onclick="showTab('timeline', true)">Χρονολόγιο</button><button type="button" role="tab" id="tab-btn-glossary" aria-controls="panel-glossary" aria-selected="false" class="tab" title="Οι όροι που εξηγεί το κείμενο" onclick="showTab('glossary', true)">Γλωσσάρι</button><button type="button" role="tab" id="tab-btn-sources" aria-controls="panel-sources" aria-selected="false" class="tab" title="Πηγές και περαιτέρω ανάγνωση" onclick="showTab('sources', true)">Πηγές</button></div>
     <div class="hdr-search" role="search">
-      <input id="searchInput" type="search" placeholder="Αναζήτηση: Frege, αλγόριθμος, 1936"
+      <input id="searchInput" type="search" placeholder="Αναζήτηση: Frege, αλγόριθμος"
         aria-label="Αναζήτηση στο δοκίμιο" autocomplete="off" spellcheck="false">
       <kbd class="hdr-kbd" aria-hidden="true">/</kbd>
       <button type="button" id="searchClear" class="search-clear" hidden onclick="clearSearch(true)" title="Καθαρισμός (Esc)" aria-label="Καθαρισμός αναζήτησης">✕</button>
@@ -287,12 +282,6 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
   <div class="fig-zoom-bar"><span class="fig-zoom-hint">Σύρετε για να δείτε όλο το σχήμα</span><button type="button" class="hdr-link" id="figZoomClose">Κλείσιμο</button></div>
   <div class="fig-zoom-body"></div>
 </dialog>
-<div class="page-head">
-  <div class="page-head-inner">
-    <h1>Λογική, γλώσσα και μηχανές</h1>
-    <p class="subtitle">Από τον Πλάτωνα στον Wittgenstein και την τεχνητή νοημοσύνη</p>
-  </div>
-</div>
 <main id="main">
 <div role="tabpanel" id="panel-text" aria-labelledby="tab-btn-text" class="panel">
 <div class="text-layout">
@@ -300,7 +289,12 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
 <div class="toc-head"><span class="toc-label">Περιεχόμενα</span><button type="button" id="tocFold" class="icon-btn" onclick="toggleToc()" aria-expanded="true" aria-controls="tocBody" title="Δίπλωμα των περιεχομένων (πλήκτρο [)"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
 <nav id="tocBody"><ol class="toc"><li><a href="#sec-1" data-target="sec-1" class="toc-sec"><span class="toc-num">1</span><span class="toc-text">Η αρχαία αφετηρία: λέξεις, αλήθεια και συλλογισμός</span></a><ol class="toc-sub"><li><a href="#sec-1-1" data-target="sec-1-1">Ο Πλάτων και το ερώτημα για τις λέξεις</a></li><li><a href="#sec-1-2" data-target="sec-1-2">Ο Αριστοτέλης και ο συλλογισμός</a></li><li><a href="#sec-1-3" data-target="sec-1-3">Οι Μεγαρικοί και οι Στωικοί</a></li></ol></li><li><a href="#sec-2" data-target="sec-2" class="toc-sec"><span class="toc-num">2</span><span class="toc-text">Από τον Μεσαίωνα στον Leibniz</span></a><ol class="toc-sub"><li><a href="#sec-2-1" data-target="sec-2-1">Ο Αυγουστίνος, ο Βοήθιος, οι Άραβες και οι Βυζαντινοί</a></li><li><a href="#sec-2-2" data-target="sec-2-2">Ο Αβελάρδος, ο Ακινάτης και ο Ockham</a></li><li><a href="#sec-2-3" data-target="sec-2-3">Ο Leibniz</a></li></ol></li><li><a href="#sec-3" data-target="sec-3" class="toc-sec"><span class="toc-num">3</span><span class="toc-text">Τι μπορούμε να γνωρίζουμε: Locke, Hume, Kant</span></a></li><li><a href="#sec-4" data-target="sec-4" class="toc-sec"><span class="toc-num">4</span><span class="toc-text">Μηχανές και άλγεβρα: Babbage, Lovelace, Boole</span></a><ol class="toc-sub"><li><a href="#sec-4-1" data-target="sec-4-1">Η Αναλυτική Μηχανή</a></li><li><a href="#sec-4-2" data-target="sec-4-2">Η άλγεβρα του Boole</a></li></ol></li><li><a href="#sec-5" data-target="sec-5" class="toc-sec"><span class="toc-num">5</span><span class="toc-text">Frege, Russell και η κρίση των θεμελίων</span></a><ol class="toc-sub"><li><a href="#sec-5-1" data-target="sec-5-1">Ο Gottlob Frege και η νέα λογική</a></li><li><a href="#sec-5-2" data-target="sec-5-2">Νόημα και αναφορά</a></li><li><a href="#sec-5-3" data-target="sec-5-3">Οι λογικοί σύνδεσμοι</a></li><li><a href="#sec-5-4" data-target="sec-5-4">Το παράδοξο του Russell</a></li><li><a href="#sec-5-5" data-target="sec-5-5">Οι απαντήσεις στο παράδοξο</a></li><li><a href="#sec-5-6" data-target="sec-5-6">Η ανάλυση των περιγραφών</a></li></ol></li><li><a href="#sec-6" data-target="sec-6" class="toc-sec"><span class="toc-num">6</span><span class="toc-text">Ο πρώιμος Wittgenstein και το <em>Tractatus</em></span></a><ol class="toc-sub"><li><a href="#sec-6-1" data-target="sec-6-1">Ο δρόμος προς το βιβλίο</a></li><li><a href="#sec-6-2" data-target="sec-6-2">Η πρόταση ως εικόνα</a></li><li><a href="#sec-6-3" data-target="sec-6-3">Τρεις θέσεις για τη λογική</a></li><li><a href="#sec-6-4" data-target="sec-6-4">Όσα λέγονται και όσα δείχνονται</a></li><li><a href="#sec-6-5" data-target="sec-6-5">Γιατί το βιβλίο είχε τέτοια απήχηση</a></li><li><a href="#sec-6-6" data-target="sec-6-6">Ο Κύκλος της Βιέννης</a></li></ol></li><li><a href="#sec-7" data-target="sec-7" class="toc-sec"><span class="toc-num">7</span><span class="toc-text">Ο Gödel και τα όρια της απόδειξης</span></a><ol class="toc-sub"><li><a href="#sec-7-1" data-target="sec-7-1">Το σχέδιο του Hilbert</a></li><li><a href="#sec-7-2" data-target="sec-7-2">Το πρώτο θεώρημα</a></li><li><a href="#sec-7-3" data-target="sec-7-3">Το δεύτερο θεώρημα</a></li><li><a href="#sec-7-4" data-target="sec-7-4">Ο Tarski και η αλήθεια</a></li><li><a href="#sec-7-5" data-target="sec-7-5">Η αντίδραση του Wittgenstein</a></li></ol></li><li><a href="#sec-8" data-target="sec-8" class="toc-sec"><span class="toc-num">8</span><span class="toc-text">Ο Turing και τα όρια του υπολογισμού</span></a><ol class="toc-sub"><li><a href="#sec-8-1" data-target="sec-8-1">Το πρόβλημα της απόφασης</a></li><li><a href="#sec-8-2" data-target="sec-8-2">Τι είναι η μηχανή του Turing</a></li><li><a href="#sec-8-3" data-target="sec-8-3">Η καθολική μηχανή</a></li><li><a href="#sec-8-4" data-target="sec-8-4">Το πρόβλημα του τερματισμού</a></li><li><a href="#sec-8-5" data-target="sec-8-5">Αποφασίσιμα και μη αποφασίσιμα προβλήματα</a></li><li><a href="#sec-8-6" data-target="sec-8-6">Ο Turing στις παραδόσεις του Wittgenstein</a></li></ol></li><li><a href="#sec-9" data-target="sec-9" class="toc-sec"><span class="toc-num">9</span><span class="toc-text">Κυκλώματα και πληροφορία: Shannon, von Neumann</span></a></li><li><a href="#sec-10" data-target="sec-10" class="toc-sec"><span class="toc-num">10</span><span class="toc-text">Ο ύστερος Wittgenstein: η γλώσσα ως χρήση</span></a><ol class="toc-sub"><li><a href="#sec-10-1" data-target="sec-10-1">Η επιστροφή</a></li><li><a href="#sec-10-2" data-target="sec-10-2">Οι <em>Φιλοσοφικές Έρευνες</em></a></li><li><a href="#sec-10-3" data-target="sec-10-3">Οι δύο φάσεις σε αντιπαραβολή</a></li><li><a href="#sec-10-4" data-target="sec-10-4">Η επίδραση της δεύτερης φάσης</a></li><li><a href="#sec-10-5" data-target="sec-10-5">Μαρξιστές και εγελιανοί αναγνώστες</a></li></ol></li><li><a href="#sec-11" data-target="sec-11" class="toc-sec"><span class="toc-num">11</span><span class="toc-text">Από τη λογική στην τεχνητή νοημοσύνη</span></a><ol class="toc-sub"><li><a href="#sec-11-1" data-target="sec-11-1">Το παιχνίδι της μίμησης</a></li><li><a href="#sec-11-2" data-target="sec-11-2">Η συμβολική περίοδος</a></li><li><a href="#sec-11-3" data-target="sec-11-3">Το κινέζικο δωμάτιο</a></li><li><a href="#sec-11-4" data-target="sec-11-4">Τα νευρωνικά δίκτυα και τα γλωσσικά μοντέλα</a></li><li><a href="#sec-11-5" data-target="sec-11-5">Το «μαύρο κουτί»</a></li><li><a href="#sec-11-6" data-target="sec-11-6">Τα όρια</a></li><li><a href="#sec-11-7" data-target="sec-11-7">Ο συνδυασμός των δύο προσεγγίσεων</a></li></ol></li><li><a href="#sec-12" data-target="sec-12" class="toc-sec"><span class="toc-num">12</span><span class="toc-text">Επίλογος</span></a><ol class="toc-sub"><li><a href="#sec-12-1" data-target="sec-12-1">Υστερόγραφο</a></li></ol></li></ol></nav>
 </aside>
+<div class="reading-canvas">
 <article class="reading">
+<div class="page-head">
+  <h1>Λογική, γλώσσα και μηχανές</h1>
+  <p class="subtitle">Από τον Πλάτωνα στον Wittgenstein και την τεχνητή νοημοσύνη</p>
+</div>
 <div class="lede" id="intro"><p>Οι υπολογιστές και η τεχνητή νοημοσύνη δεν ξεκίνησαν στα εργαστήρια ηλεκτρονικής του 20ού αιώνα. Πίσω τους βρίσκεται μια μακριά συζήτηση για τρία ερωτήματα: πώς συνδέονται οι λέξεις με τα πράγματα, πότε ένα συμπέρασμα βγαίνει σωστά από όσα έχουμε δεχτεί, και αν ο συλλογισμός μπορεί να γραφτεί ως σύνολο κανόνων που εφαρμόζονται μηχανικά. Το κείμενο αυτό ακολουθεί τη συζήτηση από την αρχαία Ελλάδα ως σήμερα. Στο κέντρο του βρίσκεται ο Ludwig Wittgenstein, επειδή το έργο του έχει δύο φάσεις που αντιστοιχούν σε δύο διαφορετικούς τρόπους να σκεφτεί κανείς τη γλώσσα — και οι δύο ξαναβρίσκονται στη σημερινή συζήτηση για τις μηχανές.</p>
 <p>Ένα σχήμα επανέρχεται σε όλη τη διαδρομή. Κάθε προσπάθεια να κλειστεί ο συλλογισμός σε ένα πλήρες σύστημα κανόνων έδωσε δύο πράγματα: ένα νέο εργαλείο και την ακριβή γνώση του τι το εργαλείο αυτό δεν μπορεί να κάνει. Τα τρία όρια που θα συναντήσουμε, του Russell, του Gödel και του Turing, στηρίζονται σε μια κοινή ιδέα: κάτι που αναφέρεται στον εαυτό του.</p>
 <p>Το κείμενο απευθύνεται σε αναγνώστες χωρίς ειδικές γνώσεις μαθηματικών ή πληροφορικής. Οι λίγοι τεχνικοί όροι εξηγούνται εκεί όπου εμφανίζονται. Τα ονόματα γράφονται με λατινικούς χαρακτήρες, με την ελληνική προφορά όταν παρουσιάζονται τα βασικά πρόσωπα. Οι δεκαδικοί αριθμοί σε παρένθεση μετά από παραθέματα του Wittgenstein (για παράδειγμα 4.112) είναι οι αριθμοί των προτάσεων του <em>Tractatus</em>, ενώ το σύμβολο § παραπέμπει στις παραγράφους των <em>Φιλοσοφικών Ερευνών</em>. Όπου οι μελετητές διαφωνούν, το κείμενο αναφέρει τις βασικές αναγνώσεις σε μια «Ερμηνευτική σημείωση» και δεν διαλέγει. Οι ενότητες <a class="xref" href="#sec-7">7</a> και <a class="xref" href="#sec-8">8</a> είναι οι πιο τεχνικές. Το νήμα μπορεί να ακολουθηθεί και χωρίς κάθε βήμα των αποδείξεων.</p>
@@ -1686,7 +1680,13 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
 </article>
 </div>
 </div>
+</div>
 <div role="tabpanel" id="panel-timeline" aria-labelledby="tab-btn-timeline" class="panel" hidden>
+<div class="wide-canvas">
+<div class="page-head">
+  <h1>Λογική, γλώσσα και μηχανές</h1>
+  <p class="subtitle">Από τον Πλάτωνα στον Wittgenstein και την τεχνητή νοημοσύνη</p>
+</div>
 <article class="reading reading-wide">
 <section class="essay-section" id="part-timeline">
 <h2>Χρονολόγιο</h2>
@@ -1988,7 +1988,13 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
 </section>
 </article>
 </div>
+</div>
 <div role="tabpanel" id="panel-glossary" aria-labelledby="tab-btn-glossary" class="panel" hidden>
+<div class="wide-canvas">
+<div class="page-head">
+  <h1>Λογική, γλώσσα και μηχανές</h1>
+  <p class="subtitle">Από τον Πλάτωνα στον Wittgenstein και την τεχνητή νοημοσύνη</p>
+</div>
 <article class="reading reading-wide">
 <section class="essay-section" id="part-glossary">
 <h2>Γλωσσάρι</h2>
@@ -2044,7 +2050,13 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
 </section>
 </article>
 </div>
+</div>
 <div role="tabpanel" id="panel-sources" aria-labelledby="tab-btn-sources" class="panel" hidden>
+<div class="wide-canvas">
+<div class="page-head">
+  <h1>Λογική, γλώσσα και μηχανές</h1>
+  <p class="subtitle">Από τον Πλάτωνα στον Wittgenstein και την τεχνητή νοημοσύνη</p>
+</div>
 <article class="reading reading-wide">
 <section class="essay-section" id="part-sources">
 <h2>Πηγές και περαιτέρω ανάγνωση</h2>
@@ -2168,6 +2180,7 @@ ul.glossary li strong:first-child { display: block; font-family: var(--font-sans
 <p>Τα περισσότερα ιστορικά στοιχεία προέρχονται από τα λήμματα της <em>Stanford Encyclopedia of Philosophy</em> (plato.stanford.edu), ιδίως: Ancient Logic· Plato's Cratylus· Plato on Knowledge in the Theaetetus· Aristotle's Logic· Al-Farabi· William of Ockham· Leibniz· John Stuart Mill· Pragmatism· John Dewey· George Boole· Gottlob Frege· Russell's Paradox· Principia Mathematica· Ludwig Wittgenstein· Wittgenstein's Philosophy of Mathematics· Gödel's Incompleteness Theorems· Hilbert's Program· The Church-Turing Thesis· Turing Machines· Computational Complexity Theory· The Modern History of Computing· Artificial Intelligence· Cognitive Science· Vienna Circle· Karl Popper· Willard Van Orman Quine· The Analysis of Knowledge. Βιογραφικά στοιχεία για τους μαθηματικούς προέρχονται από το αρχείο MacTutor του Πανεπιστημίου του St Andrews (mathshistory.st-andrews.ac.uk).</p>
 </section>
 </article>
+</div>
 </div>
 </main>
 <footer class="site-footer">
