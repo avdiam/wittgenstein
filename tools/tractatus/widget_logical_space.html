@@ -1,0 +1,12 @@
+<div class="inline-widget" id="widget-logical-space">
+  <div class="inline-widget-label">Διαδραστική δοκιμή λογικού χώρου (1.12 &amp; 1.21)</div>
+  <p class="inline-widget-desc">Κάντε κλικ στις τρεις καταστάσεις πραγμάτων (S₁, S₂, S₃) για να δείτε πώς καθεμία μεταβάλλεται ανεξάρτητα (1.21) και πώς το σύνολο των θετικών γεγονότων καθορίζει αυτόματα και τα αρνητικά (1.12):</p>
+  <div class="lab-btn-row">
+    <button type="button" onclick="toggleLogicalSpaceFact(0)" id="ls-btn-0" class="hw-btn hw-btn-active">S₁: Βρέχει στην Αθήνα [Ισχύει]</button>
+    <button type="button" onclick="toggleLogicalSpaceFact(1)" id="ls-btn-1" class="hw-btn">S₂: Το βιβλίο είναι στο τραπέζι [Δεν ισχύει]</button>
+    <button type="button" onclick="toggleLogicalSpaceFact(2)" id="ls-btn-2" class="hw-btn hw-btn-active">S₃: Ο Σωκράτης είναι σοφός [Ισχύει]</button>
+  </div>
+  <div id="ls-output" class="lab-readout" aria-live="polite">
+    Κόσμος (2.04 — θετικά γεγονότα): {S₁, S₃} | Πραγματικότητα (2.06): +S₁, −S₂, +S₃ | Μη-υπάρχοντα (1.12): {S₂}
+  </div>
+</div>

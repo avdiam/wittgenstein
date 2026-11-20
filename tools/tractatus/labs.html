@@ -1,0 +1,498 @@
+    <!-- =====================================================================
+         VIEW: TREE STRUCTURE (ΔΕΝΔΡΟΕΙΔΗΣ ΜΟΡΦΗ)
+         ===================================================================== -->
+    <div id="view-tree" class="tab-view" hidden>
+      <div class="lab-shell">
+        <div class="lab-card">
+          <div class="lab-head">
+            <div class="lab-head-text">
+              <div class="lab-badges">
+                <span class="hw-badge">Δομική ιεραρχία · Stern (2023) &amp; εκδόσεις του έργου</span>
+                <span id="treeCountBadge" class="hw-badge"></span>
+              </div>
+              <h2>Δενδροειδής μορφή των προτάσεων</h2>
+            </div>
+            <div class="lab-controls">
+              <input id="treeSearchInput" type="search" placeholder="Φιλτράρισμα (π.χ. 2.0211, Bild, Frege)..."
+                aria-label="Φιλτράρισμα δενδροειδούς μορφής"
+                oninput="renderTreeExplorer()" class="lab-input" />
+              <select id="treeRootFilter" onchange="renderTreeExplorer()" aria-label="Φίλτρο κορμού" class="lab-select">
+                <option value="all">Όλοι οι κορμοί (1 έως 7)</option>
+                <option value="1">Κορμός 1: Ο κόσμος και τα γεγονότα</option>
+                <option value="2">Κορμός 2: Καταστάσεις πραγμάτων και εικόνα</option>
+                <option value="3">Κορμός 3: Σκέψη και προτασιακό σημείο</option>
+                <option value="4">Κορμός 4: Πρόταση με νόημα και W/F</option>
+                <option value="5">Κορμός 5: Συναρτήσεις αληθείας, N(ξ̄) και εγώ</option>
+                <option value="6">Κορμός 6: [p̄, ξ̄, N(ξ̄)], επιστήμη και ηθική</option>
+                <option value="7">Κορμός 7: Η σιωπή</option>
+              </select>
+              <select id="treeLevelFilter" onchange="renderTreeExplorer()" aria-label="Φίλτρο κατηγορίας" class="lab-select">
+                <option value="all">Όλες οι εγγραφές της ανάλυσης</option>
+                <option value="roots">Μόνο οι 7 κύριες προτάσεις (1–7)</option>
+                <option value="main">Οι 7 κύριες και οι 25 κύριοι κλάδοι</option>
+                <option value="zero">Μόνο προκαταρκτικές με 0 (n.0x)</option>
+                <option value="single">Μόνο αυτούσιες προτάσεις</option>
+                <option value="group">Μόνο ομαδοποιημένες ενότητες</option>
+              </select>
+              <button type="button" onclick="resetTreeFilters()" class="hw-btn">↺ Επαναφορά</button>
+            </div>
+          </div>
+
+          <div class="tree-pills">
+            <span class="tree-pills-label">Κορμός:</span>
+            <button type="button" onclick="quickFilterTreeRoot('all')" id="tree-pill-all" class="hw-btn hw-btn-active">Όλα</button>
+            <button type="button" onclick="quickFilterTreeRoot('1')" id="tree-pill-1" class="hw-btn">1</button>
+            <button type="button" onclick="quickFilterTreeRoot('2')" id="tree-pill-2" class="hw-btn">2</button>
+            <button type="button" onclick="quickFilterTreeRoot('3')" id="tree-pill-3" class="hw-btn">3</button>
+            <button type="button" onclick="quickFilterTreeRoot('4')" id="tree-pill-4" class="hw-btn">4</button>
+            <button type="button" onclick="quickFilterTreeRoot('5')" id="tree-pill-5" class="hw-btn">5</button>
+            <button type="button" onclick="quickFilterTreeRoot('6')" id="tree-pill-6" class="hw-btn">6</button>
+            <button type="button" onclick="quickFilterTreeRoot('7')" id="tree-pill-7" class="hw-btn">7</button>
+          </div>
+
+          <p class="lab-lead">
+            Όλες οι κύριες προτάσεις (1–7), οι 25 κύριοι κλάδοι και οι προκαταρκτικές ή επιμέρους προτάσεις (αυτούσιες και ομαδοποιημένες) που εξετάζονται στην ανάλυση, διατεταγμένες κατά τη δενδροειδή αρίθμηση του έργου. Κάθε κόμβος παραπέμπει απευθείας στο αντίστοιχο σημείο της ανάλυσης.
+          </p>
+
+          <div id="treeExplorerContainer" class="tree-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =====================================================================
+         VIEW: LOGIC LABORATORY (TRUTH TABLES, W-p-F, PROBABILITY URN)
+         ===================================================================== -->
+    <div id="view-logic" class="tab-view" hidden>
+      <div class="lab-shell">
+
+        <article class="lab-card" id="lab-truth-tables">
+          <div class="lab-head">
+            <div class="lab-head-text">
+              <span class="hw-badge">Προτάσεις 4.31, 4.442, 4.46 &amp; 5.101</span>
+              <h2>Πίνακες αληθείας και οι 16 συναρτήσεις του 5.101</h2>
+            </div>
+            <div class="lab-btn-row">
+              <button type="button" onclick="setTruthTablePreset([1,1,1,1])" data-preset="WWWW" class="tt-preset-btn hw-btn">Ταυτολογία (WWWW)</button>
+              <button type="button" onclick="setTruthTablePreset([0,0,0,1])" data-preset="FFFW" class="tt-preset-btn hw-btn">Τελεστής N(p,q) (FFFW)</button>
+              <button type="button" onclick="setTruthTablePreset([1,1,0,1])" data-preset="WWFW" class="tt-preset-btn hw-btn">Συνεπαγωγή p⊃q (WWFW)</button>
+              <button type="button" onclick="setTruthTablePreset([1,0,0,0])" data-preset="WFFF" class="tt-preset-btn hw-btn">Σύζευξη p∧q (WFFF)</button>
+              <button type="button" onclick="setTruthTablePreset([0,0,0,0])" data-preset="FFFF" class="tt-preset-btn hw-btn">Αντίφαση (FFFF)</button>
+            </div>
+          </div>
+
+          <div class="lab-split-5-7">
+            <div class="lab-stack">
+              <p class="lab-note">
+                Κάντε κλικ στα κουμπιά <strong>W</strong> (Wahr / Αληθές) ή <strong>F</strong> (Falsch / Ψευδές) για να κατασκευάσετε οποιαδήποτε από τις <span class="math-expr">2^(2²) = 16</span> συναρτήσεις αληθείας:
+              </p>
+              <div class="table-wrap">
+                <table class="hw-table tt-table">
+                  <thead>
+                    <tr>
+                      <th>Γραμμή</th>
+                      <th>p</th>
+                      <th>q</th>
+                      <th>Αποτέλεσμα (W / F)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="muted">1η βάση</td>
+                      <td class="strong-cell">W</td>
+                      <td class="strong-cell">W</td>
+                      <td><button type="button" id="tt-cell-0" onclick="toggleTruthCell(0)" class="hw-btn tt-toggle">W</button></td>
+                    </tr>
+                    <tr>
+                      <td class="muted">2η βάση</td>
+                      <td class="strong-cell">F</td>
+                      <td class="strong-cell">W</td>
+                      <td><button type="button" id="tt-cell-1" onclick="toggleTruthCell(1)" class="hw-btn tt-toggle">W</button></td>
+                    </tr>
+                    <tr>
+                      <td class="muted">3η βάση</td>
+                      <td class="strong-cell">W</td>
+                      <td class="strong-cell">F</td>
+                      <td><button type="button" id="tt-cell-2" onclick="toggleTruthCell(2)" class="hw-btn tt-toggle">F</button></td>
+                    </tr>
+                    <tr>
+                      <td class="muted">4η βάση</td>
+                      <td class="strong-cell">F</td>
+                      <td class="strong-cell">F</td>
+                      <td><button type="button" id="tt-cell-3" onclick="toggleTruthCell(3)" class="hw-btn tt-toggle">W</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="lab-panel" aria-live="polite">
+              <div class="lab-panel-head">
+                <span class="lab-kicker">Διάγνωση προτασιακού σημείου (4.442 &amp; 5.101)</span>
+                <span id="tt-status-badge" class="hw-badge">Πρόταση με νόημα (sinnvoll)</span>
+              </div>
+              <div class="lab-grid-2">
+                <div class="lab-stat-box">
+                  <div class="lab-stat-label">Σημειογραφία Wittgenstein (4.442):</div>
+                  <div id="tt-witt-sign" class="lab-stat-val math-inline">(WWFW)(p, q)</div>
+                </div>
+                <div class="lab-stat-box">
+                  <div class="lab-stat-label">Κλασικό σύμβολο και τάξη στο 5.101:</div>
+                  <div id="tt-sym-name" class="lab-stat-val">#4: p ⊃ q (Συνεπαγωγή)</div>
+                </div>
+              </div>
+              <div class="lab-stat-box">
+                <div class="lab-stat-label">Λεκτική απόδοση στο 5.101 και κατασκευή με τον τελεστή N(ξ̄) (5.5 / 6):</div>
+                <div id="tt-verbal-desc" class="lab-stat-verbal">«Αν p, τότε q.»</div>
+                <div id="tt-n-formula" class="lab-stat-formula">Παραγωγή με N(ξ̄): N(N(N(p), q))</div>
+              </div>
+              <div id="tt-phil-comment" class="lab-note"></div>
+            </div>
+          </div>
+
+          <div class="lab-divider-top">
+            <div class="lab-kicker">Πίνακας άμεσης επιλογής όλων των 16 συναρτήσεων αληθείας (5.101):</div>
+            <div id="tt16Matrix" class="tt-matrix"></div>
+          </div>
+        </article>
+
+        <div class="lab-grid-2">
+          <article class="lab-card" id="lab-wpf">
+            <div class="lab-head-compact">
+              <span class="hw-badge">Πρόταση 6.1203</span>
+              <h3>Το οπτικό διάγραμμα αγκυλών «W — p — F»</h3>
+            </div>
+            <p class="lab-note">
+              Στο <strong>6.1203</strong> ο Wittgenstein παρουσιάζει μια διαγραμματική μέθοδο για να αναγνωρίζουμε μια ταυτολογία <em>από το σύμβολο και μόνο</em> (6.113), ακολουθώντας τις συνδέσεις των πόλων <strong>W</strong> και <strong>F</strong>:
+            </p>
+            <div class="lab-btn-row">
+              <button type="button" onclick="renderWpfDiagram('notp')" id="wpf-btn-notp" class="hw-btn">1. Άρνηση: ~p (Διπολική)</button>
+              <button type="button" onclick="renderWpfDiagram('noncontra')" id="wpf-btn-noncontra" class="hw-btn hw-btn-active">2. Ταυτολογία: ~(p · ~p)</button>
+              <button type="button" onclick="renderWpfDiagram('exclmid')" id="wpf-btn-exclmid" class="hw-btn">3. Ταυτολογία: p ∨ ~p</button>
+            </div>
+            <div id="wpfSvgContainer" class="lab-canvas-box"></div>
+            <div id="wpfExplanation" class="lab-readout"></div>
+          </article>
+
+          <article class="lab-card" id="lab-probability">
+            <div class="lab-head">
+              <div class="lab-head-text">
+                <span class="hw-badge">Προτάσεις 5.15 – 5.156</span>
+                <h3>Λογική πιθανότητα P(s | r) και η κάλπη (5.154)</h3>
+              </div>
+              <button type="button" onclick="syncProbSFromLab2A()" class="hw-btn" title="Μεταφορά της συνάρτησης από τους πίνακες αληθείας ως στόχο s">
+                ↙ Εισαγωγή από τον πίνακα ως s
+              </button>
+            </div>
+            <p class="lab-note">
+              Επιλέξτε την πρόταση-βάση <strong>r</strong> (αυτό που γνωρίζουμε) και την πρόταση-στόχο <strong>s</strong> από τις 16 συναρτήσεις για να δείτε τον λόγο <span class="math-expr">Wᵣₛ : Wᵣ</span> και την αναπαράστασή του στην <strong>Κάλπη (5.154)</strong>:
+            </p>
+            <div class="lab-grid-2">
+              <div class="lab-field">
+                <label for="probSelectR">Πρόταση-βάση (r):</label>
+                <select id="probSelectR" onchange="calculateLogicalProbability()" class="lab-select"></select>
+              </div>
+              <div class="lab-field">
+                <label for="probSelectS">Πρόταση-στόχος (s):</label>
+                <select id="probSelectS" onchange="calculateLogicalProbability()" class="lab-select"></select>
+              </div>
+            </div>
+            <div id="probUrnSvg" class="lab-canvas-box lab-canvas-short"></div>
+            <div id="probResultBox" class="lab-readout" aria-live="polite"></div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- =====================================================================
+         VIEW: VISUAL MODELS (PARIS, NECKER, EYE, GRAMOPHONE)
+         ===================================================================== -->
+    <div id="view-visual" class="tab-view" hidden>
+      <div class="lab-shell">
+
+        <article class="lab-card" id="lab-paris">
+          <div class="lab-head">
+            <div class="lab-head-text">
+              <span class="hw-badge">Προτάσεις 2.1 – 2.225 &amp; 3.1432</span>
+              <h2>Το δικαστήριο του Παρισιού: μακέτα (Bild), «κεραίες» (Fühler), νόημα και αλήθεια</h2>
+            </div>
+            <div class="lab-btn-row">
+              <button type="button" onclick="setParisScenario('match')" id="paris-scen-match" class="hw-btn hw-btn-active">Σενάριο 1: Συμφωνία (Αληθής)</button>
+              <button type="button" onclick="setParisScenario('mismatch')" id="paris-scen-mismatch" class="hw-btn">Σενάριο 2: Ασυμφωνία (Ψευδής με νόημα)</button>
+            </div>
+          </div>
+          <p class="lab-lead">
+            Αλλάξτε τη διάταξη των μινιατούρων (αριστερά) ή του δρόμου (δεξιά) — ή <strong>κάντε κλικ πάνω στο αυτοκινητάκι a'</strong> μέσα στο διάγραμμα για να εναλλάξετε τη θέση του. Οι <strong>«κεραίες» (<em>Fühler</em>, 2.1515)</strong> συνδέουν τα ονόματα με τα αντικείμενα (<span class="math-expr">a' ⟷ a</span>, <span class="math-expr">b' ⟷ b</span>), εξασφαλίζοντας καθορισμένο <strong>νόημα (<em>Sinn</em>)</strong> ακόμη κι όταν η εικόνα είναι <strong>ψευδής</strong>.
+          </p>
+          <div class="lab-grid-2">
+            <div class="lab-panel-compact">
+              <label for="parisModelSelect" class="lab-kicker">1. Τραπέζι δικαστηρίου (Εικόνα 'aRb'):</label>
+              <select id="parisModelSelect" onchange="updateParisSimulation()" class="lab-select">
+                <option value="cut">Η μινιατούρα a' κόβει τον δρόμο στην b'</option>
+                <option value="parallel">Η μινιατούρα a' κινείται παράλληλα με την b'</option>
+                <option value="behind">Η μινιατούρα a' ακολουθεί πίσω από την b'</option>
+              </select>
+            </div>
+            <div class="lab-panel-compact">
+              <label for="parisRealitySelect" class="lab-kicker">2. Δρόμος Παρισιού (Πραγματικότητα):</label>
+              <select id="parisRealitySelect" onchange="updateParisSimulation()" class="lab-select">
+                <option value="cut">Το αυτοκίνητο a έκοψε τον δρόμο στο καρότσι b</option>
+                <option value="parallel">Το αυτοκίνητο a κινήθηκε παράλληλα με το b</option>
+                <option value="behind">Το αυτοκίνητο a ακολουθούσε πίσω από το b</option>
+              </select>
+            </div>
+          </div>
+          <div id="parisSvgContainer" class="lab-canvas-box"></div>
+          <div id="parisStatusBanner" class="lab-readout" aria-live="polite"></div>
+        </article>
+
+        <div class="lab-grid-2">
+          <article class="lab-card" id="lab-necker">
+            <div class="lab-head-compact">
+              <span class="hw-badge">Πρόταση 5.5423</span>
+              <h3>Ο κύβος του Necker: ένα σύμπλεγμα, δύο γεγονότα</h3>
+            </div>
+            <p class="lab-note">
+              Τα «πράγματα» (οι 8 κορυφές <span class="math-expr">a, b</span> και οι 12 ακμές) είναι ακριβώς τα ίδια. Κάντε κλικ στα κουμπιά ή <strong>απευθείας πάνω στο τετράγωνο a ή b μέσα στον κύβο</strong> για να δείτε τη μεταστροφή του βάθους.
+            </p>
+            <div class="lab-btn-row">
+              <button type="button" onclick="setNeckerMode('a-front')" id="necker-btn-a" class="hw-btn hw-btn-active">Γεγονός 1: Γωνίες «a» μπροστά</button>
+              <button type="button" onclick="setNeckerMode('b-front')" id="necker-btn-b" class="hw-btn">Γεγονός 2: Γωνίες «b» μπροστά</button>
+              <button type="button" onclick="setNeckerMode('neutral')" id="necker-btn-n" class="hw-btn">Αμφίσημο πλέγμα (5.5423)</button>
+            </div>
+            <div id="neckerSvgContainer" class="lab-canvas-box"></div>
+            <div id="neckerCaption" class="lab-readout"></div>
+          </article>
+
+          <article class="lab-card" id="lab-eye">
+            <div class="lab-head-compact">
+              <span class="hw-badge">Προτάσεις 5.632 – 5.64</span>
+              <h3>Το μάτι, το οπτικό πεδίο και η συρρίκνωση του εγώ</h3>
+            </div>
+            <p class="lab-note">
+              Συγκρίνετε το <strong>εσφαλμένο διάγραμμα του 5.6331</strong> (το μάτι ως μέρος του πεδίου) με την <strong>υπερβατολογική θέση του 5.632–5.64</strong>, όπου το Εγώ συρρικνώνεται σε αδιάστατο σημείο-όριο και ο σολιψισμός συμπίπτει με τον καθαρό ρεαλισμό:
+            </p>
+            <div class="lab-btn-row">
+              <button type="button" onclick="setEyeDiagramMode('flawed')" id="eye-btn-flawed" class="hw-btn">✕ Εσφαλμένο σχήμα 5.6331</button>
+              <button type="button" onclick="setEyeDiagramMode('limit')" id="eye-btn-limit" class="hw-btn hw-btn-active">✓ Υπερβατολογικό όριο 5.632 &amp; 5.64</button>
+            </div>
+            <div id="eyeSvgContainer" class="lab-canvas-box"></div>
+            <div id="eyeCaption" class="lab-readout"></div>
+          </article>
+        </div>
+
+        <article class="lab-card" id="lab-gramophone">
+          <div class="lab-head">
+            <div class="lab-head-text">
+              <span class="hw-badge">Προτάσεις 4.014 – 4.0141 &amp; 4.04</span>
+              <h2>Η αναλογία του γραμμοφώνου (4.014): παρτιτούρα, αυλάκι δίσκου και ηχητικά κύματα</h2>
+            </div>
+            <div class="lab-btn-row">
+              <button type="button" onclick="setGramophonePreset([1,2,3,2], 'scale')" id="gram-preset-scale" class="gram-preset-btn hw-btn hw-btn-active">Ανερχόμενο μοτίβο</button>
+              <button type="button" onclick="setGramophonePreset([3,1,3,1], 'osc')" id="gram-preset-osc" class="gram-preset-btn hw-btn">Εναλλαγή (3-1-3-1)</button>
+              <button type="button" onclick="setGramophonePreset([2,3,1,3], 'bach')" id="gram-preset-bach" class="gram-preset-btn hw-btn">Κύμα (2-3-1-3)</button>
+            </div>
+          </div>
+          <p class="lab-lead">
+            Κάντε κλικ στις 4 νότες (ή στους επιλογείς ύψους) για να τροποποιήσετε τη μελωδία. Παρατηρήστε πώς η <strong>παρτιτούρα</strong>, το <strong>αυλάκι του δίσκου</strong> και τα <strong>ηχητικά κύματα</strong> αλλάζουν ταυτόχρονα — διατηρώντας τον ίδιο κοινό <strong>λογικό νόμο προβολής (<em>der logische Bau</em>, 4.014)</strong>.
+          </p>
+          <div class="lab-btn-row">
+            <span class="lab-kicker">Τροποποίηση νότας:</span>
+            <button type="button" onclick="cycleGramophoneNote(0)" id="gram-note-btn-0" class="hw-btn">1η: Χαμηλή (1)</button>
+            <button type="button" onclick="cycleGramophoneNote(1)" id="gram-note-btn-1" class="hw-btn">2η: Μεσαία (2)</button>
+            <button type="button" onclick="cycleGramophoneNote(2)" id="gram-note-btn-2" class="hw-btn">3η: Υψηλή (3)</button>
+            <button type="button" onclick="cycleGramophoneNote(3)" id="gram-note-btn-3" class="hw-btn">4η: Μεσαία (2)</button>
+          </div>
+          <div id="gramophoneSvgContainer" class="lab-canvas-box lab-canvas-scroll"></div>
+          <div id="gramophoneReadout" class="lab-readout"></div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- =====================================================================
+         VIEW: SCIENCE, MATHEMATICS, KANT'S 4D GLOVE & THE LADDER
+         ===================================================================== -->
+    <div id="view-science" class="tab-view" hidden>
+      <div class="lab-shell">
+
+        <article class="lab-card" id="lab-mesh">
+          <div class="lab-head">
+            <div class="lab-head-text">
+              <span class="hw-badge">Προτάσεις 6.341 – 6.342</span>
+              <h2>Η αναλογία του διχτυού (Netz-Analogie): επιφάνεια κηλίδων και επιστημονικά πλέγματα</h2>
+            </div>
+            <div class="lab-btn-row">
+              <button type="button" onclick="setMeshGeometry('square')" id="mesh-btn-square" class="hw-btn hw-btn-active">Τετραγωνικό δίχτυ</button>
+              <button type="button" onclick="setMeshGeometry('triangle')" id="mesh-btn-triangle" class="hw-btn">Τριγωνικό δίχτυ</button>
+              <button type="button" onclick="setMeshGeometry('hex')" id="mesh-btn-hex" class="hw-btn">Εξαγωνικό δίχτυ</button>
+            </div>
+          </div>
+
+          <div class="lab-split-7-5">
+            <div class="lab-mesh-col">
+              <div class="lab-mesh-bar">
+                <div class="lab-btn-row">
+                  <span class="lab-kicker">Κηλίδες κόσμου:</span>
+                  <button type="button" onclick="setMeshSpotPattern('blobs')" id="mesh-spot-blobs" class="hw-btn hw-btn-active">3 κηλίδες</button>
+                  <button type="button" onclick="setMeshSpotPattern('ring')" id="mesh-spot-ring" class="hw-btn">Δακτύλιος</button>
+                  <button type="button" onclick="setMeshSpotPattern('paint')" id="mesh-spot-paint" class="hw-btn">✎ Ελεύθερη σχεδίαση</button>
+                </div>
+                <button type="button" onclick="clearPaintedSpots()" id="meshClearPaintBtn" class="hw-btn" hidden>Καθαρισμός καμβά</button>
+              </div>
+              <canvas id="meshCanvas" width="560" height="300" class="mesh-canvas"></canvas>
+              <div class="lab-slider-row">
+                <label for="meshSizeSlider">Λεπτότητα διχτυού (μέγεθος οπών):</label>
+                <input id="meshSizeSlider" type="range" min="16" max="56" step="4" value="28" oninput="drawMeshSimulation()" />
+                <span id="meshSizeLabel" class="lab-slider-val">28px</span>
+              </div>
+            </div>
+
+            <div class="lab-panel">
+              <div class="lab-kicker">Ανάλυση του πειράματος (6.341 – 6.35)</div>
+              <div id="meshStatsBox" class="lab-stat-box"></div>
+              <p class="lab-note">
+                <strong>Τι ανήκει στο δίχτυ (a priori μορφή):</strong> Η γεωμετρία της οπής (τετράγωνη, τριγωνική ή εξαγωνική). Αντιστοιχεί στην Αρχή του Αποχρώντος Λόγου και της Ελάχιστης Δράσης.<br><br>
+                <strong>Τι ανήκει στην επιφάνεια (εμπειρικός κόσμος):</strong> Ποιες οπές καλύπτουν μαύρες κηλίδες και ποιες είναι λευκές. Δοκιμάστε να σχεδιάσετε δικές σας κηλίδες.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <div class="lab-grid-2">
+          <article class="lab-card" id="lab-kant">
+            <div class="lab-head-compact">
+              <span class="hw-badge">Πρόταση 6.36111</span>
+              <h3>Το παράδοξο του Kant (δεξί και αριστερό γάντι) στον 4D χώρο</h3>
+            </div>
+            <p class="lab-note">
+              Ολισθήστε τον επιλογέα <strong>περιστροφής στην ανώτερη διάσταση (0° → 180°)</strong> για να δείτε πώς το <strong>δεξί γάντι</strong> αναστρέφεται μέσω της 4ης διάστασης και εφαρμόζει ακριβώς πάνω στο <strong>αριστερό γάντι</strong>.
+            </p>
+            <div class="lab-slider-row">
+              <label for="kantAngleSlider">Γωνία 4D (θ):</label>
+              <input id="kantAngleSlider" type="range" min="0" max="180" step="5" value="0" oninput="renderKantHandSimulation()" />
+              <span id="kantAngleLabel" class="lab-slider-val">0°</span>
+              <button type="button" onclick="animateKantFlip()" class="hw-btn">↻ Αυτόματη αναστροφή</button>
+            </div>
+            <div id="kantSvgContainer" class="lab-canvas-box"></div>
+            <div id="kantStatusText" class="lab-readout"></div>
+          </article>
+
+          <article class="lab-card" id="lab-2x2">
+            <div class="lab-head-compact">
+              <span class="hw-badge">Προτάσεις 6.02 &amp; 6.241</span>
+              <h3>Μηχανή αντικατάστασης: η απόδειξη του 2 × 2 = 4 (6.241)</h3>
+            </div>
+            <p class="lab-note">
+              Περιηγηθείτε βήμα προς βήμα στην απόδειξη του <span class="math-expr">2 × 2 = 4</span> που δίνει ο Wittgenstein στο <strong>6.241</strong> μέσω του εκθέτη της πράξης <span class="math-expr">Ω</span>:
+            </p>
+            <div class="lab-btn-row">
+              <button type="button" onclick="setMathProofStep(0)" id="math-step-0" class="hw-btn hw-btn-active">1. (Ω^ν)^μ</button>
+              <button type="button" onclick="setMathProofStep(1)" id="math-step-1" class="hw-btn">2. 2 = 1+1</button>
+              <button type="button" onclick="setMathProofStep(2)" id="math-step-2" class="hw-btn">3. Αντικατάσταση Ω²</button>
+              <button type="button" onclick="setMathProofStep(3)" id="math-step-3" class="hw-btn">4. Καταμέτρηση Ω⁴</button>
+            </div>
+            <div id="mathProofDisplay" class="lab-proof-box" aria-live="polite"></div>
+            <div class="lab-stepper-nav">
+              <button type="button" onclick="stepMathProof(-1)" id="mathPrevBtn" class="hw-btn">‹ Προηγούμενο βήμα</button>
+              <button type="button" onclick="stepMathProof(1)" id="mathNextBtn" class="hw-btn">Επόμενο βήμα ›</button>
+            </div>
+          </article>
+        </div>
+
+        <article class="lab-card" id="lab-ladder">
+          <div class="lab-head">
+            <div class="lab-head-text">
+              <span class="hw-badge">Προτάσεις 6.54 &amp; 7</span>
+              <h3>Η σκάλα του Wittgenstein (6.54): ανάβαση, ρίψη και ερμηνευτικές σχολές</h3>
+            </div>
+            <div class="lab-btn-row">
+              <button type="button" onclick="climbLadderStep()" id="ladderClimbBtn" class="hw-btn hw-btn-active">▲ Ανέβα (+1)</button>
+              <button type="button" onclick="throwAwayLadder()" id="ladderThrowBtn" class="hw-btn">✕ Πέταξε τη σκάλα (6.54)</button>
+              <button type="button" onclick="resetLadder()" class="hw-btn">↺ Επαναφορά</button>
+            </div>
+          </div>
+          <p class="lab-note">
+            Κάντε κλικ απευθείας σε οποιοδήποτε σκαλοπάτι (1–7) για να ανεβείτε, και πατήστε <strong>«Πέταξε τη σκάλα»</strong> όταν φτάσετε στην κορυφή:
+          </p>
+          <div id="ladderInteractiveArea" class="lab-canvas-box lab-canvas-block"></div>
+          <div class="lab-btn-row">
+            <span class="lab-kicker">Ερμηνεία του 6.54:</span>
+            <button type="button" onclick="setLadderReading('traditional')" id="ladder-read-trad" class="hw-btn hw-btn-active">1. Παραδοσιακή (Anscombe / Hacker)</button>
+            <button type="button" onclick="setLadderReading('therapeutic')" id="ladder-read-ther" class="hw-btn">2. Αποφασιστική / New Wittgenstein (Diamond / Conant)</button>
+            <button type="button" onclick="setLadderReading('elucidatory')" id="ladder-read-eluc" class="hw-btn">3. Διασαφητική (McGinn / Hutto)</button>
+          </div>
+          <div id="ladderCommentaryBox" class="lab-readout lab-readout-prose" aria-live="polite"></div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- =====================================================================
+         VIEW: 12 PHILOSOPHERS COMPARISON MAP
+         ===================================================================== -->
+    <div id="view-philosophers" class="tab-view" hidden>
+      <div class="lab-shell">
+        <div class="lab-card">
+          <div class="lab-head">
+            <div class="lab-head-text">
+              <span class="hw-badge">Ιστορικο-φιλοσοφικός διάλογος</span>
+              <h2>Πώς το Tractatus συνομιλεί με δώδεκα στοχαστές</h2>
+            </div>
+            <div class="lab-controls">
+              <input id="philSearchInput" type="search" placeholder="Αναζήτηση στοχαστή ή όρου..."
+                aria-label="Αναζήτηση στοχαστή"
+                oninput="renderPhilosophersGrid(document.getElementById('philFilterSelect').value)"
+                class="lab-input" />
+              <select id="philFilterSelect" onchange="renderPhilosophersGrid(this.value)" aria-label="Κατηγορία στοχαστών" class="lab-select">
+                <option value="all">Όλοι οι φιλόσοφοι (12)</option>
+                <option value="logic">Λογική και γλώσσα (4)</option>
+                <option value="ontology">Οντολογία και γνωσιολογία (5)</option>
+                <option value="ethics">Επιστήμη, ηθική και Μυστικιστικό (3)</option>
+              </select>
+            </div>
+          </div>
+          <div id="philosophersGridContainer" class="phil-grid"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MOBILE NAVIGATION DRAWER (< lg) -->
+  <div id="mobileNavDrawer" class="drawer-overlay" hidden>
+    <div class="drawer-backdrop" onclick="closeMobileNav()"></div>
+    <div class="drawer-panel drawer-left" role="dialog" aria-modal="true" aria-label="Περιεχόμενα">
+      <div class="drawer-head">
+        <span class="drawer-title">Περιεχόμενα</span>
+        <button type="button" onclick="closeMobileNav()" class="hw-btn">✕ Κλείσιμο</button>
+      </div>
+      <div id="mobileNavMount"></div>
+    </div>
+  </div>
+
+  <!-- UNIFIED QUICK-PEEK DRAWER (PROPOSITIONS & GERMAN KEY TERMS) -->
+  <div id="peekDrawer" class="drawer-overlay" hidden>
+    <div class="drawer-backdrop" onclick="closePeek()"></div>
+    <div class="drawer-panel drawer-right" role="dialog" aria-modal="true" aria-label="Γρήγορη προβολή">
+      <div class="drawer-head">
+        <div class="drawer-head-badges">
+          <span id="peekTitleBadge" class="peek-badge-main"></span>
+          <span id="peekSubBadge" class="hw-badge"></span>
+        </div>
+        <button type="button" onclick="closePeek()" class="hw-btn">✕ [Esc]</button>
+      </div>
+      <div id="peekBody" class="peek-body"></div>
+      <div class="drawer-foot">
+        <button type="button" id="peekActionPrimary" class="hw-btn hw-btn-active"></button>
+        <button type="button" id="peekActionSecondary" class="hw-btn" hidden></button>
+        <button type="button" onclick="closePeek()" class="hw-btn">Κλείσιμο</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING BACK-TO-TOP BUTTON -->
+  <button type="button" id="backToTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    class="back-to-top hw-btn" hidden title="Επιστροφή στην κορυφή">
+    ↑ Κορυφή
+  </button>
