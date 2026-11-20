@@ -3,17 +3,30 @@
          ===================================================================== -->
     <div id="view-tree" class="tab-view" hidden>
       <div class="lab-shell">
-        <div class="lab-card">
-          <div class="lab-head">
-            <div class="lab-head-text">
-              <div class="lab-badges">
-                <span class="hw-badge">Δομική ιεραρχία · Stern (2023) &amp; εκδόσεις του έργου</span>
-                <span id="treeCountBadge" class="hw-badge"></span>
+        <div class="lab-card tree-card">
+          <div class="tree-sticky-bar">
+            <div class="tree-sticky-top">
+              <div class="lab-head-text">
+                <div class="lab-badges">
+                  <span class="hw-badge">Δομική ιεραρχία · Stern (2023) &amp; εκδόσεις του έργου</span>
+                  <span id="treeCountBadge" class="hw-badge"></span>
+                </div>
+                <h2>Δενδροειδής μορφή των προτάσεων</h2>
               </div>
-              <h2>Δενδροειδής μορφή των προτάσεων</h2>
+              <div class="tree-pills">
+                <span class="tree-pills-label">Κορμός:</span>
+                <button type="button" onclick="quickFilterTreeRoot('all')" id="tree-pill-all" class="hw-btn hw-btn-active">Όλα</button>
+                <button type="button" onclick="quickFilterTreeRoot('1')" id="tree-pill-1" class="hw-btn">1</button>
+                <button type="button" onclick="quickFilterTreeRoot('2')" id="tree-pill-2" class="hw-btn">2</button>
+                <button type="button" onclick="quickFilterTreeRoot('3')" id="tree-pill-3" class="hw-btn">3</button>
+                <button type="button" onclick="quickFilterTreeRoot('4')" id="tree-pill-4" class="hw-btn">4</button>
+                <button type="button" onclick="quickFilterTreeRoot('5')" id="tree-pill-5" class="hw-btn">5</button>
+                <button type="button" onclick="quickFilterTreeRoot('6')" id="tree-pill-6" class="hw-btn">6</button>
+                <button type="button" onclick="quickFilterTreeRoot('7')" id="tree-pill-7" class="hw-btn">7</button>
+              </div>
             </div>
             <div class="lab-controls">
-              <input id="treeSearchInput" type="search" placeholder="Φιλτράρισμα (π.χ. 2.0211, Bild, Frege)..."
+              <input id="treeSearchInput" type="search" placeholder="Φιλτράρισμα (2.0211, Bild, Frege)"
                 aria-label="Φιλτράρισμα δενδροειδούς μορφής"
                 oninput="renderTreeExplorer()" class="lab-input" />
               <select id="treeRootFilter" onchange="renderTreeExplorer()" aria-label="Φίλτρο κορμού" class="lab-select">
@@ -36,18 +49,6 @@
               </select>
               <button type="button" onclick="resetTreeFilters()" class="hw-btn">↺ Επαναφορά</button>
             </div>
-          </div>
-
-          <div class="tree-pills">
-            <span class="tree-pills-label">Κορμός:</span>
-            <button type="button" onclick="quickFilterTreeRoot('all')" id="tree-pill-all" class="hw-btn hw-btn-active">Όλα</button>
-            <button type="button" onclick="quickFilterTreeRoot('1')" id="tree-pill-1" class="hw-btn">1</button>
-            <button type="button" onclick="quickFilterTreeRoot('2')" id="tree-pill-2" class="hw-btn">2</button>
-            <button type="button" onclick="quickFilterTreeRoot('3')" id="tree-pill-3" class="hw-btn">3</button>
-            <button type="button" onclick="quickFilterTreeRoot('4')" id="tree-pill-4" class="hw-btn">4</button>
-            <button type="button" onclick="quickFilterTreeRoot('5')" id="tree-pill-5" class="hw-btn">5</button>
-            <button type="button" onclick="quickFilterTreeRoot('6')" id="tree-pill-6" class="hw-btn">6</button>
-            <button type="button" onclick="quickFilterTreeRoot('7')" id="tree-pill-7" class="hw-btn">7</button>
           </div>
 
           <p class="lab-lead">
@@ -221,29 +222,31 @@
               <button type="button" onclick="setParisScenario('mismatch')" id="paris-scen-mismatch" class="hw-btn">Σενάριο 2: Ασυμφωνία (Ψευδής με νόημα)</button>
             </div>
           </div>
-          <p class="lab-lead">
-            Αλλάξτε τη διάταξη των μινιατούρων (αριστερά) ή του δρόμου (δεξιά) — ή <strong>κάντε κλικ πάνω στο αυτοκινητάκι a'</strong> μέσα στο διάγραμμα για να εναλλάξετε τη θέση του. Οι <strong>«κεραίες» (<em>Fühler</em>, 2.1515)</strong> συνδέουν τα ονόματα με τα αντικείμενα (<span class="math-expr">a' ⟷ a</span>, <span class="math-expr">b' ⟷ b</span>), εξασφαλίζοντας καθορισμένο <strong>νόημα (<em>Sinn</em>)</strong> ακόμη κι όταν η εικόνα είναι <strong>ψευδής</strong>.
-          </p>
-          <div class="lab-grid-2">
-            <div class="lab-panel-compact">
-              <label for="parisModelSelect" class="lab-kicker">1. Τραπέζι δικαστηρίου (Εικόνα 'aRb'):</label>
-              <select id="parisModelSelect" onchange="updateParisSimulation()" class="lab-select">
-                <option value="cut">Η μινιατούρα a' κόβει τον δρόμο στην b'</option>
-                <option value="parallel">Η μινιατούρα a' κινείται παράλληλα με την b'</option>
-                <option value="behind">Η μινιατούρα a' ακολουθεί πίσω από την b'</option>
-              </select>
+          <div class="paris-split">
+            <div class="lab-stack">
+              <p class="lab-note">
+                Αλλάξτε τη διάταξη των μινιατούρων ή του δρόμου — ή <strong>κάντε κλικ στο αυτοκινητάκι a'</strong> μέσα στο διάγραμμα. Οι <strong>«κεραίες» (<em>Fühler</em>, 2.1515)</strong> συνδέουν ονόματα με αντικείμενα (<span class="math-expr">a' ⟷ a</span>, <span class="math-expr">b' ⟷ b</span>), εξασφαλίζοντας <strong>νόημα (<em>Sinn</em>)</strong> ακόμη και όταν η εικόνα είναι <strong>ψευδής</strong>.
+              </p>
+              <div class="lab-panel-compact">
+                <label for="parisModelSelect" class="lab-kicker">1. Τραπέζι δικαστηρίου (Εικόνα 'aRb'):</label>
+                <select id="parisModelSelect" onchange="updateParisSimulation()" class="lab-select">
+                  <option value="cut">Η μινιατούρα a' κόβει τον δρόμο στην b'</option>
+                  <option value="parallel">Η μινιατούρα a' κινείται παράλληλα με την b'</option>
+                  <option value="behind">Η μινιατούρα a' ακολουθεί πίσω από την b'</option>
+                </select>
+              </div>
+              <div class="lab-panel-compact">
+                <label for="parisRealitySelect" class="lab-kicker">2. Δρόμος Παρισιού (Πραγματικότητα):</label>
+                <select id="parisRealitySelect" onchange="updateParisSimulation()" class="lab-select">
+                  <option value="cut">Το αυτοκίνητο a έκοψε τον δρόμο στο καρότσι b</option>
+                  <option value="parallel">Το αυτοκίνητο a κινήθηκε παράλληλα με το b</option>
+                  <option value="behind">Το αυτοκίνητο a ακολουθούσε πίσω από το b</option>
+                </select>
+              </div>
+              <div id="parisStatusBanner" class="lab-readout" aria-live="polite"></div>
             </div>
-            <div class="lab-panel-compact">
-              <label for="parisRealitySelect" class="lab-kicker">2. Δρόμος Παρισιού (Πραγματικότητα):</label>
-              <select id="parisRealitySelect" onchange="updateParisSimulation()" class="lab-select">
-                <option value="cut">Το αυτοκίνητο a έκοψε τον δρόμο στο καρότσι b</option>
-                <option value="parallel">Το αυτοκίνητο a κινήθηκε παράλληλα με το b</option>
-                <option value="behind">Το αυτοκίνητο a ακολουθούσε πίσω από το b</option>
-              </select>
-            </div>
+            <div id="parisSvgContainer" class="lab-canvas-box"></div>
           </div>
-          <div id="parisSvgContainer" class="lab-canvas-box"></div>
-          <div id="parisStatusBanner" class="lab-readout" aria-live="polite"></div>
         </article>
 
         <div class="lab-grid-2">

@@ -693,7 +693,7 @@
           <rect x="535" y="129" width="60" height="28" fill="none" stroke="currentColor" stroke-width="2"/>
           <text x="565" y="147" text-anchor="middle" fill="currentColor" font-size="11.5" font-weight="bold">b (Καρ.)</text>
 
-          <path d="M ${mp.x + 26} ${mp.y + 14} C 240 24, 440 24, ${380 + rp.x - 26} ${rp.y + 14}" fill="none" stroke="${feelerColor}" stroke-width="1.8" stroke-dasharray="5,4"/>
+          <path d="M ${mp.x} ${mp.y} C 220 26, 460 26, ${380 + rp.x} ${rp.y}" fill="none" stroke="${feelerColor}" stroke-width="1.8" stroke-dasharray="5,4"/>
           <path d="M 215 143 C 310 212, 430 212, 535 143" fill="none" stroke="${feelerColor}" stroke-width="1.8" stroke-dasharray="5,4"/>
           <text x="340" y="228" text-anchor="middle" fill="var(--primary)" font-size="11.5" font-weight="bold">Bedeutung (3.203): b' ⟷ b</text>
         </svg>
@@ -732,7 +732,7 @@
       const bCol = mode === 'b-front' ? 'var(--primary)' : 'currentColor';
 
       svgBox.innerHTML = `
-        <svg viewBox="0 0 340 225" class="lab-svg" style="max-width:340px">
+        <svg viewBox="0 0 340 225" class="lab-svg" style="max-width:270px">
           <rect x="65" y="75" width="120" height="110" onclick="setNeckerMode('a-front')" style="cursor:pointer;"
             fill="${mode === 'a-front' ? 'var(--primary)' : 'transparent'}" fill-opacity="0.12"
             stroke="${aCol}" stroke-width="${aStroke}" stroke-dasharray="${aDash}"/>
@@ -775,7 +775,7 @@
 
       if (mode === 'flawed') {
         svgBox.innerHTML = `
-          <svg viewBox="0 0 420 200" class="lab-svg" style="max-width:420px">
+          <svg viewBox="0 0 420 200" class="lab-svg" style="max-width:345px">
             <path d="M 100 100 C 170 45, 380 15, 380 100 C 380 185, 170 155, 100 100 Z" fill="var(--card)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
             <line x1="62" y1="100" x2="96" y2="100" stroke="var(--primary)" stroke-width="2"/>
             <text x="56" y="105" text-anchor="end" fill="var(--primary)" font-size="14" font-weight="bold">Auge</text>
@@ -786,10 +786,11 @@
         cap.innerHTML = '<strong>✕ Το εσφαλμένο διάγραμμα του 5.6331:</strong> Ο Wittgenstein σχεδιάζει αυτό το σχήμα για να δείξει ποια μορφή <strong>δεν</strong> έχει το οπτικό πεδίο. Το μάτι σχεδιάζεται στην αιχμή του σχήματος, σαν να ήταν μέρος του περιγράμματος του πεδίου. Όμως το μάτι δεν το βλέπεις, και τίποτα μέσα στο οπτικό πεδίο δεν επιτρέπει να συμπεράνεις ότι το βλέπει ένα μάτι (5.633).';
       } else {
         svgBox.innerHTML = `
-          <svg viewBox="0 0 420 200" class="lab-svg" style="max-width:420px">
+          <svg viewBox="0 0 420 200" class="lab-svg" style="max-width:345px">
             <polygon points="35,100 115,35 115,165" fill="var(--primary)" fill-opacity="0.08"/>
             <circle cx="35" cy="100" r="4.5" fill="var(--primary)"/>
-            <text x="48" y="125" text-anchor="middle" fill="var(--primary)" font-size="11" font-weight="bold">Εγώ = Όριο (5.632)</text>
+            <text x="48" y="124" text-anchor="middle" fill="var(--primary)" font-size="11" font-weight="bold">Εγώ = Όριο</text>
+            <text x="48" y="138" text-anchor="middle" fill="var(--primary)" font-size="10.5" font-weight="bold">(5.632)</text>
             <line x1="39" y1="98" x2="115" y2="35" stroke="var(--primary)" stroke-width="1.5" stroke-dasharray="4,4"/>
             <line x1="39" y1="102" x2="115" y2="165" stroke="var(--primary)" stroke-width="1.5" stroke-dasharray="4,4"/>
             <rect x="115" y="35" width="265" height="130" fill="var(--card)" stroke="currentColor" stroke-width="2.5"/>
@@ -858,7 +859,7 @@
       }).join('');
 
       svgBox.innerHTML = `
-        <svg viewBox="0 0 720 175" class="lab-svg" style="min-width:580px;max-width:740px">
+        <svg viewBox="0 0 720 175" class="lab-svg" style="min-width:540px;max-width:670px">
           <rect x="12" y="15" width="215" height="148" fill="var(--card)" stroke="currentColor" stroke-width="1.5"/>
           <text x="119" y="34" text-anchor="middle" fill="currentColor" font-size="11" font-weight="bold">1. ΠΑΡΤΙΤΟΥΡΑ (Notenschrift)</text>
           ${[65, 80, 95, 110, 125].map(y => `<line x1="26" y1="${y}" x2="212" y2="${y}" stroke="var(--border)" stroke-width="1.2"/>`).join('')}

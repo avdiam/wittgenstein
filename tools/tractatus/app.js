@@ -462,32 +462,37 @@
     // -------------------------------------------------------------------------
     // 4. KATEX RENDERING, SCROLLSPY, PROGRESS & KEYBOARD SHORTCUTS
     // -------------------------------------------------------------------------
+    function renderOneMathEl(el) {
+      if (!window.katex || !el || el.classList.contains('tex-done')) return;
+      const tex = el.dataset.texSrc != null ? el.dataset.texSrc : el.textContent;
+      el.dataset.texSrc = tex;
+      el.classList.add('tex-done');
+      el.classList.remove('tex-queued');
+      try {
+        window.katex.render(tex, el, { displayMode: el.classList.contains('tex-display'), throwOnError: false });
+      } catch (e) { el.textContent = tex; }
+    }
+
     function renderMathIn(root) {
       if (!window.katex || !root) return;
       const els = root.querySelectorAll('.tex:not(.tex-done)');
       for (let i = 0; i < els.length; i++) {
-        const el = els[i];
-        const tex = el.textContent;
-        try {
-          window.katex.render(tex, el, { displayMode: el.classList.contains('tex-display'), throwOnError: false });
-        } catch (e) { el.textContent = tex; }
-        el.classList.add('tex-done');
+        renderOneMathEl(els[i]);
       }
     }
 
     function renderAllMath() {
       if (!window.katex) return;
-      const els = Array.prototype.slice.call(document.querySelectorAll('.tex:not(.tex-done)'));
+      const els = Array.prototype.slice.call(document.querySelectorAll('.tex:not(.tex-done):not(.tex-queued)'));
+      if (els.length === 0) return;
+      for (let k = 0; k < els.length; k++) {
+        els[k].classList.add('tex-queued');
+      }
       let i = 0;
       function batch() {
         const end = Math.min(i + 24, els.length);
         for (; i < end; i++) {
-          const el = els[i];
-          const tex = el.textContent;
-          try {
-            window.katex.render(tex, el, { displayMode: el.classList.contains('tex-display'), throwOnError: false });
-          } catch (e) { el.textContent = tex; }
-          el.classList.add('tex-done');
+          renderOneMathEl(els[i]);
         }
         if (i < els.length) setTimeout(batch, 16);
       }
