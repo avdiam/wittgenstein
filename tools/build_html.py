@@ -147,6 +147,62 @@ def strip_tags(fragment):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", fragment))).strip()
 
 
+def strip_tags_keep_math(fragment):
+    """Strip HTML tags to plain text while preserving .tex spans as inline $...$ markers."""
+    def keep(m):
+        tex = re.sub(r"\s+", " ", html.unescape(m.group(1))).strip()
+        return f"${tex}$"
+
+    s = re.sub(r'<span class="tex(?:\s+tex-display)?">(.*?)</span>', keep, fragment, flags=re.S)
+    s = re.sub(r"</(?:p|li|div|tr|h[1-6])>|<br\s*/?>", " ", s)
+    s = re.sub(r"<[^>]+>", "", s)
+    return re.sub(r"\s+", " ", html.unescape(s)).strip()
+
+
+def truncate_keeping_math(text, max_visual=260):
+    """Truncate text without ever splitting an inline $...$ formula or adding spaces around punctuation."""
+    tokens = re.findall(r"(?:\$[^$]+\$|[^\s$])+", text)
+    out = []
+    vis = 0
+    truncated = False
+    for tok in tokens:
+        plain_tok = re.sub(r"\$[^$]+\$", lambda m: "x" * min(len(m.group(0)) - 2, 16), tok)
+        t_vis = len(plain_tok)
+        if out and vis + 1 + t_vis > max_visual:
+            truncated = True
+            break
+        out.append(tok)
+        vis += (1 if out else 0) + t_vis
+    res = " ".join(out)
+    if truncated:
+        res = res.rstrip(".,;: ") + "…"
+    return res
+
+
+def tex_to_plain_unicode(fragment):
+    """Convert HTML headings with .tex spans to clean Unicode for plain-text attributes & sidebar."""
+    repls = [
+        (r"\bar{\xi}", "ξ̄"),
+        (r"\bar{p}", "p̄"),
+        (r"\times", "×"),
+        (r"\neg", "¬"),
+        (r"\lor", "∨"),
+        (r"\land", "∧"),
+        (r"\supset", "⊃"),
+        (r"\equiv", "≡"),
+        (r"\Omega", "Ω"),
+        (r"\xi", "ξ"),
+    ]
+    def conv(m):
+        t = html.unescape(m.group(1))
+        for src, dst in repls:
+            t = t.replace(src, dst)
+        return t
+
+    s = re.sub(r'<span class="tex(?:\s+tex-display)?">(.*?)</span>', conv, fragment, flags=re.S)
+    return strip_tags(s)
+
+
 def prop_anchor_id(num_str):
     return "prop-" + re.sub(r"[^0-9a-zA-Z]+", "-", num_str.strip()).strip("-")
 
@@ -254,11 +310,13 @@ def parse_prop_blockquote(inner_html, seen_anchors, extracted_nodes):
         id_attr = f' id="{anchor}"'
 
     el_html = "<br>".join(re.sub(r"<br\s*/?>$", "", s) for s in el_lines)
-    # Strip outer bold wrapper on Tier 1 Greek text for clean hero display
-    el_plain = strip_tags(el_html)
-    de_plain = strip_tags(de_txt)
-    ogden_plain = strip_tags(ogden_txt)
-    pm_plain = strip_tags(pm_txt)
+    # Plain text (no $ markers) for length thresholds; math-preserving text for Tree & Quick-Peek
+    el_len = len(strip_tags(el_html))
+    de_len = len(strip_tags(de_txt))
+    el_tree = strip_tags_keep_math(el_html)
+    de_tree = strip_tags_keep_math(de_txt)
+    ogden_tree = strip_tags_keep_math(ogden_txt)
+    pm_tree = strip_tags_keep_math(pm_txt)
 
     extracted_nodes.append({
         "num": num,
@@ -266,10 +324,10 @@ def parse_prop_blockquote(inner_html, seen_anchors, extracted_nodes):
         "depth": prop_depth(num),
         "zero": prop_is_zero(num),
         "kind": "single",
-        "el": el_plain,
-        "ogden": ogden_plain,
-        "pm": pm_plain,
-        "de": de_plain,
+        "el": el_tree,
+        "ogden": ogden_tree,
+        "pm": pm_tree,
+        "de": de_tree,
         "anchor": "#" + anchor,
     })
 
@@ -298,7 +356,7 @@ def parse_prop_blockquote(inner_html, seen_anchors, extracted_nodes):
         ), True
 
     # Tier 2 & 3: Branches & individually quoted sub-propositions
-    is_long = len(el_plain) > LONG_PROP_THRESHOLD or len(de_plain) > LONG_PROP_THRESHOLD + 40
+    is_long = el_len > LONG_PROP_THRESHOLD or de_len > LONG_PROP_THRESHOLD + 40
     en_suffix = ""
     if ogden_txt:
         en_suffix = f' <span class="prop-en">({ogden_txt})</span>'
@@ -349,7 +407,7 @@ def wrap_grouped_sections(html_body, seen_anchors, extracted_nodes):
     for m in reversed(matches):
         range_str = re.sub(r"\s+", " ", strip_tags(m.group(2))).strip()
         title_html = m.group(3).strip()
-        title_plain = strip_tags(title_html)
+        title_tree = strip_tags_keep_math(title_html)
         body_start = m.end()
         next_stop = stop_re.search(out, body_start)
         body_end = next_stop.start() if next_stop else len(out)
@@ -361,11 +419,8 @@ def wrap_grouped_sections(html_body, seen_anchors, extracted_nodes):
         seen_anchors.add(anchor)
 
         first_num = re.match(r"([1-7]\.\d+)", range_str).group(1)
-        summary_plain = strip_tags(inner_body)
-        if len(summary_plain) > 260:
-            cut = summary_plain[:260].rsplit(" ", 1)[0].rstrip(".,;: ") + "…"
-        else:
-            cut = summary_plain
+        summary_tree = strip_tags_keep_math(inner_body)
+        cut = truncate_keeping_math(summary_tree, 260)
 
         extracted_nodes.append({
             "num": range_str,
@@ -373,7 +428,7 @@ def wrap_grouped_sections(html_body, seen_anchors, extracted_nodes):
             "depth": prop_depth(first_num),
             "zero": prop_is_zero(first_num),
             "kind": "group",
-            "title": title_plain,
+            "title": title_tree,
             "el": cut,
             "ogden": "",
             "pm": "",
@@ -431,7 +486,7 @@ def render_markdown_chunk(heading, body, sec_id, seen_anchors, extracted_nodes, 
 
     def handle_h3(m):
         inner = m.group(1).strip()
-        plain = strip_tags(inner)
+        plain = tex_to_plain_unicode(inner)
         h3_counter[0] += 1
 
         # Match main branch heading: e.g. "Κλάδος 2.1: ..." or "3. Κύριος κλάδος 2.1 (2.1 – 2.19): ..."
@@ -617,8 +672,8 @@ def autolink_terms_and_props(fragment, terms, valid_prop_nums):
 # 5. Sidebar & Tree Data Assembly
 # --------------------------------------------------------------------------
 def shorten_branch_label(label):
-    """Keep sidebar branch labels concise (strip parentheticals and truncate cleanly)."""
-    s = re.sub(r"\s*\([^)]*\)", "", label).strip()
+    """Keep sidebar branch labels concise (strip spaced parentheticals and truncate cleanly)."""
+    s = re.sub(r"\s+\([^)]*\)", "", label).strip()
     if len(s) > 42:
         s = s[:42].rsplit(" ", 1)[0].rstrip(",·:;& ")
         # Avoid leaving an unclosed opening quote « at the truncation edge
@@ -953,7 +1008,7 @@ TEMPLATE = """<!DOCTYPE html>
     <p><a href="index.html">Αρχική</a> · <a href="essay.html">Δοκίμιο</a> · <a href="{repo}">Αποθετήριο στο GitHub</a></p>
   </footer>
 
-  <script defer src="{katex}/katex.min.js"></script>
+  <script defer src="{katex}/katex.min.js" onload="if (typeof renderAllMath === 'function') renderAllMath()"></script>
   <script>
     const TLP_TREE_DATA = {tree_json};
     const TLP_TERMS_DATA = {terms_json};

@@ -90,6 +90,18 @@
       return 'tree-node tree-node-sub';
     }
 
+    function renderMathText(str) {
+      // Escape HTML while turning inline $...$ LaTeX segments into <span class="tex">...</span>
+      const raw = String(str || '');
+      if (!raw.includes('$')) return escHtml(raw);
+      return raw.split(/(\$[^$]+\$)/g).map(part => {
+        if (part.length > 2 && part.startsWith('$') && part.endsWith('$')) {
+          return '<span class="tex">' + escHtml(part.slice(1, -1)) + '</span>';
+        }
+        return escHtml(part);
+      }).join('');
+    }
+
     function renderTreeExplorer(highlightNum = null) {
       const container = document.getElementById('treeExplorerContainer');
       const countBadge = document.getElementById('treeCountBadge');
@@ -116,7 +128,7 @@
           const hay = normSearch([
             item.num, item.title || '', item.el || '', item.ogden || '',
             item.pm || '', item.de || '', item.note || ''
-          ].join(' '));
+          ].join(' ').replace(/\$/g, ''));
           return hay.includes(query);
         }
         return true;
@@ -145,8 +157,8 @@
         if (item.kind === 'group') {
           bodyHtml = `
             <div class="tree-group-body">
-              ${item.title ? `<div class="tree-group-title">${escHtml(item.title)}</div>` : ''}
-              <p class="tree-group-summary">${escHtml(item.el || item.note || '')}</p>
+              ${item.title ? `<div class="tree-group-title">${renderMathText(item.title)}</div>` : ''}
+              <p class="tree-group-summary">${renderMathText(item.el || item.note || '')}</p>
             </div>
           `;
         } else {
@@ -154,14 +166,14 @@
           cols.push(`
             <div class="tree-col tree-col-el">
               <div class="tree-col-label">Ελληνικά</div>
-              <div class="tree-col-text tree-col-primary">${escHtml(item.el)}</div>
+              <div class="tree-col-text tree-col-primary">${renderMathText(item.el)}</div>
             </div>
           `);
           if (item.ogden) {
             cols.push(`
               <div class="tree-col">
                 <div class="tree-col-label">Ogden &amp; Ramsey (1922)</div>
-                <div class="tree-col-text">${escHtml(item.ogden)}</div>
+                <div class="tree-col-text">${renderMathText(item.ogden)}</div>
               </div>
             `);
           }
@@ -169,7 +181,7 @@
             cols.push(`
               <div class="tree-col">
                 <div class="tree-col-label">Pears &amp; McGuinness (1961)</div>
-                <div class="tree-col-text">${escHtml(item.pm)}</div>
+                <div class="tree-col-text">${renderMathText(item.pm)}</div>
               </div>
             `);
           }
@@ -177,13 +189,13 @@
             cols.push(`
               <div class="tree-col">
                 <div class="tree-col-label">Γερμανικό πρωτότυπο (1921)</div>
-                <div class="tree-col-text tree-col-de">${escHtml(item.de)}</div>
+                <div class="tree-col-text tree-col-de">${renderMathText(item.de)}</div>
               </div>
             `);
           }
           bodyHtml = `<div class="tree-cols tree-cols-${cols.length}">${cols.join('')}</div>`;
           if (item.note) {
-            bodyHtml += `<div class="tree-note"><strong>Σημείωση:</strong> ${escHtml(item.note)}</div>`;
+            bodyHtml += `<div class="tree-note"><strong>Σημείωση:</strong> ${renderMathText(item.note)}</div>`;
           }
         }
 
@@ -203,6 +215,7 @@
           </div>
         `;
       }).join('');
+      if (typeof renderMathIn === 'function') renderMathIn(container);
     }
 
     function openPropPeek(num) {
@@ -225,7 +238,7 @@
         blocks.push(`
           <div class="peek-card peek-card-primary">
             <div class="peek-label">Ελληνική απόδοση</div>
-            <div class="peek-text-main">${escHtml(item.el)}</div>
+            <div class="peek-text-main">${renderMathText(item.el)}</div>
           </div>
         `);
       }
@@ -233,7 +246,7 @@
         blocks.push(`
           <div class="peek-card">
             <div class="peek-label">Ogden &amp; Ramsey (1922)</div>
-            <div class="peek-text">${escHtml(item.ogden)}</div>
+            <div class="peek-text">${renderMathText(item.ogden)}</div>
           </div>
         `);
       }
@@ -241,7 +254,7 @@
         blocks.push(`
           <div class="peek-card">
             <div class="peek-label">Pears &amp; McGuinness (1961)</div>
-            <div class="peek-text">${escHtml(item.pm)}</div>
+            <div class="peek-text">${renderMathText(item.pm)}</div>
           </div>
         `);
       }
@@ -249,18 +262,19 @@
         blocks.push(`
           <div class="peek-card">
             <div class="peek-label">Γερμανικό πρωτότυπο (1921)</div>
-            <div class="peek-text peek-de">${escHtml(item.de)}</div>
+            <div class="peek-text peek-de">${renderMathText(item.de)}</div>
           </div>
         `);
       }
       if (item.note) {
         blocks.push(`
           <div class="peek-note">
-            <strong>Σημείωση:</strong> ${escHtml(item.note)}
+            <strong>Σημείωση:</strong> ${renderMathText(item.note)}
           </div>
         `);
       }
       body.innerHTML = blocks.join('');
+      if (typeof renderMathIn === 'function') renderMathIn(body);
 
       if (item.anchor) {
         btn1.hidden = false;

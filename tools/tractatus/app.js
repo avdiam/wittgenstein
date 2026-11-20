@@ -415,7 +415,7 @@
       }
 
       const treeMatches = TLP_TREE_DATA.filter(item =>
-        normSearch([item.num, item.title || '', item.de || '', item.ogden || '', item.pm || '', item.el || '', item.note || ''].join(' ')).includes(qNorm)
+        normSearch([item.num, item.title || '', item.de || '', item.ogden || '', item.pm || '', item.el || '', item.note || ''].join(' ').replace(/\$/g, '')).includes(qNorm)
       ).length;
       const philMatches = PHILOSOPHERS_DATA.filter(p =>
         normSearch(p.name + ' ' + p.ref + ' ' + p.oldView + ' ' + p.wittView).includes(qNorm)
@@ -462,6 +462,19 @@
     // -------------------------------------------------------------------------
     // 4. KATEX RENDERING, SCROLLSPY, PROGRESS & KEYBOARD SHORTCUTS
     // -------------------------------------------------------------------------
+    function renderMathIn(root) {
+      if (!window.katex || !root) return;
+      const els = root.querySelectorAll('.tex:not(.tex-done)');
+      for (let i = 0; i < els.length; i++) {
+        const el = els[i];
+        const tex = el.textContent;
+        try {
+          window.katex.render(tex, el, { displayMode: el.classList.contains('tex-display'), throwOnError: false });
+        } catch (e) { el.textContent = tex; }
+        el.classList.add('tex-done');
+      }
+    }
+
     function renderAllMath() {
       if (!window.katex) return;
       const els = Array.prototype.slice.call(document.querySelectorAll('.tex:not(.tex-done)'));
@@ -558,6 +571,7 @@
       initScrollSpy();
       applyInitialHash();
       updateReadingProgress();
+      renderAllMath();
     });
 
     window.addEventListener('load', renderAllMath);
