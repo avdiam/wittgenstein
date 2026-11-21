@@ -102,6 +102,9 @@ unpushed until the owner says otherwise.
    through `api.php`); the Gutenberg extract is too scrambled for it.
    For the owner: whether a copy of that text may be kept in the
    repository for the build (the LWP's licence to be read first).
+   A temporary local copy, with the two scripts that fetch and use it,
+   is in the git-ignored `sources_local/lwp_tractatus_de/` (2026-11-21):
+   **discard it** once this is decided or the checks no longer need it.
    (The alignment of the figure at 6.341 was fixed on 2026-11-21:
    `DONE.md`.)
 7. **Outside readings to compare with ours** (four links saved by the owner in
