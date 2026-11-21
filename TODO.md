@@ -57,7 +57,10 @@ item is finished, move it to `DONE.md` with the date.
   `DONE.md`; committed, not pushed). Then the ledger's corrections
   rechecked against the rewritten text: all stand. Then the visual
   check: the page holds at phone and tablet widths in both themes,
-  and the alignment of the three text figures was fixed.
+  and the alignment of the three text figures was fixed. Then the
+  90 group paragraphs read against the German: 59 completed or
+  corrected, so that each states every proposition in its heading
+  (details in `DONE.md`; four commits, not pushed).
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
@@ -69,18 +72,24 @@ unpushed until the owner says otherwise.
    the old text
    (`git show 9375bb0:"Tractatus Logico-Philosophicus/TRACTATUS_LOGICO_PHILOSOPHICUS_ANALYSIS_1-7.md"`).
    Still to do: commentary beyond what the old text had was added only
-   for the six passages; the owner to say where more is wanted. Seen
-   while reading Propositions 2–3: some group paragraphs do not state
-   every proposition in their heading (3.312–3.318 and 3.34–3.3442
-   above all; 2.031 and 3.322 too). For 6.4–6.522, read Wittgenstein's own «Διάλεξη για την Ηθική» (1929)
+   for the six passages; the owner to say where more is wanted. (The
+   group paragraphs now state every proposition in their heading:
+   done on 2026-11-21, `DONE.md`.) For 6.4–6.522, read Wittgenstein's own «Διάλεξη για την Ηθική» (1929)
    first, in the Greek translation on the Ludwig Wittgenstein Project
    (link saved by the owner in `Tractatus Logico-Philosophicus/`,
    untracked) beside the English text already used (ledger, A12). It is
    a primary source for the commentary, not a reading to compare with
    ours (owner, 2026-11-21); it will serve the route from 1929 later.
 2. **Greek translations in the 150 quote cards**: done on 2026-11-21
-   (`DONE.md`; ledger, Τ7–Τ9). Not covered: the paraphrases in the
-   group paragraphs.
+   (`DONE.md`; ledger, Τ7–Τ9). The paraphrases in the group
+   paragraphs were read against the German the same day (ledger,
+   Τ11–Τ12). For the owner, two points of wording from that pass:
+   (a) *Einleuchten* is rendered three ways: «προφανές» (5.1363),
+   «αυταπόδεικτο» (the same paragraph, of 5.4731 and 6.1271) and
+   «αυτονόητο» (5.4731 and 6.1271 in their own paragraphs); (b) the
+   paragraphs for 5.41–5.4541 and 5.55–5.5571 are now long, and some
+   of their propositions (5.452, 5.552, 5.557) could be quote cards
+   instead.
 3. **Quotations cut short**: done on 2026-11-21 (`DONE.md`; ledger,
    Τ1–Τ3). The check script is not in the repository; see point 6.
 4. **Ledger**: done on 2026-11-21; all corrections stand (`DONE.md`;

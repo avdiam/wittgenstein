@@ -8,6 +8,40 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-21, night: the group paragraphs read against the German.**
+
+The 90 group paragraphs of the analysis (they cover the 376 propositions
+that have no quote card) were read against the German text of the Ludwig
+Wittgenstein Project, one template per proposition, fetched through
+`api.php` into a scratch folder (not kept in the repository). Two things
+were checked: that each paragraph states every proposition its heading
+names, and that the Greek says what the German says. Four commits, one per
+part (Propositions 2–3, 4, 5, 6); `build_all.py --check` exits 0 and the
+page renders its 928 formulas without a KaTeX error (headless Chrome).
+
+- **Unstated propositions added** in 59 of the 90 paragraphs; the other 31
+  agreed with the German and were left as they were. The largest gaps were
+  3.312–3.318, 3.34–3.3442, 4.011–4.016, 4.02–4.027, 4.122–4.1252,
+  4.221–4.243, 5.11–5.132, 5.21–5.242, 5.41–5.4541, 5.47–5.476,
+  5.502–5.5151, 5.521–5.5262, 5.55–5.5571, 6.12–6.1224 and 6.23–6.24,
+  where a paragraph of two or three sentences stood for up to fourteen
+  propositions. Each added sentence is a close paraphrase of the German
+  with the number in brackets; no commentary of ours was added.
+  Propositions already covered by an example box under the paragraph
+  (3.323, 4.123, the "Julius Cäsar" part of 5.02) were not repeated.
+- **Greek that said something else, corrected** (ledger, Τ12): 2.0122,
+  3.031, 3.143, 3.344, 4.116, 4.124, 4.1273, 4.463, 5.02, 5.135, 5.136,
+  5.5302, 5.535, 6.372.
+- 5.11–5.12 now use Wittgenstein's letters («η $p$ απορρέει από την $q$»);
+  the paragraph had them the other way round, which was consistent but
+  did not match the propositions it cites.
+- Commentary of ours inside these paragraphs (the «διπολικότητα» of
+  4.05–4.062, Bradley and Moore/Russell at 4.1251, Kant at 4.0412, Leibniz
+  at 5.5302, Lewis Carroll at 5.132) was kept as it was and not rechecked
+  against sources in this pass.
+- Left for the owner (`TODO.md`): one word for *Einleuchten*, and whether
+  the longest paragraphs should become quote cards.
+
 **Session of 2026-11-21, night: visual check of the Tractatus page.**
 
 - Follow-up 5 of the review, in headless Chrome through a temporary
