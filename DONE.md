@@ -39,8 +39,11 @@ page renders its 928 formulas without a KaTeX error (headless Chrome).
   4.05–4.062, Bradley and Moore/Russell at 4.1251, Kant at 4.0412, Leibniz
   at 5.5302, Lewis Carroll at 5.132) was kept as it was and not rechecked
   against sources in this pass.
-- Left for the owner (`TODO.md`): one word for *Einleuchten*, and whether
-  the longest paragraphs should become quote cards.
+- *Einleuchten* was rendered three ways («προφανές», «αυταπόδεικτο»,
+  «αυτονόητο»); the owner chose «αυταπόδεικτο» (2026-11-21), now used
+  at 5.1363 and its heading, 5.4731 and 6.1271 (ledger, Τ13).
+- Left for the owner (`TODO.md`): whether the longest paragraphs should
+  become quote cards.
 
 **Session of 2026-11-21, night: visual check of the Tractatus page.**
 

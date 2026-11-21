@@ -83,13 +83,9 @@ unpushed until the owner says otherwise.
 2. **Greek translations in the 150 quote cards**: done on 2026-11-21
    (`DONE.md`; ledger, Τ7–Τ9). The paraphrases in the group
    paragraphs were read against the German the same day (ledger,
-   Τ11–Τ12). For the owner, two points of wording from that pass:
-   (a) *Einleuchten* is rendered three ways: «προφανές» (5.1363),
-   «αυταπόδεικτο» (the same paragraph, of 5.4731 and 6.1271) and
-   «αυτονόητο» (5.4731 and 6.1271 in their own paragraphs); (b) the
-   paragraphs for 5.41–5.4541 and 5.55–5.5571 are now long, and some
-   of their propositions (5.452, 5.552, 5.557) could be quote cards
-   instead.
+   Τ11–Τ13). For the owner, from that pass: the paragraphs for
+   5.41–5.4541 and 5.55–5.5571 are now long, and some of their
+   propositions (5.452, 5.552, 5.557) could be quote cards instead.
 3. **Quotations cut short**: done on 2026-11-21 (`DONE.md`; ledger,
    Τ1–Τ3). The check script is not in the repository; see point 6.
 4. **Ledger**: done on 2026-11-21; all corrections stand (`DONE.md`;
