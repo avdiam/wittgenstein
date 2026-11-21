@@ -61,6 +61,10 @@ item is finished, move it to `DONE.md` with the date.
   90 group paragraphs read against the German: 59 completed or
   corrected, so that each states every proposition in its heading
   (details in `DONE.md`; four commits, not pushed).
+- Session of 2026-11-22: commentary on 6.4 – 6.54 added from the
+  «Διάλεξη για την Ηθική» and from Κιντή's paper on the ladder, nine
+  proposals taken through with the owner (details in `DONE.md`;
+  ledger, Φ1–Φ10; one commit, not pushed).
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
@@ -74,12 +78,10 @@ unpushed until the owner says otherwise.
    Still to do: commentary beyond what the old text had was added only
    for the six passages; the owner to say where more is wanted. (The
    group paragraphs now state every proposition in their heading:
-   done on 2026-11-21, `DONE.md`.) For 6.4–6.522, read Wittgenstein's own «Διάλεξη για την Ηθική» (1929)
-   first, in the Greek translation on the Ludwig Wittgenstein Project
-   (link saved by the owner in `Tractatus Logico-Philosophicus/`,
-   untracked) beside the English text already used (ledger, A12). It is
-   a primary source for the commentary, not a reading to compare with
-   ours (owner, 2026-11-21); it will serve the route from 1929 later.
+   done on 2026-11-21, `DONE.md`.) For 6.4–6.54 the commentary from the
+   «Διάλεξη για την Ηθική» was added on 2026-11-22 (`DONE.md`; ledger,
+   Φ1–Φ3). The lecture and Waismann's notes of 1929–1930 will serve the
+   route from 1929 later.
 2. **Greek translations in the 150 quote cards**: done on 2026-11-21
    (`DONE.md`; ledger, Τ7–Τ9). The paraphrases in the group
    paragraphs were read against the German the same day (ledger,
@@ -114,8 +116,10 @@ unpushed until the owner says otherwise.
    <https://readtractatus.com/>, <https://iep.utm.edu/wittgens/#H2>.
    Differences go to the ledger with a verdict; where good
    sources disagree, an «Ερμηνευτική σημείωση».
-8. **`Κιντή_Σκάλα_Tractatus.pdf`** (local, git-ignored): read it and see
-   what it gives for the analysis, the ladder (6.54) above all.
+8. **`Κιντή_Σκάλα_Tractatus.pdf`** (local, git-ignored): done on
+   2026-11-22 (`DONE.md`; ledger, Φ4–Φ10). Still open: Hacker's article
+   of 2015 and Engelmann's memoir, read only through her
+   (`CROSSCHECK_PLAN.md`).
 
 ## Next session
 

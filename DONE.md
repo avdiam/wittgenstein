@@ -8,6 +8,47 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-22: commentary on 6.4 – 6.54 from the «Διάλεξη για την Ηθική» and Κιντή's paper.**
+
+Follow-ups 1 and 8 of the review of 2026-11-21. The lecture was read in full
+in English and in the Greek translation on the LWP, and Κιντή's «Η σκάλα του
+*Tractatus*» (*Δευκαλίων* 37/1-2, 2023) in full. Nine proposals were taken
+through with the owner one by one, in text order; the owner reworded three
+(the last sentence of the example on the murder, the last sentence on 6.422,
+the arrangement of the paragraph on the ladder) and chose «κελιού» and
+«γαλανός». One commit; `build_all.py --check` exits 0. Ledger, Φ1–Φ10.
+
+- **After 6.4**: the world-book of the lecture, where all facts and all
+  propositions stand on one level.
+- **After 6.41**: relative and absolute value, as the key to «και αν υπήρχε,
+  δεν θα είχε καμία αξία».
+- **The «Παράδειγμα» on the murder** corrected against the lecture: physical
+  *and psychological* details, the pain and rage of others as further facts;
+  the gloss that the wrongness «κείτεται στο όριο του κόσμου» removed, and
+  the closing sentence marked as ours. Title «Διάλεξη για την Ηθική»
+  throughout.
+- **After the group 6.42, 6.422 – 6.423**: the teacup, the book that would
+  destroy all other books, the "absolutely right road".
+- **After 6.44 – 6.45**: wonder at the existence of the world, and why its
+  verbal expression is nonsense by the lecture's own account.
+- **Proposition 7, point 2**: *Geschwätz* sourced to Waismann's notes of
+  30 December 1929 and given with its date; the clause against theologians
+  and moral philosophers removed, since the lecture says he would not
+  ridicule the tendency. A new paragraph with the lecture's closing lines
+  and Engelmann on the positivists.
+- **Dialogue, point 1**: what the ladder image does in Schopenhauer, Plato,
+  Pseudo-Dionysius, Sextus and Bacon, after Κιντή.
+- **A second «Ερμηνευτική σημείωση»**: whether the ladder leads upward
+  (Κιντή) or back to the ground floor (Hacker 2015), with the remark of 1930.
+- **Dialogue, point 3**: Ramsey's remark that what cannot be said cannot be
+  whistled either.
+- **Bibliography**: the Greek translation of the lecture, Waismann's notes,
+  *Vermischte Bemerkungen*, Ramsey (1929/1931), Engelmann (1967), Bazzocchi
+  (2014), Hacker (2015), Κιντή (2023).
+- No structured asset in `tools/tractatus/`, nor the essay or the cover
+  page, repeats a changed fact (the old title «Διάλεξη περί Ηθικής» and
+  *Geschwätz* occur only in the analysis).
+
 **Session of 2026-11-21, night: the group paragraphs read against the German.**
 
 The 90 group paragraphs of the analysis (they cover the 376 propositions
