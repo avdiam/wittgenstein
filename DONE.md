@@ -8,6 +8,32 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-22, later: the outside readings compared with the analysis.**
+
+Follow-up 7 of the review of 2026-11-21. The IEP article (Richter) and six
+pages of wittgenstein.be were read and their claims tested against the
+Markdown; SparkNotes refused every request and readtractatus.com has no
+commentary. Nothing in the two sites read contradicts the analysis. Five
+points that they state and the analysis did not were taken through with the
+owner one by one, in text order, each checked in a better source first. One
+commit; `build_all.py --check` exits 0. Ledger, Χ1–Χ8.
+
+- **End of section Β (2.02 – 2.0272)**: «Ερμηνευτική σημείωση (Τι είναι τα
+  αντικείμενα;)», after the SEP entry on logical atomism (Proops):
+  particulars only (Copi, Anscombe) or properties and relations too
+  (Stenius, the Hintikkas); the visual-field idea of 1915; Proops's view
+  that Wittgenstein had no prior opinion; the remark to Malcolm.
+- **After 4.1212**: the letter to Russell of 19.8.1919, where the theory of
+  what can be said and what can only be shown is the "main point" and "the
+  cardinal problem of philosophy"; our Greek, cited by letter number.
+- **Note at 5.6**: Mounce's reading of solipsism as a confusion, not an
+  unsayable truth, through the IEP.
+- **Epilogue**: the *Tractatus* as doctoral thesis in 1929, examiners
+  Russell and Moore; the sentence toned down.
+- **Bibliography**: Copi, Mounce, the Hintikkas and the SEP entry in Δ΄; a
+  line in Α΄ on the translations of 2023–2024 (Beaney, Booth, Searls),
+  marked as not used.
+
 **Session of 2026-11-22: commentary on 6.4 – 6.54 from the «Διάλεξη για την Ηθική» and Κιντή's paper.**
 
 Follow-ups 1 and 8 of the review of 2026-11-21. The lecture was read in full

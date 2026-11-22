@@ -65,6 +65,10 @@ item is finished, move it to `DONE.md` with the date.
   «Διάλεξη για την Ηθική» and from Κιντή's paper on the ladder, nine
   proposals taken through with the owner (details in `DONE.md`;
   ledger, Φ1–Φ10; one commit, not pushed).
+- Session of 2026-11-22, later: the outside readings compared with the
+  analysis (follow-up 7); no contradiction found, five additions taken
+  through with the owner (details in `DONE.md`; ledger, Χ1–Χ8; one
+  commit, not pushed).
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
@@ -116,6 +120,11 @@ unpushed until the owner says otherwise.
    <https://readtractatus.com/>, <https://iep.utm.edu/wittgens/#H2>.
    Differences go to the ledger with a verdict; where good
    sources disagree, an «Ερμηνευτική σημείωση».
+   Done on 2026-11-22 for the IEP and wittgenstein.be (`DONE.md`;
+   ledger, Χ1–Χ8). Still open: SparkNotes refuses automated requests
+   (HTTP 403), so it needs the owner's browser or pasted text;
+   readtractatus.com is a viewer of the text with no commentary, so
+   there is nothing to compare.
 8. **`Κιντή_Σκάλα_Tractatus.pdf`** (local, git-ignored): done on
    2026-11-22 (`DONE.md`; ledger, Φ4–Φ10). Still open: Hacker's article
    of 2015 and Engelmann's memoir, read only through her
