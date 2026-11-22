@@ -28,6 +28,8 @@ is, and scripts in `tools/` regenerate it from the sources.
 | `docs/Logiki_Glossa_Michanes.docx` | The essay as a Word file. Generated. |
 | `tools/build_html.py` | Builds `docs/tractatus.html` from the analysis Markdown and `tools/tractatus/*`. |
 | `tools/tractatus/` | Modular CSS, JS, interactive labs, philosophers, German terms glossary (`terms.json`), and P&M comparison quotes used by `tools/build_html.py`. |
+| `tools/tractatus/tlp_de.json` | German text of the 526 propositions (edition of 1922, public domain), as transcribed by the Ludwig Wittgenstein Project. The build checks the German of every quote card against it. |
+| `tools/fetch_lwp_de.py` | Fetches that text again from the LWP. Not part of `build_all.py`. |
 | `tools/build_essay_html.py` | Builds `docs/essay.html`; each `##` section goes to a tab, mapped in `tab_for()`. |
 | `tools/build_docx.py` | Builds the Word file, with the figures. |
 | `tools/render_figures.py` | Renders the SVG diagrams to PNG with headless Chrome. Run it after changing an SVG; `build_docx.py` stops if a copy is out of date. Not part of `build_all.py`. |

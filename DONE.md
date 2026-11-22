@@ -8,6 +8,31 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-22, evening: the build checks the German of the cards.**
+
+Follow-up 6 of the review of 2026-11-21. The owner asked whether keeping
+the LWP German text in the public repository is legal; the LWP's notices
+were read (ledger, Τ16) and the owner decided to keep it. One commit;
+`build_all.py --check` exits 0. Ledger, Τ15–Τ16.
+
+- `tools/tractatus/tlp_de.json`: the German of the 526 propositions, the
+  wikitext of the LWP templates as fetched on 2026-11-21, keyed by number.
+  `tools/fetch_lwp_de.py` fetches it again. Credit and the two notices
+  (public domain; CC BY-SA 4.0 for the site's own content) in `LICENSE` §3;
+  `README.md` and `CLAUDE.md` name the file and the check.
+- `check_card_german()` in `tools/build_html.py`: every quote card must give
+  the German of its proposition whole, or mark each omission with […]; the
+  parts given must stand in the proposition word for word and in order. It
+  compares words of three letters or more, so formula letters, figures and
+  punctuation are outside it. Tried on doctored quotations: a changed word,
+  a card cut short, and parts out of order all stop the build.
+- Result on the 153 cards: one difference, 4.5 «irgend einer», corrected to
+  «irgendeiner». All omissions were already marked.
+- The temporary copy in `sources_local/lwp_tractatus_de/` was deleted, as
+  its own note said (the text and the fetch script are now in `tools/`;
+  `worksheet.py`, which paired each group paragraph with its German, went
+  with it).
+
 **Session of 2026-11-22, evening: 5.452, 5.552 and 5.557 as quote cards.**
 
 Follow-up 2 of the review of 2026-11-21, chosen by the owner at the start

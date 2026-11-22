@@ -72,6 +72,10 @@ item is finished, move it to `DONE.md` with the date.
 - Session of 2026-11-22, evening: 5.452, 5.552 and 5.557 made quote
   cards and their two group paragraphs split around them (details in
   `DONE.md`; ledger, Τ14; one commit, not pushed).
+- Session of 2026-11-22, evening: the LWP German text kept in the
+  repository (owner) and the build made to check the German of every
+  card against it; 4.5 corrected by one word (details in `DONE.md`;
+  ledger, Τ15–Τ16; one commit, not pushed).
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
@@ -104,19 +108,13 @@ unpushed until the owner says otherwise.
    For the owner, on a real phone: hyphenation of the justified text,
    and whether the three text figures (5.5423, 5.6331, 6.341) align
    on Android.
-6. **Builder**: extend `tools/build_html.py` to check content too (the
-   coverage check is in; candidates: quotations against the Gutenberg
-   text, an omission mark where a card is shorter than its proposition).
-   The check of 2026-11-21 needed the LWP German text, one template per
-   proposition (`Template:Individual-TLP-paragraph-de-N`, 526 pages
-   through `api.php`); the Gutenberg extract is too scrambled for it.
-   For the owner: whether a copy of that text may be kept in the
-   repository for the build (the LWP's licence to be read first).
-   A temporary local copy, with the two scripts that fetch and use it,
-   is in the git-ignored `sources_local/lwp_tractatus_de/` (2026-11-21):
-   **discard it** once this is decided or the checks no longer need it.
-   (The alignment of the figure at 6.341 was fixed on 2026-11-21:
-   `DONE.md`.)
+6. **Builder**: the German of the quote cards is checked by the build
+   since 2026-11-22, against the LWP text kept in
+   `tools/tractatus/tlp_de.json` by the owner's decision (`DONE.md`;
+   ledger, Τ15–Τ16). Still open, if wanted: the same check for Ogden's
+   English (the Gutenberg extract is too scrambled to serve as it is; the
+   LWP has the English in templates too, `…-paragraph-en-N` to be
+   confirmed), and for the German quoted inside the group paragraphs.
 7. **Outside readings to compare with ours** (four links saved by the owner in
    `Tractatus Logico-Philosophicus/`, untracked):
    <https://wittgenstein.be/en/books/tractatus-logico-philosophicus/>,

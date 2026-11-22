@@ -802,6 +802,90 @@ def check_proposition_coverage(tree_data):
         raise SystemExit("build_html: proposition coverage:\n  " + "\n  ".join(problems))
 
 
+OMISSION_MARK = "[…]"
+
+
+def _german_words(text):
+    """The German words of a passage, for comparison: lower case, ß as ss, and only
+    words of three letters or more, so that formula letters (p, x, W, rs) and the
+    "Def." of a definition, which the two texts write differently, play no part."""
+    text = text.replace("ß", "ss")
+    words = re.findall(r"[A-Za-zÄÖÜäöü]{3,}", text)
+    return [w.lower() for w in words if w.lower() != "def"]
+
+
+def _lwp_plain(wikitext):
+    """Wikitext of one LWP paragraph template -> its running text, without formulas and figures."""
+    t = re.sub(r"\{\{ParTLPwrapper-de\|\{\{ParTLPde\|[^}]*\}\}", "", wikitext)
+    t = re.sub(r"<ref[^>]*>.*?</ref>", " ", t, flags=re.S)
+    t = re.sub(r"<math[^>]*>.*?</math>", " ", t, flags=re.S)
+    t = re.sub(r"\[\[File:[^\]]*\]\]", " ", t)
+    t = re.sub(r"\{\{TLP [^{}]*\}\}", " ", t)
+    t = t.replace("{{spaced text|", "")       # emphasis may begin inside a word: zah{{spaced text|llos}}
+    t = t.replace("''", "")                   # italics: W''p''F
+    t = re.sub(r"\{\{[^{}|]*\|", " ", t)      # {{p center|…}}, {{p indent|…}}: keep the content
+    t = re.sub(r"<[^>]+>", "", t)             # <sub>, <nowiki>, <br>
+    return t
+
+
+def _find_run(words, run, start):
+    """Index just past the first occurrence of `run` in `words` at or after `start`, or -1."""
+    if not run:
+        return start
+    for i in range(start, len(words) - len(run) + 1):
+        if words[i:i + len(run)] == run:
+            return i + len(run)
+    return -1
+
+
+def check_card_german(tree_data):
+    """Stop the build unless the German of every quote card is the German of its proposition.
+
+    The reference is tools/tractatus/tlp_de.json (the text of the 1922 edition as transcribed
+    by the Ludwig Wittgenstein Project). A card must give the whole proposition, or mark each
+    omission with […]; the parts it does give must stand in the proposition word for word."""
+    reference = json.loads((ASSETS_DIR / "tlp_de.json").read_text(encoding="utf8"))
+    problems = []
+    for item in tree_data:
+        if item["kind"] != "single":
+            continue
+        num = item["num"]
+        if not item.get("de"):
+            problems.append(f"{num}: the card has no German text")
+            continue
+        if num not in reference:
+            problems.append(f"{num}: not in tlp_de.json")
+            continue
+        full = _german_words(_lwp_plain(reference[num]))
+        card = re.sub(r"\$[^$]*\$", " ", item["de"])
+        parts = [_german_words(p) for p in card.split(OMISSION_MARK)]
+        if len(parts) == 1:
+            if parts[0] != full:
+                at = next((i for i, (a, b) in enumerate(zip(parts[0], full)) if a != b),
+                          min(len(parts[0]), len(full)))
+                problems.append(
+                    f"{num}: differs from the German text at word {at + 1}: card "
+                    f"'{' '.join(parts[0][at:at + 5])}', text '{' '.join(full[at:at + 5])}' "
+                    f"(mark an omission with {OMISSION_MARK})")
+            continue
+        pos = 0
+        for k, run in enumerate(parts):
+            if k == 0 and run and full[:len(run)] != run:
+                end = -1
+            elif k == len(parts) - 1 and run:
+                end = len(full) if (len(full) - len(run) >= pos and full[len(full) - len(run):] == run) else -1
+            else:
+                end = _find_run(full, run, pos)
+            if end < 0:
+                problems.append(
+                    f"{num}: part {k + 1} of the card ('{' '.join(run[:6])} …') "
+                    f"is not in the German text word for word, or not in this place")
+                break
+            pos = end
+    if problems:
+        raise SystemExit("build_html: German of the quote cards:\n  " + "\n  ".join(problems))
+
+
 def safe_json_for_script(obj):
     return json.dumps(obj, ensure_ascii=False).replace("</", "<\\/")
 
@@ -856,6 +940,7 @@ def build(strict_branches=False):
 
     tree_data = merge_tree_data(extracted_nodes, pm_quotes)
     check_proposition_coverage(tree_data)
+    check_card_german(tree_data)
     valid_prop_nums = {item["num"] for item in tree_data if item["kind"] == "single"}
 
     # Validate that all terms.json targets and tree_data anchors resolve in the generated page

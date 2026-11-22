@@ -103,3 +103,9 @@ remove it from `CROSSCHECK_PLAN.md`.
   `tools/build_html.py` stops unless each number in
   `tools/tractatus/proposition_numbers.json` is covered exactly once, by a
   quoted card or by one group heading (`#### 2.013 – 2.0141, 2.0201 · …`).
+- `tools/build_html.py` also stops unless the German of every quote card is
+  the German of its proposition in `tools/tractatus/tlp_de.json` (the LWP
+  text, refreshed by `tools/fetch_lwp_de.py`). A card gives the whole
+  proposition or marks each omission with `[…]`. The check reads words of
+  three letters or more, so formulas, figures and punctuation are still
+  checked by eye, and the English and the Greek are not checked at all.

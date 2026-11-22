@@ -60,6 +60,18 @@ This repository contains texts and code under two different licences.
      eBook #5740 and carries the Project Gutenberg License stated inside it.
    - The tree-view PDF of the Ludwig Wittgenstein Project states that its text
      and translation are in the public domain; see the notice inside it.
+   - tools/tractatus/tlp_de.json holds the German text of the Tractatus,
+     proposition by proposition, as transcribed by the Ludwig Wittgenstein
+     Project (https://www.wittgensteinproject.org/), fetched on 2026-11-21.
+     The Project states that its digital edition reproduces the edition of
+     C. K. Ogden and F. P. Ramsey (Kegan Paul, Trench, Trubner & Co., 1922)
+     and that the work is in the public domain in its country of origin and
+     in countries where copyright lasts 70 years or less after the author's
+     death. The Project's site offers its own content under CC BY-SA 4.0
+     unless otherwise noted
+     (https://creativecommons.org/licenses/by-sa/4.0/); whatever in that
+     file is the Project's own, such as the wiki markup, stays under that
+     licence. The CC BY 4.0 licence of section 1 does not cover the file.
    - Klement's side-by-side edition is not included, because it contains the
      Pears/McGuinness translation, which is still under copyright. It is
      available from its editor at http://people.umass.edu/klement/tlp/.
