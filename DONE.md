@@ -8,6 +8,27 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-22, night: three notes from the points SparkNotes raised.**
+
+The owner chose three of the five candidate points (ledger, Χ12). Each was
+searched in better sources first, the wording was proposed, and the owner
+agreed. One commit; `build_all.py --check` exits 0. Ledger, Χ13–Χ15.
+
+- **2.02, note «Τι είναι τα αντικείμενα;»**: a third question, whether the
+  objects come before language: Malcolm, Pears and Hacker against Ishiguro
+  and McGuinness, with 3.3 accepted on both sides. Read through Engelmann
+  (2021), Bartmann (2021) and Johnston (2017).
+- **After 2.063**: «Ερμηνευτική σημείωση (Κόσμος και πραγματικότητα)» on
+  2.04, 2.06 and 2.063: Fogelin (an innocent slip) and Black (synonyms,
+  with a "perhaps").
+- **6.02 – 6.03**: «Ερμηνευτική σημείωση («και ούτω καθεξής»)»: Frege's
+  logical definition of following in a series and what it was for,
+  Wittgenstein's charge of a circle (4.1273), and the early criticisms of
+  scope by Russell and Ramsey. SparkNotes's own version of this point was
+  not supported by the sources and was not adopted.
+- **Bibliography Δ΄**: Ishiguro (1969), McGuinness (1981), Malcolm (1986),
+  Fogelin (1987) and Engelmann (2021) added; pages added to Black (1964).
+
 **Session of 2026-11-22, night: SparkNotes compared with the analysis.**
 
 The rest of follow-up 7. SparkNotes refuses automated requests, so the

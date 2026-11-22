@@ -80,6 +80,10 @@ item is finished, move it to `DONE.md` with the date.
   browser and compared; no contradiction, five candidate points
   recorded (details in `DONE.md`; ledger, Χ9–Χ12; one commit, not
   pushed).
+- Session of 2026-11-22, night: three notes added from points SparkNotes
+  raised, each checked in better sources first: objects and language
+  (2.02), world and reality (2.063), «και ούτω καθεξής» (6.02)
+  (details in `DONE.md`; ledger, Χ13–Χ15; one commit, not pushed).
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
@@ -129,9 +133,10 @@ unpushed until the owner says otherwise.
    Done on 2026-11-22 for the IEP and wittgenstein.be (`DONE.md`;
    ledger, Χ1–Χ8). SparkNotes, which refuses automated requests,
    was read on 2026-11-22 through the owner's browser: nothing in it
-   contradicts the analysis (ledger, Χ9–Χ11). Still open: the five
-   points it raises that the analysis does not treat (ledger, Χ12),
-   for the owner to choose from; each needs a better source first.
+   contradicts the analysis (ledger, Χ9–Χ11). Three of the points it raised were checked in
+   better sources and added as notes (ledger, Χ13–Χ15; `DONE.md`); a
+   fourth (3.03 and contradictions) was not pursued and the fifth
+   (use at 3.326–3.328) waits for the *Investigations* part.
    readtractatus.com is a viewer of the text with no commentary, so
    there is nothing to compare.
 8. **`Κιντή_Σκάλα_Tractatus.pdf`** (local, git-ignored): done on
