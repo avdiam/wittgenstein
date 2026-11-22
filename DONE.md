@@ -8,6 +8,22 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-22, night: SparkNotes compared with the analysis.**
+
+The rest of follow-up 7. SparkNotes refuses automated requests, so the
+guide was read through the owner's Chrome: context, summary, analysis,
+terms, study questions and the thirteen section pages (the "quotes" page
+shows one quote without a subscription). Records only, no change to the
+analysis. Ledger, Χ9–Χ12.
+
+- Nothing in it contradicts the analysis; what it states, the analysis
+  has, usually with sources (Χ10).
+- Six slips of its own were noted so that they are not taken over, among
+  them the probability example of its section 7, which is the wrong way
+  round (Χ11).
+- Five points it raises that the analysis does not treat were recorded as
+  candidates and put to the owner (Χ12).
+
 **Session of 2026-11-22, evening: the build checks the German of the cards.**
 
 Follow-up 6 of the review of 2026-11-21. The owner asked whether keeping

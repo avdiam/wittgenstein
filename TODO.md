@@ -76,6 +76,10 @@ item is finished, move it to `DONE.md` with the date.
   repository (owner) and the build made to check the German of every
   card against it; 4.5 corrected by one word (details in `DONE.md`;
   ledger, Τ15–Τ16; one commit, not pushed).
+- Session of 2026-11-22, night: SparkNotes read through the owner's
+  browser and compared; no contradiction, five candidate points
+  recorded (details in `DONE.md`; ledger, Χ9–Χ12; one commit, not
+  pushed).
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
@@ -123,8 +127,11 @@ unpushed until the owner says otherwise.
    Differences go to the ledger with a verdict; where good
    sources disagree, an «Ερμηνευτική σημείωση».
    Done on 2026-11-22 for the IEP and wittgenstein.be (`DONE.md`;
-   ledger, Χ1–Χ8). Still open: SparkNotes refuses automated requests
-   (HTTP 403), so it needs the owner's browser or pasted text;
+   ledger, Χ1–Χ8). SparkNotes, which refuses automated requests,
+   was read on 2026-11-22 through the owner's browser: nothing in it
+   contradicts the analysis (ledger, Χ9–Χ11). Still open: the five
+   points it raises that the analysis does not treat (ledger, Χ12),
+   for the owner to choose from; each needs a better source first.
    readtractatus.com is a viewer of the text with no commentary, so
    there is nothing to compare.
 8. **`Κιντή_Σκάλα_Tractatus.pdf`** (local, git-ignored): done on
