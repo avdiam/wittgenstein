@@ -69,6 +69,9 @@ item is finished, move it to `DONE.md` with the date.
   analysis (follow-up 7); no contradiction found, five additions taken
   through with the owner (details in `DONE.md`; ledger, Χ1–Χ8; one
   commit, not pushed).
+- Session of 2026-11-22, evening: 5.452, 5.552 and 5.557 made quote
+  cards and their two group paragraphs split around them (details in
+  `DONE.md`; ledger, Τ14; one commit, not pushed).
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
@@ -89,9 +92,10 @@ unpushed until the owner says otherwise.
 2. **Greek translations in the 150 quote cards**: done on 2026-11-21
    (`DONE.md`; ledger, Τ7–Τ9). The paraphrases in the group
    paragraphs were read against the German the same day (ledger,
-   Τ11–Τ13). For the owner, from that pass: the paragraphs for
-   5.41–5.4541 and 5.55–5.5571 are now long, and some of their
-   propositions (5.452, 5.552, 5.557) could be quote cards instead.
+   Τ11–Τ13). The two paragraphs that pass had left long (5.41–5.4541
+   and 5.55–5.5571) were split on 2026-11-22, with 5.452, 5.552 and
+   5.557 as quote cards (`DONE.md`; ledger, Τ14). For the owner: read
+   the Greek of the three new cards.
 3. **Quotations cut short**: done on 2026-11-21 (`DONE.md`; ledger,
    Τ1–Τ3). The check script is not in the repository; see point 6.
 4. **Ledger**: done on 2026-11-21; all corrections stand (`DONE.md`;

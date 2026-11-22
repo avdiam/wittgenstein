@@ -8,6 +8,27 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-22, evening: 5.452, 5.552 and 5.557 as quote cards.**
+
+Follow-up 2 of the review of 2026-11-21, chosen by the owner at the start
+of the session. The three propositions were paraphrased inside two long
+group paragraphs; each is now a quote card (our Greek from the German in
+full, the German, Ogden), and the paragraphs are split around the cards so
+that the text still runs in the order of the numbers. One commit;
+`build_all.py --check` exits 0. Ledger, Τ14.
+
+- **5.4**: the group «5.41 – 5.42, 5.44 – 5.4541» became «5.41 – 5.42,
+  5.44 – 5.451» and «5.453 – 5.4541», with the card for 5.452 between them
+  (after the card for 5.43, which stays where it was).
+- **5.55**: the group «5.55 – 5.5562, 5.557 – 5.5571» became «5.55 – 5.551»,
+  «5.5521 – 5.5562» and «5.5571», with the cards for 5.552 and 5.557 in
+  their places; the card for 5.5563 now stands before 5.557, in the order
+  of the numbers.
+- The page now has 153 quote cards and 93 groups (246 tree nodes).
+- `markdown-it-py` was missing from the machine's Python 3.13 and was
+  installed (`pip install markdown-it-py`, version 4.3.0); the generated
+  files came out identical to the committed ones.
+
 **Session of 2026-11-22, later: the outside readings compared with the analysis.**
 
 Follow-up 7 of the review of 2026-11-21. The IEP article (Richter) and six
