@@ -98,8 +98,8 @@ unpushed until the owner says otherwise.
    paragraphs were read against the German the same day (ledger,
    Τ11–Τ13). The two paragraphs that pass had left long (5.41–5.4541
    and 5.55–5.5571) were split on 2026-11-22, with 5.452, 5.552 and
-   5.557 as quote cards (`DONE.md`; ledger, Τ14). For the owner: read
-   the Greek of the three new cards.
+   5.557 as quote cards (`DONE.md`; ledger, Τ14). The owner read
+   the Greek of the three cards and agreed (2026-11-22).
 3. **Quotations cut short**: done on 2026-11-21 (`DONE.md`; ledger,
    Τ1–Τ3). The check script is not in the repository; see point 6.
 4. **Ledger**: done on 2026-11-21; all corrections stand (`DONE.md`;

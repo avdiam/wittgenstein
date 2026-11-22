@@ -50,6 +50,8 @@ that the text still runs in the order of the numbers. One commit;
   their places; the card for 5.5563 now stands before 5.557, in the order
   of the numbers.
 - The page now has 153 quote cards and 93 groups (246 tree nodes).
+- The owner read the Greek of the three cards the same evening and agreed
+  with every point of wording as proposed (ledger, Τ14).
 - `markdown-it-py` was missing from the machine's Python 3.13 and was
   installed (`pip install markdown-it-py`, version 4.3.0); the generated
   files came out identical to the committed ones.
