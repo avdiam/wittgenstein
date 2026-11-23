@@ -8,6 +8,26 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-23: the essay checks that could be done online.**
+
+The owner chose option A of the choice left on 2026-11-19. Three open
+items of `CROSSCHECK_PLAN.md` were closed; all were confirmed and the
+essay is unchanged. Ledger, Ψ1–Ψ4.
+
+- **Life dates**: 33 modern dates (Leibniz to Bruner, with Erdős and
+  Fermat) and the four medieval ones the row of 2026-11-17 did not list
+  (Augustine, Averroes, Abelard, Aquinas), each against Wikidata and one
+  of MacTutor, the SEP or the GND. Fermat's «1601 ή 1607» matches the
+  dispute MacTutor records.
+- **Tarski** 1901–1983 (MacTutor, Wikidata).
+- **The construction of G** in section 7 is Gödel's own sketch (1931,
+  §1, pp. 174–176, Hirzel's translation) and the SEP's account of the
+  diagonal lemma.
+- **Boole's Rule of 0 and 1**: read in the 1854 edition (ch. II §15,
+  pp. 37–38) through the Internet Archive, since gutenberg.org still
+  refuses; the SEP's quotation is exact. Ch. III, Prop. IV (p. 49)
+  confirms the essay's sentence on x(1 − x) = 0.
+
 **Session of 2026-11-22, night: three notes from the points SparkNotes raised.**
 
 The owner chose three of the five candidate points (ledger, Χ12). Each was

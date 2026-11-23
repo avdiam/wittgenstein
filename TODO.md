@@ -84,6 +84,11 @@ item is finished, move it to `DONE.md` with the date.
   raised, each checked in better sources first: objects and language
   (2.02), world and reality (2.063), «και ούτω καθεξής» (6.02)
   (details in `DONE.md`; ledger, Χ13–Χ15; one commit, not pushed).
+- Session of 2026-11-23: option A of the choice below (the essay
+  checks that could be done online): life dates, Tarski, the
+  construction of G, Boole's Rule of 0 and 1. All confirmed; the
+  essay is unchanged (details in `DONE.md`; ledger, Ψ1–Ψ4; one
+  commit, not pushed).
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
@@ -163,6 +168,10 @@ session; the choice below is still open.
    checks; (C) the essay checks are declared finished and the
    *Investigations* part starts (points 5–6 of §6 in `RESEARCH_NOTES.md`,
    then stage 1).
+   (A) was done on 2026-11-23 (`DONE.md`; ledger, Ψ1–Ψ4); B or C is
+   still open. The essay checks still open in `CROSSCHECK_PLAN.md`
+   need books or are blocked (Turing's lecture number, Minsky and
+   Papert, EDGAR).
 
 Then, for the *Investigations* part (no writing of the third part yet;
 owner, 2026-11-17):
