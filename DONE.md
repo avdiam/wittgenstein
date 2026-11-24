@@ -29,6 +29,19 @@ Ledger, Ω12.
   meaning rewritten from 3.203 and 3.3, which both readings of the
   note at 2.02 accept; it had said «μια λέξη» and «επειδή». No note
   added (owner). Ledger, Ω13.
+- **Essay glossary** (old point 3, *Bedeutung*): «αναφορά» kept for
+  Frege and «σημασία» for Wittgenstein; the entry «Νόημα και αναφορά»
+  now links the two. Ledger, Ω14.
+- **Analysis** (old point 3, the evening star): «Αποσπερίτης» for
+  «Έσπερος» at 3.323 and in the Frege table, so that both pages use
+  the everyday pair with «Αυγερινός». Ledger, Ω15.
+- **Essay §6** (old point 3, elementary propositions): the term
+  «στοιχειώδεις προτάσεις» (*Elementarsätze*, 4.21) named once where
+  the *Tractatus*'s simple propositions first appear; «απλές» kept
+  elsewhere, as 4.21 allows («der einfachste Satz»). Ledger, Ω16.
+- **Truth tables** (old point 3, last term): the essay keeps the
+  textbook layout (Α/Ψ) and the analysis the book's (W/F, 4.31,
+  5.101); no change (owner). Ledger, Ω17.
 
 **Session of 2026-11-24: the essay compared with the analysis.**
 
