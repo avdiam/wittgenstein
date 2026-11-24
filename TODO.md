@@ -92,8 +92,9 @@ item is finished, move it to `DONE.md` with the date.
 - Session of 2026-11-24: everything pushed (`a3512af..5c3d10e`), so
   the «not pushed» in the lines above no longer holds. Then the essay
   compared with the whole analysis; step 1 of the follow-up applied
-  (details in `DONE.md`; ledger, Ω1–Ω11; one commit, not pushed). The
-  rest is listed under «Essay and analysis: open points» below.
+  (details in `DONE.md`; ledger, Ω1–Ω11); pushed (`5c3d10e..7e977d0`).
+  The rest, and two new questions from the owner, are listed under
+  «Essay and analysis: open points» below: start the next session there.
 
 ## Essay and analysis: open points (2026-11-24)
 
@@ -112,6 +113,32 @@ For the owner to decide (ledger, Ω rows, for what was already fixed):
    «απλές» against «στοιχειώδεις προτάσεις»; the essay's truth table
    (Α/Ψ, p varying slowest) against the *Tractatus* layout (W/F, 4.31,
    5.101).
+
+Questions the owner raised at the end of the session (2026-11-24),
+to discuss before any writing:
+
+4. **The generalisation of the Sheffer stroke.** Should the essay
+   and/or the analysis say more about it? The N operator of 5.502 is
+   joint denial over any number of propositions, a generalisation of
+   Sheffer's stroke (1913), which showed that one connective suffices
+   for all the others. The analysis has a note at 5.502; the essay does
+   not mention Sheffer at all. A possible place in the essay: §6 (the
+   three theses on logic) or §9, since NAND and NOR gates are each
+   enough to build any circuit. Check the history (Sheffer 1913; Peirce's
+   unpublished work of about 1880) in sources before writing.
+5. **A new result for the postscript or §11.** As the owner reported
+   it: «Riemann Hypothesis Proof (November 2026): Working with Claude
+   over six weeks, Alpöge published a formal proof in Lean spanning
+   roughly 17 million lines of code. It targets both the classical
+   Riemann hypothesis and the generalized Riemann hypothesis for
+   Dirichlet L-functions, with groups including Lean FRO and the
+   Mathlib Initiative reviewing the verification.» Not yet checked:
+   find the primary sources (the publication itself, Anthropic's
+   announcement, statements from Lean FRO and the Mathlib Initiative)
+   and the state of the review before deciding whether and how the
+   essay mentions it. As with the Fermat proof of 2026-11-15, the essay
+   should say only what the sources say, including whether the
+   verification is finished.
 
 Smaller points, not yet acted on: «ψευδοπροτάσεις» used in the essay
 for metaphysics and for equations (6.2), while 6.22 says equations show
