@@ -8,6 +8,26 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-24: the essay compared with the analysis.**
+
+The 36 local commits pushed at the owner's request (`a3512af..5c3d10e`);
+the Pages deployment succeeded. Then, at the owner's request, the essay
+read in full against the whole analysis. No contradiction on the reading
+of the *Tractatus* itself. The owner chose step 1 of the follow-up: the
+fixes that need no decision. Ledger, Ω1–Ω11.
+
+- **Essay**: Mauthner from Bohemia, not Vienna, and the title of his
+  book (text and timeline); the Paris model without the toy cars;
+  «κατάσταση πραγμάτων» kept for *Sachverhalt* (3.3, the figure caption,
+  the truth-table row); «διασαφητική» for the McGinn–Hutto reading; 6.54
+  as «όποιος τον καταλαβαίνει».
+- **Analysis and assets**: claims of influence hedged where the essay and
+  the ledger treat them as interpretation: Leibniz at 1.13, Kant at the
+  preface, 2.225 and 4.0412, the linguistic turn, Spinoza and 6.45
+  (`philosophers.json`, `pm_quotes.json` too); the preface's *im
+  Wesentlichen* restored in the epilogue; Ockham's formulation marked as
+  not his.
+
 **Session of 2026-11-23: the essay checks that could be done online.**
 
 The owner chose option A of the choice left on 2026-11-19. Three open

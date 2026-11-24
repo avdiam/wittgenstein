@@ -89,6 +89,37 @@ item is finished, move it to `DONE.md` with the date.
   construction of G, Boole's Rule of 0 and 1. All confirmed; the
   essay is unchanged (details in `DONE.md`; ledger, Ψ1–Ψ4; one
   commit, not pushed).
+- Session of 2026-11-24: everything pushed (`a3512af..5c3d10e`), so
+  the «not pushed» in the lines above no longer holds. Then the essay
+  compared with the whole analysis; step 1 of the follow-up applied
+  (details in `DONE.md`; ledger, Ω1–Ω11; one commit, not pushed). The
+  rest is listed under «Essay and analysis: open points» below.
+
+## Essay and analysis: open points (2026-11-24)
+
+For the owner to decide (ledger, Ω rows, for what was already fixed):
+
+1. Whether the essay's quotations of propositions should match the
+   analysis cards word for word. They differ now in 1, 3.333, 4.0031
+   (twice), 4.1212 and 6.421; 7 is quoted from Kitsopoulos on purpose.
+2. Essay §10: «Το *Tractatus* έλεγε ότι μια λέξη έχει σημασία επειδή
+   αντιστοιχεί σε ένα αντικείμενο». The analysis (note at 2.02) treats
+   this as disputed (Malcolm, Pears, Hacker against Ishiguro and
+   McGuinness), and only names stand for objects (essay §6, 4.0312).
+   A hedge in the sentence, or a short «Ερμηνευτική σημείωση».
+3. Whether to harmonise the remaining terms: *Bedeutung* («αναφορά» in
+   the essay, «σημασία» in the cards); «Αποσπερίτης» against «Έσπερος»;
+   «απλές» against «στοιχειώδεις προτάσεις»; the essay's truth table
+   (Α/Ψ, p varying slowest) against the *Tractatus* layout (W/F, 4.31,
+   5.101).
+
+Smaller points, not yet acted on: «ψευδοπροτάσεις» used in the essay
+for metaphysics and for equations (6.2), while 6.22 says equations show
+the logic of the world; the 1929 paper is told as an attempted repair
+in the essay and as the admission of failure in the analysis; the
+analysis attaches *Satzsysteme* to the 1929 paper; «ασυνάρτητες» alone
+for *unsinnig* at 4.4; a sentence linking 6.126 with the undecidability
+the essay states in §8.
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
