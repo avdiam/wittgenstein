@@ -8,6 +8,24 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-24, later: the essay's quotations aligned with the cards.**
+
+Point 1 of the open points the comparison left. The owner went through
+the six quotations that differed, pair by pair, against the German.
+Ledger, Ω12.
+
+- **Essay**: 1 as «Ο κόσμος είναι καθετί που συμβαίνει», without the
+  card's gloss; from 3.333 the phrase «το οποίο όμως από μόνο του δεν
+  δηλώνει τίποτα» (*bezeichnet*); 4.0031 as «Το επίτευγμα του Russell
+  … δεν είναι αναγκαστικά η πραγματική της»; 4.1212 as «Αυτό που μπορεί
+  να δειχθεί, δεν μπορεί να ειπωθεί», and «ειπωθεί» in the paraphrase
+  of the preface in the paragraph on the Vienna Circle; 6.421 as «η
+  ηθική δεν μπορεί να εκφραστεί με λόγια».
+- **Analysis**: the 4.0031 card takes the essay's «(Όχι πάντως με την
+  έννοια του Mauthner.)» for *Allerdings*, and ends «η πραγματική της»
+  without a repeated «μορφή», as the German does.
+- Proposition 7 stays quoted from Kitsopoulos, as before.
+
 **Session of 2026-11-24: the essay compared with the analysis.**
 
 The 36 local commits pushed at the owner's request (`a3512af..5c3d10e`);

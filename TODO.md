@@ -95,20 +95,21 @@ item is finished, move it to `DONE.md` with the date.
   (details in `DONE.md`; ledger, Ω1–Ω11); pushed (`5c3d10e..7e977d0`).
   The rest, and two new questions from the owner, are listed under
   «Essay and analysis: open points» below: start the next session there.
+- Session of 2026-11-24, later: the old point 1 of the open points
+  (the essay's quotations against the cards) decided by the owner pair
+  by pair and applied (details in `DONE.md`; ledger, Ω12; one commit,
+  not pushed). The points below are renumbered.
 
 ## Essay and analysis: open points (2026-11-24)
 
 For the owner to decide (ledger, Ω rows, for what was already fixed):
 
-1. Whether the essay's quotations of propositions should match the
-   analysis cards word for word. They differ now in 1, 3.333, 4.0031
-   (twice), 4.1212 and 6.421; 7 is quoted from Kitsopoulos on purpose.
-2. Essay §10: «Το *Tractatus* έλεγε ότι μια λέξη έχει σημασία επειδή
+1. Essay §10: «Το *Tractatus* έλεγε ότι μια λέξη έχει σημασία επειδή
    αντιστοιχεί σε ένα αντικείμενο». The analysis (note at 2.02) treats
    this as disputed (Malcolm, Pears, Hacker against Ishiguro and
    McGuinness), and only names stand for objects (essay §6, 4.0312).
    A hedge in the sentence, or a short «Ερμηνευτική σημείωση».
-3. Whether to harmonise the remaining terms: *Bedeutung* («αναφορά» in
+2. Whether to harmonise the remaining terms: *Bedeutung* («αναφορά» in
    the essay, «σημασία» in the cards); «Αποσπερίτης» against «Έσπερος»;
    «απλές» against «στοιχειώδεις προτάσεις»; the essay's truth table
    (Α/Ψ, p varying slowest) against the *Tractatus* layout (W/F, 4.31,
@@ -117,7 +118,7 @@ For the owner to decide (ledger, Ω rows, for what was already fixed):
 Questions the owner raised at the end of the session (2026-11-24),
 to discuss before any writing:
 
-4. **The generalisation of the Sheffer stroke.** Should the essay
+3. **The generalisation of the Sheffer stroke.** Should the essay
    and/or the analysis say more about it? The N operator of 5.502 is
    joint denial over any number of propositions, a generalisation of
    Sheffer's stroke (1913), which showed that one connective suffices
@@ -126,7 +127,7 @@ to discuss before any writing:
    three theses on logic) or §9, since NAND and NOR gates are each
    enough to build any circuit. Check the history (Sheffer 1913; Peirce's
    unpublished work of about 1880) in sources before writing.
-5. **A new result for the postscript or §11.** As the owner reported
+4. **A new result for the postscript or §11.** As the owner reported
    it: «Riemann Hypothesis Proof (November 2026): Working with Claude
    over six weeks, Alpöge published a formal proof in Lean spanning
    roughly 17 million lines of code. It targets both the classical
