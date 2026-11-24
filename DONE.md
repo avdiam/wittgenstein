@@ -25,6 +25,10 @@ Ledger, Ω12.
   έννοια του Mauthner.)» for *Allerdings*, and ends «η πραγματική της»
   without a repeated «μορφή», as the German does.
 - Proposition 7 stays quoted from Kitsopoulos, as before.
+- **Essay §10** (old point 2): the sentence on the *Tractatus* and
+  meaning rewritten from 3.203 and 3.3, which both readings of the
+  note at 2.02 accept; it had said «μια λέξη» and «επειδή». No note
+  added (owner). Ledger, Ω13.
 
 **Session of 2026-11-24: the essay compared with the analysis.**
 
