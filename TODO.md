@@ -101,7 +101,10 @@ item is finished, move it to `DONE.md` with the date.
   not pushed). Then the old point 2 (essay §10 on names) decided
   and applied (ledger, Ω13; one commit, not pushed), and the old
   point 3, the four terms (ledger, Ω14–Ω17; one commit, not
-  pushed). The two questions below are renumbered.
+  pushed). Then the owner's question on Sheffer, checked in the
+  sources and applied to the essay §9 and the analysis (ledger,
+  Ω18–Ω22; one commit, not pushed). The Riemann question below is
+  checked (see there) and waits for the owner.
 
 ## Essay and analysis: open points (2026-11-24)
 
@@ -111,16 +114,7 @@ The three decisions the comparison left are settled (ledger,
 Questions the owner raised at the end of the session (2026-11-24),
 to discuss before any writing:
 
-1. **The generalisation of the Sheffer stroke.** Should the essay
-   and/or the analysis say more about it? The N operator of 5.502 is
-   joint denial over any number of propositions, a generalisation of
-   Sheffer's stroke (1913), which showed that one connective suffices
-   for all the others. The analysis has a note at 5.502; the essay does
-   not mention Sheffer at all. A possible place in the essay: §6 (the
-   three theses on logic) or §9, since NAND and NOR gates are each
-   enough to build any circuit. Check the history (Sheffer 1913; Peirce's
-   unpublished work of about 1880) in sources before writing.
-2. **A new result for the postscript or §11.** As the owner reported
+1. **A new result for the postscript or §11.** As the owner reported
    it: «Riemann Hypothesis Proof (November 2026): Working with Claude
    over six weeks, Alpöge published a formal proof in Lean spanning
    roughly 17 million lines of code. It targets both the classical

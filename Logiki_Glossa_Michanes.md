@@ -410,7 +410,7 @@
 
 ![Η αρχιτεκτονική von Neumann](images/von_neumann.svg "Η οργάνωση που περιέγραψε ο von Neumann το 1945. Η κεντρική μονάδα επεξεργασίας παίρνει από την ίδια μνήμη και τις εντολές του προγράμματος και τους αριθμούς με τους οποίους δουλεύει· στη μνήμη τα δύο αποθηκεύονται με τον ίδιο τρόπο, σε αριθμημένες θέσεις. Στην Αναλυτική Μηχανή του Babbage οι εντολές έρχονταν απ' έξω, σε κάρτες.")
 
-Κάθε σημερινός υπολογιστής και κάθε κινητό τηλέφωνο αποτελείται από δισεκατομμύρια μικροσκοπικούς διακόπτες, τα τρανζίστορ, συνδεδεμένους σε τέτοια στοιχειώδη κυκλώματα που οι μηχανικοί ονομάζουν «λογικές πύλες» (πύλες ΚΑΙ, Ή, ΟΧΙ). Ο πίνακας αληθείας της ενότητας 5 είναι, κυριολεκτικά, η περιγραφή του τι κάνει καθεμία από αυτές τις πύλες.
+Κάθε σημερινός υπολογιστής και κάθε κινητό τηλέφωνο αποτελείται από δισεκατομμύρια μικροσκοπικούς διακόπτες, τα τρανζίστορ, συνδεδεμένους σε τέτοια στοιχειώδη κυκλώματα που οι μηχανικοί ονομάζουν «λογικές πύλες» (πύλες ΚΑΙ, Ή, ΟΧΙ). Ο πίνακας αληθείας της ενότητας 5 είναι, κυριολεκτικά, η περιγραφή του τι κάνει καθεμία από αυτές τις πύλες. Δεν χρειάζονται όμως και τα τρία είδη: αρκεί ένα μόνο, η πύλη ΟΧΙ-Ή (NOR, «ούτε p ούτε q») ή η πύλη ΟΧΙ-ΚΑΙ (NAND, «όχι και τα δύο»), γιατί με αυτό φτιάχνονται όλα τα άλλα. Το είχε δει γύρω στο 1880 ο Charles S. Peirce, σε χειρόγραφο που τυπώθηκε μόλις το 1933, και το δημοσίευσε το 1913 ο Henry M. Sheffer. Το «ούτε… ούτε…» το έβαλε ο Wittgenstein στη βάση του *Tractatus*: ορίζει μία μόνο πράξη, την κοινή άρνηση οσωνδήποτε προτάσεων (5.502), και υποστηρίζει ότι κάθε πρόταση προκύπτει από τις απλές με διαδοχική εφαρμογή της (6.001)· ο Russell σημειώνει στην εισαγωγή του βιβλίου ότι ο Wittgenstein προϋποθέτει την εργασία του Sheffer. Ο υπολογιστής πλοήγησης των αποστολών Apollo χρησιμοποιούσε για όλες τις λογικές του λειτουργίες ένα μόνο είδος ολοκληρωμένου κυκλώματος, με δύο πύλες ΟΧΙ-Ή τριών εισόδων.
 
 Το 1948 ο ίδιος ο Shannon θεμελίωσε τη θεωρία της πληροφορίας και καθιέρωσε τη λέξη *bit* (από το *binary digit*, «δυαδικό ψηφίο») για τη στοιχειώδη μονάδα πληροφορίας που παίρνει τιμή 0 ή 1. Το μέτρο του Shannon στηρίζεται σε μια απλή ιδέα: ένα μήνυμα μεταφέρει τόσο περισσότερη πληροφορία όσο λιγότερο αναμενόμενο ήταν. Αν κάτι ήταν βέβαιο, το να μάθουμε ότι συνέβη δεν μας μαθαίνει τίποτα: μηδέν bit. Το αποτέλεσμα μιας ρίψης νομίσματος, με πιθανότητα ένα στα δύο, φέρνει ένα bit, όση πληροφορία δίνει η απάντηση σε μία ερώτηση «ναι ή όχι». Ένα αποτέλεσμα ανάμεσα σε οκτώ εξίσου πιθανά φέρνει τρία bit, γιατί χρειάζονται τρεις τέτοιες ερωτήσεις για να το βρούμε, και ένα γεγονός με πιθανότητα ένα στα εκατό περίπου 6,6 bit. Το πόσο πληροφορία μεταφέρει ένα μήνυμα εξαρτάται λοιπόν από το πόσο πιθανό ήταν, όχι από το τι λέει.
 
@@ -747,8 +747,10 @@
 - Mill, J. S., *A System of Logic*, London: John W. Parker, 1843.
 - Boole, G., *An Investigation of the Laws of Thought*, London: Walton and Maberly, 1854.
 - Frege, G., *Begriffsschrift*, Halle, 1879· «Über Sinn und Bedeutung», 1892· *Grundgesetze der Arithmetik*, Jena, 1893 και 1903.
+- Peirce, C. S., [«A Boolian Algebra with One Constant»], χειρόγραφο γύρω στο 1880, στο *Collected Papers of Charles Sanders Peirce*, τόμ. 4, επιμ. C. Hartshorne και P. Weiss, Cambridge, MA: Harvard University Press, 1933, §§4.12–4.20.
 - Russell, B., «On Denoting», *Mind* 14 (1905)· «The Philosophy of Logical Atomism», *The Monist* 28–29 (1918–1919).
 - Whitehead, A. N. και Russell, B., *Principia Mathematica*, Cambridge University Press, 1910–1913.
+- Sheffer, H. M., «A set of five independent postulates for Boolean algebras, with application to logical constants», *Transactions of the American Mathematical Society* 14 (1913), σσ. 481–488.
 - Post, E. L., «Introduction to a General Theory of Elementary Propositions», *American Journal of Mathematics* 43 (1921), σσ. 163–185.
 - Ramsey, F. P., «Critical Notice of L. Wittgenstein's *Tractatus Logico-Philosophicus*», *Mind* 32 (1923), σσ. 465–478.
 - Hilbert, D. και Ackermann, W., *Grundzüge der theoretischen Logik*, Berlin: Springer, 1928.
@@ -809,6 +811,7 @@
 
 ### Επισκοπήσεις και εγχειρίδια
 
+- Tomayko, J. E., *Computers in Spaceflight: The NASA Experience*, NASA Contractor Report 182505, 1988, κεφ. 2.
 - Ji, Z. κ.ά., «Survey of Hallucination in Natural Language Generation», *ACM Computing Surveys* 55(12), 2023.
 - Garcez, A. d'Avila και Lamb, L. C., «Neurosymbolic AI: the 3rd wave», *Artificial Intelligence Review* 56 (2023), σσ. 12387–12406.
 - Saphra, N. και Wiegreffe, S., «Mechanistic?», arXiv:2410.09087, 2024.

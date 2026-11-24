@@ -1127,7 +1127,7 @@ $$P(s \mid r) = \frac{W_{rs}}{W_r}$$
 
 #### Α. Οδηγός με παραδείγματα για τον τελεστή $N(\bar{\xi})$ (5.501 – 5.526)
 
-Πώς μπορούν όλες οι συναρτήσεις αληθείας, μαζί με τους ποσοδείκτες $\forall x$ και $\exists x$, να παραχθούν από μία μόνο πράξη; Ο Wittgenstein απαντά σε τρία βήματα: ορίζει πρώτα τι μπαίνει μέσα στην παρένθεση $(\bar{\xi})$ (5.501), έπειτα τι κάνει πάνω της η πράξη $N$ (5.502–5.51), και τέλος δείχνει πώς από την ίδια πράξη προκύπτει η γενικότητα (5.52). Ο τελεστής **$N(\bar{\xi})$** αποτελεί γενίκευση της «καθέτου του Sheffer» (*Sheffer stroke*), δηλαδή της κοινής άρνησης / NOR: η διαφορά είναι ότι δέχεται οποιοδήποτε πλήθος προτάσεων, όχι μόνο δύο.
+Πώς μπορούν όλες οι συναρτήσεις αληθείας, μαζί με τους ποσοδείκτες $\forall x$ και $\exists x$, να παραχθούν από μία μόνο πράξη; Ο Wittgenstein απαντά σε τρία βήματα: ορίζει πρώτα τι μπαίνει μέσα στην παρένθεση $(\bar{\xi})$ (5.501), έπειτα τι κάνει πάνω της η πράξη $N$ (5.502–5.51), και τέλος δείχνει πώς από την ίδια πράξη προκύπτει η γενικότητα (5.52). Ο τελεστής **$N(\bar{\xi})$** αποτελεί γενίκευση της «καθέτου του Sheffer» (*Sheffer stroke*), δηλαδή της κοινής άρνησης / NOR: η διαφορά είναι ότι δέχεται οποιοδήποτε πλήθος προτάσεων, όχι μόνο δύο. Ο Russell το λέει ρητά στην εισαγωγή του (1922): ο Sheffer έδειξε ότι όλες οι συναρτήσεις αληθείας κατασκευάζονται είτε από το «not-p or not-q» είτε από το «not-p and not-q», και ο Wittgenstein χρησιμοποιεί το δεύτερο, «assuming a knowledge of Dr Sheffer's work». Το ίδιο είχε βρει ο C. S. Peirce γύρω στο 1880, σε χειρόγραφο που δημοσιεύτηκε μόλις το 1933 (*Collected Papers* 4.12–4.20).
 
 > **Μεταφραστική σημείωση**: Ο Sheffer (1913) και το 5.1311 γράφουν $p \mid q$ για το «ούτε $p$ ούτε $q$» (NOR)· από τον Nicod (1917) και μετά, όμως, «κάθετος του Sheffer» λέγεται συνήθως το NAND, ενώ το NOR γράφεται $p \downarrow q$ («βέλος του Peirce»).
 
@@ -1833,6 +1833,7 @@ $$(\Omega^{\nu})^{\mu}\text{'}x = \Omega^{\nu \times \mu}\text{'}x \quad \text{D
 - Hertz, H., *Die Prinzipien der Mechanik in neuem Zusammenhange dargestellt*, Leipzig: J. A. Barth, 1894.
 - Mauthner, F., *Beiträge zu einer Kritik der Sprache*, 3 τόμοι, Stuttgart: Cotta, 1901–1902.
 - Sheffer, H. M., «A set of five independent postulates for Boolean algebras, with application to logical constants», *Transactions of the American Mathematical Society* 14 (1913), σσ. 481–488.
+- Peirce, C. S., [«A Boolian Algebra with One Constant»], χειρόγραφο γύρω στο 1880, στο *Collected Papers of Charles Sanders Peirce*, τόμ. 4, επιμ. C. Hartshorne και P. Weiss, Cambridge, MA: Harvard University Press, 1933, §§4.12–4.20.
 - Carroll, L., «What the Tortoise Said to Achilles», *Mind* 4 (1895), σσ. 278–280.
 - Kant, I., *Kritik der reinen Vernunft* (1781/1787)· *Prolegomena* (1783), §13.
 - Schopenhauer, A., *Die Welt als Wille und Vorstellung* (1819/1844).

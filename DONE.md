@@ -42,6 +42,16 @@ Ledger, Ω12.
 - **Truth tables** (old point 3, last term): the essay keeps the
   textbook layout (Α/Ψ) and the analysis the book's (W/F, 4.31,
   5.101); no change (owner). Ledger, Ω17.
+- **Sheffer** (the owner's first question): checked in the sources
+  first (Sheffer 1913 and Nicod 1917 in scans, the Peirce manuscript
+  and *Collected Papers*, Russell's introduction of 1922, the MIT and
+  NASA reports on the Apollo computer). Essay §9: one gate suffices
+  (NOR or NAND), Peirce about 1880 and Sheffer 1913, the *Tractatus*'s
+  single operation (5.502, 6.001) with Russell's remark, and the
+  Apollo computer's single NOR circuit; Peirce, Sheffer and Tomayko
+  added to the bibliography. Analysis 5.502: Russell's sentence and
+  Peirce; Peirce in the bibliography. The concept drawer on N hedged
+  as the note at 5.52 requires. Ledger, Ω18–Ω22.
 
 **Session of 2026-11-24: the essay compared with the analysis.**
 
