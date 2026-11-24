@@ -52,6 +52,13 @@ Ledger, Ω12.
   added to the bibliography. Analysis 5.502: Russell's sentence and
   Peirce; Peirce in the bibliography. The concept drawer on N hedged
   as the note at 5.52 requires. Ledger, Ω18–Ω22.
+- **Riemann** (the owner's second question): the report checked
+  against the primary sources (Alpöge's note, the Lean FRO and
+  Mathlib Initiative statement, Sutherland's checks, Tao, Quanta);
+  three details of the report corrected. Essay §11: a passage before
+  the closing caveat, with what was certified and that no written
+  proof or human review exists; the 2026 timeline row; four sources.
+  Ledger, Ω23; the pending check in `CROSSCHECK_PLAN.md`.
 
 **Session of 2026-11-24: the essay compared with the analysis.**
 

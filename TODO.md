@@ -103,30 +103,18 @@ item is finished, move it to `DONE.md` with the date.
   point 3, the four terms (ledger, Ω14–Ω17; one commit, not
   pushed). Then the owner's question on Sheffer, checked in the
   sources and applied to the essay §9 and the analysis (ledger,
-  Ω18–Ω22; one commit, not pushed). The Riemann question below is
-  checked (see there) and waits for the owner.
+  Ω18–Ω22; one commit, not pushed). Then the Riemann question,
+  checked and added to essay §11 (ledger, Ω23; one commit, not
+  pushed).
 
 ## Essay and analysis: open points (2026-11-24)
 
 The three decisions the comparison left are settled (ledger,
 Ω12–Ω17).
 
-Questions the owner raised at the end of the session (2026-11-24),
-to discuss before any writing:
-
-1. **A new result for the postscript or §11.** As the owner reported
-   it: «Riemann Hypothesis Proof (November 2026): Working with Claude
-   over six weeks, Alpöge published a formal proof in Lean spanning
-   roughly 17 million lines of code. It targets both the classical
-   Riemann hypothesis and the generalized Riemann hypothesis for
-   Dirichlet L-functions, with groups including Lean FRO and the
-   Mathlib Initiative reviewing the verification.» Not yet checked:
-   find the primary sources (the publication itself, Anthropic's
-   announcement, statements from Lean FRO and the Mathlib Initiative)
-   and the state of the review before deciding whether and how the
-   essay mentions it. As with the Fermat proof of 2026-11-15, the essay
-   should say only what the sources say, including whether the
-   verification is finished.
+The owner's two questions (Sheffer; the Riemann result) were checked
+in the sources and applied on 2026-11-24 (ledger, Ω18–Ω23); one
+check is left open in `CROSSCHECK_PLAN.md`.
 
 Smaller points, not yet acted on: «ψευδοπροτάσεις» used in the essay
 for metaphysics and for equations (6.2), while 6.22 says equations show

@@ -48,6 +48,7 @@ The research of 2026-11-18 settled most of the earlier items (ledger,
 - Section 11 (ledger, Δ6): Minsky and Papert's *Perceptrons* (1969, 1988 edition) and Olazaran's full article (1996) were not read; the claims rest on Olazaran's abstract and secondary summaries.
 - The postscript (ledger, Υ5): Anthropic's S-1/A filings were read only through TechCrunch's quotation; EDGAR refuses undeclared automated requests. Amendment No. 2 ("met this threshold") was left out of the essay unread.
 - From the comparison of the essay with the analysis (2026-11-24; ledger, Ω rows): the Sraffa variant, which the essay (§10) says von Wright «καταγράφει» and the analysis says Malcolm reports as von Wright heard it (Malcolm 1958, the footnote to the anecdote); and the wording of proposition 7 in Kitsopoulos (1978), which the essay quotes as «Για όσα δεν μπορεί να μιλάει κανείς, για αυτά πρέπει να σωπαίνει» and no row records as checked against the book.
+- The Riemann result in §11 (ledger, Ω23): on 24 Nov 2026 the main comparator run on Sutherland's page was still pending; recheck it before the next push, and watch for a written proof, human review, a statement from Anthropic or the Clay Institute, or a reported flaw. The *Nature* (Maynard) and *Science* (Granville) pieces were not read.
 
 ## Method
 
