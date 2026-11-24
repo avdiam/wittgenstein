@@ -105,7 +105,10 @@ item is finished, move it to `DONE.md` with the date.
   sources and applied to the essay §9 and the analysis (ledger,
   Ω18–Ω22; one commit, not pushed). Then the Riemann question,
   checked and added to essay §11 (ledger, Ω23; one commit, not
-  pushed).
+  pushed). Sutherland's page rechecked: nothing failed, the last
+  stage still running (`CROSSCHECK_PLAN.md`). Then, at the owner's
+  request, everything pushed with this line (from `405c477`), so the
+  «not pushed» notes of this session no longer hold.
 
 ## Essay and analysis: open points (2026-11-24)
 
