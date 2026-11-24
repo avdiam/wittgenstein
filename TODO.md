@@ -108,7 +108,11 @@ item is finished, move it to `DONE.md` with the date.
   pushed). Sutherland's page rechecked: nothing failed, the last
   stage still running (`CROSSCHECK_PLAN.md`). Then, at the owner's
   request, everything pushed with this line (from `405c477`), so the
-  «not pushed» notes of this session no longer hold.
+  «not pushed» notes of this session no longer hold. Then a full
+  read of the essay and the owner's remark on non-Western
+  contributions, both recorded under «Essay: proposals for the
+  next session» below: start the next session there (one commit,
+  not pushed).
 
 ## Essay and analysis: open points (2026-11-24)
 
@@ -126,6 +130,60 @@ in the essay and as the admission of failure in the analysis; the
 analysis attaches *Satzsysteme* to the 1929 paper; «ασυνάρτητες» alone
 for *unsinnig* at 4.4; a sentence linking 6.126 with the undecidability
 the essay states in §8.
+
+## Essay: proposals for the next session (2026-11-24)
+
+**A. Three small fixes found by a full read of the essay** (not yet
+applied; each caused by this session's edits):
+
+1. §11, the paragraph after Cammarata's note: the paraphrase of 4.0031
+   says «κατ' ανάγκην» and points back to §5, which now quotes
+   «αναγκαστικά» (ledger Ω12). Align it.
+2. §9, the single-gate passage: «ο Charles S. Peirce» → «ο Peirce»;
+   he is introduced in §4 with full name, Greek form and dates.
+3. §11, the Riemann passage: Erdős and Fermat in the same paragraph have
+   a Greek form and dates; Riemann has neither. Possibly «του Bernhard
+   Riemann (Ρίμαν, 1826–1866)», after checking the dates in two
+   sources.
+
+**B. The owner's remark: protagonists only European, Arab or American.**
+The owner asked whether no Indian, Russian or East Asian figure had an
+important role. Claude's opinion, given in the session: the essay
+follows the line that led to modern formal logic and the computer,
+which did run mainly through Europe and later the US, so the main
+thread can stay; but it leaves out contributions that fit its own
+argument, and it does not mark the non-Western figures it already has.
+Proposal, to discuss with the owner before any writing, and to check
+every name, date and claim in sources first (all of the below was given
+from memory; ledger rows needed):
+
+- Already in the essay, not marked: al-Khwārizmī, al-Fārābī and Ibn
+  Sīnā were Persian or Central Asian scholars writing in Arabic, not
+  Arabs; Nakashima (Japan, §9), Levin and Matiyasevich (Soviet Union,
+  §8), Hao Wang (born in China, §8). ImageNet (§11) is named without
+  its creator, Fei-Fei Li.
+- A sentence in the introduction stating the scope: the essay follows
+  the tradition that led to modern formal logic and the computer, and
+  names other traditions briefly.
+- Candidate additions, each where it serves an argument already there
+  (not a list for balance):
+  - §1: Pāṇini's grammar (c. 4th c. BCE) as a system of rules applied
+    mechanically (link to Chomsky, §11); Nyāya and the Buddhist
+    logicians Dignāga and Dharmakīrti on inference; the Mohists and the
+    School of Names (Gongsun Long) on names and things, beside the
+    *Cratylus*. Possibly as one short note on the other ancient
+    traditions.
+  - §2: Leibniz's binary arithmetic and the I Ching (1703, via Bouvet);
+    possibly Pingala's two-valued listing of metres.
+  - §8: the primality example: Agrawal, Kayal and Saxena (2002) showed
+    that primality is decided in polynomial time.
+  - §9: A. A. Markov (1913) on letter sequences in *Eugene Onegin*, the
+    forerunner of Shannon's statistical approach; V. Shestakov on
+    switching circuits, independently, beside Nakashima.
+  - §11: Fukushima's Neocognitron (1980) and Amari (1967) in the history
+    of neural networks; Fei-Fei Li and ImageNet; Wu Wenjun's method
+    (1977), with which the AlphaGeometry paper compares itself.
+- Possibly the timeline and the bibliography to follow.
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
