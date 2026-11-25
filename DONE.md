@@ -31,7 +31,9 @@ the owner. Ledger, Ω36–Ω40.
    pages.
 
 Earlier the same day: the Riemann result rechecked at 08:30 UTC;
-nothing had changed.
+nothing had changed. Then (owner): `TRACTATUS_REBUILD_PLAN.md` deleted
+(never committed), and the concept drawer on truth-functions
+(`concepts.json`) given the step from 4 rows to 16 functions.
 
 **Session of 2026-11-25, later: the essay's scope and its non-Western figures.**
 
