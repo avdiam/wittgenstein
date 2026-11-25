@@ -8,6 +8,29 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-25, evening: the five smaller points of the essay–analysis comparison.**
+
+The points left on 2026-11-24, each checked in sources and decided by
+the owner. Ledger, Ω36–Ω40.
+
+1. Essay §6: equations are «ψευδοπροτάσεις» (Wittgenstein uses the word
+   for both, 4.1272 and 6.2), but, like tautologies, they show «τη
+   λογική του κόσμου» (6.22).
+2. Essay §10: the 1929 paper both admits that degree statements exclude
+   each other and proposes rules of syntax to correct the notation;
+   «Αργότερα» the framework abandoned. The 1933 «weak» left out (owner).
+3. Analysis at 6.3751: *Satzsysteme* moved from the 1929 paper, which
+   does not have the term, to Waismann's notes of Christmas 1929; the
+   paper's own finding and its deferred repair stated.
+4. `pm_quotes.json`, 4.461: «ανόητο / ασυνάρτητο».
+5. 6.126 and decidability: a sentence in essay §8, and an «Ερμηνευτική
+   σημείωση» at 6.125–6.1271 naming three readings of what the 1936
+   result means for the book. Bibliography: Weiss (2017); Fogelin's
+   pages.
+
+Earlier the same day: the Riemann result rechecked at 08:30 UTC;
+nothing had changed.
+
 **Session of 2026-11-25, later: the essay's scope and its non-Western figures.**
 
 Proposal B of 2026-11-24, steps 1 and 2, decided by the owner point by

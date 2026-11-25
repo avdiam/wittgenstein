@@ -125,7 +125,10 @@ item is finished, move it to `DONE.md` with the date.
   result (`CROSSCHECK_PLAN.md`) first.
 - Session of 2026-11-25, later: the Riemann result rechecked at
   08:30 UTC; nothing has changed, the essay is unchanged
-  (`CROSSCHECK_PLAN.md`). Recheck after 21:30 UTC on 25 Nov.
+  (`CROSSCHECK_PLAN.md`). Recheck after 21:30 UTC on 25 Nov. Then
+  the five smaller points of the essay–analysis comparison, decided
+  by the owner and applied (details in `DONE.md`; ledger, Ω36–Ω40;
+  one commit, not pushed).
 
 ## Essay and analysis: open points (2026-11-24)
 
@@ -136,13 +139,8 @@ The owner's two questions (Sheffer; the Riemann result) were checked
 in the sources and applied on 2026-11-24 (ledger, Ω18–Ω23); one
 check is left open in `CROSSCHECK_PLAN.md`.
 
-Smaller points, not yet acted on: «ψευδοπροτάσεις» used in the essay
-for metaphysics and for equations (6.2), while 6.22 says equations show
-the logic of the world; the 1929 paper is told as an attempted repair
-in the essay and as the admission of failure in the analysis; the
-analysis attaches *Satzsysteme* to the 1929 paper; «ασυνάρτητες» alone
-for *unsinnig* at 4.4; a sentence linking 6.126 with the undecidability
-the essay states in §8.
+The five smaller points were decided by the owner and applied on
+2026-11-25 (`DONE.md`; ledger, Ω36–Ω40).
 
 ## Essay: proposals for the next session (2026-11-24)
 
