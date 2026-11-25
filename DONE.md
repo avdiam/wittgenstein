@@ -8,6 +8,45 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-25, night: the third outside review of the essay.**
+
+An outside review (`new_review.txt`, untracked) taken through proposal by
+proposal with the owner, after a full read of the essay; each point checked
+against `DONE.md` and the ledger first. Ledger, Ε1–Ε14.
+
+1. §1: the two ancient traditions «προχώρησαν χωριστά»; the medieval
+   *consequentiae* named; Frege united them «σε μία γραφή» (§5 aligned).
+   «Πρόδρομος» at line 27 kept.
+2. §2: a new subsection «Ο Llull και ο Pascal» before Leibniz (owner),
+   with the facts the owner asked for, reworded where the sources or the
+   house rules required; the Leibniz paragraph refers back to both; a photo
+   of a Pascaline (Musée des Arts et Métiers, David Monniaux, CC BY-SA 3.0);
+   timeline rows 1232–1316 and 1642.
+3. §4: Jacquard's loom dated «1804–1805» (was 1801), with «πάνω σε ιδέες
+   παλαιότερων κατασκευαστών»; timeline aligned; the earlier ledger row
+   amended.
+4. §6: the note on the end of the book moved before the Mauthner paragraph;
+   the link to the analysis kept.
+5. §7: the theorem statement and the glossary entry «Τυπικό σύστημα» say
+   that axioms and rules are checked mechanically.
+6. §10: kept as it is (declined a third time).
+7. §11: models that write text look only backwards (one sentence and the
+   caption of the attention figure); two paragraphs at the owner's request,
+   on the 2017 paper, BERT and the first GPT, and on ChatGPT (30 November
+   2022); timeline rows 2018 and 2022; three source entries.
+8. §11: one sentence on dictionary methods at other labs (2023, OpenAI and
+   Google DeepMind in 2024); three source entries.
+9. §11 and the postscript: Erdős and Fermat stay in §11; Aaronson–Ambainis
+   and Riemann moved to the postscript, wording unchanged.
+10. §11: Bricken, Templeton and Lindsey named, as in the timeline.
+11. Sources: the list declared selective; Cantor 1891, Zermelo 1908, Levin
+    1973, Penrose 1989 added.
+12. Sources: Mauthner moved to «Πρωτότυπες εργασίες»; the heading now «Για
+    τον Wittgenstein: πλαίσιο και υποδοχή».
+
+Checked: `build_all.py --check` exits 0; the new subsection and photo in
+headless Chrome at 1280 px. Committed, not pushed.
+
 **Session of 2026-11-25, night: the note on *Sachverhalt*.**
 
 At the owner's request, the choice between the two readings of

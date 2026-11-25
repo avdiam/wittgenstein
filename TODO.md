@@ -134,6 +134,10 @@ item is finished, move it to `DONE.md` with the date.
   (from `153f789`). Then the note on *Sachverhalt* revised and two
   passages aligned with it (details in `DONE.md`; ledger, S1); pushed
   with this line (from `ef6152a`).
+- Session of 2026-11-25, night: a third outside review of the essay
+  taken through with the owner, twelve points (details in `DONE.md`;
+  ledger, Ε1–Ε14; one commit, not pushed). The Riemann result now
+  sits in the postscript; recheck it after 21:30 UTC on 25 Nov.
 
 ## Essay and analysis: open points (2026-11-24)
 
