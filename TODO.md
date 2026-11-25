@@ -139,7 +139,8 @@ item is finished, move it to `DONE.md` with the date.
   ledger, Ε1–Ε14), then a placeholder card for the later Wittgenstein
   on the cover page; pushed (`256573a..19386f5`). The review file was
   deleted (owner). The Riemann result now sits in the postscript;
-  recheck it after 21:30 UTC on 25 Nov.
+  recheck it after 21:30 UTC on 25 Nov. Next session: the Riemann
+  recheck first, then the Knuth question below.
 
 ## Essay and analysis: open points (2026-11-24)
 
@@ -161,6 +162,21 @@ The five smaller points were decided by the owner and applied on
 **B. The owner's remark on non-Western contributions**: done on
 2026-11-25 (`DONE.md`; ledger, Ω25–Ω35). The new names were added to
 the timeline the same day (owner).
+
+## Essay: Donald Knuth (owner, 2026-11-25)
+
+The owner asked whether the essay should mention Knuth; to be searched
+and decided next session. Proposal discussed, nothing checked yet:
+one or two sentences in §8, after the sentence on 300 propositions and
+before P vs NP, on the analysis of algorithms as a discipline with *The
+Art of Computer Programming* (from 1968; Turing Award 1974), with, if
+it holds, the 1974 poll that gave the term "NP-hard"; a timeline row
+and a source entry. Left aside unless the owner wants them: TeX and
+literate programming (outside the essay's thread); Knuth's note
+«Claude's Cycles» (2026, remembered, not verified; another Anthropic
+result after Ε10, and Claude has a conflict of interest; postscript
+only, with the same caution as the other recent results); *TAOCP*
+vol. 4 on Llull (not read, so not a source).
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
