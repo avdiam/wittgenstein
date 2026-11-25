@@ -115,7 +115,9 @@ item is finished, move it to `DONE.md` with the date.
   not pushed).
 - Session of 2026-11-25: proposal A of the essay proposals (three
   small fixes) applied (details in `DONE.md`; ledger, Ω24; one
-  commit, not pushed). Proposal B waits for the owner.
+  commit, not pushed). Then proposal B, steps 1 and 2 (ledger,
+  Ω25–Ω29; one commit, not pushed); the candidate additions are
+  next.
 
 ## Essay and analysis: open points (2026-11-24)
 
@@ -150,14 +152,11 @@ Proposal, to discuss with the owner before any writing, and to check
 every name, date and claim in sources first (all of the below was given
 from memory; ledger rows needed):
 
-- Already in the essay, not marked: al-Khwārizmī, al-Fārābī and Ibn
-  Sīnā were Persian or Central Asian scholars writing in Arabic, not
-  Arabs; Nakashima (Japan, §9), Levin and Matiyasevich (Soviet Union,
-  §8), Hao Wang (born in China, §8). ImageNet (§11) is named without
-  its creator, Fei-Fei Li.
-- A sentence in the introduction stating the scope: the essay follows
-  the tradition that led to modern formal logic and the computer, and
-  names other traditions briefly.
+- Steps 1 and 2 (the figures already in the essay; a sentence on
+  scope in the introduction): done on 2026-11-25 (`DONE.md`; ledger,
+  Ω25–Ω29). Next: the candidate additions below, one by one with
+  the owner; not a list of names, only where they serve the thread.
+  Fei-Fei Li (ImageNet) moved here from step 1.
 - Candidate additions, each where it serves an argument already there
   (not a list for balance):
   - §1: Pāṇini's grammar (c. 4th c. BCE) as a system of rules applied

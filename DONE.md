@@ -8,6 +8,24 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-25, later: the essay's scope and its non-Western figures.**
+
+Proposal B of 2026-11-24, steps 1 and 2, decided by the owner point by
+point. Ledger, Ω25–Ω29.
+
+- §2: the heading «οι Άραβες» → «ο αραβόφωνος κόσμος»; at the end of the
+  paragraph on logic, a sentence that Arabic was the language of science,
+  not always the scholars' origin (al-Khwārizmī's name points to Khwarazm;
+  Ibn Sīnā born near Bukhara). Proposed stronger («καταγόταν», «Πέρσης»)
+  and weakened to what the sources state.
+- §8: Levin «στη Σοβιετική Ένωση», Matiyasevich «στο Λένινγκραντ», where
+  the place carries the point (independent work on both sides). Hao Wang
+  left as he was. The essay already had «Nakashima στην Ιαπωνία» and
+  «ινδοαραβικό».
+- Introduction: one sentence on scope, in the owner's wording. A claim
+  that the Indian and Chinese traditions developed separately was
+  dropped: it is contested.
+
 **Session of 2026-11-25: three small fixes to the essay.**
 
 Proposal A of the full read of 2026-11-24, each caused by that
