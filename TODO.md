@@ -132,8 +132,8 @@ item is finished, move it to `DONE.md` with the date.
   everything pushed (from `a6bfc1e`). Then the truth-function drawer,
   the Sraffa variant and proposition 7 (ledger, Ω41–Ω42); pushed
   (from `153f789`). Then the note on *Sachverhalt* revised and two
-  passages aligned with it (details in `DONE.md`; ledger, S1); not
-  pushed.
+  passages aligned with it (details in `DONE.md`; ledger, S1); pushed
+  with this line (from `ef6152a`).
 
 ## Essay and analysis: open points (2026-11-24)
 
