@@ -45,6 +45,9 @@ it serves the thread, not a list of names.
   1701–1703, Nakashima and Shestakov in the 1938 row, Wu 1977, ImageNet
   2007), and «Επιστήμη των Υπολογιστών» capitalised in §8 as in the
   introduction.
+- §7, Tarski (owner's request): «Μοιάζει με την ιεραρχία γλωσσών …
+  την οποία είχε προτείνει ο Russell», so that the sentence links
+  Tarski's metalanguage with Russell's hierarchy as alike, not the same.
 
 **Session of 2026-11-25: three small fixes to the essay.**
 
