@@ -127,8 +127,9 @@ item is finished, move it to `DONE.md` with the date.
   08:30 UTC; nothing has changed, the essay is unchanged
   (`CROSSCHECK_PLAN.md`). Recheck after 21:30 UTC on 25 Nov. Then
   the five smaller points of the essay–analysis comparison, decided
-  by the owner and applied (details in `DONE.md`; ledger, Ω36–Ω40;
-  one commit, not pushed).
+  by the owner and applied (details in `DONE.md`; ledger, Ω36–Ω40),
+  and the 6.3751 comparison note revised; at the owner's request,
+  everything pushed with this line (from `a6bfc1e`).
 
 ## Essay and analysis: open points (2026-11-24)
 
