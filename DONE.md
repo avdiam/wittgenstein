@@ -45,12 +45,13 @@ against `DONE.md` and the ledger first. Ledger, Ε1–Ε14.
     τον Wittgenstein: πλαίσιο και υποδοχή».
 
 Checked: `build_all.py --check` exits 0; the new subsection and photo in
-headless Chrome at 1280 px. Committed, not pushed.
+headless Chrome at 1280 px. Pushed (`256573a..19386f5`); the review file
+then deleted (owner).
 
 Then, at the owner's request, a third card on the cover page
 (`docs/index.html`): «Ο ύστερος Wittgenstein», marked «Υπό προετοιμασία»
 and «Σύντομα διαθέσιμο», without a link (dashed border, muted colours,
-no hover). Checked in headless Chrome at 1280 px. Committed, not pushed.
+no hover). Checked in headless Chrome at 1280 px. Pushed with the review.
 
 **Session of 2026-11-25, night: the note on *Sachverhalt*.**
 
