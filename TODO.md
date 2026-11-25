@@ -113,6 +113,9 @@ item is finished, move it to `DONE.md` with the date.
   contributions, both recorded under «Essay: proposals for the
   next session» below: start the next session there (one commit,
   not pushed).
+- Session of 2026-11-25: proposal A of the essay proposals (three
+  small fixes) applied (details in `DONE.md`; ledger, Ω24; one
+  commit, not pushed). Proposal B waits for the owner.
 
 ## Essay and analysis: open points (2026-11-24)
 
@@ -133,18 +136,8 @@ the essay states in §8.
 
 ## Essay: proposals for the next session (2026-11-24)
 
-**A. Three small fixes found by a full read of the essay** (not yet
-applied; each caused by this session's edits):
-
-1. §11, the paragraph after Cammarata's note: the paraphrase of 4.0031
-   says «κατ' ανάγκην» and points back to §5, which now quotes
-   «αναγκαστικά» (ledger Ω12). Align it.
-2. §9, the single-gate passage: «ο Charles S. Peirce» → «ο Peirce»;
-   he is introduced in §4 with full name, Greek form and dates.
-3. §11, the Riemann passage: Erdős and Fermat in the same paragraph have
-   a Greek form and dates; Riemann has neither. Possibly «του Bernhard
-   Riemann (Ρίμαν, 1826–1866)», after checking the dates in two
-   sources.
+**A. Three small fixes** found by the full read: done on 2026-11-25
+(`DONE.md`; ledger, Ω24).
 
 **B. The owner's remark: protagonists only European, Arab or American.**
 The owner asked whether no Indian, Russian or East Asian figure had an

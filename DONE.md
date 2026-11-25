@@ -8,6 +8,19 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-25: three small fixes to the essay.**
+
+Proposal A of the full read of 2026-11-24, each caused by that
+session's edits. Ledger, Ω24.
+
+1. §11, the paragraph after Cammarata's note: the paraphrase of 4.0031
+   now says «αναγκαστικά», as §5 quotes it (Ω12), not «κατ' ανάγκην».
+2. §9, the single-gate passage: «ο Charles S. Peirce» → «ο Peirce»; he
+   is introduced in §4.
+3. §11, the Riemann passage: «του Bernhard Riemann (Ρίμαν,
+   1826–1866)», like Erdős and Fermat in the same paragraph; the dates
+   checked in MacTutor and the NDB.
+
 **Session of 2026-11-24, later: the essay's quotations aligned with the cards.**
 
 Point 1 of the open points the comparison left. The owner went through
