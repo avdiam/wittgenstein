@@ -117,7 +117,12 @@ item is finished, move it to `DONE.md` with the date.
   small fixes) applied (details in `DONE.md`; ledger, Ω24; one
   commit, not pushed). Then proposal B: the figures already in the
   essay, a sentence on scope, and five additions chosen by the owner
-  one by one (ledger, Ω25–Ω35; four commits, not pushed).
+  one by one (ledger, Ω25–Ω35; four commits, not pushed). Then the
+  new names in the timeline and a sentence in §7 (Tarski) reworded
+  at the owner's request. Then, at the owner's request, everything
+  pushed with this line (from `55bea08`), so the «not pushed» notes
+  of this session no longer hold. Next session: recheck the Riemann
+  result (`CROSSCHECK_PLAN.md`) first.
 
 ## Essay and analysis: open points (2026-11-24)
 
