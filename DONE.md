@@ -8,6 +8,17 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-25, night: the note on *Sachverhalt*.**
+
+At the owner's request, the choice between the two readings of
+*Sachverhalt* reconsidered; the first reading (a possible combination)
+kept. The «Ερμηνευτική σημείωση» rewritten with the textual evidence on
+both sides, the context of the 1919 letter to Russell, the wording sent
+to Frege (Dožudić 2021), and the date of Russell's Introduction (Sullivan
+& Johnston 2018), and moved before «Οι όροι στην ελληνική μετάφραση».
+The example at 1.11 and the logical-atomism drawer (`concepts.json`) no
+longer call possible *Sachverhalte* «ατομικά γεγονότα». Ledger, S1.
+
 **Session of 2026-11-25, evening: the five smaller points of the essay–analysis comparison.**
 
 The points left on 2026-11-24, each checked in sources and decided by
