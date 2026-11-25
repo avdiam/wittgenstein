@@ -123,6 +123,9 @@ item is finished, move it to `DONE.md` with the date.
   pushed with this line (from `55bea08`), so the «not pushed» notes
   of this session no longer hold. Next session: recheck the Riemann
   result (`CROSSCHECK_PLAN.md`) first.
+- Session of 2026-11-25, later: the Riemann result rechecked at
+  08:30 UTC; nothing has changed, the essay is unchanged
+  (`CROSSCHECK_PLAN.md`). Recheck after 21:30 UTC on 25 Nov.
 
 ## Essay and analysis: open points (2026-11-24)
 
