@@ -41,6 +41,10 @@ it serves the thread, not a list of names.
   the Mohists, Nyāya, Dignāga and Dharmakīrti, Pingala (no contact
   with the line the essay follows); the AKS primality test (nothing to
   attach it to).
+- Then (owner): the new names added to the timeline (Pāṇini, Leibniz
+  1701–1703, Nakashima and Shestakov in the 1938 row, Wu 1977, ImageNet
+  2007), and «Επιστήμη των Υπολογιστών» capitalised in §8 as in the
+  introduction.
 
 **Session of 2026-11-25: three small fixes to the essay.**
 

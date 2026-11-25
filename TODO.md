@@ -142,8 +142,8 @@ the essay states in §8.
 (`DONE.md`; ledger, Ω24).
 
 **B. The owner's remark on non-Western contributions**: done on
-2026-11-25 (`DONE.md`; ledger, Ω25–Ω35). Still open, if the owner
-wants it: whether the timeline should list the new names.
+2026-11-25 (`DONE.md`; ledger, Ω25–Ω35). The new names were added to
+the timeline the same day (owner).
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
