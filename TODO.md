@@ -115,9 +115,9 @@ item is finished, move it to `DONE.md` with the date.
   not pushed).
 - Session of 2026-11-25: proposal A of the essay proposals (three
   small fixes) applied (details in `DONE.md`; ledger, Ω24; one
-  commit, not pushed). Then proposal B, steps 1 and 2 (ledger,
-  Ω25–Ω29; one commit, not pushed); the candidate additions are
-  next.
+  commit, not pushed). Then proposal B: the figures already in the
+  essay, a sentence on scope, and five additions chosen by the owner
+  one by one (ledger, Ω25–Ω35; four commits, not pushed).
 
 ## Essay and analysis: open points (2026-11-24)
 
@@ -141,41 +141,9 @@ the essay states in §8.
 **A. Three small fixes** found by the full read: done on 2026-11-25
 (`DONE.md`; ledger, Ω24).
 
-**B. The owner's remark: protagonists only European, Arab or American.**
-The owner asked whether no Indian, Russian or East Asian figure had an
-important role. Claude's opinion, given in the session: the essay
-follows the line that led to modern formal logic and the computer,
-which did run mainly through Europe and later the US, so the main
-thread can stay; but it leaves out contributions that fit its own
-argument, and it does not mark the non-Western figures it already has.
-Proposal, to discuss with the owner before any writing, and to check
-every name, date and claim in sources first (all of the below was given
-from memory; ledger rows needed):
-
-- Steps 1 and 2 (the figures already in the essay; a sentence on
-  scope in the introduction): done on 2026-11-25 (`DONE.md`; ledger,
-  Ω25–Ω29). Next: the candidate additions below, one by one with
-  the owner; not a list of names, only where they serve the thread.
-  Fei-Fei Li (ImageNet) moved here from step 1.
-- Candidate additions, each where it serves an argument already there
-  (not a list for balance):
-  - §1: Pāṇini's grammar (c. 4th c. BCE) as a system of rules applied
-    mechanically (link to Chomsky, §11); Nyāya and the Buddhist
-    logicians Dignāga and Dharmakīrti on inference; the Mohists and the
-    School of Names (Gongsun Long) on names and things, beside the
-    *Cratylus*. Possibly as one short note on the other ancient
-    traditions.
-  - §2: Leibniz's binary arithmetic and the I Ching (1703, via Bouvet);
-    possibly Pingala's two-valued listing of metres.
-  - §8: the primality example: Agrawal, Kayal and Saxena (2002) showed
-    that primality is decided in polynomial time.
-  - §9: A. A. Markov (1913) on letter sequences in *Eugene Onegin*, the
-    forerunner of Shannon's statistical approach; V. Shestakov on
-    switching circuits, independently, beside Nakashima.
-  - §11: Fukushima's Neocognitron (1980) and Amari (1967) in the history
-    of neural networks; Fei-Fei Li and ImageNet; Wu Wenjun's method
-    (1977), with which the AlphaGeometry paper compares itself.
-- Possibly the timeline and the bibliography to follow.
+**B. The owner's remark on non-Western contributions**: done on
+2026-11-25 (`DONE.md`; ledger, Ω25–Ω35). Still open, if the owner
+wants it: whether the timeline should list the new names.
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 

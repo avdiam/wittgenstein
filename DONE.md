@@ -26,6 +26,22 @@ point. Ledger, Ω25–Ω29.
   that the Indian and Chinese traditions developed separately was
   dropped: it is contested.
 
+Then the candidate additions, taken one by one with the owner (ledger,
+Ω30–Ω35). Each checked in sources first; the owner's rule: only where
+it serves the thread, not a list of names.
+
+- Added: Pāṇini's grammar beside Chomsky (§11); Leibniz, Bouvet and the
+  hexagrams of the *I Ching* (§2), with an «Ερμηνευτική σημείωση» on
+  whether the diagram is binary; Shestakov beside Nakashima (§9); the
+  ImageNet collection and Fei-Fei Li (§11); Wu Wenjun's method beside
+  AlphaGeometry (§11). Bibliography: Leibniz 1703, Deng et al. 2009,
+  Kiparsky.
+- Left out by the owner: Markov (1913), after the definition of a
+  Markov chain was discussed (checked: Ω35); Fukushima and Amari;
+  the Mohists, Nyāya, Dignāga and Dharmakīrti, Pingala (no contact
+  with the line the essay follows); the AKS primality test (nothing to
+  attach it to).
+
 **Session of 2026-11-25: three small fixes to the essay.**
 
 Proposal A of the full read of 2026-11-24, each caused by that
