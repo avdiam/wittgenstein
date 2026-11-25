@@ -33,7 +33,10 @@ the owner. Ledger, Ω36–Ω40.
 Earlier the same day: the Riemann result rechecked at 08:30 UTC;
 nothing had changed. Then (owner): `TRACTATUS_REBUILD_PLAN.md` deleted
 (never committed), and the concept drawer on truth-functions
-(`concepts.json`) given the step from 4 rows to 16 functions.
+(`concepts.json`) given the step from 4 rows to 16 functions. Then the
+two open essay checks: proposition 7 in Kitsopoulos confirmed (Ω42);
+the Sraffa variant reworded in §10, told by Wittgenstein to von Wright
+and noted by Malcolm (Ω41).
 
 **Session of 2026-11-25, later: the essay's scope and its non-Western figures.**
 

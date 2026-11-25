@@ -129,7 +129,9 @@ item is finished, move it to `DONE.md` with the date.
   the five smaller points of the essay–analysis comparison, decided
   by the owner and applied (details in `DONE.md`; ledger, Ω36–Ω40),
   and the 6.3751 comparison note revised; at the owner's request,
-  everything pushed with this line (from `a6bfc1e`).
+  everything pushed (from `a6bfc1e`). Then the truth-function drawer,
+  the Sraffa variant and proposition 7 (ledger, Ω41–Ω42); pushed with
+  this line (from `153f789`).
 
 ## Essay and analysis: open points (2026-11-24)
 
