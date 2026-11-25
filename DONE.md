@@ -47,6 +47,11 @@ against `DONE.md` and the ledger first. Ledger, Ε1–Ε14.
 Checked: `build_all.py --check` exits 0; the new subsection and photo in
 headless Chrome at 1280 px. Committed, not pushed.
 
+Then, at the owner's request, a third card on the cover page
+(`docs/index.html`): «Ο ύστερος Wittgenstein», marked «Υπό προετοιμασία»
+and «Σύντομα διαθέσιμο», without a link (dashed border, muted colours,
+no hover). Checked in headless Chrome at 1280 px. Committed, not pushed.
+
 **Session of 2026-11-25, night: the note on *Sachverhalt*.**
 
 At the owner's request, the choice between the two readings of

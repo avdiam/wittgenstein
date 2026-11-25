@@ -51,6 +51,9 @@
   .card p { font-family: var(--font-serif); line-height: 1.6; margin: 0 0 1rem; }
   .card ul { margin: 0 0 1.25rem; padding-left: 1.1rem; font-size: .9rem; line-height: 1.6; color: var(--muted-foreground); }
   .card .go { margin-top: auto; font-size: .9rem; font-weight: 600; color: var(--primary); }
+  .card.soon { border-style: dashed; background: transparent; cursor: default; }
+  .card.soon:hover { border-color: var(--border); background: transparent; }
+  .card.soon .card-label, .card.soon .go { color: var(--muted-foreground); }
   .about { border-top: 1px solid var(--border); padding: 1.5rem 0 3rem; color: var(--muted-foreground); font-size: .88rem; line-height: 1.6; }
   .about p { margin: .4rem 0; max-width: 46rem; }
 </style>
@@ -88,6 +91,17 @@
       </ul>
       <span class="go">Άνοιγμα της ανάλυσης →</span>
     </a>
+    <div class="card soon" aria-disabled="true">
+      <p class="card-label">Υπό προετοιμασία</p>
+      <h2>Ο ύστερος Wittgenstein</h2>
+      <p>Η διαδρομή μετά το <em>Tractatus</em>: τα βιβλία, οι διαλέξεις, τα χειρόγραφα και οι επιστολές από την επιστροφή στο Cambridge το 1929 ως τις <em>Φιλοσοφικές Έρευνες</em> και το <em>Περί βεβαιότητας</em>.</p>
+      <ul>
+        <li>Η διαδρομή από το 1929</li>
+        <li><em>Φιλοσοφικές Έρευνες</em>, σε θεματικές ενότητες</li>
+        <li><em>Περί βεβαιότητας</em></li>
+      </ul>
+      <span class="go">Σύντομα διαθέσιμο</span>
+    </div>
   </main>
 
   <footer class="about">

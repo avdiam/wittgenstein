@@ -302,7 +302,9 @@ Stages, one commit each:
 2. Arcs 2–3. 3. Arcs 4–5. 4. Arcs 6–7. 5. Arc 8 and the epilogue
    (*Über Gewißheit*: LWP text; Part II: printed wording and PPF
    numbers still needed, see `CROSSCHECK_PLAN.md`).
-6. Build script, cover card on `docs/index.html`, links from essay §10,
+6. Build script, cover card on `docs/index.html` (a placeholder card,
+   without a link, is there since 2026-11-25: give it the link, the
+   `<a>` element and the normal style), links from essay §10,
    the Tractatus epilogue and the page headers; `README.md`, `CLAUDE.md`.
 7. Labs, two or three, chosen then (candidates: the rule-following
    sequence of §185, the beetle box of §293, the duck-rabbit).
