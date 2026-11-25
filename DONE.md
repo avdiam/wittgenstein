@@ -19,6 +19,8 @@ the owner. Ledger, Ω36–Ω40.
 2. Essay §10: the 1929 paper both admits that degree statements exclude
    each other and proposes rules of syntax to correct the notation;
    «Αργότερα» the framework abandoned. The 1933 «weak» left out (owner).
+   The comparison note at 6.3751 (`pm_quotes.json`) no longer says the
+   book was abandoned in 1929, but revised from 1929 (owner).
 3. Analysis at 6.3751: *Satzsysteme* moved from the 1929 paper, which
    does not have the term, to Waismann's notes of Christmas 1929; the
    paper's own finding and its deferred repair stated.
