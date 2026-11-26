@@ -150,7 +150,12 @@ item is finished, move it to `DONE.md` with the date.
   Η10), and a paragraph on EWD667, natural-language programming (ledger,
   Η11). Then Viète in §2 (ledger, Η12), and Fermat and Euler (ledger,
   Η13–Η14), the Greek mathematicians in §1 (ledger, Η15), and the
-  calculus with Riemann in §2 (ledger, Η16); not pushed.
+  calculus with Riemann in §2 (ledger, Η16); not pushed (six commits
+  from `120f688` to `309a804`). Next session: push if the owner agrees;
+  then a read of the essay for coherence and length after the additions
+  of this session (§1 Greek mathematics, §2 Viète and the calculus, §8
+  Knuth, §11 Knuth, Dijkstra, Fermat); the Riemann watch
+  (`CROSSCHECK_PLAN.md`).
 
 ## Essay and analysis: open points (2026-11-24)
 
