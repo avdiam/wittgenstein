@@ -189,6 +189,11 @@ item is finished, move it to `DONE.md` with the date.
   figure on the live page: fine. Waiting for the owner: allowing
   `math.mit.edu`, `www.math.uwaterloo.ca` and `en.wikipedia.org` in the
   cloud environment of the Riemann watch.
+  Next session: run the task once (`RemoteTrigger`, `run`) and read its
+  log to see whether the hosts are reachable (two runs on 2026-11-26
+  failed on `math.mit.edu`; the task uses the environment «Default»);
+  read the «G.R.H. Polymath» post on Tao's blog; then the owner's choice
+  between the passage checks and the *Investigations* part.
 
 ## Essay and analysis: open points (2026-11-24)
 
