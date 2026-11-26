@@ -1005,6 +1005,26 @@ unchanged.
 | Κ16 | Timeline: «περ. 1630–1637 · Fermat: … το «Τελευταίο Θεώρημα»» and «1995 · Wiles» | [MacTutor, Fermat's last theorem](https://mathshistory.st-andrews.ac.uk/HistTopics/Fermat's_last_theorem/): «almost certainly» about 1630; [Britannica](https://britannica.com/science/Fermats-last-theorem) and [St John's College](https://www.joh.cam.ac.uk/node/2312): 1637; published by Samuel de Fermat in 1670 (Η13). Wiles: *Annals of Mathematics* 141 (1995) (earlier row) | contested (1630 or 1637): a range, no winner | Two timeline rows. |
 | Κ17 | Postscript: Anthropic's statement that it is approaching its threshold for «δραματικά επιταχυνόμενη πρόοδο» (Υ5), a forecast by the interested party, read only through TechCrunch; the weight of one company in §11 and the postscript discussed with the owner (Anthropic 6, Claude 8, OpenAI 5, DeepMind 3, Google 3 mentions in the body; the assessor is an Anthropic model, which was said) | Row Υ5 | removed (owner) | Clause deleted; the 80% figure (Υ4, Anthropic's own page), METR (Υ6) and MIT (Υ7) kept. The open item on the S-1/A filings closed in `CROSSCHECK_PLAN.md`. |
 
+## The fifth outside review of the essay, checked (2026-11-26, night)
+
+The review (`external_review.md`, untracked; no revised `.docx` came with
+it) made six small points and one remark on scope. Each was checked against
+the Markdown and against earlier decisions, then decided by the owner one
+at a time.
+
+| # | Claim | Sources | Verdict | Action |
+| :-- | :-- | :-- | :-- | :-- |
+| Λ1 | §1, Euler figure caption: literal asterisks around *Επιστολές προς μια Γερμανίδα πριγκίπισσα* | `docs/essay.html` before the fix; an image title is plain text for Markdown | confirmed | `build_essay_html.py` and `build_docx.py` now set `*…*` in a caption in italics. The caption text is unchanged. |
+| Λ2 | Postscript: «Τον ίδιο μήνα ερευνητές του MIT» had no month to refer to after the clause of Κ17 was removed | The paragraph; Takehi et al., MIT CSAIL, 2 Nov. 2026 (Υ7) | confirmed | «Τον Νοέμβριο του 2026 ερευνητές του MIT». |
+| Λ3 | Sources: the entry for Anthropic's Form S-1/A is cited nowhere since Κ17 | Search of the essay | confirmed | Entry removed. |
+| Λ4 | Timeline against the text («Οι χρονολογίες είναι εκείνες του κειμένου»): AlphaFold 2020, Fermat «περ. 1630–1637», Euclid «γύρω στο 300 π.Χ.» | The body: AlphaFold only in the 2024 Nobel sentence (Κ5); Fermat's note without a date; Euclid «περ. 325–265 π.Χ.» | confirmed for AlphaFold and Fermat; Euclid's row is covered by his life dates | The AlphaFold half of the 2020 row removed (the 2024 row names it); §11 «είχε σημειώσει γύρω στο 1630–1637 στο περιθώριο» (the range of Κ16, no winner). Euclid unchanged (owner). |
+| Λ5 | §1: «Galileo» without a Greek form or dates | [MacTutor](https://mathshistory.st-andrews.ac.uk/Biographies/Galileo/): born 15 February 1564, died 8 January 1642; [Wikidata Q307](https://www.wikidata.org/wiki/Q307): the same | confirmed | «ο Galileo (Γαλιλαίος, 1564–1642)», the essay's pattern; not «ο Γαλιλαίος» alone, as the review proposed (owner). |
+| Λ6 | §2: «François Viète (Φρανσουά Βιέτ, 1540–1603)» is the only name with the first name in Greek | The essay's other names with a Greek form, about forty, all surname only | confirmed | «François Viète (Βιέτ, 1540–1603)» (owner). |
+| Λ7 | §1: Eudoxus, Archimedes and Eratosthenes without «περ.» | MacTutor headers give plain years ([Eudoxus](https://mathshistory.st-andrews.ac.uk/Biographies/Eudoxus/) 408–355 BC, [Archimedes](https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/) 287–212 BC, [Eratosthenes](https://mathshistory.st-andrews.ac.uk/Biographies/Eratosthenes/) 276–194 BC), so the essay followed its source; Wikidata marks Eudoxus's 408 and 355 as circa and records a birth in the 390s ([Q185150](https://www.wikidata.org/wiki/Q185150)), and records 194, 195 and 196 for Eratosthenes's death ([Q43182](https://www.wikidata.org/wiki/Q43182)). Archimedes's dates were not checked in a second source | the plain years are less firm than they look | «περ.» added to all three in §1 and to the Archimedes row of the timeline (owner). |
+| Λ8 | §11: Dijkstra without a Greek form | The essay's practice in §11 (Searle, Erdős, Fermat with a Greek form; Dreyfus and Wu Wenjun with dates only) | a choice | «Edsger W. Dijkstra (Ντάικστρα, 1930–2002)»; Dreyfus and Wu Wenjun unchanged (owner). |
+| Λ9 | Glossary «Απειροστικός λογισμός» (Η16) names Cavalieri, Barrow and the fundamental theorem of the calculus, which the body does not | Search of the essay: Cavalieri and Barrow only in the entry; Fermat in the body only for number theory | confirmed | «Πρόδρομός του ήταν η μέθοδος της εξάντλησης του Εύδοξου και του Αρχιμήδη· τον θεμελίωσαν …»: the 17th-century names removed, the fundamental theorem kept (owner). |
+| Λ10 | §1 «Τα μαθηματικά της απόδειξης»: Thales, Pythagoras, Eratosthenes and Hypatia do not return later, so the subsection could be condensed | Search of the essay: the four appear only in §1; the subsection was the owner's draft (Η15), trimmed in the coherence read (Κ3), and calls itself «ενδεικτικός κατάλογος» | the observation holds; a choice | Kept as it is (owner). |
+
 ## Open for the essay
 
 Moved to `CROSSCHECK_PLAN.md`.

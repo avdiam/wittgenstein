@@ -24,6 +24,7 @@ older SVG (see docs/images/png/manifest.json).
 Requires: markdown-it-py  (pip install markdown-it-py)
 """
 import hashlib
+import re
 import json
 import struct
 import sys
@@ -198,7 +199,10 @@ def figure(image, media):
         '<a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr>'
         "</pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r>"
     )
-    return paragraph(drawing, "Figure") + paragraph(run(caption), "Caption")
+    # an image title is plain text for Markdown: set its *titles* in italics here
+    pieces = re.split(r"\*([^*]+)\*", caption)
+    caption_runs = "".join(run(p, italic=i % 2 == 1) for i, p in enumerate(pieces) if p)
+    return paragraph(drawing, "Figure") + paragraph(caption_runs, "Caption")
 
 
 def only_image(inline):

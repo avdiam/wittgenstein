@@ -175,6 +175,8 @@ FIG_RE = re.compile(r'<p><img src="([^"]+)" alt="([^"]*)"(?: title="([^"]*)")?\s
 
 def render_figure(m):
     src, alt, title = m.group(1), m.group(2), m.group(3) or m.group(2)
+    # an image title is plain text for Markdown: set its *titles* in italics here
+    title = re.sub(r"\*([^*]+)\*", r"<em>\1</em>", title)
     caption = f"<figcaption>{title}</figcaption>" if title else ""
     if src.endswith(".svg"):
         svg_path = HTML_PATH.parent / src

@@ -162,6 +162,11 @@ item is finished, move it to `DONE.md` with the date.
   to the records commit of this session waits for the owner. Next
   session: push if the owner agrees; whether §11 (now about 4,700 words)
   needs shortening; the Riemann watch (`CROSSCHECK_PLAN.md`).
+- Session of 2026-11-26, night: a fifth outside review of the essay
+  taken through with the owner, ten points (details in `DONE.md`;
+  ledger, Λ1–Λ10; one commit). Not pushed: everything from `120f688`
+  waits for the owner. Next session: push if the owner agrees; whether
+  §11 needs shortening; the Riemann watch (`CROSSCHECK_PLAN.md`).
 
 ## Essay and analysis: open points (2026-11-24)
 

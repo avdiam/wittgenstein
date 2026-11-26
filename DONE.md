@@ -8,6 +8,27 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-26, night: the fifth outside review of the essay.**
+
+Ledger, Λ1–Λ10. The review (`external_review.md`, without a revised
+`.docx`) checked point by point against the Markdown and earlier
+decisions; the owner decided each. One commit, not pushed.
+
+1. Leftovers of the day's revision, fixed: italics in figure captions
+   (both builders; the Euler caption showed asterisks); «Τον ίδιο μήνα» →
+   «Τον Νοέμβριο του 2026» in the postscript; the Form S-1/A entry removed
+   from the sources.
+2. Timeline and text: the AlphaFold half of the 2020 row removed; «γύρω
+   στο 1630–1637» added to the Fermat sentence of §11.
+3. Names and dates: «Galileo (Γαλιλαίος, 1564–1642)»; «François Viète
+   (Βιέτ, 1540–1603)»; «περ.» for Eudoxus, Archimedes and Eratosthenes
+   (and the Archimedes row of the timeline); «Dijkstra (Ντάικστρα,
+   1930–2002)».
+4. Glossary «Απειροστικός λογισμός»: Cavalieri, Fermat and Barrow
+   removed, the fundamental theorem kept.
+5. Not changed (owner): the subsection «Τα μαθηματικά της απόδειξης»
+   stays as it is; Euclid's timeline row.
+
 **Session of 2026-11-26, later: the essay read for coherence and balance.**
 
 Ledger, Κ1–Κ17. The whole essay read after the additions of the same day;
