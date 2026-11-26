@@ -175,6 +175,11 @@ item is finished, move it to `DONE.md` with the date.
   new figures on the page (the ENIAC photograph in §9, the
   rule-following diagram in §10); the Riemann watch
   (`CROSSCHECK_PLAN.md`).
+- Session of 2026-11-26, night: a weekly cloud scheduled task set up
+  for the Riemann watch (owner's request; `CROSSCHECK_PLAN.md` has its
+  id and how to read its reports). Next: the sources list of the essay
+  entry by entry, then the open essay checks of `CROSSCHECK_PLAN.md`
+  that can be done on the open internet (owner's request).
 
 ## Essay and analysis: open points (2026-11-24)
 
