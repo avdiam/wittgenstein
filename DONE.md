@@ -8,6 +8,32 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-26, night: the final read of the essay.**
+
+Ledger, Μ1–Μ15. The whole essay read in one session for flow, structure,
+balance, links and figures; eleven points taken one by one with the
+owner. One commit, not pushed.
+
+1. Links and explanations: a sentence in the introduction on the history
+   of proof; what Llull, Viète and Pascal prepare for Leibniz (§2);
+   Frege's function as an expression with empty places (§5); the *bit*
+   and Leibniz's two digits (§9).
+2. Structure: a closing paragraph for §6 (owner's wording, checked
+   against 4 and 2.223); in §11 the linguists moved out of «Τα νευρωνικά
+   δίκτυα» into a new subsection «Η σημασία από τα συμφραζόμενα».
+3. Figures: the table of the five self-referring constructions in §8; the
+   ENIAC photograph in §9 (`docs/images/eniac.jpg`, public domain); the
+   rule-following diagram in §10 (`docs/images/rule_following.svg`).
+4. New facts: the ENIAC (1943–1945) and the first stored program at
+   Manchester (21 June 1948) in §9 and the timeline; the Computer
+   History Museum named in the sources.
+5. Corrections: the 1679 trials are Leibniz's, not Hobbes's (§2); Moore
+   was a lecturer, not yet a professor (§6); Hegel's Greek form moved to
+   his first mention (§6).
+6. Left as they were (owner): the Anscombe bullet, Viète's bullets, the
+   Marxist and Hegelian readers, the 2026 chronicle, the length of §11.
+7. Lengths after the session (words): §1 1862, §2 1819, §3 528, §4 985, §5 2476, §6 2957, §7 1385, §8 2786, §9 953, §10 2786, §11 4710, §12 1174.
+
 **Session of 2026-11-26, night: the fifth outside review of the essay.**
 
 Ledger, Λ1–Λ10. The review (`external_review.md`, without a revised
