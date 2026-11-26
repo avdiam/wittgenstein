@@ -168,8 +168,8 @@ item is finished, move it to `DONE.md` with the date.
   waits for the owner.
 - Session of 2026-11-26, night: the review file deleted (owner), then
   a final read of the whole essay by Claude at the owner's request,
-  eleven points taken one by one (details in `DONE.md`; ledger,
-  Μ1–Μ15; one commit). §11 was restructured, not shortened (owner).
+  eleven points taken one by one, and the glossary (details in
+  `DONE.md`; ledger, Μ1–Μ16; two commits). §11 was restructured, not shortened (owner).
   Not pushed: everything from `120f688` waits for the owner. Next
   session: push if the owner agrees; the owner to look at the two
   new figures on the page (the ENIAC photograph in §9, the

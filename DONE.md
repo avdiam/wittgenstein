@@ -10,9 +10,9 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
 
 **Session of 2026-11-26, night: the final read of the essay.**
 
-Ledger, Μ1–Μ15. The whole essay read in one session for flow, structure,
+Ledger, Μ1–Μ16. The whole essay read in one session for flow, structure,
 balance, links and figures; eleven points taken one by one with the
-owner. One commit, not pushed.
+owner, then the glossary at the owner's request. Two commits, not pushed.
 
 1. Links and explanations: a sentence in the introduction on the history
    of proof; what Llull, Viète and Pascal prepare for Leibniz (§2);
@@ -33,6 +33,10 @@ owner. One commit, not pushed.
 6. Left as they were (owner): the Anscombe bullet, Viète's bullets, the
    Marxist and Hegelian readers, the 2026 chronicle, the length of §11.
 7. Lengths after the session (words): §1 1862, §2 1819, §3 528, §4 985, §5 2476, §6 2957, §7 1385, §8 2786, §9 953, §10 2786, §11 4710, §12 1174.
+8. Glossary (second commit): read in full; «Συνεπαγωγή» and «Συνέπεια»
+   put in order; «Αρχιτεκτονική von Neumann» reworded; four entries
+   added («Γλωσσικό μοντέλο», «Επαληθευτής αποδείξεων», «Λογική
+   μορφή», «Νευρωνικό δίκτυο»), 50 entries in all.
 
 **Session of 2026-11-26, night: the fifth outside review of the essay.**
 
