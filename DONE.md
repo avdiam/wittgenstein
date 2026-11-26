@@ -33,7 +33,11 @@ Ledger, Η1–Η5.
    Llull. Pushed (`6ca7e83..f95cb94`).
 4. Dijkstra (owner's question): one sentence in §11 «Τα όρια», after
    Hume: testing can show that a program has errors, never that it has
-   none (EWD249, 1969); timeline 1969; source entry.
+   none (EWD249, 1969); timeline 1969; source entry. Then a paragraph in
+   «Ο συνδυασμός των δύο προσεγγίσεων» on EWD667 (published 1979): against
+   programming in natural language, with his view of Greek mathematics and
+   of the formal symbolisms of Viète, Descartes, Leibniz and Boole, wording
+   decided by the owner; timeline 1979; source entry.
 
 **Session of 2026-11-25, night: the third outside review of the essay.**
 
