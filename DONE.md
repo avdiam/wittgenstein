@@ -8,6 +8,21 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-26: the Riemann recheck and a fourth outside review.**
+
+Ledger, Η1–Η5.
+
+1. Riemann: Sutherland's checks finished on 25 Nov and all passed. The
+   postscript now says the independent checks «ολοκληρώθηκαν στις 25
+   Νοεμβρίου» and accepted the proof; the source entry dated 25 Nov. Still
+   no written proof, no statement from Anthropic or the Clay Institute.
+2. An outside review (`final_review.md`, untracked) found four small
+   points, all applied (owner): «η ομάδα της Anthropic» for «η ίδια ομάδα»
+   (§11); «Πάνω από τρεις αιώνες αργότερα» (§2); Hardy placed by date and
+   the Wittgenstein subsection of the bibliography sorted by year; the
+   glossary entry on attention aligned with §11. The review file was then
+   deleted (owner); it was never committed.
+
 **Session of 2026-11-25, night: the third outside review of the essay.**
 
 An outside review (`new_review.txt`, untracked) taken through proposal by

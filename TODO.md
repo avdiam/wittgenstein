@@ -141,6 +141,11 @@ item is finished, move it to `DONE.md` with the date.
   deleted (owner). The Riemann result now sits in the postscript;
   recheck it after 21:30 UTC on 25 Nov. Next session: the Riemann
   recheck first, then the Knuth question below.
+- Session of 2026-11-26: the Riemann result rechecked (all of
+  Sutherland's checks passed; the postscript updated) and a fourth
+  outside review applied, four small points (details in `DONE.md`;
+  ledger, Η1–Η5); the review file deleted (owner). Then the Knuth
+  question below.
 
 ## Essay and analysis: open points (2026-11-24)
 
