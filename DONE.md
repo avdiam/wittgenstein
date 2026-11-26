@@ -22,6 +22,15 @@ Ledger, Η1–Η5.
    the Wittgenstein subsection of the bibliography sorted by year; the
    glossary entry on attention aligned with §11. The review file was then
    deleted (owner); it was never committed.
+3. Knuth (owner's question of 2026-11-25): §8 names the two fields that
+   measure the time of a method, complexity theory (Hartmanis and Stearns,
+   1965) and the analysis of algorithms (Knuth, *The Art of Computer
+   Programming*, from 1968; Turing Award 1974, at the owner's request);
+   §11 opens the 2026 results with «Claude's Cycles» (February–March 2026:
+   Claude Opus 4.6 found the construction for odd sizes, Knuth wrote the
+   proof, the even sizes solved in March). Timeline rows 1965, 1968, 2026;
+   three source entries. Left out: the «NP-hard» poll, TeX, *TAOCP* on
+   Llull.
 
 **Session of 2026-11-25, night: the third outside review of the essay.**
 

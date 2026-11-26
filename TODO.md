@@ -145,7 +145,8 @@ item is finished, move it to `DONE.md` with the date.
   Sutherland's checks passed; the postscript updated) and a fourth
   outside review applied, four small points (details in `DONE.md`;
   ledger, Η1–Η5); the review file deleted (owner). Then the Knuth
-  question below.
+  question, searched and decided by the owner: §8 and §11 (ledger,
+  Η6–Η9). Not pushed.
 
 ## Essay and analysis: open points (2026-11-24)
 
@@ -167,21 +168,6 @@ The five smaller points were decided by the owner and applied on
 **B. The owner's remark on non-Western contributions**: done on
 2026-11-25 (`DONE.md`; ledger, Ω25–Ω35). The new names were added to
 the timeline the same day (owner).
-
-## Essay: Donald Knuth (owner, 2026-11-25)
-
-The owner asked whether the essay should mention Knuth; to be searched
-and decided next session. Proposal discussed, nothing checked yet:
-one or two sentences in §8, after the sentence on 300 propositions and
-before P vs NP, on the analysis of algorithms as a discipline with *The
-Art of Computer Programming* (from 1968; Turing Award 1974), with, if
-it holds, the 1974 poll that gave the term "NP-hard"; a timeline row
-and a source entry. Left aside unless the owner wants them: TeX and
-literate programming (outside the essay's thread); Knuth's note
-«Claude's Cycles» (2026, remembered, not verified; another Anthropic
-result after Ε10, and Claude has a conflict of interest; postscript
-only, with the same caution as the other recent results); *TAOCP*
-vol. 4 on Llull (not read, so not a source).
 
 ## Tractatus page: follow-ups to the review of 2026-11-21
 
