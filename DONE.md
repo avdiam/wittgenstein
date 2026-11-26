@@ -38,6 +38,12 @@ Ledger, Η1–Η5.
    programming in natural language, with his view of Greek mathematics and
    of the formal symbolisms of Viète, Descartes, Leibniz and Boole, wording
    decided by the owner; timeline 1979; source entry.
+5. Viète (owner's draft, checked and corrected): a paragraph and four
+   bullets in §2 between Llull and Pascal, on the *Isagoge* (1591), the
+   *logistice speciosa* and *numerosa*, the law of homogeneity, vowels and
+   consonants (and Descartes's x, y, z), + and −; the subsection renamed
+   «Ο Llull, ο Viète και ο Pascal»; timeline 1591; source entry. Fermat
+   and Euler to be discussed next.
 
 **Session of 2026-11-25, night: the third outside review of the essay.**
 
