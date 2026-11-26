@@ -964,6 +964,7 @@
 
 ### Για τον Wittgenstein: πλαίσιο και υποδοχή
 
+- Moore, G. E., «A Defence of Common Sense», στο J. H. Muirhead (επιμ.), *Contemporary British Philosophy*, 2η σειρά, London: Allen & Unwin, 1925, σσ. 193–223· «Proof of an External World», *Proceedings of the British Academy* 25 (1939), σσ. 273–300.
 - Neurath, O., «Sociology and Physicalism» (1931/32), στο A. J. Ayer (επιμ.), *Logical Positivism*, 1959.
 - Popper, K., *Logik der Forschung*, Βιέννη: Julius Springer, 1935 (τυπώθηκε στα τέλη του 1934· αγγλ. έκδ. *The Logic of Scientific Discovery*, 1959).
 - Ayer, A. J., *Language, Truth and Logic*, London: Gollancz, 1936.

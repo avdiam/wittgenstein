@@ -183,8 +183,8 @@ item is finished, move it to `DONE.md` with the date.
 - Session of 2026-11-26, late night: both done (details in `DONE.md`;
   ledger, Ν1–Ν19; two commits). The postscript's sentence on the written
   proof now mentions the unfinished guide (Ν19, owner; third commit).
-  Waiting for the owner: whether to add
-  entries for the works the body names with a year (Ν4); allowing
+  Moore's articles of 1925 and 1939 added to the sources (Ν4, owner;
+  fourth commit). Waiting for the owner: allowing
   `math.mit.edu`, `www.math.uwaterloo.ca` and `en.wikipedia.org` in the
   cloud environment of the Riemann watch.
 
