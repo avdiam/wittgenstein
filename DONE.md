@@ -8,6 +8,17 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-26, late night: the sources list and the open checks of the essay.**
+
+Ledger, Ν1–Ν19. Two commits, not pushed.
+
+1. Sources list (Ν1–Ν4): all 137 entries are cited or support a claim;
+   five entries moved into date order; place and publisher added to
+   Diamond 1976, Dreyfus 1972, Weizenbaum 1976 and Fodor 1975; Frege's
+   *Grundlagen der Arithmetik* (Breslau, 1884), cited twice in the body,
+   added to his entry. The 29 SEP entries of «Έργα αναφοράς» are all
+   still used.
+
 **Session of 2026-11-26, night: the final read of the essay.**
 
 Ledger, Μ1–Μ16. The whole essay read in one session for flow, structure,

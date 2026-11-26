@@ -849,7 +849,7 @@
 - *Tagebücher 1914–1916 / Notebooks 1914–1916*, επιμ. G. H. von Wright και G. E. M. Anscombe, Oxford: Blackwell, 1961.
 - *Über Gewißheit / On Certainty*, επιμ. G. E. M. Anscombe και G. H. von Wright, Oxford: Blackwell, 1969.
 - *Briefe an Ludwig von Ficker*, επιμ. G. H. von Wright και W. Methlagl, Salzburg: Otto Müller, 1969.
-- *Wittgenstein's Lectures on the Foundations of Mathematics, Cambridge 1939*, επιμ. C. Diamond, 1976.
+- *Wittgenstein's Lectures on the Foundations of Mathematics, Cambridge 1939*, επιμ. C. Diamond, Ithaca, NY: Cornell University Press, 1976.
 - *Vermischte Bemerkungen / Culture and Value*, επιμ. G. H. von Wright (με τον H. Nyman), Frankfurt: Suhrkamp, 1977 (αγγλ. μτφρ. P. Winch, Oxford: Blackwell, 1980).
 - *Bemerkungen über die Philosophie der Psychologie / Remarks on the Philosophy of Psychology*, τόμ. I, επιμ. G. E. M. Anscombe και G. H. von Wright, Oxford: Blackwell, 1980.
 
@@ -862,7 +862,7 @@
 - Mill, J. S., *A System of Logic*, London: John W. Parker, 1843.
 - Boole, G., *An Investigation of the Laws of Thought*, London: Walton and Maberly, 1854.
 - Jevons, W. S., «On the Mechanical Performance of Logical Inference», *Philosophical Transactions of the Royal Society of London* 160 (1870), σσ. 497–518.
-- Frege, G., *Begriffsschrift*, Halle, 1879· «Über Sinn und Bedeutung», 1892· *Grundgesetze der Arithmetik*, Jena, 1893 και 1903.
+- Frege, G., *Begriffsschrift*, Halle, 1879· *Die Grundlagen der Arithmetik*, Breslau, 1884· «Über Sinn und Bedeutung», 1892· *Grundgesetze der Arithmetik*, Jena, 1893 και 1903.
 - Peirce, C. S., [«A Boolian Algebra with One Constant»], χειρόγραφο γύρω στο 1880, στο *Collected Papers of Charles Sanders Peirce*, τόμ. 4, επιμ. C. Hartshorne και P. Weiss, Cambridge, MA: Harvard University Press, 1933, §§4.12–4.20.
 - Cantor, G., «Ueber eine elementare Frage der Mannigfaltigkeitslehre», *Jahresbericht der Deutschen Mathematiker-Vereinigung* 1 (1891), σσ. 75–78.
 - Hilbert, D., *Grundlagen der Geometrie*, 1899.
@@ -904,9 +904,9 @@
 - Dijkstra, E. W., *Notes on Structured Programming* (EWD249), Technische Hogeschool Eindhoven, Αύγουστος 1969 (2η έκδ. Απρίλιος 1970), https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD249/EWD249.html.
 - Matiyasevich, Yu. V., «Diofantovost' perechislimykh mnozhestv», *Doklady Akademii Nauk SSSR* 191 (1970), σσ. 279–282· αγγλική μετάφραση: «Enumerable sets are Diophantine», *Soviet Mathematics Doklady* 11 (1970), σσ. 354–357.
 - Cook, S. A., «The complexity of theorem-proving procedures», *Proceedings of the Third Annual ACM Symposium on Theory of Computing*, 1971, σσ. 151–158.
-- Dreyfus, H. L., *What Computers Can't Do: A Critique of Artificial Reason*, 1972· τρίτη έκδοση με νέα εισαγωγή, *What Computers Still Can't Do*, Cambridge, MA: MIT Press, 1992.
+- Dreyfus, H. L., *What Computers Can't Do: A Critique of Artificial Reason*, New York: Harper & Row, 1972· τρίτη έκδοση με νέα εισαγωγή, *What Computers Still Can't Do*, Cambridge, MA: MIT Press, 1992.
 - Levin, L. A., «Universal'nye zadachi perebora» [«Universal search problems»], *Problemy Peredachi Informatsii* 9 (3) (1973), σσ. 115–116.
-- Weizenbaum, J., *Computer Power and Human Reason: From Judgment to Calculation*, W. H. Freeman, 1976.
+- Weizenbaum, J., *Computer Power and Human Reason: From Judgment to Calculation*, San Francisco: W. H. Freeman, 1976.
 - Dijkstra, E. W., «On the foolishness of "natural language programming"», στο *Program Construction*, Lecture Notes in Computer Science 69, Berlin: Springer, 1979, σσ. 51–53 (EWD667, https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html).
 - Searle, J. R., «Minds, Brains, and Programs», *Behavioral and Brain Sciences* 3 (1980), σσ. 417–457.
 - Block, N., «Psychologism and Behaviorism», *The Philosophical Review* 90 (1981), σσ. 5–43.
@@ -942,23 +942,23 @@
 - Alon, N. κ.ά., «Remarks on the disproof of the unit distance conjecture», arXiv:2605.20695, 20 Μαΐου 2026.
 - Huang, Y., «Autonomous disproofs of the Erdős unit distance conjecture with GPT-5.5 Pro», *Proceedings of the National Academy of Sciences* 123 (44), 2026, e2621541123.
 - Anthropic, «Formalizing Fermat's Last Theorem», 4 Σεπτεμβρίου 2026, https://www.anthropic.com/research/formalizing-fermats-last-theorem.
+- Anthropic, «When AI builds itself» (ενημέρωση 18 Σεπτεμβρίου 2026), https://www.anthropic.com/institute/recursive-self-improvement.
+- Cammarata, N., «Neural Networks Are Already Clean», Goodfire, 2026 (αναθεώρηση 30 Οκτωβρίου 2026), https://already-clean.goodfire.com/.
+- Takehi, R., Teoh, J., Zhang, A. και Khattab, O., «Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights», MIT CSAIL, 2 Νοεμβρίου 2026, https://rikiyat.github.io/blog/weight-space-programming/.
+- METR, «Independent Assessment of AI R&D Acceleration at Anthropic in October 2026», 5 Νοεμβρίου 2026, https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/.
 - Aaronson, S., «Aaronson-Ambainis Conjecture proved! (By AI, of course)», *Shtetl-Optimized*, 8 Νοεμβρίου 2026, https://scottaaronson.blog/?p=10295.
 - Alpöge, L., σημείωμα χωρίς τίτλο για την υπόθεση του Riemann, 20 Νοεμβρίου 2026, https://alpo.ge/remark.pdf.
 - Quanta Magazine, «Transformation», 20 Νοεμβρίου 2026, https://www.quantamagazine.org/updates/transformation/.
 - Lean FRO και Mathlib Initiative, «Lean verification of the Riemann Hypothesis», 21 Νοεμβρίου 2026, https://leanprover-community.github.io/blog/posts/riemann-hypothesis/.
 - Sutherland, A. V., έλεγχοι της απόδειξης σε Lean, https://math.mit.edu/~drew/grh/ (κατάσταση στις 25 Νοεμβρίου 2026).
-- Cammarata, N., «Neural Networks Are Already Clean», Goodfire, 2026 (αναθεώρηση 30 Οκτωβρίου 2026), https://already-clean.goodfire.com/.
-- Anthropic, «When AI builds itself» (ενημέρωση 18 Σεπτεμβρίου 2026), https://www.anthropic.com/institute/recursive-self-improvement.
-- METR, «Independent Assessment of AI R&D Acceleration at Anthropic in October 2026», 5 Νοεμβρίου 2026, https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/.
-- Takehi, R., Teoh, J., Zhang, A. και Khattab, O., «Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights», MIT CSAIL, 2 Νοεμβρίου 2026, https://rikiyat.github.io/blog/weight-space-programming/.
 
 ### Επισκοπήσεις και εγχειρίδια
 
 - Tomayko, J. E., *Computers in Spaceflight: The NASA Experience*, NASA Contractor Report 182505, 1988, κεφ. 2.
+- Kiparsky, P., «Paninian Linguistics», στο R. E. Asher (επιμ.), *The Encyclopedia of Language and Linguistics*, Oxford: Pergamon, 1994.
 - Ji, Z. κ.ά., «Survey of Hallucination in Natural Language Generation», *ACM Computing Surveys* 55(12), 2023.
 - Garcez, A. d'Avila και Lamb, L. C., «Neurosymbolic AI: the 3rd wave», *Artificial Intelligence Review* 56 (2023), σσ. 12387–12406.
 - Saphra, N. και Wiegreffe, S., «Mechanistic?», arXiv:2410.09087, 2024.
-- Kiparsky, P., «Paninian Linguistics», στο R. E. Asher (επιμ.), *The Encyclopedia of Language and Linguistics*, Oxford: Pergamon, 1994.
 - Jurafsky, D. και Martin, J. H., *Speech and Language Processing*, 3η έκδ. (ηλεκτρονικό χειρόγραφο, Αύγουστος 2026), κεφ. 1 και 7.
 
 ### Για τον Wittgenstein: πλαίσιο και υποδοχή
@@ -978,7 +978,7 @@
 - Marcuse, H., *One-Dimensional Man*, Boston: Beacon Press, 1964, κεφ. 7.
 - Rorty, R. (επιμ.), *The Linguistic Turn*, University of Chicago Press, 1967· *Philosophy and the Mirror of Nature*, Princeton University Press, 1979.
 - Janik, A. και Toulmin, S., *Wittgenstein's Vienna*, New York: Simon & Schuster, 1973.
-- Fodor, J. A., *The Language of Thought*, 1975.
+- Fodor, J. A., *The Language of Thought*, New York: Thomas Y. Crowell, 1975.
 - Rosch, E., «Cognitive representations of semantic categories», *Journal of Experimental Psychology: General* 104 (1975), σσ. 192–233.
 - Rosch, E. και Mervis, C. B., «Family resemblances: Studies in the internal structure of categories», *Cognitive Psychology* 7 (1975), σσ. 573–605.
 - Eagleton, T., «Wittgenstein's Friends», *New Left Review* I/135 (1982).
