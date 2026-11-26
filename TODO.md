@@ -180,6 +180,12 @@ item is finished, move it to `DONE.md` with the date.
   id and how to read its reports). Next: the sources list of the essay
   entry by entry, then the open essay checks of `CROSSCHECK_PLAN.md`
   that can be done on the open internet (owner's request).
+- Session of 2026-11-26, late night: both done (details in `DONE.md`;
+  ledger, Ν1–Ν19; two commits). Waiting for the owner: the wording of
+  the postscript's sentence on the written proof (Ν19); whether to add
+  entries for the works the body names with a year (Ν4); allowing
+  `math.mit.edu`, `www.math.uwaterloo.ca` and `en.wikipedia.org` in the
+  cloud environment of the Riemann watch.
 
 ## Essay and analysis: open points (2026-11-24)
 

@@ -18,6 +18,19 @@ Ledger, Ν1–Ν19. Two commits, not pushed.
    *Grundlagen der Arithmetik* (Breslau, 1884), cited twice in the body,
    added to his entry. The 29 SEP entries of «Έργα αναφοράς» are all
    still used.
+2. Open checks (Ν5–Ν19), none of which changed the essay: Turing's
+   bridge remark closes Lecture XXI of Diamond's edition (p. 211);
+   Minsky and Papert on exclusive-or, from the book; Hobbes in Latin and
+   in *Leviathan*, and Haugeland; the Dartmouth proposal of 31 August
+   1955; Knuth's award citation; Hartmanis–Stearns and Zermelo through
+   Crossref; the affiliations of Gao et al. and Lieberum et al.; Pascal's
+   privilege of 22 May 1649; Jacquard; Llull as a forerunner (Sales, in
+   Fidora and Sierra 2011); the ENIAC and Manchester on the universities'
+   own pages; Viète's 1591 text; Galileo's sentence in *Il Saggiatore*.
+   What is left is listed in `CROSSCHECK_PLAN.md`.
+3. The Riemann watch: the test run showed that the cloud environment
+   cannot reach Sutherland's page; the leads it found by search were
+   checked from here (Ν19).
 
 **Session of 2026-11-26, night: the final read of the essay.**
 
