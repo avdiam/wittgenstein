@@ -8,6 +8,48 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-26, later: the essay read for coherence and balance.**
+
+Ledger, Κ1–Κ17. The whole essay read after the additions of the same day;
+the proposals taken one by one with the owner, all accepted (some with the
+owner's wording). Four commits, not pushed (`66a3dc3`, `097a160`,
+`d263799`, and the records commit).
+
+1. Restructuring: Riemann's curvature, Einstein and topology removed from
+   «Ο Leibniz» (the 1859 hypothesis kept; timeline 1854 changed, 1859
+   added); §11 «Τα νευρωνικά δίκτυα» and «Τα γλωσσικά μοντέλα» as two
+   subsections; §10 new subsection «Βεβαιότητα και γνώση»; the historians'
+   disagreement on Turing and von Neumann's dates moved from §8 to §9; six
+   long paragraphs split, wording unchanged.
+2. Cuts: the Pythagoras entry of §1 (metempsychosis, the harmony of the
+   spheres, Plato, Kepler); the Cammarata note to about 110 words (the
+   owner reversed the earlier «kept as it was»); AlphaFold replaced by
+   «Το 2024 η έρευνα πάνω στα νευρωνικά δίκτυα οδήγησε σε δύο βραβεία
+   Νόμπελ» (owner's wording, corrected: Physics to Hopfield and Hinton,
+   half of Chemistry to Hassabis and Jumper).
+3. Links: Frege's ideal «named after Euclid» (*Grundgesetze* I, preface,
+   read in the 1893 scan) in §5 and Hilbert's *Foundations of Geometry*
+   (1899) in §7, keeping the promise of §1; «διοφαντική εξίσωση (ενότητα
+   1)» in §8; «(για n = 2 έχει, όπως 3² + 4² = 5²)» in §11; Descartes's
+   and Ramsey's dates at their first mentions; Sraffa and Chomsky not
+   introduced twice; Anscombe made a bullet in §10.
+4. New names, each checked first: Hobbes (§2, and «του Hobbes και του
+   Leibniz» in §11); Jevons's logic piano with a photograph
+   (`docs/images/jevons_logic_piano.jpg`, CC BY 2.0, owner's request);
+   Gentzen's consistency proof (§7); the Dartmouth proposal of 1955
+   (§11); ELIZA and Weizenbaum, with the 1976 book (§11); Dreyfus's
+   critique of symbolic AI from Wittgenstein's regress of rules (§11);
+   Zellig Harris on meaning and distribution (§11); timeline rows for
+   Fermat («περ. 1630–1637», the date is disputed) and Wiles (1995).
+5. The weight of one company in §11 and the postscript discussed (the
+   assessor is an Anthropic model, which was said): Anthropic's forecast
+   of its «δραματικά επιταχυνόμενη πρόοδο» threshold removed from the
+   postscript; the S-1/A open item closed.
+6. Lengths after the session (words): §1 1849, §2 1780, §3 534, §4 974,
+   §5 2328, §6 2812, §7 1363, §8 2532, §9 869, §10 2650, §11 4668,
+   §12 1173. §11 grew (ELIZA, Dreyfus, Dartmouth, Harris, the Nobel
+   prizes) and is still the longest section.
+
 **Session of 2026-11-26: the Riemann recheck and a fourth outside review.**
 
 Ledger, Η1–Η5.

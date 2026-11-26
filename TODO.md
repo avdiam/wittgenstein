@@ -156,6 +156,12 @@ item is finished, move it to `DONE.md` with the date.
   of this session (§1 Greek mathematics, §2 Viète and the calculus, §8
   Knuth, §11 Knuth, Dijkstra, Fermat); the Riemann watch
   (`CROSSCHECK_PLAN.md`).
+- Session of 2026-11-26, later: the read of the essay for coherence and
+  length done, proposal by proposal with the owner (details in `DONE.md`;
+  ledger, Κ1–Κ17; four commits). Not pushed: everything from `120f688`
+  to the records commit of this session waits for the owner. Next
+  session: push if the owner agrees; whether §11 (now about 4,700 words)
+  needs shortening; the Riemann watch (`CROSSCHECK_PLAN.md`).
 
 ## Essay and analysis: open points (2026-11-24)
 
