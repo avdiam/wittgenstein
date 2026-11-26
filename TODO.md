@@ -146,7 +146,9 @@ item is finished, move it to `DONE.md` with the date.
   outside review applied, four small points (details in `DONE.md`;
   ledger, Η1–Η5); the review file deleted (owner). Then the Knuth
   question, searched and decided by the owner: §8 and §11 (ledger,
-  Η6–Η9). Not pushed.
+  Η6–Η9); pushed (`6ca7e83..f95cb94`). Then Dijkstra in §11 (ledger,
+  Η10; not pushed); EWD667 on natural-language programming searched
+  and presented to the owner.
 
 ## Essay and analysis: open points (2026-11-24)
 

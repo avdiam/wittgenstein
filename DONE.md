@@ -30,7 +30,10 @@ Ledger, Η1–Η5.
    Claude Opus 4.6 found the construction for odd sizes, Knuth wrote the
    proof, the even sizes solved in March). Timeline rows 1965, 1968, 2026;
    three source entries. Left out: the «NP-hard» poll, TeX, *TAOCP* on
-   Llull.
+   Llull. Pushed (`6ca7e83..f95cb94`).
+4. Dijkstra (owner's question): one sentence in §11 «Τα όρια», after
+   Hume: testing can show that a program has errors, never that it has
+   none (EWD249, 1969); timeline 1969; source entry.
 
 **Session of 2026-11-25, night: the third outside review of the essay.**
 
