@@ -149,8 +149,8 @@ item is finished, move it to `DONE.md` with the date.
   Η6–Η9); pushed (`6ca7e83..f95cb94`). Then Dijkstra in §11 (ledger,
   Η10), and a paragraph on EWD667, natural-language programming (ledger,
   Η11). Then Viète in §2 (ledger, Η12), and Fermat and Euler (ledger,
-  Η13–Η14), and the Greek mathematicians in §1 (ledger, Η15); not
-  pushed.
+  Η13–Η14), the Greek mathematicians in §1 (ledger, Η15), and the
+  calculus with Riemann in §2 (ledger, Η16); not pushed.
 
 ## Essay and analysis: open points (2026-11-24)
 

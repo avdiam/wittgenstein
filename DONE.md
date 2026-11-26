@@ -55,6 +55,11 @@ Ledger, Η1–Η5.
    «Ερμηνευτική σημείωση» on Thales and Pythagoras, and a closing
    paragraph linking Euclid, Eudoxus–Archimedes and Diophantus to later
    sections; three timeline changes.
+8. The calculus (owner's draft, condensed): a paragraph in «Ο Leibniz» on
+   Leibniz and Newton, ∫ and dx, Cauchy and Riemann, Riemann's curvature
+   and Einstein, the 1859 hypothesis; Riemann's first mention moved there
+   from the postscript; glossary «Απειροστικός λογισμός»; timeline
+   1684–1686 and 1854.
 
 **Session of 2026-11-25, night: the third outside review of the essay.**
 
