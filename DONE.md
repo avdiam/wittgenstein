@@ -48,6 +48,13 @@ Ledger, Η1–Η5.
    algebra. Euler: his dates and the *Letters to a German Princess* in the
    caption of §1, and in the Venn caption of §4 that Venn adapted Euler's
    circles.
+7. Greek mathematics (owner's draft, checked and corrected): a new
+   subsection at the end of §1, «Τα μαθηματικά της απόδειξης», with an
+   indicative list from Thales to Hypatia (Apollonius dropped), the
+   Pythagoreans with music, the soul, Plato, Kepler and Galileo, an
+   «Ερμηνευτική σημείωση» on Thales and Pythagoras, and a closing
+   paragraph linking Euclid, Eudoxus–Archimedes and Diophantus to later
+   sections; three timeline changes.
 
 **Session of 2026-11-25, night: the third outside review of the essay.**
 
