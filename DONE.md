@@ -42,8 +42,12 @@ Ledger, Η1–Η5.
    bullets in §2 between Llull and Pascal, on the *Isagoge* (1591), the
    *logistice speciosa* and *numerosa*, the law of homogeneity, vowels and
    consonants (and Descartes's x, y, z), + and −; the subsection renamed
-   «Ο Llull, ο Viète και ο Pascal»; timeline 1591; source entry. Fermat
-   and Euler to be discussed next.
+   «Ο Llull, ο Viète και ο Pascal»; timeline 1591; source entry.
+6. Fermat: one sentence in §11 on what the Last Theorem states and the
+   margin of Diophantus's *Arithmetica*, with Fermat writing in Viète's
+   algebra. Euler: his dates and the *Letters to a German Princess* in the
+   caption of §1, and in the Venn caption of §4 that Venn adapted Euler's
+   circles.
 
 **Session of 2026-11-25, night: the third outside review of the essay.**
 
