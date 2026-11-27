@@ -29,6 +29,9 @@ Ledger, Ξ rows. One commit per point, not pushed.
    further claim,
    that Wiener and von Neumann revived Leibniz's binary work, was
    checked and is not supported; nothing on it was added.
+4. Introduction (Ξ4): a sentence of scope on the mathematics of
+   change and of probability, in place of a list of mathematicians of
+   adjacent fields (the owner's question).
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 

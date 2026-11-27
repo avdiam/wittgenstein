@@ -206,7 +206,9 @@ item is finished, move it to `DONE.md` with the date.
   right panel of the Venn figure of §4 (one commit, not pushed).
   Then the last sentence of §4, with Leibniz's binary system, and a
   sentence in §9 on Shannon's adder (ledger, Ξ2–Ξ3; two commits, not
-  pushed). The passage checks continue as the
+  pushed). Then a sentence of scope in the introduction on the
+  mathematics of change and of probability (ledger, Ξ4; one commit,
+  not pushed). The passage checks continue as the
   owner brings points.
 
 ## Essay and analysis: open points (2026-11-24)
