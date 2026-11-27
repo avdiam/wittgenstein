@@ -32,6 +32,10 @@ Ledger, Ξ rows. One commit per point, not pushed.
 4. Introduction (Ξ4): a sentence of scope on the mathematics of
    change and of probability, in place of a list of mathematicians of
    adjacent fields (the owner's question).
+5. §11 (Ξ5): two sentences on the algorithm that adjusts the weights:
+   it applies the calculus, and Cauchy described the method of small
+   steps in 1847. Laplace, Fourier, Lagrange, Legendre and Gauss
+   were checked and left out. Two entries added to the sources.
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 

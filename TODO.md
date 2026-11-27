@@ -207,8 +207,8 @@ item is finished, move it to `DONE.md` with the date.
   Then the last sentence of §4, with Leibniz's binary system, and a
   sentence in §9 on Shannon's adder (ledger, Ξ2–Ξ3; two commits, not
   pushed). Then a sentence of scope in the introduction on the
-  mathematics of change and of probability (ledger, Ξ4; one commit,
-  not pushed). The passage checks continue as the
+  mathematics of change and of probability, and Cauchy's method of
+  1847 in §11 (ledger, Ξ4–Ξ5; two commits, not pushed). The passage checks continue as the
   owner brings points.
 
 ## Essay and analysis: open points (2026-11-24)
