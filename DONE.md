@@ -10,7 +10,8 @@ the two readings that were open were confirmed by the owner on 2026-11-14.
 
 **Session of 2026-11-27, later: the check before publishing.**
 
-Ledger, Θ rows. One commit, not pushed.
+Ledger, Θ rows. One commit; pushed the same day at the owner's word
+(`87d411e..68d3666`).
 
 The owner asked for a last check of the essay and its page before the
 push: typos, names, agreement with the ledger, logic, facts and the

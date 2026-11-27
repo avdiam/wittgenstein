@@ -234,8 +234,13 @@ item is finished, move it to `DONE.md` with the date.
   ledger, Θ1–Θ17; one commit, not pushed). No mismatch with the
   ledger; thirty-three small points decided by the owner one by one.
   The Riemann watch has no run later than the one already read.
-  Not pushed: everything from `2682d13` waits for the owner's word.
-  Next session: as in the line above.
+  Then, at the owner's word, everything pushed (`87d411e..68d3666`,
+  and this line), so the «not pushed» notes of 27 November no longer
+  hold. Next session: the owner to read the changed passages on the
+  live page; read the latest run of the Riemann watch (first
+  scheduled run 3 Dec 2026; `CROSSCHECK_PLAN.md`); then more passage
+  checks if the owner has any, or choice C (the *Investigations*
+  part) under «Next session» below.
 
 ## Essay and analysis: open points (2026-11-24)
 
