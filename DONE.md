@@ -56,6 +56,8 @@ Ledger, Ξ rows. One commit per point, not pushed.
 11. §8 and §11 (Ξ11): *The Art of Computer Programming* is now said
     to be still in progress, and the problem of 2026 to belong to a
     future volume.
+12. §11 (Ξ12): a reminder of back-propagation at the step of the
+    training algorithm that computes the direction of change.
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 
