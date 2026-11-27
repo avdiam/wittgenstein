@@ -221,8 +221,14 @@ item is finished, move it to `DONE.md` with the date.
   owner's question of which decisions stay with humans (ledger,
   Ξ14–Ξ15; one commit, not pushed). Then the title changed to
   «Γλώσσα, λογική και μηχανές» (ledger, Ξ16; one commit, not
-  pushed). Eighteen commits wait for the owner's word to push. The passage checks continue as the
-  owner brings points.
+  pushed). Not pushed: everything from `2682d13` to the records
+  commit of this session waits for the owner's word.
+  Next session: push if the owner agrees; the owner to read the new
+  epilogue, postscript and title on the page; read the latest run
+  of the Riemann watch (first scheduled run 3 Dec 2026;
+  `CROSSCHECK_PLAN.md`); then the passage checks continue if the
+  owner has more, or choice C (the *Investigations* part) under
+  «Next session» below.
 
 ## Essay and analysis: open points (2026-11-24)
 
