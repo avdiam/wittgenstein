@@ -49,6 +49,10 @@ Ledger, Ξ rows. One commit per point, not pushed.
 9. §11 (Ξ9): Gödel's conclusion of 1951, with the first alternative
    in his words and the remark that both may hold, in place of «ένα
    δίλημμα». Two source entries added.
+10. §11 (Ξ10): Lean in joint projects of mathematicians dated from
+    2020, not 2025; Terence Tao introduced (who he is, the projects
+    he organised, his remark that the checker makes trust
+    unnecessary). Two source entries added.
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 

@@ -212,7 +212,8 @@ item is finished, move it to `DONE.md` with the date.
   Turing's war work and the ACE moved from §8 to §9, and the
   Dartmouth sentence of §11 reworded (ledger, Ξ6–Ξ7; two commits,
   not pushed). Then how Deep Blue worked, and Gödel's conclusion of
-  1951, in §11 (ledger, Ξ8–Ξ9; two commits, not pushed). The passage checks continue as the
+  1951, and Terence Tao with Lean's joint projects, in §11 (ledger,
+  Ξ8–Ξ10; three commits, not pushed). The passage checks continue as the
   owner brings points.
 
 ## Essay and analysis: open points (2026-11-24)
