@@ -24,7 +24,9 @@ Ledger, Ξ rows. One commit per point, not pushed.
 3. §4 and §9 (Ξ2–Ξ3): the last sentence of §4 now names Leibniz's
    binary system beside Boole's algebra (owner's proposal), and §9
    has a sentence on the adder in base two of Shannon's paper of
-   1938, which makes good the promise. The owner's further claim,
+   1938, which makes good the promise; the sentence on the *bit*,
+   which repeated the reference to Leibniz, shortened. The owner's
+   further claim,
    that Wiener and von Neumann revived Leibniz's binary work, was
    checked and is not supported; nothing on it was added.
 
