@@ -71,6 +71,11 @@ Ledger, Ξ rows. One commit per point, not pushed.
     closing question on which decisions stay with humans.
     Wittgenstein's remark on surveyable proof was drafted and left
     out.
+15. Title (Ξ16): «Γλώσσα, λογική και μηχανές», with the subtitle
+    «Από τον Πλάτωνα και τον Ευκλείδη στον Wittgenstein και την
+    τεχνητή νοημοσύνη». The file names keep the old order
+    (`Logiki_Glossa_Michanes.md`, `.docx`), so that published links
+    hold.
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 

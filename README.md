@@ -7,7 +7,7 @@ and on the history of logic, language and computing.
 
 - [Cover page](https://avdiam.github.io/wittgenstein/)
 - [Tractatus Logico-Philosophicus: analysis and labs](https://avdiam.github.io/wittgenstein/tractatus.html)
-- [Essay: «Λογική, γλώσσα και μηχανές»](https://avdiam.github.io/wittgenstein/essay.html)
+- [Essay: «Γλώσσα, λογική και μηχανές»](https://avdiam.github.io/wittgenstein/essay.html)
   (also as a [Word file](https://avdiam.github.io/wittgenstein/Logiki_Glossa_Michanes.docx))
 
 ## How the folder is organised

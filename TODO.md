@@ -219,8 +219,9 @@ item is finished, move it to `DONE.md` with the date.
   essay read and the epilogue rewritten (ledger, Ξ13; one commit,
   not pushed), and the postscript strengthened, ending on the
   owner's question of which decisions stay with humans (ledger,
-  Ξ14–Ξ15; one commit, not pushed). Seventeen commits wait for the
-  owner's word to push. The passage checks continue as the
+  Ξ14–Ξ15; one commit, not pushed). Then the title changed to
+  «Γλώσσα, λογική και μηχανές» (ledger, Ξ16; one commit, not
+  pushed). Eighteen commits wait for the owner's word to push. The passage checks continue as the
   owner brings points.
 
 ## Essay and analysis: open points (2026-11-24)
