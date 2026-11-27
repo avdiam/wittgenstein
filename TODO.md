@@ -229,6 +229,13 @@ item is finished, move it to `DONE.md` with the date.
   `CROSSCHECK_PLAN.md`); then the passage checks continue if the
   owner has more, or choice C (the *Investigations* part) under
   «Next session» below.
+- Session of 2026-11-27, later: at the owner's request, a check of
+  the whole essay and its page before the push (details in `DONE.md`;
+  ledger, Θ1–Θ17; one commit, not pushed). No mismatch with the
+  ledger; thirty-three small points decided by the owner one by one.
+  The Riemann watch has no run later than the one already read.
+  Not pushed: everything from `2682d13` waits for the owner's word.
+  Next session: as in the line above.
 
 ## Essay and analysis: open points (2026-11-24)
 

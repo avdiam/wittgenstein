@@ -8,6 +8,52 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-27, later: the check before publishing.**
+
+Ledger, Θ rows. One commit, not pushed.
+
+The owner asked for a last check of the essay and its page before the
+push: typos, names, agreement with the ledger, logic, facts and the
+flow of the thread. Done in three parts:
+
+- The whole essay (1,002 lines) read in one sitting, and mechanical
+  checks run on it (mixed scripts, final sigma, quotation marks,
+  balance of brackets, section references, names by paragraph).
+- `docs/essay.html` checked: no leftover Markdown, 26 figures, no dead
+  link, the build check passes. The Word file was not opened.
+- Four search agents compared sections 1–5, 6–10, 11–12 and the back
+  matter with the ledger: no mismatch. Two more agents then checked
+  online the points that needed a source.
+
+Nothing blocked publication. Thirty-three small points were taken to
+the owner one by one, in text order, and decided on exact wording:
+
+1. Quotation and references (Θ1–Θ3): Aristotle's Greek marked with
+   «[…]» and completed; five pronouns or phrases that pointed to the
+   wrong person or sentence after later insertions (Pythagoras and
+   Galileo, Ockham after Aquinas, Malcolm, the notes of *Περί
+   βεβαιότητας*, Pereira after Pāṇini); the «τρία πράγματα» of §6
+   numbered.
+2. §8 and the universal machine (Θ4): the two sentences that linked it
+   plainly to today's computer now describe the idea and point to §9.
+3. Typography (Θ5), Olazaran as a sociologist of science (Θ6), «μια
+   δεκαετία πριν» in the epilogue (Θ7).
+4. Back matter (Θ8, Θ16): the sources' introduction, two glossary
+   entries, three timeline rows (the 2026 row now by month), Dummett's
+   publisher, Leibniz's *Dissertatio* added, four entries reordered.
+5. Names (Θ9): a Greek form for the six figures that had only dates,
+   and a Greek form with dates for thirteen recurring figures, chosen
+   by the owner from a count of every name by paragraph and section.
+6. Statements brought back to what the sources support (Θ10–Θ14):
+   Viète's signs, Leibniz's paper of 1703, the stop of the Difference
+   Engine (the sources differ, so no year is given), Landini named,
+   Post, Church and the lambda calculus, Goldbach, Wittgenstein's
+   reply on the bridge from the lecture notes, AlphaGo's human games.
+7. §9 (Θ17): the long paragraph split in three.
+
+Checked and left unchanged (Θ15): the PNAS paper «τον Οκτώβριο», and
+the four pages and the affiliation of Alpöge's note.
+
 **Session of 2026-11-27: the owner's passage checks of the essay.**
 
 Ledger, Ξ rows. One commit per point, not pushed.
