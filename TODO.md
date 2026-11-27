@@ -209,8 +209,9 @@ item is finished, move it to `DONE.md` with the date.
   pushed). Then a sentence of scope in the introduction on the
   mathematics of change and of probability, and Cauchy's method of
   1847 in §11 (ledger, Ξ4–Ξ5; three commits, not pushed). Then
-  Turing's war work and the ACE moved from §8 to §9 (ledger, Ξ6; one
-  commit, not pushed). The passage checks continue as the
+  Turing's war work and the ACE moved from §8 to §9, and the
+  Dartmouth sentence of §11 reworded (ledger, Ξ6–Ξ7; two commits,
+  not pushed). The passage checks continue as the
   owner brings points.
 
 ## Essay and analysis: open points (2026-11-24)

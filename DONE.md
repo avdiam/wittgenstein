@@ -40,6 +40,8 @@ Ledger, Ξ rows. One commit per point, not pushed.
 6. §8 → §9 (Ξ6): the two sentences on Bletchley Park and the ACE
    moved from «Η καθολική μηχανή» into the EDVAC paragraph of §9; the
    ACE is now called a computer with a stored program.
+7. §11 (Ξ7): the sentence on the Dartmouth proposal of 1955 reworded
+   for clarity; no change of fact.
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 
