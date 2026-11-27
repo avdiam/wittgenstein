@@ -42,6 +42,10 @@ Ledger, Ξ rows. One commit per point, not pushed.
    ACE is now called a computer with a stored program.
 7. §11 (Ξ7): the sentence on the Dartmouth proposal of 1955 reworded
    for clarity; no change of fact.
+8. §11 (Ξ8): how Deep Blue worked, four sentences in place of one,
+   from the designers' paper of 2002; «περίπου» two hundred million
+   positions corrected to «ως και». Source entry added; the timeline
+   row made «Ο Deep Blue».
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 
