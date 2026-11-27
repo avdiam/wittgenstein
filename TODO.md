@@ -194,6 +194,14 @@ item is finished, move it to `DONE.md` with the date.
   failed on `math.mit.edu`; the task uses the environment «Default»);
   read the «G.R.H. Polymath» post on Tao's blog; then the owner's choice
   between the passage checks and the *Investigations* part.
+- Session of 2026-11-27: the two first steps done (details in `DONE.md`;
+  ledger, Ν21). A third run of the Riemann watch, made on 26 Nov at
+  23:29 UTC, after the records of that night, reached `math.mit.edu`
+  and `www.math.uwaterloo.ca`, so no new run was needed and the
+  «waiting for the owner» note above no longer holds. The «G.R.H.
+  Polymath» post read; the postscript stands. Not pushed (one
+  commit). Next: the owner's choice between the passage checks and
+  the *Investigations* part (B or C under «Next session» below).
 
 ## Essay and analysis: open points (2026-11-24)
 

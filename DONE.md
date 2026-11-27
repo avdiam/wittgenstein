@@ -8,6 +8,19 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-27: the Riemann watch and the Polymath post.**
+
+Ledger, Ν21. One commit, not pushed. The essay is unchanged.
+
+1. The cloud task did not need a new run: its third run (26 Nov,
+   23:29 UTC) had reached `math.mit.edu` and `www.math.uwaterloo.ca`
+   and reported «No change».
+2. The «G.R.H. Polymath» post on Tao's blog (24 Nov, a guest post)
+   read: a readable proof is one of its goals; it reports no flaw and
+   no confirmation. Sutherland's page and Rubinstein's guide read
+   again from here: unchanged. A statement of the Association for
+   Human Mathematics (20 Nov) read: it names no error.
+
 **Session of 2026-11-26, late night: the sources list and the open checks of the essay.**
 
 Ledger, Ν1–Ν19. Two commits, not pushed.
