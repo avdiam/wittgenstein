@@ -53,6 +53,9 @@ Ledger, Ξ rows. One commit per point, not pushed.
     2020, not 2025; Terence Tao introduced (who he is, the projects
     he organised, his remark that the checker makes trust
     unnecessary). Two source entries added.
+11. §8 and §11 (Ξ11): *The Art of Computer Programming* is now said
+    to be still in progress, and the problem of 2026 to belong to a
+    future volume.
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 

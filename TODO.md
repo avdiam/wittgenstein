@@ -213,7 +213,8 @@ item is finished, move it to `DONE.md` with the date.
   Dartmouth sentence of §11 reworded (ledger, Ξ6–Ξ7; two commits,
   not pushed). Then how Deep Blue worked, and Gödel's conclusion of
   1951, and Terence Tao with Lean's joint projects, in §11 (ledger,
-  Ξ8–Ξ10; three commits, not pushed). The passage checks continue as the
+  Ξ8–Ξ10; three commits, not pushed). Then Knuth's work as still
+  in progress, §8 and §11 (ledger, Ξ11; one commit, not pushed). The passage checks continue as the
   owner brings points.
 
 ## Essay and analysis: open points (2026-11-24)
