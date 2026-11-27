@@ -202,7 +202,9 @@ item is finished, move it to `DONE.md` with the date.
   Polymath» post read; the postscript stands. Not pushed (one
   commit). Then the owner chose B, the passage checks: §4, the
   sentence on Jacquard and Babbage (details in `DONE.md`; ledger,
-  Ξ1; one commit, not pushed). The passage checks continue as the
+  Ξ1; one commit, not pushed), and the label «1» removed from the
+  right panel of the Venn figure of §4 (one commit, not pushed). The
+  passage checks continue as the
   owner brings points.
 
 ## Essay and analysis: open points (2026-11-24)

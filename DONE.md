@@ -16,6 +16,11 @@ Ledger, Ξ rows. One commit per point, not pushed.
    says that instructions given «απ' έξω» foreshadow today's computer,
    which §9 gives as the difference; it now says that the same machine
    does different calculations according to its instructions.
+2. §4, the Venn figure for Boole (`venn_boole.svg`): the label «1» in
+   the corner of the right panel removed (owner). It stood on the
+   shaded area, which is 1 − x, and read as its name. The left panel
+   keeps the label, and its legend explains it. PNG copy rendered
+   again.
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 
