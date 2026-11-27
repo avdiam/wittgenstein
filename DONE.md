@@ -35,7 +35,8 @@ Ledger, Ξ rows. One commit per point, not pushed.
 5. §11 (Ξ5): two sentences on the algorithm that adjusts the weights:
    it applies the calculus, and Cauchy described the method of small
    steps in 1847. Laplace, Fourier, Lagrange, Legendre and Gauss
-   were checked and left out. Two entries added to the sources.
+   were checked and left out. Two entries added to the sources, and
+   Cauchy to the 1847 row of the timeline.
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 
