@@ -8,6 +8,15 @@ Noted by the owner on 2026-11-14. Items 1, 2 and 3 were done on 2026-11-14 and
 reviewed by the owner on 2026-11-15 (site on a phone, in Firefox and in Word);
 the two readings that were open were confirmed by the owner on 2026-11-14.
 
+**Session of 2026-11-27: the owner's passage checks of the essay.**
+
+Ledger, Ξ rows. One commit per point, not pushed.
+
+1. §4 (Ξ1): the sentence that closes the Jacquard paragraph no longer
+   says that instructions given «απ' έξω» foreshadow today's computer,
+   which §9 gives as the difference; it now says that the same machine
+   does different calculations according to its instructions.
+
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 
 Ledger, Ν21. One commit, not pushed. The essay is unchanged.

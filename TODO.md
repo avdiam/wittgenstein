@@ -200,8 +200,10 @@ item is finished, move it to `DONE.md` with the date.
   and `www.math.uwaterloo.ca`, so no new run was needed and the
   «waiting for the owner» note above no longer holds. The «G.R.H.
   Polymath» post read; the postscript stands. Not pushed (one
-  commit). Next: the owner's choice between the passage checks and
-  the *Investigations* part (B or C under «Next session» below).
+  commit). Then the owner chose B, the passage checks: §4, the
+  sentence on Jacquard and Babbage (details in `DONE.md`; ledger,
+  Ξ1; one commit, not pushed). The passage checks continue as the
+  owner brings points.
 
 ## Essay and analysis: open points (2026-11-24)
 
