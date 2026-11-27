@@ -37,6 +37,9 @@ Ledger, Ξ rows. One commit per point, not pushed.
    steps in 1847. Laplace, Fourier, Lagrange, Legendre and Gauss
    were checked and left out. Two entries added to the sources, and
    Cauchy to the 1847 row of the timeline.
+6. §8 → §9 (Ξ6): the two sentences on Bletchley Park and the ACE
+   moved from «Η καθολική μηχανή» into the EDVAC paragraph of §9; the
+   ACE is now called a computer with a stored program.
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 
