@@ -54,7 +54,8 @@ What is left:
 - §2 (Ν13, Ν17): the clause of exclusivity in Pascal's privilege of 1649 was not located in its text (date and regency are settled); in the 1591 *Isagoge* the + sign itself is not legible in the OCR (the page image was not viewed).
 - §8 (Ν5, Ν10): the lecture of Turing's bridge remark is settled by inference from search snippets of Diamond's edition, not from the page; that Knuth named the analysis of algorithms rests on his own account in Quanta; Levin's entry rests on Wikipedia (mathnet was unreachable again).
 - §9 (Ν16): the ENIAC's years of construction (1943–1945) and the days needed to set it up rest on the Computer History Museum and Wikipedia.
-- §11: the «ELIZA effect» and Weizenbaum's book of 1976 rest on Wikipedia (no scan of the book was reached).
+- §11 and the postscript: the «ELIZA effect» rests on Wikipedia. Weizenbaum's book of 1976 was read on 2026-11-27 in an authorised reprint of the preface and through Berry (2023) (ledger, Ξ14); the scan of the book itself is lending-only, and the page of the preface (x) rests on secondary citations.
+- Postscript (Ξ15): Wittgenstein's remark that a proof must be surveyable was left out; if it is ever used, Shanker (1987) and Mühlhölzer (2006) have to be read themselves.
 
 ## Method
 

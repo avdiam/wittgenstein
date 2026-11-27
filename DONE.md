@@ -63,6 +63,14 @@ Ledger, Ξ rows. One commit per point, not pushed.
     books inside the pattern, with the difficulty about rules that
     the machines met; the three questions of the introduction
     answered in turn; *On Certainty* kept. No new claims.
+14. Postscript (Ξ14–Ξ15): Turing on control; what the verifier
+    rests on (axioms, the checking program, the statement); the
+    Riemann proof as an answer checked without the account the
+    *Theaetetus* asked of knowledge; the last paragraph with
+    *Tractatus* 6.52, Weizenbaum's own words, and the owner's
+    closing question on which decisions stay with humans.
+    Wittgenstein's remark on surveyable proof was drafted and left
+    out.
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 

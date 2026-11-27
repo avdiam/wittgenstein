@@ -217,10 +217,10 @@ item is finished, move it to `DONE.md` with the date.
   in progress, §8 and §11, and a reminder of back-propagation in
   §11 (ledger, Ξ11–Ξ12; two commits, not pushed). Then the whole
   essay read and the epilogue rewritten (ledger, Ξ13; one commit,
-  not pushed); the postscript is next, with the Riemann proof as
-  the reverse of «understand before asking whether it is true»,
-  the hinges of *On Certainty* for the verifier, and Wittgenstein
-  on what proof cannot settle. The passage checks continue as the
+  not pushed), and the postscript strengthened, ending on the
+  owner's question of which decisions stay with humans (ledger,
+  Ξ14–Ξ15; one commit, not pushed). Seventeen commits wait for the
+  owner's word to push. The passage checks continue as the
   owner brings points.
 
 ## Essay and analysis: open points (2026-11-24)
