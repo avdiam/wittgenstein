@@ -46,6 +46,9 @@ Ledger, Ξ rows. One commit per point, not pushed.
    from the designers' paper of 2002; «περίπου» two hundred million
    positions corrected to «ως και». Source entry added; the timeline
    row made «Ο Deep Blue».
+9. §11 (Ξ9): Gödel's conclusion of 1951, with the first alternative
+   in his words and the remark that both may hold, in place of «ένα
+   δίλημμα». Two source entries added.
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 
