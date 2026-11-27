@@ -215,7 +215,12 @@ item is finished, move it to `DONE.md` with the date.
   1951, and Terence Tao with Lean's joint projects, in §11 (ledger,
   Ξ8–Ξ10; three commits, not pushed). Then Knuth's work as still
   in progress, §8 and §11, and a reminder of back-propagation in
-  §11 (ledger, Ξ11–Ξ12; two commits, not pushed). The passage checks continue as the
+  §11 (ledger, Ξ11–Ξ12; two commits, not pushed). Then the whole
+  essay read and the epilogue rewritten (ledger, Ξ13; one commit,
+  not pushed); the postscript is next, with the Riemann proof as
+  the reverse of «understand before asking whether it is true»,
+  the hinges of *On Certainty* for the verifier, and Wittgenstein
+  on what proof cannot settle. The passage checks continue as the
   owner brings points.
 
 ## Essay and analysis: open points (2026-11-24)

@@ -58,6 +58,11 @@ Ledger, Ξ rows. One commit per point, not pushed.
     future volume.
 12. §11 (Ξ12): a reminder of back-propagation at the step of the
     training algorithm that computes the direction of change.
+13. §12 (Ξ13): the epilogue rewritten after a read of the whole
+    essay: Leibniz's plan and what became of it; Wittgenstein's two
+    books inside the pattern, with the difficulty about rules that
+    the machines met; the three questions of the introduction
+    answered in turn; *On Certainty* kept. No new claims.
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 
