@@ -21,6 +21,12 @@ Ledger, Ξ rows. One commit per point, not pushed.
    shaded area, which is 1 − x, and read as its name. The left panel
    keeps the label, and its legend explains it. PNG copy rendered
    again.
+3. §4 and §9 (Ξ2–Ξ3): the last sentence of §4 now names Leibniz's
+   binary system beside Boole's algebra (owner's proposal), and §9
+   has a sentence on the adder in base two of Shannon's paper of
+   1938, which makes good the promise. The owner's further claim,
+   that Wiener and von Neumann revived Leibniz's binary work, was
+   checked and is not supported; nothing on it was added.
 
 **Session of 2026-11-27: the Riemann watch and the Polymath post.**
 

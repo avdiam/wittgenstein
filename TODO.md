@@ -203,8 +203,10 @@ item is finished, move it to `DONE.md` with the date.
   commit). Then the owner chose B, the passage checks: §4, the
   sentence on Jacquard and Babbage (details in `DONE.md`; ledger,
   Ξ1; one commit, not pushed), and the label «1» removed from the
-  right panel of the Venn figure of §4 (one commit, not pushed). The
-  passage checks continue as the
+  right panel of the Venn figure of §4 (one commit, not pushed).
+  Then the last sentence of §4, with Leibniz's binary system, and a
+  sentence in §9 on Shannon's adder (ledger, Ξ2–Ξ3; one commit, not
+  pushed). The passage checks continue as the
   owner brings points.
 
 ## Essay and analysis: open points (2026-11-24)
